@@ -12,8 +12,8 @@ public class CrawlUrl implements Serializable{
     private String oriUrl;    //原始url
      
     private String url;       //url地址
-     
-    public String getOriUrl() {
+    
+	public String getOriUrl() {
         return oriUrl;
     }
     public void setOriUrl(String oriUrl) {

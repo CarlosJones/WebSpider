@@ -19,7 +19,7 @@ public class HtmlParserTool {
         Set<String> links = new HashSet<String>();
         try {
             Parser parser = new Parser(url);
-            parser.setEncoding("gb2312");
+            parser.setEncoding("utf-8");
              
             NodeFilter frameFilter = new NodeFilter() {      //过滤节点
                 public boolean accept(Node node) {
@@ -39,9 +39,9 @@ public class HtmlParserTool {
                 Node tag = list.elementAt(i);
                 if(tag instanceof LinkTag) {                         //链接文字
                     LinkTag linkTag = (LinkTag) tag;
-                    String linkUrl = linkTag.getLink();//url
                     String text = linkTag.getLinkText();//链接文字
-                    System.out.println(linkUrl + "**********" + text);
+                    String linkUrl = linkTag.getLink();//url
+                    System.out.println(linkUrl + "**********" + text);                  	                                     
                     if(filter.accept(linkUrl))
                         links.add(linkUrl);
                 }

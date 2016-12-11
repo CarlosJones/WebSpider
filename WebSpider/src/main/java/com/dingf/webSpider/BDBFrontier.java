@@ -150,7 +150,7 @@ CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
         try {
             BDBFrontier bdbFrontier = new BDBFrontier("/home/ding-fang/Document/gitrepo/worm/test/cache");
             CrawlUrl url = new CrawlUrl();
-            url.setOriUrl("http://www.baidu.com");
+            url.setOriUrl("https://book.douban.com/");
             bdbFrontier.putUrl(url);
              
             System.out.println(((CrawlUrl)bdbFrontier.getNext()).getOriUrl());
