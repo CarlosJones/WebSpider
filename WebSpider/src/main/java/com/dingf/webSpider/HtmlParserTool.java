@@ -20,8 +20,9 @@ public class HtmlParserTool {
         try {
             Parser parser = new Parser(url);
             parser.setEncoding("utf-8");
-             
-            NodeFilter frameFilter = new NodeFilter() {      //过滤节点
+           
+            @SuppressWarnings("serial")
+			NodeFilter frameFilter = new NodeFilter() {      //过滤节点
                 public boolean accept(Node node) {
                     if(node.getText().startsWith("frame src=")) {
                         return true;
@@ -68,11 +69,10 @@ public class HtmlParserTool {
                         links.add(frame);
                 }
             }
-             
-            return links;
+            return links;           
         } catch (ParserException e) {
             e.printStackTrace();
-            return null;
+        	return null;
         }
     }
 }

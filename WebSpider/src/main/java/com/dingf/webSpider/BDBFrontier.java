@@ -12,7 +12,8 @@ import com.sleepycat.je.DatabaseException;
 
 
 public class BDBFrontier extends AbstractFrontier implements Frontier{
-    private StoredMap pendingUrisDB = null;
+    @SuppressWarnings("rawtypes")
+	private StoredMap pendingUrisDB = null;
     public static int threads = CrawlConfig.CRAWL_THREAD_NUM;
      
     /**
@@ -23,11 +24,14 @@ public class BDBFrontier extends AbstractFrontier implements Frontier{
      * @throws FileNotFoundException
      */
      
-    public BDBFrontier(String homeDirectory) throws DatabaseException,
+    @SuppressWarnings("unchecked")
+	public BDBFrontier(String homeDirectory) throws DatabaseException,
             FileNotFoundException {
         super(homeDirectory);
-        EntryBinding keyBinding = new SerialBinding(javaCatalog, String.class);
-        EntryBinding valueBinding = new SerialBinding(javaCatalog, CrawlUrl.class);
+        @SuppressWarnings({ "rawtypes", "unchecked" })
+		EntryBinding keyBinding = new SerialBinding(javaCatalog, String.class);
+        @SuppressWarnings({ "unchecked", "rawtypes" })
+		EntryBinding valueBinding = new SerialBinding(javaCatalog, CrawlUrl.class);
         pendingUrisDB = new StoredMap(database, keyBinding, valueBinding, true);
     }
      
@@ -60,7 +64,8 @@ public class BDBFrontier extends AbstractFrontier implements Frontier{
 CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
                 result = entry.getValue();        //下一条记录
                 delete(entry.getKey());            //删除当前记录
-                System.out.println("get:" + homeDirectory + entrys);
+ //               System.out.println("del:"+entry.getKey());
+                System.out.println("get:" + entrys);
                 return result;
             }
             else {

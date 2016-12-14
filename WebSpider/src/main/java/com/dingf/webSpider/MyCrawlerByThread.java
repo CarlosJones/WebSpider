@@ -31,7 +31,7 @@ public class MyCrawlerByThread extends MyCrawler implements Runnable{
                 Thread t = new Thread(crawler);
                 t.start();
                 threadList.add(t);
-                Thread.sleep(10L);
+                Thread.sleep(50L);
             }
             while(threadList.size() > 0) {
                 Thread child = (Thread) threadList.remove(0);

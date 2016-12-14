@@ -11,6 +11,7 @@ import org.apache.http.conn.ConnectTimeoutException;
 public class MyCrawler {
     public static BDBFrontier visitedFrontier;
     public static BDBFrontier unvisitedFrontier;
+    public static BDBFrontier cachedFrontier;
     private static int num = 0;  
      
     public MyCrawler() {
@@ -22,6 +23,10 @@ public class MyCrawler {
             if(unvisitedFrontier == null) {
                 unvisitedFrontier = new BDBFrontier(CrawlConfig.CRAWL_UNVISITED_FRONTIER);
                 unvisitedFrontier.clearAll();
+            }
+            if(cachedFrontier == null){
+            	cachedFrontier = new BDBFrontier(CrawlConfig.CRAWL_CACHED_URL);
+            	cachedFrontier.clearAll();
             }
         }catch(Exception e) {
             e.printStackTrace();
@@ -59,8 +64,10 @@ public class MyCrawler {
              
             initCrawlerWithSeeds(seeds);
              
-            //采用berkeleyDB方式存储         
-            do{
+            //采用berkeleyDB方式存储             
+//            	long StartTime = System.currentTimeMillis();
+//                long currentTime = System.currentTimeMillis();
+			do{
                 System.out.println("线程：" + threadId);
                 
                 CrawlUrl visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
@@ -102,6 +109,7 @@ public class MyCrawler {
                     boolean isMatch2 = matcher2.matches();
                     if(isMatch1||isMatch2){
                     	RetrievePage.downloadPage(visitedUrl);
+                    	cachedFrontier.putUrl(visitedCrawlUrl);
                     }//下载页面
                   //https://book.douban.com/tag/编程?start=40&amp;type=T**********3
                   //CRAWL_PATH = "https://book.douban.com/tag/编程"
@@ -116,7 +124,7 @@ public class MyCrawler {
                             unvisitedFrontier.putUrl(unvisitedCrawlUrl);
                         }
                     }
-                    }
+                    }  
                 }catch(ConnectTimeoutException e) {                            //超时继续读下一个地址
                     visitedFrontier.putUrl(visitedCrawlUrl);
                     visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
@@ -132,7 +140,7 @@ public class MyCrawler {
                 }
                 visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
                 num ++;
-                 
+                            
             }while(BDBFrontier.threads >0 && num < 1000000);
         }
          
@@ -142,6 +150,5 @@ public class MyCrawler {
         catch(Exception e) {
             e.printStackTrace();
         }
-    }
-     
+    }     
 }
