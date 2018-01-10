@@ -40,7 +40,7 @@ public class BDBFrontier extends AbstractFrontier implements Frontier{
      * clearAll:
      * 清除数据库
      *
-     * @param     参数
+     * @param参数
      * @return void    返回值
      * @throws 
      *
@@ -51,17 +51,15 @@ public class BDBFrontier extends AbstractFrontier implements Frontier{
     }
     /**
      * 获得下一条记录
-     * @see com.fc.frontier.Frontier#getNext()
+     * @seecom.fc.frontier.Frontier#getNext()
      */
-    @Override
     public synchronized CrawlUrl getNext() throws Exception {
         CrawlUrl result = null;
         while(true) {
             if(!pendingUrisDB.isEmpty()) {
                 Set entrys = pendingUrisDB.entrySet();
               
-              Entry<String, CrawlUrl> entry = (Entry<String, 
-CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
+              Entry<String, CrawlUrl> entry = (Entry<String,CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
                 result = entry.getValue();        //下一条记录
                 delete(entry.getKey());            //删除当前记录
  //               System.out.println("del:"+entry.getKey());
@@ -86,9 +84,8 @@ CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
     }
     /**
      * 存入url
-     * @see com.fc.frontier.Frontier#putUrl(com.fc.CrawlUrl)
+     * @seecom.fc.frontier.Frontier#putUrl(com.fc.CrawlUrl)
      */
-    @Override
     public synchronized boolean putUrl(CrawlUrl url) throws Exception {
         if(url.getOriUrl() != null && !url.getOriUrl().equals("") 
                 && !pendingUrisDB.containsKey(url.getOriUrl())) 
@@ -111,7 +108,7 @@ CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
     }
     /**
      * 存入数据库
-     * @see com.fc.frontier.AbstractFrontier#put(java.lang.Object, java.lang.Object)
+     * @seecom.fc.frontier.AbstractFrontier#put(java.lang.Object, java.lang.Object)
      */
     @Override
     protected synchronized void put(Object key, Object value) {
@@ -122,7 +119,7 @@ CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
      
     /**
      * 从数据库取出
-     * @see com.fc.frontier.AbstractFrontier#get(java.lang.Object)
+     * @seecom.fc.frontier.AbstractFrontier#get(java.lang.Object)
      */
     @Override
     protected synchronized Object get(Object key) {
@@ -130,7 +127,7 @@ CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
     }
     /**
      * 删除
-     * @see com.fc.frontier.AbstractFrontier#delete(java.lang.Object)
+     * @seecom.fc.frontier.AbstractFrontier#delete(java.lang.Object)
      */
     @Override
     protected synchronized Object delete(Object key) {
@@ -142,7 +139,7 @@ CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
      * calculateUrl:
      * 对Url进行计算，可以用压缩算法
      *
-     * @param     参数
+     * @param参数
      * @return String    返回值
      * @throws 
      *

@@ -76,9 +76,7 @@ public class RetrievePage {
 	                    InputStream instream = entity.getContent();
 	                    String filename = getFilenameByUrl(path,entity.getContentType().getValue());
 	   
-	                  OutputStream outstream = new 
-	FileOutputStream(CrawlConfig.CRAWL_DOWNLOAD_PATH + 
-	filename);                 //存储到磁盘
+	                  OutputStream outstream = new FileOutputStream(CrawlConfig.CRAWL_DOWNLOAD_PATH + filename);                 //存储到磁盘
 	                    try {
 	                        //System.out.println(convertStreamToString(instream));
 	                        int tempByte = -1;
@@ -147,7 +145,7 @@ public class RetrievePage {
 	    {
 	        try{
 	            System.out.println("下载开始");
-	            RetrievePage.downloadPage("http://www.baidu.com");
+	            RetrievePage.downloadPage(CrawlConfig.CRAWL_PATH);
 	            System.out.println("下载结束");
 	        }
 	        catch(HttpException e){

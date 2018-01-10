@@ -50,7 +50,6 @@ public class MyCrawler {
     public  void crawling(String[] seeds, int threadId) {
         try {
             LinkFilter filter = new LinkFilter() {
-                @Override
                 public boolean accept(String url) {
                     if(url.startsWith(CrawlConfig.CRAWL_LIMIT_PATH1)||url.startsWith(CrawlConfig.CRAWL_LIMIT_PATH2)) {
                         return true;
@@ -142,9 +141,7 @@ public class MyCrawler {
                 num ++;
                             
             }while(BDBFrontier.threads >0 && num < 1000000);
-        }
-         
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         catch(Exception e) {

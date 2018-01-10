@@ -36,7 +36,6 @@ public class ExtractInfoByThread extends ExtractInfo implements Runnable {
 
 	}
 
-	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		
