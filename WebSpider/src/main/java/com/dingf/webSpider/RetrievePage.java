@@ -18,13 +18,15 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.log4j.Logger;
 
 public class RetrievePage {
     
 	   
-	  private static String USER_AGENT = "Mozilla/4.0 (compatible; MSIE 6.0;Windows NT 5.1; SV1; QQDownload 1.7; .NET CLR 1.1.4322; CIBA; .NET CLR 2.0.50727";
+	    private static String USER_AGENT = "Mozilla/4.0 (compatible; MSIE 6.0;Windows NT 5.1; SV1; QQDownload 1.7; .NET CLR 1.1.4322; CIBA; .NET CLR 2.0.50727";
 	    private static String DEFAULT_CHARSET = "GB2312,utf-8;q=0.7,*;q=0.7";
 	    private static String ACCEPT = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
+	    private static Logger logger = Logger.getLogger(RetrievePage.class);
 	     
 	    /**
 	     * 下载文件
@@ -35,6 +37,7 @@ public class RetrievePage {
 	     */
 	    public static boolean downloadPage(String path) throws Exception,IOException
 	    {
+	    	logger.info("start to download:"+path);
 	        CloseableHttpClient httpclient = HttpClients.createDefault();
 	        HttpGet httpget = new HttpGet(path);
 	         
@@ -84,7 +87,8 @@ public class RetrievePage {
 	                        {
 	                            outstream.write(tempByte);
 	                        }
-	                        return true;
+							logger.info("has succeed download:"+path);
+							return true;
 	                    }
 	                    catch(Exception e){
 	                        e.printStackTrace();

@@ -146,7 +146,9 @@ public class BDBFrontier extends AbstractFrontier implements Frontier{
         try {
             BDBFrontier bdbFrontier = new BDBFrontier("/home/dingf/WebSpider/cache/hevisited");
 //            System.out.println(((CrawlUrl)bdbFrontier.getNext()));
-            Set entrys = bdbFrontier.pendingUrisDB.entrySet();
+//            Set entrys = bdbFrontier.pendingUrisDB.entrySet();
+            CrawlUrl crawlUrl = new CrawlUrl();
+
             bdbFrontier.close();
         }catch(Exception e) {
             e.printStackTrace();
