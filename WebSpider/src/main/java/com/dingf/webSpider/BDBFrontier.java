@@ -60,27 +60,22 @@ public class BDBFrontier extends AbstractFrontier implements Frontier{
                 Set entrys = pendingUrisDB.entrySet();
               
               Entry<String, CrawlUrl> entry = (Entry<String,CrawlUrl>) pendingUrisDB.entrySet().iterator().next();
-                result = entry.getValue();        //下一条记录
+                result = entry.getValue();         //下一条记录
                 delete(entry.getKey());            //删除当前记录
  //               System.out.println("del:"+entry.getKey());
                 System.out.println("get:" + entrys);
                 return result;
-            }
-            else {
+            } else {
                 threads --;
                 if(threads > 0) {
                     wait();
                     threads ++;
-                }
-                else {
+                } else {
                     notifyAll();
                     return null;
                 }
             }
         }
-     
-             
-         
     }
     /**
      * 存入url
@@ -94,13 +89,12 @@ public class BDBFrontier extends AbstractFrontier implements Frontier{
              
             put(url.getOriUrl(), url);
             notifyAll();
-            System.out.println("put:" + homeDirectory + entrys);
+            System.out.println("put:" + url.getOriUrl() + url);
             return true;
         }
         return false;
-         
     }
-     
+
     public boolean contains(Object key) {
         if(pendingUrisDB.containsKey(key))
             return true;
@@ -150,12 +144,9 @@ public class BDBFrontier extends AbstractFrontier implements Frontier{
      
     public static void main(String[] strs) {
         try {
-            BDBFrontier bdbFrontier = new BDBFrontier("/home/ding-fang/Document/gitrepo/worm/test/cache");
-            CrawlUrl url = new CrawlUrl();
-            url.setOriUrl("https://book.douban.com/");
-            bdbFrontier.putUrl(url);
-             
-            System.out.println(((CrawlUrl)bdbFrontier.getNext()).getOriUrl());
+            BDBFrontier bdbFrontier = new BDBFrontier("/home/dingf/WebSpider/cache/hevisited");
+//            System.out.println(((CrawlUrl)bdbFrontier.getNext()));
+            Set entrys = bdbFrontier.pendingUrisDB.entrySet();
             bdbFrontier.close();
         }catch(Exception e) {
             e.printStackTrace();

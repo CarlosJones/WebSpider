@@ -44,8 +44,8 @@ public class RetrievePage {
 	        httpget.addHeader("User-Agent", USER_AGENT);
 	         
 	        RequestConfig requestConfig = RequestConfig.custom()             //设置超时
-	                .setSocketTimeout(3000)
-	                .setConnectTimeout(3000)
+	                .setSocketTimeout(25000)
+	                .setConnectTimeout(25000)
 	                .build();
 	        httpget.setConfig(requestConfig);
 	        CloseableHttpResponse response = httpclient.execute(httpget);

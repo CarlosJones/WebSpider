@@ -100,7 +100,9 @@ public class MyCrawler {
                     Pattern pattern2 = Pattern.compile("^((https|http|ftp|rtsp|mms)?://)"
                 			+"(book).(douban).(com)/"
                 			+"(tag)/(编程)"
-                			+ "((.(start=)[0-9]{2,4}.(amp).(type=T))"
+//                			+ "((.(start=)[0-9]{2,4}.(amp).(type=S))"
+                            + "((.(start=)[0-4]?[0-9]?[0-9].(amp).(type=S))"
+                            +"|(\\?type=S)"
                 			+ "|())"
                 			+ "$"
                                );  
@@ -110,7 +112,7 @@ public class MyCrawler {
                     	RetrievePage.downloadPage(visitedUrl);
                     	cachedFrontier.putUrl(visitedCrawlUrl);
                     }//下载页面
-                  //https://book.douban.com/tag/编程?start=40&amp;type=T**********3
+                  //https://book.douban.com/tag/编程?start=40&type=S**********3
                   //CRAWL_PATH = "https://book.douban.com/tag/编程"
                     if(isMatch2){
                     Set<String> links = HtmlParserTool.extractLinks(visitedUrl, filter);
@@ -139,12 +141,10 @@ public class MyCrawler {
                 }
                 visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
                 num ++;
-                            
             }while(BDBFrontier.threads >0 && num < 1000000);
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        catch(Exception e) {
+        } catch(Exception e) {
             e.printStackTrace();
         }
     }     

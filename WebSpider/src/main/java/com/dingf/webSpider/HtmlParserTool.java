@@ -38,7 +38,7 @@ public class HtmlParserTool {
             for(int i = 0; i <list.size();i++)
             {
                 Node tag = list.elementAt(i);
-                if(tag instanceof LinkTag) {                         //链接文字
+                if(tag instanceof LinkTag) {                         //<a>标签，链接文字
                     LinkTag linkTag = (LinkTag) tag;
                     String text = linkTag.getLinkText();//链接文字
                     String linkUrl = linkTag.getLink();//url

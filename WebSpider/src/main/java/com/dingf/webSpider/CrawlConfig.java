@@ -1,7 +1,7 @@
 package com.dingf.webSpider;
 
 public class CrawlConfig {
-	public static final String CRAWL_PATH = "https://book.douban.com/tag/编程";
+	public static final String CRAWL_PATH = "https://book.douban.com/tag/编程?type=S";
     public static final String CRAWL_LIMIT_PATH1 = "https://book.douban.com/subject";
     public static final String CRAWL_LIMIT_PATH2 = "https://book.douban.com/tag/编程";
     public static final String CRAWL_VISITED_FRONTIER = "/home/dingf/WebSpider/cache/hevisited";

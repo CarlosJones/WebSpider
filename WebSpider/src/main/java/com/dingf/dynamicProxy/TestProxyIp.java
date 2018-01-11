@@ -7,7 +7,7 @@ import java.net.URLConnection;
 public class TestProxyIp {
 	public static void main(String args[]) {
 	    System.getProperties().setProperty("proxySet", "true");
-		// //如果不设置，只要代理IP和代理端口正确,此项不设置也可以
+		//如果不设置，只要代理IP和代理端口正确,此项不设置也可以
 		System.getProperties().setProperty("http.proxyHost", "45.40.143.57");
 		System.getProperties().setProperty("http.proxyPort", "80");
 		System.out.println(getHtml("http://www.ip138.com/ip2city.asp")); // 判断代理是否设置成功
