@@ -1,0 +1,3959 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Ruby元编程 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/7056800/">
+<meta name="keywords" content="Ruby元编程,[意] Paolo Perrotta,华中科技大学出版社,2012-1-10,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书Ruby元编程 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/7056800/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/5ef2a22fba637133.css">
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">Ruby元编程</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img1.doubanio.com/lpic/s7014167.jpg" title="Ruby元编程">
+    <img src="https://img1.doubanio.com/lpic/s7014167.jpg" title="点击看大图" alt="Ruby元编程"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Paolo%20Perrotta">[意] Paolo Perrotta</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 华中科技大学出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">原作名:</span> Metaprogramming Ruby<br/>
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E5%BB%96%E5%BF%97%E5%88%9A">廖志刚</a>
+        
+           /
+        
+        <a class="" href="/search/%E9%99%88%E7%9D%BF%E6%9D%B0">陈睿杰</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2012-1-10<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 288<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 56.00元<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787560974583<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.4 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar45"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">478</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">77.2%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:15px"></div>
+
+            <span class="rating_per">19.0%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">3.3%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.2%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.2%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-7056800-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-7056800-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-7056800-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-7056800-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-7056800-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-7056800-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-7056800-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-7056800-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-7056800">
+        <a href="#" data-url="https://book.douban.com/subject/7056800/" data-desc="" data-title="书籍《Ruby元编程》 (来自豆瓣) " data-pic="https://img1.doubanio.com/lpic/s7014167.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_7056800"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>《Ruby元编程》以案例形式循序渐进讲解Ruby对象模型原理和高级应用技巧，堪称动态语言的设计模式。书中讲述的各种Ruby编程模式，完全可以应用于其他动态语言（甚至静态语言）。本书不仅适合Ruby程序员阅读，也适合对动态编程 语言和面向对象编程感兴趣的读者阅读。所有对程序设计理论感兴趣的人都能从中获益。Ruby之父松本行弘作序推荐。</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/7056800/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <div class="">
+            <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>Paolo Perrotta有超过10年的软件设计和开发经验，发表过上百篇技术文章。他用过Java、C++、C#编程，最后爱上了Ruby。他是较早接受敏捷方法的实践者，在Yoox（一家大型互联网时尚公司）从事管理敏捷团队的工作。他还在欧洲各国教授编程培训课。目前他和女友（还有一只猫）住在意大利，专心钻研Ruby。</p></div>
+
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_7056800_short">
+        目录<br/>
+        前言 vii<br/>
+        致谢 ix<br/>
+        引言 xi<br/>
+        “元”这个字眼 xii<br/>
+        关于本书 xix<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_7056800_short').hide();$('#dir_7056800_full').show();$.get('/j/subject/j_dir_count',{id:7056800});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_7056800_full" style="display:none">
+        目录<br/>
+        前言 vii<br/>
+        致谢 ix<br/>
+        引言 xi<br/>
+        “元”这个字眼 xii<br/>
+        关于本书 xix<br/>
+        关于你 xxii<br/>
+        第1部分 Ruby元编程 1<br/>
+        第1章 星期一：对象模型 3<br/>
+        1.1 跟Bill在一起的星期一 3<br/>
+        1.2 打开类 4<br/>
+        1.3 类的真相 9<br/>
+        1.4 小测验：缺失的连接线 21<br/>
+        1.5 调用一个方法时发生了什么 23<br/>
+        1.6 小测验：混乱的模块 32<br/>
+        1.7 对象模型小结 35<br/>
+        第2章 星期二：方法 37<br/>
+        2.1 一个重复代码的问题 38<br/>
+        2.2 动态方法 40<br/>
+        2.3 method_missing()方法 48<br/>
+        2.4 小测验：狩猎Bug 59<br/>
+        2.5 关于method_missing()方法的更多内容 61<br/>
+        第3章 星期三：代码块 69<br/>
+        3.1 怎样度过驼峰日 70<br/>
+        3.2 小测验：Ruby的#符号 71<br/>
+        3.3 闭包 74<br/>
+        3.4 instance_eval() 83<br/>
+        3.5 可调用对象 86<br/>
+        3.6 编写一种领域专属语言 94<br/>
+        3.7 小测验：更好的领域专属语言 96<br/>
+        第4章 星期四：类定义 101<br/>
+        4.1 类定义揭秘 102<br/>
+        4.2 小测验：Taboo类 109<br/>
+        4.3 单件方法 110<br/>
+        4.4 Eigenclass 116<br/>
+        4.5 小测验：模块的麻烦 129<br/>
+        4.6 别名 131<br/>
+        4.7 小测验：打破数学规律 135<br/>
+        第5章 星期五：编写代码的代码 139<br/>
+        5.1 带路 139<br/>
+        5.2 Kernel#eval 142<br/>
+        5.3 小测验：校验过的属性（第一步） 152<br/>
+        5.4 小测验：校验过的属性（第二步） 155<br/>
+        5.5 小测验：校验过的属性（第三步） 157<br/>
+        5.6 小测验：校验过的属性（第四步） 158<br/>
+        5.7 钩子方法 159<br/>
+        5.8 小测验：校验过的属性（第五步） 165<br/>
+        第6章 尾声 167<br/>
+        第2部分“Rails中的元编程” 169<br/>
+        第7章 ActiveRecord的设计 171<br/>
+        7.1 准备旅程 172<br/>
+        7.2 ActiveRecord的设计 174<br/>
+        7.3 经验教训 183<br/>
+        第8章 深入ActiveRecord 187<br/>
+        8.1 动态属性 187<br/>
+        8.2 动态查找器 195<br/>
+        8.3 经验教训 200<br/>
+        第9章 安全元编程 205<br/>
+        9.1 元编程的测试 205<br/>
+        9.2 化解猴子补丁 213<br/>
+        9.3 经验教训 218<br/>
+        第三部分 附录 221<br/>
+        附录A 常见惯用法 223<br/>
+        A.1 拟态方法 223<br/>
+        A.2 空指针保护 226<br/>
+        A.3 关于方法参数的技巧 227<br/>
+        A.4 Self Yield 231<br/>
+        A.5 Symbol#to_proc()方法 232<br/>
+        附录B 领域专属语言 235<br/>
+        B.1 关于领域专属语言 235<br/>
+        B.2 内部和外部领域专属语言 237<br/>
+        B.3 领域专属语言和元编程 238<br/>
+        附录C 法术手册 239<br/>
+        C.1 法术集 239<br/>
+        附录D 参考书目 251<br/>
+        索引 253<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_7056800_full').hide();$('#dir_7056800_short').show();void(0);">收起</a>)
+</div>
+
+    
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">&#34;Ruby元编程&#34;试读</span>
+      ······
+
+  </h2>
+
+
+<div class="indent">
+<p> </p>
+<ul class="col2-list clearfix">
+
+<li>
+    <a href="https://book.douban.com/reading/15985839/">序言</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/15986307/">前言</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/15987030/">第1章 星期一：对象模型</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/15987469/">第2章 星期二：方法</a>
+</li>
+</ul>
+<div align="right">  · · · · · ·    (<a href="https://book.douban.com/subject/7056800/reading/">查看全部试读</a>)</div>
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '7056800',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共134个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/Ruby">Ruby</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/元编程">元编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/动态语言">动态语言</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Programming">Programming</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/ruby">ruby</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/程序设计">程序设计</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Ruby元编程&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/387525/?dcs=subject-rec&amp;dcm=douban&amp;dct=7056800" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/387525.jpg?v=1395395731.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/387525/" target="_blank">黑客与画家</a>
+          </div>
+          <div class="price">
+              12.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/12188893/?dcs=subject-rec&amp;dcm=douban&amp;dct=7056800" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/12188893.jpg?v=1449212370.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/12188893/" target="_blank">理解Unix进程</a>
+          </div>
+          <div class="price">
+              18.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/14318435/?dcs=subject-rec&amp;dcm=douban&amp;dct=7056800" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/14318435.jpg?v=1444455068.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/14318435/" target="_blank">七周七语言：理解多种编程范型</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1893512/?dcs=subject-rec&amp;dcm=douban&amp;dct=7056800" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1893512.jpg?v=1395394095.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1893512/" target="_blank">松本行弘的程序世界</a>
+          </div>
+          <div class="price">
+              40.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/3208566/?dcs=subject-rec&amp;dcm=douban&amp;dct=7056800" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/3208566.jpg?v=1405578454.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/3208566/" target="_blank">代码的未来</a>
+          </div>
+          <div class="price">
+              40.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Ruby元编程&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3329887/" onclick="moreurl(this, {'total': 10, 'clicked': '3329887', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s11352335.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3329887/" onclick="moreurl(this, {'total': 10, 'clicked': '3329887', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            Ruby编程语言
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4821286/" onclick="moreurl(this, {'total': 10, 'clicked': '4821286', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27965182.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4821286/" onclick="moreurl(this, {'total': 10, 'clicked': '4821286', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            重构
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2032343/" onclick="moreurl(this, {'total': 10, 'clicked': '2032343', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s2370875.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2032343/" onclick="moreurl(this, {'total': 10, 'clicked': '2032343', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Programming Ruby中文版
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3338834/" onclick="moreurl(this, {'total': 10, 'clicked': '3338834', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3407353.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3338834/" onclick="moreurl(this, {'total': 10, 'clicked': '3338834', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            Ruby设计模式
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10813224/" onclick="moreurl(this, {'total': 10, 'clicked': '10813224', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27285655.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10813224/" onclick="moreurl(this, {'total': 10, 'clicked': '10813224', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            Ruby on Rails Tutorial
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10482195/" onclick="moreurl(this, {'total': 10, 'clicked': '10482195', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s7661036.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10482195/" onclick="moreurl(this, {'total': 10, 'clicked': '10482195', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            编程语言实现模式
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25795276/" onclick="moreurl(this, {'total': 10, 'clicked': '25795276', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27456784.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25795276/" onclick="moreurl(this, {'total': 10, 'clicked': '25795276', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            面向对象设计实践指南
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/21372236/" onclick="moreurl(this, {'total': 10, 'clicked': '21372236', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s25803852.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/21372236/" onclick="moreurl(this, {'total': 10, 'clicked': '21372236', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            R和Ruby数据分析之旅
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6052175/" onclick="moreurl(this, {'total': 10, 'clicked': '6052175', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s4683957.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6052175/" onclick="moreurl(this, {'total': 10, 'clicked': '6052175', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Eloquent Ruby
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/24298521/" onclick="moreurl(this, {'total': 10, 'clicked': '24298521', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s27193497.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/24298521/" onclick="moreurl(this, {'total': 10, 'clicked': '24298521', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            Programming Ruby 1.9 &amp; 2.0
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/7056800/comments/">全部 183 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="772484757">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-772484757" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-772484757" class="j a_show_login" data-cid="772484757">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/levizhang/">一瓢之饮</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2015-01-05</span>
+                </span>
+            </h3>
+            <p class="comment-content">牛逼……牛逼的书读起来总会让人理解更深刻</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="990237220">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-990237220" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-990237220" class="j a_show_login" data-cid="990237220">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/daorren/">Grubby</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2015-12-23</span>
+                </span>
+            </h3>
+            <p class="comment-content">牛逼。不需要很深厚的ruby基础就能读，甚至一部分还在补充你的基础知识。每次讲东西都有一个和别人聊天的语境，以及一个用于示例的代码情景，读起来非常舒服</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="723938137">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-723938137" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-723938137" class="j a_show_login" data-cid="723938137">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/zephyrisalive/">Z都懒得提曾经</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2013-09-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">第一次遇到可读性这么高的代码书。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="696852155">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-696852155" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-696852155" class="j a_show_login" data-cid="696852155">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/zztczcx/">大雨晴空</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2013-06-25</span>
+                </span>
+            </h3>
+            <p class="comment-content">对象模型是关键啊~~ 很多思想可以学习，不过就ruby或者rails而言这种灵活性感觉已经完全破坏了代码的结构性，给人的感觉就是太乱了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="524146628">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-524146628" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-524146628" class="j a_show_login" data-cid="524146628">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/ssword/">fleuria搬砖叔</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2012-07-12</span>
+                </span>
+            </h3>
+            <p class="comment-content">这书的最大意义该是给了这些tricks堂堂正正的名字</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1292491371">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1292491371" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1292491371" class="j a_show_login" data-cid="1292491371">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/78585523/">荷茗</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-25</span>
+                </span>
+            </h3>
+            <p class="comment-content">很赞
+</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1274911584">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1274911584" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1274911584" class="j a_show_login" data-cid="1274911584">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/130844140/">HyeKyoZ</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-11-22</span>
+                </span>
+            </h3>
+            <p class="comment-content">手不释卷。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1154306520">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1154306520" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1154306520" class="j a_show_login" data-cid="1154306520">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/130405833/">轻轻走</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-02-19</span>
+                </span>
+            </h3>
+            <p class="comment-content">很多好用的东西，关键是那种设计的思想吧！确实是个很灵活的东西</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1102421110">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1102421110" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1102421110" class="j a_show_login" data-cid="1102421110">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/69742405/">陈贤森</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-11-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">可以作为Ruby的补充，讲很多Ruby的“动态特性” 及一些元编程常用技法</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1088091753">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1088091753" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1088091753" class="j a_show_login" data-cid="1088091753">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/49925310/">weelion</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-09-22</span>
+                </span>
+            </h3>
+            <p class="comment-content">如果上一本书是 ruby 入门， 那么这本就是 ruby 的精华</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/7056800/comments/">更多短评 183 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            Ruby元编程的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 7056800;
+        window.join_label_text = '写书评参与';
+        window.write_icon = "//img3.doubanio.com/f/ithildin/c05246e1499f0d7c20526699a860b8faaeee62f3/pics/export/write@3x.png";
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/56f73d2e551c805c201537f1cf93fceeeb4b3b51/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/0d950975613fdc59495abe70a2920f09aa322476/js/export/subject_topics_compiled.js"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/7056800/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            Ruby元编程的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 14 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5309900">
+        <div class="main review-item" id="5309900">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/March_Liu/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1317818-4.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/March_Liu/" property="v:reviewer" class="name">膘</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-02-18" class="main-meta">2012-02-18 11:08:29</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5309900/">《Ruby 元编程》书评</a></h2>
+
+                <div id="review_5309900_short" class="review-short" data-rid="5309900">
+                    <div class="short-content">
+
+                        远超预期的惊喜 在出行前的一天拿到这本书，翻了几页，感觉不错，心里很有些纠结。要出远门的原因，衣物和工作设备之外的东西要尽量精简。 书籍方面反复挑拣，正在读和很想读的几本书，也都只好先放下，最后带上了这本新书和一本工作用书。  在飞机上拿起这本书后，一边读，一...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5309900-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5309900_full" class="hidden">
+                    <div id="review_5309900_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5309900" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5309900">
+                                70
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5309900" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5309900">
+                                2
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5309900/#comments" class="reply">11回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3011589">
+        <div class="main review-item" id="3011589">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/scriptfans/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1048872-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/scriptfans/" property="v:reviewer" class="name">琳琳的小狗</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-02-24" class="main-meta">2010-02-24 13:00:20</span>
+        
+
+            <span class="publisher right">
+            Pragmatic Bookshelf2010版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3011589/">ruby王国殿堂之路</a></h2>
+
+                <div id="review_3011589_short" class="review-short" data-rid="3011589">
+                    <div class="short-content">
+
+                        刚读完这本书，欣喜之情溢于言表。  薄薄的一本书，把ruby对象模型、以及围绕此核心而来的各种高级技巧都讲透了，原理讲了不说，还外带把现实中的应用也一并列举了出来，让你不懂都不行：）  我喜欢这本书，不管你是初级入门还是中高级ruby程序员，此书都必须一读！注意不是值...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3011589-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3011589_full" class="hidden">
+                    <div id="review_3011589_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3011589" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3011589">
+                                14
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3011589" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3011589">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3011589/#comments" class="reply">9回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6320130">
+        <div class="main review-item" id="6320130">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/woody1983/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u2529341-59.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/woody1983/" property="v:reviewer" class="name">黑涩布朗尼</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-10-09" class="main-meta">2013-10-09 15:28:28</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6320130/">自古华山一条路</a></h2>
+
+                <div id="review_6320130_short" class="review-short" data-rid="6320130">
+                    <div class="short-content">
+
+                        看了两遍以后 你会发现 看牛人的Code没那么难懂了~  这是最明显的体现  其实我建议的是一开始的时候 就一边学一边练习 任何一个看不懂的技术点 都不要放过 其实打开irb 沉下心 慢慢看 没有看不懂的章节。  补充一句：我上一次挑灯夜读 手不释卷的读一本书是2010年春夏交接的事...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6320130-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6320130_full" class="hidden">
+                    <div id="review_6320130_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6320130" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6320130">
+                                5
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6320130" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6320130">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6320130/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5258759">
+        <div class="main review-item" id="5258759">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/1364035/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/1364035/" property="v:reviewer" class="name">鹿鸣</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-01-07" class="main-meta">2012-01-07 12:04:42</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5258759/">学ruby的都应该看看此书</a></h2>
+
+                <div id="review_5258759_short" class="review-short" data-rid="5258759">
+                    <div class="short-content">
+
+                        此书不是基本入门书，但是想更好的应用ruby，在看完ruby基础后，应该看看此书，了解ruby真正的动态化威力。 现在感觉做DSL，最方便的就是ruby了，因为有很多内置的方法就很适合元编程。 前面两章，我看得这里的翻译，翻译的还不错，后面的就看网上的e文版，好在这本书的英文算...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5258759-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5258759_full" class="hidden">
+                    <div id="review_5258759_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5258759" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5258759">
+                                5
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5258759" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5258759">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5258759/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6462999">
+        <div class="main review-item" id="6462999">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/mewleo/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u41484354-8.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/mewleo/" property="v:reviewer" class="name">Apanda</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-12-16" class="main-meta">2013-12-16 00:54:47</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6462999/">不学元编程，不如用java</a></h2>
+
+                <div id="review_6462999_short" class="review-short" data-rid="6462999">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        在java的时代，因为不满面向类/对象的复杂机制，自己借鉴研究了对象装备模式，后来发现就是spring的原理。当时不知spring的情况下，还自己实现了利用运行时反射机制来动态的给对象设置空类，拼装方法共享实例对象属性，做出来虽然很欣慰，但是很难看，很慢，不可能到生产环境。...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6462999-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6462999_full" class="hidden">
+                    <div id="review_6462999_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6462999" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6462999">
+                                7
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6462999" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6462999">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6462999/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5362459">
+        <div class="main review-item" id="5362459">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/1898646/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1898646-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/1898646/" property="v:reviewer" class="name">烟火人间</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-03-27" class="main-meta">2012-03-27 08:48:29</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5362459/">根本没有什么元编程，只有编程而已</a></h2>
+
+                <div id="review_5362459_short" class="review-short" data-rid="5362459">
+                    <div class="short-content">
+
+                        读完这本书觉得，什么是元编程？就是一些更强大、更灵活的技巧的集合。  跟着书中的 Bill 大师去思考，试着解决每一个问题。你会发现这里所展示的方法、技巧，就恰好是解决问题最精巧、最舒服的方式。虽然这个过程会不断的让人豁然开朗和惊叹，但又觉得一切都好像是自然而然的...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5362459-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5362459_full" class="hidden">
+                    <div id="review_5362459_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5362459" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5362459">
+                                5
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5362459" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5362459">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5362459/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5338502">
+        <div class="main review-item" id="5338502">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/4193939/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u4193939-7.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/4193939/" property="v:reviewer" class="name">mftian</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2012-03-10" class="main-meta">2012-03-10 08:49:02</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5338502/">玄</a></h2>
+
+                <div id="review_5338502_short" class="review-short" data-rid="5338502">
+                    <div class="short-content">
+
+                        什么叫“元”编程？我的理解就是“编程的编程”。如果你觉得陌生，那么就想想有人第一次告诉你还存在“类型的类型”这个东西。  这本书讲的都是ruby的高级特性。在看之前我其实只有python的经验，对ruby并不熟悉，但我还是在这本书中看到了许多和python相通的东西。  在这本书...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5338502-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5338502_full" class="hidden">
+                    <div id="review_5338502_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5338502" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5338502">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5338502" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5338502">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5338502/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7297012">
+        <div class="main review-item" id="7297012">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/uttp/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/uttp/" property="v:reviewer" class="name">uttp</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-12-28" class="main-meta">2014-12-28 10:27:56</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7297012/">ruby必读书</a></h2>
+
+                <div id="review_7297012_short" class="review-short" data-rid="7297012">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                            最近由于项目的需要，会用到ruby写一些脚本，故打算学习这门动态编程语言。     以前没有用过纯动态语言来编程，用过java,c++,javascript。对动态语言的特性不熟悉，但是《ruby元编程》这本书讲解的每一个动态语言特性都能够看的懂。     《ruby元编程》这本书断断续续用了...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7297012-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7297012_full" class="hidden">
+                    <div id="review_7297012_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7297012" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7297012">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7297012" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7297012">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7297012/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="4864731">
+        <div class="main review-item" id="4864731">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/fuliangliang/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1973179-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/fuliangliang/" property="v:reviewer" class="name">fuliang</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2011-03-19" class="main-meta">2011-03-19 11:04:14</span>
+        
+
+            <span class="publisher right">
+            Pragmatic Bookshelf2010版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/4864731/">Ruby进阶好书</a></h2>
+
+                <div id="review_4864731_short" class="review-short" data-rid="4864731">
+                    <div class="short-content">
+
+                        很薄的一本，但是把Ruby的高级特性介绍的很透，并且附带了大量的例子和真实中的代码进行讲解，深入浅出。我在给公司做Ruby的技术分享的时候，多亏这本书，帮我将高级的这些特性，以更容易懂的方式表现出来，并吸引了一批人对Ruby这个Sexy的语言的关注。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-4864731-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_4864731_full" class="hidden">
+                    <div id="review_4864731_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="4864731" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-4864731">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="4864731" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-4864731">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/4864731/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7434610">
+        <div class="main review-item" id="7434610">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/83980434/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u83980434-10.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/83980434/" property="v:reviewer" class="name">FTAndy</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2015-04-05" class="main-meta">2015-04-05 11:38:43</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7434610/">直接看附录中的法术手册就好了</a></h2>
+
+                <div id="review_7434610_short" class="review-short" data-rid="7434610">
+                    <div class="short-content">
+
+                        想了解ruby元编程的话，先看法术手册。  假如有不懂的话再返回到书有关这部分内容看，效果拔群。  但也没人挡着你把书读完。  不过整本书读起来也很爽，用mentor的语气写，也是另外一种文体嘛。  期待第二版内容会更多。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7434610-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7434610_full" class="hidden">
+                    <div id="review_7434610_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7434610" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7434610">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7434610" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7434610">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7434610/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/4af8fbb8b481343a.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评14篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/7056800/annotation">共<span property="v:count">70</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="21000457">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/baiwuya/"><img src="https://img3.doubanio.com/icon/u3947621-133.jpg" alt="高等游民白乌鸦" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/21000457/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/21000457/" class="">共享作用域（shared Scope），使用Kernel.send :define_method</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/baiwuya/" class=" " title="高等游民白乌鸦">高等游民白乌鸦</a>
+                (谢谢你，欧芹)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="21000457">
+              <div class="short">
+                
+                  <span class="">def define_methods
+      shared = 0
+      Kernel.send :define_method, :counter do
+           shared
+      end
+
+      Kernel.send :define_method, :inc do |x|
+           shared += x
+      end
+  end
+
+define_methods
+ =&gt; #&lt;Proc:0x00007f8e7444dea0@(irb):44&gt; 
+
+counter
+ =&gt; 0 
+
+inc(4)
+ =&gt; 4 
+
+counter
+ =&gt; 4 
+
+在这里定义了两个内核方法(也可以叫全局方法？)：Kernel#count...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/21000457/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2012-09-10 16:18</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                def define_methods<div style="padding-bottom:1em;"></div>      shared = 0<div style="padding-bottom:1em;"></div>      Kernel.send :define_method, :counter do<div style="padding-bottom:1em;"></div>           shared<div style="padding-bottom:1em;"></div>      end<div style="padding-bottom:1em;"></div>      Kernel.send :define_method, :inc do |x|<div style="padding-bottom:1em;"></div>           shared += x<div style="padding-bottom:1em;"></div>      end<div style="padding-bottom:1em;"></div>  end<div style="padding-bottom:1em;"></div>define_methods<div style="padding-bottom:1em;"></div> =&gt; #&lt;Proc:0x00007f8e7444dea0@(irb):44&gt; <div style="padding-bottom:1em;"></div>counter<div style="padding-bottom:1em;"></div> =&gt; 0 <div style="padding-bottom:1em;"></div>inc(4)<div style="padding-bottom:1em;"></div> =&gt; 4 <div style="padding-bottom:1em;"></div>counter<div style="padding-bottom:1em;"></div> =&gt; 4 <div style="padding-bottom:1em;"></div>在这里定义了两个内核方法(也可以叫全局方法？)：Kernel#counter() 和 Kernel#inc()
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/21000457/#comments">1回应</a>&nbsp;&nbsp;
+                  2012-09-10 16:18
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="19110717">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/baiwuya/"><img src="https://img3.doubanio.com/icon/u3947621-133.jpg" alt="高等游民白乌鸦" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/19110717/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/19110717/" class="">第一章，对象模型</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/baiwuya/" class=" " title="高等游民白乌鸦">高等游民白乌鸦</a>
+                (谢谢你，欧芹)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="19110717">
+              <div class="short">
+                
+                  <span class="">1.2打开类
+“更好的方法应该是让字符串本身来做去掉标点和特殊字符的转换，只保留字母、数字和空格。而不是把工作交给一个方法”
+
+示例代码：
+<span class="code-holder">/代码内容已省略/</span>
+
+从某种意义上说，Ruby的class关键字更像是一个作用域操作符而不是类声明语句。（class是个常量，提供作用域来封装方法和变量）
+
+如果Array类中有个replace()方。在定义自己的replace()方法时，无意覆盖了原有的replace()方法...</span>
+                <p class="pl">
+                  <span class="">2012-06-20 22:22</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                1.2打开类<div style="padding-bottom:1em;"></div>“更好的方法应该是让字符串本身来做去掉标点和特殊字符的转换，只保留字母、数字和空格。而不是把工作交给一个方法”<div style="padding-bottom:1em;"></div>示例代码：
+<pre class="source true ruby">
+class AlphanumericString &lt; String
+        def to_alphanumeric
+                gsub /[^\w\s]/, ' '
+        end
+end
+
+AlphanumericString.new(&quot;gdfoi*%sd(A&amp;D121&quot;)
+</pre><div style="padding-bottom:1em;"></div>从某种意义上说，Ruby的class关键字更像是一个作用域操作符而不是类声明语句。（class是个常量，提供作用域来封装方法和变量）<div style="padding-bottom:1em;"></div>如果Array类中有个replace()方。在定义自己的replace()方法时，无意覆盖了原有的replace()方法，这样的bug被称为猴子补丁。<div style="padding-bottom:1em;"></div>1.5 调用一个方法时发生了什么<div style="padding-bottom:1em;"></div>1，找到这个方法。这个过程被称为方法查找<div style="padding-bottom:1em;"></div>2，执行这个方法，Ruby需要self。<div style="padding-bottom:1em;"></div>祖先链条：<div style="padding-bottom:1em;"></div>通过调用ancesotrs<div style="padding-bottom:1em;"></div>MySubclass.ancestors<div style="padding-bottom:1em;"></div># =&gt; [MySubclass, MyClass, Object, Kernel, BasicObject]<div style="padding-bottom:1em;"></div>当一个Class include 一个Module时，Ruby创建了一个封装该Module的匿名类，并置于Class上方。<div style="padding-bottom:1em;"></div>RubyGems：<div style="padding-bottom:1em;"></div>module Kernel<div style="padding-bottom:1em;"></div>     def gem(gem_name, version_reqirements)<div style="padding-bottom:1em;"></div>       #......<div style="padding-bottom:1em;"></div>private method only called for class innerly. so you can't use C.new.private_method<div style="padding-bottom:1em;"></div>1.6 small test<div style="padding-bottom:1em;"></div>example codes:<div style="padding-bottom:1em;"></div>class Book<div style="padding-bottom:1em;"></div>      include Document<div style="padding-bottom:1em;"></div>      include Printable<div style="padding-bottom:1em;"></div>   #.........<div style="padding-bottom:1em;"></div>end<div style="padding-bottom:1em;"></div>会首先生成一个匿名类包含Document和Book，继承层级在Book上<div style="padding-bottom:1em;"></div>再生成一个匿名类包含Printable和Book，继承层级在Book上，在Document匿名类下面。类似一个底部永远是class的反向的栈。<div style="padding-bottom:1em;"></div>所以Printable的方法会覆盖Document的同名方法。所以后include的方法覆盖先include的。<div style="padding-bottom:1em;"></div>1.7 对象模型小结<div style="padding-bottom:1em;"></div>1）实例的方法存在于实例所属类中，从类的角度看，他们叫实例方法。因为只能被实例调用。<div style="padding-bottom:1em;"></div>2）当调用一个方法时，Ruby首先会像右边一步来到接受者所属的类，然后一直向上查找祖先链，知道找到该方法，或者到达链顶端并报错。<div style="padding-bottom:1em;"></div>3）每当类包含一个module时，module会被插入到祖先链中，位置在该类正上方。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/19110717/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-20 22:22
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17617028">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/yuan_/"><img src="https://img3.doubanio.com/icon/u41693419-82.jpg" alt="yuan" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17617028/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17617028/" class="">第18页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/yuan_/" class=" " title="yuan">yuan</a>
+                (自己是一切问题的答案)
+              
+            </p>
+            <div class="reading-note" data-cid="17617028">
+              <div class="short">
+                
+                  <span class="">Module#constants方法返回当前范围内的常量；
+Module.constants方法返回当前程序中所有顶级常量；
+
+使用load() 方法有一个副作用。motd.rb 文件很可能定义了变量和类。尽管变量在加载完成后会落在当前作用域之外，但常量不会。这样，motd.rb 可能会通过它的常量（尤其是类名）污染当前程序的命名空间。
+
+可以通过使用第二个可选参数来强制其常量仅在自身范围内有效：load('motd.rb', true) 
+
+通过这种方式加载的文件，Ruby ...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/17617028/">(<span class="">4回应</span>)</a>
+                <p class="pl">
+                  <span class="">2012-04-03 22:37</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Module#constants方法返回当前范围内的常量；
+Module.constants方法返回当前程序中所有顶级常量；
+</q></blockquote>
+<blockquote><q>使用load() 方法有一个副作用。motd.rb 文件很可能定义了变量和类。尽管变量在加载完成后会落在当前作用域之外，但常量不会。这样，motd.rb 可能会通过它的常量（尤其是类名）污染当前程序的命名空间。
+
+可以通过使用第二个可选参数来强制其常量仅在自身范围内有效：load('motd.rb', true) 
+
+通过这种方式加载的文件，Ruby 会创建一个匿名模块，使用它作为命名空间来容纳motd.rb 中定义的所有常量，加载完成后，该模块会被销毁。
+
+require() 方法与load() 方法颇为相似，但是它的目的不同。通过load() 方法可以执行代码，而require() 则是用来导入（import）类库。这就是require() 方法没有第二个可选参数的原因。在这些类库中的类名通常是你导入这些库时所希望得到的，因些没有理由在加载后销毁它们。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17617028/#comments">4回应</a>&nbsp;&nbsp;
+                  2012-04-03 22:37
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38931375">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/yuan_/"><img src="https://img3.doubanio.com/icon/u41693419-82.jpg" alt="yuan" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38931375/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38931375/" class="">方法查找</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/yuan_/" class=" " title="yuan">yuan</a>
+                (自己是一切问题的答案)
+              
+            </p>
+            <div class="reading-note" data-cid="38931375">
+              <div class="short">
+                
+                  <span class=""><span class="code-holder">/代码内容已省略/</span>
+
+
+BasicObject 还真是干净。
+
+
+
+
+<span class="code-holder">/代码内容已省略/</span>
+
+include 和 prepend 的区别：方法查找的顺序不一样（Ruby 为 module 创建的匿名类在祖先链中的位置不一样）
+</span>
+                <p class="pl">
+                  <span class="">2016-09-04 11:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <pre class="source true ruby">
+Class.instance_methods == BasicObject.methods # true
+
+BasicObject.instance_methods
+# =&gt; [:==, :equal?, :!, :!=, :instance_eval, :instance_exec, :__send__, :__id__]
+</pre><div style="padding-bottom:1em;"></div>BasicObject 还真是干净。<div style="padding-bottom:1em;"></div><pre class="source true ruby">
+module M; end
+
+class C
+  include M
+end
+
+class C2
+  prepend M
+end
+
+C.ancestors
+#=&gt; [C, M, Object, Kernel, BasicObject]
+C2.ancestors
+#=&gt; [M, C2, Object, Kernel, BasicObject]
+</pre><div style="padding-bottom:1em;"></div>include 和 prepend 的区别：方法查找的顺序不一样（Ruby 为 module 创建的匿名类在祖先链中的位置不一样）
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38931375/#comments">回应</a>&nbsp;&nbsp;
+                  2016-09-04 11:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="18612497">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/summerlight/"><img src="https://img3.doubanio.com/icon/u9695698-6.jpg" alt="桃子烂掉了" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18612497/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18612497/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/summerlight/" class=" " title="桃子烂掉了">桃子烂掉了</a>
+              
+            </p>
+            <div class="reading-note" data-cid="18612497">
+              <div class="short">
+                
+                  <span class="">mark.</span>
+                <p class="pl">
+                  <span class="">2012-05-31 01:12</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                mark.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18612497/#comments">回应</a>&nbsp;&nbsp;
+                  2012-05-31 01:12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="29129598">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/1639522/"><img src="https://img3.doubanio.com/icon/u1639522-2.jpg" alt="orcl_zhang" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/29129598/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/29129598/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/1639522/" class=" " title="orcl_zhang">orcl_zhang</a>
+                (槑)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="29129598">
+              <div class="short">
+                
+                  <span class="">应该读下ActvieRecord的源代码。</span>
+                <p class="pl">
+                  <span class="">2013-10-28 16:33</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                应该读下ActvieRecord的源代码。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/29129598/#comments">回应</a>&nbsp;&nbsp;
+                  2013-10-28 16:33
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27600948">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/61306453/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="yangcs2009" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27600948/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27600948/" class="">第2页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/61306453/" class=" " title="yangcs2009">yangcs2009</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="27600948">
+              <div class="short">
+                
+                  <span class="">星期二不好懂，大体读了一遍，跳过看星期三了</span>
+                <p class="pl">
+                  <span class="">2013-07-15 17:04</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                星期二不好懂，大体读了一遍，跳过看星期三了
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27600948/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-15 17:04
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="20243673">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/1234289/"><img src="https://img3.doubanio.com/icon/u1234289-2.jpg" alt="RoleA" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/20243673/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/20243673/" class="">第12页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/1234289/" class=" " title="RoleA">RoleA</a>
+              
+            </p>
+            <div class="reading-note" data-cid="20243673">
+              <div class="short">
+                
+                  <span class="">Ghost Towns and Marketplaces</span>
+                <p class="pl">
+                  <span class="">2012-08-09 15:06</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                Ghost Towns and Marketplaces
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/20243673/#comments">回应</a>&nbsp;&nbsp;
+                  2012-08-09 15:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="38931375">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/yuan_/"><img src="https://img3.doubanio.com/icon/u41693419-82.jpg" alt="yuan" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38931375/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38931375/" class="">方法查找</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/yuan_/" class=" " title="yuan">yuan</a>
+                (自己是一切问题的答案)
+              
+            </p>
+            <div class="reading-note" data-cid="38931375">
+              <div class="short">
+                
+                  <span class=""><span class="code-holder">/代码内容已省略/</span>
+
+
+BasicObject 还真是干净。
+
+
+
+
+<span class="code-holder">/代码内容已省略/</span>
+
+include 和 prepend 的区别：方法查找的顺序不一样（Ruby 为 module 创建的匿名类在祖先链中的位置不一样）
+</span>
+                <p class="pl">
+                  <span class="">2016-09-04 11:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <pre class="source true ruby">
+Class.instance_methods == BasicObject.methods # true
+
+BasicObject.instance_methods
+# =&gt; [:==, :equal?, :!, :!=, :instance_eval, :instance_exec, :__send__, :__id__]
+</pre><div style="padding-bottom:1em;"></div>BasicObject 还真是干净。<div style="padding-bottom:1em;"></div><pre class="source true ruby">
+module M; end
+
+class C
+  include M
+end
+
+class C2
+  prepend M
+end
+
+C.ancestors
+#=&gt; [C, M, Object, Kernel, BasicObject]
+C2.ancestors
+#=&gt; [M, C2, Object, Kernel, BasicObject]
+</pre><div style="padding-bottom:1em;"></div>include 和 prepend 的区别：方法查找的顺序不一样（Ruby 为 module 创建的匿名类在祖先链中的位置不一样）
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38931375/#comments">回应</a>&nbsp;&nbsp;
+                  2016-09-04 11:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="32185287">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/lidashuang/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/32185287/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/32185287/" class="">第102页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/lidashuang/" class=" " title="[已注销]">[已注销]</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="32185287">
+              <div class="short">
+                
+                  <span class="">可以在类定义中放入任何代码
+
+类定义返回最后一条语句的值
+
+
+class_eval 不需要class关键字就可以修改当前类
+</span>
+                <p class="pl">
+                  <span class="">2014-07-11 15:48</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                可以在类定义中放入任何代码<div style="padding-bottom:1em;"></div>类定义返回最后一条语句的值<div style="padding-bottom:1em;"></div>class_eval 不需要class关键字就可以修改当前类
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/32185287/#comments">回应</a>&nbsp;&nbsp;
+                  2014-07-11 15:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31742983">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/lastmayday/"><img src="https://img3.doubanio.com/icon/u44086637-42.jpg" alt="lastmayday" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31742983/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31742983/" class="">第82页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/lastmayday/" class=" " title="lastmayday">lastmayday</a>
+                (鸡排饭加个蛋)
+              
+            </p>
+            <div class="reading-note" data-cid="31742983">
+              <div class="short">
+                
+                  <span class="">如果要让一个闭包获取当前的绑定, 并把这个闭包传递给改方法. 你可以使用 Class.new() 方法代替 class, 使用 Module.new 代替 module , 以及使用 Module#define_method() 代替 def.</span>
+                <p class="pl">
+                  <span class="">2014-05-27 12:17</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                如果要让一个闭包获取当前的绑定, 并把这个闭包传递给改方法. 你可以使用 Class.new() 方法代替 class, 使用 Module.new 代替 module , 以及使用 Module#define_method() 代替 def.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31742983/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-27 12:17
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31742968">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/lastmayday/"><img src="https://img3.doubanio.com/icon/u44086637-42.jpg" alt="lastmayday" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31742968/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31742968/" class="">第78页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/lastmayday/" class=" " title="lastmayday">lastmayday</a>
+                (鸡排饭加个蛋)
+              
+            </p>
+            <div class="reading-note" data-cid="31742968">
+              <div class="short">
+                
+                  <span class="">程序会在三个地方关闭前一个作用域,  同时打开一个新的作用域: 类定义, 模块定义, 方法</span>
+                <p class="pl">
+                  <span class="">2014-05-27 12:10</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                程序会在三个地方关闭前一个作用域,  同时打开一个新的作用域: 类定义, 模块定义, 方法
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31742968/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-27 12:10
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/7056800/annotation">更多读书笔记（共70篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/7056800/discussion/56243910/" title="原书第二版草稿已经完成Part 1" class="">原书第二版草稿已经完成Part 1</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/scriptfans/">琳琳的小狗</a></td>
+            <td class="pl"><span class="">7 回应</span></td>
+            <td class="pl"><span class="">2014-07-26</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/7056800/discussion/53529271/" title="第二版快出了" class="">第二版快出了</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/scriptfans/">琳琳的小狗</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2013-06-04</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/7056800/discussion/48818613/" title="代码排版问题" class="">代码排版问题</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/2076835/">春天原野上的小熊</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2012-09-14</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/7056800/discussion/46454960/" title="《Ruby元编程》勘误表" class="">《Ruby元编程》勘误表</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/xdx/">徐定翔</a></td>
+            <td class="pl"><span class="">4 回应</span></td>
+            <td class="pl"><span class="">2012-08-28</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/7056800/discussion/45378795/" title="好像是一处笔误" class="">好像是一处笔误</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/yuan_/">yuan</a></td>
+            <td class="pl"><span class="">3 回应</span></td>
+            <td class="pl"><span class="">2012-04-13</span></td>
+        </tr>
+</table>
+
+
+            <p class="pl" align="right">&gt;
+                <a href="https://book.douban.com/subject/7056800/discussion/">浏览更多话题</a>
+            </p>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+    
+  
+  
+  <div class="gray_ad">
+    
+  
+
+  <h2>
+    <span class="">其他版本在豆瓣书店有售</span>
+      ······
+
+  </h2>
+
+
+    <div class="market-banner">
+          <a class="publish" href="https://book.douban.com/subject/26575429/" target="_blank">
+            华中科技大学出版社版
+          </a><br/>
+      <span class="title">
+        纸质版&nbsp;
+      </span>
+      <span class="price"> 55.00元</span>
+        <span class="price"> <del>68.80元</del></span>
+      <span class="promotion-info">满48元包邮</span>
+      <span class="actions">
+        <a class="buy-btn buy" target="_blank" href="https://market.douban.com/cart/checkout/?sku_id=170013&utm_campaign=douban_book_subject_buy_btn&utm_source=douban&utm_medium=pc_web">
+          去购买
+        </a>
+          <a class="j a_show_login buy-btn cart" href="javascript:;">加入购物车</a>
+      </span>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed" class="no-border">
+        
+  
+
+  <h2>
+    <span class="">其他版本有售</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline">
+            
+              <li class="">
+                  
+                  <a target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=25500&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_19343564762890178%2F%3Fasin%3D1934356476%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3D1934356476%26linkCode%3Ddf0&amp;srcsubj=7056800&amp;type=bkbuy&amp;subject=4086938">
+                    亚马逊
+                  </a>
+                  <a class="buylink-price" target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=25500&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_19343564762890178%2F%3Fasin%3D1934356476%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3D1934356476%26linkCode%3Ddf0&amp;srcsubj=7056800&amp;type=bkbuy&amp;subject=4086938">
+                    <span class=""> 255.00 元</span>
+                  </a>
+                  <p class="publish">
+                    <a href="https://book.douban.com/subject/4086938/" onclick="moreurl(this,{buylink:'other'})"
+                    class=" ">Pragmatic Bookshelf版</a>
+                  </p>
+                </li>
+            
+              <li class="">
+                  
+                  <a target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=5370&amp;pos=1&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F6972165.htm&amp;link2key=dfbd070e6c&amp;srcsubj=7056800&amp;type=bkbuy&amp;subject=26575429">
+                    中国图书网
+                  </a>
+                  <a class="buylink-price" target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=5370&amp;pos=1&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F6972165.htm&amp;link2key=dfbd070e6c&amp;srcsubj=7056800&amp;type=bkbuy&amp;subject=26575429">
+                    <span class=""> 53.70 元</span>
+                  </a>
+                  <p class="publish">
+                    <a href="https://book.douban.com/subject/26575429/" onclick="moreurl(this,{buylink:'other'})"
+                    class=" ">华中科技大学出版社版</a>
+                  </p>
+                </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D9787560974583&amp;subject=7560974589&amp;type=borrow&amp;library=10001&amp;link2key=dfbd070e6c" target="_blank">上海图书馆(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac.gzlib.gov.cn%2Fopac%2Fsearch%3Frows%3D10%26curlibcode%3DGT%26hasholding%3D1%26searchWay0%3Dmarc%26q0%3D%26logical0%3DAND%26q%3D9787560974583%26searchWay%3Disbn%26scWay%3Ddim%26searchSource%3Dreader&amp;subject=7560974589&amp;type=borrow&amp;library=10022&amp;link2key=dfbd070e6c" target="_blank">广州图书馆(2)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Flaohu.sx.zj.cn%2Fweb%2Fwebsearch.asp%3FWCI%3DBookListH%26taab%3D7560974589&amp;subject=7560974589&amp;type=borrow&amp;library=10025&amp;link2key=dfbd070e6c" target="_blank">绍兴图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1027565">全部4</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/4086938/">Pragmatic Bookshelf版</a>
+          2010-2-22 / 145人读过 / 有售
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/25845930/">Pragmatic Bookshelf版</a>
+          2014-6-15 / 21人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/26575429/">华中科技大学出版社版</a>
+          2015-8-1 / 66人读过 / 有售
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/7056800/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/1222802/" target="_blank">Ruby与Rails开发书单</a>
+                <span class="pl">(阳志平)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/20172127/" target="_blank">闲着没事读读书（四）</a>
+                <span class="pl">(鹿小羽)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/277250/" target="_blank">软件 IT 经典</a>
+                <span class="pl">(uncutstone)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1698465/" target="_blank">R &amp; Python &amp; Ruby</a>
+                <span class="pl">(神雕侠觅侣)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/649921/" target="_blank">最近新书2（自用）</a>
+                <span class="pl">(cruyff)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/149862153/"><img src="https://img3.doubanio.com/icon/u149862153-4.jpg" class="pil" alt="loasd" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/149862153/">loasd</a><br/>
+      <div class="pl ll">          1月5日          在读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/83782864/"><img src="https://img1.doubanio.com/icon/u83782864-9.jpg" class="pil" alt="raidou" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/83782864/">raidou</a><br/>
+      <div class="pl ll">          2017年12月30日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/tuoxie007/"><img src="https://img1.doubanio.com/icon/u16194561-9.jpg" class="pil" alt="拖鞋" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/tuoxie007/">拖鞋</a><br/>
+      <div class="pl ll">          2017年12月29日          读过      </div>
+
+        <span class="allstar50" title="力荐"></span>
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/78585523/"><img src="https://img3.doubanio.com/icon/u78585523-4.jpg" class="pil" alt="荷茗" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/78585523/">荷茗</a><br/>
+      <div class="pl ll">          2017年12月25日          读过      </div>
+
+        <span class="allstar40" title="推荐"></span>
+      <br/>
+
+
+          <span class="">很赞
+</span> <br/>
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/7056800/doings">204人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/7056800/collections">491人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/7056800/wishes">1364人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/7056800/offers">3本二手书欲转让</a>
+          <span class="">
+            (13.00
+                至 30.00元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有1364人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于Ruby元编程的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/7056800/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'j0UJoa-ShTY',
+            criteria = '7:Ruby|7:元编程|7:编程|7:动态语言|7:计算机|7:Programming|7:ruby|7:程序设计|7:设计模式|7:对象模型|3:/subject/7056800/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar7c-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

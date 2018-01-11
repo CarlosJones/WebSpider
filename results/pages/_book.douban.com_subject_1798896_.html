@@ -1,0 +1,3770 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>The Definitive Guide to Django (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/1798896/">
+<meta name="keywords" content="The Definitive Guide to Django,Adrian Holovaty,Jacob Kaplan-Moss,Apress,2007-12-06,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书The Definitive Guide to Django 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/1798896/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">The Definitive Guide to Django</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s3021613.jpg" title="The Definitive Guide to Django">
+    <img src="https://img3.doubanio.com/lpic/s3021613.jpg" title="点击看大图" alt="The Definitive Guide to Django"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Adrian%20Holovaty">Adrian Holovaty</a>
+        
+           /
+        
+        <a class="" href="/search/Jacob%20Kaplan-Moss">Jacob Kaplan-Moss</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> Apress<br/>
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">副标题:</span> Web Development Done Right<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2007-12-06<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 447<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> CAD 45.14<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> Paperback<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9781590597255<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 8.6 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar45"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">159</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:54px"></div>
+
+            <span class="rating_per">40.3%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">47.2%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:16px"></div>
+
+            <span class="rating_per">11.9%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.6%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1798896-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1798896-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1798896-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1798896-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1798896-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1798896-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1798896-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1798896-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-1798896">
+        <a href="#" data-url="https://book.douban.com/subject/1798896/" data-desc="" data-title="书籍《The Definitive Guide to Django》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s3021613.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_1798896"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>Django, the Python-based equivalent to the Ruby on Rails web development framework, is presently one of the hottest topics in web development today. In The Definitive Guide to Django: Web Development Done Right, Adrian Holovaty, one of Django&#39;s creators, and Django lead developer Jacob Kaplan-Moss show you how they use this framework to create award-winning web sites. Over the ...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>Django, the Python-based equivalent to the Ruby on Rails web development framework, is presently one of the hottest topics in web development today. In The Definitive Guide to Django: Web Development Done Right, Adrian Holovaty, one of Django&#39;s creators, and Django lead developer Jacob Kaplan-Moss show you how they use this framework to create award-winning web sites. Over the course of three parts, they guide you through the creation of a web application reminiscent of chicagocrime.org.</p>    <p>The first part of the book introduces Django fundamentals like installation and configuration. You&#39;ll learn about creating the components that power a Django-driven web site. The second part delves into the more sophisticated features of Django, like outputting non-HTML content (such as RSS feeds and PDFs), plus caching and user management. The third part serves as a detailed reference to Django&#39;s many configuration options and commands. The book even includes seven appendixes for looking up configurations options and commands. In all, this book provides the ultimate tutorial and reference to the popular Django framework.</p>    <p>http://www.djangobook.com/</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/1798896/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '1798896',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共44个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/django">django</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/python">python</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Web">Web</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Web框架">Web框架</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/programming">programming</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Apress">Apress</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;The Definitive Guide to Django&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1499455/?dcs=subject-rec&amp;dcm=douban&amp;dct=1798896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1499455.jpg?v=1395393904.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1499455/" target="_blank">Python源码剖析</a>
+          </div>
+          <div class="price">
+              38.39元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=1798896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/198648.jpg?v=1395393782.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/237278/?dcs=subject-rec&amp;dcm=douban&amp;dct=1798896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/237278.jpg?v=1395395954.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/237278/" target="_blank">思考的乐趣</a>
+          </div>
+          <div class="price">
+              18.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/500486/?dcs=subject-rec&amp;dcm=douban&amp;dct=1798896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/500486.jpg?v=1395393506.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/500486/" target="_blank">打造Facebook</a>
+          </div>
+          <div class="price">
+              15.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1531222/?dcs=subject-rec&amp;dcm=douban&amp;dct=1798896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1531222.jpg?v=1395394360.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1531222/" target="_blank">MacTalk·人生元编程</a>
+          </div>
+          <div class="price">
+              2.99元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;The Definitive Guide to Django&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2349542/" onclick="moreurl(this, {'total': 10, 'clicked': '2349542', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s8365689.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2349542/" onclick="moreurl(this, {'total': 10, 'clicked': '2349542', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            Practical Django Projects
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3086812/" onclick="moreurl(this, {'total': 10, 'clicked': '3086812', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s4244189.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3086812/" onclick="moreurl(this, {'total': 10, 'clicked': '3086812', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            Pro Django
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3285148/" onclick="moreurl(this, {'total': 10, 'clicked': '3285148', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s3345897.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3285148/" onclick="moreurl(this, {'total': 10, 'clicked': '3285148', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Expert Python Programming
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3334666/" onclick="moreurl(this, {'total': 10, 'clicked': '3334666', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3402605.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3334666/" onclick="moreurl(this, {'total': 10, 'clicked': '3334666', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            Django 1.0 Template Development
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1418172/" onclick="moreurl(this, {'total': 10, 'clicked': '1418172', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4594606.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1418172/" onclick="moreurl(this, {'total': 10, 'clicked': '1418172', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            Python Cookbook
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1440658/" onclick="moreurl(this, {'total': 10, 'clicked': '1440658', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29631790.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1440658/" onclick="moreurl(this, {'total': 10, 'clicked': '1440658', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Dive Into Python
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1915868/" onclick="moreurl(this, {'total': 10, 'clicked': '1915868', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s2396946.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1915868/" onclick="moreurl(this, {'total': 10, 'clicked': '1915868', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            Python编程（第三版·英文影印版...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2152386/" onclick="moreurl(this, {'total': 10, 'clicked': '2152386', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s2604186.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2152386/" onclick="moreurl(this, {'total': 10, 'clicked': '2152386', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            Python网络编程基础
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3142908/" onclick="moreurl(this, {'total': 10, 'clicked': '3142908', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4251645.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3142908/" onclick="moreurl(this, {'total': 10, 'clicked': '3142908', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Python Tutorial
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4156701/" onclick="moreurl(this, {'total': 10, 'clicked': '4156701', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s11147669.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4156701/" onclick="moreurl(this, {'total': 10, 'clicked': '4156701', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            97 Things Every Programmer Shou...
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1798896/comments/">全部 30 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="103895058">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-103895058" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-103895058" class="j a_show_login" data-cid="103895058">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/linxh/">Linxh</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2009-03-15</span>
+                </span>
+            </h3>
+            <p class="comment-content">看来Django是个不错的选择，先简单了解一下，需要的时候在详细参考</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="658873653">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-658873653" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-658873653" class="j a_show_login" data-cid="658873653">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/2222740/">我就改个名字</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2013-09-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">objects.all()  book_set 。。。。太奇怪了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="635613915">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-635613915" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-635613915" class="j a_show_login" data-cid="635613915">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/slw4qd/">孙立文</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2014-01-02</span>
+                </span>
+            </h3>
+            <p class="comment-content">有点老，看官方文档是王道</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="368810146">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-368810146" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-368810146" class="j a_show_login" data-cid="368810146">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/iburu/">布鲁A夢</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2011-03-22</span>
+                </span>
+            </h3>
+            <p class="comment-content">和django的官方文档结合看. what&#39;s the next?</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="170909263">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-170909263" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-170909263" class="j a_show_login" data-cid="170909263">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/fks1945/">fer范特香</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2010-03-04</span>
+                </span>
+            </h3>
+            <p class="comment-content">没读完</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="874827176">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-874827176" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-874827176" class="j a_show_login" data-cid="874827176">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/49667917/">冷空气</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2014-12-25</span>
+                </span>
+            </h3>
+            <p class="comment-content">读过中文版本</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="792437310">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-792437310" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-792437310" class="j a_show_login" data-cid="792437310">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/66405443/">一骑绝尘</a>
+                    <span>2014-03-31</span>
+                </span>
+            </h3>
+            <p class="comment-content">关于django的极好的书， 可惜又是没有用来做出像样的东西。我这是怎么了啊！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="779156552">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-779156552" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-779156552" class="j a_show_login" data-cid="779156552">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/Greenwicher/">Greenwicher</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2014-03-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">看了最核心的第一部分，不到一周时间利用django+bootstrap3+xampp就搭建了一个很像样的网站。果然适合Lean Startup，强烈推荐！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="717404463">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-717404463" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-717404463" class="j a_show_login" data-cid="717404463">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/lijsh/">望春风</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2013-08-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">还是官方文档比较李菊福</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="687227593">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-687227593" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-687227593" class="j a_show_login" data-cid="687227593">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/63065759/">仙道菜</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2013-05-31</span>
+                </span>
+            </h3>
+            <p class="comment-content">讲的挺不错的，django 的资料真是不多啊。。。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/1798896/comments/">更多短评 30 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            The Definitive Guide to Django的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 1798896;
+        window.join_label_text = '写书评参与';
+        window.write_icon = "//img3.doubanio.com/f/ithildin/c05246e1499f0d7c20526699a860b8faaeee62f3/pics/export/write@3x.png";
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/56f73d2e551c805c201537f1cf93fceeeb4b3b51/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/0d950975613fdc59495abe70a2920f09aa322476/js/export/subject_topics_compiled.js"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/1798896/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            The Definitive Guide to Django的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 9 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3077237">
+        <div class="main review-item" id="3077237">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/lqik2004/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2657158-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/lqik2004/" property="v:reviewer" class="name">res0w</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-03-14" class="main-meta">2010-03-14 17:59:16</span>
+        
+
+            <span class="publisher right">
+            Apress2009版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3077237/">可以去看第二版</a></h2>
+
+                <div id="review_3077237_short" class="review-short" data-rid="3077237">
+                    <div class="short-content">
+
+                        现在的第二版还有出实体书，但是在作者的网站上已经有一部分了  http://www.djangobook.com/en/2.0/  而且现在还有中文版也在进行翻译，完成度很不错：  http://djangobook.py3k.cn/2.0/  总之，这是一本除了官方guide之外的一本好书，也几乎是唯一的选择，同时还有免费的中英...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3077237-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3077237_full" class="hidden">
+                    <div id="review_3077237_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3077237" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3077237">
+                                14
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3077237" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3077237">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3077237/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5067759">
+        <div class="main review-item" id="5067759">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/kqingchao/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u35370427-8.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/kqingchao/" property="v:reviewer" class="name">孔明</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2011-08-18" class="main-meta">2011-08-18 10:56:26</span>
+        
+
+            <span class="publisher right">
+            Apress2009版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5067759/">一个星期搞定Django</a></h2>
+
+                <div id="review_5067759_short" class="review-short" data-rid="5067759">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        确定这个标题权当是“应景”。(Sheldon：sarcasm? Me：Yes！)我的确是花了不到一星期看完了这本书（中文电子版），但是对于很多东西也只是个印象，只能算作是入门，还远远不能说“搞定”，最起码要经受一下实际的考验。 如何精通某物呢？曾经有个“一万个小时天才理论”，看这...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5067759-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5067759_full" class="hidden">
+                    <div id="review_5067759_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5067759" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5067759">
+                                9
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5067759" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5067759">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5067759/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="1288506">
+        <div class="main review-item" id="1288506">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/metac/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1142600-1.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/metac/" property="v:reviewer" class="name">元创</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2008-01-24" class="main-meta">2008-01-24 00:00:12</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/1288506/">这是一本正在写的书</a></h2>
+
+                <div id="review_1288506_short" class="review-short" data-rid="1288506">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        无论好坏，它目前是最权威的。所以，不用评价好坏，因为基本上是唯一的选择。所以好不好我都要力挺。  其实网上以前有习题的版本我更喜欢。  我不由自主的把Django与rails比较。两种个性鲜明的框架。但我现在更喜欢 Django一些：No magic。这样，学习Django是学习开发Web frame...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-1288506-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_1288506_full" class="hidden">
+                    <div id="review_1288506_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="1288506" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-1288506">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="1288506" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-1288506">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/1288506/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="4920782">
+        <div class="main review-item" id="4920782">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/wyhpf/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u45970697-6.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/wyhpf/" property="v:reviewer" class="name">小夫</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2011-04-24" class="main-meta">2011-04-24 18:20:50</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/4920782/">这里有翻译的中文版，翻译得很好</a></h2>
+
+                <div id="review_4920782_short" class="review-short" data-rid="4920782">
+                    <div class="short-content">
+
+                        http://djangobook.py3k.cn/  书也不错，django好东西 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了
+
+                        &nbsp;(<a href="javascript:;" id="toggle-4920782-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_4920782_full" class="hidden">
+                    <div id="review_4920782_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="4920782" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-4920782">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="4920782" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-4920782">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/4920782/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5881052">
+        <div class="main review-item" id="5881052">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/luoskdev/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/luoskdev/" property="v:reviewer" class="name">luoskdev</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2013-04-19" class="main-meta">2013-04-19 14:17:07</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5881052/">一本非常好的Django入门级书籍</a></h2>
+
+                <div id="review_5881052_short" class="review-short" data-rid="5881052">
+                    <div class="short-content">
+
+                        从前天开始看的这本书，一开始对Django一点都没有接触过，但是随着书的进度，一步一步，现在基本理解了Django的框架结构了。从书的目录就可以看出了，这个讲解的思路是非常清晰的，从最简单到逐步深入；当然，我还只仅仅看了前5章而已，不知道后面具体深入到了什么程度。从一些...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5881052-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5881052_full" class="hidden">
+                    <div id="review_5881052_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5881052" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5881052">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5881052" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5881052">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5881052/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5718918">
+        <div class="main review-item" id="5718918">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/robertaqi/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u16454571-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/robertaqi/" property="v:reviewer" class="name">xiao</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2012-12-29" class="main-meta">2012-12-29 16:57:39</span>
+        
+
+            <span class="publisher right">
+            Apress2009版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5718918/">学习django不二的选择</a></h2>
+
+                <div id="review_5718918_short" class="review-short" data-rid="5718918">
+                    <div class="short-content">
+
+                        很不错的书介绍了一个很不错的框架，作者是真正写了代码的， 因为自己写个一些东西，自己是弄懂了，但是怎么样去表达，让别人也明白，这是非常难的，作者确做到了这点  一直好奇国人好像没有在python方面好的著作。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5718918-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5718918_full" class="hidden">
+                    <div id="review_5718918_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5718918" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5718918">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5718918" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5718918">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5718918/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5045148">
+        <div class="main review-item" id="5045148">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/chairmannirvana/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u46878056-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/chairmannirvana/" property="v:reviewer" class="name">涅瓦纳</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2011-07-31" class="main-meta">2011-07-31 20:44:24</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5045148/">The Definitive Guide to Django</a></h2>
+
+                <div id="review_5045148_short" class="review-short" data-rid="5045148">
+                    <div class="short-content">
+
+                        Django, the Python-based equivalent to the Ruby on Rails web development framework, is presently one of the hottest topics in web development today. In The Definitive Guide to Django: Web Development Done Right, Adrian Holovaty, one of Django&#39;s creators, an...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5045148-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5045148_full" class="hidden">
+                    <div id="review_5045148_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5045148" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5045148">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5045148" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5045148">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5045148/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="4936413">
+        <div class="main review-item" id="4936413">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/37202643/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u37202643-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/37202643/" property="v:reviewer" class="name">ouhui818</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2011-05-06" class="main-meta">2011-05-06 08:52:19</span>
+        
+
+            <span class="publisher right">
+            Apress2009版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/4936413/">是的这本书的确很不错</a></h2>
+
+                <div id="review_4936413_short" class="review-short" data-rid="4936413">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        可以学英语，可以学django.何乐而不为呢？抱歉，你的评论太短了抱歉，你的评论太短了抱歉，你的评论太短了抱歉，你的评论太短了抱歉，你的评论太短了抱歉，你的评论太短了抱歉，你的评论太短了抱歉，你的评论太短了抱歉，你的评论太短了抱歉，你的评论太短了
+
+                        &nbsp;(<a href="javascript:;" id="toggle-4936413-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_4936413_full" class="hidden">
+                    <div id="review_4936413_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="4936413" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-4936413">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="4936413" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-4936413">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/4936413/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="1991192">
+        <div class="main review-item" id="1991192">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/agend/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1382401-16.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/agend/" property="v:reviewer" class="name">大笨\b狗</a>
+
+            <span property="v:rating" class="allstar10 main-title-rating" title="很差"></span>
+
+        <span property="v:dtreviewed" content="2009-04-25" class="main-meta">2009-04-25 17:18:00</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/1991192/">如果你是Python小白，还是算了吧，</a></h2>
+
+                <div id="review_1991192_short" class="review-short" data-rid="1991192">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        它把python讲得很细，都快可以代替A byte of python了，其实，Django本身，却被它讲得很简略。 如果你要用到点儿书里没讲的高级一点儿功能，比如文件上传，什么的，就靠了你的悟性，去读Django源码吧。在这点上，Django官方文档，也不是什么好东西。它跟你说，要在models里写上...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-1991192-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_1991192_full" class="hidden">
+                    <div id="review_1991192_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="1991192" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-1991192">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="1991192" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-1991192">
+                                8
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/1991192/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/2d50a1473c7bcdca.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评9篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/1798896/annotation">共<span property="v:count">6</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="11776491">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/irachex/"><img src="https://img1.doubanio.com/icon/u1868783-59.jpg" alt="睡睡睡" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11776491/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11776491/" class="">Chapter 3: Views and URLconfs</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/irachex/" class=" " title="睡睡睡">睡睡睡</a>
+                (睡不着)
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="11776491">
+              <div class="short">
+                
+                  <span class="">Chapter 3: Views and URLconfs
+
+自己用ASP.NET MVC 2已经很熟练了，所以有关MVC的内容和设计理念都很了解，主要是对语法点的摘抄
+感觉作者的命名有些奇怪，不知道是django有某种约定俗成还是怎么。按我的理解，书中的'views'指MVC中的Controller，书中的'templates'指MVC中的View，为了符合自己的习惯，我把这章称为Controllers and URLconfs。不知道之后的章节会不会推翻我的习惯
+[update:看到Chapter 5，django这种叫MTV框..</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/11776491/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2011-03-10 19:58</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                Chapter 3: Views and URLconfs<div style="padding-bottom:1em;"></div>自己用ASP.NET MVC 2已经很熟练了，所以有关MVC的内容和设计理念都很了解，主要是对语法点的摘抄<div style="padding-bottom:1em;"></div>感觉作者的命名有些奇怪，不知道是django有某种约定俗成还是怎么。按我的理解，书中的'views'指MVC中的Controller，书中的'templates'指MVC中的View，为了符合自己的习惯，我把这章称为Controllers and URLconfs。不知道之后的章节会不会推翻我的习惯<div style="padding-bottom:1em;"></div>[update:看到Chapter 5，django这种叫MTV框架，Model，Template，View]<div style="padding-bottom:1em;"></div>每个Controller函数至少要有一个参数，通常被叫作request。 这是一个触发这个Controller、包含当前Web请求信息的对象，是类django.http.HttpRequest的一个实例。它必须是这个Controller的第一个参数。
+<pre class="source true python">
+from django.http import HttpResponse
+
+def hello(request):
+    return HttpResponse(&quot;Hello world&quot;)
+</pre><div style="padding-bottom:1em;"></div>settings.py包含一个ROOT_URLCONF配置用来指向自动产生的urls.py，用来配置URL。<div style="padding-bottom:1em;"></div><pre class="source true python">
+from django.conf.urls.defaults import *
+from mysite.views import hello, current_datetime, hours_ahead
+
+urlpatterns = patterns('',
+    (r'^$', home),
+    (r'^hello/', hello),
+    (r'^time/plus/(\d{1,2})/, hours_ahead),
+)
+</pre><div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11776491/#comments">1回应</a>&nbsp;&nbsp;
+                  2011-03-10 19:58
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="14752858">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/ryankung/"><img src="https://img1.doubanio.com/icon/u44458233-178.jpg" alt="Elder Ryan" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/14752858/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/14752858/" class="">CH2</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/ryankung/" class=" " title="Elder Ryan">Elder Ryan</a>
+                (Wubba lubba dub dub !)
+              
+            </p>
+            <div class="reading-note" data-cid="14752858">
+              <div class="short">
+                
+                  <span class="">** The Django Book
+*** CH2
+&gt; django-admin.py startproject mysite
+
+__init__.py: A file required for perthon to treat mysite directory as a package.
+
+manage.py: A command-line unity that lets you interact with Django project in various ways.
+
+settings.py Settings/configuration for Django project.
+
+Urls.py: The urls fot the Django project
+
+**** Running the Dev Server
+
+&gt; python man...</span>
+                <p class="pl">
+                  <span class="">2011-10-05 00:35</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                ** The Django Book<div style="padding-bottom:1em;"></div>*** CH2<div style="padding-bottom:1em;"></div>&gt; django-admin.py startproject mysite<div style="padding-bottom:1em;"></div>__init__.py: A file required for perthon to treat mysite directory as a package.<div style="padding-bottom:1em;"></div>manage.py: A command-line unity that lets you interact with Django project in various ways.<div style="padding-bottom:1em;"></div>settings.py Settings/configuration for Django project.<div style="padding-bottom:1em;"></div>Urls.py: The urls fot the Django project<div style="padding-bottom:1em;"></div>**** Running the Dev Server<div style="padding-bottom:1em;"></div>&gt; python manage.py runserver<div style="padding-bottom:1em;"></div>The server was on <a rel="nofollow" href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a><div style="padding-bottom:1em;"></div>Change the Dev Server's Host or port:<div style="padding-bottom:1em;"></div>&gt;python manage.py runserver 0.0.0.0:8000<div style="padding-bottom:1em;"></div>It will alow people visit your site with your IP address<div style="padding-bottom:1em;"></div>*** CH3 Views and URLcontrol<div style="padding-bottom:1em;"></div>TO see the sys.path<div style="padding-bottom:1em;"></div>&gt;&gt;&gt; import sys<div style="padding-bottom:1em;"></div>&gt;&gt;&gt; print sys.path<div style="padding-bottom:1em;"></div>**** ragular expression<div style="padding-bottom:1em;"></div>^ caret: require that the pattern marthes the start of the string<div style="padding-bottom:1em;"></div>$ dollar: require that the pattern matches the end of string<div style="padding-bottom:1em;"></div>The root: ('^$', my_homepage_view),<div style="padding-bottom:1em;"></div>Sample:<div style="padding-bottom:1em;"></div>^hello/ will match /hello/foo and /hello/bar<div style="padding-bottom:1em;"></div>hello/$ will match /fool/bar/hello/ and foolhello/<div style="padding-bottom:1em;"></div>*allow request without a trailing slash*<div style="padding-bottom:1em;"></div>To set APPEND_SLASH True<div style="padding-bottom:1em;"></div>else APPEND_SLASH False<div style="padding-bottom:1em;"></div># Regexes<div style="padding-bottom:1em;"></div>.(dot) : any single character<div style="padding-bottom:1em;"></div>\d     : any single digit<div style="padding-bottom:1em;"></div>[A-Z]  : any character between A and Z<div style="padding-bottom:1em;"></div>[a-z]  : any character between a and z<div style="padding-bottom:1em;"></div>[A-Za-z]: case-insenstive<div style="padding-bottom:1em;"></div>+      : one or more of prev expression<div style="padding-bottom:1em;"></div>[^/]+  : one or more charcters untill (and not include) a forward slash<div style="padding-bottom:1em;"></div>?      : zero or one of the prev expression(e.g \d? matches zero or one digits<div style="padding-bottom:1em;"></div>*-     : zero or more <div style="padding-bottom:1em;"></div>{1,3}  : between one and tree or prevexpression (e.g \d{1,3} match one ,two or threee digits)<div style="padding-bottom:1em;"></div>*** Dynamic Content<div style="padding-bottom:1em;"></div>(r'^time/plus/(\{1,2})/$', hours_ahead),<div style="padding-bottom:1em;"></div>r is means a &quot;raw string&quot; -- its contents should not interpret backslashes.<div style="padding-bottom:1em;"></div>/in normal Python strings, blackslashes are uesd for escaping special characters -such as in the string \n ./<div style="padding-bottom:1em;"></div>def hours_head(respond,num):<div style="padding-bottom:1em;"></div>    ...
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/14752858/#comments">回应</a>&nbsp;&nbsp;
+                  2011-10-05 00:35
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="11889269">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/johnwoo_lee/"><img src="https://img3.doubanio.com/icon/u1116289-2.jpg" alt="适兕" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11889269/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11889269/" class="">第43页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/johnwoo_lee/" class=" " title="适兕">适兕</a>
+                (我开始鄙视我自己！)
+              
+            </p>
+            <div class="reading-note" data-cid="11889269">
+              <div class="short">
+                
+                  <span class="">When you create a Template object, the template system compiles the raw template code
+into an internal, optimized form, ready for rendering. 
+
+网站的Template，这是和程序分离的必要组件。
+
+
+A Python dictionary is a mapping between known keys and variable values. A Context is similar to a diction-
+ary, but a Context provides additional functionality, 
+
+Key, Value.多么永恒的组合。
+
+
+Django...</span>
+                <p class="pl">
+                  <span class="">2011-03-17 17:46</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                When you create a Template object, the template system compiles the raw template code<div style="padding-bottom:1em;"></div>into an internal, optimized form, ready for rendering. <div style="padding-bottom:1em;"></div>网站的Template，这是和程序分离的必要组件。<div style="padding-bottom:1em;"></div>A Python dictionary is a mapping between known keys and variable values. A Context is similar to a diction-<div style="padding-bottom:1em;"></div>ary, but a Context provides additional functionality, <div style="padding-bottom:1em;"></div>Key, Value.多么永恒的组合。<div style="padding-bottom:1em;"></div>Django’s template parsing is quite fast. Behind the scenes, most of the parsing hap-<div style="padding-bottom:1em;"></div>pens via a call to a single regular expression. This is in stark contrast to XML-based template<div style="padding-bottom:1em;"></div>engines, which incur the overhead of an XML parser and tend to be orders of magnitude<div style="padding-bottom:1em;"></div>slower than Django’s template-rendering engine.<div style="padding-bottom:1em;"></div>我非常喜欢Behind the scenes.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11889269/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-17 17:46
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="11886819">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/johnwoo_lee/"><img src="https://img3.doubanio.com/icon/u1116289-2.jpg" alt="适兕" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11886819/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11886819/" class="">第28页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/johnwoo_lee/" class=" " title="适兕">适兕</a>
+                (我开始鄙视我自己！)
+              
+            </p>
+            <div class="reading-note" data-cid="11886819">
+              <div class="short">
+                
+                  <span class="">关于页面URL与view的简单描述：
+just write view functions and map them to URLs via URLconfs.
+
+the principle of loose coupling。
+这句话的意思是：松散都耦合原理。
+URLconfs and views are loose coupling in action.
+
+
+one of Django’s core philosophies is that URLs should be beautiful.
+
+it’s strongly suggested that you use raw strings any time you’re defining a regu-
+lar expression in Python....</span>
+                <p class="pl">
+                  <span class="">2011-03-17 15:33</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                关于页面URL与view的简单描述：<div style="padding-bottom:1em;"></div>just write view functions and map them to URLs via URLconfs.<div style="padding-bottom:1em;"></div>the principle of loose coupling。<div style="padding-bottom:1em;"></div>这句话的意思是：松散都耦合原理。<div style="padding-bottom:1em;"></div>URLconfs and views are loose coupling in action.<div style="padding-bottom:1em;"></div>one of Django’s core philosophies is that URLs should be beautiful.<div style="padding-bottom:1em;"></div>it’s strongly suggested that you use raw strings any time you’re defining a regu-<div style="padding-bottom:1em;"></div>lar expression in Python. <div style="padding-bottom:1em;"></div>程序员都是这么较真的吗？<div style="padding-bottom:1em;"></div>In this example, the URLpattern was written first and the view was written second, but in the previous exam-<div style="padding-bottom:1em;"></div>ples, the view was written first and then the URLpattern was written. Which technique is better? Well, every<div style="padding-bottom:1em;"></div>developer is different.<div style="padding-bottom:1em;"></div>If you’re a big-picture type of person, it might make the most sense to you to write all the URLpatterns<div style="padding-bottom:1em;"></div>for your application at the same time, at the start of your project, and then code up the views. This has the<div style="padding-bottom:1em;"></div>advantage of giving you a clear to-do list, and it essentially defines the parameter requirements for the view<div style="padding-bottom:1em;"></div>functions you’ll need to write.<div style="padding-bottom:1em;"></div>If you’re more of a bottom-up developer, you might prefer to write the views first and then anchor them<div style="padding-bottom:1em;"></div>to URLs afterward. That’s OK, too.<div style="padding-bottom:1em;"></div>In the end, it comes down to which technique fits your brain the best. Both approaches are valid.<div style="padding-bottom:1em;"></div>不过我还是希望自己是那个有Big-picture的家伙。<div style="padding-bottom:1em;"></div>each view always takes an HttpRequest object as its first parameter.<div style="padding-bottom:1em;"></div>这是入口，没有此一切都是浮云。<div style="padding-bottom:1em;"></div>URLpatterns使用的那个r的意思是 re, 就是我们常用的那个 import re.<div style="padding-bottom:1em;"></div>urls.py中的每条正则表达式都需要用逗号隔开，如果你没有，那你就得去调试一番。<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11886819/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-17 15:33
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="11886819">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/johnwoo_lee/"><img src="https://img3.doubanio.com/icon/u1116289-2.jpg" alt="适兕" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11886819/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11886819/" class="">第28页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/johnwoo_lee/" class=" " title="适兕">适兕</a>
+                (我开始鄙视我自己！)
+              
+            </p>
+            <div class="reading-note" data-cid="11886819">
+              <div class="short">
+                
+                  <span class="">关于页面URL与view的简单描述：
+just write view functions and map them to URLs via URLconfs.
+
+the principle of loose coupling。
+这句话的意思是：松散都耦合原理。
+URLconfs and views are loose coupling in action.
+
+
+one of Django’s core philosophies is that URLs should be beautiful.
+
+it’s strongly suggested that you use raw strings any time you’re defining a regu-
+lar expression in Python....</span>
+                <p class="pl">
+                  <span class="">2011-03-17 15:33</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                关于页面URL与view的简单描述：<div style="padding-bottom:1em;"></div>just write view functions and map them to URLs via URLconfs.<div style="padding-bottom:1em;"></div>the principle of loose coupling。<div style="padding-bottom:1em;"></div>这句话的意思是：松散都耦合原理。<div style="padding-bottom:1em;"></div>URLconfs and views are loose coupling in action.<div style="padding-bottom:1em;"></div>one of Django’s core philosophies is that URLs should be beautiful.<div style="padding-bottom:1em;"></div>it’s strongly suggested that you use raw strings any time you’re defining a regu-<div style="padding-bottom:1em;"></div>lar expression in Python. <div style="padding-bottom:1em;"></div>程序员都是这么较真的吗？<div style="padding-bottom:1em;"></div>In this example, the URLpattern was written first and the view was written second, but in the previous exam-<div style="padding-bottom:1em;"></div>ples, the view was written first and then the URLpattern was written. Which technique is better? Well, every<div style="padding-bottom:1em;"></div>developer is different.<div style="padding-bottom:1em;"></div>If you’re a big-picture type of person, it might make the most sense to you to write all the URLpatterns<div style="padding-bottom:1em;"></div>for your application at the same time, at the start of your project, and then code up the views. This has the<div style="padding-bottom:1em;"></div>advantage of giving you a clear to-do list, and it essentially defines the parameter requirements for the view<div style="padding-bottom:1em;"></div>functions you’ll need to write.<div style="padding-bottom:1em;"></div>If you’re more of a bottom-up developer, you might prefer to write the views first and then anchor them<div style="padding-bottom:1em;"></div>to URLs afterward. That’s OK, too.<div style="padding-bottom:1em;"></div>In the end, it comes down to which technique fits your brain the best. Both approaches are valid.<div style="padding-bottom:1em;"></div>不过我还是希望自己是那个有Big-picture的家伙。<div style="padding-bottom:1em;"></div>each view always takes an HttpRequest object as its first parameter.<div style="padding-bottom:1em;"></div>这是入口，没有此一切都是浮云。<div style="padding-bottom:1em;"></div>URLpatterns使用的那个r的意思是 re, 就是我们常用的那个 import re.<div style="padding-bottom:1em;"></div>urls.py中的每条正则表达式都需要用逗号隔开，如果你没有，那你就得去调试一番。<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11886819/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-17 15:33
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="11889269">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/johnwoo_lee/"><img src="https://img3.doubanio.com/icon/u1116289-2.jpg" alt="适兕" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11889269/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11889269/" class="">第43页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/johnwoo_lee/" class=" " title="适兕">适兕</a>
+                (我开始鄙视我自己！)
+              
+            </p>
+            <div class="reading-note" data-cid="11889269">
+              <div class="short">
+                
+                  <span class="">When you create a Template object, the template system compiles the raw template code
+into an internal, optimized form, ready for rendering. 
+
+网站的Template，这是和程序分离的必要组件。
+
+
+A Python dictionary is a mapping between known keys and variable values. A Context is similar to a diction-
+ary, but a Context provides additional functionality, 
+
+Key, Value.多么永恒的组合。
+
+
+Django...</span>
+                <p class="pl">
+                  <span class="">2011-03-17 17:46</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                When you create a Template object, the template system compiles the raw template code<div style="padding-bottom:1em;"></div>into an internal, optimized form, ready for rendering. <div style="padding-bottom:1em;"></div>网站的Template，这是和程序分离的必要组件。<div style="padding-bottom:1em;"></div>A Python dictionary is a mapping between known keys and variable values. A Context is similar to a diction-<div style="padding-bottom:1em;"></div>ary, but a Context provides additional functionality, <div style="padding-bottom:1em;"></div>Key, Value.多么永恒的组合。<div style="padding-bottom:1em;"></div>Django’s template parsing is quite fast. Behind the scenes, most of the parsing hap-<div style="padding-bottom:1em;"></div>pens via a call to a single regular expression. This is in stark contrast to XML-based template<div style="padding-bottom:1em;"></div>engines, which incur the overhead of an XML parser and tend to be orders of magnitude<div style="padding-bottom:1em;"></div>slower than Django’s template-rendering engine.<div style="padding-bottom:1em;"></div>我非常喜欢Behind the scenes.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11889269/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-17 17:46
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="14752858">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/ryankung/"><img src="https://img1.doubanio.com/icon/u44458233-178.jpg" alt="Elder Ryan" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/14752858/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/14752858/" class="">CH2</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/ryankung/" class=" " title="Elder Ryan">Elder Ryan</a>
+                (Wubba lubba dub dub !)
+              
+            </p>
+            <div class="reading-note" data-cid="14752858">
+              <div class="short">
+                
+                  <span class="">** The Django Book
+*** CH2
+&gt; django-admin.py startproject mysite
+
+__init__.py: A file required for perthon to treat mysite directory as a package.
+
+manage.py: A command-line unity that lets you interact with Django project in various ways.
+
+settings.py Settings/configuration for Django project.
+
+Urls.py: The urls fot the Django project
+
+**** Running the Dev Server
+
+&gt; python man...</span>
+                <p class="pl">
+                  <span class="">2011-10-05 00:35</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                ** The Django Book<div style="padding-bottom:1em;"></div>*** CH2<div style="padding-bottom:1em;"></div>&gt; django-admin.py startproject mysite<div style="padding-bottom:1em;"></div>__init__.py: A file required for perthon to treat mysite directory as a package.<div style="padding-bottom:1em;"></div>manage.py: A command-line unity that lets you interact with Django project in various ways.<div style="padding-bottom:1em;"></div>settings.py Settings/configuration for Django project.<div style="padding-bottom:1em;"></div>Urls.py: The urls fot the Django project<div style="padding-bottom:1em;"></div>**** Running the Dev Server<div style="padding-bottom:1em;"></div>&gt; python manage.py runserver<div style="padding-bottom:1em;"></div>The server was on <a rel="nofollow" href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a><div style="padding-bottom:1em;"></div>Change the Dev Server's Host or port:<div style="padding-bottom:1em;"></div>&gt;python manage.py runserver 0.0.0.0:8000<div style="padding-bottom:1em;"></div>It will alow people visit your site with your IP address<div style="padding-bottom:1em;"></div>*** CH3 Views and URLcontrol<div style="padding-bottom:1em;"></div>TO see the sys.path<div style="padding-bottom:1em;"></div>&gt;&gt;&gt; import sys<div style="padding-bottom:1em;"></div>&gt;&gt;&gt; print sys.path<div style="padding-bottom:1em;"></div>**** ragular expression<div style="padding-bottom:1em;"></div>^ caret: require that the pattern marthes the start of the string<div style="padding-bottom:1em;"></div>$ dollar: require that the pattern matches the end of string<div style="padding-bottom:1em;"></div>The root: ('^$', my_homepage_view),<div style="padding-bottom:1em;"></div>Sample:<div style="padding-bottom:1em;"></div>^hello/ will match /hello/foo and /hello/bar<div style="padding-bottom:1em;"></div>hello/$ will match /fool/bar/hello/ and foolhello/<div style="padding-bottom:1em;"></div>*allow request without a trailing slash*<div style="padding-bottom:1em;"></div>To set APPEND_SLASH True<div style="padding-bottom:1em;"></div>else APPEND_SLASH False<div style="padding-bottom:1em;"></div># Regexes<div style="padding-bottom:1em;"></div>.(dot) : any single character<div style="padding-bottom:1em;"></div>\d     : any single digit<div style="padding-bottom:1em;"></div>[A-Z]  : any character between A and Z<div style="padding-bottom:1em;"></div>[a-z]  : any character between a and z<div style="padding-bottom:1em;"></div>[A-Za-z]: case-insenstive<div style="padding-bottom:1em;"></div>+      : one or more of prev expression<div style="padding-bottom:1em;"></div>[^/]+  : one or more charcters untill (and not include) a forward slash<div style="padding-bottom:1em;"></div>?      : zero or one of the prev expression(e.g \d? matches zero or one digits<div style="padding-bottom:1em;"></div>*-     : zero or more <div style="padding-bottom:1em;"></div>{1,3}  : between one and tree or prevexpression (e.g \d{1,3} match one ,two or threee digits)<div style="padding-bottom:1em;"></div>*** Dynamic Content<div style="padding-bottom:1em;"></div>(r'^time/plus/(\{1,2})/$', hours_ahead),<div style="padding-bottom:1em;"></div>r is means a &quot;raw string&quot; -- its contents should not interpret backslashes.<div style="padding-bottom:1em;"></div>/in normal Python strings, blackslashes are uesd for escaping special characters -such as in the string \n ./<div style="padding-bottom:1em;"></div>def hours_head(respond,num):<div style="padding-bottom:1em;"></div>    ...
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/14752858/#comments">回应</a>&nbsp;&nbsp;
+                  2011-10-05 00:35
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="11776865">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/irachex/"><img src="https://img1.doubanio.com/icon/u1868783-59.jpg" alt="睡睡睡" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11776865/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11776865/" class="">Chapter 4: Templates</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/irachex/" class=" " title="睡睡睡">睡睡睡</a>
+                (睡不着)
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="11776865">
+              <div class="short">
+                
+                  <span class="">Chapter 4: Templates
+
+我很喜欢Django的Templates的设计哲学：业务逻辑应该和表现逻辑相对分开 。我们将模板系统视为控制表现及表现相关逻辑的工具，仅此而已。 模板系统不应提供超出此基本目标的功能。像.NET，php等耦合不够松。
+Django 模板解析非常快捷。 大部分的解析工作都是在后台通过对简短正则表达式一次性调用来完成。 基于 XML 的模板引擎往往比 Django 模板渲染引擎要慢上几个数量级。
+所以使用同一template源渲染...</span>
+                <p class="pl">
+                  <span class="">2011-03-10 20:17</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                Chapter 4: Templates<div style="padding-bottom:1em;"></div>我很喜欢Django的Templates的设计哲学：业务逻辑应该和表现逻辑相对分开 。我们将模板系统视为控制表现及表现相关逻辑的工具，仅此而已。 模板系统不应提供超出此基本目标的功能。像.NET，php等耦合不够松。<div style="padding-bottom:1em;"></div>Django 模板解析非常快捷。 大部分的解析工作都是在后台通过对简短正则表达式一次性调用来完成。 基于 XML 的模板引擎往往比 Django 模板渲染引擎要慢上几个数量级。<div style="padding-bottom:1em;"></div>所以使用同一template源渲染多个context，只进行一次模板创建然后多次调用render()方法渲染会更为高效<div style="padding-bottom:1em;"></div>{{ variable }} 变量后可以加 . ，跟属性或方法（不加括号），但方法不能有参数，.也可以用于访问索引，{{ list.1 }}。.的查找顺序为字典、属性、方法、列表<div style="padding-bottom:1em;"></div>下面的例子是使方法不能被模版调用
+<pre class="source true python">
+def delete(self):
+    # Delete the account
+delete.alters_data = True
+</pre><div style="padding-bottom:1em;"></div>{% template tag %}<div style="padding-bottom:1em;"></div>if else endif，{% if %} 接受and,or,not关键字来对多个变量做判断，但不允许在同一个标签中同时使用 and和or 
+<pre class="source true python">
+{% if today_is_weekend %}
+    Welcome to the weekend!
+{% else %}
+    Get back to work.
+{% endif %}
+</pre>
+for endfor
+<pre class="source true python">
+{% for athlete in athlete_list reversed %}
+    {{ athlete.name }}
+{% empty %}
+    There are no athletes. Only computer programmers.
+{% endfor %}
+反向迭代:reversed
+列表为空:empty
+forloop.counter：从1开始计循环次数
+forloop.counter0：从0开始
+forloop.revcounter：剩余
+forloop.first ：布尔值，第一次循环时为True
+forloop.last ：布尔值，最后一次循环时为True
+forloop.parentloop：指向当前循环的上一级循环的 forloop 对象的引用（嵌套循环时）
+</pre>
+ifequal/ifnotequal，只有模板变量，字符串，整数和小数可以作为 {% ifequal %} 标签的参数，其他任何类型，例如Python的字典类型、列表类型、布尔类型，不能用
+<pre class="source true python">
+{% ifequal section 'sitenews' %}
+    &lt;h1&gt;Site News&lt;/h1&gt;
+{% else %}
+    &lt;h1&gt;No News Here&lt;/h1&gt;
+{% endifequal %}
+</pre>
+注释
+<pre class="source true python">
+{# single line comment #}
+{% comment %}
+{% endcomment %}
+</pre>
+filter
+<pre class="source true python">
+{{ my_list|first|upper }}
+{{ bio|truncatewords:&quot;30&quot; }}
+</pre>
+配置templates目录，在settings.py中
+<pre class="source true python">
+import os.path
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
+)
+</pre>
+渲染模版
+<pre class="source true python">
+from django.template.loader import get_template
+from django.template import Context
+from django.http import HttpResponse
+import datetime
+
+def current_datetime(request):
+    now = datetime.datetime.now()
+    t = get_template('current_datetime.html')
+    html = t.render(Context({'current_date': now}))
+    return HttpResponse(html)
+</pre>
+简化
+<pre class="source true python">
+from django.shortcuts import render_to_response
+import datetime
+
+def current_datetime(request):
+    now = datetime.datetime.now()
+    return render_to_response('current_datetime.html', {'current_date': now})
+</pre>
+包含其他template
+<pre class="source true python">
+{% include 'nav.html' %}
+</pre><div style="padding-bottom:1em;"></div>template继承<div style="padding-bottom:1em;"></div>母板
+<pre class="source true html">
+&lt;!DOCTYPE html&gt; 
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
+    {% block content %}{% endblock %}
+    {% block footer %}
+    &lt;hr&gt;
+    &lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
+    {% endblock %}
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+继承
+<pre class="source true python">
+{% extends &quot;base.html&quot; %}
+
+{% block title %}The current time{% endblock %}
+
+{% block content %}
+&lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
+{% endblock %}
+</pre>
+ {% extends %} ，必须保证其为模板中的第一个模板标记<div style="padding-bottom:1em;"></div>如果你需要访问父模板中的块的内容，使用 {{ block.super }}这个标签<div style="padding-bottom:1em;"></div>多数情况下， {% extends %} 的参数应该是字符串，但是如果直到运行时方能确定父模板名，这个参数也可以是个变量。<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11776865/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-10 20:17
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="14752858">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/ryankung/"><img src="https://img1.doubanio.com/icon/u44458233-178.jpg" alt="Elder Ryan" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/14752858/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/14752858/" class="">CH2</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/ryankung/" class=" " title="Elder Ryan">Elder Ryan</a>
+                (Wubba lubba dub dub !)
+              
+            </p>
+            <div class="reading-note" data-cid="14752858">
+              <div class="short">
+                
+                  <span class="">** The Django Book
+*** CH2
+&gt; django-admin.py startproject mysite
+
+__init__.py: A file required for perthon to treat mysite directory as a package.
+
+manage.py: A command-line unity that lets you interact with Django project in various ways.
+
+settings.py Settings/configuration for Django project.
+
+Urls.py: The urls fot the Django project
+
+**** Running the Dev Server
+
+&gt; python man...</span>
+                <p class="pl">
+                  <span class="">2011-10-05 00:35</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                ** The Django Book<div style="padding-bottom:1em;"></div>*** CH2<div style="padding-bottom:1em;"></div>&gt; django-admin.py startproject mysite<div style="padding-bottom:1em;"></div>__init__.py: A file required for perthon to treat mysite directory as a package.<div style="padding-bottom:1em;"></div>manage.py: A command-line unity that lets you interact with Django project in various ways.<div style="padding-bottom:1em;"></div>settings.py Settings/configuration for Django project.<div style="padding-bottom:1em;"></div>Urls.py: The urls fot the Django project<div style="padding-bottom:1em;"></div>**** Running the Dev Server<div style="padding-bottom:1em;"></div>&gt; python manage.py runserver<div style="padding-bottom:1em;"></div>The server was on <a rel="nofollow" href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a><div style="padding-bottom:1em;"></div>Change the Dev Server's Host or port:<div style="padding-bottom:1em;"></div>&gt;python manage.py runserver 0.0.0.0:8000<div style="padding-bottom:1em;"></div>It will alow people visit your site with your IP address<div style="padding-bottom:1em;"></div>*** CH3 Views and URLcontrol<div style="padding-bottom:1em;"></div>TO see the sys.path<div style="padding-bottom:1em;"></div>&gt;&gt;&gt; import sys<div style="padding-bottom:1em;"></div>&gt;&gt;&gt; print sys.path<div style="padding-bottom:1em;"></div>**** ragular expression<div style="padding-bottom:1em;"></div>^ caret: require that the pattern marthes the start of the string<div style="padding-bottom:1em;"></div>$ dollar: require that the pattern matches the end of string<div style="padding-bottom:1em;"></div>The root: ('^$', my_homepage_view),<div style="padding-bottom:1em;"></div>Sample:<div style="padding-bottom:1em;"></div>^hello/ will match /hello/foo and /hello/bar<div style="padding-bottom:1em;"></div>hello/$ will match /fool/bar/hello/ and foolhello/<div style="padding-bottom:1em;"></div>*allow request without a trailing slash*<div style="padding-bottom:1em;"></div>To set APPEND_SLASH True<div style="padding-bottom:1em;"></div>else APPEND_SLASH False<div style="padding-bottom:1em;"></div># Regexes<div style="padding-bottom:1em;"></div>.(dot) : any single character<div style="padding-bottom:1em;"></div>\d     : any single digit<div style="padding-bottom:1em;"></div>[A-Z]  : any character between A and Z<div style="padding-bottom:1em;"></div>[a-z]  : any character between a and z<div style="padding-bottom:1em;"></div>[A-Za-z]: case-insenstive<div style="padding-bottom:1em;"></div>+      : one or more of prev expression<div style="padding-bottom:1em;"></div>[^/]+  : one or more charcters untill (and not include) a forward slash<div style="padding-bottom:1em;"></div>?      : zero or one of the prev expression(e.g \d? matches zero or one digits<div style="padding-bottom:1em;"></div>*-     : zero or more <div style="padding-bottom:1em;"></div>{1,3}  : between one and tree or prevexpression (e.g \d{1,3} match one ,two or threee digits)<div style="padding-bottom:1em;"></div>*** Dynamic Content<div style="padding-bottom:1em;"></div>(r'^time/plus/(\{1,2})/$', hours_ahead),<div style="padding-bottom:1em;"></div>r is means a &quot;raw string&quot; -- its contents should not interpret backslashes.<div style="padding-bottom:1em;"></div>/in normal Python strings, blackslashes are uesd for escaping special characters -such as in the string \n ./<div style="padding-bottom:1em;"></div>def hours_head(respond,num):<div style="padding-bottom:1em;"></div>    ...
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/14752858/#comments">回应</a>&nbsp;&nbsp;
+                  2011-10-05 00:35
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="11889269">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/johnwoo_lee/"><img src="https://img3.doubanio.com/icon/u1116289-2.jpg" alt="适兕" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11889269/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11889269/" class="">第43页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/johnwoo_lee/" class=" " title="适兕">适兕</a>
+                (我开始鄙视我自己！)
+              
+            </p>
+            <div class="reading-note" data-cid="11889269">
+              <div class="short">
+                
+                  <span class="">When you create a Template object, the template system compiles the raw template code
+into an internal, optimized form, ready for rendering. 
+
+网站的Template，这是和程序分离的必要组件。
+
+
+A Python dictionary is a mapping between known keys and variable values. A Context is similar to a diction-
+ary, but a Context provides additional functionality, 
+
+Key, Value.多么永恒的组合。
+
+
+Django...</span>
+                <p class="pl">
+                  <span class="">2011-03-17 17:46</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                When you create a Template object, the template system compiles the raw template code<div style="padding-bottom:1em;"></div>into an internal, optimized form, ready for rendering. <div style="padding-bottom:1em;"></div>网站的Template，这是和程序分离的必要组件。<div style="padding-bottom:1em;"></div>A Python dictionary is a mapping between known keys and variable values. A Context is similar to a diction-<div style="padding-bottom:1em;"></div>ary, but a Context provides additional functionality, <div style="padding-bottom:1em;"></div>Key, Value.多么永恒的组合。<div style="padding-bottom:1em;"></div>Django’s template parsing is quite fast. Behind the scenes, most of the parsing hap-<div style="padding-bottom:1em;"></div>pens via a call to a single regular expression. This is in stark contrast to XML-based template<div style="padding-bottom:1em;"></div>engines, which incur the overhead of an XML parser and tend to be orders of magnitude<div style="padding-bottom:1em;"></div>slower than Django’s template-rendering engine.<div style="padding-bottom:1em;"></div>我非常喜欢Behind the scenes.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11889269/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-17 17:46
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="11886819">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/johnwoo_lee/"><img src="https://img3.doubanio.com/icon/u1116289-2.jpg" alt="适兕" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11886819/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11886819/" class="">第28页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/johnwoo_lee/" class=" " title="适兕">适兕</a>
+                (我开始鄙视我自己！)
+              
+            </p>
+            <div class="reading-note" data-cid="11886819">
+              <div class="short">
+                
+                  <span class="">关于页面URL与view的简单描述：
+just write view functions and map them to URLs via URLconfs.
+
+the principle of loose coupling。
+这句话的意思是：松散都耦合原理。
+URLconfs and views are loose coupling in action.
+
+
+one of Django’s core philosophies is that URLs should be beautiful.
+
+it’s strongly suggested that you use raw strings any time you’re defining a regu-
+lar expression in Python....</span>
+                <p class="pl">
+                  <span class="">2011-03-17 15:33</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                关于页面URL与view的简单描述：<div style="padding-bottom:1em;"></div>just write view functions and map them to URLs via URLconfs.<div style="padding-bottom:1em;"></div>the principle of loose coupling。<div style="padding-bottom:1em;"></div>这句话的意思是：松散都耦合原理。<div style="padding-bottom:1em;"></div>URLconfs and views are loose coupling in action.<div style="padding-bottom:1em;"></div>one of Django’s core philosophies is that URLs should be beautiful.<div style="padding-bottom:1em;"></div>it’s strongly suggested that you use raw strings any time you’re defining a regu-<div style="padding-bottom:1em;"></div>lar expression in Python. <div style="padding-bottom:1em;"></div>程序员都是这么较真的吗？<div style="padding-bottom:1em;"></div>In this example, the URLpattern was written first and the view was written second, but in the previous exam-<div style="padding-bottom:1em;"></div>ples, the view was written first and then the URLpattern was written. Which technique is better? Well, every<div style="padding-bottom:1em;"></div>developer is different.<div style="padding-bottom:1em;"></div>If you’re a big-picture type of person, it might make the most sense to you to write all the URLpatterns<div style="padding-bottom:1em;"></div>for your application at the same time, at the start of your project, and then code up the views. This has the<div style="padding-bottom:1em;"></div>advantage of giving you a clear to-do list, and it essentially defines the parameter requirements for the view<div style="padding-bottom:1em;"></div>functions you’ll need to write.<div style="padding-bottom:1em;"></div>If you’re more of a bottom-up developer, you might prefer to write the views first and then anchor them<div style="padding-bottom:1em;"></div>to URLs afterward. That’s OK, too.<div style="padding-bottom:1em;"></div>In the end, it comes down to which technique fits your brain the best. Both approaches are valid.<div style="padding-bottom:1em;"></div>不过我还是希望自己是那个有Big-picture的家伙。<div style="padding-bottom:1em;"></div>each view always takes an HttpRequest object as its first parameter.<div style="padding-bottom:1em;"></div>这是入口，没有此一切都是浮云。<div style="padding-bottom:1em;"></div>URLpatterns使用的那个r的意思是 re, 就是我们常用的那个 import re.<div style="padding-bottom:1em;"></div>urls.py中的每条正则表达式都需要用逗号隔开，如果你没有，那你就得去调试一番。<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11886819/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-17 15:33
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="11776865">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/irachex/"><img src="https://img1.doubanio.com/icon/u1868783-59.jpg" alt="睡睡睡" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11776865/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11776865/" class="">Chapter 4: Templates</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/irachex/" class=" " title="睡睡睡">睡睡睡</a>
+                (睡不着)
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="11776865">
+              <div class="short">
+                
+                  <span class="">Chapter 4: Templates
+
+我很喜欢Django的Templates的设计哲学：业务逻辑应该和表现逻辑相对分开 。我们将模板系统视为控制表现及表现相关逻辑的工具，仅此而已。 模板系统不应提供超出此基本目标的功能。像.NET，php等耦合不够松。
+Django 模板解析非常快捷。 大部分的解析工作都是在后台通过对简短正则表达式一次性调用来完成。 基于 XML 的模板引擎往往比 Django 模板渲染引擎要慢上几个数量级。
+所以使用同一template源渲染...</span>
+                <p class="pl">
+                  <span class="">2011-03-10 20:17</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                Chapter 4: Templates<div style="padding-bottom:1em;"></div>我很喜欢Django的Templates的设计哲学：业务逻辑应该和表现逻辑相对分开 。我们将模板系统视为控制表现及表现相关逻辑的工具，仅此而已。 模板系统不应提供超出此基本目标的功能。像.NET，php等耦合不够松。<div style="padding-bottom:1em;"></div>Django 模板解析非常快捷。 大部分的解析工作都是在后台通过对简短正则表达式一次性调用来完成。 基于 XML 的模板引擎往往比 Django 模板渲染引擎要慢上几个数量级。<div style="padding-bottom:1em;"></div>所以使用同一template源渲染多个context，只进行一次模板创建然后多次调用render()方法渲染会更为高效<div style="padding-bottom:1em;"></div>{{ variable }} 变量后可以加 . ，跟属性或方法（不加括号），但方法不能有参数，.也可以用于访问索引，{{ list.1 }}。.的查找顺序为字典、属性、方法、列表<div style="padding-bottom:1em;"></div>下面的例子是使方法不能被模版调用
+<pre class="source true python">
+def delete(self):
+    # Delete the account
+delete.alters_data = True
+</pre><div style="padding-bottom:1em;"></div>{% template tag %}<div style="padding-bottom:1em;"></div>if else endif，{% if %} 接受and,or,not关键字来对多个变量做判断，但不允许在同一个标签中同时使用 and和or 
+<pre class="source true python">
+{% if today_is_weekend %}
+    Welcome to the weekend!
+{% else %}
+    Get back to work.
+{% endif %}
+</pre>
+for endfor
+<pre class="source true python">
+{% for athlete in athlete_list reversed %}
+    {{ athlete.name }}
+{% empty %}
+    There are no athletes. Only computer programmers.
+{% endfor %}
+反向迭代:reversed
+列表为空:empty
+forloop.counter：从1开始计循环次数
+forloop.counter0：从0开始
+forloop.revcounter：剩余
+forloop.first ：布尔值，第一次循环时为True
+forloop.last ：布尔值，最后一次循环时为True
+forloop.parentloop：指向当前循环的上一级循环的 forloop 对象的引用（嵌套循环时）
+</pre>
+ifequal/ifnotequal，只有模板变量，字符串，整数和小数可以作为 {% ifequal %} 标签的参数，其他任何类型，例如Python的字典类型、列表类型、布尔类型，不能用
+<pre class="source true python">
+{% ifequal section 'sitenews' %}
+    &lt;h1&gt;Site News&lt;/h1&gt;
+{% else %}
+    &lt;h1&gt;No News Here&lt;/h1&gt;
+{% endifequal %}
+</pre>
+注释
+<pre class="source true python">
+{# single line comment #}
+{% comment %}
+{% endcomment %}
+</pre>
+filter
+<pre class="source true python">
+{{ my_list|first|upper }}
+{{ bio|truncatewords:&quot;30&quot; }}
+</pre>
+配置templates目录，在settings.py中
+<pre class="source true python">
+import os.path
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
+)
+</pre>
+渲染模版
+<pre class="source true python">
+from django.template.loader import get_template
+from django.template import Context
+from django.http import HttpResponse
+import datetime
+
+def current_datetime(request):
+    now = datetime.datetime.now()
+    t = get_template('current_datetime.html')
+    html = t.render(Context({'current_date': now}))
+    return HttpResponse(html)
+</pre>
+简化
+<pre class="source true python">
+from django.shortcuts import render_to_response
+import datetime
+
+def current_datetime(request):
+    now = datetime.datetime.now()
+    return render_to_response('current_datetime.html', {'current_date': now})
+</pre>
+包含其他template
+<pre class="source true python">
+{% include 'nav.html' %}
+</pre><div style="padding-bottom:1em;"></div>template继承<div style="padding-bottom:1em;"></div>母板
+<pre class="source true html">
+&lt;!DOCTYPE html&gt; 
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
+    {% block content %}{% endblock %}
+    {% block footer %}
+    &lt;hr&gt;
+    &lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
+    {% endblock %}
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+继承
+<pre class="source true python">
+{% extends &quot;base.html&quot; %}
+
+{% block title %}The current time{% endblock %}
+
+{% block content %}
+&lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
+{% endblock %}
+</pre>
+ {% extends %} ，必须保证其为模板中的第一个模板标记<div style="padding-bottom:1em;"></div>如果你需要访问父模板中的块的内容，使用 {{ block.super }}这个标签<div style="padding-bottom:1em;"></div>多数情况下， {% extends %} 的参数应该是字符串，但是如果直到运行时方能确定父模板名，这个参数也可以是个变量。<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11776865/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-10 20:17
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/1798896/annotation">更多读书笔记（共6篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1798896/discussion/20376693/" title="想看翻译版本请这里" class="">想看翻译版本请这里</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/fks1945/">fer范特香</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2009-11-22</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1798896/discussion/1140084/" title="又是本Bible" class="">又是本Bible</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/jack139/">比你笨</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2008-02-05</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1798896/discussion/1138382/" title="常看常新" class="">常看常新</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/xlp223/">myhat123</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2008-02-02</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1798896/discussion/1023358/" title="英文的吗" class="">英文的吗</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/jejwe/">假面若克</a></td>
+            <td class="pl"><span class="">3 回应</span></td>
+            <td class="pl"><span class="">2008-01-24</span></td>
+        </tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1798896/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/387968/" target="_blank">改变自己▶编程</a>
+                <span class="pl">(Chain)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/178229/" target="_blank">django.framework</a>
+                <span class="pl">(元创)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/120589/" target="_blank">Python初心者</a>
+                <span class="pl">(清风)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/139065/" target="_blank">Apress出版社图书</a>
+                <span class="pl">(paoe)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1963445/" target="_blank">Python</a>
+                <span class="pl">(tokyo)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/169225587/"><img src="https://img3.doubanio.com/icon/u169225587-1.jpg" class="pil" alt="aq423" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/169225587/">aq423</a><br/>
+      <div class="pl ll">          2017年11月9日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1798896/doings">57人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1798896/collections">160人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1798896/wishes">226人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有226人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于The Definitive Guide to Django的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/1798896/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'sKhaft44I24',
+            criteria = '7:django|7:python|7:Web|7:编程|7:Web框架|7:programming|7:计算机|7:Apress|7:Python|7:网络|3:/subject/1798896/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar1b-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

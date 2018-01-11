@@ -1,0 +1,3190 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Android应用性能优化 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/19976838/">
+<meta name="keywords" content="Android应用性能优化,[法] Hervé Guihot,人民邮电出版社,2012-10,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书Android应用性能优化 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/19976838/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">Android应用性能优化</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s22718876.jpg" title="Android应用性能优化">
+    <img src="https://img3.doubanio.com/lpic/s22718876.jpg" title="点击看大图" alt="Android应用性能优化"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Herv%C3%A9%20Guihot">[法] Hervé Guihot</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 人民邮电出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">原作名:</span> Pro Android Apps Performance Optimization<br/>
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E7%99%BD%E9%BE%99">白龙</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2012-10<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 226<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 49.00元<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787115272416<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 8.1 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar40"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">58</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:30px"></div>
+
+            <span class="rating_per">22.4%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">46.6%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:37px"></div>
+
+            <span class="rating_per">27.6%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:4px"></div>
+
+            <span class="rating_per">3.4%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-19976838-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-19976838-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-19976838-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-19976838-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-19976838-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-19976838-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-19976838-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-19976838-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-19976838">
+        <a href="#" data-url="https://book.douban.com/subject/19976838/" data-desc="" data-title="书籍《Android应用性能优化》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s22718876.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_19976838"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>内容简介：</p>    <p>今天的Android应用开发者经常要想尽办法来提升程序性能。由于应用越来越复杂，这个问题也变得越来越棘手。本书主要介绍如何快速高效地优化应用，让应用变得稳定高效。你将学会利用Android SDK和NDK来混合或单独使用Java、C/C++来开发应用。书中还特别讲解了如下内容：</p>    <p>•        一些OpenGL的优化技术以及RenderScript（Android的新特性）的基础知识；</p>    <p>•        利用SDK来优化应用的Java代码的技巧；</p>    <p>•        通过高效使用内存来提升性能的技巧；</p>    <p>•        延长电池使用时间的技巧；</p>    <p>•        使用多线程的时机及技巧；</p>    <p>•        评测剖析代码的技巧。</p>    <p>把本书的内容学以致用，你的编程技术就会得到关键性的提升，写出的应用就会更为健壮高效，从而广受用户好评，并最终获得...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>内容简介：</p>    <p>今天的Android应用开发者经常要想尽办法来提升程序性能。由于应用越来越复杂，这个问题也变得越来越棘手。本书主要介绍如何快速高效地优化应用，让应用变得稳定高效。你将学会利用Android SDK和NDK来混合或单独使用Java、C/C++来开发应用。书中还特别讲解了如下内容：</p>    <p>•        一些OpenGL的优化技术以及RenderScript（Android的新特性）的基础知识；</p>    <p>•        利用SDK来优化应用的Java代码的技巧；</p>    <p>•        通过高效使用内存来提升性能的技巧；</p>    <p>•        延长电池使用时间的技巧；</p>    <p>•        使用多线程的时机及技巧；</p>    <p>•        评测剖析代码的技巧。</p>    <p>把本书的内容学以致用，你的编程技术就会得到关键性的提升，写出的应用就会更为健壮高效，从而广受用户好评，并最终获得成功。</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/19976838/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <div class="">
+            <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>作者介绍：</p>    <p>Hervé Guihot 目前在联发科技公司（MTK, www.mediatek.com）担任软件工程经理。他有十多年的嵌入式系统开发工作经验，主要与数字电视技术相关。目前正在研究如何将Android引入基于ARM的数字家庭平台（电视，蓝光播放器）。</p></div>
+
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_19976838_short">
+        目 　 　录<br/>
+        第1章 　Java代码优化　　1<br/>
+        1.1 　Android如何执行代码　　1<br/>
+        1.2 　优化斐波纳契数列　　4<br/>
+        1.2.1 　从递归到迭代　　4<br/>
+        1.2.2 　BigInteger　　6<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_19976838_short').hide();$('#dir_19976838_full').show();$.get('/j/subject/j_dir_count',{id:19976838});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_19976838_full" style="display:none">
+        目 　 　录<br/>
+        第1章 　Java代码优化　　1<br/>
+        1.1 　Android如何执行代码　　1<br/>
+        1.2 　优化斐波纳契数列　　4<br/>
+        1.2.1 　从递归到迭代　　4<br/>
+        1.2.2 　BigInteger　　6<br/>
+        1.3 　缓存结果　　10<br/>
+        1.4 　API等级　　12<br/>
+        1.5 　数据结构　　14<br/>
+        1.6 　响应能力　　17<br/>
+        1.6.1 　推迟初始化　　19<br/>
+        1.6.2 　StrictMode　　19<br/>
+        1.7 　SQLite　　21<br/>
+        1.7.1 　SQLite语句　　21<br/>
+        1.7.2 　事务　　25<br/>
+        1.7.3 　查询　　26<br/>
+        1.8 　总结　　27<br/>
+        第2章 　NDK入门　　28<br/>
+        2.1 　NDK里有什么　　28<br/>
+        2.2 　混合使用Java和C/C++代码　　31<br/>
+        2.2.1 　声明本地方法　　31<br/>
+        2.2.2 　实现JNI粘合层　　32<br/>
+        2.2.3 　创建Makefile　　33<br/>
+        2.2.4 　实现本地函数　　35<br/>
+        2.2.5 　编译本地库　　36<br/>
+        2.2.6 　加载本地库　　37<br/>
+        2.3 　Application.mk　　37<br/>
+        2.3.1 　为（几乎）所有设备优化　　39<br/>
+        2.3.2 　支持所有设备　　40<br/>
+        2.4 　Android.mk　　43<br/>
+        2.5 　使用C/C++改进性能　　45<br/>
+        2.6 　本地Acitivity　　52<br/>
+        2.6.1 　构建缺失的库　　54<br/>
+        2.6.2 　替代方案　　59<br/>
+        2.7 　总结　　60<br/>
+        第3章 　NDK进阶　　61<br/>
+        3.1 　汇编　　61<br/>
+        3.1.1 　最大公约数　　62<br/>
+        3.1.2 　色彩转换　　66<br/>
+        3.1.3 　并行计算平均值　　70<br/>
+        3.1.4 　ARM指令　　74<br/>
+        3.1.5 　ARM NEON　　79<br/>
+        3.1.6 　CPU特性　　80<br/>
+        3.2 　C扩展　　81<br/>
+        3.2.1 　内置函数　　82<br/>
+        3.2.2 　向量指令　　82<br/>
+        3.3 　技巧　　86<br/>
+        3.3.1 　内联函数　　87<br/>
+        3.3.2 　循环展开　　87<br/>
+        3.3.3 　内存预读取　　87<br/>
+        3.3.4 　用LDM/STM替换LDR/STD　　89<br/>
+        3.4 　总结　　89<br/>
+        第4章 　高效使用内存　　90<br/>
+        4.1 　说说内存　　90<br/>
+        4.2 　数据类型　　91<br/>
+        4.2.1 　值的比较　　93<br/>
+        4.2.2 　其他算法　　95<br/>
+        4.2.3 　数组排序　　96<br/>
+        4.2.4 　定义自己的类　　97<br/>
+        4.3 　访问内存　　98<br/>
+        4.4 　排布数据　　100<br/>
+        4.5 　垃圾收集　　104<br/>
+        4.5.1 　内存泄漏　　105<br/>
+        4.5.2 　引用　　106<br/>
+        4.6 　API　　109<br/>
+        4.7 　内存少的时候　　110<br/>
+        4.8 　总结　　111<br/>
+        第5章 　多线程和同步　　112<br/>
+        5.1 　线程　　112<br/>
+        5.2 　AsyncTask　　115<br/>
+        5.3 　Handler和Looper　　118<br/>
+        5.3.1 　Handler　　118<br/>
+        5.3.2 　Looper　　120<br/>
+        5.4 　数据类型　　120<br/>
+        5.5 　并发　　124<br/>
+        5.6 　多核　　125<br/>
+        5.6.1 　为多核修改算法　　126<br/>
+        5.6.2 　使用并发缓存　　129<br/>
+        5.7 　Activity生命周期　　131<br/>
+        5.7.1 　传递信息　　132<br/>
+        5.7.2 　记住状态　　134<br/>
+        5.8 　总结　　137<br/>
+        第6章 　性能评测和剖析　　138<br/>
+        6.1 　时间测量　　138<br/>
+        6.1.1 　System.nanoTime()　　139<br/>
+        6.1.2 　Debug.threadCpuTimeNanos()　　140<br/>
+        6.2 　方法调用跟踪　　141<br/>
+        6.2.1 　Debug.startMethodTracing()　　141<br/>
+        6.2.2 　使用Traceview工具　　142<br/>
+        6.2.3 　DDMS中的Traceview　　144<br/>
+        6.2.4 　本地方法跟踪　　145<br/>
+        6.3 　日志　　147<br/>
+        6.4 　总结　　148<br/>
+        第7章 　延长电池续航时间　　150<br/>
+        7.1 　电池　　150<br/>
+        7.2 　禁用广播接收器　　155<br/>
+        7.3 　网络　　159<br/>
+        7.3.1 　后台数据　　159<br/>
+        7.3.2 　数据传输　　160<br/>
+        7.4 　位置　　162<br/>
+        7.4.1 　注销监听器　　163<br/>
+        7.4.2 　更新频率　　164<br/>
+        7.4.3 　多种位置服务　　164<br/>
+        7.4.4 　筛选定位服务　　166<br/>
+        7.4.5 　最后已知位置　　168<br/>
+        7.5 　传感器　　169<br/>
+        7.6 　图形　　170<br/>
+        7.7 　提醒　　171<br/>
+        7.8 　WakeLock　　173<br/>
+        7.9 　总结　　175<br/>
+        第8章 　图形　　176<br/>
+        8.1 　布局优化　　176<br/>
+        8.1.1 　相对布局　　178<br/>
+        8.1.2 　合并布局　　181<br/>
+        8.1.3 　重用布局　　183<br/>
+        8.1.4 　ViewStub　　184<br/>
+        8.2 　布局工具　　185<br/>
+        8.2.1 　层级视图　　186<br/>
+        8.2.2 　layoutopt　　186<br/>
+        8.3 　OpenGL ES　　186<br/>
+        8.3.1 　扩展　　187<br/>
+        8.3.2 　纹理压缩　　189<br/>
+        8.3.3 　Mipmap　　193<br/>
+        8.3.4 　多APK　　194<br/>
+        8.3.5 　着色　　195<br/>
+        8.3.6 　场景复杂性　　195<br/>
+        8.3.7 　消隐　　195<br/>
+        8.3.8 　渲染模式　　195<br/>
+        8.3.9 　功耗管理　　195<br/>
+        8.4 　总结　　196<br/>
+        第9章 　RenderScript　　197<br/>
+        9.1 　概览　　197<br/>
+        9.2 　Hello World　　199<br/>
+        9.3 　Hello Rendering　　202<br/>
+        9.3.1 　创建渲染脚本　　202<br/>
+        9.3.2 　创建RenderScriptGL Context　　203<br/>
+        9.3.3 　展开RSSurfaceView　　204<br/>
+        9.3.4 　设置内容视图　　204<br/>
+        9.4 　在脚本中添加变量　　205<br/>
+        9.5 　HelloCompute　　208<br/>
+        9.5.1 　Allocation　　209<br/>
+        9.5.2 　rsForEach　　210<br/>
+        9.5.3 　性能　　213<br/>
+        9.6 　自带的RenderScript API　　214<br/>
+        9.6.1 　rs_types.rsh　　215<br/>
+        9.6.2 　rs_core.rsh　　217<br/>
+        9.6.3 　rs_cl.rsh　　219<br/>
+        9.6.4 　rs_math.rsh　　222<br/>
+        9.6.5 　rs_graphics.rsh　　223<br/>
+        9.6.6 　rs_time.rsh　　224<br/>
+        9.6.7 　rs_atomic.rsh　　225<br/>
+        9.7 　RenderScript与NDK对比　　225<br/>
+        9.8 　总结　　226<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_19976838_full').hide();$('#dir_19976838_short').show();void(0);">收起</a>)
+</div>
+
+    
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">&#34;Android应用性能优化&#34;试读</span>
+      ······
+
+  </h2>
+
+
+<div class="indent">
+<p>
+
+Android已经融入了寻常百姓的生活中。当今世界，手机正从功能时代进化到智能时代，同时又诞生了令人爱不释手的平板电脑。目前，应用程序开发者的可选择平台主要就是Android和iOS。Android降低了甚至可以说是打破了移动开发的门槛，应用程序开发者编写Android应用程序只需要一台计算机就够了（当然还要有一些编程知识）。工具都是免费的，几乎每个人都能写出数百万人会用的应用。Andro...</p>
+<ul class="col2-list clearfix">
+
+<li>
+    <a href="https://book.douban.com/reading/21653344/">前　　言</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/21653370/">译　者　序</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/21653398/">第一章：Java代码优化</a>
+</li>
+</ul>
+<div align="right">  · · · · · ·    (<a href="https://book.douban.com/subject/19976838/reading/">查看全部试读</a>)</div>
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '19976838',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共28个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/Android">Android</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/性能">性能</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/android">android</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/软件开发">软件开发</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/程序设计">程序设计</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/软件工程">软件工程</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Android应用性能优化&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/30898123/?dcs=subject-rec&amp;dcm=douban&amp;dct=19976838" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/30898123.jpg?v=1487741425.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/30898123/" target="_blank">打造高质量Android应用</a>
+          </div>
+          <div class="price">
+              20.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/15171473/?dcs=subject-rec&amp;dcm=douban&amp;dct=19976838" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/15171473.jpg?v=1445483313.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/15171473/" target="_blank">Android开发精要</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/12185211/?dcs=subject-rec&amp;dcm=douban&amp;dct=19976838" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/12185211.jpg?v=1450682387.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/12185211/" target="_blank">Android编程实战</a>
+          </div>
+          <div class="price">
+              29.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/15169794/?dcs=subject-rec&amp;dcm=douban&amp;dct=19976838" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/15169794.jpg?v=1445416539.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/15169794/" target="_blank">深入理解Android ：卷Ⅱ</a>
+          </div>
+          <div class="price">
+              30.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=19976838" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/198648.jpg?v=1395393782.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Android应用性能优化&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/20556210/" onclick="moreurl(this, {'total': 10, 'clicked': '20556210', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s24870013.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/20556210/" onclick="moreurl(this, {'total': 10, 'clicked': '20556210', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            Android软件安全与逆向分析
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25769136/" onclick="moreurl(this, {'total': 10, 'clicked': '25769136', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27467710.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25769136/" onclick="moreurl(this, {'total': 10, 'clicked': '25769136', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            精彩绝伦的Android UI设计
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6802440/" onclick="moreurl(this, {'total': 10, 'clicked': '6802440', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s11171603.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6802440/" onclick="moreurl(this, {'total': 10, 'clicked': '6802440', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            深入理解Android
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/19986441/" onclick="moreurl(this, {'total': 10, 'clicked': '19986441', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27280265.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/19986441/" onclick="moreurl(this, {'total': 10, 'clicked': '19986441', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            Android系统源代码情景分析
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/24697944/" onclick="moreurl(this, {'total': 10, 'clicked': '24697944', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s26538195.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/24697944/" onclick="moreurl(this, {'total': 10, 'clicked': '24697944', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            Web开发秘方
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2302201/" onclick="moreurl(this, {'total': 10, 'clicked': '2302201', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s2836128.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2302201/" onclick="moreurl(this, {'total': 10, 'clicked': '2302201', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Windows用户态程序高效排错
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25848404/" onclick="moreurl(this, {'total': 10, 'clicked': '25848404', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28342615.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25848404/" onclick="moreurl(this, {'total': 10, 'clicked': '25848404', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            Android编程权威指南
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6811238/" onclick="moreurl(this, {'total': 10, 'clicked': '6811238', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6937206.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6811238/" onclick="moreurl(this, {'total': 10, 'clicked': '6811238', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            Android内核剖析
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25863872/" onclick="moreurl(this, {'total': 10, 'clicked': '25863872', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27257261.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25863872/" onclick="moreurl(this, {'total': 10, 'clicked': '25863872', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            深入理解Android：Wi-Fi、NFC和G...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3993680/" onclick="moreurl(this, {'total': 10, 'clicked': '3993680', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3949513.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3993680/" onclick="moreurl(this, {'total': 10, 'clicked': '3993680', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            深入解析Windows操作系统
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/19976838/comments/">全部 17 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="925917992">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-925917992" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-925917992" class="j a_show_login" data-cid="925917992">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/fzhzhy/">风中纸页</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-04-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">唯一可选可读。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1051974745">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1051974745" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1051974745" class="j a_show_login" data-cid="1051974745">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/67437381/">小浩浩</a>
+                    <span>2016-06-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">Android程序员进阶，性能优化典范。虽然好多东西自己平时在网络上也有积累，阅读这本书算是一次总结~</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="850104011">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-850104011" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-850104011" class="j a_show_login" data-cid="850104011">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/waterlife2001/">家住六朝烟水间</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2014-10-01</span>
+                </span>
+            </h3>
+            <p class="comment-content">我们要集中精力优化20%性能有瓶颈的代码，这是作者提出代码优化，无论是在java层，native层还是汇编层的前提，这一点非常地中肯。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="638194419">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-638194419" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-638194419" class="j a_show_login" data-cid="638194419">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/scfd/">双重否定</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2013-02-02</span>
+                </span>
+            </h3>
+            <p class="comment-content">目前少有的较全面的关于Android性能优化主题的书籍，每天早上花半小时，一个月看完，推荐。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="748858701">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-748858701" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-748858701" class="j a_show_login" data-cid="748858701">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/49123896/">云の影</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2013-12-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">除了翻译不是太好外，其它都很好。主要从比较细微的地方进行优化，而且涉及汇编语言比较多（应该跟作者的多年嵌入式背景有关）。不过总体来说让人从比较新颖的角度去考虑优化！相当特别的一本书！</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1051974745">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1051974745" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1051974745" class="j a_show_login" data-cid="1051974745">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/67437381/">小浩浩</a>
+                    <span>2016-06-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">Android程序员进阶，性能优化典范。虽然好多东西自己平时在网络上也有积累，阅读这本书算是一次总结~</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="975016835">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-975016835" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-975016835" class="j a_show_login" data-cid="975016835">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/137270909/">????</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2015-11-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">书很薄，一两天就看完了，知识点也比较浅，优化这种事，师傅领进门，修行在个人，全靠经验</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="955925762">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-955925762" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-955925762" class="j a_show_login" data-cid="955925762">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/jywangkeep/">[已注销]</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2015-09-03</span>
+                </span>
+            </h3>
+            <p class="comment-content">把NDK和RS部分掠过了，其他部分都还不错，更像是Tips的集合。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="925917992">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-925917992" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-925917992" class="j a_show_login" data-cid="925917992">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/fzhzhy/">风中纸页</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-04-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">唯一可选可读。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="906719892">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-906719892" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-906719892" class="j a_show_login" data-cid="906719892">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/78510972/">iiiiiii</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2015-03-26</span>
+                </span>
+            </h3>
+            <p class="comment-content">书籍中运用的优化技巧不仅可以运用在android上，和c带点关系的都可以用。因为有一部分讲优化的方法，就是在优化汇编了，因为编译器编译出来的不如手补习班的运行效率高。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/19976838/comments/">更多短评 17 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<!-- COLLECTED CSS -->
+
+<section class="topics mod">
+    <header>
+        <h2>
+            Android应用性能优化的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 19976838;
+        window.join_label_text = '写书评参与';
+        window.write_icon = "//img3.doubanio.com/f/ithildin/c05246e1499f0d7c20526699a860b8faaeee62f3/pics/export/write@3x.png";
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/56f73d2e551c805c201537f1cf93fceeeb4b3b51/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/0d950975613fdc59495abe70a2920f09aa322476/js/export/subject_topics_compiled.js"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/19976838/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            Android应用性能优化的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 0 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+
+
+</section>
+    
+<script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/7e1992de3109ebae.js"></script>
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/19976838/annotation">共<span property="v:count">35</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="22244993">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/blacktulip/"><img src="https://img1.doubanio.com/icon/u1168032-27.jpg" alt="大头" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22244993/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22244993/" class="">第186页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/blacktulip/" class=" " title="大头">大头</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="22244993">
+              <div class="short">
+                
+                  <span class="">确保在发布应用之前认真处理layoutopt报告的所有问题，这些问题通常很容易纠正。未优化的布局会拖慢应用。</span>
+                <p class="pl">
+                  <span class="">2012-11-05 12:52</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>确保在发布应用之前认真处理layoutopt报告的所有问题，这些问题通常很容易纠正。未优化的布局会拖慢应用。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22244993/#comments">回应</a>&nbsp;&nbsp;
+                  2012-11-05 12:52
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22175637">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/blacktulip/"><img src="https://img1.doubanio.com/icon/u1168032-27.jpg" alt="大头" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22175637/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22175637/" class="">第109页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/blacktulip/" class=" " title="大头">大头</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="22175637">
+              <div class="short">
+                
+                  <span class="">在Android 2.2和更早的版本中，垃圾收集发生在应用的主线程。Android 2.3有了转机，垃圾收集工作转移到了一个单独的线程。但是垃圾收集时还是会对主线程有点影响（暂停5毫秒或者更少）。</span>
+                <p class="pl">
+                  <span class="">2012-11-02 16:31</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                在Android 2.2和更早的版本中，垃圾收集发生在应用的主线程。Android 2.3有了转机，垃圾收集工作转移到了一个单独的线程。但是垃圾收集时还是会对主线程有点影响（暂停5毫秒或者更少）。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22175637/#comments">回应</a>&nbsp;&nbsp;
+                  2012-11-02 16:31
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22162155">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/blacktulip/"><img src="https://img1.doubanio.com/icon/u1168032-27.jpg" alt="大头" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22162155/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22162155/" class="">第98页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/blacktulip/" class=" " title="大头">大头</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="22162155">
+              <div class="short">
+                
+                  <span class="">处理大量数据时，使用可以满足要求的最小数据类型。避免类型转换。尽量保持类型一致，尽可能在计算中使用单一类型。多半情况下，使用较少内存的原则是值得遵守的。</span>
+                <p class="pl">
+                  <span class="">2012-11-01 22:56</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>处理大量数据时，使用可以满足要求的最小数据类型。</q></blockquote><blockquote><q>避免类型转换。尽量保持类型一致，尽可能在计算中使用单一类型。</q></blockquote><blockquote><q>多半情况下，使用较少内存的原则是值得遵守的。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22162155/#comments">回应</a>&nbsp;&nbsp;
+                  2012-11-01 22:56
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22159859">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/blacktulip/"><img src="https://img1.doubanio.com/icon/u1168032-27.jpg" alt="大头" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22159859/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22159859/" class="">第110页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/blacktulip/" class=" " title="大头">大头</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="22159859">
+              <div class="short">
+                
+                  <span class="">在代码中使用推迟初始化是一个好习惯，它可以让你在实现onLowMemory()时几乎不用改动其他地方的代码。</span>
+                <p class="pl">
+                  <span class="">2012-11-01 21:49</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>在代码中使用推迟初始化是一个好习惯，它可以让你在实现onLowMemory()时几乎不用改动其他地方的代码。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22159859/#comments">回应</a>&nbsp;&nbsp;
+                  2012-11-01 21:49
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="24670414">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/scfd/"><img src="https://img3.doubanio.com/icon/u2854938-6.jpg" alt="双重否定" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/24670414/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/24670414/" class="">第4页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/scfd/" class=" " title="双重否定">双重否定</a>
+                (知行合一)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="24670414">
+              <div class="short">
+                
+                  <span class="">在深入学习之前，你应该意识到代码优化不是应用开发的首要任务。提供良好的用户体验并专注于代码的可维护性，这才是你的首要任务。事实上，代码可优化应该最后才做，甚至完全可能不用去做。
+
+从用户角度来看，如果可以在100毫秒或更短的时间内计算完成，那就是瞬间计算。这样的相应时间保证了顺畅的用户体验，才是我们要达到的目标。
+
+p4 开始介绍了各种提高算法性能的java代码实例
+
+
+作为开发人员，你有责任选择最恰当的实...</span>
+                <p class="pl">
+                  <span class="">2013-02-19 10:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>在深入学习之前，你应该意识到代码优化不是应用开发的首要任务。提供良好的用户体验并专注于代码的可维护性，这才是你的首要任务。事实上，代码可优化应该最后才做，甚至完全可能不用去做。
+
+从用户角度来看，如果可以在100毫秒或更短的时间内计算完成，那就是瞬间计算。这样的相应时间保证了顺畅的用户体验，才是我们要达到的目标。
+
+p4 开始介绍了各种提高算法性能的java代码实例
+</q></blockquote>
+<blockquote><q>
+作为开发人员，你有责任选择最恰当的实现，它不一定是最快的。你要权衡各种因素。
+1）应用是针对哪些设备和Android设备
+2）资源（人力和时间）
+
+你可能已经注意到，优化往往使源代码更难于阅读、理解和维护，有时几个星期或几个月后你都认不出自己的代码了。出于这个原因，关键是要仔细想好，你真正需要怎样的优化以及这些优化究竟会对开发产生何种影响（短期或长期）。强烈建议先实现一个能运行的解决方法，然后再考虑优惠券（过早的优化是噩梦之源）。另外，有些代码不易被其他人人理解，注意加上注释。
+
+3 缓存结果
+-----------
+如果计算代价过高，最好把过去的结果缓存起来，下次就可以很快取出来。
+
+如果你熟悉Java，你可能打算使用一个HashMap充当缓存，它可以胜任这项工作。不过，Android定义了SparseArray类，当键是整数时，它比HashMap效率更高，因为HaspMap使用的是java.lang.Integer对象，而SparseArray使用的是基本类型int。因此使用HaspMap会创建很多Integer对象，而使用SparseArray不会。
+
+Android定义了多种类型的稀疏数组（sparse array）: SparseArray(键为整数，值为对象)、SparseBooleanArray(键为整数，值为boolean)和SparseIntArray(键为整数，值为整数)
+</q></blockquote>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/24670414/#comments">回应</a>&nbsp;&nbsp;
+                  2013-02-19 10:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22996679">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/blacktulip/"><img src="https://img1.doubanio.com/icon/u1168032-27.jpg" alt="大头" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22996679/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22996679/" class="">第16页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/blacktulip/" class=" " title="大头">大头</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="22996679">
+              <div class="short">
+                
+                  <span class="">Java语言规范说了两件事：
+· Error类及其子类是普通程序中抛出的异常，它们通常是不期望能够恢复的。
+· 精密的程序可能希望抓住这异常并试图从错误异常中恢复。</span>
+                <p class="pl">
+                  <span class="">2012-12-07 09:04</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Java语言规范说了两件事：
+· Error类及其子类是普通程序中抛出的异常，它们通常是不期望能够恢复的。
+· 精密的程序可能希望抓住这异常并试图从错误异常中恢复。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22996679/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-07 09:04
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22996801">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/blacktulip/"><img src="https://img1.doubanio.com/icon/u1168032-27.jpg" alt="大头" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22996801/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22996801/" class="">第18页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/blacktulip/" class=" " title="大头">大头</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="22996801">
+              <div class="short">
+                
+                  <span class="">如果Android检测到应用没有响应，也就是说当Android检测到输入事件在5秒钟内没有被处理，或者BroadcastReceiver在10秒内没有执行完毕，ANR（Application Not Responding）对话框就会跳出来。</span>
+                <p class="pl">
+                  <span class="">2012-12-07 09:16</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>如果Android检测到应用没有响应，也就是说当Android检测到输入事件在5秒钟内没有被处理，或者BroadcastReceiver在10秒内没有执行完毕，ANR（Application Not Responding）对话框就会跳出来。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22996801/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-07 09:16
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22996826">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/blacktulip/"><img src="https://img1.doubanio.com/icon/u1168032-27.jpg" alt="大头" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22996826/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22996826/" class="">第18页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/blacktulip/" class=" " title="大头">大头</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="22996826">
+              <div class="short">
+                
+                  <span class="">当配置发生变化时，当前Activity被销毁，并创建一个新实例，会调用一下序列：
+· onPause
+· onStop
+· onDestory
+· onCreate
+· onStart
+· onResume最常见的配置变化之一是，设备的方向发生旋转。应用可以在manifest文件里指定每个Activity元素的Android:configChanges属性，让它只接受自己想处理的配置变化。这会导致调用Activity的onConfigurationChanged()，而不是销毁。</span>
+                <p class="pl">
+                  <span class="">2012-12-07 09:19</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>当配置发生变化时，当前Activity被销毁，并创建一个新实例，会调用一下序列：
+· onPause
+· onStop
+· onDestory
+· onCreate
+· onStart
+· onResume</q></blockquote><blockquote><q>最常见的配置变化之一是，设备的方向发生旋转。</q></blockquote><blockquote><q>应用可以在manifest文件里指定每个Activity元素的Android:configChanges属性，让它只接受自己想处理的配置变化。这会导致调用Activity的onConfigurationChanged()，而不是销毁。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22996826/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-07 09:19
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="27888085">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/zhiqiang001/"><img src="https://img3.doubanio.com/icon/u48456541-4.jpg" alt="crazy" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27888085/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27888085/" class="">第109页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/zhiqiang001/" class=" " title="crazy">crazy</a>
+                (钝感是一种才能)
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="27888085">
+              <div class="short">
+                
+                  <span class="">在Android 2.2 和 更早的版本中尤其如此，因为垃圾收集发生在应用的主线程，很可能降低相应速度和性能，造成恶劣影响。Android2.3 有了转机，垃圾收集工作转移到了一个单独的线程。</span>
+                <p class="pl">
+                  <span class="">2013-08-01 20:13</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>在Android 2.2 和 更早的版本中尤其如此，因为垃圾收集发生在应用的主线程，很可能降低相应速度和性能，造成恶劣影响。Android2.3 有了转机，垃圾收集工作转移到了一个单独的线程。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27888085/#comments">回应</a>&nbsp;&nbsp;
+                  2013-08-01 20:13
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27888004">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/zhiqiang001/"><img src="https://img3.doubanio.com/icon/u48456541-4.jpg" alt="crazy" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27888004/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27888004/" class="">第184页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/zhiqiang001/" class=" " title="crazy">crazy</a>
+                (钝感是一种才能)
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="27888004">
+              <div class="short">
+                
+                  <span class="">ViewStub 是轻量级且不可见的视图，当需要时，在自己的布局中可以用它来推迟展开布局。
+</span>
+                <p class="pl">
+                  <span class="">2013-08-01 20:10</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>ViewStub 是轻量级且不可见的视图，当需要时，在自己的布局中可以用它来推迟展开布局。</q></blockquote>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27888004/#comments">回应</a>&nbsp;&nbsp;
+                  2013-08-01 20:10
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27772556">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/zhiqiang001/"><img src="https://img3.doubanio.com/icon/u48456541-4.jpg" alt="crazy" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27772556/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27772556/" class="">第140页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/zhiqiang001/" class=" " title="crazy">crazy</a>
+                (钝感是一种才能)
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="27772556">
+              <div class="short">
+                
+                  <span class="">因为Debug.threadCpuTimeNAnos()只测量在当前线程中所花费的时间，所以它的结果更准确</span>
+                <p class="pl">
+                  <span class="">2013-07-25 22:18</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>因为Debug.threadCpuTimeNAnos()只测量在当前线程中所花费的时间，所以它的结果更准确</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27772556/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-25 22:18
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="24670746">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/scfd/"><img src="https://img3.doubanio.com/icon/u2854938-6.jpg" alt="双重否定" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/24670746/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/24670746/" class="">第160页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/scfd/" class=" " title="双重否定">双重否定</a>
+                (知行合一)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="24670746">
+              <div class="short">
+                
+                  <span class="">布局优化
+--------
+1. setContentView调用花费的时间取决于布局的复杂性：资源数据越大解析越慢，而更多的类也让布局实例化变慢
+
+2. 调用setContentView()几乎占用了从onCreate()开始到onResume()结束之间所有时间的99%
+
+3. 要节约时间，大多数基于同样的原则：减少创建对象的数量。消除不必要的对象，或者推迟创建对象
+
+4. 采用嵌套的线性布局会深化布局层次，从而导致布局和按键处理变慢。
+
+5. 合并布局。另一种减少布...</span>
+                <p class="pl">
+                  <span class="">2013-02-19 10:15</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                布局优化<div style="padding-bottom:1em;"></div>--------<div style="padding-bottom:1em;"></div>1. setContentView调用花费的时间取决于布局的复杂性：资源数据越大解析越慢，而更多的类也让布局实例化变慢<div style="padding-bottom:1em;"></div>2. 调用setContentView()几乎占用了从onCreate()开始到onResume()结束之间所有时间的99%<div style="padding-bottom:1em;"></div>3. 要节约时间，大多数基于同样的原则：减少创建对象的数量。消除不必要的对象，或者推迟创建对象<div style="padding-bottom:1em;"></div>4. 采用嵌套的线性布局会深化布局层次，从而导致布局和按键处理变慢。<div style="padding-bottom:1em;"></div>5. 合并布局。另一种减少布局层次的技巧是用&lt;merge /&gt;标签来合并布局。<div style="padding-bottom:1em;"></div>    Android布局的父视图是一个FrameLayou,如果你的布局的最上层也是一个FrameLayout，就可以用&lt;merge /&gt;标签代替它，减少一层布局<div style="padding-bottom:1em;"></div>6. 重用布局，Android支持在XML布局中使用&lt;include /&gt; 标签，用来包含另一个布局。<div style="padding-bottom:1em;"></div>    &lt;include /&gt; 标签可用于两个目的：<div style="padding-bottom:1em;"></div>    1） 多次使用相同的布局<div style="padding-bottom:1em;"></div>    2） 布局有一个通用的组成部分，或有部分依赖于设置配置（例如，屏幕方向纵向或横向）    <div style="padding-bottom:1em;"></div>7. ViewStub<div style="padding-bottom:1em;"></div>    推迟初始化是个方便的技术，可以推迟实例化，提高性能，还可能会节省内存（如果对象从未创建过）<div style="padding-bottom:1em;"></div>    ViewStub是轻量级且不可见的视图，当需要时，在自己的布局中可以用它来推迟展开布局。<div style="padding-bottom:1em;"></div>     下次遇到相关代码后，将代码整理在这里<div style="padding-bottom:1em;"></div>布局工具<div style="padding-bottom:1em;"></div>--------<div style="padding-bottom:1em;"></div>1. hierarchyviewer  用来查看布局的<div style="padding-bottom:1em;"></div>2. layoutopt  用于检测布局文件质量的<div style="padding-bottom:1em;"></div>OpenGL ES<div style="padding-bottom:1em;"></div>-----------<div style="padding-bottom:1em;"></div>三维渲染，目前还没有涉及到，暂搁置。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/24670746/#comments">回应</a>&nbsp;&nbsp;
+                  2013-02-19 10:15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/19976838/annotation">更多读书笔记（共35篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        <span>
+            <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=discuss">
+              <span>在这本书的论坛里发言</span>
+            </a>
+        </span>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fwww.bplisn.net.cn%2FBookSearch.aspx%3FISBN%3D978-7-115-27241-6&amp;subject=7115272417&amp;type=borrow&amp;library=10007&amp;link2key=1ec2ea1e7d" target="_blank">北京市公共图书馆(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D9787115272416&amp;subject=7115272417&amp;type=borrow&amp;library=10012&amp;link2key=1ec2ea1e7d" target="_blank">上海市中心图书馆(4)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac3.wzlib.cn%2Fopac%2Fsearch%3FsearchWay%3Disbn%26q%3D978-7-115-27241-6%26booktype%3D%26marcformat%3D%26sortWay%3Dscore%26sortOrder%3Ddesc%26startPubdate%3D%26endPubdate%3D%26rows%3D10&amp;subject=7115272417&amp;type=borrow&amp;library=10020&amp;link2key=1ec2ea1e7d" target="_blank">温州市图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1035339">全部2</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/10606736/">Apress版</a>
+          2012-1-17 / 11人读过
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/19976838/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/31441/" target="_blank">我的编程之路</a>
+                <span class="pl">(风中纸页)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/38984172/" target="_blank">交互设计师养成书单</a>
+                <span class="pl">(Narcoticpilll)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1890347/" target="_blank">待读ANDROID类</a>
+                <span class="pl">([已注销])</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3429217/" target="_blank">Android</a>
+                <span class="pl">(jack)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/678721/" target="_blank">我拥有的书</a>
+                <span class="pl">(风中纸页)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/ailb/"><img src="https://img3.doubanio.com/icon/u133680612-1.jpg" class="pil" alt="柏霖" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/ailb/">柏霖</a><br/>
+      <div class="pl ll">          1月3日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:Android</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/3681478/"><img src="https://img3.doubanio.com/icon/u3681478-2.jpg" class="pil" alt="hanpfei" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/3681478/">hanpfei</a><br/>
+      <div class="pl ll">          2017年12月24日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/170582095/"><img src="https://img3.doubanio.com/icon/u170582095-1.jpg" class="pil" alt="姜福权" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/170582095/">姜福权</a><br/>
+      <div class="pl ll">          2017年12月20日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/19976838/doings">16人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/19976838/collections">63人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/19976838/wishes">276人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/19976838/offers">2本二手书欲转让</a>
+          <span class="">
+            (10.00
+                至 29.00元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有276人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于Android应用性能优化的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/19976838/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'rL_WZ2Xav9I',
+            criteria = '7:Android|7:性能|7:编程|7:android|7:软件开发|7:计算机|7:程序设计|7:软件工程|7:性能优化|7:计算机技术|3:/subject/19976838/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar1b-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

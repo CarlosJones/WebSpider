@@ -1,0 +1,4779 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>C++ Primer 中文版（第 4 版） (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/1767741/">
+<meta name="keywords" content="C++ Primer 中文版（第 4 版）,Stanley B.Lippman,Josée LaJoie,Barbara E.Moo,人民邮电出版社,2006,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书C++ Primer 中文版（第 4 版） 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/1767741/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/5ef2a22fba637133.css">
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">C++ Primer 中文版（第 4 版）</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s1638975.jpg" title="C++ Primer 中文版（第 4 版）">
+    <img src="https://img3.doubanio.com/lpic/s1638975.jpg" title="点击看大图" alt="C++ Primer 中文版（第 4 版）"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Stanley%20B.Lippman">Stanley B.Lippman</a>
+        
+           /
+        
+        <a class="" href="/search/Jos%C3%A9e%20LaJoie">Josée LaJoie</a>
+        
+           /
+        
+        <a class="" href="/search/Barbara%20E.Moo">Barbara E.Moo</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 人民邮电出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">原作名:</span> C++ Primer, 4th Edition<br/>
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E6%9D%8E%E5%B8%88%E8%B4%A4">李师贤</a>
+        
+           /
+        
+        <a class="" href="/search/%E8%92%8B%E7%88%B1%E5%86%9B">蒋爱军</a>
+        
+           /
+        
+        <a class="" href="/search/%E6%A2%85%E6%99%93%E5%8B%87">梅晓勇</a>
+        
+           /
+        
+        <a class="" href="/search/%E6%9E%97%E7%91%9B">林瑛</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2006<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 745<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 99.00元<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 16开<br/>
+
+    
+    
+  
+    <span class="pl">丛书:</span>&nbsp;<a href="https://book.douban.com/series/660">图灵程序设计丛书</a><br>
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787115145543<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.2 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar45"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">4138</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">66.8%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:26px"></div>
+
+            <span class="rating_per">27.8%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:4px"></div>
+
+            <span class="rating_per">4.8%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.3%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.2%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1767741-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1767741-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1767741-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1767741-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1767741-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1767741-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1767741-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1767741-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-1767741">
+        <a href="#" data-url="https://book.douban.com/subject/1767741/" data-desc="" data-title="书籍《C++ Primer 中文版（第 4 版）》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s1638975.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_1767741"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>本书是久负盛名的C++经典教程，其内容是C++大师Stanley B. Lippman丰富的实践经验和C++标准委员会原负责人Josée Lajoie对C++标准深入理解的完美结合，已经帮助全球无数程序员学会了C++。本版对前一版进行了彻底的修订，内容经过了重新组织，更加入了C++ 先驱Barbara E. Moo在C++教学方面的真知灼见。既显著改善了可读性，又充分体现了C++语言的最新进展和当前的业界最佳实践。书中不但新增大量教学辅助内容，用于强调重要的知识点，提醒常见的错误，推荐优秀的编程实践，给出使用提示，还包含大量来自实战的示例和习题。对C++基本概念和技术全面而且权威的阐述，对现代C++编程风格的强调，使本书成为C++初学者的最佳指南；对于中高级程序员，本书也是不可或缺的参考书。本书的前言阐述了 第4版和前一版的不同之处。</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/1767741/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <span class="short">
+                <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>本书所有作者都是著名的C++权威人物。</p>    <p>Stanley B. Lippman目前是微软公司 Visual C++ 团队的架构师。他从1984年开始在贝尔实验室与C++的设计者Bjarne Stroustrup一起从事C++的设计与开发。他在迪士尼和梦工厂从事动画制作，还担任过JPL的高级顾问。他还著有Inside the C++ Object Model。</p>    <p>Josée Lajoie曾经是IBM加拿大研究中心C/C++编译器开发团队的成员，在ISO C++标准委员会工作了7年，担任过ISO核心语言工作组的主席和C++ Report杂志的专栏作家。</p>    <p>Barbara E. Moo是拥有25年软件经验的独立咨询顾问。在AT&amp;T，她与Stroustrup、Lippman一起管理过复杂的C++开发项目。她和Andrew Koenig合著了Accelerated ...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+
+            </span>
+            <span class="all hidden ">
+                <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>本书所有作者都是著名的C++权威人物。</p>    <p>Stanley B. Lippman目前是微软公司 Visual C++ 团队的架构师。他从1984年开始在贝尔实验室与C++的设计者Bjarne Stroustrup一起从事C++的设计与开发。他在迪士尼和梦工厂从事动画制作，还担任过JPL的高级顾问。他还著有Inside the C++ Object Model。</p>    <p>Josée Lajoie曾经是IBM加拿大研究中心C/C++编译器开发团队的成员，在ISO C++标准委员会工作了7年，担任过ISO核心语言工作组的主席和C++ Report杂志的专栏作家。</p>    <p>Barbara E. Moo是拥有25年软件经验的独立咨询顾问。在AT&amp;T，她与Stroustrup、Lippman一起管理过复杂的C++开发项目。她和Andrew Koenig合著了Accelerated C++和Ruminations on C++。</p></div>
+
+            </span>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_1767741_short">
+        第1章 快速入门<br/>
+        1.1 编写简单的C++程序<br/>
+        1.2 初窥输入/输出<br/>
+        1.3 关于注释<br/>
+        1.4 控制结构 入<br/>
+        1.5 类的简介<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_1767741_short').hide();$('#dir_1767741_full').show();$.get('/j/subject/j_dir_count',{id:1767741});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_1767741_full" style="display:none">
+        第1章 快速入门<br/>
+        1.1 编写简单的C++程序<br/>
+        1.2 初窥输入/输出<br/>
+        1.3 关于注释<br/>
+        1.4 控制结构 入<br/>
+        1.5 类的简介<br/>
+        1.6 C++程序<br/>
+        小结<br/>
+        术语<br/>
+        第一部分 基本语言<br/>
+        第2章 变量和基本类型<br/>
+        2.1 基本内置类型<br/>
+        2.2 字面值常量<br/>
+        2.3 变量<br/>
+        2.4 const限定符<br/>
+        2.5 引用<br/>
+        2.6 typedef名字<br/>
+        2.7 枚举<br/>
+        2.8 类类型<br/>
+        2.9 编写自己的头文件<br/>
+        小结<br/>
+        术语<br/>
+        第3章 标准库类型<br/>
+        3.1 命名空间的using声明<br/>
+        3.2 标准库string类型<br/>
+        3.3 标准库vector类型<br/>
+        3.4 迭代器简介<br/>
+        3.5 标准库bitset类型<br/>
+        小结<br/>
+        术语<br/>
+        第4章 数组和指针<br/>
+        4.1 数组<br/>
+        4.2 指针的引入<br/>
+        4.3 C风格字符串<br/>
+        4.4 多维数组<br/>
+        小结<br/>
+        术语<br/>
+        第5章 表达式<br/>
+        5.1 算术操作符<br/>
+        5.2 关系操作符和逻辑操作符<br/>
+        5.3 位操作符<br/>
+        5.4 赋值操作符<br/>
+        5.5 自增和自减操作符<br/>
+        5.6 箭头操作符<br/>
+        5.7 条件操作符<br/>
+        5.8 sizeof操作符<br/>
+        5.9 逗号操作符<br/>
+        5.10 复合表达式的求值<br/>
+        5.11 new和delete表达式<br/>
+        5.12 类型转换<br/>
+        小结<br/>
+        术语<br/>
+        第6章 语句<br/>
+        6.1 简单语句<br/>
+        6.2 声明语句<br/>
+        6.3 复合语句（块）<br/>
+        6.4 语句作用域<br/>
+        6.5 if语句<br/>
+        6.6 switch语句<br/>
+        6.7 while语句<br/>
+        6.8 for循环语句<br/>
+        6.9 do while语句<br/>
+        6.10 break语句<br/>
+        6.11 continue语句<br/>
+        6.12 goto语句<br/>
+        6.13 try块和异常处理<br/>
+        6.14 使用预处理器进行调试<br/>
+        小结<br/>
+        术语<br/>
+        第7章 函数<br/>
+        7.1 函数的定义<br/>
+        7.2 参数传递<br/>
+        7.3 return语句<br/>
+        7.4 函数声明<br/>
+        7.5 局部对象<br/>
+        7.6 内联函数<br/>
+        7.7 类的成员函数<br/>
+        7.8 重载函数<br/>
+        7.9 指向函数的指针<br/>
+        小结<br/>
+        术语<br/>
+        第8章 标准IO库<br/>
+        8.1 面向对象的标准库<br/>
+        8.2 条件状态<br/>
+        8.3 输出缓冲区的管理<br/>
+        8.4 文件的输入和输出<br/>
+        8.5 字符串流<br/>
+        小结<br/>
+        术语<br/>
+        第二部分 容器和算法<br/>
+        第9章 顺序容器<br/>
+        第10章 关联容器<br/>
+        第11章 泛型算法<br/>
+        第三部分 类和数据抽象<br/>
+        第12章 类<br/>
+        第13章 复制控制<br/>
+        第14章 重载操作符与转换<br/>
+        第四部分 面向对象编程与泛型编程<br/>
+        第15章 面向对象编程<br/>
+        第16章 模板与泛型编程<br/>
+        第五部分 高级主题<br/>
+        第17章 用于大型程序的工具<br/>
+        第18章 特殊工具与技术<br/>
+        附录 标准库<br/>
+        索引<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_1767741_full').hide();$('#dir_1767741_short').show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '1767741',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共401个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/C++">C++</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/程序设计">程序设计</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/C/C++">C/C++</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/经典">经典</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/经典教材">经典教材</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/经典之作">经典之作</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+<div class="subject_show block5">
+<h2>丛书信息</h2>
+<div>
+　　<a href="https://book.douban.com/series/660">图灵程序设计丛书 (共136册)</a>,
+这套丛书还有
+《HTML5实战》,《领域驱动设计》,《SQL基础教程》,《iPhone开发秘籍 （第2版）》,《学习JavaScript数据结构与算法》    等。</div>
+</div>
+<script>
+$(function(){$(".knnlike a").click(function(){return moreurl(this,{'from':'knnlike'})})})
+</script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;C++ Primer 中文版（第 4 版）&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1523295/?dcs=subject-rec&amp;dcm=douban&amp;dct=1767741" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1523295.jpg?v=1395394148.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1523295/" target="_blank">编程之美</a>
+          </div>
+          <div class="price">
+              6.60元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1637944/?dcs=subject-rec&amp;dcm=douban&amp;dct=1767741" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1637944.jpg?v=1395394220.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1637944/" target="_blank">程序员的自我修养</a>
+          </div>
+          <div class="price">
+              36.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=1767741" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/198648.jpg?v=1395393782.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1499455/?dcs=subject-rec&amp;dcm=douban&amp;dct=1767741" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1499455.jpg?v=1395393904.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1499455/" target="_blank">Python源码剖析</a>
+          </div>
+          <div class="price">
+              38.39元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/387679/?dcs=subject-rec&amp;dcm=douban&amp;dct=1767741" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/387679.jpg?v=1395395846.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/387679/" target="_blank">编程大师访谈录</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;C++ Primer 中文版（第 4 版）&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1885170/" onclick="moreurl(this, {'total': 10, 'clicked': '1885170', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s1959967.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1885170/" onclick="moreurl(this, {'total': 10, 'clicked': '1885170', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            算法导论（原书第2版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1231590/" onclick="moreurl(this, {'total': 10, 'clicked': '1231590', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s1441361.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1231590/" onclick="moreurl(this, {'total': 10, 'clicked': '1231590', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            Effective C++中文版
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1788421/" onclick="moreurl(this, {'total': 10, 'clicked': '1788421', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4436543.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1788421/" onclick="moreurl(this, {'total': 10, 'clicked': '1788421', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            UNIX环境高级编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1110934/" onclick="moreurl(this, {'total': 10, 'clicked': '1110934', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s1092076.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1110934/" onclick="moreurl(this, {'total': 10, 'clicked': '1110934', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            STL源码剖析
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1139336/" onclick="moreurl(this, {'total': 10, 'clicked': '1139336', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s1106934.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1139336/" onclick="moreurl(this, {'total': 10, 'clicked': '1139336', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            C程序设计语言
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1842426/" onclick="moreurl(this, {'total': 10, 'clicked': '1842426', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s1764864.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1842426/" onclick="moreurl(this, {'total': 10, 'clicked': '1842426', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Effective C++
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1091086/" onclick="moreurl(this, {'total': 10, 'clicked': '1091086', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3301634.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1091086/" onclick="moreurl(this, {'total': 10, 'clicked': '1091086', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            深度探索C++对象模型
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3227098/" onclick="moreurl(this, {'total': 10, 'clicked': '3227098', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4687321.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3227098/" onclick="moreurl(this, {'total': 10, 'clicked': '3227098', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            编程珠玑
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1477390/" onclick="moreurl(this, {'total': 10, 'clicked': '1477390', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s1495029.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1477390/" onclick="moreurl(this, {'total': 10, 'clicked': '1477390', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            代码大全（第2版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2377310/" onclick="moreurl(this, {'total': 10, 'clicked': '2377310', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s5886086.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2377310/" onclick="moreurl(this, {'total': 10, 'clicked': '2377310', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            C专家编程
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1767741/comments/">全部 893 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="19527192">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-19527192" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-19527192" class="j a_show_login" data-cid="19527192">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/welovecs/">welovecs</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2008-04-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">还剩下6章没来得及读。个人认为这本书是讲解C++语言细节的经典之作。不过，程序设计毕竟不是语言细节（特性）的堆砌，那些Idiom, Pattern, Programming Model同样重要。关于Idiom，莫过于Effective C++，还有Herb Sutter大叔的几本书了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="374903478">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-374903478" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-374903478" class="j a_show_login" data-cid="374903478">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/southstarj/">southstarj</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2013-05-02</span>
+                </span>
+            </h3>
+            <p class="comment-content">太经典了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="23656380">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-23656380" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-23656380" class="j a_show_login" data-cid="23656380">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/carryingyou/">[已注销]</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2007-11-11</span>
+                </span>
+            </h3>
+            <p class="comment-content">只看了一部分 基础的</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="384600110">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-384600110" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-384600110" class="j a_show_login" data-cid="384600110">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/dutor/">[已注销]</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2011-04-30</span>
+                </span>
+            </h3>
+            <p class="comment-content">一本“可能”不适合Primer的、但真的很Primer的C++之书</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="485954720">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-485954720" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-485954720" class="j a_show_login" data-cid="485954720">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/lotus3x/">三鲜</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2012-01-23</span>
+                </span>
+            </h3>
+            <p class="comment-content">大二的时候读的，但每年闲着没事儿还会翻一翻。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1287832919">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1287832919" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1287832919" class="j a_show_login" data-cid="1287832919">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/59890419/">若水三千</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-12-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">研究生买的书 经典。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1277906894">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1277906894" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1277906894" class="j a_show_login" data-cid="1277906894">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/65934997/">种田人</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-11-28</span>
+                </span>
+            </h3>
+            <p class="comment-content">我看的c++第一本书</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1242500277">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1242500277" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1242500277" class="j a_show_login" data-cid="1242500277">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/127591281/">李开斌</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-09-13</span>
+                </span>
+            </h3>
+            <p class="comment-content">陪公子读书</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1226076474">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1226076474" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1226076474" class="j a_show_login" data-cid="1226076474">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/164979957/">Sally</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-08-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">上海招聘技术人员，自动化测试Python，c++开发人员，通信行业。虚拟化云方向职位。15940993785@163.com</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1220768815">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1220768815" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1220768815" class="j a_show_login" data-cid="1220768815">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/163663706/">kanahei</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-07-27</span>
+                </span>
+            </h3>
+            <p class="comment-content">这本书太经典了</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/1767741/comments/">更多短评 893 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            C++ Primer 中文版（第 4 版）的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 1767741;
+        window.join_label_text = '写书评参与';
+        window.write_icon = "//img3.doubanio.com/f/ithildin/c05246e1499f0d7c20526699a860b8faaeee62f3/pics/export/write@3x.png";
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/56f73d2e551c805c201537f1cf93fceeeb4b3b51/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/0d950975613fdc59495abe70a2920f09aa322476/js/export/subject_topics_compiled.js"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/1767741/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            C++ Primer 中文版（第 4 版）的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 107 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="2371103">
+        <div class="main review-item" id="2371103">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/nullcc/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/nullcc/" property="v:reviewer" class="name">[已注销]</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2009-09-22" class="main-meta">2009-09-22 01:19:09</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/2371103/">关于这本书的读法和适合的人群</a></h2>
+
+                <div id="review_2371103_short" class="review-short" data-rid="2371103">
+                    <div class="short-content">
+
+                        说实话，我学完C以后进阶到C++的第一本书就是这本CP4。CP4确实是经典，但是它却不适合初学者，我当时读了大概有一半了，但是对很多东西还是一知半解。因为这本书是站在编译器的角度来写的，很多东西非常细节，事无巨细的论述对初学者一点好处也没有。初学者需要快速能先吸引眼...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-2371103-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_2371103_full" class="hidden">
+                    <div id="review_2371103_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="2371103" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-2371103">
+                                309
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="2371103" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-2371103">
+                                19
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/2371103/#comments" class="reply">67回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="1639852">
+        <div class="main review-item" id="1639852">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/zephyrspeaker/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u3059480-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/zephyrspeaker/" property="v:reviewer" class="name">LUCKYsama</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2009-01-29" class="main-meta">2009-01-29 19:53:34</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/1639852/">关于C++的扯淡</a></h2>
+
+                <div id="review_1639852_short" class="review-short" data-rid="1639852">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                         今天下午在看C++Primer的时候跟同学东扯西扯一些乱七八糟的东西就填在这里。这本书还真的是不错的。   C++ 的诞生大约是在1980-1983年。总之我的一直以来的基本观点是，C++当初的诞生一定不是为了现在面向对象方法论上教授的那些扯淡的东西……什么把一个类的数据封装起来，只...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-1639852-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_1639852_full" class="hidden">
+                    <div id="review_1639852_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="1639852" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-1639852">
+                                136
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="1639852" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-1639852">
+                                12
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/1639852/#comments" class="reply">39回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="1426531">
+        <div class="main review-item" id="1426531">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/xombat/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1641162-10.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/xombat/" property="v:reviewer" class="name">archer</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2008-07-02" class="main-meta">2008-07-02 15:10:26</span>
+        
+
+            <span class="publisher right">
+            人民邮电出版社2006版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/1426531/">我的语言学习黄金期</a></h2>
+
+                <div id="review_1426531_short" class="review-short" data-rid="1426531">
+                    <div class="short-content">
+
+                        那个时候不知道大学期间应该找个女朋友，不知道应该出去跟同学喝酒唱歌，不知道还有很多更诱人的技术，我只知道我现在要学c++,而且我手头这本书，是个大砖头，有1000多页，英文版，不争分夺秒看的话，一学期肯定看不完。  学期一开始的时候，我就握着这本书，拿出一张纸制定我...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-1426531-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_1426531_full" class="hidden">
+                    <div id="review_1426531_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="1426531" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-1426531">
+                                136
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="1426531" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-1426531">
+                                21
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/1426531/#comments" class="reply">45回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6500246">
+        <div class="main review-item" id="6500246">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/75874962/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u75874962-7.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/75874962/" property="v:reviewer" class="name">第四只猴子</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-01-09" class="main-meta">2014-01-09 13:07:21</span>
+        
+
+            <span class="publisher right">
+            Addison-Wesley Professional2012版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6500246/">习题答案 及 StackOverflow上的讨论</a></h2>
+
+                <div id="review_6500246_short" class="review-short" data-rid="6500246">
+                    <div class="short-content">
+
+                        更新： 不少同学要代码。我折腾了一晚上，终于把习题的代码发到github上了： https://github.com/Mooophy/Cpp-Primer 要讨论的同学要熟悉一下git的用法，需要以下几步： 1、注册帐号； 2、fork 我的repository； 3、在你自己的repository里commit，比如填加个注释什么的； 4、...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6500246-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6500246_full" class="hidden">
+                    <div id="review_6500246_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6500246" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6500246">
+                                50
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6500246" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6500246">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6500246/#comments" class="reply">52回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7567776">
+        <div class="main review-item" id="7567776">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/67569097/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u67569097-6.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/67569097/" property="v:reviewer" class="name">根号3</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2015-08-12" class="main-meta">2015-08-12 15:57:50</span>
+        
+
+            <span class="publisher right">
+            电子工业出版社2013版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7567776/">如何更好的利用《C++ Primer》学习C++？</a></h2>
+
+                <div id="review_7567776_short" class="review-short" data-rid="7567776">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        《C++ Primer》作为久负盛名的C++经典教程，丰富的教学辅助内容、精心组织的编程示范，无论是初学者入门，或是中、高级程序员提升，都是不容置疑的首选。  一本好书只有读过才有价值，然而《C++ Primer》这本厚如砖头的好书，很多人在购买之后，都仅仅只是简单翻阅了前面几个章...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7567776-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7567776_full" class="hidden">
+                    <div id="review_7567776_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7567776" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7567776">
+                                32
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7567776" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7567776">
+                                4
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7567776/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6454450">
+        <div class="main review-item" id="6454450">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/77779504/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u77779504-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/77779504/" property="v:reviewer" class="name">白云鹏</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-12-09" class="main-meta">2013-12-09 15:12:45</span>
+        
+
+            <span class="publisher right">
+            电子工业出版社2013版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6454450/">《C++ Primer》第5版问世：一本不折不扣的C++蓝本</a></h2>
+
+                <div id="review_6454450_short" class="review-short" data-rid="6454450">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        科学计算、分布式应用、嵌入式行业、智能控制、算法研究，乃至学术讨论和上机考试都会有一种语言的身影，那就是大名鼎鼎的C++语言。原汁原味的C++目前已经执到C++11标准。听到这门编程语言，多数人伴随而来的是晦涩、复杂、强大等关键词！这样的感觉实际上是真实的。Lippman（...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6454450-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6454450_full" class="hidden">
+                    <div id="review_6454450_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6454450" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6454450">
+                                30
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6454450" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6454450">
+                                6
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6454450/#comments" class="reply">4回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6449961">
+        <div class="main review-item" id="6449961">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/owlman/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1299980-16.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/owlman/" property="v:reviewer" class="name">owlman</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-12-06" class="main-meta">2013-12-06 01:32:08</span>
+        
+
+            <span class="publisher right">
+            电子工业出版社2013版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6449961/">重温经典，不胜感慨</a></h2>
+
+                <div id="review_6449961_short" class="review-short" data-rid="6449961">
+                    <div class="short-content">
+
+                         说起Lippman的C++ Primer，我总是有种特殊感情。这本书既是我进入C++领域的敲门砖，也是我第一次在网络上发表技术文章的对象。当年读书笔记中的青涩迷惘和年少轻狂都还历历在目，转眼已经从第三版出到了第五版。十年的光阴改变了许多，不变的是经典。   C++ Primer一直是我给...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6449961-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6449961_full" class="hidden">
+                    <div id="review_6449961_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6449961" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6449961">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6449961" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6449961">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6449961/#comments" class="reply">1回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3006584">
+        <div class="main review-item" id="3006584">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/lovelikewater/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/lovelikewater/" property="v:reviewer" class="name">草根程序员</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-02-22" class="main-meta">2010-02-22 15:19:18</span>
+        
+
+            <span class="publisher right">
+            中国电力出版社2002版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3006584/">第三版不适合初学者</a></h2>
+
+                <div id="review_3006584_short" class="review-short" data-rid="3006584">
+                    <div class="short-content">
+
+                        这本书的第四版前言里有一段对第三版的评论，原文记不得了，但大意是第三版讨论了很多很深的原理，和书名不符。所以第四版基本上完全重写了，和第三版可以算是两本不同的书。 确实，第三版不适合初学者，反而是第四版，有了些入门的意思。 不过第三版还是很经典，很值得看的，...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3006584-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3006584_full" class="hidden">
+                    <div id="review_3006584_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3006584" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3006584">
+                                7
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3006584" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3006584">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3006584/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3108924">
+        <div class="main review-item" id="3108924">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/xiaostone01/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u3352217-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/xiaostone01/" property="v:reviewer" class="name">王飞</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-03-20" class="main-meta">2010-03-20 11:34:14</span>
+        
+
+            <span class="publisher right">
+            人民邮电出版社2006版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3108924/">系统，全面，简洁的C++教程</a></h2>
+
+                <div id="review_3108924_short" class="review-short" data-rid="3108924">
+                    <div class="short-content">
+
+                             之前太穷，没有名著的概念。于是就借着国内的几个草根版本的C++教程学编程，结果倒是还不错，会用C++了。     两年前找工作，我对C++的很多要点都没有概念。为了能够应付笔试，去网上找了很多面筋，也在很多公司去体验笔试的感觉。路虽然走得有点偏，但是和凑合。     最...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3108924-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3108924_full" class="hidden">
+                    <div id="review_3108924_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3108924" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3108924">
+                                16
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3108924" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3108924">
+                                3
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3108924/#comments" class="reply">4回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="4984880">
+        <div class="main review-item" id="4984880">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/qiyehu/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u43858294-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/qiyehu/" property="v:reviewer" class="name">七夜狐</a>
+
+            <span property="v:rating" class="allstar30 main-title-rating" title="还行"></span>
+
+        <span property="v:dtreviewed" content="2011-06-11" class="main-meta">2011-06-11 17:38:38</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/4984880/">读《C++ Primer 》</a></h2>
+
+                <div id="review_4984880_short" class="review-short" data-rid="4984880">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        	 	《C++ primer 》真的是一本大部头。翻开书的第一页，上面写着：  	北京太月园地下室 	09.12.31   	也就是说，这本书从买来，到读完，已经经历了一年半的时间。记得当时买到这本书后，在10年的1月3号，就在BW正式上班了。看这本书的过程和我到目前为止的工作生涯，是一致的。...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-4984880-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_4984880_full" class="hidden">
+                    <div id="review_4984880_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="4984880" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-4984880">
+                                15
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="4984880" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-4984880">
+                                2
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/4984880/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/24f5546f9b009a43.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评107篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/1767741/annotation">共<span property="v:count">203</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="15522714">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/Evan.Chris/"><img src="https://img3.doubanio.com/icon/u41622056-46.jpg" alt="何先森饭扫光" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/15522714/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/15522714/" class="">边看边记-第一周目</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/Evan.Chris/" class=" " title="何先森饭扫光">何先森饭扫光</a>
+                (the hard way)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="15522714">
+              <div class="short">
+                
+                  <span class="">复习用，第一周目记的要点会多一些
+
+
+
+第二章 变量和基本类型
+第39页：lvalue 和 rvalue
+第43页：初始化不是赋值。初始化指创建变量并给它赋初始值，而赋值则是擦出对象的当前值并用新值代替。
+第44页：内置类型变量是否自动初始化取决于变量定义的位置。在函数体外定义的变量都初始化成0，在函数体里定义的内置类型变量不进行自动初始化。……未初始化变量引起的错误难以发现。……永远不要依赖未定义行为。
+第45页：如果...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/15522714/">(<span class="">6回应</span>)</a>
+                <p class="pl">
+                  <span class="">2011-11-25 20:57</span>
+                  
+                    &nbsp;&nbsp;<span class="">20人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                复习用，第一周目记的要点会多一些<div style="padding-bottom:1em;"></div>第二章 变量和基本类型
+<blockquote><q>第39页：lvalue 和 rvalue</q></blockquote>
+<blockquote><q>第43页：初始化不是赋值。初始化指创建变量并给它赋初始值，而赋值则是擦出对象的当前值并用新值代替。</q></blockquote>
+<blockquote><q>第44页：内置类型变量是否自动初始化取决于变量定义的位置。在函数体外定义的变量都初始化成0，在函数体里定义的内置类型变量不进行自动初始化。……未初始化变量引起的错误难以发现。……永远不要依赖未定义行为。</q></blockquote>
+<blockquote><q>第45页：如果类具有默认构造函数，那么就可以在定义该类的变量时不用显式地初始化变量。……
+有些类类型没有默认构造函数。对于这些类型来说，每个定义都必须提供显式的初始化式。没有初始值是根本不可能定义这种类型的变量的。</q></blockquote>
+<blockquote><q>第46页：声明和定义之间的区别可能看起来微不足道，但事实上确实举足轻重的</q></blockquote>
+<blockquote><q>第50页：非const变量默认为extern。要使const变量能够在其他的文件中访问，必须显式地指定它为extern。</q></blockquote>
+<blockquote><q>第52页：非const引用只能绑定到与该引用同类型的对象。const引用则可以绑定到不同但相关的类型的对象或绑定到右值</q></blockquote>利用temporary赋值<div style="padding-bottom:1em;"></div><blockquote><q>第59页：头文件用于声明而不是用于定义</q></blockquote><div style="padding-bottom:1em;"></div>第三章 标准库类型
+<blockquote><q>第70页：因为历史原因以及为了与C语言兼容，字符串字面值与标准库string类型不是同一种类型。</q></blockquote>
+<blockquote><q>第73页：任何存储string的size操作结果的变量必须为string::size_type类型。特别重要的是，不要把size的返回值赋给一个int变量。</q></blockquote>
+<blockquote><q>第75页：当进行string对象和字符串字面值混合连接操作时，+操作符的左右操作数必须至少有一个是string类型的</q></blockquote>
+<blockquote><q>第78页：通常，C++程序中应采用cname这种头文件版本，而不是采用name.h版本，这样，标准库中的名字在命名空间str中保持一致。</q></blockquote>
+<blockquote><q>第81页：使用size_type类型时，必须指出该类型是那里定义的。vector类型总是包括vector的元素类型:
+vector&lt;int&gt;::size_type // ok
+vector::size_type // error</q></blockquote>
+<blockquote><q>C++程序员习惯于有限选用!=而不是&lt;来编写循环判断条件。</q></blockquote>为什么？学习完第二部分的泛型编程就会明白这种习惯的合理性<div style="padding-bottom:1em;"></div><blockquote><q>第83页：必须是已存在的元素才能用下标操作符进行索引。通过下标操作进行赋值时，不会添加任何元素。
+……
+警告：仅能对确知已存在的元素进行下标操作
+……
+试图获取不存在的元素必然产生运行时错误。……不能确保执行过程可以捕捉到这类错误，运行程序的结果是不确定的。……
+本警告适用于任何使用下标操作的时候，……
+不幸的是，试图对不存在的元素进行下标操作是程序设计过程中经常会犯的严重错误。所谓的“缓冲区溢出”错误就是对不存在的元素进行下标操作的结果。……</q></blockquote>
+<blockquote><q>第84页：由end操作返回的迭代器并不指向vector中任何实际的元素，相反，它只是起一个哨兵（sentinel）的作用，表示我们已处理完vector中所有元素。</q></blockquote>
+<blockquote><q>第88页：任何改变vector长度的操作都会使已存在的迭代器失效。例如，在调用push_back之后，就不能再信赖指向vector的迭代器的值了。</q></blockquote>
+<blockquote><q>第89页：sring对象和bitset对象之间是反向转化的</q></blockquote><div style="padding-bottom:1em;"></div>第四章 数组和指针
+<blockquote><q>第96页：与vector相比，数组的显著缺陷在于：数组的长度是固定的，而且程序员无法知道一个给定数组的长度。数组没有没有获取其容量大小的size操作，也不提供push_back操作在其中自动添加元素。如果需要更改数组的长度，程序员只能创建一个更大的新数组，然后把原数组的所有元素复制到新数组空间中去。
+与使用标准vector类型的程序相比，依赖于内置数组的程序更容易出错而且难于调试。
+在出现标准库之前，C++程序大量使用数组保存一组对象。……在将来一段时间之内，原来依赖于数组的程序仍大量存在，因此，C++程序员还是必须掌握数组的使用方法。</q></blockquote>
+<blockquote><q>第96页：数组的维数必须用值大于等于1的常量表达式定义。此常量表达式只能包含整型字面值常量、枚举常量或者用常量表达式初始化的整型const对象。非const变量以及要到运行阶段才知道其值的const变量都不能用于定义数组的维数。</q></blockquote>实践了一下，VC中符合以上描述，g++中却可以用非const整型变量定义数组维数，可能的原因是g++兼容c99标准，而c99标准中允许使用变量定义数组维数。
+<blockquote><q>第99页：……而数组下标的正确类型是size_t……</q></blockquote>
+<blockquote><q>第100页：导致安全问题的最常见原因是所谓“缓冲区溢出（buffer overflow）”错误。当我们在编程时没有检查下标，并且引用了越出数组或其他类似数据结构边界的元素时，就会导致这类错误。</q></blockquote>
+<blockquote><q>第102页：避免使用未初始化的指针
+很多运行时错误都源于使用了未初始化的指针。
+就像使用其他没有初始化的变量一样，使用未初始化的指针时的行为C++标准中并没有定义，它几乎总是会导致运行时崩溃。然而，导致崩溃的这一原因很难发现。
+C++语言无法检测指针是否未被初始化，也无法区分有效地址和由指针分配到的存储空间中存放的二进制位形成的地址。建议程序员在使用之前初始化所有的变量，尤其是指针。
+如果可能的话，除非所指向的对象已经存在，否则不要定义指针，这样可避免定义一个未初始化的指针。
+如果必须分开定义指针和其所指向的对象，则将指针初始化为0。因为编译器可检测出0值的指针，程序可判断该指针并未指向一个对象。</q></blockquote>
+<blockquote><q>第104页：void*指针只支持几种有限的操作：与另一个指针进行比较；向函数传递void*指针或从函数返回void*指针；给另一个void*指针赋值。不允许使用void*指针操纵它所指向的对象。</q></blockquote>
+<blockquote><q>第108页：在使用下标访问数组时，实际上是对指向数组元素的指针做下标操作。只要指针指向数组元素，就可以对它进行下标操作：</q></blockquote><pre class="source true cpp">
+int ia[] = {0, 2, 4, 6, 8};
+int *p = &amp;ia[2];            // ok: p point to the element indexed by 2
+int j = p[1];               // ok: p[1] equvalent to *(p + 1),
+                            //     p[1] is the same element as ia[3]
+int k = p[-2];              // ok: p[-2] is the same element as ia[0]
+</pre><div style="padding-bottom:1em;"></div><blockquote><q>第111页：在实际的程序中，指向const指针常用用作函数的形参。将形参定义为指向const的指针，以此确保传递给函数的实际对象在函数中不因为形参而被修改</q></blockquote>事实上，除非实参定义为const，否则形参无论是用const指针或是const引用，都并不能确保实参对象不被修改，使用强制类型转换获取其地址即可跳过这种约束。如果出现了这种编码，就得考虑程序设计的缺陷和编码人员的沟通不足了。<div style="padding-bottom:1em;"></div><blockquote><q>第112页：下面是一个几乎所有人刚开始都会答错的问题。假设给出以下语句：
+typedef string *pstring;
+const pstring cstr;
+请问cstr变量是什么类型？……很多人都认为真正的类型是：
+const string *cstr; // wrong interpretation of const pstring cstr
+……但这是错误的。
+错误的原因在于将typedef当作文本扩展了。声明const pstring时，const修饰的是pstring的类型，这是一个指针。因此，该声明语句应该是把cstr定义为指向string类型对象的const指针，这个定义等价于：
+// cstr is a const pointer to string
+string *const cstr; // equivalent to const pstring cstr</q></blockquote>
+<blockquote><q>第115页：在使用处理C风格字符串的标准库函数时，牢记字符串必须以结束符null结束……
+传递给标准库函数strcat和strcpy的第一个实参数组必须具有足够大的空间存放新生成的字符串。……
+如果必须使用C风格字符串，则使用标准库函数strncat和strncpy比strcat和strcpy函数更安全：……
+如果使用C++标准库类型string，则不存在上述问题：……
+对大部分的应用而言，使用标准库类型string，除了增强安全性外，效率也提高了，因此应该尽量避免使用C风格字符串。</q></blockquote>
+<blockquote><q>第118页：动态分配内存最后必须进行释放，否则，内存最终将会逐渐耗尽。如果不再需要使用动态创建的数组，程序员必须显式地将其占用的存储空间返还给程序的自由存储区。C++语言为指针提供delete [ ]表达式释放指针所指向的数组空间：
+delete [ ] pia;
+该语句回收了pia所指的数组，把相应的内存返还给自由存储区。在关键字delete和指针之间的空方括号对是必不可少的：它告诉编译器该指针指向的是自由存储区中的数组，而并非单个对象。
+如果遗漏了空方括号对，这是一个编译器无法发现的错误，将导致程序在运行时出错。
+理论上，回收数组时缺少空方括号对，至少会导致运行时少释放了内存空间，从而产生内存泄漏（memory leak）。对于某些系统和/或元素类型，有可能会带来更严重的运行时错误。因此，在释放动态数组时千万别忘了方括号对。</q></blockquote>
+<blockquote><q>第122页：严格地说，C++中没有多维数组，通常所指的多维数组其实就是数组的数组：
+// array of size 3, each element is an array of ints of size 4
+int ia[3][4]
+……
+为了对多维数组进行索引，每一维都需要一个下标。……
+如果表达式只提供了一个下标，则结果获取的元素是该行下标索引的内层数组。如ia[2]将获得ia数组的最后一行，即这一行的内层数组本身，而并非该数组中的任何元素。</q></blockquote><pre class="source true cpp">
+int (*p)[4] = ia;
+int *q = *p;
+++p; // 步进为4
+++q; // 步进为1
+</pre><div style="padding-bottom:1em;"></div><blockquote><q>第132页：逻辑与和逻辑或操作符总是先计算其左操作数，然后再计算其右操作数。只有在仅靠左操作数的值无法确定该逻辑表达式的结果时，才会求解其右操作数。我们常常称这种求值策略为“短路求值（short-circuit evaluation）”。</q></blockquote>
+<blockquote><q>第140页：建议：只有在必要时才使用后置操作符
+……道理很简单：因为前置操作需要做的工作更少，只需加1后返回加1后的结果即可。而后置操作符则必须先保存操作数原来的值，以便返回未加1之前的值作为操作的结果。……因此，养成使用前置操作这个好习惯，就不必操心性能差异的问题。</q></blockquote>
+<blockquote><q>第143页：条件操作符的优先级相当低。当我们要在一个更大的表达式中嵌入条件表达式时，通常必须用圆括号把条件表达式括起来。</q></blockquote>
+<blockquote><q>第144页：对数组做sizeof操作等效于将对其元素类型做sizeof操作的结果乘上数组元素的个数。……
+// sizeof(ia)/sizeof(*ia) returns the number of elements in ia
+int sz = sizeof(ia)/sizeof(*ia);</q></blockquote>
+<blockquote><q>第145页：逗号表达式的结果是其最右边表达式的值。</q></blockquote>
+<blockquote><q>第150页：一个表达式里，不要在两个或更多的子表达式中对同一对象做自增或自减操作。</q></blockquote>
+<blockquote><q>第152页：一旦删除了指针所指向的对象，立即将指针置为0，这样就非常清楚地表明指针不再指向任何对象。</q></blockquote>
+<blockquote><q>第154页：下面三种常见的程序错误都与动态内存分配相关：
+（1）删除（delete）指向动态分配内存的指针失败，因而无法将该块内存返还给自由存储区。
+（2）读写已删除的对象。如果删除指针所指向的对象之后，将指针置为0值，则比较容易检测出这类错误。
+（3）对同一个内存空间使用两次delete表达式。
+操纵动态分配内存时，很容易发生上述错误，但这些错误却难以跟踪和修正。</q></blockquote>
+<blockquote><q>第160页：建议：避免使用强制类型转换
+强制类型转换关闭了正常的类型检查。强烈建议程序员避免使用强制类型转换，不依赖强制类型转换也能写出很好的C++程序。</q></blockquote><div style="padding-bottom:1em;"></div>第六章 语句<div style="padding-bottom:1em;"></div>第七章 函数
+<blockquote><q>第196页：函数的运行以形参的（隐式）定义和初始化开始。</q></blockquote>
+<blockquote><q>第198页：参数名是可选的，但在函数定义中，通常所有参数都要命名。参数必须在命名后才能使用。</q></blockquote>
+<blockquote><q>第203页：如果使用引用形参的唯一目的是避免复制实参，则应将形参定义为const引用。</q></blockquote>
+<blockquote><q>第204页：问题的关键是非const引用形参只能与完全同类型的非const对象关联。
+应该将不修改相应实参的形参定义为const引用。如果将这样的形参定义为非const引用，则毫无必要地限制了该函数的使用。
+……
+应该将不需要修改的引用形参定义为const引用。普通的非const引用形参在使用时不太灵活。这样的形参既不能用const对象初始化，也不能用字面值或产生右值的表达式实参初始化。</q></blockquote>
+<blockquote><q>第206页：因为数组不能复制，所以无法编写使用数组类型形参的函数。因为数组会被自动转化为指针，所以处理数组的函数通常通过操纵指向数组中的元素的指针来处理数组。
+……
+虽然不能直接传递数组，但是函数的形参可以写成数组的形式。虽然形参表示方式不同，但可将使用数组语法定义的形参看作数组元素类型的指针。……
+通常，将数组形参直接定义为指针要比使用数组语法定义更好。这样就明确地表示，函数操纵的是指向数组元素的指针，而不是数组本身。由于忽略了数组长度，形参定义中如果包含了数组长度则特别容易引起误解。</q></blockquote>
+<blockquote><q>第207页：当编译器检查数组形参关联的实参时，它只会检查实参是不是指针、指针的类型和数组元素的类型是否匹配，而不会检查数组的长度。</q></blockquote>
+<blockquote><q>第208页：和其他类型一样，数组形参可声明为数组的引用。如果形参是数组的引用，编译器不会将数组实参转化为指针，而是传递数组的引用本身。在这种情况下，数组大小成为形参和实参类型的一部分。编译器检查数组实参的大小与形参的大小是否匹配……</q></blockquote>
+<blockquote><q>第208页：和其他数组一样，多维数组以指向0号元素的指针方式传递。多维数组的元素本身就是数组，除了第一维意外的所有维的长度都是元素类型的一部分，必须明确指定……
+我们也可以用数组语法定义多维数组。与一维数组一样，编译器忽略第一维的长度，所以最好不要把它包括在形参表内……</q></blockquote>
+<blockquote><q>第209页：任何处理数组的程序都要确保程序停留在数组的边界内。
+有三种常见的编程技巧确保函数的操作不超出数组实参的边界。第一种方法是在数组本身放置一个标记来检测数组的结束。……
+第二种方法是传递指向数组第一个和最后一个元素的下一个位置的指针。……
+第三种方法是将第二个形参定义为表示ishuzu的大小，这种用法在C程序和标准化之前的C++程序中十分普遍。</q></blockquote>
+<blockquote><q>第212页：返回类型为void的函数通常不能使用第二种形式的return语句，但是，它可以返回另一个返回类型同样是void的函数的调用结果……
+返回任何其他表达式的尝试都会导致编译时的错误。</q></blockquote>
+<blockquote><q>第213页：在含有return语句的循环后没有提供return语句是很危险的，因为大部分的编译器不能检测出这个漏洞，运行时会出现什么问题是不确定的。</q></blockquote>
+<blockquote><q>第214页：理解返回引用至关重要的是：千万不能返回局部变量的引用。
+当函数执行完毕时，将释放分配给局部对象的存储空间。此时，对局部对象的引用就会指向不确定的内存。……
+确保返回引用安全的一个好方法是：请自问，这个引用指向哪个在此之前存在的对象？</q></blockquote>写的还挺萌……<div style="padding-bottom:1em;"></div><blockquote><q>第215页：返回引用的函数返回一个左值。因此，这样的函数可用于任何要求使用左值的地方……
+给函数返回值赋值可能让人惊讶，由于函数返回的是一个引用，因此这是正确的，该引用是被返回元素的同义词。
+入托不希望引用返回值被修改，返回值应该声明为const……</q></blockquote><pre class="source true cpp">
+char &amp;get_val(string &amp;str, string::size_type ix)
+{
+        return str[ix];
+}
+int main()
+{
+        string s(&quot;a value&quot;);
+        cout &lt;&lt; s &lt;&lt; endl;       // prints a value
+        get_val(s, 0) = 'A';     // changes s[0] to A
+
+        cout &lt;&lt; s &lt;&lt; endl;       // prints A value
+        return 0;
+}
+</pre><div style="padding-bottom:1em;"></div><blockquote><q>第215页：千万不要返回指向局部对象的指针
+……和返回局部对象的引用一样，返回指向局部对象的指针也是错误的。一旦函数结束，局部对象被释放，返回的指针就变成了指向不再存在的对象的悬垂指针。</q></blockquote>
+<blockquote><q>第217页：把函数声明直接放到每个使用该函数的源文件中，这可能是大家希望的方式，而且也是合法的。但问题在于这种用法比较呆板而且容易出错。解决的方法是把函数声明放在头文件中，这样可以确保对于指定函数其所有声明保持一致。如果函数接口发生变化，则只要修改其唯一的声明即可。</q></blockquote>
+<blockquote><q>第218页：默认实参是通过给形参表中的形参提供明确的初始值来指定的。程序员可为一个或多个形参定义默认值。但是，如果有一个形参具有默认实参，那么，它后面所有的形参都必须有默认实参。</q></blockquote>
+<blockquote><q>第219页：既可以在函数声明也可以在函数定义中指定默认实参。但是，在一个文件中，只能为一个形参指定默认实参一次。……
+通常，应在函数声明中指定默认实参，并将该声明放在合适的头文件中。
+如果在函数定义的形参表中提供默认实参，那么只有在包含该函数定义的源文件中调用该函数时，默认实参才是有效的。</q></blockquote>
+<blockquote><q>第221页：为这样的小操作定义一个函数的好处是：
+#阅读和理解函数shortString的调用，要比读一条用等价的条件表达式取代函数调用表达式并解释它的含义要容易得多。
+#如果需要做任何修改，修改函数要比找出并修改每一处等价表达式容易得多。
+#使用函数可以确保统一的行为，每个测试都保证以相同的方式实现。
+#函数可以重用，不必为其他应用重写代码。
+但是，将shorterString写成函数有一个潜在的缺点：调用函数比求解等价表达式要慢得多。</q></blockquote>
+<blockquote><q>第222页：内联函数应该在头文件中定义，这一点不同于其他函数。
+内敛函数的定义对编译器而言必须是可见的，以便编译器能够在调用点内联展开该函数的代码。此时，仅有函数原型是不够的。
+……
+在头文件中加入或修改内联函数时，使用了该头文件的所有源文件都必须重新编译。</q></blockquote>
+<blockquote><q>第223页：编译器隐式地将类内定义的成员函数当作内联函数。</q></blockquote>
+<blockquote><q>第226页：在冒号和花括号之间的代码称为构造函数初始化列表。构造函数的初始化列表为类的一个或多个数据成员指定初值。它跟在构造函数的形参表之后，以冒号开头。构造函数的初始化式是一系列成员名，每个成员后面是括在圆括号中的初始值。多个成员的初始化用逗号分隔。</q></blockquote>
+<blockquote><q>第227页：如果没有为一个类显式定义任何构造函数，编译器将自动为这个类生成默认构造函数。
+由编译器创建的默认构造函数通常称为合成的默认构造函数，它将依据如同变量初始化的规则来初始化类中所有成员。……
+合成的默认构造函数一般适用于仅包含类类型成员的类。而对于含有内置类型或复合类型成员的类，则通常应该定义他们自己的默认构造函数初始化这些成员。</q></blockquote>
+<blockquote><q>第229页：虽然，对于通常的操作，函数重载能避免不必要的函数命名（和名字记忆），但很容易就会过分使用重载。在一些情况下，使用不同的函数名能提供较多的信息，使程序易于理解。</q></blockquote>
+<blockquote><q>第231页：在C++中，名字查找发生在类型检查之前。</q></blockquote>
+<blockquote><q>第234页：在实际应用中，调用重载函数时应尽量避免对实参做强制类型转换：需要使用强制类型转换意味着所设计的形参集合不合理。</q></blockquote>
+<blockquote><q>第235页：重载和const形参
+仅当形参为引用或指针时，形参是否为const才有影响。</q></blockquote>
+<blockquote><q>第237页：在引用函数名但又没有调用该函数时，函数名将被自动解释为指向函数的指针。……
+此时，直接引用函数名等效于在函数名上应用取地址符……</q></blockquote>
+<blockquote><q>第238页：函数可以返回指向函数的指针，但是，正确写出这种返回类型相当不容易……
+阅读函数指针声明的最佳方法是从声明的名字开始由里而外理解。
+……
+使用typedef可使该定义更简洁易懂……
+允许将形参定义为函数类型，但函数的返回类型则必须是指向函数的指针，而不能是函数。</q></blockquote>最后一句话没有翻译好，第一个分句和后面分句没有什么关系。要表达的意思如下：<div style="padding-bottom:1em;"></div>函数类型可以用作形参类型。函数的返回类型只能是指向函数的指针，而不能是函数类型。<div style="padding-bottom:1em;"></div><blockquote><q>第239页：C++语言允许使用函数指针指向重载的函数……
+指针的类型必须与重载函数的一个版本精确匹配。如果没有精确匹配的函数，则对该指针的初始化或赋值都将导致编译错误……</q></blockquote><div style="padding-bottom:1em;"></div>第八章 标准IO库
+<blockquote><q>第246页：出于某些原因，标准库类型不允许做复制或赋值操作。……
+这个要求有两层特别重要的含义。……只有支持复制的元素类型才能存储在vector或其他容器类型里。由于流对象不能复制，因此不能存储在vector（或其他）容器中（即不存在存储流对象的vector或其他容器）。
+第二个含义是：形参或返回类型也不能为流类型。如果需要传递或返回IO对象，则必须传递指向该对象的引用或指针……</q></blockquote>
+<blockquote><q>第248页：badbit标志着系统级的故障，如无法恢复的读写错误。……如果出现的是可恢复的错误，如在希望获得数值型数据时输入了字符，此时则设置failbit标志，这种导致设置failbit的问题通常是可以修正的。eofbit是在遇到文件结束符时设置的，此时同时还设置了failbit。</q></blockquote><pre class="source true cpp">
+int ival;
+// read cin and test only for EOF; loop is executed even if there are other IO failures
+while (cin &gt;&gt; ival, !cin.eof()) {
+        if (cin.bad())        // input stream is corrupted; bail out
+                throw runtime_error(&quot;IO stream corrupted&quot;);
+        if (cin.fail()) {                             // bad input
+                cerr &lt;&lt; &quot;bad data, try again&quot;;        // warn the user
+                cin.clear(istream::failbit);          // reset the stream
+                continue;                             // get next input
+        }
+        // ok to process ival
+}
+</pre><div style="padding-bottom:1em;"></div><blockquote><q>第249页：下面几种情况将导致缓冲区的内容被刷新，即写入到真实的输出设备或者文件：
+（1）程序正常结束。……
+（2）在一些不确定的时候，缓冲区可能已经满了，在这种情况下，缓冲区将会在写下一个值之前刷新。
+（3）用操纵符显式地刷新缓冲区，例如行结束符endl。
+（4）在每次输出操作执行完后，用unitbuf操纵符设置流的内部状态，从而清空缓冲区。
+（5）可将输出流与输入流关联（tie）起来。在这种情况下，在读输入流时将刷新其关联的输出缓冲区。
+……
+为了确保用户看到程序实际上处理的所有输出，最好的方法是保证所有的输出操作都显式地调用了flush或endl。</q></blockquote><pre class="source true cpp">        cout &lt;&lt; &quot;hi!&quot; &lt;&lt; flush; // 清空缓冲区
+        cout &lt;&lt; &quot;hi!&quot; &lt;&lt; ends;  // 插入null，然后清空缓冲区
+        cout &lt;&lt; &quot;hi!&quot; &lt;&lt; endl;  // 插入换行符，然后清空缓冲区
+
+        // 下面两句等价
+        cout &lt;&lt; unitbuf &lt;&lt; &quot;first&quot; &lt;&lt; &quot;second&quot; &lt;&lt; nounitbuf;
+        cout &lt;&lt; &quot;first&quot; &lt;&lt; flush &lt;&lt; &quot;second&quot; &lt;&lt; flush;
+</pre><div style="padding-bottom:1em;"></div><blockquote><q>第253页：关闭流并不能改变流对象的内部状态。……
+如果打算重用已存在的流对象，那么while循环必须在每次循环时记得关闭（close）和清空（clear）文件流……</q></blockquote>
+<blockquote><q>第255页：从效果来看，为ofstream对象指定out模式等效于同时指定了out和trunc模式。</q></blockquote>
+<blockquote><q>第258页：stringstream对象的一个常见用法是，需要在多种数据类型之间实现自动格式化时使用该类类型。</q></blockquote><div style="padding-bottom:1em;"></div>第九章 顺序容器
+<blockquote><q>第267页：容器元素类型必须满足以下两个约束：
+元素类型必须支持赋值运算。
+元素类型的对象必须可以复制。</q></blockquote>
+<blockquote><q>第268页：必须用空格隔开两个相邻的&gt;符号，以示这是两个分开的符号，否则，系统会认为&gt;&gt;是单个符号，为右移操作符，并结果导致编译时错误。</q></blockquote>
+<blockquote><q>第269页：list容器的迭代器既不支持算术运算（加法或减法），也不支持关系运算（&lt;=, &lt;, &gt;=, &gt;），它只提供前置和后置的自增、自减运算以及相等（不等）运算。</q></blockquote>
+<blockquote><q>第270页：迭代器first和last如果满足以下条件，则可形成一个迭代器范围：
+#它们指向同一个容器中的元素或超出末端的下一位置。
+#如果这两个迭代器不相等，则对first反复做自增运算必须能够到达last。换句话说，在容器中，last绝对不能位于first之前。
+编译器自己不能保证上述要求。编译器无法知道迭代器所关联的是哪个容器，也不知道容器内有多少个元素。若不能满足上述要求，将导致运行时未定义的行为。</q></blockquote>
+<blockquote><q>第271页：使用迭代器编写程序时，必须留意哪些操作会使迭代器失效。使用无效迭代器会导致严重的运行时错误。</q></blockquote>
+<blockquote><q>第276页：任何insert或push操作都可能导致迭代器失效。当编写循环将元素插入vector或deque容器中时，程序必须确保迭代器在每次循环后都得到更新。</q></blockquote>
+<blockquote><q>第276页：不要存储end操作返回的迭代器。添加或删除deque或vector容器内的元素都会导致存储的迭代器失效。</q></blockquote>
+<blockquote><q>第279页：resize操作可能会使迭代器失效。</q></blockquote>
+<blockquote><q>第280页：使用越界的下标，或调用空容器的front或back函数，都会导致程序出现严重的错误。</q></blockquote>
+<blockquote><q>第281页：使用erase操作删除单个元素必须确保该元素确实存在——如果删除指向超出末端的下一位置的迭代器，那么erase操作的行为未定义。</q></blockquote>
+<blockquote><q>第283页：由于assign操作首先删除容器中原来存储的所有元素，因此，传递给assign函数的迭代器不能指向调用该函数的容器内的元素。</q></blockquote>
+<blockquote><q>第289页：在某些方面，可将string类型视为字符容器。……string类型与vector类型不同的是，它不支持以栈方式操纵容器：在string类型中不能使用front、back和pop_back操作。</q></blockquote>
+<blockquote><q>第296页：find操作的返回类型是string::size_type，请使用该类型的对象存储find的返回值。</q></blockquote>
+<blockquote><q>第301页：priority_queue允许用户为队列中存储的元素设置优先级。这种队列不是直接将新元素放置在队列尾部，而是放在比它优先级低的元素前面。</q></blockquote><div style="padding-bottom:1em;"></div>第十章 关联容器
+<blockquote><q>第308页：“容器元素根据键的次序排列”这一事实就是一个重要的结论：在迭代遍历关联容器时，我们可确保按 键的顺序访问元素，而与元素在容器中存放的顺序无关。</q></blockquote>
+<blockquote><q>第309页：在使用关联容器时，它的键不但有一个类型，而且还有一个相关的比较函数。默认情况下，标准库使用键类型定义的&lt;操作符来实现键的比较。……
+所用的比较函数必须在键类型上定义严格弱排序（strict weak ordering）。……
+在实际应用中，键类型必须定义&lt;操作符，而且该操作符应能“正确地工作”，这一点很重要。
+……
+对于键类型，唯一的约束就是必须支持&lt;操作符，至于是否支持其他的关系或相等运算，则不作要求。</q></blockquote>
+<blockquote><q>第310页：在学习map的接口时，需谨记value_type是pair类型，它的值成员可以修改，但键成员不能修改。</q></blockquote>
+<blockquote><q>第311页：使用下标访问map与使用下标访问数组或vector的行为截然不同：用下标访问不存在的元素将导致在map容器中添加一个新的元素，它的键即为该下标值。</q></blockquote>
+<blockquote><q>第312页：有别于vector或string类型，map下标操作符返回的类型与对map迭代器进行解引用获得的类型不相同。
+显然，map迭代器返回value_type类型的值——包含const key_type和mapped_type类型成员的pair对象；下标操作符则返回一个mapped_type类型的值。</q></blockquote>
+<blockquote><q>第315页：下标操作符给出了读取一个值的最简单方法……
+但是，使用下标存在一个很危险的副作用：如果该键不在map容器中，那么下标操作会插入一个具有该键的新元素。
+这样的行为是否正确取决于程序员的意愿。
+……
+map容器提供了两个操作：count和find，用于检查某个键是否存在而不会插入该键。</q></blockquote>
+<blockquote><q>第319页：除了两种例外情况，set容器支持大部分的map操作，包括下面几种：
+……
+两种例外包括：set不支持下标操作符，而且没有定义mapped_type类型。</q></blockquote><div style="padding-bottom:1em;"></div>第十一章 泛型算法
+<blockquote><q>第338页：泛型算法本身从不执行容器操作，只是单独以来迭代器和迭代器操作实现。</q></blockquote>
+<blockquote><q>第342页：对指定数目的元素做写入运算，或者写到目标迭代器的算法，都不检查目标的大小是否足以存储要写入的元素。</q></blockquote>
+<blockquote><q>第345页：算法不直接修改容器的大小。如果需要添加或删除元素，则必须使用容器操作。</q></blockquote>
+<blockquote><q>第348页：只有当容器提供push_front操作时，才能使用front_inserter。在vector或其他没有push_front运算的容器上使用front_inserter，将产生错误。</q></blockquote>
+<blockquote><q>第352页：流迭代器有下面几个重要的限制：
+#不可能从ostream_iterator对象读入，也不可能写到istream_iterator对象中。
+#一旦给ostream_iterator对象赋了一个值，写入就提交了。赋值后，没有办法再改变这个值。此外，ostream_iterator对象中每个不同的值都只能正好输出一次。
+ostream_iterator没有-&gt;操作符。</q></blockquote>
+<blockquote><q>第355页：反向迭代器用于表示范围，而所表示的范围是不对称的，这个事实可推导出一个重要的结论：使用普通的迭代器对反向迭代器进行初始化或赋值时，所得到的迭代器并不是指向原迭代器所指向的元素。</q></blockquote>
+<blockquote><q>第357页：map、set和list类型提供双向迭代器，而string、vector和deque容器上定义的迭代器都是随机访问迭代器，用作访问内置术组元素的指针也是随机访问迭代器。istream_iterator是输入迭代器，而ostream_iterator则是输出迭代器。
+尽管map和set类型提供双向迭代器，但关联容器只能使用算法的一个子集。问题在于：关联容器的键是const对象。因此，关联容器不能使用任何写序列元素的算法。只能使用与关联容器绑在一起的迭代器来提供用于读操作的实参。
+在处理算法时，最好将关联容器上的迭代器视为支持自减运算的输入迭代器，而不是完整的双向迭代器。</q></blockquote>
+<blockquote><q>第358页：对每一个形参，迭代器必须保证最低功能。将支持更少功能的迭代器传递给函数是错误的；而传递更强功能的迭代器则没问题。
+向算法传递无效的迭代器类别所引起的错误，无法保证会在编译时被捕获到。</q></blockquote>
+<blockquote><q>第359页：调用这些算法时，必须确保输出容器有足够大的容量存储输出数据，这正是通常要使用插入迭代器或者ostream_iterator来调用这些算法的原因。如果使用容器迭代器调用这些算法，算法将假定容器里有足够多个需要的元素。</q></blockquote>
+<blockquote><q>第362页：对于list对象，应该优先使用list容器特有的成员版本，而不是泛型算法。
+……
+与对应的泛型算法不同，list容器特有的操作能添加和删除元素。</q></blockquote><div style="padding-bottom:1em;"></div>第十二章 类和数据抽象
+<blockquote><q>第370页：另一方面，类的设计者与实现者之间的区别，也反映了应用程序的用户与设计和实现者之间的区别。用户只关心应用程序能否以合理的费用满足他们的需求。同样的，类的使用者只关心它的接口。好的类设计者会定义直观和易用的类接口，而使用者只关心类中影响他们使用的那部分实现。如果类的实现速度太慢或给类的使用者加上负担，则必然引起使用者的关注。在良好设计的类中，只有类的设计者会关心实现。</q></blockquote>第一句翻译的有误，应改为：<div style="padding-bottom:1em;"></div>另一方面，类的设计者与使用者之间的区别……
+<blockquote><q>第372页：除了定义数据和函数成员之外，类还可以定义自己的局部类型名字。</q></blockquote>
+<blockquote><q>第373页：在声明和定义处指定inline都是合法的。在类的外部定义inline的一个好处是可以使得类比较容易阅读。
+像其他inline一样，inline成员函数的定义必须在调用该函数的每个源文件中是可见的。不在类定义体内定义的inline成员函数，其定义通常应放在有类定义的同一头文件中。</q></blockquote>
+<blockquote><q>第374页：可以声明一个类而不定义它：
+class Screen; // declaration of the Screen class
+这个声明，有时称为前向声明（forward declaration），在程序中引入了类类型的Screen。在声明之后、定义之前，类Screen是一个不完全类型（incomplete type），即已知Screen是一个类型，但不知道包含哪些成员。
+不完全类型智能以有限方式使用。不能定义该类型的对象。不完全类型只能用于定义指向该类性的指针或引用，或者用于声明（而不是定义）使用该类型作为形参类型或返回类型的函数。
+在创建类的对象之前，必须完整地定义该类。必须定义类，而不只是声明类，这样，编译器就会给类的对象预定相应的存储空间。同样的，在使用引用或指针访问类的成员之前，必须已经定义类。</q></blockquote>
+<blockquote><q>第377页：尽管在成员函数内部显式地引用this通常是不必要的，但有一种情况下必须这样做：当我们需要将一个对象作为整体引用而不是引用对象的一个成员时。最常见的情况是在这样的函数中使用this：该函数返回对调用该函数的对象的引用。</q></blockquote>
+<blockquote><q>第378页：不能从const成员函数返回指向类对象的普通引用。const成员函数只能返回*this作为一个const引用。</q></blockquote>
+<blockquote><q>第378页：有时（但不是很经常），我们希望类的数据成员（甚至在const成员函数内）可以修改。这可以通过将它们声明为mutable来实现。</q></blockquote>
+<blockquote><q>第381页：在定义于类外部的成员函数中，形参表和成员函数体都出现在成员名之后。这些都是在类作用域中定义，所以可以不用限定而引用其他成员。……
+与形参类型相比，返回类型出现在成员名字前面。如果函数在类定义体之外定义，则用于返回类型的名字在类作用域之外。如果返回类型使用由类定义的类型，则必须使用完全限定名。</q></blockquote><pre class="source true cpp">
+class Screen {
+public:
+        typedef std::string::size_type index;
+        char get(index, index) const;
+        index get_cursor() const;
+private:
+        std::string contents;
+        index cursor;
+};
+
+char Scren::get(index r, index c) const
+{
+        index row = r * width;
+        return contents[row + c];
+}
+
+inline Screen::index Screen::get_cursor() const
+{
+        return cursor;
+}
+</pre><div style="padding-bottom:1em;"></div><blockquote><q>第382页：按以下方式确定在类成员的声明中用到的名字。
+#检查出现在名字使用之前的类成员的声明。
+#如果第1步查找不成功，则检查包含类定义的作用域中出现的声明以及出现在类定义之前的声明。</q></blockquote>
+<blockquote><q>第383页：按以下方式确定在成员函数中的函数体中用到的名字。
+#首先检查成员函数局部作用域中的声明。
+#如果在成员函数中找不到该名字的声明，则检查对所有类成员的声明。
+#如果在类中找不到该名字的声明，则检查在此成员函数定义之前的作用域中出现的声明。</q></blockquote>
+<blockquote><q>第387页：与其他函数不同的是，构造函数也可以包含一个构造函数初始化列表……
+构造函数的初始化列表以一个冒号开始，接着是一个以逗号分隔的数据成员列表，每个数据成员后面跟一个放在圆括号中的初始化式。……与任意的成员函数一样，构造函数可以定义在类的内部或外部。构造函数初始化式只在构造函数的定义中而不是声明中指定。
+构造函数初始化列表是许多相当有经验的C++程序员都没有掌握的一个特性。
+……
+不管成员是否在构造函数初始化列表中显式初始化，类类型的数据成员总是在初始化阶段初始化。初始化发生在计算阶段开始之前。</q></blockquote>
+<blockquote><q>第388页：如果没有为类成员提供初始化式，则编译器会隐式地使用成员类型的默认构造函数。如果那个类没有默认构造函数，则编译器尝试使用默认构造函数将会失败。在这种情况下，为了初始化数据成员，必须提供初始化式。
+有些成员必须在构造函数初始化列表中进行初始化。对于这样的成员，在构造函数体中对它们赋值不起作用。没有默认构造函数的类类型的成员，以及const或引用类型的成员，不管是哪种类型，都必须在构造函数初始化列表中进行初始化。</q></blockquote>
+<blockquote><q>第389页：初始化的次序常常无关紧要。然而，如果一个成员是根据其他成员而初始化，则成员初始化的次序是至关重要的。
+……
+按照与成员声明一致的次序编写构造函数初始化列表是个好主意。此外，尽可能避免使用成员来初始化其他成员。</q></blockquote>
+<blockquote><q>第391页：我们更喜欢用默认实参，因为它减少代码重复。</q></blockquote>
+<blockquote><q>第392页：一个类哪怕只定义了一个构造函数，编译器也不会再生成默认构造函数。这条规则的根据是，如果一个类在某种情况下需要控制对象初始化，则该类很可能在所有情况下都需要控制。
+只有当一个类没有定义构造函数时，编译器才会自动生成一个默认构造函数。
+……
+如果类包含内置或复合类型的成员，则该类不应该依赖于合成的默认构造函数。它应该定义自己的构造函数来初始化这些成员。
+……
+实际上，如果定义了其他构造函数，则提供一个默认构造函数几乎总是对的。通常，在默认构造函数中给成员提供的初始值应该指出该对象是“空”的。</q></blockquote>
+<blockquote><q>第393页：可以用单个实参来调用的构造函数定义了从形参类型到该类类型的一个隐式转换。
+……
+这个行为是否我们想要的，依赖于我们认为用户将如何使用这个转换。……
+可以通过将构造函数声明为explicit，来防止在需要隐式转换的上下文中使用构造函数……
+explicit关键字智能用于类内部的构造函数声明上。在类的定义体外部所做的定义上不再重复它……
+当构造函数被声明为explicit时，编译器将不使用它作为转换操作符。
+……
+通常，除非有明显的理由想要定义隐式转换，否则，单形参构造函数应该为explicit。将构造函数设置为explicit可以避免错误，并且当转换有用时，用户可以显式地构造对象。</q></blockquote>
+<blockquote><q>第396页：显式初始化类类型对象的成员有三个重大的缺点。
+（1）要求类的全体数据成员都是public。
+（2）将初始化每个对象的每个成员的负担放在程序员身上。这样的初始化是乏味且易于出错的，因为容易遗忘初始化式或提供不适当的初始化式。
+（3）如果增加或删除一个成员，必须找到所有的初始化并正确更新。
+定义和使用构造函数几乎总是较好的。当我们为自己定义的类型提供一个默认构造函数时，允许编译器自动运行那个构造函数，以保证每个类对象在初次使用之前正确地初始化。</q></blockquote>
+<blockquote><q>第398页：友元可以是普通的非成员函数，或前面定义的其他类的成员函数，或整个类。将一个类设为友元，友元类的所有成员函数都可以访问授予友元关系的那个类的非公有成员。
+……
+当我们将成员函数声明为友元时，函数名必须用该函数所属的类名字加以限定。
+……
+友元声明将已命名的类或非成员函数引入到外围作用域中。此外，友元函数可以在类的内部定义，该函数的作用域扩展到包围该类定义的作用域。
+用友元引入的类名和函数（定义或声明），可以像预先声明的一样使用……</q></blockquote><pre class="source true cpp">
+class X {
+        friend class Y;
+        friend void f() { /* ok to define friend function in the class body */ }
+};
+class Z {
+        Y *ymem; // ok: declaration for class Y introduced by friend in X
+        void g() { return ::f(); } // ok: declaration of f intrduced by X
+};
+</pre>
+<blockquote><q>第399页：通常，非static数据成员存在于类类型的每个对象中。不像普通的数据成员，static数据成员独立于该类的任意对象而存在；每个static数据成员是与类关联的对象，并不与该类的对象相关联。
+……static成员函数没有this形参，它可以直接访问所属类的static成员，但不能直接使用非static成员。
+……
+使用static成员而不是全局对象有三个优点。
+（1）static成员的名字是在类的作用域中，因此可以避免与其他类的成员或全局对象名字冲突。
+（2）可以实施封装。static成员可以使私有成员，而全局对象不可以。
+（3）通过阅读程序容易看出static成员是与特定类关联的。这种可见性可清晰地显示程序员的意图。
+……
+可以通过作用域操作符从类直接调用static成员，或者通过对象、引用或指向该类类型对象的指针间接调用。</q></blockquote>
+<blockquote><q>第400页：当我们在类的外部定义static成员时，无须重复指定static保留字，该保留字只出现在类定义体内部的声明处……
+static函数没有this指针
+……通过使用非static成员显式或隐式地引用this是一个编译时错误。
+因为static成员不是任何对象的组成部分，所以static成员函数不能声明为const。……最后，static成员函数页不能被声明为虚函数。</q></blockquote>
+<blockquote><q>第401页：static数据成员必须在类定义体的外部定义（正好一次）。不像普通数据成员，static成员不是通过类构造函数进行初始化，而是应该在定义时进行初始化。
+保证对象正好定义一次的最好办法，就是将static数据成员的定义放在包含类的非内联成员函数定义的文件中。
+……
+像使用任意的类成员一样，在类定义体外部引用类的static成员时，必须指定成员是在哪个类中定义的。然而，static关键字只能用于类定义体内部的声明中，定义不能标示为static。</q></blockquote>内联函数需要在每个调用处都有定义
+<blockquote><q>第401页：一般而言，类的static成员，像普通数据成员一样，不能在类的定义体中初始化。相反，static数据成员通常在定义时才初始化。
+这个规则的一个例外是，只要初始化式是一个常量表达式，整形const static数据成员就可以在类的定义体中进行初始化……
+const static数据成员在类的定义体中初始化时，该数据成员仍必须在类的定义体之外进行定义。</q></blockquote>
+<blockquote><q>第402页：普通成员都是给定类的每个对象的组成部分。static成员独立于任何对象而存在，不是类类型对象的组成部分。因为static数据成员不是任何对象的组成部分，所以它们的使用方式对于非static数据成员而言是不合法的。
+例如，static数据成员的类型可以使该成员所属的类类型。……
+类似的，static数据成员可用作默认实参……</q></blockquote>这两个例子可以对照书看一下<div style="padding-bottom:1em;"></div>第十三章 复制控制
+<blockquote><q>第406页：复制构造函数、赋值操作符和析构函数总称为复制控制（copy control）。编译器自动实现这些操作，但类也可以定义自己的版本。
+……
+通常，编译器合成的复制控制函数是非常精练的——它们只做必需的工作。但对某些类而言，依赖于默认定义会导致灾难。……有一种特别常见的情况需要类定义自己的复制控制成员的：类具有指针成员。</q></blockquote>
+<blockquote><q>第410页：有些类需要完全禁止复制。……如果想要禁止复制，似乎可以省略复制构造函数，然而，如果不定义复制构造函数，编译器将合成一个。
+为了防止复制，类必须显式生命其复制构造函数为private。
+……
+如果想要连友元和成员中的复制也禁止，就可以声明一个（private）复制构造函数但不对其定义。
+声明而不定义成员函数是合法的，但是，使用未定义成员的任何尝试将导致链接失败。</q></blockquote>
+<blockquote><q>第411页：大多数类应定义复制构造函数和默认构造函数
+不定义复制构造函数和/或默认构造函数，会严重局限类的使用。不允许复制的类对象只能作为引用传递给函数或从函数返回，它们也不能用作容器的元素。
+一般来说，最好显式或隐式定义默认构造函数和复制构造函数。只有不存在其他构造函数时才合成默认构造函数。如果定义了复制构造函数，也必须定义默认构造函数。</q></blockquote>
+<blockquote><q>第412页：一般而言，如果类需要复制构造函数，它也会需要赋值操作符。
+实际上，应将这两个操作符看作一个单元。如果需要其中一个，我们几乎也肯定需要另一个。</q></blockquote>
+<blockquote><q>第413页：动态分配的对象只有在指向该对象的指针被删除时才撤销。如果没有删除指向动态对象的指针，则不会运行该对象的析构函数，对象就一直存在，从而导致内存泄漏，而且，对象内部使用的任何资源也不会释放。
+当对象的引用或指针超出作用域时，不会运行析构函数。只有删除指向动态分配对象的指针或实际对象（而不是对象的引用）超出作用域时，才会运行析构函数。</q></blockquote>
+<blockquote><q>第413页：许多类不需要显式析构函数，尤其是具有构造函数的类不一定需要定义自己的析构函数。……析构函数通常用于释放在构造函数或在对象生命期内获取的资源。
+如果类需要析构函数，则它也需要赋值操作符和复制构造函数，这是一个有用的经验法则。……
+析构函数并不仅限于用来释放资源。</q></blockquote>
+<blockquote><q>第414页：析构函数与复制构造函数或赋值操作符之间的一个重要区别是，即使我们编写了自己的析构函数，合成析构函数仍然运行。</q></blockquote>
+<blockquote><q>第417页：编写自己的复制构造函数时，必须显式复制需要复制的任意成员。显式定义的复制构造函数不会进行任何自动复制。</q></blockquote>
+<blockquote><q>第418页：即使对象赋值给自己，赋值操作符的正确工作也非常重要。保证这个行为的通用方法是显式检查对自身的赋值。</q></blockquote><div style="padding-bottom:1em;"></div>第十四章 重载操作符与转换
+<blockquote><q>第431页：2.重载操作符必须具有一个类类型操作数
+……
+3.优先级和结核性是固定的
+……
+4.不再具备短路求值特性
+……
+5.类成员与非成员
+大多数重载操作符可以定义为普通非成员函数或类的成员函数。
+作为类成员的重载函数，其形参看起来比操作数数目少1。作为成员函数的操作符有一个隐含的this形参，限定为第一个操作数。</q></blockquote>
+<blockquote><q>第433页：重载逗号、取地址、逻辑与、逻辑或等操作符通常不是好做法。这些操作符具有有用的内置含义，如果我们定义了自己的版本，就不能再使用这些内置含义。</q></blockquote>
+<blockquote><q>第444页：当一个重载操作符的含义不明显时，给操作去一个名字更好。对于很少用的操作，使用命名函数通常也比用操作符更好。如果不是普通操作，没有必要为简洁而使用操作符。</q></blockquote>
+<blockquote><q>第435页：#赋值（=）、下标（[]）、调用（()）和成员访问箭头（-&gt;）等操作符必须定义为成员，将这些操作符定义为非成员函数将在编译时标记为错误。
+#像复制一样，复合赋值操作符通常应定义为类的成员。与赋值不同的是，不一定非得这样做，如果定义非成员复合赋值操作符，不会出现编译错误。
+#改变对象状态或与给定类型紧密联系的其他一些操作符，如自增、自减和解引用，通常应定义为类成员。
+#对称的操作符，如算术操作符、相等操作符、关系操作符和位操作符，最好定义为普通非成员函数。</q></blockquote>
+<blockquote><q>第436页：IO操作符必须为非成员函数
+……
+……否则，左操作数将只能是该类类型的对象……
+这个用法与为其他类型定义的输出操作的正常使用方式相反。</q></blockquote>
+<blockquote><q>第437页：输入操作符&gt;&gt;的重载
+……它的第二个形参是对要读入的对象的非const引用，该形参必须为非const，因为输入操作符的目的是将数据读到这个对象中。
+更重要但通常重视不够的是，输入和输出操作符有如下区别：输入操作符必须处理错误和文件结束的可能性。</q></blockquote>
+<blockquote><q>第438页：设计输入操作符时，如果可能，要确定错误恢复措施，这很重要。</q></blockquote>
+<blockquote><q>第440页：既定义了算术操作符又定义了相关复合赋值操作符的类，一般应使用复合赋值实现算术操作符。</q></blockquote>
+<blockquote><q>第441页：关系操作符</q></blockquote>这个不应该定义&lt;操作符的例子很有趣
+<blockquote><q>第442页：一般而言，赋值操作符与复合赋值操作符应返回左操作数的引用。</q></blockquote>
+<blockquote><q>第443页：类定义下标操作符时，一般需要定义两个版本：一个为非const成员并返回引用，另一个为const成员并返回const引用。</q></blockquote>
+<blockquote><q>第445页：重载箭头操作符必须返回指向类类型的指针，或者返回定义了自己的箭头操作符的类类型对象。</q></blockquote>箭头操作符会递归应用，详见445-446
+<blockquote><q>第449页：一般而言，最好前缀式和后缀式都定义。只定义前缀式或后缀式的类，将会让习惯于使用两种形式的用户感到奇怪。</q></blockquote>
+<blockquote><q>第449页：调用操作符和函数对象</q></blockquote>参考449-453页
+<blockquote><q>第455页：转换操作符（conversion operator）是一种特殊的类成员函数。它定义将类类型值转变为其他类型的转换。……
+转换函数采用如下通用形式：
+operator type();
+……
+转换函数必须是成员函数，不能指定返回类型，并且形参表必须为空。
+……
+转换函数一般不应该改变被转换的对象。因此，转换操作符通常应定义为const成员。</q></blockquote>
+<blockquote><q>第456页：类类型转换之后不能再跟另一个类类型转换。如果需要多个类类型转换，则代码将出错。</q></blockquote>本章之后的内容是“高级主题”……第一次略读
+<blockquote><q>第458页：如果小心使用，类类型转换可以大大简化类代码和用户代码。如果使用的太过自由，类类型转换会产生令人迷惑的编译时错误，这些错误难以理解而且难以避免</q></blockquote>
+<blockquote><q>第460页：与使用重载操作符一样，转换操作符的适当使用可以大大简化类设计者的工作并使得类的使用更简单。但是，有两个潜在的缺陷：定义太多转换操作符可能导致二义性代码，一些转换可能利大于弊。</q></blockquote>
+<blockquote><q>第463页：在调用重载函数时，需要使用构造函数或强制类型转换来转换实参，这是设计拙劣的表现。</q></blockquote>
+<blockquote><q>第464页：一般而言，函数调用的候选集只包括成员函数或非成员函数，不会两者都包括。而确定操作符的使用时，操作符的非成员和成员版本可能都是候选者。</q></blockquote>
+<blockquote><q>第465页：正确设计类的重载操作符、转换构造函数和转换函数需要多加小心。尤其是，如果类既定义了转换操作符又定义了重载操作符，容易产生二义性。下面的几条经验规则会有所帮助：
+（1）不要定义相互转换的类，即如果类Foo具有接受类Bar的对象的构造函数，不要再为类Bar定义到类型Foo的转换操作符。
+（2）避免到内置算术类型的转换。具体而言，如果定义了到算术类型的转换，则
+#不要定义接受算术类型的操作符的重载版本。如果用户需要使用这些操作符，转换操作符将转换你所定义的类型的对象，然后可以使用内置操作符。
+#不要定义转换到一个以上算术类型的转换。让标准转换提供到其他算术类型的转换。
+最简单的规则是：对于那些“明显正确”的，应避免定义转换函数并限制非显式构造函数。
+……
+既为算术类型提供转换函数，又为同一类类型提供重载操作符，可能会导致重载操作符和内置操作符之间的二义性。</q></blockquote><div style="padding-bottom:1em;"></div>第十五章 面向对象编程
+<blockquote><q>第472页：面向对象编程的关键思想是多态性（polymorphism）。</q></blockquote>
+<blockquote><q>第473页：在C++中，通过基类的引用（或指针）调用虚函数时，发生动态绑定 。引用（或指针）既可以指向基类对象也可以指向派生类对象，这一事实是动态绑定的关键。用引用（或指针）调用的虚函数在运行时确定，被调用的函数是引用（或指针）所指对象的实际类型所定义的。</q></blockquote>
+<blockquote><q>第474页：保留字virtual的目的是启用动态绑定。成员默认为非虚函数，对非虚函数的调用在编译时确定。……
+基类通常应将派生类需要重定义的任意函数定义为虚函数。</q></blockquote>
+<blockquote><q>第474页：派生类对基类的public和private成员的访问权限与程序中任意其他部分一样：它可以访问public成员而不能访问private成员。
+……protected成员可以被派生类对象访问但不能被该类型的普通用户访问。
+……
+可以认为protected访问标号是private和public的混合：
+#像private成员一样，protected成员不能被类的用户访问。
+#像public成员一样，protected成员可被该类的派生类访问。
+此外，protected还有另一重要性质：
+#派生类只能通过派生类对象访问其基类的protected，派生类对其基类类型对象的protected成员没有特殊访问权限。</q></blockquote>
+<blockquote><q>第477页：派生类中虚函数的声明必须与基类中的定义方式完全匹配，但有一个例外：返回对基类型的引用（或指针）的虚函数。派生类中的虚函数可以返回基类函数所返回类型的派生类的引用（或指针）。
+……
+一旦函数在基类中声明为虚函数，它就一直为虚函数，派生类无法改变该函数为虚函数这一事实。派生类重定义虚函数时，可以使用virtual保留字，但不是必须这样做。</q></blockquote>
+<blockquote><q>第478页：已定义的类才可以用作基类。……
+……这一规则暗示着不可能从类自身派生出一个类。
+……
+基类本身可以是一个派生类……
+……最底层的派生类继承其基类的成员，基类又继承自己的积累的成员，如此沿着继承链依次向上。从效果来说，最底层的派生类对象包含其每个直接基类（immediate-base）和间接基类（indirect-base）的子对象。
+……
+如果需要声明（但并不实现）一个派生类，则声明包含类名但不包含派生列表。</q></blockquote>
+<blockquote><q>第480页：基类类型引用和指针的关键点在于静态类型（static type，在编译时可知的引用类型或指针类型）和动态类型（dynamic type，指针或引用所绑定的对象的类型，这是仅在运行时克制的）可能不同。
+……
+引用和指针的静态类型与动态类型可以不同，这是C++用以支持多态性的基石。
+……
+另一方面，对象是非多台的——对象类型已知且不变。……
+只有通过引用或指针调用，虚函数才在运行时确定。只有在这些情况下，直到运行时才知道对象的动态类型。</q></blockquote>
+<blockquote><q>第481页：只有成员函数中的代码才应该使用作用域操作符覆盖虚函数机制。
+……
+派生类虚函数调用基类版本时，必须显式使用作用域操作符。如果派生类函数忽略了这样做，则函数调用会在运行时确定并且将是一个自身调用，从而导致无穷递归。</q></blockquote>
+<blockquote><q>第482页：如果一个调用省略了具有默认值的实参，则所用的值由调用该函数的类型定义，与对象的动态类型无关。通过基类的引用或指针调用虚函数时，默认实参为在基类虚函数声明中指定的值，如果通过派生类的指针或引用调用虚函数，则默认实参是在派生类的版本中声明的值。
+在同一虚函数的积累版本和派生类版本中使用不同的默认实参几乎一定会引起麻烦。如果通过基类的引用或指针调用虚函数，但实际执行的是派生类中定义的版本，这时就可能会出现问题。在这种情况下，为虚函数的基类版本定义的默认实参将传给派生类定义的版本，而派生类版本使用不同的默认实参定义的。</q></blockquote><pre class="source true cpp">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Base {
+public:
+	virtual void print(int k = 5) { cout &lt;&lt; &quot;base &quot; &lt;&lt; k &lt;&lt; endl; }
+};
+
+class Derived: public Base {
+public:
+	void print(int k = 10) { cout &lt;&lt; &quot;derived &quot; &lt;&lt; k &lt;&lt; endl; }
+};
+
+int main(void) {
+	Derived d;
+	Base &amp;p = d;
+	p.print();
+	return 0;
+}
+</pre>运行结果为：derived 5
+<blockquote><q>第483页：如果是公用继承（public inheritance），基类成员保持自己的访问级别：基类的public成员为派生类的public成员，基类的protected成员为派生类的protected成员。
+如果是受保护继承（protected inheritance），基类的public和protected成员在派生类中为protected成员。
+如果是私有继承（private inheritance），基类的所有成员在派生类中为private成员。</q></blockquote>
+<blockquote><q>第485页：有一种常见的误解认为用struct保留字定义的类与用class定义的类有更大的区别。唯一的不同只是默认的成员保护级别和默认的派生保护级别，没有其他区别……
+尽管私有继承在使用class保留字时是默认情况，但这在实践中相对罕见。因为私有继承是如此罕见，通常显式指定private是比依赖于默认更好的办法。显式指定可清楚指出想要私有继承而不是一时疏忽。</q></blockquote>
+<blockquote><q>第486页：友元关系不能继承。基类的友元对派生类的成员没有特殊访问权限。如果基类被授予友元关系，则只有基类具有特殊访问权限，该基类的派生类不能访问授予友元关系的类。
+如果派生类想要将自己成员的访问权授予其基类的友元，派生类必须显式地这样做：基类的友元对从该基类派生的类型没有特殊访问权限。同样，如果基类和派生类都需要访问另一个类，那个类必须特地将访问权限授予基类和每一个派生类。</q></blockquote>
+<blockquote><q>第489页：要确定到基类的转换是否可访问，可以考虑基类的public成员是否可访问，如果可以，转换是可访问的，否则，转换是不可访问的。</q></blockquote>
+<blockquote><q>第489页：从基类到派生类的自动转换是不存在的。……
+……甚至当基类指针或引用实际绑定到派生类对象时，从基类到派生类的转换也存在限制……</q></blockquote>
+<blockquote><q>第493页：关键概念：尊重基类接口
+构造函数只能初始化其直接基类的原因是每个类都定义了自己的接口。</q></blockquote>
+<blockquote><q>第494页：如果派生类显式定义自己的复制构造函数或赋值操作符，则该定义将完全覆盖默认定义。被继承类的复制构造函数和赋值操作符负责对基类成分以及类自己的成员进行复制或赋值。</q></blockquote>
+<blockquote><q>第495页：赋值操作符通常与复制构造函数类似：如果派生类定义了自己的赋值操作符，则操作符必须对基类部分进行显式赋值。
+……
+赋值操作符必须防止自身赋值……基类操作符将释放左操作数中基类部分的值……
+析构函数的工作与复制构造函数和赋值操作符不同：派生类析构函数不负责撤销基类对象的成员。编译器总是显式调用派生类对象基类部分的析构函数。每个析构函数只负责清除自己的成员……
+要保证运行时当的析构函数，基类中的析构函数必须为虚函数。</q></blockquote>虚析构函数是为了解决这样的一个问题：基类的指针指向派生类对象，并用基类的指针删除派生类对象。<div style="padding-bottom:1em;"></div>　　如果某个类不包含虚函数，那一般是表示它将不作为一个基类来使用。当一个类不准备作为基类使用时，使析构函数为虚一般是个坏主意。因为它会为类增加一个虚函数表，使得对象的体积翻倍，还有可能降低其可移植性。 
+<blockquote><q>第496页：如果基类为了将析构函数设为虎函数而具有空析构函数，那么，类具有析构函数并不表示也需要赋值操作符或复制构造函数。
+即使析构函数没有工作要做，继承层次的根类也应该定义一个虚析构函数。</q></blockquote>
+<blockquote><q>第496页：在复制控制成员中，只有析构函数应定义为虚函数，构造函数不能定义为虚函数。构造函数实在对象完全构造之前运行的，在构造函数运行的时候，对象的动态类型还不完整。
+……
+将类的赋值操作符设为虚函数很可能会令人混淆，而且不会有什么用处。</q></blockquote>
+<blockquote><q>第497页：如果在构造函数或析构函数中调用虚函数，则运行的是为构造函数或析构函数自身类型定义的版本。</q></blockquote>
+<blockquote><q>第498页：对象、引用或指针的静态类型决定了对象能够完成的行为。甚至当静态类型和动态类型可能不同的时候，就像使用基类类型的引用或指针时可能会发生的，静态类型仍然决定着可以使用什么成员的。</q></blockquote>
+<blockquote><q>第498页：与基类成员同名的派生类成员将屏蔽对基类成员的直接访问。
+……
+设计派生类时，只要可能，最好避免与基类成员的名字冲突。
+……
+在基类和派生类中使用同一名字的成员函数，其行为与数据成员一样：在派生类作用域中派生类成员将屏蔽基类成员。即使函数原型不同，基类成员也会被屏蔽……</q></blockquote>
+<blockquote><q>第500页：局部作用域中声明的函数不会重载全局作用域中定义的函数，同样，派生类中定义的函数也不重载基类中定义的成员。通过派生类对象调用函数时，实参必须与派生类中定义的版本相匹配，只有在派生类根本没有定义该函数时，才考虑基类函数。</q></blockquote>
+<blockquote><q>第500页：如果派生类重定义了重载成员，则通过派生类型只能访问派生类中重定义的那些成员。
+如果派生类想通过自身类型使用所有的重载版本，则派生类必须要么重定义所有的重载版本，要么一个也不重定义。
+有时类需要仅仅重定义一个重载集中某些版本行为，并且想要继承其他版本的含义，在这种情况下，为了重定义需要特化的某个版本而不得不重定义每一个基类版本，可能会令人厌烦。
+派生类不用重定义所继承的每一个基类版本，它可以为重载成员提供using声明。一个using声明只能指定一个名字，不能指定形参表，它可以为重载成员提供using声明。</q></blockquote>
+<blockquote><q>第501页：理解C++中继承层次的关键在于理解如何确定函数调用。确定函数调用遵循以下四个步骤：
+（1）首先确定进行函数调用的对象、引用或指针的静态类型。
+（2）在该类中查找函数，如果找不到，就在直接基类中查找，如此循着类的继承链往上找，知道找到该函数或者查找完最后一个类。如果不能在类或其相关基类中找到改名字，则调用是错误的。
+（3）一旦找到了该名字，就进行常规类型检查，查看如果给定找到的定义，该函数调用是否合法。
+（4）假定函数调用合法，编译器就生成代码。如果函数是虚函数且通过引用或指针调用，则编译器生成代码以确定根据对象的动态类型运行哪个函数版本，否则，编译器生成代码直接调用函数。</q></blockquote>
+<blockquote><q>第503页：将函数定义为纯虚能够说明，该函数为后代类型提供了可以覆盖的接口，但是这个类中的版本绝不会调用。……
+含有（或继承）一个或多个纯虚函数的类是抽象基类（abstract base class）。除了作为抽象基类的派生类的对象的组成部分，不能创建抽象类型的对象。</q></blockquote>
+<blockquote><q>第504页：因为派生类对象在赋值给基类对象时会被“切掉”，所以容器与通过继承相关的类型不能很好地融合。</q></blockquote>
+<blockquote><q>第504页：C++中面向对象编程的一个颇具讽刺意味的地方是，不能使用对象支持面向对象编程，相反，必须使用指针或引用。……
+但是，使用指针或引用会加重类用户的负担。……
+C++中一个通用的技术是定义包装（cover）类或句柄（handle）类。句柄类存储和管理基类指针。指针所指对象的类型可以变化，既可以指向基类类型对象又可以指向派生类型对象。用户通过句柄类访问继承层次的操作。因为句柄类使用指针执行操作，虚成员的行为将在运行时根据句柄实际绑定的对象的类型而变化。因此，句柄的用户可以获得动态行为但无须操心指针的管理。</q></blockquote><div style="padding-bottom:1em;"></div>后面的章节是关于文本查询的示例，跳着看了下<div style="padding-bottom:1em;"></div>第十六章 模板与泛型编程
+<blockquote><q>第526页：面向对象编程所依赖的多态性称为运行时多态性，泛型编程所依赖的多态性称为编译时多态性或参数式多态性——译者注</q></blockquote>
+<blockquote><q>第527页：模板定义以关键字template开始，后接模板形参表（template parameter list），模板形参表使用间括号括住的一个或多个模板形参（template parameter）的列表，形参之间以逗号分隔。
+模板形参表不能为空</q></blockquote>
+<blockquote><q>第530页：模板形参遵循常规名字屏蔽规则。与全局作用域中声明的对象、函数或类型同名的模板形参会屏蔽全局名字……
+用作模板形参的名字不能在模板内部重用……
+这一限制还意味着模板形参的名字只能在同一模板形参表中使用一次：
+// error: illegal reuse of template parameter name V
+template &lt;class V, class V&gt; V calc(const V&amp;, const V&amp;) ;
+……
+像其他任意函数或类一样，对于模板可以只声明而不定义。声明必须指出函数或类是一个模板……
+每个模板类型形参 前面必须带上关键字class或typename，每个非类型形参前面必须带上类型名字，省略关键字或类型说明符是错误的……</q></blockquote>
+<blockquote><q>第532页：除了定义数据成员或函数成员之外，类还可以定义类型成员。……如果要在函数模板内部使用这样的类型，必须告诉编译器我们正在使用的名字指的是一个类型。必须显式地这样做，因为编译器（以及程序的读者）不能通过检查得知，由类型形参定义的名字何时是一个类型何时是一个值。
+……
+通过在成员名前加上关键字typename作为前缀，可以告诉编译器将成员当作类型。……
+如果拿不准是否需要要以typename指明一个名字是一个类型，那么指定它是个好主意。在类型之前指定typename没有害处，因此，即使typename是不必要的，也没有关系。</q></blockquote>
+<blockquote><q>第534页：在函数模板内部完成的操作限制了可用于实例化该函数的类型。程序员的责任是，保证用作函数实参的类型支持所用的任意操作，以及保证在模板使用那些操作的环境中那些操作运行正常。</q></blockquote>
+<blockquote><q>第534页：编写模板代码时，对实参类型的要求尽可能少是有益的。</q></blockquote>后面有将这一原则用于compare模板函数的例子
+<blockquote><q>第535页：警告：链接时的编译时错误</q></blockquote>
+<blockquote><q>第536页：想要使用类模板，就必须显式指定模板实参……
+使用函数模板时，编译器通常会为我们推断模板实参……</q></blockquote>
+<blockquote><q>第539页：可以使用函数模板对函数指针进行初始化或赋值，这样做的时候，编译器使用指针的类型实例化具有适当模板实参的模板版本。
+……
+获取函数模板实例化的地址的时候，上下文必须是这样的：它允许为每个模板形参确定唯一的类型或值。</q></blockquote>看例子
+<blockquote><q>第542页：可以使用显式模板实参的另一个例子是16.2.1节中有二义性的程序，通过使用显式模板实参能够消除二义性……</q></blockquote>
+<blockquote><q>第544页：export关键字能够指明给定的定义可能会需要在其他文件中产生实例化。在一个程序中，一个模板只能定义为导出一次。……
+一般我们在函数模板的定义中指明函数模板为导出的，这是通过在关键字之前包含export关键字而实现的……</q></blockquote>
+<blockquote><q>第547页：通常，当使用类模板的名字的时候，必须指定模板形参。这一规则有个例外：在类本身的作用域内部，可以使用类模板的非限定名。……
+编译器不会为类总使用的其他模板的模板形参进行这样的推断……</q></blockquote>
+<blockquote><q>第551页：非类型模板实参必须是编译时常量表达式。</q></blockquote>
+<blockquote><q>第553页：当授予对给定模板的所有实例的访问权的时候，在作用域中不需要存在该类模板或函数模板的声明。实质上，编译器将友元声明也当作类或函数的声明对待。
+想要限制对特定实例化的友元关系时，必须在可以用于友元声明之前声明类或函数……</q></blockquote>
+<blockquote><q>第557页：当在类模板作用域外部定义成员模板的时候，必须包含两个模板形参表……</q></blockquote>
+<blockquote><q>第560页：通常，可以通过类类型的对象访问类模板的static成员，或者通过使用作用域操作符直接访问成员。当然，当试图通过类使用static成员的时候，必须引用实际的实例化……</q></blockquote>
+<blockquote><q>第560页：16.5 一个泛型句柄类</q></blockquote>这个例子跳过了
+<blockquote><q>第565页：模板特化（template specialization）是这样一个定义，该定义中一个或多个模板形参的实际类型或实际值是指定的。特化的形式如下：
+ # 关键字template后面接一对空的尖括号（&lt; &gt;）；
+ # 再接模板名和一对尖括号，尖括号中指定这个特化定义的模板形参；
+ # 函数形参表；
+ # 函数体。
+……
+模板特化必须总是包含空模板形参说明符，即template&lt;&gt;，而且，还必须包含函数形参表。如果可以从函数形参表推断模板实参，则不必显式指定模板实参……</q></blockquote>
+<blockquote><q>第566页：在特化中省略孔的模板形参表template&lt;&gt;会有令人惊讶的结果。如果缺少该特化语法，则结果是声明该函数的重载非模板版本……
+现在，重要的是知道，当定义非模板函数的时候，对实参应用常规转换；当特化模板的时候，对实参类型不应用转换。在模板特化版本的调用中，实参类型必须与特化版本函数的形参类型完全匹配，如果不完全匹配，编译器将为实参从模板定义实例化一个实例。
+……
+如果程序由多个文件构成，模板特化的声明必须在使用该特化的每个文件中出现。不能在一些文件中从泛型模板定义实例化一个函数模板，而在其他文件中为同一模板实参集合特化该函数模板。
+与其他函数声明一样，应当在一个头文件中包含模板特化的声明，然后使用该特化的每个源文件包含该头文件。</q></blockquote>
+<blockquote><q>第568页：值得注意的是，特化可以定义与模板本身完全不同的成员。……
+类模板特化应该与它所特化的模板定义相同的接口，否则当用户试图使用未定义的成员时会感到奇怪。
+……
+在类特化外部定义成员时，成员之前不能加template&lt;&gt;标记。</q></blockquote>
+<blockquote><q>第569页：16.6.3特化成员而不特化类
+……
+成员特化的声明与任何其他函数模板特化一样，必须以空的模板形参表开头……</q></blockquote>
+<blockquote><q>第570页：如果类模板有一个以上的模板形参，我们也许想要特化某些模板形参而非全部。使用类模板的部分特化可以做到这一点。
+……
+类模板的部分特化（partial specialization）本身也是模板。……
+当声明了部分特化的时候，编译器将为实例化选择最特化的模板定义，当没有部分特化可以使用的时候，就使用通用模板定义。……
+部分特化的定义与通用模板的定义完全不会冲突。部分特化可以具有与通用模板完全不同的成员集合。类模板成员的通用定义永远不会用来实例化类模板部分特化的成员。</q></blockquote>
+<blockquote><q>第573页：设计既包含函数模板又包含非模板函数的重载函数集合是困难的，因为可能会使函数的用户感到奇怪，定义函数模板特化几乎总是比使用非模板版本更好。</q></blockquote><div style="padding-bottom:1em;"></div>第十七章 用于大型程序的工具
+<blockquote><q>第581页：异常对象通过复制被抛出表达式的结果创建，该结果必须是可以复制的类型。</q></blockquote>
+<blockquote><q>第583页：栈展开期间，释放局部对象所用的内存并运行类类型局部对象的析构函数。
+……
+ 析构函数应该从不抛出异常
+……
+不能不处理异常。宜昌市足够重要的、使程序不能继续正常执行的时间。如果找不到匹配的catch，程序就调用库函数terminate。</q></blockquote>
+<blockquote><q>第584页：异常与catch异常说明符匹配的规则比匹配实参和形参类型的规则更严格，大多数转换都不允许——除下面几种可能的区别之外，异常的类型与catch说明符的类型必须完全匹配：
+#允许从非const到const的转换。……
+#允许从派生类型到基类类型的转换。
+#将数组转换为指向数组类型的指针，将函数转换为指向函数类型的适当指针。</q></blockquote>
+<blockquote><q>第584页：如果说明符不是引用，就将异常对象复制到catch形参中，catch操作异常对象的副本，对形参所做的任何改变都只作用于副本，不会作用于异常对象本身。如果说明符是引用，则像引用形参一样，不存在单独的catch对象，catch形参只是异常对象的另一名字。对catch形参所做的改变作用于异常对象。
+……
+通常，如果catch子句处理因继承而相关的类型的异常，它就应该将自己的形参定义为引用。</q></blockquote>
+<blockquote><q>第586页：一般而言，catch可以改变它的形参。在改变它的形参之后，如果catch重新抛出异常，那么，只有当异常说明符是引用的时候，才会传播那些改变。</q></blockquote>
+<blockquote><q>第586页：捕获所有异常的catch子句形式为(...)。
+……
+catch(...)经常与重新抛出表达式结合使用，catch完成可做的所有局部工作，然后重新抛出异常……
+如果catch(...)与其他catch子句结合使用，它必须是最后一个，否则，任何跟在它后面的catch子句都将不能被匹配。</q></blockquote>
+<blockquote><q>第586页：为了处理来自构造函数初始化式的异常，必须将构造函数编写为函数测试块（function try block）。可以使用函数测试块将一组catch语句与函数联成一个整体。
+……
+构造函数要处理来自构造函数初始化式的异常，唯一的方法是将构造函数编写为函数测试块</q></blockquote><pre class="source true cpp">
+template &lt;typename T&gt; Handle&lt;T&gt;::Handle(T *p)
+try : ptr(p), use(new size_t(1))
+{
+        // empty function body
+} catch(const std::bad_alloc &amp;e)
+        { handle_out_of_memory(e); }
+</pre><div style="padding-bottom:1em;"></div><blockquote><q>第590页：通过定义一个类来封装资源的分配和释放，可以保证正确释放资源。这一技术常称为“资源分配即初始化”，简称RAII。
+……
+可能存在异常的程序以及分配资源的程序应该使用类来管理那些资源。如本节所述，使用类管理分配和回收可以保证如果发生异常就释放资源。
+……
+标准库的auto_ptr类是上一节中介绍的异常安全的“资源分配即初始化”技术的例子。</q></blockquote>
+<blockquote><q>第593页：auto_ptr和内置指针对待复制和赋值有非常关键的重要区别。当复制auto_ptr对象或者将它的值赋给其他auto_ptr对象的时候，将基础对象的所有权从原来的auto_ptr对象转给副本，原来的auto_ptr对象重置为未绑定状态。
+……
+除了将所有权从右操作数转给左操作数之外，赋值还删除左操作数原来指向的对象——假如两个对象不同。
+……
+因为复制和赋值是破坏性操作，所以不能将auto_ptr对象存储在标准容器中。</q></blockquote>指针的复制和赋值是两个指向同一对象
+<blockquote><q>第594页：应该只用get询问auto_ptr对象或者使用返回的指针值，不能用get作为创建其他auto_ptr对象的实参。
+使用get成员初始化其他auto_ptr对象违反auto_ptr类设计原则：在任意时刻只有一个auto_ptr对象保存给指定指针……</q></blockquote>
+<blockquote><q>第594页：……不能直接将一个地址（或者其他指针）赋给auto_ptr对象……
+相反，必须调用reset函数来改变指针……</q></blockquote>
+<blockquote><q>第595页：（1）不要使用auto_ptr对象保存指向静态分配对象的指针……
+（2）永远不要使用两个auto_ptr对象指向同一对象……
+（3）不要使用auto_ptr对象保存指向动态分配数组的指针……
+（4）不要将auto_ptr对象存储在容器中。</q></blockquote>
+<blockquote><q>第603页：不能在不相关的命名空间中定义成员</q></blockquote>
+<blockquote><q>第603页：因为全局命名空间是隐含的，它没有名字，所以记号::member_name引用全局命名空间的成员。</q></blockquote>
+<blockquote><q>第604页：未命名的命名空间与其他命名空间不同，未命名的命名空间的定义局部于特定文件，从不跨越多个文本文件。</q></blockquote>
+<blockquote><q>第605页：未命名的命名空间取代文件中的静态声明
+……
+C++不赞成文件静态声明。不赞成的特征是在未来版本中可能不支持的特征。应该避免文件静态而使用未命名的命名空间代替。</q></blockquote>
+<blockquote><q>第607页：一个命名空间可以有许多别名，所有别名以及原来的命名空间名字都可以互换使用。</q></blockquote>
+<blockquote><q>第607页：可以尝试用using指示编写程序，但在使用多个库的时候，这样做会重新引入名字冲突的所有问题。
+……
+using指示有用的一种情况是，用在命名空间本身的实现文件中。</q></blockquote>
+<blockquote><q>第609页：警告：避免using指示</q></blockquote>这一点我以前没注意过，怎么方便怎么写，要注意养成好习惯。
+<blockquote><q>第614页：为了提供命名空间中所定义模板的自己的特化，必须保证在包含原始模板定义的命名空间中定义特化。</q></blockquote>
+<blockquote><q>第616页：基类构造函数按照基类构造函数在类派生列表中的出现次序调用。
+……
+总是按构造函数运行的逆序调用析构函数。</q></blockquote>
+<blockquote><q>第623页：在虚继承下，对给定虚基类，无论该类在派生层次中作为虚基类出现多少次，只继承一个共享的基类子对象。</q></blockquote>
+<blockquote><q>第625页：在虚派生中，由最低层派生类的构造函数初始化虚基类。</q></blockquote>
+<blockquote><q>第626页：无论虚基类出现在继承层次中任何地方，总是在构造非虚基类之前构造虚基类。</q></blockquote><div style="padding-bottom:1em;"></div>第十八章 特殊工具与技术
+<blockquote><q>第632页：如果必须构造预先分配的内存中的对象，就不能有基类型为没有默认构造函数的vector——vector没有办法知道怎样构造这些对象。</q></blockquote>这里翻译的不太好，漏了“类型”：……就不能有基类型为没有默认构造函数的类型的vector……
+<blockquote><q>第632页：本节提出的结束不保证使所有程序更快。即使它们确实能改善性能，也可能带来其他开销，如空间的使用或调试困难。最好将优化推迟到已知程序能工作，并且运行时测度指出改进内存分配将解决已知的性能问题的时候。</q></blockquote>很中肯，性能优化要推后考虑
+<blockquote><q>第632页：对未构造的内存中的对象进行赋值而不是初始化，其行为是未定义的。对许多类而言，这样做引起运行时崩溃。赋值涉及删除现存对象，如果没有现存对象，赋值操作符中的动作就会有灾难性效果。</q></blockquote>
+<blockquote><q>第633页：现代C++程序一般应该使用allocator类来分配内存，它更安全更灵活。但是，在构造对象的时候，用new表达式比allocator::construct成员更灵活。有几种情况下必须使用new。</q></blockquote>
+<blockquote><q>第637页：术语对比：new表达式与operator new函数
+标准库函数operator new和operator delete的命名容易让人误解。……
+因为new（或delete）表达式与标准库函数同名，所以二者容易混淆。</q></blockquote>
+<blockquote><q>第637页：operator new和operator delete函数有两个重载版本，每个版本支持相关的new表达式和delete表达式：
+void *operator new(size_t);
+void *operator new[](size_t);
+
+void *operator delete(void*);
+void *operator delete[](void*);
+虽然operator new和operator delete函数的设计意图是供new表达式使用，但它们通常是标准库中的可用函数。……
+这些函数的表现与allocator类的allocate和deallocate成员类似。但是，它们在一个重要方面有不同：它们在void*指针而不是类型化的指针上进行操作。</q></blockquote>勘误：operator delete返回类型是void而不是void指针
+<blockquote><q>第638页：一般而言，使用allocator比直接使用operator new和operator delete函数更为类型安全。</q></blockquote>
+<blockquote><q>第638页：定位new表达式的形式是：
+new (place_address) type
+new (place_address) type (initializer-list)</q></blockquote>
+<blockquote><q>第638页：定位new表达式初始化一个对象的时候，它可以使用任何构造函数，并直接建立对象。construct函数总是使用复制构造函数。
+……
+通常，这些区别是不相干的……但对某些类而言，使用复制构造函数是不可能的（因为复制构造函数是私有的），或者是应该避免的，在这种情况下，也许有必要使用定位new表达式。</q></blockquote>
+<blockquote><q>第639页：显式调用析构函数的效果是适当地清除对象本身。但是，并没有释放对象所占的内存，如果需要，可以重用该内存空间。
+调用operator delete函数不会运行析构函数，它只释放指定的内存。</q></blockquote>
+<blockquote><q>第641页：如果new表达式调用全局operator new函数分配内存，则delete表达式也应该调用全局operator delete函数。</q></blockquote>
+<blockquote><q>第646页：通过运行时类型识别（RTTI），程序能够使用基类的指针或引用来检索这些指针或引用所指对象的实际派生类型。</q></blockquote>
+<blockquote><q>第647页：使用动态强制类型转换要小心。只要有可能，定义和使用虚函数比直接接管类型管理好得多。</q></blockquote>
+第647页：如果转换到指针类型的dynamic_cast失败，则dynamic_cast的结果是0值；如果转换到引用类型的dynamic_cast失败，则抛出一个bad_cast类型的异常。
+<blockquote><q>第648页：在条件中执行dynamic_cast保证了转换和其结果测试在一个表达式中进行。</q></blockquote>
+<blockquote><q>第649页：只有当typeid的操作数是带虚函数的类类型的对象的时候，才返回动态类型信息。测试指针（相对于指针指向的对象）返回指针的静态的、编译时类型。</q></blockquote>
+<blockquote><q>第651页：类型敏感的相等操作符</q></blockquote><pre class="source true cpp">
+bool operator==(const Base &amp;lhs, const Base &amp;rhs)
+{
+        // returns flase if typeids are different otherwise
+        // returns lhs.equal(rhs)
+        return typeid(lhs) == typeid(rhs) &amp;&amp; lhs.equal(rhs);
+}
+</pre><div style="padding-bottom:1em;"></div><blockquote><q>第660页：在看到在类定义体外部定义的嵌套类的实际定义之前，该类是不完全类型，应用所有使用不完全类型的常规限制。</q></blockquote>
+<blockquote><q>第662页：联合（union）是一种特殊的类。一个union对象可以有多个数据成员，但在任何时刻，只有一个成员可以有值。当将一个值赋给union对象的一个成员的时候，其他所有成员都变为未定义的。</q></blockquote>
+<blockquote><q>第663页：union不能具有静态数据成员或引用成员，而且，union不能具有定义了构造函数、析构函数或赋值操作符的类类型的成员……</q></blockquote>
+<blockquote><q>第663页：使用union对象时，我们必须总是知道union对象中当前存储的是什么类型的值……
+避免通过错误成员访问union值的最佳办法是，定义一个单独的对象跟踪union中存储了什么值。这个附加对象称为union的判别式（discriminant）。</q></blockquote>
+<blockquote><q>第664页：因为匿名union不提高访问其成员的途径，所以将成员作为定义匿名union的作用域的一部分直接访问。
+……
+匿名union不能有私有成员或受保护成员，也不能定义成员函数。</q></blockquote>
+<blockquote><q>第665页：可以在函数体内部定义类，这样的类称为局部类（local class）。
+……
+局部类的所有成员（包括函数）必须完全在类定义体内部，因此，局部类远不如嵌套类有用。</q></blockquote>
+<blockquote><q>第665页：局部类可以访问的外围作用域中的名字是有限的。局部类只能访问在外围作用域中定义的类型名、static变量和枚举成员，不能使用定义该类的函数中的变量……</q></blockquote>
+<blockquote><q>第669页：链接指示不能出现在类定义或函数定义的内部，它必须出现在函数的第一次声明上。</q></blockquote>
+<blockquote><q>第671页：在一组重载函数中只能为一个C函数指定链接指示。用带给定名字的C链接声明多于一个函数是错误的……</q></blockquote>
+<blockquote><q>C函数的指针与C++函数的指针具有不同的类型，不能将C函数的指针初始化或赋值为C++函数的指针（反之亦然）。</q></blockquote>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/15522714/#comments">6回应</a>&nbsp;&nbsp;
+                  2011-11-25 20:57
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="20803034">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/paradisiacal/"><img src="https://img1.doubanio.com/icon/u25596973-37.jpg" alt="◇" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/20803034/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/20803034/" class="">类模板的嵌套类中的友元声明（friend declarations in a class nested inside a class template）</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/paradisiacal/" class=" " title="◇">◇</a>
+                (for Possibility)
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="20803034">
+              <div class="short">
+                
+                  <span class="">日志无法插代码，弄到这里来好了。也确实引用了这边的不少内容w
+
+
+C++ Primer上有说类模板的嵌套类，有说类模板的友元声明，但是没有说嵌套类中的友元声明（如果不是我没找到的话……）。
+最开始的写法如下，是想把Linked_list类的成员函数NodePtr_to_iter和iter_to_NodePtr设为嵌套类iter的友元：
+
+<span class="code-holder">/代码内容已省略/</span>
+
+
+结果是编译不通过，成员不可访问。
+ICC：
+warning #1624: &quot..;.</span>
+                <p class="pl">
+                  <span class="">2012-09-02 12:15</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                日志无法插代码，弄到这里来好了。也确实引用了这边的不少内容w<div style="padding-bottom:1em;"></div>C++ Primer上有说类模板的嵌套类，有说类模板的友元声明，但是没有说嵌套类中的友元声明（如果不是我没找到的话……）。<div style="padding-bottom:1em;"></div>最开始的写法如下，是想把Linked_list类的成员函数NodePtr_to_iter和iter_to_NodePtr设为嵌套类iter的友元：<div style="padding-bottom:1em;"></div><pre class="source true cpp">
+template &lt;typename T&gt; class Linked_list
+{
+protected:
+	struct Node
+	{
+		//...
+	};
+
+	class iter //iter is implemented in terms of Node*, and supports arithmetic operations
+	{
+	public:
+		iter() : ptr(NULL)
+		{}
+		//...
+	private:
+		explicit iter(Node* nP) : ptr(nP)
+		{}
+	private:
+		Node *ptr;
+	//friends:
+		friend iter NodePtr_to_iter(Node* const nP);
+		friend Node* iter_to_NodePtr(const iter it);
+	};
+	iter NodePtr_to_iter(Node* const nP)
+	{ return iter(nP); }
+	Node* iter_to_NodePtr(const iter it)
+	{ return it.ptr; }
+public:
+	//...
+protected:
+	//...
+};
+</pre><div style="padding-bottom:1em;"></div>结果是编译不通过，成员不可访问。<div style="padding-bottom:1em;"></div>ICC：<div style="padding-bottom:1em;"></div>warning #1624: &quot;Linked_list&lt;T&gt;::iter NodePtr_to_iter(Linked_list&lt;T&gt;::Node *)&quot; declares a non-template function -- add &lt;&gt; to refer to a template instance<div style="padding-bottom:1em;"></div>error #373: &quot;Linked_list&lt;T&gt;::iter::iter(Linked_list&lt;T&gt;::Node *) [with T=Term]&quot; (declared at line 55) is inaccessible<div style="padding-bottom:1em;"></div>VC++：<div style="padding-bottom:1em;"></div>error C2248: 'Linked_list&lt;T&gt;::iter::iter' : cannot access private member declared in class 'Linked_list&lt;T&gt;::iter'<div style="padding-bottom:1em;"></div>原因C++P上有说——
+<blockquote><q>If we have not previously told the compiler that the friend is a template, then the compiler will infer that the friend is an ordinary nontemplate class or function.
+如果没有事先告诉编译器该友元是一个模板，则编译器将认为该友元是一个普通非模板类或非模板函数。</q></blockquote>
+友元声明中不带template关键字（将访问权授予模板）或限定符&lt;&gt;（将访问权授予模板的特定实例）的时候，实际是[b]将访问权授予了一个非模板[b]，但是[b]模板类的成员也是模板[b]，所以这里被授予友元关系的函数NodePtr_to_iter 与 Linked_list的成员函数NodePtr_to_iter实际上不是一个函数，所以成员函数NodePtr_to_iter并没有获得iter的私有成员的访问权。（事实上还不仅如此，见下文）<div style="padding-bottom:1em;"></div>之后改成：<div style="padding-bottom:1em;"></div><pre class="source true cpp">
+template &lt;typename T&gt; class Linked_list
+{
+protected:
+	struct Node
+	{
+		//...
+	};
+
+	class iter //iter is implemented in terms of Node*, and supports arithmetic operations
+	{
+	public:
+		iter() : ptr(NULL)
+		{}
+		//...
+	private:
+		explicit iter(Node* nP) : ptr(nP)
+		{}
+	private:
+		Node *ptr;
+	//friends:
+		friend iter NodePtr_to_iter(Node* const nP)
+		{ return iter(nP); }
+		friend Node* iter_to_NodePtr(const iter it)
+		{ return it.ptr; }
+	};
+
+public:
+	typedef iter iterator;
+	//...
+protected:
+	//...
+};
+</pre><div style="padding-bottom:1em;"></div>这回编译通过而且测试能够实现预期的功能。<div style="padding-bottom:1em;"></div>但还是有问题。<div style="padding-bottom:1em;"></div>我们知道，定义在类体内部的友元函数的作用域其实是被引入到了外围作用域的：
+<blockquote><q>A friend declaration introduces the named class or nonmember function into the surrounding scope. Moreover, a friend function may be defined inside the class. The scope of the function is exported to the scope enclosing the class definition.
+友元声明将已命名的类或非成员函数引入到外围作用域中。此外，友元函数可以在类的内部定义，该函数的作用域扩展到包围该类定义的作用域。</q></blockquote>
+于是直接的想法是这里NodePtr_to_iter和iter_to_NodePtr被引入到外围类Linked_list并成为成员函数，但不要忘了：[b]模板类的成员也是模板[b]且友元声明中不带template关键字（将访问权授予模板）或限定符&lt;&gt;（将访问权授予模板的特定实例）的时候，实际是[b]将访问权授予了一个非模板[b]。这不是矛盾了吗！？<div style="padding-bottom:1em;"></div>好吧，实际上是：NodePtr_to_iter和iter_to_NodePtr被引入到了[b]全局作用域[/b]中了。而且要注意这里的友元声明确实不是对于函数模板的，而是，每个Linked_list的实例都会定义一个NodePtr_to_iter和一个iter_to_NodePtr（类型由Linked_list的模板实参决定）并引入到全局作用域。<div style="padding-bottom:1em;"></div>不仅在VS的class view中可以看出是如此，而且在全局作用域中也确实可以引用iter_to_NodePtr并编译通过。<div style="padding-bottom:1em;"></div>但又遇到一个问题，在全局作用域中写如下代码测试：<div style="padding-bottom:1em;"></div><pre class="source true cpp">
+Linked_list&lt;char&gt;::Node* pNode = iter_to_NodePtr(list.find('w')); //returned type of find() is iterator
+</pre><div style="padding-bottom:1em;"></div>VC++编译不通过：<div style="padding-bottom:1em;"></div>error C2248: 'Linked_list&lt;T&gt;::Node' : cannot access protected struct declared in class 'Linked_list&lt;T&gt;'<div style="padding-bottom:1em;"></div>ICC编译通过且工作正常，但有警告：<div style="padding-bottom:1em;"></div>warning #525: class &quot;Linked_list&lt;T&gt;::Node [with T=char]&quot; (declared at line 10 of &quot;...\Linked_list.h&quot;) is an inaccessible type (allowed for cfront compatibility)<div style="padding-bottom:1em;"></div>受保护的Linked_list&lt;T&gt;::Node现在可以访问了！！不过提示中的(allowed for cfront compatibility)很让人在意，看起来这是一个已经被废弃的特性。<div style="padding-bottom:1em;"></div>////////////////////////////////////////////////！！！怒球相关资料！！！////////////////////////////////////////////////<div style="padding-bottom:1em;"></div>接下来是得到正确写法的过程。<div style="padding-bottom:1em;"></div>比较难办的问题是：外围类的成员函数同时也是函数模板，同时，我们只想将iter&lt;T&gt;（某个实例）的友元关系授予给Linked_list&lt;T&gt;::NodePtr_to_iter（具有相同实参的实例）。但无论如何，因为：
+<blockquote><q>to make a member function a friend, the class containing that member must have been defined.
+必须先定义包含成员函数的类，才能将成员函数设为友元。</q></blockquote>
+<blockquote><q>When we want to restrict friendship to a specific instantiation, then the class or function must have been declared before it can be used in a friend declaration
+想要限制对特定实例化的友元关系时，必须在可以用于友元声明之前声明类或函数</q></blockquote>
+前者似乎要求外围类Linked_list必须在嵌套类iter之前定义，这当然是不可能的！而后者要求NodePtr_to_iter和iter_to_NodePtr在iter之前声明。好吧，我们至少可以满足后者。现在的问题NodePtr_to_iter和iter_to_NodePtr当成是函数模板还是外围类Linked_list的成员函数（同时也是函数模板）？我们不妨都试试：<div style="padding-bottom:1em;"></div><pre class="source true cpp">
+template &lt;typename T&gt; class Linked_list
+{
+protected:
+	struct Node
+	{
+		//...
+	};
+
+	class iter;
+	iter NodePtr_to_iter(Node* const nP);
+	Node* iter_to_NodePtr(const iter it);
+	class iter //iter is implemented in terms of Node*, and supports arithmetic operations
+	{
+	public:
+		iter() : ptr(NULL)
+		{}
+		//...
+	private:
+		explicit iter(Node* nP) : ptr(nP)
+		{}
+	private:
+		Node *ptr;
+	//friends:
+		friend iter Linked_list::NodePtr_to_iter(Node* const nP);
+		friend Node* iter_to_NodePtr&lt;T&gt;(const iter it);
+	};
+public:
+	//...
+protected:
+	//...
+};
+</pre><div style="padding-bottom:1em;"></div>于是我们收到了了来自编译器的友情提示：<div style="padding-bottom:1em;"></div>error : iter_to_NodePtr is not a template<div style="padding-bottom:1em;"></div>error #308: member &quot;Linked_list&lt;T&gt;::iter::ptr [with T=Term]&quot; (declared at line 59 of &quot;...\Linked_list.h&quot;) is inaccessible<div style="padding-bottom:1em;"></div>事后想来确实合情合理，在其他地方我们也从来都不能通过显式实参直接指定类模板成员函数的实例，而是通过类模板实例的作用域限定符来指定的。<div style="padding-bottom:1em;"></div>同时我们还知道了：嵌套类将外部类的成员函数设为友元，只要该成员函数的声明在嵌套类定义之前就可。同时需要注意的是因为成员函数的声明用到了iter，所以iter应该在之前做前向声明。<div style="padding-bottom:1em;"></div>于是我们得到最后的正确写法（加上static是为了满足其它需要）：<div style="padding-bottom:1em;"></div><pre class="source true cpp">
+template &lt;typename T&gt; class Linked_list
+{
+protected:
+	struct Node
+	{
+		//...
+	};
+
+	class iter;
+	static iter NodePtr_to_iter(Node* const nP);
+	static Node* iter_to_NodePtr(const iter it);
+	class iter //iter is implemented in terms of Node*, and supports arithmetic operations
+	{
+	public:
+		iter() : ptr(NULL)
+		{}
+		//...
+	private:
+		explicit iter(Node* nP) : ptr(nP)
+		{}
+	private:
+		Node *ptr;
+	//friends:
+		friend iter Linked_list::NodePtr_to_iter(Node* const nP);
+		friend Node* Linked_list::iter_to_NodePtr(const iter it);
+	};
+public:
+	//...
+protected:
+	//...
+};
+
+template &lt;typename T&gt; inline typename Linked_list&lt;T&gt;::iter Linked_list&lt;T&gt;::NodePtr_to_iter(Node* const nP) 
+{ return iter(nP); }
+
+template &lt;typename T&gt; inline typename Linked_list&lt;T&gt;::Node* Linked_list&lt;T&gt;::iter_to_NodePtr(const iter it) 
+{ return it.ptr; }
+</pre><div style="padding-bottom:1em;"></div>最后需要注意的是因为NodePtr_to_iter和iter_to_NodePtr需要访问iter的成员，所以只能在iter之后定义，也就是在类外定义（类成员在类内部只能声明一次，定义也是声明）。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/20803034/#comments">回应</a>&nbsp;&nbsp;
+                  2012-09-02 12:15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="23247573">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/44228453/"><img src="https://img3.doubanio.com/icon/u44228453-16.jpg" alt="王选易" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23247573/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23247573/" class="">第430页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/44228453/" class=" " title="王选易">王选易</a>
+                (不看新番炒冷饭)
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="23247573">
+              <div class="short">
+                
+                  <span class="">重载操作符的定义     
+      1.重载的操作符名
+
+     2.重载操作符必须有一个类类型操作数
+
+     3.优先级和结合性是固定的
+
+     4.类成员与非成员
+
+          大多数重载操作符可以定义为普通非成员函数和类的成员函数。
+
+               作为类成员的重载函数，其形参看起来比操作数少1，作为成员函数的操作符有一个隐含的this形参，限定为第一个操作数。
+
+          一般把算术和关系操作符作为非成员函数，而将...</span>
+                <p class="pl">
+                  <span class="">2012-12-18 02:07</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                重载操作符的定义     <div style="padding-bottom:1em;"></div>      1.重载的操作符名<div style="padding-bottom:1em;"></div>     2.重载操作符必须有一个类类型操作数<div style="padding-bottom:1em;"></div>     3.优先级和结合性是固定的<div style="padding-bottom:1em;"></div>     4.类成员与非成员<div style="padding-bottom:1em;"></div>          大多数重载操作符可以定义为普通非成员函数和类的成员函数。<div style="padding-bottom:1em;"></div>               作为类成员的重载函数，其形参看起来比操作数少1，作为成员函数的操作符有一个隐含的this形参，限定为第一个操作数。<div style="padding-bottom:1em;"></div>          一般把算术和关系操作符作为非成员函数，而将赋值操作符定义为成员。     <div style="padding-bottom:1em;"></div>     5.操作符重载和友元关系<div style="padding-bottom:1em;"></div>          操作符定义为非成员函数时，通常将它们设置为所操作类的友元。<div style="padding-bottom:1em;"></div>各种操作符的分类解释：<div style="padding-bottom:1em;"></div>1.输入输出操作符：friend<div style="padding-bottom:1em;"></div>     例如对于输出，第一个形参是ostream，第二个形参是要输出类型的引用。<div style="padding-bottom:1em;"></div>     输入麻烦。。。<div style="padding-bottom:1em;"></div>2.算数操作符和关系操作符<div style="padding-bottom:1em;"></div>     相等：比较每个数据成员--即比较两个对象是否包含相同的数据。<div style="padding-bottom:1em;"></div>3.赋值操作符<div style="padding-bottom:1em;"></div>     赋值操作必须返回*this的引用，返回值通常是左操作数的引用。<div style="padding-bottom:1em;"></div>4.下标操作符<div style="padding-bottom:1em;"></div>     *提供读写访问，在作为左右参数时都能表现正常。<div style="padding-bottom:1em;"></div>     类定义下标操作符时，一般需要定义两个版本，一个为非const成员并返回引用，另一个为const成员并返回const引用。<div style="padding-bottom:1em;"></div>5.成员访问操作符<div style="padding-bottom:1em;"></div>6.自增和自减操作符
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23247573/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-18 02:07
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="37402595">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/58625268/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="wainiwann" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/37402595/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/37402595/" class="">7章函数</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/58625268/" class=" " title="wainiwann">wainiwann</a>
+              
+            </p>
+            <div class="reading-note" data-cid="37402595">
+              <div class="short">
+                
+                  <span class="">函数有函数名以及一组操作数类型唯一的表示。函数的操作数，也即形参。
+每一个函数都有一个相关联的返回类型。
+函数调用做了两件事情：用对应的实参初始化函数的形参，并将控制权转移给被调用函数。
+主调函数的执行被挂起，被调函数开始执行。函数的运行以形参的(隐式)定义和初始化开始。
+函数体内定义的变量，称为局部变量，只能在函数体中才可以访问。
+类似于局部变量，函数的形参为函数提供了已命名的局部存储空间。
+实参...</span>
+                <p class="pl">
+                  <span class="">2016-03-18 16:06</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                函数有函数名以及一组操作数类型唯一的表示。函数的操作数，也即形参。<div style="padding-bottom:1em;"></div>每一个函数都有一个相关联的返回类型。<div style="padding-bottom:1em;"></div>函数调用做了两件事情：用对应的实参初始化函数的形参，并将控制权转移给被调用函数。<div style="padding-bottom:1em;"></div>主调函数的执行被挂起，被调函数开始执行。函数的运行以形参的(隐式)定义和初始化开始。<div style="padding-bottom:1em;"></div>函数体内定义的变量，称为局部变量，只能在函数体中才可以访问。<div style="padding-bottom:1em;"></div>类似于局部变量，函数的形参为函数提供了已命名的局部存储空间。<div style="padding-bottom:1em;"></div>实参是一个表达式。实参必须具有与形参类型相同、或者能隐式转换为形参类型的数据类型。<div style="padding-bottom:1em;"></div>函数不能返回另一个函数或者内置数组类型，但可以返回指向函数的指针，(或指向数组元素的指针的指针。)<div style="padding-bottom:1em;"></div>函数的形参可以为空，但不能省略。<div style="padding-bottom:1em;"></div>函数的形参表为编译器提供了检查实参需要的类型信息。<div style="padding-bottom:1em;"></div>在编译时检查出这些所谓的接口错误，将会大大地缩短“编译-调试-测试”的周期。<div style="padding-bottom:1em;"></div>7.2 参数传递<div style="padding-bottom:1em;"></div>每次调用函数时，（都会重新创建该函数所有的形参），此时所传递的实参将会初始化对应的形参。<div style="padding-bottom:1em;"></div>（形参的初始化与变量的初始化一样：如果形参具有非引用类型，则复制实参的值，如果形参为引用类型，则它只是实参的别名。）<div style="padding-bottom:1em;"></div>普通的非引用类型的参数通过（复制对应的实参）实现初始化。用实参副本时，函数并没有访问实参本身，因此不会修改实参的值。<div style="padding-bottom:1em;"></div>指针形参<div style="padding-bottom:1em;"></div>形参如果为指针，将复制实参指针。与其他非引用类型的形参一样，该类形参的任何改变也仅作用于局部副本。<div style="padding-bottom:1em;"></div>(如果函数将新指针值赋给形参，主调函数使用的实参指针的值没有改变。)<div style="padding-bottom:1em;"></div>如果函数形参是非const类型的指针，则函数可通过指针实现赋值，修改指针所指向对象的值。<div style="padding-bottom:1em;"></div>指针形参是指向const类型还是非const类型，将影响函数调用所使用的实参。<div style="padding-bottom:1em;"></div>(可以将指向const对象的指针初始化为指向非const对象，但不可以让指向非const对象的指针指向const对象。)<div style="padding-bottom:1em;"></div>在调用函数时，如果该函数使用非引用的非const形参，则即可以给该函数传递const实参，也可以传递非const实参。<div style="padding-bottom:1em;"></div>在C语言中，具有const形参或非const形参的函数并无区别。<div style="padding-bottom:1em;"></div>复制实参的局限性<div style="padding-bottom:1em;"></div>当需要在函数修改实参的值时；<div style="padding-bottom:1em;"></div>但需要以大型对象作为实参传递时；<div style="padding-bottom:1em;"></div>（当没有办法实现对象的复制时。）<div style="padding-bottom:1em;"></div>引用形参<div style="padding-bottom:1em;"></div>每次调用函数，（引用形参被创建并与相应的实参关联。）<div style="padding-bottom:1em;"></div>与所有引用一样，引用形参直接关联到其所绑定的对象，而并非这些对象的副本。<div style="padding-bottom:1em;"></div>定义引用时，必须用与该引用绑定的对象初始化该引用。引用形参完全以相同的方式工作。<div style="padding-bottom:1em;"></div>在C++中，使用引用形参来实现对实参的访问，则更安全和更自然。<div style="padding-bottom:1em;"></div>使用引用形参返回额外的信息。<div style="padding-bottom:1em;"></div>引用形参的另一种用法是向主调函数返回额外的结果。（给函数传递一个额外的引用实参，用于返回计算结果。）<div style="padding-bottom:1em;"></div>利用const引用避免复制<div style="padding-bottom:1em;"></div>复制实参对于大部分的类类型或者大型数组，它的效率太低，某些类类型是无法复制的。<div style="padding-bottom:1em;"></div>因为形参是引用，所以不复制实参。又因为形参是const引用，所以函数不能使用该引用来修改实参。<div style="padding-bottom:1em;"></div>如果使用引用形参的唯一目的是避免复制实参，则应该将形参定义为const引用。<div style="padding-bottom:1em;"></div>如果函数具有普通的非const引用形参，则显然不能通过const对象进行调用。调用这样的函数时，（传递一个右值或具有需要转换的类型的对象同样是不允许的。）<div style="padding-bottom:1em;"></div>（关键是非const引用形参只能与完全相同类型的非const对象关联。）<div style="padding-bottom:1em;"></div>应该将不修改相应实参的形参定义为const引用。<div style="padding-bottom:1em;"></div>应该将不需要修改的引用形参定义为const引用。普通的非const引用形参在使用时不太灵活。这样的形参即不能用const对象初始化，也不能用字面值或者产生右值的表达式实参初始化。(尽量不用非const引用)
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/37402595/#comments">回应</a>&nbsp;&nbsp;
+                  2016-03-18 16:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="18272828">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/56719954/"><img src="https://img3.doubanio.com/icon/u56719954-2.jpg" alt="孙维民" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18272828/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18272828/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/56719954/" class=" " title="孙维民">孙维民</a>
+              
+            </p>
+            <div class="reading-note" data-cid="18272828">
+              <div class="short">
+                
+                  <span class="">本书是最具知名度的Linux入门书《鸟哥的Linux私房菜基础学习篇》的最新版，全面而详细地介绍了Linux操作系统。全书分为5个部分：第一部分着重说明Linux的起源及功能，如何规划和安装Linux主机；第二部分介绍Linux的文件系统、文件、目录与磁盘的管理；第三部分介绍文字模式接口shell和管理系统的好帮手shell脚本，另外还介绍了文字编辑器vi和vim的使用方法；第四部分介绍了对于系统安全非常重要的Linux账号的管理，以及主机系统与..</span>
+                <p class="pl">
+                  <span class="">2012-05-12 22:29</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                本书是最具知名度的Linux入门书《鸟哥的Linux私房菜基础学习篇》的最新版，全面而详细地介绍了Linux操作系统。全书分为5个部分：第一部分着重说明Linux的起源及功能，如何规划和安装Linux主机；第二部分介绍Linux的文件系统、文件、目录与磁盘的管理；第三部分介绍文字模式接口shell和管理系统的好帮手shell脚本，另外还介绍了文字编辑器vi和vim的使用方法；第四部分介绍了对于系统安全非常重要的Linux账号的管理，以及主机系统与程序的管理，如查看进程、任务分配和作业管理；第五部分介绍了系统管理员(root)的管理事项，如了解系统运行状况、系统服务，针对登录文件进行解析，对系统进行备份以及核心的管理等。<div style="padding-bottom:1em;"></div>　　本书内容丰富全面，基本概念的讲解非常细致，深入浅出。各种功能和命令的介绍，都配以大量的实例操作和详尽的解析。本书是初学者学习Linux不可多得的一本入门好书。<div style="padding-bottom:1em;"></div><a rel="nofollow" href="http://detail.tmall.com/item.htm?id=6060096446" target="_blank">http://detail.tmall.com/item.htm?id=6060096446</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18272828/#comments">回应</a>&nbsp;&nbsp;
+                  2012-05-12 22:29
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18944570">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/1839448/"><img src="https://img3.doubanio.com/icon/u1839448-3.jpg" alt="lh948" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18944570/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18944570/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/1839448/" class=" " title="lh948">lh948</a>
+              
+            </p>
+            <div class="reading-note" data-cid="18944570">
+              <div class="short">
+                
+                  <span class="">看完大多数章节了</span>
+                <p class="pl">
+                  <span class="">2012-06-13 18:26</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                看完大多数章节了
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18944570/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-13 18:26
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="23360201">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/44114278/"><img src="https://img3.doubanio.com/icon/u44114278-2.jpg" alt="lyy" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23360201/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23360201/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/44114278/" class=" " title="lyy">lyy</a>
+                (动静中之动)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="23360201">
+              <div class="short">
+                
+                  <span class="">开始写 习题</span>
+                <p class="pl">
+                  <span class="">2012-12-23 11:49</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                开始写 习题
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23360201/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-23 11:49
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="49996122">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/56099702/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="靠谱先森" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/49996122/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/49996122/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/56099702/" class=" " title="靠谱先森">靠谱先森</a>
+              
+            </p>
+            <div class="reading-note" data-cid="49996122">
+              <div class="short">
+                
+                  <span class="">一份努力一份收获~加油，成为变计算机小牛</span>
+                <p class="pl">
+                  <span class="">2017-11-09 20:52</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>一份努力一份收获~加油，成为变计算机小牛</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/49996122/#comments">回应</a>&nbsp;&nbsp;
+                  2017-11-09 20:52
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="49996122">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/56099702/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="靠谱先森" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/49996122/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/49996122/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/56099702/" class=" " title="靠谱先森">靠谱先森</a>
+              
+            </p>
+            <div class="reading-note" data-cid="49996122">
+              <div class="short">
+                
+                  <span class="">一份努力一份收获~加油，成为变计算机小牛</span>
+                <p class="pl">
+                  <span class="">2017-11-09 20:52</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>一份努力一份收获~加油，成为变计算机小牛</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/49996122/#comments">回应</a>&nbsp;&nbsp;
+                  2017-11-09 20:52
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38893642">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/76563662/"><img src="https://img3.doubanio.com/icon/u76563662-1.jpg" alt="楠楠" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38893642/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38893642/" class="">第124页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/76563662/" class=" " title="楠楠">楠楠</a>
+              
+            </p>
+            <div class="reading-note" data-cid="38893642">
+              <div class="short">
+                
+                  <span class="">
+
+这个是怎么理解的。
+<span class="code-holder">/代码内容已省略/</span>
+</span>
+                <p class="pl">
+                  <span class="">2016-09-01 16:12</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <div style="padding-bottom:1em;"></div>这个是怎么理解的。
+<pre class="source true cpp">
+    typedef int int_array[4];
+    int_array *ip = ia;
+</pre>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38893642/#comments">回应</a>&nbsp;&nbsp;
+                  2016-09-01 16:12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="37402595">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/58625268/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="wainiwann" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/37402595/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/37402595/" class="">7章函数</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/58625268/" class=" " title="wainiwann">wainiwann</a>
+              
+            </p>
+            <div class="reading-note" data-cid="37402595">
+              <div class="short">
+                
+                  <span class="">函数有函数名以及一组操作数类型唯一的表示。函数的操作数，也即形参。
+每一个函数都有一个相关联的返回类型。
+函数调用做了两件事情：用对应的实参初始化函数的形参，并将控制权转移给被调用函数。
+主调函数的执行被挂起，被调函数开始执行。函数的运行以形参的(隐式)定义和初始化开始。
+函数体内定义的变量，称为局部变量，只能在函数体中才可以访问。
+类似于局部变量，函数的形参为函数提供了已命名的局部存储空间。
+实参...</span>
+                <p class="pl">
+                  <span class="">2016-03-18 16:06</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                函数有函数名以及一组操作数类型唯一的表示。函数的操作数，也即形参。<div style="padding-bottom:1em;"></div>每一个函数都有一个相关联的返回类型。<div style="padding-bottom:1em;"></div>函数调用做了两件事情：用对应的实参初始化函数的形参，并将控制权转移给被调用函数。<div style="padding-bottom:1em;"></div>主调函数的执行被挂起，被调函数开始执行。函数的运行以形参的(隐式)定义和初始化开始。<div style="padding-bottom:1em;"></div>函数体内定义的变量，称为局部变量，只能在函数体中才可以访问。<div style="padding-bottom:1em;"></div>类似于局部变量，函数的形参为函数提供了已命名的局部存储空间。<div style="padding-bottom:1em;"></div>实参是一个表达式。实参必须具有与形参类型相同、或者能隐式转换为形参类型的数据类型。<div style="padding-bottom:1em;"></div>函数不能返回另一个函数或者内置数组类型，但可以返回指向函数的指针，(或指向数组元素的指针的指针。)<div style="padding-bottom:1em;"></div>函数的形参可以为空，但不能省略。<div style="padding-bottom:1em;"></div>函数的形参表为编译器提供了检查实参需要的类型信息。<div style="padding-bottom:1em;"></div>在编译时检查出这些所谓的接口错误，将会大大地缩短“编译-调试-测试”的周期。<div style="padding-bottom:1em;"></div>7.2 参数传递<div style="padding-bottom:1em;"></div>每次调用函数时，（都会重新创建该函数所有的形参），此时所传递的实参将会初始化对应的形参。<div style="padding-bottom:1em;"></div>（形参的初始化与变量的初始化一样：如果形参具有非引用类型，则复制实参的值，如果形参为引用类型，则它只是实参的别名。）<div style="padding-bottom:1em;"></div>普通的非引用类型的参数通过（复制对应的实参）实现初始化。用实参副本时，函数并没有访问实参本身，因此不会修改实参的值。<div style="padding-bottom:1em;"></div>指针形参<div style="padding-bottom:1em;"></div>形参如果为指针，将复制实参指针。与其他非引用类型的形参一样，该类形参的任何改变也仅作用于局部副本。<div style="padding-bottom:1em;"></div>(如果函数将新指针值赋给形参，主调函数使用的实参指针的值没有改变。)<div style="padding-bottom:1em;"></div>如果函数形参是非const类型的指针，则函数可通过指针实现赋值，修改指针所指向对象的值。<div style="padding-bottom:1em;"></div>指针形参是指向const类型还是非const类型，将影响函数调用所使用的实参。<div style="padding-bottom:1em;"></div>(可以将指向const对象的指针初始化为指向非const对象，但不可以让指向非const对象的指针指向const对象。)<div style="padding-bottom:1em;"></div>在调用函数时，如果该函数使用非引用的非const形参，则即可以给该函数传递const实参，也可以传递非const实参。<div style="padding-bottom:1em;"></div>在C语言中，具有const形参或非const形参的函数并无区别。<div style="padding-bottom:1em;"></div>复制实参的局限性<div style="padding-bottom:1em;"></div>当需要在函数修改实参的值时；<div style="padding-bottom:1em;"></div>但需要以大型对象作为实参传递时；<div style="padding-bottom:1em;"></div>（当没有办法实现对象的复制时。）<div style="padding-bottom:1em;"></div>引用形参<div style="padding-bottom:1em;"></div>每次调用函数，（引用形参被创建并与相应的实参关联。）<div style="padding-bottom:1em;"></div>与所有引用一样，引用形参直接关联到其所绑定的对象，而并非这些对象的副本。<div style="padding-bottom:1em;"></div>定义引用时，必须用与该引用绑定的对象初始化该引用。引用形参完全以相同的方式工作。<div style="padding-bottom:1em;"></div>在C++中，使用引用形参来实现对实参的访问，则更安全和更自然。<div style="padding-bottom:1em;"></div>使用引用形参返回额外的信息。<div style="padding-bottom:1em;"></div>引用形参的另一种用法是向主调函数返回额外的结果。（给函数传递一个额外的引用实参，用于返回计算结果。）<div style="padding-bottom:1em;"></div>利用const引用避免复制<div style="padding-bottom:1em;"></div>复制实参对于大部分的类类型或者大型数组，它的效率太低，某些类类型是无法复制的。<div style="padding-bottom:1em;"></div>因为形参是引用，所以不复制实参。又因为形参是const引用，所以函数不能使用该引用来修改实参。<div style="padding-bottom:1em;"></div>如果使用引用形参的唯一目的是避免复制实参，则应该将形参定义为const引用。<div style="padding-bottom:1em;"></div>如果函数具有普通的非const引用形参，则显然不能通过const对象进行调用。调用这样的函数时，（传递一个右值或具有需要转换的类型的对象同样是不允许的。）<div style="padding-bottom:1em;"></div>（关键是非const引用形参只能与完全相同类型的非const对象关联。）<div style="padding-bottom:1em;"></div>应该将不修改相应实参的形参定义为const引用。<div style="padding-bottom:1em;"></div>应该将不需要修改的引用形参定义为const引用。普通的非const引用形参在使用时不太灵活。这样的形参即不能用const对象初始化，也不能用字面值或者产生右值的表达式实参初始化。(尽量不用非const引用)
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/37402595/#comments">回应</a>&nbsp;&nbsp;
+                  2016-03-18 16:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34591594">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/73382181/"><img src="https://img1.doubanio.com/icon/u73382181-8.jpg" alt="amov" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34591594/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34591594/" class="">第495页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/73382181/" class=" " title="amov">amov</a>
+              
+            </p>
+            <div class="reading-note" data-cid="34591594">
+              <div class="short">
+                
+                  <span class="">删除指向动态分配对象的指针时，需要运行析构函数在释放对象的内存之前清除对象
+
+作者尼玛连个状语都搞不定吗？
+需要去吃饭在把碗里面的油垢洗掉之前清洗干净碗。尼玛作者平时你都是这么说话吗？</span>
+                <p class="pl">
+                  <span class="">2015-03-18 17:23</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>删除指向动态分配对象的指针时，需要运行析构函数在释放对象的内存之前清除对象</q></blockquote><div style="padding-bottom:1em;"></div>作者尼玛连个状语都搞不定吗？<div style="padding-bottom:1em;"></div>需要去吃饭在把碗里面的油垢洗掉之前清洗干净碗。尼玛作者平时你都是这么说话吗？
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34591594/#comments">回应</a>&nbsp;&nbsp;
+                  2015-03-18 17:23
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/1767741/annotation">更多读书笔记（共203篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1767741/discussion/1074142/" title="这本相比第三版怎么样?" class="">这本相比第三版怎么样?</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/hairuo/">海若</a></td>
+            <td class="pl"><span class="">2 回应</span></td>
+            <td class="pl"><span class="">2014-11-09</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1767741/discussion/53673624/" title="C++ primer 看着好厚的说" class="">C++ primer 看着好厚的说</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/whateveryouwant/">[已注销]</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2013-06-14</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1767741/discussion/1308734/" title="看十本好书不如高手教一个礼拜" class="">看十本好书不如高手教一个礼拜</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/hpman/">笼中虎</a></td>
+            <td class="pl"><span class="">16 回应</span></td>
+            <td class="pl"><span class="">2013-06-14</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1767741/discussion/1118349/" title="C++ Primer入门经典" class="">C++ Primer入门经典</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/1311834/">alvas</a></td>
+            <td class="pl"><span class="">4 回应</span></td>
+            <td class="pl"><span class="">2013-06-14</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1767741/discussion/25384702/" title="与C++ Primer齐名的《C++程序设计原理与实践》已出版" class="">与C++ Primer齐名的《C++程序设计原理与实践》已出版</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/winnie_liujing/">冬天里的阳光</a></td>
+            <td class="pl"><span class="">1 回应</span></td>
+            <td class="pl"><span class="">2013-02-26</span></td>
+        </tr>
+</table>
+
+
+            <p class="pl" align="right">&gt;
+                <a href="https://book.douban.com/subject/1767741/discussion/">浏览更多话题</a>
+            </p>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+    
+  
+  
+  <div class="gray_ad">
+    
+  
+
+  <h2>
+    <span class="">其他版本在豆瓣书店有售</span>
+      ······
+
+  </h2>
+
+
+    <div class="market-banner">
+          <a class="publish" href="https://book.douban.com/subject/24089577/" target="_blank">
+            电子工业出版社版
+          </a><br/>
+      <span class="title">
+        纸质版&nbsp;
+      </span>
+      <span class="price"> 102.40元</span>
+        <span class="price"> <del>128.00元</del></span>
+      <span class="promotion-info">满48元包邮</span>
+      <span class="actions">
+        <a class="buy-btn buy" target="_blank" href="https://market.douban.com/cart/checkout/?sku_id=165957&utm_campaign=douban_book_subject_buy_btn&utm_source=douban&utm_medium=pc_web">
+          去购买
+        </a>
+          <a class="j a_show_login buy-btn cart" href="javascript:;">加入购物车</a>
+      </span>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=8840&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=8840&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEwZSGFkQBiJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQMTAFYZXhEdS0IJRmtMaxZbDkMfXmJuAFdlHhULVl0qTR9lDh5pVhpbEx4TAEkYXAQCFAxUHVARCiIAUBxdEgsRAGUbXxQGFjdlG1olUHzf462DsLMO0%252F%252BUjp2VIgZlG14dCxcAXBpdHQIUBmUca8yCpdH3iYKLiMePwitrJTI%253D%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsUAxUEVx5fCltXWwg%253D&amp;cntvendor=1&amp;srcsubj=1767741&amp;type=bkbuy&amp;subject=1767741" class="">
+                      <span class="">京东商城</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=8840&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=8840&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEwZSGFkQBiJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQMTAFYZXhEdS0IJRmtMaxZbDkMfXmJuAFdlHhULVl0qTR9lDh5pVhpbEx4TAEkYXAQCFAxUHVARCiIAUBxdEgsRAGUbXxQGFjdlG1olUHzf462DsLMO0%252F%252BUjp2VIgZlG14dCxcAXBpdHQIUBmUca8yCpdH3iYKLiMePwitrJTI%253D%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsUAxUEVx5fCltXWwg%253D&amp;cntvendor=1&amp;srcsubj=1767741&amp;type=bkbuy&amp;subject=1767741" class="buylink-price ">
+                      <span class="">
+                        88.40 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/1767741/buylinks">
+              &gt; 查看1家网店价格
+                (88.40 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D7115145547&amp;subject=7115145547&amp;type=borrow&amp;library=10001&amp;link2key=d4e5dc661d" target="_blank">上海图书馆(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac.gzlib.gov.cn%2Fopac%2Fsearch%3Frows%3D10%26curlibcode%3DGT%26hasholding%3D1%26searchWay0%3Dmarc%26q0%3D%26logical0%3DAND%26q%3D7115145547%26searchWay%3Disbn%26scWay%3Ddim%26searchSource%3Dreader&amp;subject=7115145547&amp;type=borrow&amp;library=10022&amp;link2key=d4e5dc661d" target="_blank">广州图书馆(2)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2F218.62.1.221%3A8080%2Fopac%2Fopenlink.php%3FstrText%3D7115145547%26strSearchType%3Disbn&amp;subject=7115145547&amp;type=borrow&amp;library=10002&amp;link2key=d4e5dc661d" target="_blank">吉林省图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fourex.lib.sjtu.edu.cn%2Fprimo_library%2Flibweb%2Faction%2Fsearch.do%3Ffn%3Dsearch%26vl%28freeText0%29%3D7-115-14554-7&amp;subject=7115145547&amp;type=borrow&amp;library=10006&amp;link2key=d4e5dc661d" target="_blank">上海交通大学图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2F58.154.49.3%3A8080%2Fopac%2Fopenlink.php%3FhistoryCount%3D1%26strText%3D7-115-14554-7%26doctype%3DALL%26strSearchType%3Disbn%26match_flag%3Dforward%26displaypg%3D20%26sort%3DCATA_DATE%26orderby%3Ddesc%26showmode%3Dlist%26location%3DALL&amp;subject=7115145547&amp;type=borrow&amp;library=10010&amp;link2key=d4e5dc661d" target="_blank">沈阳师范大学图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2F222.177.237.197%3A8080%2FInDigLib%2Ffront%2FComplexSearch.action%3FcurrentPage%3D1%26select1%3Disbn%26select2%3D%26select3%3D%26text1%3D7115145547%26text2%3D%26text3%3D%26pageSize%3D20%26condition%3D%26table%3Di_biblios%26type%3D%26videoType%3Dcomplex&amp;subject=7115145547&amp;type=borrow&amp;library=10021&amp;link2key=d4e5dc661d" target="_blank">重庆图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1011282">全部16</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1415354/">Addison-Wesley Professional版</a>
+          14 February, 2005 / 229人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/25708312/">电子工业出版社版</a>
+          2013-9-1 / 701人读过 / 有售
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1208731/">中国电力出版社版</a>
+          2002-4 / 1068人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1900687/">人民邮电出版社版</a>
+          2006-11 / 219人读过 / 有售
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1767741/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/242077/" target="_blank">豆瓣评分&gt;9的书（100人以上）</a>
+                <span class="pl">(阿獠)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/43430373/" target="_blank">豆瓣高分书2500本：千人打分不低于8分</a>
+                <span class="pl">(偶就是那个鬼)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1264675/" target="_blank">豆瓣读书评分9分以上榜单</a>
+                <span class="pl">(无人的冬夜)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/38391562/" target="_blank">1000+条豆瓣评价9.0以上的书</a>
+                <span class="pl">(Sheryl)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/387968/" target="_blank">改变自己▶编程</a>
+                <span class="pl">(Chain)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/142633050/"><img src="https://img3.doubanio.com/icon/u142633050-2.jpg" class="pil" alt="东京的猫" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/142633050/">东京的猫</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/73577944/"><img src="https://img3.doubanio.com/icon/u73577944-1.jpg" class="pil" alt="hold哥哥_" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/73577944/">hold哥哥_</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:C/C++</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/167208674/"><img src="https://img3.doubanio.com/icon/u167208674-1.jpg" class="pil" alt="小明" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/167208674/">小明</a><br/>
+      <div class="pl ll">          1月5日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:经典教材 C++</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1767741/doings">1914人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1767741/collections">4515人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1767741/wishes">4512人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/1767741/offers">55本二手书欲转让</a>
+          <span class="">
+            (1.00
+                至 80.00元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有4512人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于C++ Primer 中文版（第 4 版）的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/1767741/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'GaBTAYS7z3k',
+            criteria = '7:C++|7:编程|7:计算机|7:程序设计|7:C/C++|7:经典|7:经典教材|7:经典之作|7:programming|7:primer|3:/subject/1767741/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar7c-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

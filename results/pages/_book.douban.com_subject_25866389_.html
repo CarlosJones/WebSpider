@@ -1,0 +1,3330 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>逆向工程核心原理 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/25866389/">
+<meta name="keywords" content="逆向工程核心原理,[韩] 李承远,人民邮电出版社,2014-4-25,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书逆向工程核心原理 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/25866389/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">逆向工程核心原理</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img1.doubanio.com/lpic/s27259699.jpg" title="逆向工程核心原理">
+    <img src="https://img1.doubanio.com/lpic/s27259699.jpg" title="点击看大图" alt="逆向工程核心原理"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/%E6%9D%8E%E6%89%BF%E8%BF%9C">[韩] 李承远</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 人民邮电出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E6%AD%A6%E4%BC%A0%E6%B5%B7">武传海</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2014-4-25<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 700<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 109.00元<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+    <span class="pl">丛书:</span>&nbsp;<a href="https://book.douban.com/series/660">图灵程序设计丛书</a><br>
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787115350183<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.2 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar45"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">39</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">59.0%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:41px"></div>
+
+            <span class="rating_per">38.5%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">2.6%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-25866389-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-25866389-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-25866389-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25866389-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25866389-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25866389-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25866389-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25866389-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-25866389">
+        <a href="#" data-url="https://book.douban.com/subject/25866389/" data-desc="" data-title="书籍《逆向工程核心原理》 (来自豆瓣) " data-pic="https://img1.doubanio.com/lpic/s27259699.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_25866389"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>本书十分详尽地介绍了代码逆向分析的核心原理。作者在Ahnlab 研究所工作多年，书中不仅包括其以此经验为基础亲自编写的大量代码，还包含了逆向工程研究人员必须了解的各种技术和技巧。彻底理解并切实掌握逆向工程这门技术，就能在众多IT 相关领域进行拓展运用，这本书就是通向逆向工程大门的捷径。</p>    <p>想成为逆向工程研究员的读者或正在从事逆向开发工作的开发人员一定会通过本书获得很大帮助。同时，想成为安全领域专家的人也可从本书轻松起步。</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/25866389/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <div class="">
+            <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>李承远，目前在Ahnlab研究所从事恶意代码分析工作，并运营逆向工程的专门博客网站。 为把逆向工程技术广泛传播而不懈努力中并积极地参加各种领域的活动，乐于与读者进行知识共享。</p></div>
+
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_25866389_short">
+        目　　录<br/>
+        <br/>
+        第一部分　代码逆向技术基础<br/>
+        第1章　关于逆向工程	2<br/>
+        1.1　逆向工程	2<br/>
+        1.2　代码逆向工程	2<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_25866389_short').hide();$('#dir_25866389_full').show();$.get('/j/subject/j_dir_count',{id:25866389});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_25866389_full" style="display:none">
+        目　　录<br/>
+        <br/>
+        第一部分　代码逆向技术基础<br/>
+        第1章　关于逆向工程	2<br/>
+        1.1　逆向工程	2<br/>
+        1.2　代码逆向工程	2<br/>
+        1.2.1　逆向分析法	2<br/>
+        1.2.2　源代码、十六进制代码、汇编代码	4<br/>
+        1.2.3  “打补丁”与“破解”	5<br/>
+        1.3　代码逆向准备	5<br/>
+        1.3.1　目标	5<br/>
+        1.3.2　激情	6<br/>
+        1.3.3　谷歌	6<br/>
+        1.4　学习逆向分析技术的禁忌	6<br/>
+        1.4.1　贪心	6<br/>
+        1.4.2　急躁	7<br/>
+        1.5　逆向分析技术的乐趣	7<br/>
+        第2章　逆向分析Hello World!程序	8<br/>
+        2.1　Hello World!程序	8<br/>
+        2.2　调试HelloWorld.exe程序	9<br/>
+        2.2.1　调试目标	9<br/>
+        2.2.2　开始调试	9<br/>
+        2.2.3　入口点	10<br/>
+        2.2.4　跟踪40270C函数	10<br/>
+        2.2.5　跟踪40104F跳转语句	12<br/>
+        2.2.6　查找main()函数	12<br/>
+        2.3　进一步熟悉调试器	14<br/>
+        2.3.1　调试器指令	14<br/>
+        2.3.2  “大本营”	15<br/>
+        2.3.3　设置“大本营”的四种方法	15<br/>
+        2.4　快速查找指定代码的四种方法	17<br/>
+        2.4.1　代码执行法	18<br/>
+        2.4.2　字符串检索法	19<br/>
+        2.4.3　API检索法（1）：在调用代码中设置断点	20<br/>
+        2.4.4　API检索法（2）：在API代码中设置断点	21<br/>
+        2.5　使用“打补丁”方式修改“Hello World!”字符串	23<br/>
+        2.5.1  “打补丁”	23<br/>
+        2.5.2　修改字符串的两种方法	24<br/>
+        2.6　小结	28<br/>
+        第3章　小端序标记法	31<br/>
+        3.1　字节序	31<br/>
+        3.1.1　大端序与小端序	32<br/>
+        3.1.2　在OllyDbg中查看小端序	32<br/>
+        第4章　IA-32寄存器基本讲解	34<br/>
+        4.1　什么是CPU寄存器	34<br/>
+        4.2　IA-32寄存器	34<br/>
+        4.3　小结	40<br/>
+        第5章　栈	41<br/>
+        5.1　栈	41<br/>
+        5.1.1　栈的特征	41<br/>
+        5.1.2　栈操作示例	41<br/>
+        第6章　分析abex’ crackme#1	44<br/>
+        6.1　abex’ crackme #1	44<br/>
+        6.1.1　开始调试	45<br/>
+        6.1.2　分析代码	45<br/>
+        6.2　破解	47<br/>
+        6.3　将参数压入栈	47<br/>
+        6.4　小结	48<br/>
+        第7章　栈帧	49<br/>
+        7.1　栈帧	49<br/>
+        7.2　调试示例：stackframe.exe	49<br/>
+        7.2.1　StackFrame.cpp	50<br/>
+        7.2.2　开始执行main()函数&amp;生成栈帧	51<br/>
+        7.2.3　设置局部变量	52<br/>
+        7.2.4　add()函数参数传递与调用	53<br/>
+        7.2.5　开始执行add()函数&amp;生成栈帧	54<br/>
+        7.2.6　设置add()函数的局部变量（x, y）	55<br/>
+        7.2.7　ADD运算	55<br/>
+        7.2.8　删除函数add()的栈帧&amp;函数执行完毕（返回）	56<br/>
+        7.2.9　从栈中删除函数add()的参数（整理栈）	57<br/>
+        7.2.10　调用printf()函数	58<br/>
+        7.2.11　设置返回值	58<br/>
+        7.2.12　删除栈帧&amp;main()函数终止	58<br/>
+        7.3　设置OllyDbg选项	59<br/>
+        7.3.1　Disasm选项	59<br/>
+        7.3.2　Analysis1选项	60<br/>
+        7.4　小结	61<br/>
+        第8章　abex’ crackme #2	62<br/>
+        8.1　运行abex’ crackme #2	62<br/>
+        8.2　Visual Basic文件的特征	63<br/>
+        8.2.1　VB专用引擎	63<br/>
+        8.2.2　本地代码和伪代码	63<br/>
+        8.2.3　事件处理程序	63<br/>
+        8.2.4　未文档化的结构体	63<br/>
+        8.3　开始调试	63<br/>
+        8.3.1　间接调用	64<br/>
+        8.3.2　RT_MainStruct结构体	64<br/>
+        8.3.3　ThunRTMain()函数	65<br/>
+        8.4　分析crackme	65<br/>
+        8.4.1　检索字符串	65<br/>
+        8.4.2　查找字符串地址	66<br/>
+        8.4.3　生成Serial的算法	68<br/>
+        8.4.4　预测代码	69<br/>
+        8.4.5　读取Name字符串的代码	69<br/>
+        8.4.6　加密循环	70<br/>
+        8.4.7　加密方法	70<br/>
+        8.5　小结	72<br/>
+        第9章　Process Explorer—— 最优秀的进程管理工具	74<br/>
+        9.1　Process Explorer	74<br/>
+        9.2　具体有哪些优点呢	75<br/>
+        9.3　sysinternals	75<br/>
+        第10章　函数调用约定	76<br/>
+        10.1　函数调用约定	76<br/>
+        10.1.1　cdecl	76<br/>
+        10.1.2　stdcall	77<br/>
+        10.1.3　fastcall	78<br/>
+        第11章　视频讲座	79<br/>
+        11.1　运行	79<br/>
+        11.2　分析	79<br/>
+        11.2.1　目标（1）：去除消息框	79<br/>
+        11.2.2　打补丁（1）：去除消息框	81<br/>
+        11.2.3　目标（2）：查找注册码	83<br/>
+        11.3　小结	85<br/>
+        第12章　究竟应当如何学习代码逆向分析	86<br/>
+        12.1　逆向工程	86<br/>
+        12.1.1　任何学习都应当有目标	86<br/>
+        12.1.2　拥有积极心态	86<br/>
+        12.1.3　要感受其中的乐趣	86<br/>
+        12.1.4　让检索成为日常生活的一部分	87<br/>
+        12.1.5　最重要的是实践	87<br/>
+        12.1.6　请保持平和的心态	87<br/>
+        第二部分　PE文件格式<br/>
+        第13章　PE文件格式	90<br/>
+        13.1　介绍	90<br/>
+        13.2　PE文件格式	90<br/>
+        13.2.1　基本结构	91<br/>
+        13.2.2　VA&amp;RVA	92<br/>
+        13.3　PE头	92<br/>
+        13.3.1　DOS头	93<br/>
+        13.3.2　DOS存根	94<br/>
+        13.3.3　NT头	94<br/>
+        13.3.4　NT头：文件头	95<br/>
+        13.3.5　NT头：可选头	97<br/>
+        13.3.6　节区头	101<br/>
+        13.4　RVA to RAW	104<br/>
+        13.5　IAT	105<br/>
+        13.5.1　DLL	105<br/>
+        13.5.2　IMAGE_IMPORT_DESCRIPTOR	107<br/>
+        13.5.3　使用notepad.exe练习	108<br/>
+        13.6　EAT	112<br/>
+        13.6.1　IMAGE_EXPORT_DIRECTORY	113<br/>
+        13.6.2　使用kernel32.dll练习	114<br/>
+        13.7　高级PE	116<br/>
+        13.7.1　PEView.exe	116<br/>
+        13.7.2　Patched PE	117<br/>
+        13.8　小结	118<br/>
+        第14章　运行时压缩	121<br/>
+        14.1　数据压缩	121<br/>
+        14.1.1　无损压缩	121<br/>
+        14.1.2　有损压缩	121<br/>
+        14.2　运行时压缩器	122<br/>
+        14.2.1　压缩器	122<br/>
+        14.2.2　保护器	123<br/>
+        14.3　运行时压缩测试	123<br/>
+        第15章　调试UPX压缩的notepad程序	127<br/>
+        15.1　notepad.exe的EP代码	127<br/>
+        15.2　notepad_upx.exe的EP代码	127<br/>
+        15.3　跟踪UPX文件	129<br/>
+        15.3.1　OllyDbg的跟踪命令	129<br/>
+        15.3.2　循环 #1	129<br/>
+        15.3.3　循环 #2	130<br/>
+        15.3.4　循环 #3	131<br/>
+        15.3.5　循环 #4	131<br/>
+        15.4　快速查找UPX OEP的方法	132<br/>
+        15.4.1　在POPAD指令后的JMP指令处设置断点	132<br/>
+        15.4.2　在栈中设置硬件断点	133<br/>
+        15.5　小结	133<br/>
+        第16章　基址重定位表	135<br/>
+        16.1　PE重定位	135<br/>
+        16.1.1　DLL/SYS	135<br/>
+        16.1.2　EXE	136<br/>
+        16.2　PE重定位时执行的操作	136<br/>
+        16.3　PE重定位操作原理	138<br/>
+        16.3.1　基址重定位表	138<br/>
+        16.3.2　IMAGE_BASE_RELOCATION结构体	139<br/>
+        16.3.3　基址重定位表的分析方法	139<br/>
+        16.3.4　练习	141<br/>
+        第17章　从可执行文件中删除.reloc节区	142<br/>
+        17.1　.reloc节区	142<br/>
+        17.2　reloc.exe	142<br/>
+        17.2.1　删除.reloc节区头	142<br/>
+        17.2.2　删除.reloc节区	143<br/>
+        17.2.3　修改IMAGE_FILE_HEADER	143<br/>
+        17.2.4　修改IMAGE_OPTIONAL_HEADER	144<br/>
+        17.3　小结	145<br/>
+        第18章　UPack PE文件头详细分析	146<br/>
+        18.1　UPack说明	146<br/>
+        18.2　使用UPack压缩notepad.exe	146<br/>
+        18.3　使用Stud_PE工具	148<br/>
+        18.4　比较PE文件头	148<br/>
+        18.4.1　原notepad.exe的PE文件头	149<br/>
+        18.4.2　notepad_upack.exe运行时压缩的PE文件头	149<br/>
+        18.5　分析UPack的PE文件头	150<br/>
+        18.5.1　重叠文件头	150<br/>
+        18.5.2　IMAGE_FILE_HEADER.SizeOfOptionalHeader	150<br/>
+        18.5.3　IMAGE_OPTIONAL_HEADER.NumberOf-RvaAndSizes	152<br/>
+        18.5.4　IMAGE_SECTION_HEADER	153<br/>
+        18.5.5　重叠节区	155<br/>
+        18.5.6　RVA to RAW	156<br/>
+        18.5.7　导入表（IMAGE_IMPORT_DESCRIPTOR array）	158<br/>
+        18.5.8　导入地址表	160<br/>
+        18.6　小结	161<br/>
+        第19章　UPack调试 ? 查找OEP	162<br/>
+        19.1　OllyDbg运行错误	162<br/>
+        19.2　解码循环	163<br/>
+        19.3　设置IAT	165<br/>
+        19.4　小结	166<br/>
+        第20章　“内嵌补丁”练习	167<br/>
+        20.1　内嵌补丁	167<br/>
+        20.2　练习：Patchme	168<br/>
+        20.3　调试：查看代码流	168<br/>
+        20.4　代码结构	172<br/>
+        20.5  “内嵌补丁”练习	173<br/>
+        20.5.1　补丁代码要设置在何处呢	173<br/>
+        20.5.2　制作补丁代码	175<br/>
+        20.5.3　执行补丁代码	176<br/>
+        20.5.4　结果确认	177<br/>
+        第三部分　DLL注入<br/>
+        第21章　Windows消息钩取	180<br/>
+        21.1　钩子	180<br/>
+        21.2　消息钩子	180<br/>
+        21.3　SetWindowsHookEx()	181<br/>
+        21.4　键盘消息钩取练习	182<br/>
+        21.4.1　练习示例HookMain.exe	182<br/>
+        21.4.2　分析源代码	185<br/>
+        21.5　调试练习	187<br/>
+        21.5.1　调试HookMain.exe	188<br/>
+        21.5.2　调试Notepad.exe进程内的KeyHook.dll	190<br/>
+        21.6　小结	192<br/>
+        第22章　恶意键盘记录器	194<br/>
+        22.1　恶意键盘记录器的目标	194<br/>
+        22.1.1　在线游戏	194<br/>
+        22.1.2　网上银行	194<br/>
+        22.1.3　商业机密泄露	194<br/>
+        22.2　键盘记录器的种类与发展趋势	195<br/>
+        22.3　防范恶意键盘记录器	195<br/>
+        22.4　个人信息	195<br/>
+        第23章　DLL注入	197<br/>
+        23.1　DLL注入	197<br/>
+        23.2　DLL注入示例	198<br/>
+        23.2.1　改善功能与修复Bug	198<br/>
+        23.2.2　消息钩取	198<br/>
+        23.2.3　API钩取	198<br/>
+        23.2.4　其他应用程序	199<br/>
+        23.2.5　恶意代码	199<br/>
+        23.3　DLL注入的实现方法	199<br/>
+        23.4　CreateRemoteThread()	199<br/>
+        23.4.1　练习示例myhack.dll	199<br/>
+        23.4.2　分析示例源代码	203<br/>
+        23.4.3　调试方法	208<br/>
+        23.5　AppInit_DLLs	210<br/>
+        23.5.1　分析示例源码	211<br/>
+        23.5.2　练习示例myhack2.dll	212<br/>
+        23.6　SetWindowsHookEx()	214<br/>
+        23.7　小结	214<br/>
+        第24章　DLL卸载	216<br/>
+        24.1　DLL卸载的工作原理	216<br/>
+        24.2　实现DLL卸载	216<br/>
+        24.2.1　获取进程中加载的DLL信息	219<br/>
+        24.2.2　获取目标进程的句柄	220<br/>
+        24.2.3　获取FreeLibrary() API地址	220<br/>
+        24.2.4　在目标进程中运行线程	220<br/>
+        24.3　DLL卸载练习	220<br/>
+        24.3.1　复制文件及运行notepad.exe	220<br/>
+        24.3.2　注入myhack.dll	221<br/>
+        24.3.3　卸载myhack.dll	222<br/>
+        第25章　通过修改PE加载DLL	224<br/>
+        25.1　练习文件	224<br/>
+        25.1.1　TextView.exe	224<br/>
+        25.1.2　TextView_patched.exe	225<br/>
+        25.2　源代码 - myhack3.cpp	227<br/>
+        25.2.1　DllMain()	227<br/>
+        25.2.2　DownloadURL()	228<br/>
+        25.2.3　DropFile()	229<br/>
+        25.2.4　dummy()	230<br/>
+        25.3　修改TextView.exe文件的准备工作	231<br/>
+        25.3.1　修改思路	231<br/>
+        25.3.2　查看IDT是否有足够空间	231<br/>
+        25.3.3　移动IDT	233<br/>
+        25.4　修改TextView.exe	235<br/>
+        25.4.1　修改导入表的RVA值	235<br/>
+        25.4.2　删除绑定导入表	235<br/>
+        25.4.3　创建新IDT	235<br/>
+        25.4.4　设置Name、INT、IAT	236<br/>
+        25.4.5　修改IAT节区的属性值	238<br/>
+        25.5　检测验证	240<br/>
+        25.6　小结	241<br/>
+        第26章　PE Tools	242<br/>
+        26.1　PE Tools	242<br/>
+        26.1.1　进程内存转储	243<br/>
+        26.1.2　PE编辑器	245<br/>
+        26.2　小结	245<br/>
+        第27章　代码注入	247<br/>
+        27.1　代码注入	247<br/>
+        27.2　DLL注入与代码注入	247<br/>
+        27.3　练习示例	249<br/>
+        27.3.1　运行notepad.exe	249<br/>
+        27.3.2　运行CodeInjection.exe	249<br/>
+        27.3.3　弹出消息框	250<br/>
+        27.4　CodeInjection.cpp	250<br/>
+        27.4.1　main()函数	251<br/>
+        27.4.2　ThreadProc()函数	251<br/>
+        27.4.3　InjectCode()函数	254<br/>
+        27.5　代码注入调试练习	256<br/>
+        27.5.1　调试notepad.exe	256<br/>
+        27.5.2　设置OllyDbg选项	256<br/>
+        27.5.3　运行CodeInjection.exe	257<br/>
+        27.5.4　线程开始代码	258<br/>
+        27.6　小结	259<br/>
+        第28章　使用汇编语言编写注入代码	260<br/>
+        28.1　目标	260<br/>
+        28.2　汇编编程	260<br/>
+        28.3　OllyDbg的汇编命令	260<br/>
+        28.3.1　编写ThreadProc()函数	262<br/>
+        28.3.2　保存文件	265<br/>
+        28.4　编写代码注入程序	266<br/>
+        28.4.1　获取ThreadProc()函数的二进制代码	266<br/>
+        28.4.2　CodeInjection2.cpp	267<br/>
+        28.5　调试练习	270<br/>
+        28.5.1　调试notepad.exe	270<br/>
+        28.5.2　设置OllyDbg选项	270<br/>
+        28.5.3　运行CodeInjection2.exe	271<br/>
+        28.5.4　线程起始代码	272<br/>
+        28.6　详细分析	272<br/>
+        28.6.1　生成栈帧	272<br/>
+        28.6.2　THREAD_PARAM结构体指针	273<br/>
+        28.6.3  “User32.dll”字符串	274<br/>
+        28.6.4　压入“user32.dll”字符串参数	274<br/>
+        28.6.5　调用LoadLibraryA(“user32.dll”)	275<br/>
+        28.6.6  “MessageBoxA”字符串	276<br/>
+        28.6.7　调用GetProcAddress(hMod,“MessageBoxA”)	276<br/>
+        28.6.8　压入MessageBoxA()函数的参数 1 - MB_OK	277<br/>
+        28.6.9　压入MessageBoxA()函数的参数 2 -“ReverseCore”	277<br/>
+        28.6.10　压入MessageBoxA()函数的参数 3 -“www.reversecore.com”	278<br/>
+        28.6.11　压入MessageBoxA()函数的参数 4 -NULL	279<br/>
+        28.6.12　调用MessageBoxA()	279<br/>
+        28.6.13　设置ThreadProc()函数的返回值	280<br/>
+        28.6.14　删除栈帧及函数返回	280<br/>
+        28.7　小结	280<br/>
+        第四部分　API钩取<br/>
+        第29章　API钩取：逆向分析之“花”	282<br/>
+        29.1　钩取	282<br/>
+        29.2　API是什么	282<br/>
+        29.3　API钩取	283<br/>
+        29.3.1　正常调用API	283<br/>
+        29.3.2　钩取API调用	284<br/>
+        29.4　技术图表	284<br/>
+        29.4.1　方法对象（是什么）	285<br/>
+        29.4.2　位置（何处）	285<br/>
+        29.4.3　技术（如何）	286<br/>
+        29.4.4　API	286<br/>
+        第30章　记事本WriteFile() API钩取	288<br/>
+        30.1　技术图表 - 调试技术	288<br/>
+        30.2　关于调试器的说明	289<br/>
+        30.2.1　术语	289<br/>
+        30.2.2　调试器功能	289<br/>
+        30.2.3　调试器的工作原理	289<br/>
+        30.2.4　调试事件	289<br/>
+        30.3　调试技术流程	290<br/>
+        30.4　练习	291<br/>
+        30.5　工作原理	293<br/>
+        30.5.1　栈	293<br/>
+        30.5.2　执行流	295<br/>
+        30.5.3  “脱钩”&amp;“钩子”	295<br/>
+        30.6　源代码分析	295<br/>
+        30.6.1　main()	296<br/>
+        30.6.2　DebugLoop()	296<br/>
+        30.6.3　EXIT_PROCESS_DEBUG_EVENT	298<br/>
+        30.6.4　CREATE_PROCESS_DEBUG_EVENT-OnCreateProcess-DebugEvent()	298<br/>
+        30.6.5　EXCEPTION_DEBUG_EVENT-OnException-DebugEvent()	300<br/>
+        第31章　关于调试器	305<br/>
+        31.1　OllyDbg	305<br/>
+        31.2　IDA Pro	305<br/>
+        31.3　WinDbg	306<br/>
+        第32章　计算器显示中文数字	308<br/>
+        32.1　技术图表	308<br/>
+        32.2　选定目标API	309<br/>
+        32.3　IAT钩取工作原理	312<br/>
+        32.4　练习示例	314<br/>
+        32.5　源代码分析	316<br/>
+        32.5.1　DllMain()	316<br/>
+        32.5.2　MySetWindowTextW()	317<br/>
+        32.5.3　hook_iat()	319<br/>
+        32.6　调试被注入的DLL文件	322<br/>
+        32.6.1　DllMain()	325<br/>
+        32.6.2　hook_iat()	325<br/>
+        32.6.3　MySetWindowTextW()	327<br/>
+        32.7　小结	328<br/>
+        第33章　隐藏进程	329<br/>
+        33.1　技术图表	329<br/>
+        33.2　API代码修改技术的原理	329<br/>
+        33.2.1　钩取之前	330<br/>
+        33.2.2　钩取之后	330<br/>
+        33.3　进程隐藏	332<br/>
+        33.3.1　进程隐藏工作原理	332<br/>
+        33.3.2　相关API	332<br/>
+        33.3.3　隐藏技术的问题	333<br/>
+        33.4　练习 #1（HideProc.exe，stealth.dll）	333<br/>
+        33.4.1　运行notepad.exe、procexp.exe、taskmgr.exe	334<br/>
+        33.4.2　运行HideProc.exe	334<br/>
+        33.4.3　确认stealth.dll注入成功	334<br/>
+        33.4.4　查看notepad.exe进程是否隐藏成功	335<br/>
+        33.4.5　取消notepad.exe进程隐藏	336<br/>
+        33.5　源代码分析	336<br/>
+        33.5.1　HideProc.cpp	336<br/>
+        33.5.2　stealth.cpp	338<br/>
+        33.6　全局API钩取	344<br/>
+        33.6.1　Kernel32.CreateProcess() API	344<br/>
+        33.6.2　Ntdll.ZwResumeThread() API	345<br/>
+        33.7　练习#2（HideProc2.exe,Stealth2.dll）	345<br/>
+        33.7.1　复制stealth2.dll文件到%SYSTEM%文件夹中	345<br/>
+        33.7.2　运行HideProc2.exe -hide	346<br/>
+        33.7.3　运行ProcExp.exe&amp;notepad.exe	346<br/>
+        33.7.4　运行HideProc2.exe -show	347<br/>
+        33.8　源代码分析	348<br/>
+        33.8.1　HideProc2.cpp	348<br/>
+        33.8.2　stealth2.cpp	348<br/>
+        33.9　利用“热补丁”技术钩取API	350<br/>
+        33.9.1　API代码修改技术的问题	350<br/>
+        33.9.2  “热补丁”（修改7个字节代码）	350<br/>
+        33.10　练习 #3：stealth3.dll	353<br/>
+        33.11　源代码分析	353<br/>
+        33.12　使用“热补丁”API钩取技术时需要考虑的问题	356<br/>
+        33.13　小结	357<br/>
+        第34章　高级全局API钩取：IE连接控制	359<br/>
+        34.1　目标API	359<br/>
+        34.2　IE进程结构	361<br/>
+        34.3　关于全局API钩取的概念	362<br/>
+        34.3.1　常规API钩取	363<br/>
+        34.3.2　全局API钩取	363<br/>
+        34.4　ntdll!ZwResumeThread() API	364<br/>
+        34.5　练习示例：控制IE网络连接	368<br/>
+        34.5.1　运行IE	368<br/>
+        34.5.2　注入DLL	369<br/>
+        34.5.3　创建新选项卡	369<br/>
+        34.5.4　尝试连接网站	370<br/>
+        34.5.5　卸载DLL	371<br/>
+        34.5.6　课外练习	372<br/>
+        34.6　示例源代码	372<br/>
+        34.6.1　DllMain()	372<br/>
+        34.6.2　NewInternetConnectW()	373<br/>
+        34.6.3　NewZwResumeThread()	374<br/>
+        34.7　小结	375<br/>
+        第35章　优秀分析工具的五种标准	376<br/>
+        35.1　工具	376<br/>
+        35.2　代码逆向分析工程师	376<br/>
+        35.3　优秀分析工具的五种标准	376<br/>
+        35.3.1　精简工具数量	377<br/>
+        35.3.2　工具功能简单、使用方便	377<br/>
+        35.3.3　完全掌握各种功能	377<br/>
+        35.3.4　不断升级更新	377<br/>
+        35.3.5　理解工具的核心工作原理	377<br/>
+        35.4　熟练程度的重要性	377<br/>
+        第五部分　64位&amp;Windows内核6<br/>
+        第36章　64位计算	380<br/>
+        36.1　64位计算环境	380<br/>
+        36.1.1　64位CPU	380<br/>
+        36.1.2　64位OS	381<br/>
+        36.1.3　Win32 API	381<br/>
+        36.1.4　WOW64	381<br/>
+        36.1.5　练习：WOW64Test	384<br/>
+        36.2　编译64位文件	385<br/>
+        36.2.1　Microsoft Windows SDK<br/>
+        （Software Development Kit）	386<br/>
+        36.2.2　设置Visual C++ 2010 Express环境	386<br/>
+        第37章　x64处理器	389<br/>
+        37.1　x64中新增或变更的项目	389<br/>
+        37.1.1　64位	389<br/>
+        37.1.2　内存	389<br/>
+        37.1.3　通用寄存器	389<br/>
+        37.1.4　CALL/JMP指令	390<br/>
+        37.1.5　函数调用约定	391<br/>
+        37.1.6　栈 &amp; 栈帧	392<br/>
+        37.2　练习：Stack32.exe &amp; Stack64.exe	392<br/>
+        37.2.1　Stack32.exe	392<br/>
+        37.2.2　Stack64.exe	394<br/>
+        37.3　小结	397<br/>
+        第38章　PE32+	398<br/>
+        38.1　PE32+（PE+、PE64）	398<br/>
+        38.1.1　IMAGE_NT_HEADERS	398<br/>
+        38.1.2　IMAGE_FILE_HEADER	398<br/>
+        38.1.3　IMAGE_OPTIONAL_HEADER	399<br/>
+        38.1.4　IMAGE_THUNK_DATA	401<br/>
+        38.1.5　IMAGE_TLS_DIRECTORY	403<br/>
+        第39章　WinDbg	405<br/>
+        39.1　WinDbg	405<br/>
+        39.1.1　WinDbg的特征	405<br/>
+        39.1.2　运行WinDbg	406<br/>
+        39.1.3　内核调试	407<br/>
+        39.1.4　WinDbg基本指令	409<br/>
+        第40章　64位调试	411<br/>
+        40.1　x64环境下的调试器	411<br/>
+        40.2　64位调试	411<br/>
+        40.3　PE32：WOW64Test_x86.exe	413<br/>
+        40.3.1　EP代码	414<br/>
+        40.3.2　Startup代码	414<br/>
+        40.3.3　main()函数	415<br/>
+        40.4　PE32+：WOW64Test_x64.exe	416<br/>
+        40.4.1　系统断点	416<br/>
+        40.4.2　EP代码	417<br/>
+        40.4.3　Startup代码	418<br/>
+        40.4.4　main()函数	420<br/>
+        40.5　小结	423<br/>
+        第41章　ASLR	424<br/>
+        41.1　Windows内核版本	424<br/>
+        41.2　ASLR	424<br/>
+        41.3　Visual C++	424<br/>
+        41.4　ASLR.exe	425<br/>
+        41.4.1　节区信息	426<br/>
+        41.4.2　IMAGE_FILE_HEADER\Characteristics	427<br/>
+        41.4.3　IMAGE_OPTIONAL_HEADER\DLL Characteristics	428<br/>
+        41.5　练习：删除ASLR功能	428<br/>
+        第42章　内核6中的会话	430<br/>
+        42.1　会话	430<br/>
+        42.2　会话0隔离机制	432<br/>
+        42.3　增强安全性	432<br/>
+        第43章　内核6中的DLL注入	433<br/>
+        43.1　再现DLL注入失败	433<br/>
+        43.1.1　源代码	433<br/>
+        43.1.2　注入测试	435<br/>
+        43.2　原因分析	436<br/>
+        43.2.1　调试 #1	436<br/>
+        43.2.2　调试 #2	438<br/>
+        43.3　练习：使CreateRemoteThread()正常工作	440<br/>
+        43.3.1　方法 #1：修改CreateSuspended参数值	440<br/>
+        43.3.2　方法 #2：操纵条件分支	441<br/>
+        43.4　稍作整理	443<br/>
+        43.5　InjectDll_new.exe	443<br/>
+        43.5.1　InjectDll_new.cpp	443<br/>
+        43.5.2　注入练习	446<br/>
+        第44章　InjDll.exe：DLL注入专用工具	448<br/>
+        44.1　InjDll.exe	448<br/>
+        44.1.1　使用方法	448<br/>
+        44.1.2　使用示例	449<br/>
+        44.1.3　注意事项	450<br/>
+        第六部分　高级逆向分析技术<br/>
+        第45章　TLS回调函数	452<br/>
+        45.1　练习 #1：HelloTls.exe	452<br/>
+        45.2　TLS	453<br/>
+        45.2.1　IMAGE_DATA_DIRECTORY[9]	453<br/>
+        45.2.2　IMAGE_TLS_DIRECTORY	454<br/>
+        45.2.3　回调函数地址数组	454<br/>
+        45.3　TLS回调函数	455<br/>
+        45.4　练习 #2：TlsTest.exe	456<br/>
+        45.4.1　DLL_PROCESS_ATTACH	457<br/>
+        45.4.2　DLL_THREAD_ATTACH	457<br/>
+        45.4.3　DLL_THREAD_DETACH	457<br/>
+        45.4.4　DLL_PROCESS_DETACH	457<br/>
+        45.5　调试TLS回调函数	458<br/>
+        45.6　手工添加TLS回调函数	459<br/>
+        45.6.1　修改前的原程序	460<br/>
+        45.6.2　设计规划	460<br/>
+        45.6.3　编辑PE文件头	461<br/>
+        45.6.4　设置IMAGE_TLS_DIRECTORY结构体	463<br/>
+        45.6.5　编写TLS回调函数	464<br/>
+        45.6.6　最终完成	464<br/>
+        45.7　小结	465<br/>
+        第46章　TEB	466<br/>
+        46.1　TEB	466<br/>
+        46.1.1　TEB结构体的定义	466<br/>
+        46.1.2　TEB结构体成员	466<br/>
+        46.1.3　重要成员	469<br/>
+        46.2　TEB访问方法	470<br/>
+        46.2.1　Ntdll.NtCurrentTeb()	470<br/>
+        46.2.2　FS段寄存器	471<br/>
+        46.3　小结	472<br/>
+        第47章　PEB	473<br/>
+        47.1　PEB	473<br/>
+        47.1.1　PEB访问方法	473<br/>
+        47.1.2　PEB结构体的定义	474<br/>
+        47.1.3　PEB结构体的成员	475<br/>
+        47.2　PEB的重要成员	477<br/>
+        47.2.1　PEB.BeingDebugged	478<br/>
+        47.2.2　PEB.ImageBaseAddress	478<br/>
+        47.2.3　PEB.Ldr	479<br/>
+        47.2.4　PEB.ProcessHeap &amp; PEB.NtGlobalFlag	480<br/>
+        47.3　小结	480<br/>
+        第48章　SEH	481<br/>
+        48.1　SEH	481<br/>
+        48.2　SEH练习示例 #1	481<br/>
+        48.2.1　正常运行	481<br/>
+        48.2.2　调试运行	482<br/>
+        48.3　OS的异常处理方法	484<br/>
+        48.3.1　正常运行时的异常处理方法	484<br/>
+        48.3.2　调试运行时的异常处理方法	484<br/>
+        48.4　异常	485<br/>
+        48.4.1　EXCEPTION_ACCESS_VIOLATION(C0000005)	486<br/>
+        48.4.2　EXCEPTION_BREAKPOINT(80000003)	486<br/>
+        48.4.3　EXCEPTION_ILLEGAL_INSTRUCTION(C000001D)	488<br/>
+        48.4.4　EXCEPTION_INT_DIVIDE_BY_ZERO(C0000094)	488<br/>
+        48.4.5　EXCEPTION_SINGLE_STEP(80000004)	489<br/>
+        48.5　SEH详细说明	489<br/>
+        48.5.1　SEH链	489<br/>
+        48.5.2　异常处理函数的定义	489<br/>
+        48.5.3　TEB.NtTib.ExceptionList	491<br/>
+        48.5.4　SEH安装方法	492<br/>
+        48.6　SEH练习示例 #2（seh.exe）	492<br/>
+        48.6.1　查看SEH链	493<br/>
+        48.6.2　添加SEH	493<br/>
+        48.6.3　发生异常	494<br/>
+        48.6.4　查看异常处理器参数	494<br/>
+        48.6.5　调试异常处理器	496<br/>
+        48.6.6　删除SEH	498<br/>
+        48.7　设置OllyDbg选项	499<br/>
+        48.7.1　忽略KERNEL32中发生的内存非法访问异常	500<br/>
+        48.7.2　向被调试者派送异常	500<br/>
+        48.7.3　其他异常处理	500<br/>
+        48.7.4　简单练习	500<br/>
+        48.8　小结	501<br/>
+        第49章　IA-32指令	502<br/>
+        49.1　IA-32指令	502<br/>
+        49.2　常用术语	502<br/>
+        49.2.1　反汇编器	503<br/>
+        49.2.2　反编译器	504<br/>
+        49.2.3　反编译简介	504<br/>
+        49.3　IA-32指令格式	506<br/>
+        49.3.1　指令前缀	507<br/>
+        49.3.2　操作码	507<br/>
+        49.3.3　ModR/M	507<br/>
+        49.3.4　SIB	508<br/>
+        49.3.5　位移	508<br/>
+        49.3.6　立即数	509<br/>
+        49.4　指令解析手册	509<br/>
+        49.4.1　下载IA-32用户手册	509<br/>
+        49.4.2　打印指令解析手册	509<br/>
+        49.5　指令解析练习	510<br/>
+        49.5.1　操作码映射	510<br/>
+        49.5.2　操作数	511<br/>
+        49.5.3　ModR/M	512<br/>
+        49.5.4　Group	514<br/>
+        49.5.5　前缀	516<br/>
+        49.5.6　双字节操作码	518<br/>
+        49.5.7　移位值&amp;立即数	519<br/>
+        49.5.8　SIB	520<br/>
+        49.6　指令解析课外练习	524<br/>
+        49.7　小结	524<br/>
+        第七部分　反调试技术<br/>
+        第50章　反调试技术	526<br/>
+        50.1　反调试技术	526<br/>
+        50.1.1　依赖性	526<br/>
+        50.1.2　多种反调试技术	526<br/>
+        50.2　反调试破解技术	526<br/>
+        50.3　反调试技术的分类	527<br/>
+        50.3.1　静态反调试技术	528<br/>
+        50.3.2　动态反调试技术	528<br/>
+        第51章　静态反调试技术	529<br/>
+        51.1　静态反调试的目的	529<br/>
+        51.2　PEB	529<br/>
+        51.2.1　BeingDebugged(+0x2)	531<br/>
+        51.2.2　Ldr(+0xC)	531<br/>
+        51.2.3　Process Heap(+0x18)	532<br/>
+        51.2.4　NtGlobalFlag(+0x68)	533<br/>
+        51.2.5　练习：?StaAD_PEB.exe	534<br/>
+        51.2.6　破解之法	534<br/>
+        51.3　NtQueryInformationProcess()	537<br/>
+        51.3.1　ProcessDebugPort(0x7)	538<br/>
+        51.3.2　ProcessDebugObjectHandle(0x1E)	539<br/>
+        51.3.3　ProcessDebugFlags(0x1F)	539<br/>
+        51.3.4　练习：StaAD_NtQIP.exe	540<br/>
+        51.3.5　破解之法	540<br/>
+        51.4　NtQuerySystemInformation()	542<br/>
+        51.4.1　SystemKernelDebugger-Information(0x23)	544<br/>
+        51.4.2　练习：StaAD_NtQSI.exe	545<br/>
+        51.4.3　破解之法	545<br/>
+        51.5　NtQueryObject()	545<br/>
+        51.6　ZwSetInformationThread()	549<br/>
+        51.6.1　练习：StaAD_ZwSIT.exe	549<br/>
+        51.6.2　破解之法	550<br/>
+        51.7　TLS回调函数	550<br/>
+        51.8　ETC	551<br/>
+        51.8.1　练习：StaAD_FindWindow.exe	551<br/>
+        51.8.2　破解之法	551<br/>
+        51.9　小结	553<br/>
+        第52章　动态反调试技术	554<br/>
+        52.1　动态反调试技术的目的	554<br/>
+        52.2　异常	554<br/>
+        52.2.1　SEH	554<br/>
+        52.2.2　SetUnhandledException-Filter()	558<br/>
+        52.3　Timing Check	562<br/>
+        52.3.1　时间间隔测量法	562<br/>
+        52.3.2　RDTSC	563<br/>
+        52.4　陷阱标志	565<br/>
+        52.4.1　单步执行	566<br/>
+        52.4.2　INT 2D	569<br/>
+        52.5　0xCC探测	572<br/>
+        52.5.1　API断点	573<br/>
+        52.5.2　比较校验和	575<br/>
+        第53章　高级反调试技术	577<br/>
+        53.1　高级反调试技术	577<br/>
+        53.2　垃圾代码	577<br/>
+        53.3　扰乱代码对齐	578<br/>
+        53.4　加密/解密	581<br/>
+        53.4.1　简单的解码示例	581<br/>
+        53.4.2　复杂的解码示例	582<br/>
+        53.4.3　特殊情况：代码重组	584<br/>
+        53.5　Stolen Bytes（Remove OEP）	584<br/>
+        53.6　API重定向	587<br/>
+        53.6.1　原代码	588<br/>
+        53.6.2　API重定向示例 #1	588<br/>
+        53.6.3　API重定向示例#2	589<br/>
+        53.7　Debug Blocker（Self Debugging）	593<br/>
+        53.8　小结	595<br/>
+        第八部分　调试练习<br/>
+        第54章　调试练习1：服务	598<br/>
+        54.1　服务进程的工作原理	598<br/>
+        54.1.1　服务控制器	598<br/>
+        54.1.2　服务启动过程	599<br/>
+        54.2　DebugMe1.exe示例讲解	600<br/>
+        54.2.1　安装服务	600<br/>
+        54.2.2　启动服务	602<br/>
+        54.2.3　源代码	604<br/>
+        54.3　服务进程的调试	606<br/>
+        54.3.1　问题在于SCM	606<br/>
+        54.3.2　调试器无所不能	606<br/>
+        54.3.3　常用方法	606<br/>
+        54.4　服务调试练习	606<br/>
+        54.4.1　直接调试：强制设置EIP	606<br/>
+        54.4.2　服务调试的常用方法：“附加”方式	609<br/>
+        54.5　小结	615<br/>
+        第55章　调试练习2：自我创建	616<br/>
+        55.1　自我创建	616<br/>
+        55.2　工作原理	617<br/>
+        55.2.1　创建子进程（挂起模式）	617<br/>
+        55.2.2　更改EIP	618<br/>
+        55.2.3　恢复主线程	618<br/>
+        55.3　示例程序源代码	618<br/>
+        55.4　调试练习	620<br/>
+        55.4.1　需要考虑的事项	620<br/>
+        55.4.2　JIT调试	621<br/>
+        55.4.3　DebugMe2.exe	622<br/>
+        55.5　小结	626<br/>
+        第56章　调试练习3：PE映像切换	627<br/>
+        56.1　PE映像	627<br/>
+        56.2　PE映像切换	628<br/>
+        56.3　示例程序：Fake.exe、Real.exe、DebugMe3.exe	628<br/>
+        56.4　调试1	631<br/>
+        56.4.1　Open ? 输入运行参数	631<br/>
+        56.4.2　main()函数	632<br/>
+        56.4.3　SubFunc_1()	634<br/>
+        56.4.4　CreateProcess(“fake.exe”，CREATE_SUSPENDED)	635<br/>
+        56.4.5　SubFunc_2()	635<br/>
+        56.4.6　SubFunc_3()	641<br/>
+        56.4.7　ResumeThread()	644<br/>
+        56.5　调试2	644<br/>
+        56.5.1　思考	645<br/>
+        56.5.2　向EP设置无限循环	645<br/>
+        56.6　小结	647<br/>
+        第57章　调试练习4：Debug Blocker	648<br/>
+        57.1　Debug Blocker	648<br/>
+        57.2　反调试特征	648<br/>
+        57.2.1　父与子的关系	649<br/>
+        57.2.2　被调试进程不能再被其他调试器调试	649<br/>
+        57.2.3　终止调试进程的同时也终止被调试进程	649<br/>
+        57.2.4　调试器操作被调试者的代码	649<br/>
+        57.2.5　调试器处理被调试进程中发生的异常	649<br/>
+        57.3　调试练习：DebugMe4.exe	650<br/>
+        57.4　第一次调试	650<br/>
+        57.4.1　选定调试的起始位置	650<br/>
+        57.4.2　main()	650<br/>
+        57.5　第二次调试	651<br/>
+        57.6　第三次调试	653<br/>
+        57.7　第四次调试	656<br/>
+        57.8　第五次调试	658<br/>
+        57.8.1　系统断点	658<br/>
+        57.8.2　EXCEPTION_ILLEGAL_INSTRUCTION(1)	659<br/>
+        57.8.3　EXCEPTION_ILLEGAL_INSTRUCTION(2)	660<br/>
+        57.9　第六次调试	661<br/>
+        57.9.1　40121D（第一个异常）	661<br/>
+        57.9.2　401299（第二个异常）	665<br/>
+        57.10　第七次调试	667<br/>
+        57.10.1　静态方法	668<br/>
+        57.10.2　动态方法	669<br/>
+        57.11　小结	673<br/>
+        结束语	674<br/>
+        索引	676<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_25866389_full').hide();$('#dir_25866389_short').show();void(0);">收起</a>)
+</div>
+
+    
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">&#34;逆向工程核心原理&#34;试读</span>
+      ······
+
+  </h2>
+
+
+<div class="indent">
+<p>
+本书将指引你进入美妙又刺激的代码逆向分析世界，开启一段神奇之旅！ 
+软件逆向工程（代码逆向分析）是一种探究应用程序内部组成结构及工作原理的技术。欢迎各位来到代码逆向分析世界，经历各种神奇的冒险，迎接各种富有趣味的挑战。 
+不论是我们自己编写的程序，还是其他人编写的无源码程序，只要运用逆向分析技术，我们就能轻松窥探程序内部结构、掌握工作原理。灵活运用逆向分析技...</p>
+<ul class="col2-list clearfix">
+
+<li>
+    <a href="https://book.douban.com/reading/31246891/">前　　言</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/31246911/">推　荐　语</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/31246931/">第1章　关于逆向工程</a>
+</li>
+</ul>
+<div align="right">  · · · · · ·    (<a href="https://book.douban.com/subject/25866389/reading/">查看全部试读</a>)</div>
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '25866389',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共46个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/逆向工程">逆向工程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/信息安全">信息安全</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/安全">安全</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/程序设计">程序设计</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/黑客">黑客</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/韩国">韩国</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+<div class="subject_show block5">
+<h2>丛书信息</h2>
+<div>
+　　<a href="https://book.douban.com/series/660">图灵程序设计丛书 (共136册)</a>,
+这套丛书还有
+《C语言详解》,《C#本质论》,《IDA Pro权威指南》,《每天10分钟轻松掌握C++》,《Swift基础教程》    等。</div>
+</div>
+<script>
+$(function(){$(".knnlike a").click(function(){return moreurl(this,{'from':'knnlike'})})})
+</script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;逆向工程核心原理&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/15174476/?dcs=subject-rec&amp;dcm=douban&amp;dct=25866389" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/15174476.jpg?v=1445477712.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/15174476/" target="_blank">C++反汇编与逆向分析技术揭秘</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/12812565/?dcs=subject-rec&amp;dcm=douban&amp;dct=25866389" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/12812565.jpg?v=1441464038.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/12812565/" target="_blank">XSS跨站脚本攻击剖析与防御</a>
+          </div>
+          <div class="price">
+              29.40元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;逆向工程核心原理&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25868289/" onclick="moreurl(this, {'total': 10, 'clicked': '25868289', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27261722.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25868289/" onclick="moreurl(this, {'total': 10, 'clicked': '25868289', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            恶意代码分析实战
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/23055481/" onclick="moreurl(this, {'total': 10, 'clicked': '23055481', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s26372042.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/23055481/" onclick="moreurl(this, {'total': 10, 'clicked': '23055481', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            编程语言原理
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/22994051/" onclick="moreurl(this, {'total': 10, 'clicked': '22994051', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27728835.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/22994051/" onclick="moreurl(this, {'total': 10, 'clicked': '22994051', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            格蠹汇编
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10463039/" onclick="moreurl(this, {'total': 10, 'clicked': '10463039', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s10186411.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10463039/" onclick="moreurl(this, {'total': 10, 'clicked': '10463039', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            IDA Pro权威指南（第2版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26933281/" onclick="moreurl(this, {'total': 10, 'clicked': '26933281', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29317811.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26933281/" onclick="moreurl(this, {'total': 10, 'clicked': '26933281', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            图解设计模式
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4225167/" onclick="moreurl(this, {'total': 10, 'clicked': '4225167', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6779762.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4225167/" onclick="moreurl(this, {'total': 10, 'clicked': '4225167', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            黑客攻防技术宝典
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2296343/" onclick="moreurl(this, {'total': 10, 'clicked': '2296343', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s2922662.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2296343/" onclick="moreurl(this, {'total': 10, 'clicked': '2296343', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            Reversing
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/20556210/" onclick="moreurl(this, {'total': 10, 'clicked': '20556210', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s24870013.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/20556210/" onclick="moreurl(this, {'total': 10, 'clicked': '20556210', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            Android软件安全与逆向分析
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26348151/" onclick="moreurl(this, {'total': 10, 'clicked': '26348151', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s28030419.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26348151/" onclick="moreurl(this, {'total': 10, 'clicked': '26348151', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Android安全攻防权威指南
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/24528820/" onclick="moreurl(this, {'total': 10, 'clicked': '24528820', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s26537969.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/24528820/" onclick="moreurl(this, {'total': 10, 'clicked': '24528820', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            Webbots、Spiders和Screen Scrap...
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/25866389/comments/">全部 13 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="929164055">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-929164055" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-929164055" class="j a_show_login" data-cid="929164055">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/swk1992/">小康康</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2015-06-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">注定成为经典的书！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="997268661">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-997268661" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-997268661" class="j a_show_login" data-cid="997268661">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/niro/">niro</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-01-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">windows类的逆向，不太深入和广泛。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1088391072">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1088391072" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1088391072" class="j a_show_login" data-cid="1088391072">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/bitemebitch/">中年男子</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-09-23</span>
+                </span>
+            </h3>
+            <p class="comment-content">没见过这么详细, 循序渐进的技术书...</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="840281523">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-840281523" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-840281523" class="j a_show_login" data-cid="840281523">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/Raksas/">悃客</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2014-08-27</span>
+                </span>
+            </h3>
+            <p class="comment-content">棒子写的书，翻译的还不错，内容也挺好，逆向工程里面最经典的著作了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1255739399">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1255739399" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1255739399" class="j a_show_login" data-cid="1255739399">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/139740555/">包子</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-10-12</span>
+                </span>
+            </h3>
+            <p class="comment-content">入门级好书</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1255739399">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1255739399" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1255739399" class="j a_show_login" data-cid="1255739399">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/139740555/">包子</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-10-12</span>
+                </span>
+            </h3>
+            <p class="comment-content">入门级好书</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1116219670">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1116219670" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1116219670" class="j a_show_login" data-cid="1116219670">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/148724075/">今天不放盐</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-12-03</span>
+                </span>
+            </h3>
+            <p class="comment-content">逆向上来说，韩国人写的书确实很扎实，老老实实一眼一语，不像国内很多作者写个书还要藏私 
+</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1088391072">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1088391072" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1088391072" class="j a_show_login" data-cid="1088391072">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/bitemebitch/">中年男子</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-09-23</span>
+                </span>
+            </h3>
+            <p class="comment-content">没见过这么详细, 循序渐进的技术书...</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1078548600">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1078548600" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1078548600" class="j a_show_login" data-cid="1078548600">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/140893702/">Gin 。</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-08-28</span>
+                </span>
+            </h3>
+            <p class="comment-content">好看，算是比较系统的一本书了。从此走上逆向的不归路…</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="997268661">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-997268661" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-997268661" class="j a_show_login" data-cid="997268661">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/niro/">niro</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-01-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">windows类的逆向，不太深入和广泛。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/25866389/comments/">更多短评 13 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            逆向工程核心原理的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 25866389;
+        window.join_label_text = '写书评参与';
+        window.write_icon = "//img3.doubanio.com/f/ithildin/c05246e1499f0d7c20526699a860b8faaeee62f3/pics/export/write@3x.png";
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/56f73d2e551c805c201537f1cf93fceeeb4b3b51/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/0d950975613fdc59495abe70a2920f09aa322476/js/export/subject_topics_compiled.js"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/25866389/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            逆向工程核心原理的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 2 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7365288">
+        <div class="main review-item" id="7365288">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/joseph-shen/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u49581811-18.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/joseph-shen/" property="v:reviewer" class="name">Joseph.Shen</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2015-02-02" class="main-meta">2015-02-02 13:53:04</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7365288/">非常非常好的书</a></h2>
+
+                <div id="review_7365288_short" class="review-short" data-rid="7365288">
+                    <div class="short-content">
+
+                        非常非常好的书，对Windows开发人员，中高级C++程序员是非常好的进阶书籍。 这部书里面的每个章节细细挖掘都有非常丰富的内容。 这是我这两三年内读到的最好的技术书籍之一，作者功力深厚，翻译的也非常到位，人品推荐。 
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7365288-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7365288_full" class="hidden">
+                    <div id="review_7365288_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7365288" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7365288">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7365288" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7365288">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7365288/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7214757">
+        <div class="main review-item" id="7214757">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/113234594/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/113234594/" property="v:reviewer" class="name">红白疯萌妖妖梦</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2014-11-29" class="main-meta">2014-11-29 00:53:41</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7214757/">不错</a></h2>
+
+                <div id="review_7214757_short" class="review-short" data-rid="7214757">
+                    <div class="short-content">
+
+                        不错的书，我看了1/3了，看这本书最好有点汇编的基础知识，和C++还有windows编程等。否则苦果难咽。.......................................................................................................................................................................
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7214757-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7214757_full" class="hidden">
+                    <div id="review_7214757_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7214757" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7214757">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7214757" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7214757">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7214757/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript">
+    ;(function(){
+        window.subject_id = window.subject_id || 25866389;
+        "use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GalleryTopicsSelection = function (_React$Component) {
+  _inherits(GalleryTopicsSelection, _React$Component);
+
+  function GalleryTopicsSelection() {
+    _classCallCheck(this, GalleryTopicsSelection);
+
+    var _this = _possibleConstructorReturn(this, (GalleryTopicsSelection.__proto__ || Object.getPrototypeOf(GalleryTopicsSelection)).call(this));
+
+    _this.state = {
+      topics: []
+    };
+    return _this;
+  }
+
+  _createClass(GalleryTopicsSelection, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      $.ajax({
+        url: "https://m.douban.com/rexxar/api/v2/gallery/subject_feed?start=0&subject_id=" + window.subject_id + "&ck=" + get_cookie('ck'),
+        xhrFields: { withCredentials: true },
+        success: function success(res) {
+          _this2.setState({
+            topics: res.items
+          });
+          if (res.total) {
+            window.has_gallery_topics = true;
+          }
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var topics = this.state.topics;
+
+      return React.createElement(
+        "section",
+        null,
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=close", rel: "nofollow", className: "close_selection" },
+          "\u8DF3\u8FC7"
+        ),
+        React.createElement(
+          "h1",
+          null,
+          "\u4E0B\u9762\u662F\u5426\u6709\u4F60\u60F3\u5199\u7684\u8BDD\u9898\uFF1F"
+        ),
+        topics.length ? React.createElement(
+          "ul",
+          { className: "gl_topics" },
+          topics.map(function (item) {
+            return React.createElement(
+              "li",
+              { className: "topic" },
+              React.createElement(
+                "a",
+                { href: "new_review?from=gallery-topics-selection&click=create&tag_from_gallery=" + item.topic.name,
+                  className: "comment_btn write_review",
+                  rel: "nofollow" },
+                React.createElement("img", { src: window.write_icon }),
+                React.createElement(
+                  "span",
+                  null,
+                  window.join_label_text
+                )
+              ),
+              React.createElement(
+                "h2",
+                { className: "topic_name" },
+                item.topic.name
+              ),
+              React.createElement(
+                "div",
+                { className: "topic_meta" },
+                item.topic.card_subtitle
+              )
+            );
+          })
+        ) : React.createElement(
+          "div",
+          null,
+          "\u52A0\u8F7D\u4E2D"
+        ),
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=skip", rel: "nofollow", className: "topics_skip" },
+          React.createElement(
+            "span",
+            null,
+            "\u4E0A\u9762\u6CA1\u6709\u6211\u60F3\u5199\u7684\u8BDD\u9898\uFF0C\u53BB\u5199\u5F71\u8BC4 \uFF1E "
+          )
+        )
+      );
+    }
+  }]);
+
+  return GalleryTopicsSelection;
+}(React.Component);
+
+$(function () {
+  var glRoot = document.getElementById('gallery-topics-selection');
+
+  ReactDOM.render(React.createElement(GalleryTopicsSelection, null), glRoot);
+});;
+    })();
+</script><script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/289d9eab6b43a9ec.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评2篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+  </div>
+  
+
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        <span>
+            <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=discuss">
+              <span>在这本书的论坛里发言</span>
+            </a>
+        </span>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=7090&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=8610&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgJRHFIWAiJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIXA1ISWBUdS0IJRmt0WxpAD2JYVWB5YQ9CXV0Ld1swZSl1Dh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBlcHQoWBFQrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBxYAXBhbCltXWwg%253D&amp;cntvendor=3&amp;srcsubj=25866389&amp;type=bkbuy&amp;subject=25866389" class="">
+                      <span class="">京东商城</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=7090&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=8610&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgJRHFIWAiJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIXA1ISWBUdS0IJRmt0WxpAD2JYVWB5YQ9CXV0Ld1swZSl1Dh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBlcHQoWBFQrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBxYAXBhbCltXWwg%253D&amp;cntvendor=3&amp;srcsubj=25866389&amp;type=bkbuy&amp;subject=25866389" class="buylink-price ">
+                      <span class="">
+                        86.10 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=7090&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=8610&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s25866389%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23468991&amp;cntvendor=3&amp;srcsubj=25866389&amp;type=bkbuy&amp;subject=25866389" class="">
+                      <span class="">当当网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=7090&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=8610&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s25866389%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23468991&amp;cntvendor=3&amp;srcsubj=25866389&amp;type=bkbuy&amp;subject=25866389" class="buylink-price ">
+                      <span class="">
+                        86.10 元
+                      </span>
+                    </a>
+
+                      
+                        <div class="more-info">
+                            <span class="buyinfo-promotion">
+                              图书加价换购
+                            </span>
+                        </div>
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=7090&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=7090&amp;pos=3&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F6556165.htm&amp;cntvendor=3&amp;link2key=5006b1122d&amp;srcsubj=25866389&amp;type=bkbuy&amp;subject=25866389" class="">
+                      <span class="">中国图书网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=7090&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=7090&amp;pos=3&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F6556165.htm&amp;cntvendor=3&amp;link2key=5006b1122d&amp;srcsubj=25866389&amp;type=bkbuy&amp;subject=25866389" class="buylink-price ">
+                      <span class="">
+                        70.90 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/25866389/buylinks">
+              &gt; 查看3家网店价格
+                (70.90 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/25866389/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/2959021/" target="_blank">逆向工程</a>
+                <span class="pl">(Rover)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/676175/" target="_blank">我的书架</a>
+                <span class="pl">(重黎)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1397608/" target="_blank">安全学习之路</a>
+                <span class="pl">(威廉他)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3293923/" target="_blank">计划看</a>
+                <span class="pl">(师重远)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/41882762/" target="_blank">码农的计算机</a>
+                <span class="pl">(西山)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/fogfloat/"><img src="https://img3.doubanio.com/icon/u53243297-13.jpg" class="pil" alt="岚中浮客" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/fogfloat/">岚中浮客</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/169098437/"><img src="https://img3.doubanio.com/icon/u169098437-1.jpg" class="pil" alt="何几" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/169098437/">何几</a><br/>
+      <div class="pl ll">          1月7日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:编程 信息安全 黑客</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/49421192/"><img src="https://img1.doubanio.com/icon/u49421192-9.jpg" class="pil" alt="大笨蛋才会放弃" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/49421192/">大笨蛋才会放弃</a><br/>
+      <div class="pl ll">          1月5日          在读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/delight/"><img src="https://img3.doubanio.com/icon/u4625501-13.jpg" class="pil" alt="栖梧" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/delight/">栖梧</a><br/>
+      <div class="pl ll">          1月5日          在读      </div>
+
+      <br/>
+
+      <span class="pl">tags:逆向工程 计算机 信息安全</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/25866389/doings">31人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/25866389/collections">27人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/25866389/wishes">377人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/25866389/offers">1本二手书欲转让</a>
+          <span class="">
+            (20.00
+              元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有377人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于逆向工程核心原理的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/25866389/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/33e8988ee5d632d8.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = '0S9kNIwsK_k',
+            criteria = '7:逆向工程|7:计算机|7:信息安全|7:编程|7:安全|7:程序设计|7:黑客|7:韩国|7:C++|7:漏洞|3:/subject/25866389/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+  gaWithNamespace(function(method) {
+    _gaq.push([method('_setAccount'), 'UA-59230-10'])
+    
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+    _gaq.push([method('_setDomainName'), '.douban.com'])
+    _gaq.push([method('_trackPageview')]);
+  }, 't1')
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+<script src="https://img3.doubanio.com/js/boomerang.js?09" type="text/javascript"></script>
+<script type="text/javascript">
+BOOMR.init({
+    user_ip: "116.227.43.0",
+    beacon_url: "/beacon.gif",
+    site_domain: ".douban.com",
+    BW: {
+        enabled: false
+    }
+});
+BOOMR.subscribe('before_beacon', function(o) {
+    if(o.t_done && o.t_done > 0 && o.t_done < 30) {
+        _gaq.push(['t1._trackEvent', 'Performance', 'done', '/subject/-/', o.t_done]);
+    }
+});
+var _now = new Date();
+if (typeof(_head_start)==typeof(_now)) {
+    var t_head = _now-_head_start;
+    var t_body = _now-_body_start;
+    if (t_head < 1000*60 && t_head > 0){
+        var _slow = t_head > 10*1000 ? 'slow ' : '';
+        _gaq.push(['t1._trackEvent', 'Performance', _slow + 'head', '/subject/-/', _now-_head_start]);
+        _gaq.push(['t1._trackEvent', 'Performance', _slow + 'body', '/subject/-/', _now-_body_start]);
+        BOOMR.plugins.RT.setTimer('t_head', t_head).setTimer('t_body', t_body);
+    }
+}
+</script>
+
+
+
+
+
+
+
+    <!-- nain8-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3818 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Java性能优化权威指南 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/25828043/">
+<meta name="keywords" content="Java性能优化权威指南,Charlie Hunt,Binu John,人民邮电出版社,2014-3,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书Java性能优化权威指南 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/25828043/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/5ef2a22fba637133.css">
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">Java性能优化权威指南</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img1.doubanio.com/lpic/s27219217.jpg" title="Java性能优化权威指南">
+    <img src="https://img1.doubanio.com/lpic/s27219217.jpg" title="点击看大图" alt="Java性能优化权威指南"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Charlie%20Hunt">Charlie Hunt</a>
+        
+           /
+        
+        <a class="" href="/search/Binu%20John">Binu John</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 人民邮电出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">副标题:</span> Java性能优化权威指南<br/>
+
+    
+    
+  
+    <span class="pl">原作名:</span> Java Performance<br/>
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E6%9F%B3%E9%A3%9E">柳飞</a>
+        
+           /
+        
+        <a class="" href="/search/%E9%99%86%E6%98%8E%E5%88%9A">陆明刚</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2014-3<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 540<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 109.00 元<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787115342973<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 8.4 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar40"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">128</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:57px"></div>
+
+            <span class="rating_per">41.4%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">46.1%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:15px"></div>
+
+            <span class="rating_per">10.9%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:1px"></div>
+
+            <span class="rating_per">0.8%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:1px"></div>
+
+            <span class="rating_per">0.8%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-25828043-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-25828043-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-25828043-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25828043-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25828043-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25828043-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25828043-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-25828043-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-25828043">
+        <a href="#" data-url="https://book.douban.com/subject/25828043/" data-desc="" data-title="书籍《Java性能优化权威指南》 (来自豆瓣) " data-pic="https://img1.doubanio.com/lpic/s27219217.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_25828043"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>Java性能优化圣经！Java之父重磅推荐！</p>    <p>本书由曾任职于Oracle/Sun的性能优化专家编写，系统而详细地讲解了性能优化的各个方面，帮助你学习Java虚拟机的基本原理、掌握一些监控Java程序性能的工具，从而快速找到程序中的性能瓶颈，并有效改善程序的运行性能。</p>    <p>Java性能优化的任何问题，都可以从本书中找到答案！</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/25828043/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <div class="">
+            <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>Charlie Hunt现任Salesforce公司的性能工程架构师。曾任Oracle公司首席JVM性能工程师，负责HotSpot Java虚拟机和Java SE类库性能的改进。Charlie拥有美国伊利诺伊理工大学的计算机科学硕士学位、爱荷华州立大学的计算机科学学士学位。</p>    <p>Binu John是世界上最大的社交网站创建平台Ning.com的高级性能工程师。他目前的职责是着力改善Ning平台的性能和扩展性，以支持每月数百万PV的访问量。Binu拥有美国爱荷华大学生物医学工程和计算机科学硕士学位。</p></div>
+
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_25828043_short">
+        第1章　策略、方法和方法论　　1<br/>
+        1.1 　性能问题的现状　　1<br/>
+        1.2 　性能分析的两种方法：自顶向下和自底向上　　4<br/>
+        1.2.1 　自顶向下　　4<br/>
+        1.2.2 　自底向上　　5<br/>
+        1.3 　选择正确的平台并评估系统性能　　5<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_25828043_short').hide();$('#dir_25828043_full').show();$.get('/j/subject/j_dir_count',{id:25828043});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_25828043_full" style="display:none">
+        第1章　策略、方法和方法论　　1<br/>
+        1.1 　性能问题的现状　　1<br/>
+        1.2 　性能分析的两种方法：自顶向下和自底向上　　4<br/>
+        1.2.1 　自顶向下　　4<br/>
+        1.2.2 　自底向上　　5<br/>
+        1.3 　选择正确的平台并评估系统性能　　5<br/>
+        1.3.1 　选择正确的CPU架构　　6<br/>
+        1.3.2 　评估系统性能　　7<br/>
+        1.4 　参考资料　　7<br/>
+        第2章　操作系统性能监控　　8<br/>
+        2.1 　定义　　8<br/>
+        2.2 　CPU使用率　　9<br/>
+        2.2.1 　监控CPU使用率：Windows　　9<br/>
+        2.2.2 　监控CPU使用率：Windows typeperf　　12<br/>
+        2.2.3 　监控CPU使用率：Linux　　13<br/>
+        2.2.4 　监控CPU使用率：Solaris　　14<br/>
+        2.2.5 　命令行监控CPU使用率：Linux和Solaris　　16<br/>
+        2.3 　CPU调度程序运行队列　　19<br/>
+        2.3.1 　监控CPU调度程序运行队列：Windows　　19<br/>
+        2.3.2 　监控CPU调度程序运行队列：Solaris　　21<br/>
+        2.3.3 　监控CPU调度程序运行队列：Linux　　21<br/>
+        2.4 　内存使用率　　22<br/>
+        2.4.1 　监控内存利用率：Windows　　22<br/>
+        2.4.2 　监控内存使用率：Solaris　　23<br/>
+        2.4.3 　监控内存使用率：Linux　　24<br/>
+        2.4.4 　监控锁竞争：Solaris　　25<br/>
+        2.4.5 　监控锁竞争：Linux　　26<br/>
+        2.4.6 　监控锁竞争：Windows　　27<br/>
+        2.4.7 　隔离竞争锁　　27<br/>
+        2.4.8 　监控抢占式上下文切换　　27<br/>
+        2.4.9 　监控线程迁移　　28<br/>
+        2.5 　网络I/O使用率　　28<br/>
+        2.5.1 　监控网络I/O使用率：Solaris　　29<br/>
+        2.5.2 　监控网络I/O使用率：Linux　　30<br/>
+        2.5.3 　监控网络I/O使用率：Windows　　30<br/>
+        2.5.4 　应用性能改进的考虑　　31<br/>
+        2.6 　磁盘I/O使用率　　31<br/>
+        2.7 　其他命令行工具　　34<br/>
+        2.8 　监控CPU使用率：SPARC T系列系统　　35<br/>
+        2.9 　参考资料　　36<br/>
+        第3章　JVM概览　　38<br/>
+        3.1 　HotSpot VM的基本架构　　38<br/>
+        3.2 　HotSpot VM运行时　　40<br/>
+        3.2.1 　命令行选项　　40<br/>
+        3.2.2 　VM生命周期　　41<br/>
+        3.2.3 　VM类加载　　44<br/>
+        3.2.4 　字节码验证　　46<br/>
+        3.2.5 　类数据共享　　47<br/>
+        3.2.6 　解释器　　48<br/>
+        3.2.7 　异常处理　　49<br/>
+        3.2.8 　同步　　50<br/>
+        3.2.9 　线程管理　　51<br/>
+        3.2.10 　C++堆管理　　53<br/>
+        3.2.11 　Java本地接口　　54<br/>
+        3.2.12 　VM致命错误处理　　55<br/>
+        3.3 　HotSpot VM垃圾收集器　　56<br/>
+        3.3.1 　分代垃圾收集　　56<br/>
+        3.3.2 　新生代　　58<br/>
+        3.3.3 　快速内存分配　　60<br/>
+        3.3.4 　垃圾收集器　　60<br/>
+        3.3.5 　Serial收集器　　61<br/>
+        3.3.6 　Parallel收集器：吞吐量为先！　　62<br/>
+        3.3.7　　Mostly-Concurrent收集器：低延迟为先！　　62<br/>
+        3.3.8　　Garbage-First收集器：CMS替代者　　64<br/>
+        3.3.9 　垃圾收集器比较　　64<br/>
+        3.3.10 　应用程序对垃圾收集器的影响　　65<br/>
+        3.3.11 　简单回顾收集器历史　　65<br/>
+        3.4 　HotSpot VM JIT编译器　　65<br/>
+        3.4.1 　类型继承关系分析　　67<br/>
+        3.4.2 　编译策略　　67<br/>
+        3.4.3 　逆优化　　68<br/>
+        3.4.4 　Client JIT编译器概览　　69<br/>
+        3.4.5 　Server JIT编译器概览　　69<br/>
+        3.4.6 　静态单赋值——程序依赖图　　69<br/>
+        3.4.7 　未来增强展望　　71<br/>
+        3.5 　HotSpot VM自适应调优　　71<br/>
+        3.5.1 　Java 1.4.2的默认值　　71<br/>
+        3.5.2 　Java 5自动优化的默认值　　71<br/>
+        3.5.3 　Java 6 Update 18更新后的默认优化值　　73<br/>
+        3.5.4 　自适应Java堆调整　　74<br/>
+        3.5.5 　超越自动优化　　75<br/>
+        3.6 　参考资料　　75<br/>
+        第4章　JVM性能监控　　77<br/>
+        4.1 　定义　　77<br/>
+        4.2 　垃圾收集　　78<br/>
+        4.2.1 　重要的垃圾收集数据　　78<br/>
+        4.2.2 　垃圾收集报告　　78<br/>
+        4.2.3 　垃圾收集数据的离线分析　　86<br/>
+        4.2.4 　图形化工具　　89<br/>
+        4.3 　JIT编译器　　103<br/>
+        4.4 　类加载　　104<br/>
+        4.5 　Java应用监控　　106<br/>
+        4.6 　参考资料　　109<br/>
+        第5章　Java应用性能分析　　110<br/>
+        5.1 　术语　　111<br/>
+        5.1.1 　通用性能分析术语　　111<br/>
+        5.1.2 　Oracle Solaris Studio Performance Analyzer术语　　112<br/>
+        5.1.3 　NetBeans Profiler术语　　112<br/>
+        5.2 　Oracle Solaris Studio Performance Analyzer　　112<br/>
+        5.2.1 　支持平台　　113<br/>
+        5.2.2 　下载/安装Oracle Solaris Studio Performance Analyzer　　114<br/>
+        5.2.3 　使用Oracle Solaris Studio Performance Analyzer 抓取性能数据　　114<br/>
+        5.2.4 　查看性能数据　　118<br/>
+        5.2.5 　数据表示　　125<br/>
+        5.2.6 　过滤性能数据　　128<br/>
+        5.2.7 　命令行工具er_print　　129<br/>
+        5.3 　NetBeans Profiler　　135<br/>
+        5.3.1 　支持平台　　136<br/>
+        5.3.2 　下载安装NetBeans Profiler　　136<br/>
+        5.3.3 　开始方法分析会话　　137<br/>
+        5.3.4 　Controls子面板　　143<br/>
+        5.3.5 　Status子面板　　143<br/>
+        5.3.6 　Profiling Results子面板　　143<br/>
+        5.3.7 　Saved Snapshots子面板　　144<br/>
+        5.3.8 　View子面板　　144<br/>
+        5.3.9 　Basic Telemetry子面板　　144<br/>
+        5.3.10 　查看动态结果　　145<br/>
+        5.3.11 　对结果进行快照　　145<br/>
+        5.3.12 　启动内存分析会话　　146<br/>
+        5.3.13 　查看实时结果　　148<br/>
+        5.3.14 　对结果进行快照　　150<br/>
+        5.3.15 　定位内存泄漏　　150<br/>
+        5.3.16 　分析堆转储　　151<br/>
+        5.4 　参考资料　　152<br/>
+        第6章　Java应用性能分析技巧　　153<br/>
+        6.1 　性能优化机会　　153<br/>
+        6.2 　系统或内核态CPU使用　　154<br/>
+        6.3 　锁竞争　　161<br/>
+        6.4 　Volatile的使用　　171<br/>
+        6.5 　调整数据结构的大小　　172<br/>
+        6.5.1 　StringBuilder或StringBuffer大小的调整　　172<br/>
+        6.5.2 　Java Collection类大小调整　　175<br/>
+        6.6 　增加并行性　　179<br/>
+        6.7 　过高的CPU使用率　　181<br/>
+        6.8 　其他有用的分析提示　　182<br/>
+        6.9 　参考资料　　184<br/>
+        第7章　JVM性能调优入门　　185<br/>
+        7.1 　方法　　185<br/>
+        7.1.1 　假设条件　　187<br/>
+        7.1.2 　测试基础设施需求　　188<br/>
+        7.2 　应用程序的系统需求　　188<br/>
+        7.2.1 　可用性　　188<br/>
+        7.2.2 　可管理性　　188<br/>
+        7.2.3 　吞吐量　　189<br/>
+        7.2.4 　延迟及响应性　　189<br/>
+        7.2.5 　内存占用　　189<br/>
+        7.2.6 　启动时间　　189<br/>
+        7.3 　对系统需求分级　　190<br/>
+        7.4 　选择JVM部署模式　　190<br/>
+        7.4.1 　单JVM部署模式　　190<br/>
+        7.4.2 　多JVM部署模式　　190<br/>
+        7.4.3 　通用建议　　191<br/>
+        7.5 　选择JVM运行模式　　191<br/>
+        7.5.1 　Client模式或Server模式　　191<br/>
+        7.5.2 　32位/64位 JVM　　192<br/>
+        7.5.3 　垃圾收集器　　192<br/>
+        7.6 　垃圾收集调优基础　　193<br/>
+        7.6.1 　性能属性　　193<br/>
+        7.6.2 　原则　　193<br/>
+        7.6.3 　命令行选项及GC日志　　194<br/>
+        7.7 　确定内存占用　　197<br/>
+        7.7.1 　约束　　197<br/>
+        7.7.2 　HotSpot VM堆的布局　　197<br/>
+        7.7.3 　堆大小调优着眼点　　200<br/>
+        7.7.4 　计算活跃数据大小　　201<br/>
+        7.7.5 　初始堆空间大小配置　　202<br/>
+        7.7.6 　其他考量因素　　203<br/>
+        7.8 　调优延迟/响应性　　204<br/>
+        7.8.1 　输入　　205<br/>
+        7.8.2 　优化新生代的大小　　205<br/>
+        7.8.3 　优化老年代的大小　　207<br/>
+        7.8.4 　为CMS调优延迟　　210<br/>
+        7.8.5 　Survivor空间介绍　　212<br/>
+        7.8.6 　解析晋升阈值　　214<br/>
+        7.8.7 　监控晋升阈值　　215<br/>
+        7.8.8 　调整Survivor空间的容量　　216<br/>
+        7.8.9 　显式的垃圾收集　　222<br/>
+        7.8.10 　并发永久代垃圾收集　　223<br/>
+        7.8.11 　调优CMS停顿时间　　224<br/>
+        7.8.12 　下一步　　225<br/>
+        7.9 　应用程序吞吐量调优　　225<br/>
+        7.9.1 　CMS吞吐量调优　　225<br/>
+        7.9.2 　Throughput收集器调优　　226<br/>
+        7.9.3 　Survivor空间调优　　228<br/>
+        7.9.4 　调优并行垃圾收集线程　　231<br/>
+        7.9.5 　在NUMA系统上部署　　231<br/>
+        7.9.6 　下一步　　232<br/>
+        7.10 　极端示例　　232<br/>
+        7.11 　其他性能命令行选项　　232<br/>
+        7.11.1 　实验性（最近最大）优化　　232<br/>
+        7.11.2 　逃逸分析　　233<br/>
+        7.11.3 　偏向锁　　233<br/>
+        7.11.4 　大页面支持　　234<br/>
+        7.12 　参考资料　　236<br/>
+        第8章　Java应用的基准测试　　237<br/>
+        8.1 　基准测试所面临的挑战　　237<br/>
+        8.1.1 　基准测试的预热阶段　　238<br/>
+        8.1.2 　垃圾收集　　240<br/>
+        8.1.3 　使用Java Time接口　　240<br/>
+        8.1.4 　剔除无效代码　　241<br/>
+        8.1.5 　内联　　247<br/>
+        8.1.6 　逆优化　　251<br/>
+        8.1.7 　创建微基准测试的注意事项　　256<br/>
+        8.2 　实验设计　　257<br/>
+        8.3 　使用统计方法　　258<br/>
+        8.3.1 　计算均值　　258<br/>
+        8.3.2 　计算标准差　　258<br/>
+        8.3.3 　计算置信区间　　259<br/>
+        8.3.4 　使用假设测试　　260<br/>
+        8.3.5 　使用统计方法的注意事项　　262<br/>
+        8.4 　参考文献　　263<br/>
+        8.5 　参考资料　　263<br/>
+        第9章　多层应用的基准测试　　264<br/>
+        9.1 　基准测试难题　　264<br/>
+        9.2 　企业级应用基准测试的考量　　266<br/>
+        9.2.1 　定义被测系统　　266<br/>
+        9.2.2 　制定微基准测试　　266<br/>
+        9.2.3 　定义用户交互模型　　267<br/>
+        9.2.4 　定义性能指标　　270<br/>
+        9.2.5 　扩展基准测试　　273<br/>
+        9.2.6 　用利特尔法则验证　　274<br/>
+        9.2.7 　思考时间　　275<br/>
+        9.2.8 　扩展性分析　　278<br/>
+        9.2.9 　运行基准测试　　278<br/>
+        9.3 　应用服务器监控　　281<br/>
+        9.3.1 　GlassFish监控　　281<br/>
+        9.3.2 　监控子系统　　286<br/>
+        9.3.3 　Solaris　　287<br/>
+        9.3.4 　Linux　　288<br/>
+        9.3.5 　Windows　　288<br/>
+        9.3.6 　外部系统的性能　　289<br/>
+        9.3.7 　磁盘I/O　　292<br/>
+        9.3.8 　监控和调优资源池　　293<br/>
+        9.4 　企业级应用性能分析　　294<br/>
+        9.5 　参考资料　　295<br/>
+        第10章　Web应用的性能调优　　297<br/>
+        10.1 　Web应用的基准测试　　298<br/>
+        10.2 　Web容器的组件　　298<br/>
+        10.2.1 　HTTP连接器　　299<br/>
+        10.2.2 　Servlet引擎　　300<br/>
+        10.3 　Web容器的监控和性能调优　　300<br/>
+        10.3.1 　容器的开发和生产模式　　300<br/>
+        10.3.2 　安全管理器　　301<br/>
+        10.3.3 　JVM调优　　301<br/>
+        10.3.4 　HTTP服务和Web容器　　303<br/>
+        10.3.5 　HTTP监听器　　303<br/>
+        10.4 　最佳实践　　315<br/>
+        10.4.1 　Servlet和JSP最佳实践　　315<br/>
+        10.4.2 　内容缓存　　324<br/>
+        10.4.3 　会话持久化　　328<br/>
+        10.4.4 　HTTP服务器文件缓存　　329<br/>
+        10.5 　参考资料　　333<br/>
+        第11章　Web Service的性能　　334<br/>
+        11.1 　XML的性能　　334<br/>
+        11.1.1 　XML处理的生命周期　　335<br/>
+        11.1.2 　解析/解编组　　335<br/>
+        11.1.3 　访问　　338<br/>
+        11.1.4 　修改　　338<br/>
+        11.1.5 　序列化/编组　　339<br/>
+        11.2 　验证　　339<br/>
+        11.3 　解析外部实体　　341<br/>
+        11.4 　XML文档的局部处理　　343<br/>
+        11.5 　选择合适的API　　346<br/>
+        11.6 　JAX-WS参考实现栈　　349<br/>
+        11.7 　Web Service基准测试　　350<br/>
+        11.8 　影响Web Service性能的因素　　353<br/>
+        11.8.1 　消息大小的影响　　353<br/>
+        11.8.2 　不同Schema类型的性能特征　　355<br/>
+        11.8.3 　终端服务器的实现　　358<br/>
+        11.8.4 　处理程序的性能　　359<br/>
+        11.9 　最佳性能实践　　361<br/>
+        11.9.1 　二进制负载的处理　　361<br/>
+        11.9.2 　处理XML文档　　365<br/>
+        11.9.3 　使用MTOM发送XML文档　　365<br/>
+        11.9.4 　使用Provider接口　　368<br/>
+        11.9.5 　快速信息集　　370<br/>
+        11.9.6 　HTTP压缩　　372<br/>
+        11.9.7 　Web Service客户端的性能　　373<br/>
+        11.10 　参考资料　　374<br/>
+        第12章　Java持久化及Enterprise Java Bean的性能　　375<br/>
+        12.1 　EJB编程模型　　376<br/>
+        12.2 　Java持久化API及其参考实现　　376<br/>
+        12.3 　监控及调优EJB容器　　379<br/>
+        12.3.1 　线程池　　380<br/>
+        12.3.2 　Bean池和缓存　　382<br/>
+        12.3.3 　EclipseLink会话缓存　　385<br/>
+        12.4 　事务隔离级　　386<br/>
+        12.5 　Enterprise Java Bean的最佳实践　　387<br/>
+        12.5.1 　简要说明使用的EJB基准测试　　387<br/>
+        12.5.2 　EJB 2.1　　388<br/>
+        12.5.3 　EJB 3.0　　400<br/>
+        12.6 　Java持久化最佳实践　　403<br/>
+        12.6.1 　JPA查询语言中的查询　　403<br/>
+        12.6.2 　查询结果缓存　　405<br/>
+        12.6.3 　FetchType　　406<br/>
+        12.6.4 　连接池　　408<br/>
+        12.6.5 　批量更新　　409<br/>
+        12.6.6 　选择正确的数据库锁策略　　411<br/>
+        12.6.7 　不带事务的读取　　411<br/>
+        12.6.8 　继承　　411<br/>
+        12.7 　参考资料　　412<br/>
+        附录A 　重要的HotSpot VM选项　　413<br/>
+        附录B 　性能分析技巧示例源代码　　429<br/>
+        B.1 　锁竞争实现1　　429<br/>
+        B.2 　锁竞争实现2　　439<br/>
+        B.3 　锁竞争实现3　　449<br/>
+        B.4 　锁竞争实现4　　459<br/>
+        B.5 　锁竞争实现5　　469<br/>
+        B.6 　调整容量变化1　　481<br/>
+        B.7 　调整容量变化2　　492<br/>
+        B.8 　增加并发性的单线程实现　　504<br/>
+        B.9 　增加并发性的多线程实现　　514<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_25828043_full').hide();$('#dir_25828043_short').show();void(0);">收起</a>)
+</div>
+
+    
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">&#34;Java性能优化权威指南&#34;试读</span>
+      ······
+
+  </h2>
+
+
+<div class="indent">
+<p>现代大规模关键性系统中的Java性能调优，是一项富有挑战的任务。你需要关注各种问题，包括算法结构、内存分配模式以及磁盘和文件I/O的使用方式。性能调优最困难的是找出问题，即便是经验丰富的人也会被他们的直觉所误导。性能杀手总是隐藏在最意想不到的地方。
+正如维基百科所言：“科学（来自拉丁文scientia，意思是‘知识’）是以对世界可证实的解释和预见来构建和组织知识的系统。”..</p>
+<ul class="col2-list clearfix">
+
+<li>
+    <a href="https://book.douban.com/reading/30575899/">Gosling序</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/30575906/">Wilson序</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/30575917/">第一章：策略、方法和方法论</a>
+</li>
+</ul>
+<div align="right">  · · · · · ·    (<a href="https://book.douban.com/subject/25828043/reading/">查看全部试读</a>)</div>
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '25828043',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共62个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/Java">Java</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/性能优化">性能优化</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/JVM">JVM</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/性能">性能</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/优化">优化</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/java">java</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Java性能优化权威指南&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/5079089/?dcs=subject-rec&amp;dcm=douban&amp;dct=25828043" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/5079089.jpg?v=1422871075.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/5079089/" target="_blank">分布式Java应用</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/15233695/?dcs=subject-rec&amp;dcm=douban&amp;dct=25828043" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/15233695.jpg?v=1446905622.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/15233695/" target="_blank">深入理解Java虚拟机：JVM高级特性与最佳实践</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/15131794/?dcs=subject-rec&amp;dcm=douban&amp;dct=25828043" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/15131794.jpg?v=1445335213.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/15131794/" target="_blank">Maven实战</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/10179010/?dcs=subject-rec&amp;dcm=douban&amp;dct=25828043" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/10179010.jpg?v=1445750050.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/10179010/" target="_blank">大规模分布式存储系统：原理解析与架构实战</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/35775439/?dcs=subject-rec&amp;dcm=douban&amp;dct=25828043" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/35775439.jpg?v=1499149854.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/35775439/" target="_blank">大型网站系统与Java中间件实践</a>
+          </div>
+          <div class="price">
+              25.99元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Java性能优化权威指南&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10484692/" onclick="moreurl(this, {'total': 10, 'clicked': '10484692', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s7663093.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10484692/" onclick="moreurl(this, {'total': 10, 'clicked': '10484692', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            Java并发编程实战
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3360807/" onclick="moreurl(this, {'total': 10, 'clicked': '3360807', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3479802.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3360807/" onclick="moreurl(this, {'total': 10, 'clicked': '3360807', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            Effective java 中文版（第2版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26740520/" onclick="moreurl(this, {'total': 10, 'clicked': '26740520', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s28487617.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26740520/" onclick="moreurl(this, {'total': 10, 'clicked': '26740520', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Java性能权威指南
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26274206/" onclick="moreurl(this, {'total': 10, 'clicked': '26274206', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s27906698.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26274206/" onclick="moreurl(this, {'total': 10, 'clicked': '26274206', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            写给大忙人看的Java SE 8
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10426640/" onclick="moreurl(this, {'total': 10, 'clicked': '10426640', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s7033788.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10426640/" onclick="moreurl(this, {'total': 10, 'clicked': '10426640', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            深入剖析Tomcat
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4210586/" onclick="moreurl(this, {'total': 10, 'clicked': '4210586', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4112013.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4210586/" onclick="moreurl(this, {'total': 10, 'clicked': '4210586', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Java消息服务
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25792515/" onclick="moreurl(this, {'total': 10, 'clicked': '25792515', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27199793.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25792515/" onclick="moreurl(this, {'total': 10, 'clicked': '25792515', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            Java虚拟机规范(Java SE 7版)
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/24841235/" onclick="moreurl(this, {'total': 10, 'clicked': '24841235', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s26812781.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/24841235/" onclick="moreurl(this, {'total': 10, 'clicked': '24841235', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            Java程序员修炼之道
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26661040/" onclick="moreurl(this, {'total': 10, 'clicked': '26661040', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s28336519.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26661040/" onclick="moreurl(this, {'total': 10, 'clicked': '26661040', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Java I/O, NIO and NIO.2
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6522893/" onclick="moreurl(this, {'total': 10, 'clicked': '6522893', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6564370.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6522893/" onclick="moreurl(this, {'total': 10, 'clicked': '6522893', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            深入理解Java虚拟机
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/25828043/comments/">全部 42 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="793116253">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-793116253" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-793116253" class="j a_show_login" data-cid="793116253">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/4619581/">番茄</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-07-25</span>
+                </span>
+            </h3>
+            <p class="comment-content">读完前7章，有一定价值，不过略显啰嗦。后面的章节不建议阅读。。。。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="780943423">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-780943423" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-780943423" class="j a_show_login" data-cid="780943423">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/48426666/">大男孩</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2014-04-15</span>
+                </span>
+            </h3>
+            <p class="comment-content">总体很好的一本JVM的专业书籍！花了零零碎碎的时间看完了，有一小部分章节跳过了。目前记住的倒不多，但是已经不觉得这块儿像之前那么神秘了，对于堆空间大小比例(新生代、老生代以及新生代中Eden和Survivor)的分配和优化，讲述得很深刻，针对不同的场景提出不同的优化策略，覆盖面很广，另外还有举例描述，很容易理解记忆这些知识点，而不需要强行记忆。对各种GC日志的解读也很清晰明了，后边还有对web service的性能解析和优化。不满意的是这本书的最后接近100页全是之前例子中的Java代码，其实可以用一个链接到类似github这样的代码仓库就足够了，不过依然还是感谢译者这么辛苦。总体而言，这本书值得推荐，我个人还会再看看的。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="778541399">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-778541399" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-778541399" class="j a_show_login" data-cid="778541399">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/classicning/">贝塔</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2014-03-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">书是好书，但是年代太久了，早两年出版就好了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="961795545">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-961795545" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-961795545" class="j a_show_login" data-cid="961795545">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/sexysmart/">Weggi</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-01-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">并发编程实战，性能优化权威指南，java编程思想，基本可以搞定java了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="794245811">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-794245811" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-794245811" class="j a_show_login" data-cid="794245811">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/guming/">顾白</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2014-04-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">常翻常新，6，7两章可读</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1260793059">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1260793059" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1260793059" class="j a_show_login" data-cid="1260793059">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/98543581/">大马猴</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-10-23</span>
+                </span>
+            </h3>
+            <p class="comment-content">Java性能优化入门首选，系统化的阐述了Java程序的优化路径</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1245373361">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1245373361" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1245373361" class="j a_show_login" data-cid="1245373361">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/145283322/">今我</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-09-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">一般</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1223341851">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1223341851" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1223341851" class="j a_show_login" data-cid="1223341851">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/81441449/">zongzuanfeng</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-08-01</span>
+                </span>
+            </h3>
+            <p class="comment-content">可能只读了一遍不够，感觉不如预期的收获大…</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1208077073">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1208077073" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1208077073" class="j a_show_login" data-cid="1208077073">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/mumubin/">木木彬</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-07-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">最后两章用web service和EJB举例实用性不太大,前三章与周志明的&lt;&lt;深入理解JVM虚拟机&gt;&gt;内容类似,很简略,权当复习,4-8章是精髓,尤其喜欢实战</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1191706969">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1191706969" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1191706969" class="j a_show_login" data-cid="1191706969">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/57105693/">Seraph</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-09-13</span>
+                </span>
+            </h3>
+            <p class="comment-content">有些内容挺好 大约占一半 有些有些过时</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/25828043/comments/">更多短评 42 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            Java性能优化权威指南的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 25828043;
+        window.join_label_text = '写书评参与';
+        window.write_icon = "//img3.doubanio.com/f/ithildin/c05246e1499f0d7c20526699a860b8faaeee62f3/pics/export/write@3x.png";
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/56f73d2e551c805c201537f1cf93fceeeb4b3b51/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/0d950975613fdc59495abe70a2920f09aa322476/js/export/subject_topics_compiled.js"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/25828043/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            Java性能优化权威指南的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 11 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6587785">
+        <div class="main review-item" id="6587785">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/gnutux/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u4152870-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/gnutux/" property="v:reviewer" class="name">yee</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2014-03-14" class="main-meta">2014-03-14 13:13:34</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6587785/">好书, 不过作者简介确定没翻译错?</a></h2>
+
+                <div id="review_6587785_short" class="review-short" data-rid="6587785">
+                    <div class="short-content">
+
+                        &#34;他目前的职责是着力改善Ning平台的性能和扩展性，以支持每月数百万PV的访问量。&#34; 摊下来一天一二十万pv, uv可能只有几千到几万了, 就这点访问量还需要性能优化么!  抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6587785-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6587785_full" class="hidden">
+                    <div id="review_6587785_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6587785" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6587785">
+                                6
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6587785" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6587785">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6587785/#comments" class="reply">9回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7859785">
+        <div class="main review-item" id="7859785">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/FrankTaylor/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1387909-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/FrankTaylor/" property="v:reviewer" class="name">学习机器人</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2016-04-20" class="main-meta">2016-04-20 09:29:17</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7859785/">偏向于 JVM 调优的实战教程</a></h2>
+
+                <div id="review_7859785_short" class="review-short" data-rid="7859785">
+                    <div class="short-content">
+
+                        2016/4/19 日读完第一遍  我在这行干了有 12 年了，断断续续的做过很多项目，到了这个年纪突然发现自己好像什么都搞过，但又都不精深。如果我出去面试 80% 会被比我小 5、6 岁的人轻松 PK 掉，原因就在于只有广度，没有深度。比如，我好几年前看过 “林昊” 的那本书，算是对 J...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7859785-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7859785_full" class="hidden">
+                    <div id="review_7859785_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7859785" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7859785">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7859785" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7859785">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7859785/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6712196">
+        <div class="main review-item" id="6712196">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/ol_l/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u12118209-10.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/ol_l/" property="v:reviewer" class="name">李小武</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2014-06-22" class="main-meta">2014-06-22 18:13:43</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6712196/">目前最全面介绍JVM调优的书籍</a></h2>
+
+                <div id="review_6712196_short" class="review-short" data-rid="6712196">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        内容很精彩，忍不住晚上熬夜看完了。  对于系统监控介绍了不少好工具，还有详细的使用方法。 JVM介绍内容也不错，很好的快速了解gc概况。因为本书不是专门讲JVM的书，所以这块内容比较概括，深入的细节建议去关注Oracle官方的博客。  JVM监控也介绍了不少好工具，忍不住下载尝...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6712196-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6712196_full" class="hidden">
+                    <div id="review_6712196_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6712196" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6712196">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6712196" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6712196">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6712196/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6546837">
+        <div class="main review-item" id="6546837">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/1353548/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u1353548-7.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/1353548/" property="v:reviewer" class="name">乐且有仪</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-02-13" class="main-meta">2014-02-13 17:54:56</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6546837/">当之无愧的Java性能优化圣经</a></h2>
+
+                <div id="review_6546837_short" class="review-short" data-rid="6546837">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        这本书介绍了Java程序员需要掌握的OS、JVM层面的很多知识，系统详尽地介绍了性能优化的各个方面。 并且作者结合自己的经验总结了一些性能优化的模式，例如CPU利用率高的时候需要怎么进行优化等，这些模式让人受益匪浅，相信读过后能对大家日常工作中做性能优化提供不小的帮助。 
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6546837-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6546837_full" class="hidden">
+                    <div id="review_6546837_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6546837" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6546837">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6546837" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6546837">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6546837/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7447341">
+        <div class="main review-item" id="7447341">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/124700803/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u124700803-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/124700803/" property="v:reviewer" class="name">think</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2015-04-18" class="main-meta">2015-04-18 14:36:16</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7447341/">Java圣经</a></h2>
+
+                <div id="review_7447341_short" class="review-short" data-rid="7447341">
+                    <div class="short-content">
+
+                        这本书相对于Think系列更实用一些。或许工作久了，对于这种类型的书籍更加喜欢了吧。不过个人建议，如果有条件，还是买英文原版的吧，感觉中文翻译的始终是比不上原版的。  这本书相对于Think系列更实用一些。或许工作久了，对于这种类型的书籍更加喜欢了吧。不过个人建议，如...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7447341-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7447341_full" class="hidden">
+                    <div id="review_7447341_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7447341" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7447341">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7447341" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7447341">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7447341/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7450377">
+        <div class="main review-item" id="7450377">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/123701168/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u123701168-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/123701168/" property="v:reviewer" class="name">gao_xianglon</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2015-04-21" class="main-meta">2015-04-21 15:02:39</span>
+        
+
+            <span class="publisher right">
+            Prentice Hall2011版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7450377/">推荐这本书</a></h2>
+
+                <div id="review_7450377_short" class="review-short" data-rid="7450377">
+                    <div class="short-content">
+
+                        这本书确实在工作中帮了我不少的忙，但是书中还是有些细节有错误，这一点作者是否也应该注意下，当然，任何一本书，都无可避免的或多或少会出现一些错误，只要能够在后续版本中修正即可，总之，这本书是一本非常不错的权威著作，值得大家阅读。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7450377-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7450377_full" class="hidden">
+                    <div id="review_7450377_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7450377" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7450377">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7450377" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7450377">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7450377/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7182194">
+        <div class="main review-item" id="7182194">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/57902972/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u57902972-6.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/57902972/" property="v:reviewer" class="name">火柴天堂</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2014-11-07" class="main-meta">2014-11-07 13:03:04</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7182194/">适合架构开发工程师的性能书</a></h2>
+
+                <div id="review_7182194_short" class="review-short" data-rid="7182194">
+                    <div class="short-content">
+
+                        这是一本适合架构开发工程师的性能书，但是现实中真的用到的不是很多，但是，它适合作为我们向上攀登的梯子。java程序员发展道路上很值得阅读的一本书！  个别地方由于译者本身也不理解，所以翻译的不是太好，似乎只适合让作者本人来翻译了
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7182194-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7182194_full" class="hidden">
+                    <div id="review_7182194_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7182194" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7182194">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7182194" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7182194">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7182194/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6830929">
+        <div class="main review-item" id="6830929">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/97707278/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/97707278/" property="v:reviewer" class="name">徐小虾</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2014-08-19" class="main-meta">2014-08-19 09:20:30</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6830929/">前面8章还不错，第9章之后一般般</a></h2>
+
+                <div id="review_6830929_short" class="review-short" data-rid="6830929">
+                    <div class="short-content">
+
+                        前面8章还不错，第9章之后一般般... 第9章之后的内容大概浏览了一下，基本上都是泛泛的说了一下，不足以指导实践，还要去参考其他书籍... 个人感觉，在实践中很少用到GlassFish、WebService、EJB这些东东...所以9章之后的内容，基本没有看的必要了...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6830929-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6830929_full" class="hidden">
+                    <div id="review_6830929_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6830929" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6830929">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6830929" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6830929">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6830929/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6677986">
+        <div class="main review-item" id="6677986">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/plantegg/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/plantegg/" property="v:reviewer" class="name">plantegg</a>
+
+            <span property="v:rating" class="allstar20 main-title-rating" title="较差"></span>
+
+        <span property="v:dtreviewed" content="2014-05-22" class="main-meta">2014-05-22 17:07:33</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6677986/">附录整整100页的源代码</a></h2>
+
+                <div id="review_6677986_short" class="review-short" data-rid="6677986">
+                    <div class="short-content">
+
+                        附录整整100页的源代码，是想别人看呢还是怎么的？至少要提供源代码的电子版吧！  里面大幅界面操作的东东，截图下来比较占篇幅啊。  目前过了下3、4、5、6、11章，就第6章还可以。  其它章节很多书也都讲过了，比如Heap各个分代、回收算法、各种参数等等，这些东西也没讲出来...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6677986-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6677986_full" class="hidden">
+                    <div id="review_6677986_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6677986" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6677986">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6677986" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6677986">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6677986/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6588191">
+        <div class="main review-item" id="6588191">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/1353548/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u1353548-7.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/1353548/" property="v:reviewer" class="name">乐且有仪</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-03-14" class="main-meta">2014-03-14 16:04:09</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6588191/">JVM相关资料丰富</a></h2>
+
+                <div id="review_6588191_short" class="review-short" data-rid="6588191">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        如题。各大网站都已经有售了，已经冲到畅销榜前茅。欢迎读者到这里提交勘误和意见： http://www.ituring.com.cn/book/852?q=Java%E6%80%A7%E8%83%BD
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6588191-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6588191_full" class="hidden">
+                    <div id="review_6588191_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6588191" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6588191">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6588191" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6588191">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6588191/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript">
+    ;(function(){
+        window.subject_id = window.subject_id || 25828043;
+        "use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GalleryTopicsSelection = function (_React$Component) {
+  _inherits(GalleryTopicsSelection, _React$Component);
+
+  function GalleryTopicsSelection() {
+    _classCallCheck(this, GalleryTopicsSelection);
+
+    var _this = _possibleConstructorReturn(this, (GalleryTopicsSelection.__proto__ || Object.getPrototypeOf(GalleryTopicsSelection)).call(this));
+
+    _this.state = {
+      topics: []
+    };
+    return _this;
+  }
+
+  _createClass(GalleryTopicsSelection, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      $.ajax({
+        url: "https://m.douban.com/rexxar/api/v2/gallery/subject_feed?start=0&subject_id=" + window.subject_id + "&ck=" + get_cookie('ck'),
+        xhrFields: { withCredentials: true },
+        success: function success(res) {
+          _this2.setState({
+            topics: res.items
+          });
+          if (res.total) {
+            window.has_gallery_topics = true;
+          }
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var topics = this.state.topics;
+
+      return React.createElement(
+        "section",
+        null,
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=close", rel: "nofollow", className: "close_selection" },
+          "\u8DF3\u8FC7"
+        ),
+        React.createElement(
+          "h1",
+          null,
+          "\u4E0B\u9762\u662F\u5426\u6709\u4F60\u60F3\u5199\u7684\u8BDD\u9898\uFF1F"
+        ),
+        topics.length ? React.createElement(
+          "ul",
+          { className: "gl_topics" },
+          topics.map(function (item) {
+            return React.createElement(
+              "li",
+              { className: "topic" },
+              React.createElement(
+                "a",
+                { href: "new_review?from=gallery-topics-selection&click=create&tag_from_gallery=" + item.topic.name,
+                  className: "comment_btn write_review",
+                  rel: "nofollow" },
+                React.createElement("img", { src: window.write_icon }),
+                React.createElement(
+                  "span",
+                  null,
+                  window.join_label_text
+                )
+              ),
+              React.createElement(
+                "h2",
+                { className: "topic_name" },
+                item.topic.name
+              ),
+              React.createElement(
+                "div",
+                { className: "topic_meta" },
+                item.topic.card_subtitle
+              )
+            );
+          })
+        ) : React.createElement(
+          "div",
+          null,
+          "\u52A0\u8F7D\u4E2D"
+        ),
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=skip", rel: "nofollow", className: "topics_skip" },
+          React.createElement(
+            "span",
+            null,
+            "\u4E0A\u9762\u6CA1\u6709\u6211\u60F3\u5199\u7684\u8BDD\u9898\uFF0C\u53BB\u5199\u5F71\u8BC4 \uFF1E "
+          )
+        )
+      );
+    }
+  }]);
+
+  return GalleryTopicsSelection;
+}(React.Component);
+
+$(function () {
+  var glRoot = document.getElementById('gallery-topics-selection');
+
+  ReactDOM.render(React.createElement(GalleryTopicsSelection, null), glRoot);
+});;
+    })();
+</script><script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/289d9eab6b43a9ec.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评11篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+      
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="36159937">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/wedb/"><img src="https://img3.doubanio.com/icon/u134622342-3.jpg" alt="aa" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/36159937/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/36159937/" class="">第42页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/wedb/" class=" " title="aa">aa</a>
+              
+            </p>
+            <div class="reading-note" data-cid="36159937">
+              <div class="short">
+                
+                  <span class="">（3）设定环境变量如：LD_LIBRAYY_PATH和CLASSPATH
+
+这里的LD_LIBRAYY_PATH是什么？</span>
+                <p class="pl">
+                  <span class="">2015-09-21 06:57</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>（3）设定环境变量如：LD_LIBRAYY_PATH和CLASSPATH</q></blockquote><div style="padding-bottom:1em;"></div>这里的LD_LIBRAYY_PATH是什么？
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/36159937/#comments">回应</a>&nbsp;&nbsp;
+                  2015-09-21 06:57
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31861086">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/jetgeng/"><img src="https://img3.doubanio.com/icon/u2847949-2.jpg" alt="Jet Geng" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31861086/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31861086/" class="">第41页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/jetgeng/" class=" " title="Jet Geng">Jet Geng</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31861086">
+              <div class="short">
+                
+                  <span class="">3.2.1 命令行选项
+
+java的命令行分为三种：标准的（写在jvm标准中得。可惜没有找到）， 稳定的以 -X开头， 
+不稳定的以 -XX开头。
+
+参数设定的方法：
+ 1. 打开布尔值 -XX:+&lt;option&gt;，关闭布尔值 -XX:-&lt;option&gt; 
+ 2. 设定数值型。-XX:&lt;option&gt;=&lt;number&gt; 数值可以包括 k,K,m,M,g,G
+ 3. 字符串型的数值方案-XX:&lt;option&gt;=&lt;string&gt;
+
+在命令行中通过命令查看正在运行的java的参数的方法：...</span>
+                <p class="pl">
+                  <span class="">2014-06-08 10:04</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                3.2.1 命令行选项<div style="padding-bottom:1em;"></div>java的命令行分为三种：标准的（写在jvm标准中得。可惜没有找到）， 稳定的以 -X开头， <div style="padding-bottom:1em;"></div>不稳定的以 -XX开头。<div style="padding-bottom:1em;"></div>参数设定的方法：<div style="padding-bottom:1em;"></div> 1. 打开布尔值 -XX:+&lt;option&gt;，关闭布尔值 -XX:-&lt;option&gt; <div style="padding-bottom:1em;"></div> 2. 设定数值型。-XX:&lt;option&gt;=&lt;number&gt; 数值可以包括 k,K,m,M,g,G<div style="padding-bottom:1em;"></div> 3. 字符串型的数值方案-XX:&lt;option&gt;=&lt;string&gt;<div style="padding-bottom:1em;"></div>在命令行中通过命令查看正在运行的java的参数的方法：<div style="padding-bottom:1em;"></div> 1. jinfo -flags pid<div style="padding-bottom:1em;"></div> 2. jinfo -sysprops pid<div style="padding-bottom:1em;"></div> 3. jps -lv<div style="padding-bottom:1em;"></div>通过代码来操作mbean就可以动态在运行期获取到这些参数<div style="padding-bottom:1em;"></div>本章延展阅读：
+<a rel="nofollow" href="http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html" target="_blank">http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html</a>
+<a rel="nofollow" href="http://publib.boulder.ibm.com/infocenter/realtime/v1r0/index.jsp?topic=%2Fcom.ibm.rt.doc.10%2Fuser%2Fstandard_options.html" target="_blank">http://publib.boulder.ibm.com/infocenter/realtime/v1r0/index.jsp?topic=%2Fcom.ibm.rt.doc.10%2Fuser%2Fstandard_options.html</a>
+<a rel="nofollow" href="http://stackoverflow.com/questions/8343099/is-there-a-java-api-to-get-the-vm-arguments" target="_blank">http://stackoverflow.com/questions/8343099/is-there-a-java-api-to-get-the-vm-arguments</a>
+<a rel="nofollow" href="http://stackoverflow.com/questions/1490869/how-to-get-vm-arguments-from-inside-of-java-application" target="_blank">http://stackoverflow.com/questions/1490869/how-to-get-vm-arguments-from-inside-of-java-application</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31861086/#comments">回应</a>&nbsp;&nbsp;
+                  2014-06-08 10:04
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="31861086">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/jetgeng/"><img src="https://img3.doubanio.com/icon/u2847949-2.jpg" alt="Jet Geng" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31861086/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31861086/" class="">第41页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/jetgeng/" class=" " title="Jet Geng">Jet Geng</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31861086">
+              <div class="short">
+                
+                  <span class="">3.2.1 命令行选项
+
+java的命令行分为三种：标准的（写在jvm标准中得。可惜没有找到）， 稳定的以 -X开头， 
+不稳定的以 -XX开头。
+
+参数设定的方法：
+ 1. 打开布尔值 -XX:+&lt;option&gt;，关闭布尔值 -XX:-&lt;option&gt; 
+ 2. 设定数值型。-XX:&lt;option&gt;=&lt;number&gt; 数值可以包括 k,K,m,M,g,G
+ 3. 字符串型的数值方案-XX:&lt;option&gt;=&lt;string&gt;
+
+在命令行中通过命令查看正在运行的java的参数的方法：...</span>
+                <p class="pl">
+                  <span class="">2014-06-08 10:04</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                3.2.1 命令行选项<div style="padding-bottom:1em;"></div>java的命令行分为三种：标准的（写在jvm标准中得。可惜没有找到）， 稳定的以 -X开头， <div style="padding-bottom:1em;"></div>不稳定的以 -XX开头。<div style="padding-bottom:1em;"></div>参数设定的方法：<div style="padding-bottom:1em;"></div> 1. 打开布尔值 -XX:+&lt;option&gt;，关闭布尔值 -XX:-&lt;option&gt; <div style="padding-bottom:1em;"></div> 2. 设定数值型。-XX:&lt;option&gt;=&lt;number&gt; 数值可以包括 k,K,m,M,g,G<div style="padding-bottom:1em;"></div> 3. 字符串型的数值方案-XX:&lt;option&gt;=&lt;string&gt;<div style="padding-bottom:1em;"></div>在命令行中通过命令查看正在运行的java的参数的方法：<div style="padding-bottom:1em;"></div> 1. jinfo -flags pid<div style="padding-bottom:1em;"></div> 2. jinfo -sysprops pid<div style="padding-bottom:1em;"></div> 3. jps -lv<div style="padding-bottom:1em;"></div>通过代码来操作mbean就可以动态在运行期获取到这些参数<div style="padding-bottom:1em;"></div>本章延展阅读：
+<a rel="nofollow" href="http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html" target="_blank">http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html</a>
+<a rel="nofollow" href="http://publib.boulder.ibm.com/infocenter/realtime/v1r0/index.jsp?topic=%2Fcom.ibm.rt.doc.10%2Fuser%2Fstandard_options.html" target="_blank">http://publib.boulder.ibm.com/infocenter/realtime/v1r0/index.jsp?topic=%2Fcom.ibm.rt.doc.10%2Fuser%2Fstandard_options.html</a>
+<a rel="nofollow" href="http://stackoverflow.com/questions/8343099/is-there-a-java-api-to-get-the-vm-arguments" target="_blank">http://stackoverflow.com/questions/8343099/is-there-a-java-api-to-get-the-vm-arguments</a>
+<a rel="nofollow" href="http://stackoverflow.com/questions/1490869/how-to-get-vm-arguments-from-inside-of-java-application" target="_blank">http://stackoverflow.com/questions/1490869/how-to-get-vm-arguments-from-inside-of-java-application</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31861086/#comments">回应</a>&nbsp;&nbsp;
+                  2014-06-08 10:04
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="36159937">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/wedb/"><img src="https://img3.doubanio.com/icon/u134622342-3.jpg" alt="aa" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/36159937/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/36159937/" class="">第42页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/wedb/" class=" " title="aa">aa</a>
+              
+            </p>
+            <div class="reading-note" data-cid="36159937">
+              <div class="short">
+                
+                  <span class="">（3）设定环境变量如：LD_LIBRAYY_PATH和CLASSPATH
+
+这里的LD_LIBRAYY_PATH是什么？</span>
+                <p class="pl">
+                  <span class="">2015-09-21 06:57</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>（3）设定环境变量如：LD_LIBRAYY_PATH和CLASSPATH</q></blockquote><div style="padding-bottom:1em;"></div>这里的LD_LIBRAYY_PATH是什么？
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/36159937/#comments">回应</a>&nbsp;&nbsp;
+                  2015-09-21 06:57
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="36159937">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/wedb/"><img src="https://img3.doubanio.com/icon/u134622342-3.jpg" alt="aa" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/36159937/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/36159937/" class="">第42页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/wedb/" class=" " title="aa">aa</a>
+              
+            </p>
+            <div class="reading-note" data-cid="36159937">
+              <div class="short">
+                
+                  <span class="">（3）设定环境变量如：LD_LIBRAYY_PATH和CLASSPATH
+
+这里的LD_LIBRAYY_PATH是什么？</span>
+                <p class="pl">
+                  <span class="">2015-09-21 06:57</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>（3）设定环境变量如：LD_LIBRAYY_PATH和CLASSPATH</q></blockquote><div style="padding-bottom:1em;"></div>这里的LD_LIBRAYY_PATH是什么？
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/36159937/#comments">回应</a>&nbsp;&nbsp;
+                  2015-09-21 06:57
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31861086">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/jetgeng/"><img src="https://img3.doubanio.com/icon/u2847949-2.jpg" alt="Jet Geng" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31861086/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31861086/" class="">第41页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/jetgeng/" class=" " title="Jet Geng">Jet Geng</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31861086">
+              <div class="short">
+                
+                  <span class="">3.2.1 命令行选项
+
+java的命令行分为三种：标准的（写在jvm标准中得。可惜没有找到）， 稳定的以 -X开头， 
+不稳定的以 -XX开头。
+
+参数设定的方法：
+ 1. 打开布尔值 -XX:+&lt;option&gt;，关闭布尔值 -XX:-&lt;option&gt; 
+ 2. 设定数值型。-XX:&lt;option&gt;=&lt;number&gt; 数值可以包括 k,K,m,M,g,G
+ 3. 字符串型的数值方案-XX:&lt;option&gt;=&lt;string&gt;
+
+在命令行中通过命令查看正在运行的java的参数的方法：...</span>
+                <p class="pl">
+                  <span class="">2014-06-08 10:04</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                3.2.1 命令行选项<div style="padding-bottom:1em;"></div>java的命令行分为三种：标准的（写在jvm标准中得。可惜没有找到）， 稳定的以 -X开头， <div style="padding-bottom:1em;"></div>不稳定的以 -XX开头。<div style="padding-bottom:1em;"></div>参数设定的方法：<div style="padding-bottom:1em;"></div> 1. 打开布尔值 -XX:+&lt;option&gt;，关闭布尔值 -XX:-&lt;option&gt; <div style="padding-bottom:1em;"></div> 2. 设定数值型。-XX:&lt;option&gt;=&lt;number&gt; 数值可以包括 k,K,m,M,g,G<div style="padding-bottom:1em;"></div> 3. 字符串型的数值方案-XX:&lt;option&gt;=&lt;string&gt;<div style="padding-bottom:1em;"></div>在命令行中通过命令查看正在运行的java的参数的方法：<div style="padding-bottom:1em;"></div> 1. jinfo -flags pid<div style="padding-bottom:1em;"></div> 2. jinfo -sysprops pid<div style="padding-bottom:1em;"></div> 3. jps -lv<div style="padding-bottom:1em;"></div>通过代码来操作mbean就可以动态在运行期获取到这些参数<div style="padding-bottom:1em;"></div>本章延展阅读：
+<a rel="nofollow" href="http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html" target="_blank">http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html</a>
+<a rel="nofollow" href="http://publib.boulder.ibm.com/infocenter/realtime/v1r0/index.jsp?topic=%2Fcom.ibm.rt.doc.10%2Fuser%2Fstandard_options.html" target="_blank">http://publib.boulder.ibm.com/infocenter/realtime/v1r0/index.jsp?topic=%2Fcom.ibm.rt.doc.10%2Fuser%2Fstandard_options.html</a>
+<a rel="nofollow" href="http://stackoverflow.com/questions/8343099/is-there-a-java-api-to-get-the-vm-arguments" target="_blank">http://stackoverflow.com/questions/8343099/is-there-a-java-api-to-get-the-vm-arguments</a>
+<a rel="nofollow" href="http://stackoverflow.com/questions/1490869/how-to-get-vm-arguments-from-inside-of-java-application" target="_blank">http://stackoverflow.com/questions/1490869/how-to-get-vm-arguments-from-inside-of-java-application</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31861086/#comments">回应</a>&nbsp;&nbsp;
+                  2014-06-08 10:04
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/25828043/discussion/60566869/" title="发现了两个错误？" class="">发现了两个错误？</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/mjshi/">mjshi</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2015-03-08</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/25828043/discussion/60138170/" title="看过这本书的同学可以和我们聊聊换工作的事儿" class="">看过这本书的同学可以和我们聊聊换工作的事儿</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/kidrane/">Mars</a></td>
+            <td class="pl"><span class="">1 回应</span></td>
+            <td class="pl"><span class="">2015-01-27</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/25828043/discussion/57622207/" title="关于老年代空间占用比的计算疑问" class="">关于老年代空间占用比的计算疑问</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/zhuguowei/">zgw</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2014-05-11</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/25828043/discussion/57622118/" title="关于目标Survivor空间占用百分比（-XX:TargetSurvivorRatio=&lt;n&gt;）的疑问" class="">关于目标Survivor空间占用百分比（-XX:TargetSurvi...</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/zhuguowei/">zgw</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2014-05-11</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/25828043/discussion/57003119/" title="我是本书的译者之一，希望大家多提意见，非常感谢～" class="">我是本书的译者之一，希望大家多提意见，非常感谢～</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/sisyphe/">西西弗与卡夫卡</a></td>
+            <td class="pl"><span class="">1 回应</span></td>
+            <td class="pl"><span class="">2014-05-01</span></td>
+        </tr>
+</table>
+
+
+            <p class="pl" align="right">&gt;
+                <a href="https://book.douban.com/subject/25828043/discussion/">浏览更多话题</a>
+            </p>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+    
+  
+  
+  <div class="gray_ad">
+    
+  
+
+  <h2>
+    <span class="">在豆瓣书店有售</span>
+      ······
+
+  </h2>
+
+
+    <div class="market-banner">
+      <span class="title">
+        纸质版&nbsp;
+      </span>
+      <span class="price"> 87.20元</span>
+        <span class="price"> <del>109.00元</del></span>
+      <span class="promotion-info">满48元包邮</span>
+      <span class="actions">
+        <a class="buy-btn buy" target="_blank" href="https://market.douban.com/cart/checkout/?sku_id=161002&utm_campaign=douban_book_subject_buy_btn&utm_source=douban&utm_medium=pc_web">
+          去购买
+        </a>
+          <a class="j a_show_login buy-btn cart" href="javascript:;">加入购物车</a>
+      </span>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=8610&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=8610&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgJUHVIXAyJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIXBlMSWRQdS0IJRmtFRlR7UWMcTWASHQ5LPmhqa2U2fQVTDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBhYEQMTDlQrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBxMBXBlaCltXWwg%253D&amp;cntvendor=2&amp;srcsubj=25828043&amp;type=bkbuy&amp;subject=25828043" class="">
+                      <span class="">京东商城</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=8610&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=8610&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgJUHVIXAyJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIXBlMSWRQdS0IJRmtFRlR7UWMcTWASHQ5LPmhqa2U2fQVTDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBhYEQMTDlQrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBxMBXBlaCltXWwg%253D&amp;cntvendor=2&amp;srcsubj=25828043&amp;type=bkbuy&amp;subject=25828043" class="buylink-price ">
+                      <span class="">
+                        86.10 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=8610&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=8610&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s25828043%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23421069&amp;cntvendor=2&amp;srcsubj=25828043&amp;type=bkbuy&amp;subject=25828043" class="">
+                      <span class="">当当网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=8610&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=8610&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s25828043%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23421069&amp;cntvendor=2&amp;srcsubj=25828043&amp;type=bkbuy&amp;subject=25828043" class="buylink-price ">
+                      <span class="">
+                        86.10 元
+                      </span>
+                    </a>
+
+                      
+                        <div class="more-info">
+                            <span class="buyinfo-promotion">
+                              图书加价换购
+                            </span>
+                        </div>
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/25828043/buylinks">
+              &gt; 查看2家网店价格
+                (86.10 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1048667">全部2</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/5980062/">Prentice Hall版</a>
+          2011-10-14 / 53人读过
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/25828043/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/1675206/" target="_blank">IT 三级  Java程序设计语言、框架技术（实用性） 1.1.1.1.2</a>
+                <span class="pl">(ajian005)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/37811047/" target="_blank">从码熊到码雄之路</a>
+                <span class="pl">(不在服务区)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/2753104/" target="_blank">Code</a>
+                <span class="pl">(丘)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3446822/" target="_blank">java高级软件工程师</a>
+                <span class="pl">(猫王)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1664384/" target="_blank">Java</a>
+                <span class="pl">(舟行)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/46699513/"><img src="https://img3.doubanio.com/icon/u46699513-3.jpg" class="pil" alt="桐阴月已西" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/46699513/">桐阴月已西</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/53732255/"><img src="https://img3.doubanio.com/icon/u53732255-2.jpg" class="pil" alt="雨知" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/53732255/">雨知</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:JVM Java</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/116835194/"><img src="https://img1.doubanio.com/icon/u116835194-7.jpg" class="pil" alt="lan" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/116835194/">lan</a><br/>
+      <div class="pl ll">          1月4日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/25828043/doings">109人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/25828043/collections">108人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/25828043/wishes">806人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有806人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于Java性能优化权威指南的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/25828043/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'Q66mJaAjVu0',
+            criteria = '7:Java|7:性能优化|7:JVM|7:性能|7:优化|7:java|7:计算机|7:编程|7:Programming|7:jvm|3:/subject/25828043/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar14d-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
