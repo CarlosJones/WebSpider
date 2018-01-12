@@ -6,9 +6,15 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.http.conn.ConnectTimeoutException;
 
 public class MyCrawler {
+    private static Log aLog = LogFactory.getLog("allUrl");
+    private static Log fLog = LogFactory.getLog("filterUrl");
+    private static Log lLog = LogFactory.getLog("filterLink");
+
     public static BDBFrontier visitedFrontier;
     public static BDBFrontier unvisitedFrontier;
     public static BDBFrontier cachedFrontier;
@@ -76,6 +82,9 @@ public class MyCrawler {
                 }
                              
                 String visitedUrl = visitedCrawlUrl.getOriUrl();
+
+                aLog.info("all:"+visitedUrl);
+
                 if(visitedFrontier.contains(visitedUrl)) {            //同步数据
                     visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
                     continue;
@@ -93,7 +102,10 @@ public class MyCrawler {
                 	Pattern pattern1 = Pattern.compile("^((https|http|ftp|rtsp|mms)?://)"
                 			+"(book).(douban).(com)/"
                 			+"(subject)/"
-                			+"([0-9]{1,20})/$"
+                			+"([0-9]{1,20})/"
+                            +"|(\\?channel=subject_list&amp;platform=web)"
+                            + "|()"
+                            +"$"
                             ); 
                     Matcher matcher1 = pattern1.matcher(visitedUrl);
                     boolean isMatch1= matcher1.matches(); 
@@ -109,6 +121,7 @@ public class MyCrawler {
                     Matcher matcher2 = pattern2.matcher(visitedUrl);
                     boolean isMatch2 = matcher2.matches();
                     if(isMatch1||isMatch2){
+                        fLog.info("filter:"+visitedUrl);
                     	RetrievePage.downloadPage(visitedUrl);
                     	cachedFrontier.putUrl(visitedCrawlUrl);
                     }//下载页面
@@ -123,6 +136,7 @@ public class MyCrawler {
                             CrawlUrl unvisitedCrawlUrl = new CrawlUrl();
                             unvisitedCrawlUrl.setOriUrl(link);
                             unvisitedFrontier.putUrl(unvisitedCrawlUrl);
+                            lLog.info("filterlink:"+link);
                         }
                     }
                     }  

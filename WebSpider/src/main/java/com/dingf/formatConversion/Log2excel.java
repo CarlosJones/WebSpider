@@ -15,8 +15,14 @@ import java.io.*;
 public class Log2excel {
     public static void main(String[] args) {
 
-        File file = new File("/home/dingf/WebSpider/log/download.txt");// 将读取的txt文件
-        File file2 = new File("/home/dingf/WebSpider/log/download.xls");// 将生成的excel表格
+//        File file = new File("/home/dingf/WebSpider/log/download.txt");// 将读取的txt文件
+//        File file2 = new File("/home/dingf/WebSpider/log/download.xls");// 将生成的excel表格
+
+//        File file = new File("/home/dingf/WebSpider/log/allUrl.txt");// 将读取的txt文件
+//        File file2 = new File("/home/dingf/WebSpider/log/allUrl.xls");// 将生成的excel表格
+
+        File file = new File("/home/dingf/WebSpider/log/filterUrl.txt");// 将读取的txt文件
+        File file2 = new File("/home/dingf/WebSpider/log/filterUrl.xls");// 将生成的excel表格
 
         if (file.exists() && file.isFile()) {
 

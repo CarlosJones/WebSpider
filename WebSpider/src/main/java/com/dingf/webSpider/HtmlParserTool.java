@@ -3,6 +3,8 @@ package com.dingf.webSpider;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.htmlparser.Node;
 import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
@@ -15,6 +17,7 @@ import org.htmlparser.util.ParserException;
 
 
 public class HtmlParserTool {
+    private static Log log = LogFactory.getLog("allLink");
     public static Set<String> extractLinks(String url, LinkFilter filter){
         Set<String> links = new HashSet<String>();
         try {
@@ -43,8 +46,10 @@ public class HtmlParserTool {
                     String text = linkTag.getLinkText();//链接文字
                     String linkUrl = linkTag.getLink();//url
                     System.out.println(linkUrl + "**********" + text);                  	                                     
-                    if(filter.accept(linkUrl))
+                    if(filter.accept(linkUrl)) {
                         links.add(linkUrl);
+                        log.info("link:"+linkUrl);
+                    }
                 }
                 else if (tag instanceof ImageTag)   //<img> 标签              //链接图片
                 {
