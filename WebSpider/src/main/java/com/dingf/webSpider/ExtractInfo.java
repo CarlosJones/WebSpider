@@ -10,7 +10,7 @@ import org.htmlparser.tags.Span;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.util.ParserException;
 
-public class ExtractInfo {
+public class ExtractInfo{
 	ThreadLocal<Book> TLBook=new ThreadLocal<Book>();
 	Book book = getBook();
 	
@@ -22,7 +22,7 @@ public class ExtractInfo {
 		}
 		return book;
 	}
-	public synchronized void extractInfomation(String url) throws ParserException, IOException{
+	public synchronized void extractInfomation(String url) throws Exception{
         extractName(url);
         extractAveComment(url);
         extractCommentNum(url);
@@ -31,7 +31,7 @@ public class ExtractInfo {
         fo.saveToText(CrawlConfig.CRAWL_SAVE_FILE,book);
 	}
 	
-	public synchronized void extractName(String url) throws ParserException{
+	public synchronized void extractName(String url) throws Exception{
   // 书名 
 		 Parser parser = new Parser(url);
 	     parser.setEncoding("utf-8");
@@ -125,7 +125,7 @@ public class ExtractInfo {
 	     }
         }
 	}
-	public static void main(String[] args) throws ParserException, IOException {
+	public static void main(String[] args) throws Exception {
 //		String fileName=CrawlConfig.CRAWL_DOWNLOAD_PATH+"_book.douban.com_subject_1101158_.html";
 		String fileName=CrawlConfig.CRAWL_DOWNLOAD_PATH+"_book.douban.com_subject_1219329_.html";
 		ExtractInfo e = new ExtractInfo();

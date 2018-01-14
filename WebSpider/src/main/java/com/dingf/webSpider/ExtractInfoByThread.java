@@ -43,9 +43,13 @@ public class ExtractInfoByThread extends ExtractInfo implements Runnable {
 		try {
 //			System.out.println(fn.getFileName());
 			do{
-			 TLuri.set(CrawlConfig.CRAWL_DOWNLOAD_PATH + fn.getFileName());
+				try{
+					TLuri.set(CrawlConfig.CRAWL_DOWNLOAD_PATH + fn.getFileName());
+					extractInfomation(TLuri.get());
+				}catch(Exception e){
+					fn = getFileName();
+				}
 
-			 extractInfomation(TLuri.get());
 			}while(fn!=null);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

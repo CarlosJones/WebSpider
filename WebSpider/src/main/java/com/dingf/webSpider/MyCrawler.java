@@ -85,7 +85,7 @@ public class MyCrawler {
 
                 aLog.info("all:"+visitedUrl);
 
-                if(visitedFrontier.contains(visitedUrl)) {            //同步数据
+                if(visitedFrontier.contains(visitedUrl)){            //同步数据
                     visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
                     continue;
                 }
@@ -98,17 +98,19 @@ public class MyCrawler {
                     continue;
                 }
                  
-                try{               	
+                try{
+//^((https|http|ftp|rtsp|mms)?://)(book).(douban).(com)/(subject)/([0-9]{1,20})/|(\\?channel=subject_list&amp;platform=web)|()$
                 	Pattern pattern1 = Pattern.compile("^((https|http|ftp|rtsp|mms)?://)"
                 			+"(book).(douban).(com)/"
                 			+"(subject)/"
                 			+"([0-9]{1,20})/"
-                            +"|(\\?channel=subject_list&amp;platform=web)"
-                            + "|()"
+//                            +"|(\\?channel=subject_list&amp;platform=web)"
+//                            + "|()"
                             +"$"
                             ); 
                     Matcher matcher1 = pattern1.matcher(visitedUrl);
-                    boolean isMatch1= matcher1.matches(); 
+                    boolean isMatch1= matcher1.matches();
+//^((https|http|ftp|rtsp|mms)?://)(book).(douban).(com)/(subject)/([0-9]{1,20})/|(\\?channel=subject_list&amp;platform=web)|()$
                     Pattern pattern2 = Pattern.compile("^((https|http|ftp|rtsp|mms)?://)"
                 			+"(book).(douban).(com)/"
                 			+"(tag)/(编程)"
@@ -142,18 +144,18 @@ public class MyCrawler {
                     }  
                 }catch(ConnectTimeoutException e) {                            //超时继续读下一个地址
                     visitedFrontier.putUrl(visitedCrawlUrl);
-                    visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
+//                    visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
                     num ++;
                     e.printStackTrace();
                     continue;
                 }catch(SocketTimeoutException e) {
                     visitedFrontier.putUrl(visitedCrawlUrl);
-                    visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
+//                    visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
                     num ++;
                     e.printStackTrace();
                     continue;
                 }
-                visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
+//                visitedCrawlUrl = (CrawlUrl)unvisitedFrontier.getNext();
                 num ++;
             }while(BDBFrontier.threads >0 && num < 1000000);
         } catch (IOException e) {
@@ -161,5 +163,5 @@ public class MyCrawler {
         } catch(Exception e) {
             e.printStackTrace();
         }
-    }     
+    }
 }
