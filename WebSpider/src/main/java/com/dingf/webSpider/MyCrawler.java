@@ -113,7 +113,7 @@ public class MyCrawler {
 //^((https|http|ftp|rtsp|mms)?://)(book).(douban).(com)/(subject)/([0-9]{1,20})/|(\\?channel=subject_list&amp;platform=web)|()$
                     Pattern pattern2 = Pattern.compile("^((https|http|ftp|rtsp|mms)?://)"
                 			+"(book).(douban).(com)/"
-                			+"(tag)/(编程)"
+                			+"(tag)/(互联网)"
 //                			+ "((.(start=)[0-9]{2,4}.(amp).(type=S))"
                             + "((.(start=)[0-4]?[0-9]?[0-9].(amp).(type=S))"
                             +"|(\\?type=S)"

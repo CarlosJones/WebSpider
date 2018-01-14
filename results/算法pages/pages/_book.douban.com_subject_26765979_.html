@@ -1,0 +1,3396 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版) (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/26765979/">
+<meta name="keywords" content="架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版),Martin L. Abbott,Michael T. Fisher,机械工业出版社,2016-4-15,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版) 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/26765979/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/5ef2a22fba637133.css">
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s28603091.jpg" title="架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)">
+    <img src="https://img3.doubanio.com/lpic/s28603091.jpg" title="点击看大图" alt="架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Martin%20L.%20Abbott">Martin L. Abbott</a>
+        
+           /
+        
+        <a class="" href="/search/Michael%20T.%20Fisher">Michael T. Fisher</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 机械工业出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">原作名:</span> The Art of Scalability: Scalable Web Architecture, Processes, and Organizations for the Modern Enterprise，Second Edition<br/>
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E9%99%88%E6%96%8C">陈斌</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2016-4-15<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 660<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 99.00<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 精装<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787111532644<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 8.6 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar45"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">86</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">50.0%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:47px"></div>
+
+            <span class="rating_per">37.2%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:11px"></div>
+
+            <span class="rating_per">9.3%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:1px"></div>
+
+            <span class="rating_per">1.2%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">2.3%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26765979-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26765979-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26765979-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26765979-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26765979-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26765979-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26765979-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26765979-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-26765979">
+        <a href="#" data-url="https://book.douban.com/subject/26765979/" data-desc="" data-title="书籍《架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s28603091.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_26765979"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>任何一个持续成长的公司最终都需要解决系统、组织和流程的扩展性问题。本书汇聚了作者从eBay、VISA、Salesforce.com到Apple超过30年的丰富经验， 全面阐释了经过验证的信息技术扩展方法，对所需要掌握的产品和服务的平滑扩展做了详尽的论述，并在第1版的基础上更新了扩展的策略、技术和案例。</p>    <p>针对技术和非技术的决策者，马丁•阿伯特和迈克尔•费舍尔详尽地介绍了影响扩展性的各个方面，包括架构、过程、组织和技术。通过阅读本书，你可以学习到以最大化敏捷性和扩展性来优化组织机构的新策略，以及对云计算（IaaS/PaaS）、NoSQL、DevOps和业务指标等的新见解。而且利用其中的工具和建议，你可以系统化地清除扩展性道路上的障碍，在技术和业务上取得前所未有的成功。</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/26765979/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <span class="short">
+                <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>作者：</p>    <p>马丁∙阿伯特（Martin L. Abbott） AKF公司的初创合伙人，曾任Quigo（广告技术初创公司，后来被AOL收购）的首席运营官，负责领导产品策略、产品管理、技术研发和客户服务。他在eBay工作了6年，先后担任技术副总裁、首席技术官和公司高管。</p>    <p>迈克∙费舍尔（Michael T. Fisher ）AKF公司的初创合伙人，曾任Quigo首席技术官，PayPal负责工程和架构的副总裁。他花了7年时间帮助通用电气公司（GE）形成了技术战略，获得过6西格玛黑带的荣誉，还在美军担任过上尉和飞行员。</p>    <p>译者：</p>    <p>陈斌（Chuck Chen）现任易宝CTO。1989年获得吉林大学硕士学位，1992年任新加坡航空公司高级系统分析师；1999年投身于硅谷互联网技术发展浪潮，曾任日立美国系统集成总监，Abacus首席架构师和Nokia美国首席工程师；200...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+
+            </span>
+            <span class="all hidden ">
+                <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>作者：</p>    <p>马丁∙阿伯特（Martin L. Abbott） AKF公司的初创合伙人，曾任Quigo（广告技术初创公司，后来被AOL收购）的首席运营官，负责领导产品策略、产品管理、技术研发和客户服务。他在eBay工作了6年，先后担任技术副总裁、首席技术官和公司高管。</p>    <p>迈克∙费舍尔（Michael T. Fisher ）AKF公司的初创合伙人，曾任Quigo首席技术官，PayPal负责工程和架构的副总裁。他花了7年时间帮助通用电气公司（GE）形成了技术战略，获得过6西格玛黑带的荣誉，还在美军担任过上尉和飞行员。</p>    <p>译者：</p>    <p>陈斌（Chuck Chen）现任易宝CTO。1989年获得吉林大学硕士学位，1992年任新加坡航空公司高级系统分析师；1999年投身于硅谷互联网技术发展浪潮，曾任日立美国系统集成总监，Abacus首席架构师和Nokia美国首席工程师；2008年任eBay资深架构师，负责移动应用的架构设计。丰富的海外经历，多年的架构经验，深谙移动互联网对传统行业的影响；2014年再次投身易宝，提出大、平、移、商的战略方针，全力推动移动互联网技术，引领行业变革。</p></div>
+
+            </span>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_26765979_short">
+        目录<br/>
+        本书赞誉<br/>
+        中文版序一<br/>
+        中文版序二<br/>
+        中文版序三<br/>
+        中文版序四<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_26765979_short').hide();$('#dir_26765979_full').show();$.get('/j/subject/j_dir_count',{id:26765979});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_26765979_full" style="display:none">
+        目录<br/>
+        本书赞誉<br/>
+        中文版序一<br/>
+        中文版序二<br/>
+        中文版序三<br/>
+        中文版序四<br/>
+        译者序<br/>
+        序<br/>
+        前言<br/>
+        作者简介<br/>
+        第一部分　可扩展性组织的人员配置<br/>
+        第1章　人员和领导力对扩展性的影响 …… 2<br/>
+        1.1　案例方法 …… 3<br/>
+        1.2　为什么要讨论人 …… 3<br/>
+        1.3　为什么组织很重要 …… 5<br/>
+        1.4　为什么管理和领导如此重要 …… 12<br/>
+        1.5　结论 …… 15<br/>
+        第2章　可扩展性技术组织的角色 …… 17<br/>
+        2.1　失败的影响 …… 17<br/>
+        2.2　定义角色 …… 19<br/>
+        2.3　执行人员的责任 …… 22<br/>
+        2.4　独立贡献者的责任 …… 28<br/>
+        2.5　RASCI工具 …… 35<br/>
+        2.6　结论 …… 39<br/>
+        第3章　组织的设置 …… 41<br/>
+        3.1　组织对可扩展性的影响 …… 41<br/>
+        3.2　团队规模 …… 45<br/>
+        3.3　组织结构 …… 54<br/>
+        3.4　结论 …… 77<br/>
+        第4章　领导力秘籍 …… 80<br/>
+        4.1　什么是领导力 …… 82<br/>
+        4.2　领导力概念模型 …… 84<br/>
+        4.3　自知之明 …… 86<br/>
+        4.4　身先士卒 …… 89<br/>
+        4.5　谦虚谨慎 …… 91<br/>
+        4.6　以人为本，使命为先 …… 92<br/>
+        4.7　决策英明，以德服人 …… 93<br/>
+        4.8　用人不疑 …… 95<br/>
+        4.9　与股东价值保持一致 …… 96<br/>
+        4.10　变革型领导 …… 97<br/>
+        4.11　愿景 …… 98<br/>
+        4.12　使命 …… 102<br/>
+        4.13　目标 …… 104<br/>
+        4.14　总结 …… 106<br/>
+        4.15　成功的因果路线图 …… 111<br/>
+        4.16　结论 …… 113<br/>
+        第5章　管理秘籍 …… 116<br/>
+        5.1　什么是管理 …… 118<br/>
+        5.2　项目和任务管理 …… 120<br/>
+        5.3　团队建设：球队类比 …… 124<br/>
+        5.4　优化团队：花园类比 …… 126<br/>
+        5.5　度量、指标和目标评估 …… 131<br/>
+        5.6　目标树 …… 135<br/>
+        5.7　为成功铺路 …… 137<br/>
+        5.8　结论 …… 138<br/>
+        第6章　关系、思维和商业案例 …… 141<br/>
+        6.1　业务与技术之间的鸿沟 …… 141<br/>
+        6.2　击败IT思维模式 …… 145<br/>
+        6.3　为扩展性加大投入的业务理由 …… 147<br/>
+        6.4　结论 …… 152<br/>
+        第二部分　构建可扩展的过程<br/>
+        第7章　过程是可扩展的关键 …… 154<br/>
+        7.1　过程的目的 …… 155<br/>
+        7.2　正确的时间和正确的过程 …… 160<br/>
+        7.3　当好的过程变坏的时候 …… 164<br/>
+        7.4　结论 …… 166<br/>
+        第8章　管理故障和问题 …… 169<br/>
+        8.1　什么是故障 …… 170<br/>
+        8.2　什么是问题 …… 171<br/>
+        8.3　事故管理的组成部分 …… 172<br/>
+        8.4　问题管理的组成部分 …… 176<br/>
+        8.5　解决事故和问题管理之间的矛盾 …… 177<br/>
+        8.6　事故和问题的生命周期 …… 178<br/>
+        8.7　施行每日事故例会制 …… 179<br/>
+        8.8　施行季度事故总结制度 …… 181<br/>
+        8.9　事后处理 …… 182<br/>
+        8.10　融会贯通 …… 185<br/>
+        8.11　结论 …… 186<br/>
+        第9章　危机管理和升级 …… 189<br/>
+        9.1　什么是危机 …… 191<br/>
+        9.2　为什么要区分危机和其他的事故 …… 192<br/>
+        9.3　危机如何改变公司 …… 193<br/>
+        9.4　混乱中的秩序 …… 195<br/>
+        9.5　通信与控制 …… 200<br/>
+        9.6　作战室 …… 201<br/>
+        9.7　升级 …… 203<br/>
+        9.8　情况通报 …… 204<br/>
+        9.9　危机事后处理与沟通 …… 205<br/>
+        9.10　结论 …… 207<br/>
+        第10章　生产环境的变更管理 …… 210<br/>
+        10.1　什么是变更 …… 211<br/>
+        10.2　变更识别 …… 212<br/>
+        10.3　变更管理 …… 214<br/>
+        10.4　变更控制会议 …… 228<br/>
+        10.5　过程的持续改进 …… 229<br/>
+        10.6　结论 …… 230<br/>
+        第11章　确定应用发展的预留空间 …… 233<br/>
+        11.1　目的 …… 234<br/>
+        11.2　结构 …… 235<br/>
+        11.3　理想使用率 …… 240<br/>
+        11.4　使用电子表格的快速示例 …… 244<br/>
+        11.5　结论 …… 246<br/>
+        第12章　确立架构原则 …… 248<br/>
+        12.1　目标和原则 …… 248<br/>
+        12.2　架构选择 …… 251<br/>
+        12.3　AKF采用的最普遍的架构原则 …… 255<br/>
+        12.4　结论 …… 266<br/>
+        第13章　联合架构设计和架构审查委员会 …… 267<br/>
+        13.1　修复组织的功能障碍 …… 267<br/>
+        13.2　跨部门的扩展性设计 …… 268<br/>
+        13.3　JAD的准入和退出标准 …… 271<br/>
+        13.4　从JAD到ARB …… 274<br/>
+        13.5　举行会议 …… 276<br/>
+        13.6　ARB的准入和退出标准 …… 278<br/>
+        13.7　结论 …… 281<br/>
+        第14章　敏捷架构设计 …… 284<br/>
+        14.1　敏捷组织中的架构 …… 286<br/>
+        14.2　架构的所有权 …… 287<br/>
+        14.3　有限的资源 …… 288<br/>
+        14.4　标准 …… 290<br/>
+        14.5　敏捷组织中的ARB …… 293<br/>
+        14.6　结论 …… 294<br/>
+        第15章　聚焦核心竞争力：自建与外购 …… 296<br/>
+        15.1　自建与外购及可扩展性 …… 296<br/>
+        15.2　聚焦成本 …… 297<br/>
+        15.3　聚焦策略 …… 298<br/>
+        15.4　一切自建的现象 …… 299<br/>
+        15.5　合并成本与策略方法 …… 300<br/>
+        15.6　该组件是否会形成战略性的差异化竞争优势 …… 301<br/>
+        15.7　我们是这个组件或资产的最佳所有者吗 …… 302<br/>
+        15.8　这个组件的竞争力是什么 …… 303<br/>
+        15.9　我们能有效地构建这个组件吗 …… 303<br/>
+        15.10　最佳的购买决策 …… 304<br/>
+        15.11　自建失败剖析 …… 306<br/>
+        15.12　结论 …… 308<br/>
+        第16章　确定风险 …… 310<br/>
+        16.1　风险管理的重要性 …… 310<br/>
+        16.2　测量风险 …… 313<br/>
+        16.3　管理风险 …… 322<br/>
+        16.4　结论 …… 325<br/>
+        第17章　性能与压力测试 …… 328<br/>
+        17.1　执行性能测试 …… 328<br/>
+        17.2　不要过度强调压力测试 …… 338<br/>
+        17.3　可扩展性的性能和压力测试 …… 346<br/>
+        17.4　结论 …… 348<br/>
+        第18章　障碍条件与回滚 …… 351<br/>
+        18.1　障碍条件 …… 352<br/>
+        18.2　回滚能力 …… 358<br/>
+        18.3　服务降级：设计禁用 …… 362<br/>
+        18.4　结论 …… 364<br/>
+        第三部分　可扩展的架构方案<br/>
+        第19章　构建故障隔离的架构 …… 368<br/>
+        19.1　故障隔离架构 …… 369<br/>
+        19.2　故障隔离的好处 …… 371<br/>
+        19.3　如何进行故障隔离 …… 380<br/>
+        19.4　何时实施故障隔离 …… 383<br/>
+        19.5　如何测试故障隔离 …… 386<br/>
+        19.6　结论 …… 387<br/>
+        第20章　AKF扩展立方体介绍 …… 389<br/>
+        20.1　AKF扩展立方体 …… 389<br/>
+        20.2　扩展立方体的X轴 …… 391<br/>
+        20.3　扩展立方体的Y轴 …… 393<br/>
+        20.4　扩展立方体的Z轴 …… 396<br/>
+        20.5　融会贯通 …… 397<br/>
+        20.6　何时以及何处使用扩展立方体 …… 400<br/>
+        20.7　结论 …… 401<br/>
+        第21章　为扩展分割应用 …… 404<br/>
+        21.1　AKF应用扩展立方体 …… 404<br/>
+        21.2　AKF应用扩展立方体的X轴 …… 406<br/>
+        21.3　AKF应用扩展立方体的Y轴 …… 409<br/>
+        21.4　AKF应用扩展立方体的Z轴 …… 412<br/>
+        21.5　融会贯通 …… 414<br/>
+        21.6　应用立方体实例 …… 418<br/>
+        21.7　结论 …… 423<br/>
+        第22章　为扩展分割数据库 …… 426<br/>
+        22.1　在数据库上应用AKF扩展立方体 …… 426<br/>
+        22.2　AKF数据库扩展立方体的X轴 …… 428<br/>
+        22.3　AKF数据库扩展立方体的Y轴 …… 434<br/>
+        22.4　AKF数据库扩展立方体的Z轴 …… 436<br/>
+        22.5　融会贯通 …… 439<br/>
+        22.6　数据库扩展立方体使用案例 …… 443<br/>
+        22.7　结论 …… 450<br/>
+        第23章　为扩展而缓存 …… 452<br/>
+        23.1　定义缓存 …… 453<br/>
+        23.2　对象缓存 …… 457<br/>
+        23.3　应用缓存 …… 461<br/>
+        23.4　内容传送网络 …… 467<br/>
+        23.5　结论 …… 469<br/>
+        第24章　为扩展而异步 …… 472<br/>
+        24.1　对同步的共识 …… 472<br/>
+        24.2　同步与异步调用 …… 474<br/>
+        24.3　定义状态 …… 482<br/>
+        24.4　结论 …… 488<br/>
+        第四部分　其他的问题和挑战<br/>
+        第25章　海量数据 …… 492<br/>
+        25.1　数据的成本 …… 493<br/>
+        25.2　数据的成本价值困局 …… 496<br/>
+        25.3　数据产生利润 …… 498<br/>
+        25.4　处理大量的数据 …… 502<br/>
+        25.5　结论 …… 514<br/>
+        第26章　云计算的突飞猛进 …… 517<br/>
+        26.1　历史和定义 …… 518<br/>
+        26.2　云的特性与架构 …… 522<br/>
+        26.3　云和网格之间的差异 …… 528<br/>
+        26.4　云计算的优势和劣势 …… 530<br/>
+        26.5　云适用于什么样的公司 …… 540<br/>
+        26.6　决策过程 …… 543<br/>
+        26.7　结论 …… 546<br/>
+        第27章　云计算准备就绪 …… 550<br/>
+        27.1　云端的扩展立方体 …… 550<br/>
+        27.2　克服挑战 …… 553<br/>
+        27.3　Intuit案例研究 …… 559<br/>
+        27.4　结论 …… 561<br/>
+        第28章　应用监控 …… 564<br/>
+        28.1　为什么我们没有及早发现问题 …… 564<br/>
+        28.2　监控框架 …… 566<br/>
+        28.3　衡量监控的价值 …… 575<br/>
+        28.4　监控和过程 …… 576<br/>
+        28.5　结论 …… 578<br/>
+        第29章　规划数据中心 …… 581<br/>
+        29.1　数据中心的成本和约束 …… 581<br/>
+        29.2　位置、位置、位置 …… 584<br/>
+        29.3　数据中心和增量增长 …… 588<br/>
+        29.4　什么时候考虑采用IaaS …… 591<br/>
+        29.5　魔法三规则 …… 595<br/>
+        29.6　多活数据中心的考虑 …… 602<br/>
+        29.7　结论 …… 604<br/>
+        第30章　纵观全局 …… 608<br/>
+        30.1　现在该做什么 …… 610<br/>
+        30.2　可扩展性的其他资源 …… 612<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_26765979_full').hide();$('#dir_26765979_short').show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '26765979',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共54个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/架构">架构</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/管理">管理</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/软件工程">软件工程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/互联网">互联网</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/架构师">架构师</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/组织构架">组织构架</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/软件设计">软件设计</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/10179010/?dcs=subject-rec&amp;dcm=douban&amp;dct=26765979" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/10179010.jpg?v=1445750050.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/10179010/" target="_blank">大规模分布式存储系统：原理解析与架构实战</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/35648299/?dcs=subject-rec&amp;dcm=douban&amp;dct=26765979" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/35648299.jpg?v=1498811585.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/35648299/" target="_blank">大型网站技术架构</a>
+          </div>
+          <div class="price">
+              5.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/35775439/?dcs=subject-rec&amp;dcm=douban&amp;dct=26765979" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/35775439.jpg?v=1499149854.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/35775439/" target="_blank">大型网站系统与Java中间件实践</a>
+          </div>
+          <div class="price">
+              25.99元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/27020143/" onclick="moreurl(this, {'total': 10, 'clicked': '27020143', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29426075.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/27020143/" onclick="moreurl(this, {'total': 10, 'clicked': '27020143', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            架构真经
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/27039508/" onclick="moreurl(this, {'total': 10, 'clicked': '27039508', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s29445489.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/27039508/" onclick="moreurl(this, {'total': 10, 'clicked': '27039508', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            企业IT架构转型之道：阿里巴巴中台...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26772677/" onclick="moreurl(this, {'total': 10, 'clicked': '26772677', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s28626997.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26772677/" onclick="moreurl(this, {'total': 10, 'clicked': '26772677', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            微服务设计
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26938710/" onclick="moreurl(this, {'total': 10, 'clicked': '26938710', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29413376.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26938710/" onclick="moreurl(this, {'total': 10, 'clicked': '26938710', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            系统架构：复杂系统的产品设计与开...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/27034443/" onclick="moreurl(this, {'total': 10, 'clicked': '27034443', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29470935.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/27034443/" onclick="moreurl(this, {'total': 10, 'clicked': '27034443', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            聊聊架构
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26906846/" onclick="moreurl(this, {'total': 10, 'clicked': '26906846', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29131113.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26906846/" onclick="moreurl(this, {'total': 10, 'clicked': '26906846', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            互联网创业核心技术：构建可伸缩的...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25844633/" onclick="moreurl(this, {'total': 10, 'clicked': '25844633', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29544670.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25844633/" onclick="moreurl(this, {'total': 10, 'clicked': '25844633', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            实现领域驱动设计
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6397551/" onclick="moreurl(this, {'total': 10, 'clicked': '6397551', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6343493.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6397551/" onclick="moreurl(this, {'total': 10, 'clicked': '6397551', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            Scalability Rules
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25984046/" onclick="moreurl(this, {'total': 10, 'clicked': '25984046', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27464965.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25984046/" onclick="moreurl(this, {'total': 10, 'clicked': '25984046', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            大数据日知录
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26586598/" onclick="moreurl(this, {'total': 10, 'clicked': '26586598', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28283455.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26586598/" onclick="moreurl(this, {'total': 10, 'clicked': '26586598', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            性能之巅
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/26765979/comments/">全部 32 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="1164241827">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1164241827" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1164241827" class="j a_show_login" data-cid="1164241827">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/154323041/">纯阳子</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-08-05</span>
+                </span>
+            </h3>
+            <p class="comment-content">但凡成长中的事物都会面临成长中的烦恼，会遇到量变以及量变引发质变的问题。IT系统、产品及其所在组织也概莫能外，随着业务成长也会面临需求增加、负载加重的问题，即系统的扩展性问题。本书的作者出身名门，曾分别在ebay和paypal负责系统架构工作，所以拿出的系统扩展性良方很有价值。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1252048780">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1252048780" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1252048780" class="j a_show_login" data-cid="1252048780">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/xcqxmz/">请秦</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-11-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">略读，管理学方面内容对技术转型有指导意义，AKF值得好好应用。有些内容过于唠叨！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1049107014">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1049107014" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1049107014" class="j a_show_login" data-cid="1049107014">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/allwordswrong/">天马行空·错话连篇</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-11-28</span>
+                </span>
+            </h3>
+            <p class="comment-content">虽然比较厚，但面面俱到，建立知识体系比较适合，也算填补空白吧，太厚，可以只看每章结尾。也有许多不足之处。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1287653773">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1287653773" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1287653773" class="j a_show_login" data-cid="1287653773">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/googlelx/">Charles</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">甚至可以当教科书，只是老外写的书真的有时候太折磨人了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1101830954">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1101830954" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1101830954" class="j a_show_login" data-cid="1101830954">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/fly11/">为中华崛起接盘</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-12-11</span>
+                </span>
+            </h3>
+            <p class="comment-content">翻了翻，一公里远一米深</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1295687014">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1295687014" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1295687014" class="j a_show_login" data-cid="1295687014">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/79185868/">acAric</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-29</span>
+                </span>
+            </h3>
+            <p class="comment-content">从CTO的角度阐述整个软件团队的配置。架构不仅仅包含技术，包含流程，资源，人员等等。这也警惕每一个做技术的人，不只做好技术就可以了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1287653773">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1287653773" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1287653773" class="j a_show_login" data-cid="1287653773">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/googlelx/">Charles</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">甚至可以当教科书，只是老外写的书真的有时候太折磨人了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1252048780">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1252048780" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1252048780" class="j a_show_login" data-cid="1252048780">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/xcqxmz/">请秦</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-11-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">略读，管理学方面内容对技术转型有指导意义，AKF值得好好应用。有些内容过于唠叨！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1239738336">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1239738336" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1239738336" class="j a_show_login" data-cid="1239738336">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/fact/">FACT</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-09-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">缺点就是太厚太长，技术人员都怕事情没说清楚</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1227739956">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1227739956" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1227739956" class="j a_show_login" data-cid="1227739956">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/108492711/">卧虫</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-08-11</span>
+                </span>
+            </h3>
+            <p class="comment-content">对目前工作意义不大，另外可能是翻译的原因，比较晦涩</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/26765979/comments/">更多短评 32 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 26765979;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/26765979/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 2 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7946841">
+        <div class="main review-item" id="7946841">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/103870225/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u103870225-10.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/103870225/" property="v:reviewer" class="name">白首静安</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2016-06-21" class="main-meta">2016-06-21 21:52:16</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7946841/">可扩展性格局——架构联通一切</a></h2>
+
+                <div id="review_7946841_short" class="review-short" data-rid="7946841">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        如果身体有恙，我们方可寻医。 如果企业波折，何处方能医？  马丁 L·阿伯特和马克尔 T·费舍尔的这本《架构即未来：现代企业可扩展的Web架构、流程和组织》，现代企业发展过程中的一剂良药。  可能是身边创业者居多，半数以上为互联网创业，看得多了，也就多少了解一二。但之...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7946841-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7946841_full" class="hidden">
+                    <div id="review_7946841_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7946841" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7946841">
+                                3
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7946841" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7946841">
+                                2
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7946841/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7885775">
+        <div class="main review-item" id="7885775">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/71203683/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/71203683/" property="v:reviewer" class="name">chenlongfei</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2016-05-08" class="main-meta">2016-05-08 12:05:26</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7885775/">xyz适用于我们的工作平时当中</a></h2>
+
+                <div id="review_7885775_short" class="review-short" data-rid="7885775">
+                    <div class="short-content">
+
+                        1.故障隔离，泳道理论（车道理论也类似），故障一定要隔离。 2.xyz立方体工具法，x轴侧重不改变服务实现扩张（加硬件，服务数据克隆，多实例，无状态等），y轴侧重责任分割（对应服务拆分，如微服务的小，独，松），z轴侧重用户群拆分（客户群拆分，请求优先级拆分）。我司也有...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7885775-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7885775_full" class="hidden">
+                    <div id="review_7885775_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7885775" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7885775">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7885775" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7885775">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7885775/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/11ee46859099211c.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评2篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/26765979/annotation">共<span property="v:count">13</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="43695020">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/jollychang/"><img src="https://img3.doubanio.com/icon/u1033608-40.jpg" alt="白色的蓝💎" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43695020/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43695020/" class="">第295页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/jollychang/" class=" " title="白色的蓝💎">白色的蓝💎</a>
+                (It&#39;s Showtime!)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43695020">
+              <div class="short">
+                
+                  <span class="">“如果团队是完全自主的，如何确保标准可以跨团队共享。一种方法（Spotify 采用）涉及跨越敏捷团队的章节和公会来确定并实施这些标准。另一种不同的方法（Wooga 采用）是团队很独立而且积极通过各种论坛分享知识。最后，你可以考虑使用 ARB（Architecture Review Board)来验证架构原则的采用和合规情况，通过定期召开会议来回顾最近发布的设计。” https://thenextweb.com/entrepreneur/2013/09/08/using-independent-teams-to-...</span>
+                <p class="pl">
+                  <span class="">2017-05-07 15:54</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>“如果团队是完全自主的，如何确保标准可以跨团队共享。一种方法（Spotify 采用）涉及跨越敏捷团队的章节和公会来确定并实施这些标准。另一种不同的方法（Wooga 采用）是团队很独立而且积极通过各种论坛分享知识。最后，你可以考虑使用 ARB（Architecture Review Board)来验证架构原则的采用和合规情况，通过定期召开会议来回顾最近发布的设计。”</p><p><a href="https://thenextweb.com/entrepreneur/2013/09/08/using-independent-teams-to-scale-a-small-company-a-look-at-how-games-company-wooga-works/" rel="nofollow" target="_blank">https://thenextweb.com/entrepreneur/2013/09/08/using-independent-teams-to-scale-a-small-company-a-look-at-how-games-company-wooga-works/</a></p><p><a href="http://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify" rel="nofollow" target="_blank">http://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify</a></p><p></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43695020/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-07 15:54
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38073318">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38073318/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38073318/" class="">第482页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="38073318">
+              <div class="short">
+                
+                  <span class="">
+同步调用和异步调用都是必要的，但我们往往错过，因此必须围绕这个主题进行讨论、辩论并把相关的知识传授给机构。如果忽略这些问题，当负载开始增长时会出现各种问题，服务器开始达到最大容量或者服务增加。如果现在就采用同步和异步的原则、标准和编码规范，那么当未来追查这些问题的根源并予以解决的时候，将会避免大量的宕机时间和资源浪费</span>
+                <p class="pl">
+                  <span class="">2016-07-02 20:37</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                
+同步调用和异步调用都是必要的，但我们往往错过，因此必须围绕这个主题进行讨论、辩论并把相关的知识传授给机构。如果忽略这些问题，当负载开始增长时会出现各种问题，服务器开始达到最大容量或者服务增加。如果现在就采用同步和异步的原则、标准和编码规范，那么当未来追查这些问题的根源并予以解决的时候，将会避免大量的宕机时间和资源浪费
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38073318/#comments">回应</a>&nbsp;&nbsp;
+                  2016-07-02 20:37
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38072784">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38072784/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38072784/" class="">第472页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="38072784">
+              <div class="short">
+                
+                  <span class="">两个问题，依赖于状态和使用同步通信。
+</span>
+                <p class="pl">
+                  <span class="">2016-07-02 19:43</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                两个问题，依赖于状态和使用同步通信。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38072784/#comments">回应</a>&nbsp;&nbsp;
+                  2016-07-02 19:43
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38058193">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38058193/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38058193/" class="">第380页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="38058193">
+              <div class="short">
+                
+                  <span class="">如果进行故障隔离
+1、绝不共享
+2、泳道的边界不可逾越
+任何区域之间的通信都可能会引起问题。
+3、交易发生在泳道的旁边</span>
+                <p class="pl">
+                  <span class="">2016-06-30 14:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                如果进行故障隔离<div style="padding-bottom:1em;"></div>1、绝不共享<div style="padding-bottom:1em;"></div>2、泳道的边界不可逾越<div style="padding-bottom:1em;"></div>任何区域之间的通信都可能会引起问题。<div style="padding-bottom:1em;"></div>3、交易发生在泳道的旁边
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38058193/#comments">回应</a>&nbsp;&nbsp;
+                  2016-06-30 14:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="37943331">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/37943331/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/37943331/" class="">第4页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="37943331">
+              <div class="short">
+                
+                  <span class="">他提拔了五位年轻有为的架构师，分别负责信息安全、运维、数据、应用、平台研发的架构师，极大加强了易宝技术部门的架构意识。最后，他提出“大、平、移、活”战略（大数据、云平台、移动化、双活数据中心），且基于对大数据的重视，推动了征信事业部的成立。
+</span>
+                <p class="pl">
+                  <span class="">2016-06-11 09:40</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                他提拔了五位年轻有为的架构师，分别负责信息安全、运维、数据、应用、平台研发的架构师，极大加强了易宝技术部门的架构意识。最后，他提出“大、平、移、活”战略（大数据、云平台、移动化、双活数据中心），且基于对大数据的重视，推动了征信事业部的成立。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/37943331/#comments">回应</a>&nbsp;&nbsp;
+                  2016-06-11 09:40
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="37945297">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/37945297/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/37945297/" class="">第35页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="37945297">
+              <div class="short">
+                
+                  <span class="">
+RASCI
+R：负责对项目或者任务的完成负责的人。
+A：批准项目关键决策的批准人。
+S：支持为项目完成提供资源的人。
+C：咨询为项目提供数据或者信息的人。
+I：知情需要了解项目相关情况的人。</span>
+                <p class="pl">
+                  <span class="">2016-06-11 15:42</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                
+RASCI<div style="padding-bottom:1em;"></div>R：负责对项目或者任务的完成负责的人。<div style="padding-bottom:1em;"></div>A：批准项目关键决策的批准人。<div style="padding-bottom:1em;"></div>S：支持为项目完成提供资源的人。<div style="padding-bottom:1em;"></div>C：咨询为项目提供数据或者信息的人。<div style="padding-bottom:1em;"></div>I：知情需要了解项目相关情况的人。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/37945297/#comments">回应</a>&nbsp;&nbsp;
+                  2016-06-11 15:42
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38027363">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38027363/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38027363/" class="">第100页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="38027363">
+              <div class="short">
+                
+                  <span class="">愿景要简洁定义理想的终极状态。</span>
+                <p class="pl">
+                  <span class="">2016-06-25 09:30</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                愿景要简洁定义理想的终极状态。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38027363/#comments">回应</a>&nbsp;&nbsp;
+                  2016-06-25 09:30
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38027484">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38027484/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38027484/" class="">第111页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="38027484">
+              <div class="short">
+                
+                  <span class="">作为一个领导，你可以做得最好和最容易的事情之一，是确保组织的成功，让大家理解他们所做的日常贡献怎么对实现组织的愿景起的作用，进而为股东创造价值。我们把对这种关系的理解叫做成功的因果路线图。通常比较容易确定这种关系，否则我们就要质疑这一岗位存在的必要性。
+</span>
+                <p class="pl">
+                  <span class="">2016-06-25 10:08</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                作为一个领导，你可以做得最好和最容易的事情之一，是确保组织的成功，让大家理解他们所做的日常贡献怎么对实现组织的愿景起的作用，进而为股东创造价值。我们把对这种关系的理解叫做成功的因果路线图。通常比较容易确定这种关系，否则我们就要质疑这一岗位存在的必要性。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38027484/#comments">回应</a>&nbsp;&nbsp;
+                  2016-06-25 10:08
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="43695020">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/jollychang/"><img src="https://img3.doubanio.com/icon/u1033608-40.jpg" alt="白色的蓝💎" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43695020/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43695020/" class="">第295页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/jollychang/" class=" " title="白色的蓝💎">白色的蓝💎</a>
+                (It&#39;s Showtime!)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43695020">
+              <div class="short">
+                
+                  <span class="">“如果团队是完全自主的，如何确保标准可以跨团队共享。一种方法（Spotify 采用）涉及跨越敏捷团队的章节和公会来确定并实施这些标准。另一种不同的方法（Wooga 采用）是团队很独立而且积极通过各种论坛分享知识。最后，你可以考虑使用 ARB（Architecture Review Board)来验证架构原则的采用和合规情况，通过定期召开会议来回顾最近发布的设计。” https://thenextweb.com/entrepreneur/2013/09/08/using-independent-teams-to-...</span>
+                <p class="pl">
+                  <span class="">2017-05-07 15:54</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>“如果团队是完全自主的，如何确保标准可以跨团队共享。一种方法（Spotify 采用）涉及跨越敏捷团队的章节和公会来确定并实施这些标准。另一种不同的方法（Wooga 采用）是团队很独立而且积极通过各种论坛分享知识。最后，你可以考虑使用 ARB（Architecture Review Board)来验证架构原则的采用和合规情况，通过定期召开会议来回顾最近发布的设计。”</p><p><a href="https://thenextweb.com/entrepreneur/2013/09/08/using-independent-teams-to-scale-a-small-company-a-look-at-how-games-company-wooga-works/" rel="nofollow" target="_blank">https://thenextweb.com/entrepreneur/2013/09/08/using-independent-teams-to-scale-a-small-company-a-look-at-how-games-company-wooga-works/</a></p><p><a href="http://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify" rel="nofollow" target="_blank">http://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify</a></p><p></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43695020/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-07 15:54
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38073318">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38073318/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38073318/" class="">第482页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="38073318">
+              <div class="short">
+                
+                  <span class="">
+同步调用和异步调用都是必要的，但我们往往错过，因此必须围绕这个主题进行讨论、辩论并把相关的知识传授给机构。如果忽略这些问题，当负载开始增长时会出现各种问题，服务器开始达到最大容量或者服务增加。如果现在就采用同步和异步的原则、标准和编码规范，那么当未来追查这些问题的根源并予以解决的时候，将会避免大量的宕机时间和资源浪费</span>
+                <p class="pl">
+                  <span class="">2016-07-02 20:37</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                
+同步调用和异步调用都是必要的，但我们往往错过，因此必须围绕这个主题进行讨论、辩论并把相关的知识传授给机构。如果忽略这些问题，当负载开始增长时会出现各种问题，服务器开始达到最大容量或者服务增加。如果现在就采用同步和异步的原则、标准和编码规范，那么当未来追查这些问题的根源并予以解决的时候，将会避免大量的宕机时间和资源浪费
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38073318/#comments">回应</a>&nbsp;&nbsp;
+                  2016-07-02 20:37
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38072784">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38072784/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38072784/" class="">第472页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="38072784">
+              <div class="short">
+                
+                  <span class="">两个问题，依赖于状态和使用同步通信。
+</span>
+                <p class="pl">
+                  <span class="">2016-07-02 19:43</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                两个问题，依赖于状态和使用同步通信。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38072784/#comments">回应</a>&nbsp;&nbsp;
+                  2016-07-02 19:43
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="38058193">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/38058193/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/38058193/" class="">第380页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="38058193">
+              <div class="short">
+                
+                  <span class="">如果进行故障隔离
+1、绝不共享
+2、泳道的边界不可逾越
+任何区域之间的通信都可能会引起问题。
+3、交易发生在泳道的旁边</span>
+                <p class="pl">
+                  <span class="">2016-06-30 14:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                如果进行故障隔离<div style="padding-bottom:1em;"></div>1、绝不共享<div style="padding-bottom:1em;"></div>2、泳道的边界不可逾越<div style="padding-bottom:1em;"></div>任何区域之间的通信都可能会引起问题。<div style="padding-bottom:1em;"></div>3、交易发生在泳道的旁边
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/38058193/#comments">回应</a>&nbsp;&nbsp;
+                  2016-06-30 14:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/26765979/annotation">更多读书笔记（共13篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        <span>
+            <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=discuss">
+              <span>在这本书的论坛里发言</span>
+            </a>
+        </span>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+    
+  
+  
+  <div class="gray_ad">
+    
+  
+
+  <h2>
+    <span class="">在豆瓣书店有售</span>
+      ······
+
+  </h2>
+
+
+    <div class="market-banner">
+      <span class="title">
+        纸质版&nbsp;
+      </span>
+      <span class="price"> 79.20元</span>
+        <span class="price"> <del>99.00元</del></span>
+      <span class="promotion-info">满48元包邮</span>
+      <span class="actions">
+        <a class="buy-btn buy" target="_blank" href="https://market.douban.com/cart/checkout/?sku_id=158582&utm_campaign=douban_book_subject_buy_btn&utm_source=douban&utm_medium=pc_web">
+          去购买
+        </a>
+          <a class="j a_show_login buy-btn cart" href="javascript:;">加入购物车</a>
+      </span>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=6440&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=7820&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEg9UH1wQCyJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIaBlEcXhwdS0IJRmtqeVR6NmIzR2cSZT1HE01%252FQgYJRiVDDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBtbEAAaAlErXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVChMDUh5SCltXWwg%253D&amp;cntvendor=3&amp;srcsubj=26765979&amp;type=bkbuy&amp;subject=26765979" class="">
+                      <span class="">京东商城</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=6440&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=7820&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEg9UH1wQCyJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIaBlEcXhwdS0IJRmtqeVR6NmIzR2cSZT1HE01%252FQgYJRiVDDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBtbEAAaAlErXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVChMDUh5SCltXWwg%253D&amp;cntvendor=3&amp;srcsubj=26765979&amp;type=bkbuy&amp;subject=26765979" class="buylink-price ">
+                      <span class="">
+                        78.20 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=6440&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=7820&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s26765979%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23939702&amp;cntvendor=3&amp;srcsubj=26765979&amp;type=bkbuy&amp;subject=26765979" class="">
+                      <span class="">当当网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=6440&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=7820&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s26765979%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23939702&amp;cntvendor=3&amp;srcsubj=26765979&amp;type=bkbuy&amp;subject=26765979" class="buylink-price ">
+                      <span class="">
+                        78.20 元
+                      </span>
+                    </a>
+
+                      
+                        <div class="more-info">
+                            <span class="buyinfo-promotion">
+                              优品换购1.9-1.15
+                            </span>
+                        </div>
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=6440&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=6440&amp;pos=3&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F7167029.htm&amp;cntvendor=3&amp;link2key=5a7095d922&amp;srcsubj=26765979&amp;type=bkbuy&amp;subject=26765979" class="">
+                      <span class="">中国图书网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=6440&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=6440&amp;pos=3&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F7167029.htm&amp;cntvendor=3&amp;link2key=5a7095d922&amp;srcsubj=26765979&amp;type=bkbuy&amp;subject=26765979" class="buylink-price ">
+                      <span class="">
+                        64.40 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/26765979/buylinks">
+              &gt; 查看3家网店价格
+                (64.40 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1072962">全部3</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/4160830/">Addison-Wesley Professional版</a>
+          2009 / 13人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/20458253/">人民邮电出版社版</a>
+          2013-1 / 13人读过
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/26765979/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/36764655/" target="_blank">2015-2018好书新发现</a>
+                <span class="pl">(Moon)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/20172127/" target="_blank">闲着没事读读书（四）</a>
+                <span class="pl">(鹿小羽)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1873917/" target="_blank">dinny的书包@all books</a>
+                <span class="pl">(dinny)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3815147/" target="_blank">分布式和高并发</a>
+                <span class="pl">(Steven)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/45392808/" target="_blank">技术管理</a>
+                <span class="pl">(白色的蓝💎)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/6679560/"><img src="https://img3.doubanio.com/icon/u6679560-4.jpg" class="pil" alt="侠之小者" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/6679560/">侠之小者</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/spirit_only/"><img src="https://img1.doubanio.com/icon/u2198136-7.jpg" class="pil" alt="spirit_only" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/spirit_only/">spirit_only</a><br/>
+      <div class="pl ll">          1月12日          在读      </div>
+
+        <span class="allstar50" title="力荐"></span>
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/lockey.tong/"><img src="https://img3.doubanio.com/icon/u4056539-10.jpg" class="pil" alt="lockey" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/lockey.tong/">lockey</a><br/>
+      <div class="pl ll">          1月12日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:计算机科学 软件工程 互联...</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/sdhjl2000/"><img src="https://img3.doubanio.com/icon/u12254043-11.jpg" class="pil" alt="sdhjl2000" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/sdhjl2000/">sdhjl2000</a><br/>
+      <div class="pl ll">          1月10日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26765979/doings">78人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26765979/collections">76人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26765979/wishes">688人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/26765979/offers">1本二手书欲转让</a>
+          <span class="">
+            (75.00
+              元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有688人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于架构即未来：现代企业可扩展的Web架构、流程和组织(原书第2版)的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/26765979/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'HMgK2jcPM1A',
+            criteria = '7:架构|7:计算机|7:管理|7:软件工程|7:互联网|7:架构师|7:组织构架|7:软件设计|7:计算机科学|7:思考|3:/subject/26765979/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar7c-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

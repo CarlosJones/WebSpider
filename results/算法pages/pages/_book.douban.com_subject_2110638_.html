@@ -1,0 +1,3775 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>计算机组成与设计硬件/软件接口 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/2110638/">
+<meta name="keywords" content="计算机组成与设计硬件/软件接口,[美] David A.Patterson,John L.Hennessy,机械工业出版社,2007-4,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书计算机组成与设计硬件/软件接口 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/2110638/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/5ef2a22fba637133.css">
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">计算机组成与设计硬件/软件接口</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s5760066.jpg" title="计算机组成与设计硬件/软件接口">
+    <img src="https://img3.doubanio.com/lpic/s5760066.jpg" title="点击看大图" alt="计算机组成与设计硬件/软件接口"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/David%20A.Patterson">[美] David A.Patterson</a>
+        
+           /
+        
+        <a class="" href="/search/John%20L.Hennessy">John L.Hennessy</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 机械工业出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">原作名:</span> Computer Organization and Design: The Hardware/Software Interface<br/>
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E9%83%91%E7%BA%AC%E6%B0%91">郑纬民</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2007-4<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 593<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 75.00元<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+    <span class="pl">丛书:</span>&nbsp;<a href="https://book.douban.com/series/1163">计算机科学丛书</a><br>
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787111202141<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.4 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar45"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">225</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">69.8%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:23px"></div>
+
+            <span class="rating_per">25.3%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:4px"></div>
+
+            <span class="rating_per">4.4%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.4%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-2110638-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-2110638-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-2110638-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2110638-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2110638-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2110638-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2110638-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2110638-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-2110638">
+        <a href="#" data-url="https://book.douban.com/subject/2110638/" data-desc="" data-title="书籍《计算机组成与设计硬件/软件接口》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s5760066.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_2110638"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>《计算机组成与设计硬件：软件接口》(原书第3版)是计算机组成的经典教材。全书着眼于当前计算机设计中最基本的概念，展示了软硬件间的关系，并全面介绍当代计算机系统发展的主流技术和最新成就。同以往版本一样，《计算机组成与设计硬件：软件接口》(原书第3版)采用MIPS处理器作为展示计算机硬件技术基本功能的核心。书中逐条指令地列举了完整的MIPS指令集，并介绍了网络和多处理器结构的基本内容。将CPU性能和程序性能紧密地联系起来是本版的一个新增内容。另外，本版对软硬件的讨论更加深入，作者展示了软硬件部件如何影响程序的性能，并在光盘中为侧重硬件和侧重软件的读者分别提供了相关资料。随书光盘内容非常丰富，不仅包括各种配套教学资源，还提供了HDL模拟器、MIPS模拟器以及FPGA设计工具等软件。</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/2110638/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <div class="">
+            <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>加州大学伯克利分校计算机科学系教授，美国国家工程研究院院士，lEEE和ACM会员，曾因成功的启发式教育方法被IEEE授予James H.MIAligan，Jr.教育奖章。他因为对RISC技术的贡献而荣获1 995年IEEE技术成就奖。在RAID技术方面的成就为他赢得了1999年lEEE Reyrlold Johnson信息存储奖。2000年他和John L Henrlessy分享了冯·诺伊曼奖。</p>    <p>    斯坦福大学校长，IEEE和ACM会士，美国国家工程研究院院士及美国科学艺术研究院院士。Hen rlessy教授因为在RISC技术方面做出了突出贡献而荣获2001年的Eckert—MatJchly奖章，他也是2001年SeymIour Cray计算机工程奖得主，并且和David A.Pattersorl分享了2000年的冯·诺伊曼奖。</p></div>
+
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_2110638_short">
+        出版者的话<br/>
+        专家指导委员会<br/>
+        译者序<br/>
+        前言<br/>
+        第1章　计算机概念和技术<br/>
+        1.1　概述<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_2110638_short').hide();$('#dir_2110638_full').show();$.get('/j/subject/j_dir_count',{id:2110638});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_2110638_full" style="display:none">
+        出版者的话<br/>
+        专家指导委员会<br/>
+        译者序<br/>
+        前言<br/>
+        第1章　计算机概念和技术<br/>
+        1.1　概述<br/>
+        1.2　程序的表象之下<br/>
+        1.3　打开计算机的机箱<br/>
+        1.4　实例：制造Pentium 4芯片<br/>
+        1.5　谬误和陷阱<br/>
+        1.6　结论<br/>
+        1.7　历史回顾和深入阅读<br/>
+        1.8　习题<br/>
+        现实世界中的计算机：信息技术在非IT领域的40亿产值<br/>
+        第2章　计算机指令<br/>
+        2.1　概述<br/>
+        2.2　计算机硬件的操作<br/>
+        2.3　计算机硬件的操作数<br/>
+        2.4　计算机中指令的表示<br/>
+        2.5　逻辑运算<br/>
+        2.6　分支指令<br/>
+        2.7　计算机硬件的过程支持<br/>
+        2.8　人机交互<br/>
+        2.9　对32位立即数的MIPS编址和寻址<br/>
+        2.10　程序的翻译和启动运行<br/>
+        2.11　编译器如何优化<br/>
+        2.12　编译器如何工作初探<br/>
+        2.13　以一个C程序的排序为例<br/>
+        2.14　面向对象语言的实现<br/>
+        2.15　数组与指针<br/>
+        2.16　实例：IA-32指令<br/>
+        2.17　谬误和陷阱<br/>
+        2.18　结论<br/>
+        2.19　历史回顾和深入阅读<br/>
+        2.20　习题<br/>
+        现实世界中的计算机：用数据拯救我们的环境<br/>
+        第3章　计算机的算术运算<br/>
+        3.1　概述<br/>
+        3.2　有符号数与无符号数<br/>
+        3.3　加法与减法<br/>
+        3.4　乘法<br/>
+        3.5　除法<br/>
+        3.6　浮点运算<br/>
+        3.7　实例：IA-32中的浮点部件<br/>
+        3.8　谬误和陷阱<br/>
+        3.9　结论<br/>
+        3.10　历史回顾和深入阅读<br/>
+        3.11　习题<br/>
+        现实世界中的计算机：重建古代世界<br/>
+        第4章　评估和理解性能<br/>
+        4.1　概述<br/>
+        4.2　CPU的性能和影响因素<br/>
+        4.3　性能评估<br/>
+        4.4　实例：两个SPEC基准测试以及新型Intel处理器的性能评价<br/>
+        4.5　谬误和陷阱<br/>
+        4.6　结论<br/>
+        4.7　历史回顾和深入阅读<br/>
+        4.8　习题<br/>
+        现实世界中的计算机：使交通工具更快更安全<br/>
+        第5章　处理器<br/>
+        5.1　概述<br/>
+        5.2　逻辑设计规则<br/>
+        5.3　数据通路的建立<br/>
+        5.4　一个简单的实现方案<br/>
+        5.5　多周期实现方案<br/>
+        5.6　异常<br/>
+        5.7　微程序设计：简化控制设计<br/>
+        5.8　使用硬件描述语言进行数字设计概述<br/>
+        5.9　实例：近期的：Pentium处理器的实现结构<br/>
+        5.10　廖误和陷阱<br/>
+        5.11　结论<br/>
+        5.12　历史回顾和深入阅读<br/>
+        5.13　习题<br/>
+        现实世界中的计算机：助力残障人士<br/>
+        第6章　利用流水线提高性能<br/>
+        第7章　层次结构的存储器<br/>
+        第8章　存储器、网络和其他外围设备<br/>
+        第9章　多处理器和集群<br/>
+        附录A　汇编器、链接器和SPIM模拟器<br/>
+        附录B　逻辑设计基础<br/>
+        附录C　控制器的硬件实现<br/>
+        附录D　桌面计算机、服务器和嵌入式计算机上的RISC体系结构综述<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_2110638_full').hide();$('#dir_2110638_short').show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '2110638',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共109个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/组成原理">组成原理</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/体系结构">体系结构</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机科学">计算机科学</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机组成">计算机组成</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机系统">计算机系统</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/硬件">硬件</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/经典">经典</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+<div class="subject_show block5">
+<h2>丛书信息</h2>
+<div>
+　　<a href="https://book.douban.com/series/1163">计算机科学丛书 (共449册)</a>,
+这套丛书还有
+《嵌入式系统导论》,《离散数学及其应用（原书第7版）》,《Intel微处理器》,《数字媒体技术教程》,《软件安全》    等。</div>
+</div>
+<script>
+$(function(){$(".knnlike a").click(function(){return moreurl(this,{'from':'knnlike'})})})
+</script>
+
+  
+
+
+
+
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;计算机组成与设计硬件/软件接口&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1954037/" onclick="moreurl(this, {'total': 10, 'clicked': '1954037', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s2170306.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1954037/" onclick="moreurl(this, {'total': 10, 'clicked': '1954037', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            计算机体系结构
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2240307/" onclick="moreurl(this, {'total': 10, 'clicked': '2240307', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s24476078.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2240307/" onclick="moreurl(this, {'total': 10, 'clicked': '2240307', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            计算机系统结构
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1929984/" onclick="moreurl(this, {'total': 10, 'clicked': '1929984', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s5790800.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1929984/" onclick="moreurl(this, {'total': 10, 'clicked': '1929984', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            数据库系统概念
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3296317/" onclick="moreurl(this, {'total': 10, 'clicked': '3296317', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3392161.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3296317/" onclick="moreurl(this, {'total': 10, 'clicked': '3296317', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            编译原理
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4915163/" onclick="moreurl(this, {'total': 10, 'clicked': '4915163', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6195016.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4915163/" onclick="moreurl(this, {'total': 10, 'clicked': '4915163', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            大规模并行处理器程序设计
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1148282/" onclick="moreurl(this, {'total': 10, 'clicked': '1148282', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s1113106.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1148282/" onclick="moreurl(this, {'total': 10, 'clicked': '1148282', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            计算机程序的构造和解释
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3852290/" onclick="moreurl(this, {'total': 10, 'clicked': '3852290', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3895413.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3852290/" onclick="moreurl(this, {'total': 10, 'clicked': '3852290', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            现代操作系统（第3版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1806974/" onclick="moreurl(this, {'total': 10, 'clicked': '1806974', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s1852496.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1806974/" onclick="moreurl(this, {'total': 10, 'clicked': '1806974', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            现代编译原理
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4289836/" onclick="moreurl(this, {'total': 10, 'clicked': '4289836', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s22791741.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4289836/" onclick="moreurl(this, {'total': 10, 'clicked': '4289836', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            操作系统概念（第七版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1886058/" onclick="moreurl(this, {'total': 10, 'clicked': '1886058', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s8898978.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1886058/" onclick="moreurl(this, {'total': 10, 'clicked': '1886058', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            计算机组成：结构化方法
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/2110638/comments/">全部 60 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="520524051">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-520524051" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-520524051" class="j a_show_login" data-cid="520524051">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/yingmuhaha/">樱木哈哈</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2012-05-16</span>
+                </span>
+            </h3>
+            <p class="comment-content">看了一半，很有收获，以后在详细拜读~</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="756487974">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-756487974" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-756487974" class="j a_show_login" data-cid="756487974">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/50725915/">小萨</a>
+                    <span>2013-12-28</span>
+                </span>
+            </h3>
+            <p class="comment-content">暂且放一放</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="205414854">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-205414854" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-205414854" class="j a_show_login" data-cid="205414854">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/FengqianLi/">文艺的二货青年</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2010-01-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">教材</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="251817104">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-251817104" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-251817104" class="j a_show_login" data-cid="251817104">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/dorothyk/">红茶渣</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2010-07-03</span>
+                </span>
+            </h3>
+            <p class="comment-content">果然是牛书，吾辈看起来跟天书一样。。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="481265013">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-481265013" class="vote-count">3</span>
+                        <a href="javascript:;" id="btn-481265013" class="j a_show_login" data-cid="481265013">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/bunker/">蚌壳星人</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2012-01-12</span>
+                </span>
+            </h3>
+            <p class="comment-content">把它Mark出的原因是因为其中的很多章节前的引文太搞笑了——“旁路？你总是需要一个旁路的。”</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1301499599">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1301499599" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1301499599" class="j a_show_login" data-cid="1301499599">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/allenchen87/">ACMing</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2018-01-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">我读过一部分</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1215464605">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1215464605" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1215464605" class="j a_show_login" data-cid="1215464605">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/jinkai719/">阅微草堂</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-07-15</span>
+                </span>
+            </h3>
+            <p class="comment-content">中断，指令集和外部接口（总线）决定了CPU的功能：
+指令集决定（1）操作码，（2）寻址方式，（3）寄存器组；
+外部接口（系统总线）决定（4）I/O模块接口，（5）内存模块接口；
+（6）中断――系统总线和CPU对操作系统的支持类型决定
+</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1152299447">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1152299447" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1152299447" class="j a_show_login" data-cid="1152299447">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/pkuwangliang/">王亮</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-02-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">本科课本</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1123623661">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1123623661" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1123623661" class="j a_show_login" data-cid="1123623661">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/67488814/">@leo123</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-12-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">阐明计算机体系结构的一本比较好的书不管是搞；硬件还是软件，都值得一读</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1122130766">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1122130766" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1122130766" class="j a_show_login" data-cid="1122130766">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/76215195/">Marx</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-12-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">写的很好，讲的非常清楚</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/2110638/comments/">更多短评 60 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            计算机组成与设计硬件/软件接口的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 2110638;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/2110638/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            计算机组成与设计硬件/软件接口的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 14 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5495156">
+        <div class="main review-item" id="5495156">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/1246355/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1246355-54.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/1246355/" property="v:reviewer" class="name">Maxwell&#39;sdemon</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-07-07" class="main-meta">2012-07-07 19:59:23</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5495156/">电子系同学们已经不能阻止这本书卖萌了！！</a></h2>
+
+                <div id="review_5495156_short" class="review-short" data-rid="5495156">
+                    <div class="short-content">
+
+                        微机原理这本教材，不仅在知识层面对我等电子学子造成了难以愈合的创伤，更以其令人发指的卖萌在创口上撒了一把盐……  以下内容为《计算机组成与设计：硬件/软件接口》中所有可以找到的题记，如有纰漏还请见谅。感谢@JimD 同学的工作     前言     我们能体验的最美好的东西是...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5495156-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5495156_full" class="hidden">
+                    <div id="review_5495156_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5495156" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5495156">
+                                30
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5495156" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5495156">
+                                7
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5495156/#comments" class="reply">7回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5402977">
+        <div class="main review-item" id="5402977">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/44999219/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u44999219-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/44999219/" property="v:reviewer" class="name">tutu</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-04-25" class="main-meta">2012-04-25 00:24:51</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5402977/">学计算机组成和汇编的都该看看</a></h2>
+
+                <div id="review_5402977_short" class="review-short" data-rid="5402977">
+                    <div class="short-content">
+
+                        书写得非常好。基本上看完了前六章，看完作者所述计算机指令和关于cpu的叙述后，发现cpu真的很简单，我想这正说明作者的很高水平，由Mips的cpu的主要发明人之一来叙述cpu，确实能够把关于cpu的细节说清楚。比我原先学过的清华郑纬民那本《计算机系统结构》强多了那本书学完之后...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5402977-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5402977_full" class="hidden">
+                    <div id="review_5402977_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5402977" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5402977">
+                                14
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5402977" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5402977">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5402977/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6417447">
+        <div class="main review-item" id="6417447">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/46723357/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/46723357/" property="v:reviewer" class="name">思魁</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-11-19" class="main-meta">2013-11-19 09:57:08</span>
+        
+
+            <span class="publisher right">
+            机械工业出版社2012版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6417447/">好书——清华大学毁人不倦</a></h2>
+
+                <div id="review_6417447_short" class="review-short" data-rid="6417447">
+                    <div class="short-content">
+
+                        这么好的一本书，国内许多大学却不用，尤其是清华大学，为了自己的面子，非要用自己老师写的书，写的差，学生读不懂，误人子弟！  赞~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~！
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6417447-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6417447_full" class="hidden">
+                    <div id="review_6417447_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6417447" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6417447">
+                                11
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6417447" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6417447">
+                                3
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6417447/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3778370">
+        <div class="main review-item" id="3778370">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/jakungyang/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2798167-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/jakungyang/" property="v:reviewer" class="name">Jackon</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-10-01" class="main-meta">2010-10-01 10:27:25</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3778370/">这本书让我成功的入门了</a></h2>
+
+                <div id="review_3778370_short" class="review-short" data-rid="3778370">
+                    <div class="short-content">
+
+                        看了好几本计算机组成原理和汇编语言的书，一直似懂非懂。 看完这本书的第二章，再看那些书，突然发现全都懂了。 而且感觉很简单的样子。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3778370-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3778370_full" class="hidden">
+                    <div id="review_3778370_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3778370" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3778370">
+                                11
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3778370" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3778370">
+                                4
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3778370/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3273918">
+        <div class="main review-item" id="3273918">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/sosowo/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2740862-1.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/sosowo/" property="v:reviewer" class="name">sosowo</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-05-16" class="main-meta">2010-05-16 10:56:27</span>
+        
+
+            <span class="publisher right">
+            机械工业出版社2006版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3273918/">学习计算机组成的经典书籍</a></h2>
+
+                <div id="review_3273918_short" class="review-short" data-rid="3273918">
+                    <div class="short-content">
+
+                        书籍说明  与计算机系统结构那本书同作者  怪不得，我说怎么这么眼熟呢  同样是大牛的作品，值得推荐  如果要在计算机硬件方面入门并学到一定程度，推荐和系统结构那本书一起读  毕竟同样作者写的，比较有连贯性，书中例子也足够的好  首先用这本书夯实计算机组成的基础，然后...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3273918-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3273918_full" class="hidden">
+                    <div id="review_3273918_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3273918" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3273918">
+                                7
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3273918" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3273918">
+                                3
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3273918/#comments" class="reply">4回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="1050616">
+        <div class="main review-item" id="1050616">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/fats/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1174373-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/fats/" property="v:reviewer" class="name">fats</a>
+
+
+        <span property="v:dtreviewed" content="2006-06-07" class="main-meta">2006-06-07 16:37:36</span>
+        
+
+            <span class="publisher right">
+            Morgan Kaufmann2004版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/1050616/">努力巩固基础ing</a></h2>
+
+                <div id="review_1050616_short" class="review-short" data-rid="1050616">
+                    <div class="short-content">
+
+                        本来想通过 定量方法 来学体系结构 结果去看了看UC berkeley的课程 还是用的这本书 看了berkeley这个课程的作业和项目 我想 我还是先老老实实的夯实基础吧
+
+                        &nbsp;(<a href="javascript:;" id="toggle-1050616-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_1050616_full" class="hidden">
+                    <div id="review_1050616_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="1050616" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-1050616">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="1050616" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-1050616">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/1050616/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="4207603">
+        <div class="main review-item" id="4207603">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/39323160/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/39323160/" property="v:reviewer" class="name">似水年华</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-10-28" class="main-meta">2010-10-28 17:48:50</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/4207603/">不用说这是一本好书</a></h2>
+
+                <div id="review_4207603_short" class="review-short" data-rid="4207603">
+                    <div class="short-content">
+
+                         不用说这是一本好书，在阅读了此书之后，我相信大家会有一个初步的系统设计的概念，无论你未来是做通信系统还是IC CHIP，都能助你一臂之力。书的内容比较全面，既涉及到了基础也引申出了许多比较新的技术，当然这些资料都是在光盘上，所以好的课外阅读资料才是这本书最大的特...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-4207603-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_4207603_full" class="hidden">
+                    <div id="review_4207603_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="4207603" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-4207603">
+                                6
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="4207603" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-4207603">
+                                2
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/4207603/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="8539879">
+        <div class="main review-item" id="8539879">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/124123310/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u124123310-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/124123310/" property="v:reviewer" class="name">accfcx</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2017-05-14" class="main-meta">2017-05-14 16:47:06</span>
+        
+
+            <span class="publisher right">
+            机械工业出版社2015版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/8539879/">读完编码后该读什么书</a></h2>
+
+                <div id="review_8539879_short" class="review-short" data-rid="8539879">
+                    <div class="short-content">
+
+                        看过编码后，下一步的学习可以使用这本书作为计算机组成与设计方面的参考书。它使用MIPS指令集作为教学，比x86友好多了，指令格式比较简单，不过如果没接触过它的话第一次看还是有一些奇怪的。知识体系很好，组织的很有层次，诺依曼体系结构的几大部分给你说的清清楚楚，不过缺...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-8539879-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_8539879_full" class="hidden">
+                    <div id="review_8539879_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="8539879" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-8539879">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="8539879" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-8539879">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/8539879/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5502465">
+        <div class="main review-item" id="5502465">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/doria0922/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2990074-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/doria0922/" property="v:reviewer" class="name">confabulator</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-07-12" class="main-meta">2012-07-12 19:12:35</span>
+        
+
+            <span class="publisher right">
+            机械工业出版社2012版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5502465/">顶翻译的同学们</a></h2>
+
+                <div id="review_5502465_short" class="review-short" data-rid="5502465">
+                    <div class="short-content">
+
+                        看了各种评论，说是这本书很好。无可厚非，作者可是体系结构的大拿，RISC的创始人，mips的发动者，计算机体系结构量化方法的作者。 大家也应该夸奖下引进和翻译这本书的成员！他们做了很多工作。有纰漏的地方，需要大家的鼓励支持和包含。这本书的翻译作者，是体系结构领域的博...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5502465-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5502465_full" class="hidden">
+                    <div id="review_5502465_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5502465" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5502465">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5502465" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5502465">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5502465/#comments" class="reply">4回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="2409180">
+        <div class="main review-item" id="2409180">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/cirye/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u3750411-20.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/cirye/" property="v:reviewer" class="name">夜的旅者</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2009-09-26" class="main-meta">2009-09-26 13:34:53</span>
+        
+
+            <span class="publisher right">
+            清华大学出版社2004版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/2409180/">评论来自-CSDN</a></h2>
+
+                <div id="review_2409180_short" class="review-short" data-rid="2409180">
+                    <div class="short-content">
+
+                        美国加州大学伯克利分校计算机系Patterson教授和斯坦福大学计算机系Hennesssy教授是现今计算机设计领域非常受人尊敬的学者和开创者。John Hennessy精通硬件/软件，是具有传奇色彩的MIPS编译器和几代MIPS硬件产品的技术上的领导者。David Patterson是RISC最初提倡者之一。他创造...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-2409180-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_2409180_full" class="hidden">
+                    <div id="review_2409180_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="2409180" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-2409180">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="2409180" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-2409180">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/2409180/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/2c558a63ebd7e973.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评14篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/2110638/annotation">共<span property="v:count">8</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="22888359">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22888359/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22888359/" class="">第80页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="22888359">
+              <div class="short">
+                
+                  <span class="">inline优化虽然降低了函数调用的开销，但可能是代码变长，因此可能会降低cache的命中率。
+
+循环展开也是如此。</span>
+                <p class="pl">
+                  <span class="">2012-12-02 17:32</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                inline优化虽然降低了函数调用的开销，但可能是代码变长，因此可能会降低cache的命中率。<div style="padding-bottom:1em;"></div>循环展开也是如此。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22888359/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-02 17:32
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="41654044">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/someonebeaut1fu/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/41654044/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/41654044/" class="">第30页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/someonebeaut1fu/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="41654044">
+              <div class="short">
+                
+                  <span class="">The most important functions of operating systems are:
+
+
+	1. Handling  basic input and output operations
+	2. Allocating storage and memory
+	3. Providing for protected sharing of the computer among multiple applications using it simultaneously
+
+</span>
+                <p class="pl">
+                  <span class="">2017-02-13 21:32</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>The most important functions of operating systems are:
+
+
+	1. Handling  basic input and output operations
+	2. Allocating storage and memory
+	3. Providing for protected sharing of the computer among multiple applications using it simultaneously
+
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/41654044/#comments">回应</a>&nbsp;&nbsp;
+                  2017-02-13 21:32
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="23003381">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23003381/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23003381/" class="">第317页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="23003381">
+              <div class="short">
+                
+                  <span class="">write-through（书上翻译为“写通过”，翻译成“写直达”更好一些）：当处理器发现cache和主存有数据不一致时为了保证一致性（consistance）把数据既写到cache又写到主存。
+
+这种方式的性能很差，因为一次写操作要100个处理器周期。
+
+一种解决方法是是使用写缓冲（write buffer）
+
+另一种方式方式是写回机制（write back），当写操作产生时，新的值仅仅写到cache中，暂时不写主存，只有当这段数据被替换时，才把它写到主存中...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/23003381/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2012-12-07 14:39</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                write-through（书上翻译为“写通过”，翻译成“写直达”更好一些）：当处理器发现cache和主存有数据不一致时为了保证一致性（consistance）把数据既写到cache又写到主存。<div style="padding-bottom:1em;"></div>这种方式的性能很差，因为一次写操作要100个处理器周期。<div style="padding-bottom:1em;"></div>一种解决方法是是使用写缓冲（write buffer）<div style="padding-bottom:1em;"></div>另一种方式方式是写回机制（write back），当写操作产生时，新的值仅仅写到cache中，暂时不写主存，只有当这段数据被替换时，才把它写到主存中去。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23003381/#comments">1回应</a>&nbsp;&nbsp;
+                  2012-12-07 14:39
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22890607">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22890607/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22890607/" class="">第148页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="22890607">
+              <div class="short">
+                
+                  <span class="">数字是无限的，而电路的状态是有限的，所以表示时会有损失，要么损失精度，要么损失范围
+
+第三章先跳过了</span>
+                <p class="pl">
+                  <span class="">2012-12-02 19:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                数字是无限的，而电路的状态是有限的，所以表示时会有损失，要么损失精度，要么损失范围<div style="padding-bottom:1em;"></div>第三章先跳过了
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22890607/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-02 19:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="41654044">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/someonebeaut1fu/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/41654044/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/41654044/" class="">第30页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/someonebeaut1fu/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="41654044">
+              <div class="short">
+                
+                  <span class="">The most important functions of operating systems are:
+
+
+	1. Handling  basic input and output operations
+	2. Allocating storage and memory
+	3. Providing for protected sharing of the computer among multiple applications using it simultaneously
+
+</span>
+                <p class="pl">
+                  <span class="">2017-02-13 21:32</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>The most important functions of operating systems are:
+
+
+	1. Handling  basic input and output operations
+	2. Allocating storage and memory
+	3. Providing for protected sharing of the computer among multiple applications using it simultaneously
+
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/41654044/#comments">回应</a>&nbsp;&nbsp;
+                  2017-02-13 21:32
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22198084">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22198084/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22198084/" class="">第39页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="22198084">
+              <div class="short">
+                
+                  <span class="">硬件设计四个基本原则：
+
+1.简单源自规整（指令操作数个数）
+2.越少越快（寄存器个数）
+3.加速常用操作（量化也提高了）
+4.适当的折中
+
+当前计算机两大特性：
+1.指令以数据的形式表示
+2/程序和数据一样保存在存储器中，可以读写
+
+为了保持双操作数的格式（规整），MIPS引入了（或非）NOR 取代NOT
+
+如果一个操作数是0，那么它的结果等价与NOT
+
+A NOR 0 = NOT（A OR 0）=NOT（A）</span>
+                <p class="pl">
+                  <span class="">2012-11-03 17:19</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                硬件设计四个基本原则：<div style="padding-bottom:1em;"></div>1.简单源自规整（指令操作数个数）<div style="padding-bottom:1em;"></div>2.越少越快（寄存器个数）<div style="padding-bottom:1em;"></div>3.加速常用操作（量化也提高了）<div style="padding-bottom:1em;"></div>4.适当的折中<div style="padding-bottom:1em;"></div>当前计算机两大特性：<div style="padding-bottom:1em;"></div>1.指令以数据的形式表示<div style="padding-bottom:1em;"></div>2/程序和数据一样保存在存储器中，可以读写<div style="padding-bottom:1em;"></div>为了保持双操作数的格式（规整），MIPS引入了（或非）NOR 取代NOT<div style="padding-bottom:1em;"></div>如果一个操作数是0，那么它的结果等价与NOT<div style="padding-bottom:1em;"></div>A NOR 0 = NOT（A OR 0）=NOT（A）
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22198084/#comments">回应</a>&nbsp;&nbsp;
+                  2012-11-03 17:19
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22308757">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22308757/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22308757/" class="">第45页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="22308757">
+              <div class="short">
+                
+                  <span class="">MIPS设置jr（无条件跳转）指令是为了支持软件（switch case语句）
+
+
+p52
+
+$fp并不是必须的，只是有了以后更方便
+
+p59
+
+
+条件分支指令的编址：
+
+【操作码6位】【操作数1：5位】【操作数2：5位】【只有16为编址分支地址】
+
+2^16表示的地址范围太小了
+
+为此我们还要使用一个寄存器，用寄存器+分支地址一共32位来表示跳转地址
+
+问题是哪个寄存器？
+
+PC保存了当前地址，用PC前或后2^16个地址完全可以表示循环和if语...</span>
+                <p class="pl">
+                  <span class="">2012-11-07 22:02</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                MIPS设置jr（无条件跳转）指令是为了支持软件（switch case语句）<div style="padding-bottom:1em;"></div>p52<div style="padding-bottom:1em;"></div>$fp并不是必须的，只是有了以后更方便<div style="padding-bottom:1em;"></div>p59<div style="padding-bottom:1em;"></div>条件分支指令的编址：<div style="padding-bottom:1em;"></div>【操作码6位】【操作数1：5位】【操作数2：5位】【只有16为编址分支地址】<div style="padding-bottom:1em;"></div>2^16表示的地址范围太小了<div style="padding-bottom:1em;"></div>为此我们还要使用一个寄存器，用寄存器+分支地址一共32位来表示跳转地址<div style="padding-bottom:1em;"></div>问题是哪个寄存器？<div style="padding-bottom:1em;"></div>PC保存了当前地址，用PC前或后2^16个地址完全可以表示循环和if语句！
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22308757/#comments">回应</a>&nbsp;&nbsp;
+                  2012-11-07 22:02
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22887978">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22887978/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22887978/" class="">第67页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="22887978">
+              <div class="short">
+                
+                  <span class="">
+### linker的三个步骤
+
+
+
+1.将代码和数据模块按符号特征放入内存
+2.决定数据和指令标记的地址
+3.修改内部和外部引用
+
+
+linker把几个独立的汇编机器语言程序组合起来并且解析所有未定义的标记，最后形成一个可执行文件。
+
+-----------------------
+
+
+### loader用来将磁盘上的可执行文件加载到内存中，并启动它
+
+1.读取可执行文件header，确定正文段和数据段的大小
+2.为正文和数据创建地址空间
+3.把可执行文件..</span>
+                <p class="pl">
+                  <span class="">2012-12-02 17:11</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                
+### linker的三个步骤<div style="padding-bottom:1em;"></div>1.将代码和数据模块按符号特征放入内存<div style="padding-bottom:1em;"></div>2.决定数据和指令标记的地址<div style="padding-bottom:1em;"></div>3.修改内部和外部引用<div style="padding-bottom:1em;"></div>linker把几个独立的汇编机器语言程序组合起来并且解析所有未定义的标记，最后形成一个可执行文件。<div style="padding-bottom:1em;"></div>-----------------------<div style="padding-bottom:1em;"></div>### loader用来将磁盘上的可执行文件加载到内存中，并启动它<div style="padding-bottom:1em;"></div>1.读取可执行文件header，确定正文段和数据段的大小<div style="padding-bottom:1em;"></div>2.为正文和数据创建地址空间<div style="padding-bottom:1em;"></div>3.把可执行文件的指令和数据全部复制到相应地址中<div style="padding-bottom:1em;"></div>4.把主程序参数复制到栈顶（从命令行获取argv）<div style="padding-bottom:1em;"></div>5.初始化机器寄存器，sp指向第一个空单元（sp-1表示第一个元素）<div style="padding-bottom:1em;"></div>6.跳转到启动例程（？），把参数复制到参数寄存器，然后调用main，当main返回后启动例程通过exit终止程序。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22887978/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-02 17:11
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="41654044">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/someonebeaut1fu/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/41654044/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/41654044/" class="">第30页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/someonebeaut1fu/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="41654044">
+              <div class="short">
+                
+                  <span class="">The most important functions of operating systems are:
+
+
+	1. Handling  basic input and output operations
+	2. Allocating storage and memory
+	3. Providing for protected sharing of the computer among multiple applications using it simultaneously
+
+</span>
+                <p class="pl">
+                  <span class="">2017-02-13 21:32</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>The most important functions of operating systems are:
+
+
+	1. Handling  basic input and output operations
+	2. Allocating storage and memory
+	3. Providing for protected sharing of the computer among multiple applications using it simultaneously
+
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/41654044/#comments">回应</a>&nbsp;&nbsp;
+                  2017-02-13 21:32
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="23003381">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23003381/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23003381/" class="">第317页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="23003381">
+              <div class="short">
+                
+                  <span class="">write-through（书上翻译为“写通过”，翻译成“写直达”更好一些）：当处理器发现cache和主存有数据不一致时为了保证一致性（consistance）把数据既写到cache又写到主存。
+
+这种方式的性能很差，因为一次写操作要100个处理器周期。
+
+一种解决方法是是使用写缓冲（write buffer）
+
+另一种方式方式是写回机制（write back），当写操作产生时，新的值仅仅写到cache中，暂时不写主存，只有当这段数据被替换时，才把它写到主存中...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/23003381/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2012-12-07 14:39</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                write-through（书上翻译为“写通过”，翻译成“写直达”更好一些）：当处理器发现cache和主存有数据不一致时为了保证一致性（consistance）把数据既写到cache又写到主存。<div style="padding-bottom:1em;"></div>这种方式的性能很差，因为一次写操作要100个处理器周期。<div style="padding-bottom:1em;"></div>一种解决方法是是使用写缓冲（write buffer）<div style="padding-bottom:1em;"></div>另一种方式方式是写回机制（write back），当写操作产生时，新的值仅仅写到cache中，暂时不写主存，只有当这段数据被替换时，才把它写到主存中去。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23003381/#comments">1回应</a>&nbsp;&nbsp;
+                  2012-12-07 14:39
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22890607">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22890607/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22890607/" class="">第148页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="22890607">
+              <div class="short">
+                
+                  <span class="">数字是无限的，而电路的状态是有限的，所以表示时会有损失，要么损失精度，要么损失范围
+
+第三章先跳过了</span>
+                <p class="pl">
+                  <span class="">2012-12-02 19:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                数字是无限的，而电路的状态是有限的，所以表示时会有损失，要么损失精度，要么损失范围<div style="padding-bottom:1em;"></div>第三章先跳过了
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22890607/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-02 19:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22888359">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/onesuper/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="[已注销]" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22888359/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22888359/" class="">第80页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/onesuper/" class=" " title="[已注销]">[已注销]</a>
+              
+            </p>
+            <div class="reading-note" data-cid="22888359">
+              <div class="short">
+                
+                  <span class="">inline优化虽然降低了函数调用的开销，但可能是代码变长，因此可能会降低cache的命中率。
+
+循环展开也是如此。</span>
+                <p class="pl">
+                  <span class="">2012-12-02 17:32</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                inline优化虽然降低了函数调用的开销，但可能是代码变长，因此可能会降低cache的命中率。<div style="padding-bottom:1em;"></div>循环展开也是如此。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22888359/#comments">回应</a>&nbsp;&nbsp;
+                  2012-12-02 17:32
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/2110638/annotation">更多读书笔记（共8篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/2110638/discussion/43315420/" title="谁有光盘" class="">谁有光盘</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/physwf/">隐竹</a></td>
+            <td class="pl"><span class="">2 回应</span></td>
+            <td class="pl"><span class="">2012-06-06</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/2110638/discussion/17211904/" title="牛书" class="">牛书</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/joyfulmath/">joyfulmath</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2009-06-21</span></td>
+        </tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+    
+  
+  
+  <div class="gray_ad">
+    
+  
+
+  <h2>
+    <span class="">其他版本在豆瓣书店有售</span>
+      ······
+
+  </h2>
+
+
+    <div class="market-banner">
+          <a class="publish" href="https://book.douban.com/subject/26604008/" target="_blank">
+            机械工业出版社版
+          </a><br/>
+      <span class="title">
+        纸质版&nbsp;
+      </span>
+      <span class="price"> 79.20元</span>
+        <span class="price"> <del>99.00元</del></span>
+      <span class="promotion-info">满48元包邮</span>
+      <span class="actions">
+        <a class="buy-btn buy" target="_blank" href="https://market.douban.com/cart/checkout/?sku_id=175274&utm_campaign=douban_book_subject_buy_btn&utm_source=douban&utm_medium=pc_web">
+          去购买
+        </a>
+          <a class="j a_show_login buy-btn cart" href="javascript:;">加入购物车</a>
+      </span>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed" class="no-border">
+        
+  
+
+  <h2>
+    <span class="">其他版本有售</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline">
+            
+              <li class="">
+                  
+                  <a target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=8710&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B006WHDQIS2889742%2F%3Fasin%3DB006WHDQIS%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3DB006WHDQIS%26linkCode%3Ddf0&amp;srcsubj=2110638&amp;type=bkbuy&amp;subject=10441748">
+                    亚马逊
+                  </a>
+                  <a class="buylink-price" target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=8710&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B006WHDQIS2889742%2F%3Fasin%3DB006WHDQIS%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3DB006WHDQIS%26linkCode%3Ddf0&amp;srcsubj=2110638&amp;type=bkbuy&amp;subject=10441748">
+                    <span class=""> 87.10 元</span>
+                  </a>
+                  <p class="publish">
+                    <a href="https://book.douban.com/subject/10441748/" onclick="moreurl(this,{buylink:'other'})"
+                    class=" ">机械工业出版社版</a>
+                  </p>
+                </li>
+            
+              <li class="">
+                  
+                  <a target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=7820&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgFWE1MVBCJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIUBF0TWxMdS0IJRmtwA0RAExM6a2dLeQp8A1cFa0MXSC5TDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBtTEwQaBFQrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBBEPXRtdCltXWwg%253D&amp;srcsubj=2110638&amp;type=bkbuy&amp;subject=26604008">
+                    京东商城
+                  </a>
+                  <a class="buylink-price" target="_blank" href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=7820&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgFWE1MVBCJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIUBF0TWxMdS0IJRmtwA0RAExM6a2dLeQp8A1cFa0MXSC5TDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBtTEwQaBFQrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBBEPXRtdCltXWwg%253D&amp;srcsubj=2110638&amp;type=bkbuy&amp;subject=26604008">
+                    <span class=""> 78.20 元</span>
+                  </a>
+                  <p class="publish">
+                    <a href="https://book.douban.com/subject/26604008/" onclick="moreurl(this,{buylink:'other'})"
+                    class=" ">机械工业出版社版</a>
+                  </p>
+                </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D9787111202141&amp;subject=7111202147&amp;type=borrow&amp;library=10001&amp;link2key=61bd2835de" target="_blank">上海图书馆(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac.gzlib.gov.cn%2Fopac%2Fsearch%3Frows%3D10%26curlibcode%3DGT%26hasholding%3D1%26searchWay0%3Dmarc%26q0%3D%26logical0%3DAND%26q%3D9787111202141%26searchWay%3Disbn%26scWay%3Ddim%26searchSource%3Dreader&amp;subject=7111202147&amp;type=borrow&amp;library=10023&amp;link2key=61bd2835de" target="_blank">广州其他馆藏(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fourex.lib.sjtu.edu.cn%2Fprimo_library%2Flibweb%2Faction%2Fsearch.do%3Ffn%3Dsearch%26vl%28freeText0%29%3D978-7-111-20214-1&amp;subject=7111202147&amp;type=borrow&amp;library=10006&amp;link2key=61bd2835de" target="_blank">上海交通大学图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac3.wzlib.cn%2Fopac%2Fsearch%3FsearchWay%3Disbn%26q%3D978-7-111-20214-1%26booktype%3D%26marcformat%3D%26sortWay%3Dscore%26sortOrder%3Ddesc%26startPubdate%3D%26endPubdate%3D%26rows%3D10&amp;subject=7111202147&amp;type=borrow&amp;library=10020&amp;link2key=61bd2835de" target="_blank">温州市图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1028302">全部16</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/10441748/">机械工业出版社版</a>
+          2012-1 / 88人读过 / 有售
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1468468/">Morgan Kaufmann版</a>
+          2004-08-02 / 82人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/3161831/">Morgan Kaufmann版</a>
+          2008-11-10 / 52人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1852531/">机械工业出版社版</a>
+          2006-7 / 48人读过
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/2110638/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/387968/" target="_blank">改变自己▶编程</a>
+                <span class="pl">(Chain)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/41855072/" target="_blank">开启你的上帝视角（心灵与哲学）</a>
+                <span class="pl">(Qin)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1205891/" target="_blank">计算机科学丛书·机械工业出版社</a>
+                <span class="pl">(小国民尼谟)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/556700/" target="_blank">MIT计算机课程</a>
+                <span class="pl">(joyfulmath)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/685004/" target="_blank">ACM班书单</a>
+                <span class="pl">(六琴)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/103510487/"><img src="https://img1.doubanio.com/icon/u103510487-57.jpg" class="pil" alt="hey jude" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/103510487/">hey jude</a><br/>
+      <div class="pl ll">          1月11日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/126186992/"><img src="https://img3.doubanio.com/icon/u126186992-2.jpg" class="pil" alt="HASIAKE" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/126186992/">HASIAKE</a><br/>
+      <div class="pl ll">          1月11日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:编程</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/142236671/"><img src="https://img3.doubanio.com/icon/u142236671-1.jpg" class="pil" alt="午鱼" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/142236671/">午鱼</a><br/>
+      <div class="pl ll">          1月11日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/2110638/doings">118人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/2110638/collections">222人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/2110638/wishes">1332人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/2110638/offers">11本二手书欲转让</a>
+          <span class="">
+            (15.00
+                至 63.00元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有1332人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于计算机组成与设计硬件/软件接口的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/2110638/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'aKsRlth067E',
+            criteria = '7:计算机|7:组成原理|7:体系结构|7:计算机科学|7:计算机组成|7:计算机系统|7:硬件|7:经典|7:计算机组成原理|7:I/O|3:/subject/2110638/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- nain8-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

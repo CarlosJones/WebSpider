@@ -1,0 +1,3093 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>算法图解 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/26979890/">
+<meta name="keywords" content="算法图解,[美] Aditya Bhargava,人民邮电出版社,2017-3,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书算法图解 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/26979890/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/5ef2a22fba637133.css">
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">算法图解</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s29358625.jpg" title="算法图解">
+    <img src="https://img3.doubanio.com/lpic/s29358625.jpg" title="点击看大图" alt="算法图解"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Aditya%20Bhargava">[美] Aditya Bhargava</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 人民邮电出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E8%A2%81%E5%9B%BD%E5%BF%A0">袁国忠</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2017-3<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 196<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 49.00元<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+    <span class="pl">丛书:</span>&nbsp;<a href="https://book.douban.com/series/660">图灵程序设计丛书</a><br>
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787115447630<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 8.2 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar40"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">206</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:49px"></div>
+
+            <span class="rating_per">35.0%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">45.1%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:25px"></div>
+
+            <span class="rating_per">18.0%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">1.5%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.5%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26979890-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26979890-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26979890-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26979890-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26979890-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26979890-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26979890-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26979890-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-26979890">
+        <a href="#" data-url="https://book.douban.com/subject/26979890/" data-desc="" data-title="书籍《算法图解》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s29358625.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_26979890"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>本书示例丰富，图文并茂，以让人容易理解的方式阐释了算法，旨在帮助程序员在日常项目中更好地发挥算法的能量。书中的前三章将帮助你打下基础，带你学习二分查找、大O表示法、两种基本的数据结构以及递归等。余下的篇幅将主要介绍应用广泛的算法，具体内容包括：面对具体问题时的解决技巧，比如，何时采用贪婪算法或动态规划；散列表的应用；图算法；K最近邻算法。</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/26979890/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <div class="">
+            <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>Aditya Bhargava</p>    <p>软件工程师，兼具计算机科学和美术方面的教育背景，在adit.io撰写编程方面的博客。</p></div>
+
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_26979890_short">
+        第1章　算法简介　　1<br/>
+        1.1　引言　　1<br/>
+        1.1.1　性能方面　　1<br/>
+        1.1.2　问题解决技巧　　2<br/>
+        1.2　二分查找　　2<br/>
+        1.2.1　更佳的查找方式　　4<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_26979890_short').hide();$('#dir_26979890_full').show();$.get('/j/subject/j_dir_count',{id:26979890});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_26979890_full" style="display:none">
+        第1章　算法简介　　1<br/>
+        1.1　引言　　1<br/>
+        1.1.1　性能方面　　1<br/>
+        1.1.2　问题解决技巧　　2<br/>
+        1.2　二分查找　　2<br/>
+        1.2.1　更佳的查找方式　　4<br/>
+        1.2.2　运行时间　　8<br/>
+        1.3　大O表示法　　8<br/>
+        1.3.1　算法的运行时间以不同的速度增加　　9<br/>
+        1.3.2　理解不同的大O运行时间　　10<br/>
+        1.3.3　大O表示法指出了最糟情况下的运行时间　　12<br/>
+        1.3.4　一些常见的大O运行时间　　12<br/>
+        1.3.5　旅行商　　13<br/>
+        1.4　小结　　15<br/>
+        第2章　选择排序　　16<br/>
+        2.1　内存的工作原理　　16<br/>
+        2.2　数组和链表　　18<br/>
+        2.2.1　链表　　19<br/>
+        2.2.2　数组　　20<br/>
+        2.2.3　术语　　21<br/>
+        2.2.4　在中间插入　　22<br/>
+        2.2.5　删除　　23<br/>
+        2.3　选择排序　　25<br/>
+        2.4　小结　　28<br/>
+        第3章　递归　　29<br/>
+        3.1　递归　　29<br/>
+        3.2　基线条件和递归条件　　32<br/>
+        3.3　栈　　33<br/>
+        3.3.1　调用栈　　34<br/>
+        3.3.2　递归调用栈　　36<br/>
+        3.4　小结　　40<br/>
+        第4章　快速排序　　41<br/>
+        4.1　分而治之　　41<br/>
+        4.2　快速排序　　47<br/>
+        4.3　再谈大O表示法　　52<br/>
+        4.3.1　比较合并排序和快速排序　　53<br/>
+        4.3.2　平均情况和最糟情况　　54<br/>
+        4.4　小结　　57<br/>
+        第5章　散列表　　58<br/>
+        5.1　散列函数　　60<br/>
+        5.2　应用案例　　63<br/>
+        5.2.1　将散列表用于查找　　63<br/>
+        5.2.2　防止重复　　64<br/>
+        5.2.3　将散列表用作缓存　　66<br/>
+        5.2.4　小结　　 68<br/>
+        5.3　冲突　　69<br/>
+        5.4　性能　　71<br/>
+        5.4.1　填装因子　　72<br/>
+        5.4.2　良好的散列函数　　74<br/>
+        5.5　小结　　75<br/>
+        第6章　广度优先搜索　　76<br/>
+        6.1　图简介　　77<br/>
+        6.2　图是什么　　79<br/>
+        6.3　广度优先搜索　　79<br/>
+        6.3.1　查找最短路径　　82<br/>
+        6.3.2　队列　　 83<br/>
+        6.4　实现图　　84<br/>
+        6.5　实现算法　　86<br/>
+        6.6　小结　　93<br/>
+        第7章　狄克斯特拉算法　　94<br/>
+        7.1　使用狄克斯特拉算法　　95<br/>
+        7.2　术语　　98<br/>
+        7.3　换钢琴　　100<br/>
+        7.4　负权边　　105<br/>
+        7.5　实现　　108<br/>
+        7.6　小结　　116<br/>
+        第8章　贪婪算法　　117<br/>
+        8.1　教室调度问题　　117<br/>
+        8.2　背包问题　　119<br/>
+        8.3　集合覆盖问题　　121<br/>
+        8.4　NP 完全问题　　127<br/>
+        8.4.1　旅行商问题详解　　127<br/>
+        8.4.2　如何识别NP完全问题　　131<br/>
+        8.5　小结　　133<br/>
+        第9章　动态规划　　134<br/>
+        9.1　背包问题　　134<br/>
+        9.1.1　简单算法　　135<br/>
+        9.1.2　动态规划　　136<br/>
+        9.2　背包问题FAQ　　143<br/>
+        9.2.1　再增加一件商品将如何呢　　143<br/>
+        9.2.2　行的排列顺序发生变化时结果将如何　　145<br/>
+        9.2.3　可以逐列而不是逐行填充网格吗　　146<br/>
+        9.2.4　增加一件更小的商品将如何呢　　146<br/>
+        9.2.5　可以偷商品的一部分吗　　146<br/>
+        9.2.6　旅游行程最优化　　147<br/>
+        9.2.7　处理相互依赖的情况　　148<br/>
+        9.2.8　计算最终的解时会涉及两<br/>
+        个以上的子背包吗　　148<br/>
+        9.2.9　最优解可能导致背包没装满吗　　149<br/>
+        9.3　最长公共子串　　149<br/>
+        9.3.1　绘制网格　　150<br/>
+        9.3.2　填充网格　　151<br/>
+        9.3.3　揭晓答案　　152<br/>
+        9.3.4　最长公共子序列　　153<br/>
+        9.3.5　最长公共子序列之解决方案　　154<br/>
+        9.4　小结　　155<br/>
+        第10章　K最近邻算法　　156<br/>
+        10.1　橙子还是柚子　　156<br/>
+        10.2　创建推荐系统　　158<br/>
+        10.2.1　特征抽取　　159<br/>
+        10.2.2　回归　　162<br/>
+        10.2.3　挑选合适的特征　　164<br/>
+        10.3　机器学习简介　　165<br/>
+        10.3.1　OCR　　165<br/>
+        10.3.2　创建垃圾邮件过滤器　　166<br/>
+        10.3.3　预测股票市场　　167<br/>
+        10.4　小结　　167<br/>
+        第11章　接下来如何做　　168<br/>
+        11.1　树　　168<br/>
+        11.2　反向索引　　171<br/>
+        11.3　傅里叶变换　　 171<br/>
+        11.4　并行算法　　172<br/>
+        11.5　MapReduce　　173<br/>
+        11.5.1　分布式算法为何很有用　　173<br/>
+        11.5.2　映射函数　　173<br/>
+        11.5.3　归并函数　　174<br/>
+        11.6　布隆过滤器和HyperLogLog　　174<br/>
+        11.6.1　布隆过滤器　　175<br/>
+        11.6.2　HyperLogLog　　176<br/>
+        11.7　SHA算法　　176<br/>
+        11.7.1　比较文件　　177<br/>
+        11.7.2　检查密码　　178<br/>
+        11.8　局部敏感的散列算法　　178<br/>
+        11.9　Diffie-Hellman密钥交换　　179<br/>
+        11.10　线性规划　　180<br/>
+        11.11　结语　　180<br/>
+        练习答案　　 181<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_26979890_full').hide();$('#dir_26979890_short').show();void(0);">收起</a>)
+</div>
+
+    
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">&#34;算法图解&#34;试读</span>
+      ······
+
+  </h2>
+
+
+<div class="indent">
+<p>
+我因为爱好而踏入了编程殿堂。Visual Basic 6 for Dummies教会了我基础知识，接着我不断阅读，学到的知识也越来越多，但对算法却始终没搞明白。至今我还记得购买第一本算法书后的情景：我琢磨着目录，心想终于要把这些主题搞明白了。但那本书深奥难懂，看了几周后我就放弃了。直到遇到一位优秀的算法教授后，我才认识到这些概念是多么地简单而优雅。
+几年前，我撰写了第一篇图解式博文...</p>
+<ul class="col2-list clearfix">
+
+<li>
+    <a href="https://book.douban.com/reading/41802631/">前　　言</a>
+</li>
+</ul>
+<div align="right">  · · · · · ·    (<a href="https://book.douban.com/subject/26979890/reading/">查看全部试读</a>)</div>
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '26979890',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共44个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/算法">算法</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Python">Python</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/初级">初级</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Programming">Programming</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/IT">IT</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/IT类">IT类</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+<div class="subject_show block5">
+<h2>丛书信息</h2>
+<div>
+　　<a href="https://book.douban.com/series/660">图灵程序设计丛书 (共136册)</a>,
+这套丛书还有
+《图灵程序设计丛书：学习R》,《有趣的二进制》,《编程导论》,《Python参考手册（第4版）》,《编译器设计》    等。</div>
+</div>
+<script>
+$(function(){$(".knnlike a").click(function(){return moreurl(this,{'from':'knnlike'})})})
+</script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;算法图解&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/12054542/?dcs=subject-rec&amp;dcm=douban&amp;dct=26979890" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/12054542.jpg?v=1439367581.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/12054542/" target="_blank">图解HTTP</a>
+          </div>
+          <div class="price">
+              19.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/12186524/?dcs=subject-rec&amp;dcm=douban&amp;dct=26979890" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/12186524.jpg?v=1444719436.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/12186524/" target="_blank">代码之髓：编程语言核心概念</a>
+          </div>
+          <div class="price">
+              22.50元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/42792656/?dcs=subject-rec&amp;dcm=douban&amp;dct=26979890" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/42792656.jpg?v=1511317992.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/42792656/" target="_blank">时间旅行简史</a>
+          </div>
+          <div class="price">
+              24.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/29503577/?dcs=subject-rec&amp;dcm=douban&amp;dct=26979890" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/29503577.jpg?v=1483696434.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/29503577/" target="_blank">JavaScript编程精解（原书第2版）</a>
+          </div>
+          <div class="price">
+              30.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1499455/?dcs=subject-rec&amp;dcm=douban&amp;dct=26979890" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1499455.jpg?v=1395393904.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1499455/" target="_blank">Python源码剖析</a>
+          </div>
+          <div class="price">
+              38.39元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;算法图解&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26941639/" onclick="moreurl(this, {'total': 10, 'clicked': '26941639', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29317812.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26941639/" onclick="moreurl(this, {'total': 10, 'clicked': '26941639', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            网络是怎样连接的
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/27028517/" onclick="moreurl(this, {'total': 10, 'clicked': '27028517', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29434304.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/27028517/" onclick="moreurl(this, {'total': 10, 'clicked': '27028517', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            流畅的Python
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26832701/" onclick="moreurl(this, {'total': 10, 'clicked': '26832701', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28878966.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26832701/" onclick="moreurl(this, {'total': 10, 'clicked': '26832701', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            白话大数据与机器学习
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26365491/" onclick="moreurl(this, {'total': 10, 'clicked': '26365491', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28047380.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26365491/" onclick="moreurl(this, {'total': 10, 'clicked': '26365491', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            程序是怎样跑起来的
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26821588/" onclick="moreurl(this, {'total': 10, 'clicked': '26821588', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28827840.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26821588/" onclick="moreurl(this, {'total': 10, 'clicked': '26821588', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            写给大家看的算法书
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4823621/" onclick="moreurl(this, {'total': 10, 'clicked': '4823621', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s4351127.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4823621/" onclick="moreurl(this, {'total': 10, 'clicked': '4823621', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Python 3 Object Oriented Program...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26829016/" onclick="moreurl(this, {'total': 10, 'clicked': '26829016', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28891775.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26829016/" onclick="moreurl(this, {'total': 10, 'clicked': '26829016', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            Python编程：从入门到实践
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26826540/" onclick="moreurl(this, {'total': 10, 'clicked': '26826540', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28850686.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26826540/" onclick="moreurl(this, {'total': 10, 'clicked': '26826540', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            Python数据挖掘入门与实践
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26933281/" onclick="moreurl(this, {'total': 10, 'clicked': '26933281', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29317811.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26933281/" onclick="moreurl(this, {'total': 10, 'clicked': '26933281', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            图解设计模式
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26836700/" onclick="moreurl(this, {'total': 10, 'clicked': '26836700', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29400403.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26836700/" onclick="moreurl(this, {'total': 10, 'clicked': '26836700', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            Python编程快速上手
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/26979890/comments/">全部 100 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="1237402671">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1237402671" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1237402671" class="j a_show_login" data-cid="1237402671">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/Quantum_Panda/">陈朝</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-09-01</span>
+                </span>
+            </h3>
+            <p class="comment-content">好看！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1241702168">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1241702168" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1241702168" class="j a_show_login" data-cid="1241702168">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/awpboxer/">猫丢了的莫教授</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-09-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">适合给本科生以下的初学者。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1289412225">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1289412225" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1289412225" class="j a_show_login" data-cid="1289412225">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/49913314/">雨天﹑流浪</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">的确很简单，也很通俗易懂，科普一些常用的算法，看完对算法有了初步的印象，如快速排序，二分查找，背包问题，机器学习等。#eBook</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1262590993">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1262590993" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1262590993" class="j a_show_login" data-cid="1262590993">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/139740555/">包子</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-10-27</span>
+                </span>
+            </h3>
+            <p class="comment-content">通俗易懂，算法中重要的知识点都有。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1172774390">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1172774390" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1172774390" class="j a_show_login" data-cid="1172774390">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/70518379/">贫道爱妖孽</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-04-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">适合零基础当做入门科普读物吧，书中的python代码不多，还算直观。买这本书是冲着python代码去的。有点小失落，理论部分还行。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1305894290">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1305894290" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1305894290" class="j a_show_login" data-cid="1305894290">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/158995415/">陈叔叔</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2018-01-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">写的很好，通俗易懂的算法入门书，推荐</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1301988144">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1301988144" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1301988144" class="j a_show_login" data-cid="1301988144">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/66401989/">严肃的白小白</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2018-01-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">很生动形象的一本算法入门书籍，适合对算法感兴趣的人阅读。算法对于一般人来说，第一印象就是复杂，枯燥，难懂。但是这本书让入门者不会有这些困惑。虽然前几章只是对二分法等几个很简单基础的进行详细的讲解，后半部分只是对贪婪算法动态规划等算法进行了简单的介绍，但是作为一本入门的偏向于科普的算法书，已经是很棒了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1301079802">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1301079802" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1301079802" class="j a_show_login" data-cid="1301079802">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/148577825/">北城旧事</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2018-01-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">挺好的一本书呢，可以加深对算法的理解。浅显易懂，力荐！！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1301030132">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1301030132" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1301030132" class="j a_show_login" data-cid="1301030132">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/170834986/">浮客</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2018-01-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">对传统算法的讲解深入浅出，令人豁然开朗，适合做入门书或参考书。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1299890899">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1299890899" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1299890899" class="j a_show_login" data-cid="1299890899">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/58347330/">风啦啦吹</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2018-01-04</span>
+                </span>
+            </h3>
+            <p class="comment-content">和《啊哈算法》一个层面的入门书籍，没有严格的数学推导，会有一个很直观的印象。
+同时：
+1. 关于快拍的nlogn证明还是蛮有趣的
+2. DP里面的最长公共子串，总感觉配图有问题。
+3. K临近描述的很好。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/26979890/comments/">更多短评 100 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            算法图解的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 26979890;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/26979890/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            算法图解的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 2 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="8474351">
+        <div class="main review-item" id="8474351">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/chenge/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1001000-16.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/chenge/" property="v:reviewer" class="name">chenge</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2017-04-12" class="main-meta">2017-04-12 17:39:51</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/8474351/">最好的算法入门书</a></h2>
+
+                <div id="review_8474351_short" class="review-short" data-rid="8474351">
+                    <div class="short-content">
+
+                        算法教科书通常让人昏昏欲睡，麻烦就在于算法是绕不开的必修课。以前大学有这个课程，看过几本算法书，都不太满意，看不懂很打击自信心。  而这本图解书确实有所突破，很容易看懂，不枯燥。书不到200页，我几个小时就看了一半。虽然都是些入门级的算法，经过作者梳理后就很清晰...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-8474351-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_8474351_full" class="hidden">
+                    <div id="review_8474351_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="8474351" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-8474351">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="8474351" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-8474351">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/8474351/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="9034673">
+        <div class="main review-item" id="9034673">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/79168453/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u79168453-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/79168453/" property="v:reviewer" class="name">半研墨</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2018-01-01" class="main-meta">2018-01-01 12:01:42</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/9034673/">零基础建立对算法基本认知的最好看的科普性质的算法入门书！</a></h2>
+
+                <div id="review_9034673_short" class="review-short" data-rid="9034673">
+                    <div class="short-content">
+
+                        有一句很出名的话：程序＝数据结构＋算法。其实表达的意思是说数据结构是程序的骨架，算法是程序的灵魂。所以数据结构和算法是非常复杂，抽象，和不好理解的知识。 即使是cs科班出身的程序员，能把数据结构和算法掌握好也是一件不容易的事情。或许是因为如此，我们看到讲数据结...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-9034673-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_9034673_full" class="hidden">
+                    <div id="review_9034673_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="9034673" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-9034673">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="9034673" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-9034673">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/9034673/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/1c3b98036fe2745.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评2篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+      
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="47950513">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/villim/"><img src="https://img1.doubanio.com/icon/u2178546-8.jpg" alt="villim" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/47950513/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/47950513/" class="">第七章 Dijkstra&#39;s algorithm</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/villim/" class=" " title="villim">villim</a>
+                (I think, therefore I am)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="47950513">
+              <div class="short">
+                
+                  <span class="">补充 Bellman-ford algorithm 贝尔曼-福特算法的最多运行 O（|V|·|E|)  次，|V|和|E|分别是节点和边的数量）。 伪代码表示 procedure BellmanFord(list vertices, list edges, vertex source) // 该实现读入边和节点的列表，并向两个数组（distance和predecessor）中写入最短路径信息 // 步骤1：初始化图 for each vertex v in vertices: if v is source then distance[v] := 0 else distance[v] := infinity predecessor[v] :...</span>
+                <p class="pl">
+                  <span class="">2017-09-22 15:09</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>补充 Bellman-ford algorithm</p><p>贝尔曼-福特算法的最多运行 <a href="https://www.wikiwand.com/zh-hans/%E5%A4%A7O%E7%AC%A6%E5%8F%B7" rel="nofollow" target="_blank">O</a>（|<span style="font-style: italic;">V</span>|·|<span style="font-style: italic;">E</span>|)  次，|<span style="font-style: italic;">V</span>|和|<span style="font-style: italic;">E</span>|分别是节点和边的数量）。</p><h2>伪代码表示</h2><p><span style="font-weight: bold;">procedure</span> BellmanFord(<span style="font-style: italic;">list</span> vertices, <span style="font-style: italic;">list</span> edges, <span style="font-style: italic;">vertex</span> source)
+   // 该实现读入边和节点的列表，并向两个数组（distance和predecessor）中写入最短路径信息
+
+   // 步骤1：初始化图
+   <span style="font-weight: bold;">for each</span> vertex v <span style="font-weight: bold;">in</span> vertices:
+       <span style="font-weight: bold;">if</span> v <span style="font-weight: bold;">is</span> source <span style="font-weight: bold;">then</span> distance[v] := 0
+       <span style="font-weight: bold;">else</span> distance[v] := <span style="font-weight: bold;">infinity</span>
+       predecessor[v] := <span style="font-weight: bold;">null</span>
+
+   // 步骤2：重复对每一条边进行松弛操作
+   <span style="font-weight: bold;">for</span> i <span style="font-weight: bold;">from</span> 1 <span style="font-weight: bold;">to</span> size(vertices)-1:
+       <span style="font-weight: bold;">for each</span> edge (u, v) <span style="font-weight: bold;">with</span> weight w <span style="font-weight: bold;">in</span> edges:
+           <span style="font-weight: bold;">if</span> distance[u] + w &lt; distance[v]:
+               distance[v] := distance[u] + w
+               predecessor[v] := u
+
+   // 步骤3：检查负权环
+   <span style="font-weight: bold;">for each</span> edge (u, v) <span style="font-weight: bold;">with</span> weight w <span style="font-weight: bold;">in</span> edges:
+       <span style="font-weight: bold;">if</span> distance[u] + w &lt; distance[v]:
+           <span style="font-weight: bold;">error</span> "图包含了负权环"</p><p></p><p>P.S.</p><p>SPFA（Shortest Path Faster Algorithm）算法，是西南交通大学段凡丁于 1994 年发表的，其在 Bellman-ford 算法的基础上加上一个队列优化，减少了冗余的松弛操作。</p><p></p><p></p><p>
+<span style="font-weight: bold;">算法时间 - 复杂度  - 原理</span></p><p>Dijkstra - O((m+n)logn) - 贪心</p><p>BellmanFord - O(nm) - 动态规划</p><p>SPFA - ≤O(n^3) - 贪心</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/47950513/#comments">回应</a>&nbsp;&nbsp;
+                  2017-09-22 15:09
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="47371986">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/villim/"><img src="https://img1.doubanio.com/icon/u2178546-8.jpg" alt="villim" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/47371986/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/47371986/" class="">大O表示法</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/villim/" class=" " title="villim">villim</a>
+                (I think, therefore I am)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="47371986">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/47371986/"><img src="https://img3.doubanio.com/view/page_note/small/public/p47371986-1.jpg"></a>
+                  </div>
+                  <span class="">大O表示法（稍后介绍）讨论运行时间时， log指的都是log2。 使用大O表示法，这个运行时间为O(n)。单位秒呢？没有——大O表示法指的并非以秒为单位的速度。 大O表示法让你能够比较操作数，它指出了算法运行时间的增速。 下面按从快到慢的顺序列出了你经常会遇到的5种大O运行时间。  O(log n)，也叫对数时间，这样的算法包括二分查找。  O(n)，也叫线性时间，这样的算法包括简单查找。  O(n * log n)，这样的算法包括...</span>
+                <p class="pl">
+                  <span class="">2017-09-01 11:24</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>大O表示法（稍后介绍）讨论运行时间时， log指的都是log2。</blockquote><blockquote>使用大O表示法，这个运行时间为O(n)。单位秒呢？没有——大O表示法指的并非以秒为单位的速度。 大O表示法让你能够比较操作数，它指出了算法运行时间的增速。</blockquote><p></p><p></p><blockquote>下面按从快到慢的顺序列出了你经常会遇到的5种大O运行时间。</blockquote><blockquote> O(log n)，也叫对数时间，这样的算法包括二分查找。</blockquote><blockquote> O(n)，也叫线性时间，这样的算法包括简单查找。</blockquote><blockquote> O(n * log n)，这样的算法包括第4章将介绍的快速排序——一种速度较快的排序算法。</blockquote><blockquote> O(n2)，这样的算法包括第2章将介绍的选择排序——一种速度较慢的排序算法。</blockquote><blockquote> O(n!)，这样的算法包括接下来将介绍的旅行商问题的解决方案——一种非常慢的算法。</blockquote><p></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-1.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">算法曲线图</div></div></div><p></p><blockquote>当前，我们获得的主要启示如下</blockquote><blockquote> 算法的速度指的并非时间，而是操作数的增速。</blockquote><blockquote> 谈论算法的速度时，我们说的是随着输入的增加，其运行时间将以什么样的速度增加。</blockquote><blockquote> 算法的运行时间用大O表示法表示。</blockquote><blockquote> O(log n)比O(n)快，当需要搜索的元素越多时，前者比后者快得越多。</blockquote><p></p><p></p><p>补充：More about Logrithm (对数）</p><p><span style="font-weight: bold;">(1) Definition</span></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-2.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">logrithm definition</div></div></div><p><span style="font-weight: bold;">(2) Logrithm Properties:</span></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-3.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">logrithm properties</div></div></div><h2>(These properties apply for any values of M<span style="font-style: italic;">M</span>M, N<span style="font-style: italic;">N</span>N, and b<span style="font-style: italic;">b</span>b for which each logarithm is defined, which is M<span style="font-style: italic;">M</span>M, N&gt;0<span style="font-style: italic;">N</span>&gt;0N, is greater than, 0 and 0&lt;b≠10&lt;<span style="font-style: italic;">b</span>≠10, is less than, b, does not equal, 1.)</h2><p></p><h2><span style="font-weight: bold;">Important note</span></h2><p>When we compress logarithmic expressions using the quotient rule, the bases of all logarithms in the expression <span style="font-weight: bold;">must</span> be the same.</p><p></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-4.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">change of base rule</div></div></div><p>Notes:</p><ul><li>When using this property, you can choose to change the logarithm to <span style="font-style: italic;">any</span>base x<span style="font-style: italic;">x</span>start color greenE, x, end color greenE.</li><li>As always, the arguments of the logarithms must be positive and the bases of the logarithms must be positive and not equal to 1  in order for this property to hold!</li></ul>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/47371986/#comments">回应</a>&nbsp;&nbsp;
+                  2017-09-01 11:24
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="47950513">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/villim/"><img src="https://img1.doubanio.com/icon/u2178546-8.jpg" alt="villim" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/47950513/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/47950513/" class="">第七章 Dijkstra&#39;s algorithm</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/villim/" class=" " title="villim">villim</a>
+                (I think, therefore I am)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="47950513">
+              <div class="short">
+                
+                  <span class="">补充 Bellman-ford algorithm 贝尔曼-福特算法的最多运行 O（|V|·|E|)  次，|V|和|E|分别是节点和边的数量）。 伪代码表示 procedure BellmanFord(list vertices, list edges, vertex source) // 该实现读入边和节点的列表，并向两个数组（distance和predecessor）中写入最短路径信息 // 步骤1：初始化图 for each vertex v in vertices: if v is source then distance[v] := 0 else distance[v] := infinity predecessor[v] :...</span>
+                <p class="pl">
+                  <span class="">2017-09-22 15:09</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>补充 Bellman-ford algorithm</p><p>贝尔曼-福特算法的最多运行 <a href="https://www.wikiwand.com/zh-hans/%E5%A4%A7O%E7%AC%A6%E5%8F%B7" rel="nofollow" target="_blank">O</a>（|<span style="font-style: italic;">V</span>|·|<span style="font-style: italic;">E</span>|)  次，|<span style="font-style: italic;">V</span>|和|<span style="font-style: italic;">E</span>|分别是节点和边的数量）。</p><h2>伪代码表示</h2><p><span style="font-weight: bold;">procedure</span> BellmanFord(<span style="font-style: italic;">list</span> vertices, <span style="font-style: italic;">list</span> edges, <span style="font-style: italic;">vertex</span> source)
+   // 该实现读入边和节点的列表，并向两个数组（distance和predecessor）中写入最短路径信息
+
+   // 步骤1：初始化图
+   <span style="font-weight: bold;">for each</span> vertex v <span style="font-weight: bold;">in</span> vertices:
+       <span style="font-weight: bold;">if</span> v <span style="font-weight: bold;">is</span> source <span style="font-weight: bold;">then</span> distance[v] := 0
+       <span style="font-weight: bold;">else</span> distance[v] := <span style="font-weight: bold;">infinity</span>
+       predecessor[v] := <span style="font-weight: bold;">null</span>
+
+   // 步骤2：重复对每一条边进行松弛操作
+   <span style="font-weight: bold;">for</span> i <span style="font-weight: bold;">from</span> 1 <span style="font-weight: bold;">to</span> size(vertices)-1:
+       <span style="font-weight: bold;">for each</span> edge (u, v) <span style="font-weight: bold;">with</span> weight w <span style="font-weight: bold;">in</span> edges:
+           <span style="font-weight: bold;">if</span> distance[u] + w &lt; distance[v]:
+               distance[v] := distance[u] + w
+               predecessor[v] := u
+
+   // 步骤3：检查负权环
+   <span style="font-weight: bold;">for each</span> edge (u, v) <span style="font-weight: bold;">with</span> weight w <span style="font-weight: bold;">in</span> edges:
+       <span style="font-weight: bold;">if</span> distance[u] + w &lt; distance[v]:
+           <span style="font-weight: bold;">error</span> "图包含了负权环"</p><p></p><p>P.S.</p><p>SPFA（Shortest Path Faster Algorithm）算法，是西南交通大学段凡丁于 1994 年发表的，其在 Bellman-ford 算法的基础上加上一个队列优化，减少了冗余的松弛操作。</p><p></p><p></p><p>
+<span style="font-weight: bold;">算法时间 - 复杂度  - 原理</span></p><p>Dijkstra - O((m+n)logn) - 贪心</p><p>BellmanFord - O(nm) - 动态规划</p><p>SPFA - ≤O(n^3) - 贪心</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/47950513/#comments">回应</a>&nbsp;&nbsp;
+                  2017-09-22 15:09
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="47371986">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/villim/"><img src="https://img1.doubanio.com/icon/u2178546-8.jpg" alt="villim" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/47371986/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/47371986/" class="">大O表示法</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/villim/" class=" " title="villim">villim</a>
+                (I think, therefore I am)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="47371986">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/47371986/"><img src="https://img3.doubanio.com/view/page_note/small/public/p47371986-1.jpg"></a>
+                  </div>
+                  <span class="">大O表示法（稍后介绍）讨论运行时间时， log指的都是log2。 使用大O表示法，这个运行时间为O(n)。单位秒呢？没有——大O表示法指的并非以秒为单位的速度。 大O表示法让你能够比较操作数，它指出了算法运行时间的增速。 下面按从快到慢的顺序列出了你经常会遇到的5种大O运行时间。  O(log n)，也叫对数时间，这样的算法包括二分查找。  O(n)，也叫线性时间，这样的算法包括简单查找。  O(n * log n)，这样的算法包括...</span>
+                <p class="pl">
+                  <span class="">2017-09-01 11:24</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>大O表示法（稍后介绍）讨论运行时间时， log指的都是log2。</blockquote><blockquote>使用大O表示法，这个运行时间为O(n)。单位秒呢？没有——大O表示法指的并非以秒为单位的速度。 大O表示法让你能够比较操作数，它指出了算法运行时间的增速。</blockquote><p></p><p></p><blockquote>下面按从快到慢的顺序列出了你经常会遇到的5种大O运行时间。</blockquote><blockquote> O(log n)，也叫对数时间，这样的算法包括二分查找。</blockquote><blockquote> O(n)，也叫线性时间，这样的算法包括简单查找。</blockquote><blockquote> O(n * log n)，这样的算法包括第4章将介绍的快速排序——一种速度较快的排序算法。</blockquote><blockquote> O(n2)，这样的算法包括第2章将介绍的选择排序——一种速度较慢的排序算法。</blockquote><blockquote> O(n!)，这样的算法包括接下来将介绍的旅行商问题的解决方案——一种非常慢的算法。</blockquote><p></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-1.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">算法曲线图</div></div></div><p></p><blockquote>当前，我们获得的主要启示如下</blockquote><blockquote> 算法的速度指的并非时间，而是操作数的增速。</blockquote><blockquote> 谈论算法的速度时，我们说的是随着输入的增加，其运行时间将以什么样的速度增加。</blockquote><blockquote> 算法的运行时间用大O表示法表示。</blockquote><blockquote> O(log n)比O(n)快，当需要搜索的元素越多时，前者比后者快得越多。</blockquote><p></p><p></p><p>补充：More about Logrithm (对数）</p><p><span style="font-weight: bold;">(1) Definition</span></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-2.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">logrithm definition</div></div></div><p><span style="font-weight: bold;">(2) Logrithm Properties:</span></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-3.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">logrithm properties</div></div></div><h2>(These properties apply for any values of M<span style="font-style: italic;">M</span>M, N<span style="font-style: italic;">N</span>N, and b<span style="font-style: italic;">b</span>b for which each logarithm is defined, which is M<span style="font-style: italic;">M</span>M, N&gt;0<span style="font-style: italic;">N</span>&gt;0N, is greater than, 0 and 0&lt;b≠10&lt;<span style="font-style: italic;">b</span>≠10, is less than, b, does not equal, 1.)</h2><p></p><h2><span style="font-weight: bold;">Important note</span></h2><p>When we compress logarithmic expressions using the quotient rule, the bases of all logarithms in the expression <span style="font-weight: bold;">must</span> be the same.</p><p></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-4.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">change of base rule</div></div></div><p>Notes:</p><ul><li>When using this property, you can choose to change the logarithm to <span style="font-style: italic;">any</span>base x<span style="font-style: italic;">x</span>start color greenE, x, end color greenE.</li><li>As always, the arguments of the logarithms must be positive and the bases of the logarithms must be positive and not equal to 1  in order for this property to hold!</li></ul>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/47371986/#comments">回应</a>&nbsp;&nbsp;
+                  2017-09-01 11:24
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="47950513">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/villim/"><img src="https://img1.doubanio.com/icon/u2178546-8.jpg" alt="villim" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/47950513/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/47950513/" class="">第七章 Dijkstra&#39;s algorithm</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/villim/" class=" " title="villim">villim</a>
+                (I think, therefore I am)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="47950513">
+              <div class="short">
+                
+                  <span class="">补充 Bellman-ford algorithm 贝尔曼-福特算法的最多运行 O（|V|·|E|)  次，|V|和|E|分别是节点和边的数量）。 伪代码表示 procedure BellmanFord(list vertices, list edges, vertex source) // 该实现读入边和节点的列表，并向两个数组（distance和predecessor）中写入最短路径信息 // 步骤1：初始化图 for each vertex v in vertices: if v is source then distance[v] := 0 else distance[v] := infinity predecessor[v] :...</span>
+                <p class="pl">
+                  <span class="">2017-09-22 15:09</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>补充 Bellman-ford algorithm</p><p>贝尔曼-福特算法的最多运行 <a href="https://www.wikiwand.com/zh-hans/%E5%A4%A7O%E7%AC%A6%E5%8F%B7" rel="nofollow" target="_blank">O</a>（|<span style="font-style: italic;">V</span>|·|<span style="font-style: italic;">E</span>|)  次，|<span style="font-style: italic;">V</span>|和|<span style="font-style: italic;">E</span>|分别是节点和边的数量）。</p><h2>伪代码表示</h2><p><span style="font-weight: bold;">procedure</span> BellmanFord(<span style="font-style: italic;">list</span> vertices, <span style="font-style: italic;">list</span> edges, <span style="font-style: italic;">vertex</span> source)
+   // 该实现读入边和节点的列表，并向两个数组（distance和predecessor）中写入最短路径信息
+
+   // 步骤1：初始化图
+   <span style="font-weight: bold;">for each</span> vertex v <span style="font-weight: bold;">in</span> vertices:
+       <span style="font-weight: bold;">if</span> v <span style="font-weight: bold;">is</span> source <span style="font-weight: bold;">then</span> distance[v] := 0
+       <span style="font-weight: bold;">else</span> distance[v] := <span style="font-weight: bold;">infinity</span>
+       predecessor[v] := <span style="font-weight: bold;">null</span>
+
+   // 步骤2：重复对每一条边进行松弛操作
+   <span style="font-weight: bold;">for</span> i <span style="font-weight: bold;">from</span> 1 <span style="font-weight: bold;">to</span> size(vertices)-1:
+       <span style="font-weight: bold;">for each</span> edge (u, v) <span style="font-weight: bold;">with</span> weight w <span style="font-weight: bold;">in</span> edges:
+           <span style="font-weight: bold;">if</span> distance[u] + w &lt; distance[v]:
+               distance[v] := distance[u] + w
+               predecessor[v] := u
+
+   // 步骤3：检查负权环
+   <span style="font-weight: bold;">for each</span> edge (u, v) <span style="font-weight: bold;">with</span> weight w <span style="font-weight: bold;">in</span> edges:
+       <span style="font-weight: bold;">if</span> distance[u] + w &lt; distance[v]:
+           <span style="font-weight: bold;">error</span> "图包含了负权环"</p><p></p><p>P.S.</p><p>SPFA（Shortest Path Faster Algorithm）算法，是西南交通大学段凡丁于 1994 年发表的，其在 Bellman-ford 算法的基础上加上一个队列优化，减少了冗余的松弛操作。</p><p></p><p></p><p>
+<span style="font-weight: bold;">算法时间 - 复杂度  - 原理</span></p><p>Dijkstra - O((m+n)logn) - 贪心</p><p>BellmanFord - O(nm) - 动态规划</p><p>SPFA - ≤O(n^3) - 贪心</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/47950513/#comments">回应</a>&nbsp;&nbsp;
+                  2017-09-22 15:09
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="47371986">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/villim/"><img src="https://img1.doubanio.com/icon/u2178546-8.jpg" alt="villim" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/47371986/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/47371986/" class="">大O表示法</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/villim/" class=" " title="villim">villim</a>
+                (I think, therefore I am)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="47371986">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/47371986/"><img src="https://img3.doubanio.com/view/page_note/small/public/p47371986-1.jpg"></a>
+                  </div>
+                  <span class="">大O表示法（稍后介绍）讨论运行时间时， log指的都是log2。 使用大O表示法，这个运行时间为O(n)。单位秒呢？没有——大O表示法指的并非以秒为单位的速度。 大O表示法让你能够比较操作数，它指出了算法运行时间的增速。 下面按从快到慢的顺序列出了你经常会遇到的5种大O运行时间。  O(log n)，也叫对数时间，这样的算法包括二分查找。  O(n)，也叫线性时间，这样的算法包括简单查找。  O(n * log n)，这样的算法包括...</span>
+                <p class="pl">
+                  <span class="">2017-09-01 11:24</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>大O表示法（稍后介绍）讨论运行时间时， log指的都是log2。</blockquote><blockquote>使用大O表示法，这个运行时间为O(n)。单位秒呢？没有——大O表示法指的并非以秒为单位的速度。 大O表示法让你能够比较操作数，它指出了算法运行时间的增速。</blockquote><p></p><p></p><blockquote>下面按从快到慢的顺序列出了你经常会遇到的5种大O运行时间。</blockquote><blockquote> O(log n)，也叫对数时间，这样的算法包括二分查找。</blockquote><blockquote> O(n)，也叫线性时间，这样的算法包括简单查找。</blockquote><blockquote> O(n * log n)，这样的算法包括第4章将介绍的快速排序——一种速度较快的排序算法。</blockquote><blockquote> O(n2)，这样的算法包括第2章将介绍的选择排序——一种速度较慢的排序算法。</blockquote><blockquote> O(n!)，这样的算法包括接下来将介绍的旅行商问题的解决方案——一种非常慢的算法。</blockquote><p></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-1.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">算法曲线图</div></div></div><p></p><blockquote>当前，我们获得的主要启示如下</blockquote><blockquote> 算法的速度指的并非时间，而是操作数的增速。</blockquote><blockquote> 谈论算法的速度时，我们说的是随着输入的增加，其运行时间将以什么样的速度增加。</blockquote><blockquote> 算法的运行时间用大O表示法表示。</blockquote><blockquote> O(log n)比O(n)快，当需要搜索的元素越多时，前者比后者快得越多。</blockquote><p></p><p></p><p>补充：More about Logrithm (对数）</p><p><span style="font-weight: bold;">(1) Definition</span></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-2.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">logrithm definition</div></div></div><p><span style="font-weight: bold;">(2) Logrithm Properties:</span></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-3.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">logrithm properties</div></div></div><h2>(These properties apply for any values of M<span style="font-style: italic;">M</span>M, N<span style="font-style: italic;">N</span>N, and b<span style="font-style: italic;">b</span>b for which each logarithm is defined, which is M<span style="font-style: italic;">M</span>M, N&gt;0<span style="font-style: italic;">N</span>&gt;0N, is greater than, 0 and 0&lt;b≠10&lt;<span style="font-style: italic;">b</span>≠10, is less than, b, does not equal, 1.)</h2><p></p><h2><span style="font-weight: bold;">Important note</span></h2><p>When we compress logarithmic expressions using the quotient rule, the bases of all logarithms in the expression <span style="font-weight: bold;">must</span> be the same.</p><p></p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p47371986-4.jpg" width=""></div><div class="image-caption-wrapper"><div class="image-caption">change of base rule</div></div></div><p>Notes:</p><ul><li>When using this property, you can choose to change the logarithm to <span style="font-style: italic;">any</span>base x<span style="font-style: italic;">x</span>start color greenE, x, end color greenE.</li><li>As always, the arguments of the logarithms must be positive and the bases of the logarithms must be positive and not equal to 1  in order for this property to hold!</li></ul>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/47371986/#comments">回应</a>&nbsp;&nbsp;
+                  2017-09-01 11:24
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        <span>
+            <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=discuss">
+              <span>在这本书的论坛里发言</span>
+            </a>
+        </span>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+    
+  
+  
+  <div class="gray_ad">
+    
+  
+
+  <h2>
+    <span class="">在豆瓣书店有售</span>
+      ······
+
+  </h2>
+
+
+    <div class="market-banner">
+      <span class="title">
+        纸质版&nbsp;
+      </span>
+      <span class="price"> 39.20元</span>
+        <span class="price"> <del>49.00元</del></span>
+      <span class="promotion-info">满48元包邮</span>
+      <span class="actions">
+        <a class="buy-btn buy" target="_blank" href="https://market.douban.com/cart/checkout/?sku_id=185860&utm_campaign=douban_book_subject_buy_btn&utm_source=douban&utm_medium=pc_web">
+          去购买
+        </a>
+          <a class="j a_show_login buy-btn cart" href="javascript:;">加入购物车</a>
+      </span>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-ebook">
+        
+  
+  
+
+  <h2>
+    <span class="">电子版有售</span>
+      ······
+
+  </h2>
+
+
+
+  <ul class="bs noline more-after ">
+    
+      
+      <li class="">
+        <a target="_blank" href="http://www.amazon.cn/mn/detailApp/ref=asc_df_B075SWP6LG2890180/?asin=B075SWP6LG&amp;tag=douban_kindle-23&amp;creative=2384&amp;creativeASIN=B075SWP6LG&amp;linkCode=df0" class="">
+          <span class="">Kindle 电子书</span>
+          <span class="buylink-price">
+            <span class="">12.99 元</span>
+          </span>
+        </a>
+      </li>
+  </ul>
+
+      </div>
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3190&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=3790&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEQdQElIXASJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQESAlwSWRYdS0IJRmsQeld9KmcTYGJlRwBILEkFdF4OcF9DDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQChMOXBNcHAYRBVArXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsWAhcOXBlYCltXWwg%253D&amp;cntvendor=4&amp;srcsubj=26979890&amp;type=bkbuy&amp;subject=26979890" class="">
+                      <span class="">京东商城</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3190&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=3790&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEQdQElIXASJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQESAlwSWRYdS0IJRmsQeld9KmcTYGJlRwBILEkFdF4OcF9DDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQChMOXBNcHAYRBVArXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsWAhcOXBlYCltXWwg%253D&amp;cntvendor=4&amp;srcsubj=26979890&amp;type=bkbuy&amp;subject=26979890" class="buylink-price ">
+                      <span class="">
+                        37.90 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3190&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=3790&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s26979890%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D24214704&amp;cntvendor=4&amp;srcsubj=26979890&amp;type=bkbuy&amp;subject=26979890" class="">
+                      <span class="">当当网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3190&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=3790&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s26979890%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D24214704&amp;cntvendor=4&amp;srcsubj=26979890&amp;type=bkbuy&amp;subject=26979890" class="buylink-price ">
+                      <span class="">
+                        37.90 元
+                      </span>
+                    </a>
+
+                      
+                        <div class="more-info">
+                            <span class="buyinfo-promotion">
+                              优品换购1.9-1.15
+                            </span>
+                        </div>
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3190&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=3790&amp;pos=3&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B06XKCV7X92889742%2F%3Fasin%3DB06XKCV7X9%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3DB06XKCV7X9%26linkCode%3Ddf0&amp;cntvendor=4&amp;srcsubj=26979890&amp;type=bkbuy&amp;subject=26979890" class="">
+                      <span class="">亚马逊</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3190&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=3790&amp;pos=3&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B06XKCV7X92889742%2F%3Fasin%3DB06XKCV7X9%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3DB06XKCV7X9%26linkCode%3Ddf0&amp;cntvendor=4&amp;srcsubj=26979890&amp;type=bkbuy&amp;subject=26979890" class="buylink-price ">
+                      <span class="">
+                        37.90 元
+                      </span>
+                    </a>
+
+                      
+                        <div class="more-info">
+                            <span class="buyinfo-promotion">
+                              中文图书全场,满99元赠书
+                            </span>
+                        </div>
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3190&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=3190&amp;pos=4&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F7441037.htm&amp;cntvendor=4&amp;link2key=0d7784a33f&amp;srcsubj=26979890&amp;type=bkbuy&amp;subject=26979890" class="">
+                      <span class="">中国图书网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3190&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=3190&amp;pos=4&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F7441037.htm&amp;cntvendor=4&amp;link2key=0d7784a33f&amp;srcsubj=26979890&amp;type=bkbuy&amp;subject=26979890" class="buylink-price ">
+                      <span class="">
+                        31.90 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/26979890/buylinks">
+              &gt; 查看4家网店价格
+                (31.90 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1084867">全部2</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/26366784/">Manning Publications版</a>
+          2015-12-31 / 22人读过 / 有售
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/26979890/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/36764655/" target="_blank">2015-2018好书新发现</a>
+                <span class="pl">(Moon)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/27039041/" target="_blank">我的身体里有一个游荡的未来</a>
+                <span class="pl">(诗菡)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1004031/" target="_blank">搜书榜</a>
+                <span class="pl">(京奈)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1543232/" target="_blank">算法与数据结构</a>
+                <span class="pl">(lyb)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3145856/" target="_blank">智能时代</a>
+                <span class="pl">(Edwin)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/158995415/"><img src="https://img3.doubanio.com/icon/u158995415-2.jpg" class="pil" alt="陈叔叔" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/158995415/">陈叔叔</a><br/>
+      <div class="pl ll">          2小时前          读过      </div>
+
+        <span class="allstar50" title="力荐"></span>
+      <br/>
+
+      <span class="pl">tags:算法 计算机</span><br />
+
+          <span class="">写的很好，通俗易懂的算法入门书，推荐</span> <br/>
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/67780021/"><img src="https://img1.doubanio.com/icon/u67780021-17.jpg" class="pil" alt="低速吹风机" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/67780021/">低速吹风机</a><br/>
+      <div class="pl ll">          1月11日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/chenknight/"><img src="https://img3.doubanio.com/icon/u28362958-6.jpg" class="pil" alt="米" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/chenknight/">米</a><br/>
+      <div class="pl ll">          1月11日          读过      </div>
+
+        <span class="allstar40" title="推荐"></span>
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/mengqiuniu/"><img src="https://img3.doubanio.com/icon/u143561470-1.jpg" class="pil" alt="leah" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/mengqiuniu/">leah</a><br/>
+      <div class="pl ll">          1月11日          在读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26979890/doings">63人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26979890/collections">193人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26979890/wishes">514人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有514人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于算法图解的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/26979890/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'g3Ijw7oRt4M',
+            criteria = '7:算法|7:计算机|7:编程|7:Python|7:初级|7:Programming|7:IT|7:IT类|7:图灵社区|7:科学科技|3:/subject/26979890/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- dis8-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3697 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>LINUX系统编程 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/3907181/">
+<meta name="keywords" content="LINUX系统编程,Robert Love,东南大学出版社,2009-7,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书LINUX系统编程 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/3907181/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">LINUX系统编程</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s26696540.jpg" title="LINUX系统编程">
+    <img src="https://img3.doubanio.com/lpic/s26696540.jpg" title="点击看大图" alt="LINUX系统编程"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Robert%20Love">Robert Love</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 东南大学出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">副标题:</span> LINUX系统编程<br/>
+
+    
+    
+  
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/O%27Reilly%20Taiwan%E5%85%AC%E5%8F%B8">O&#39;Reilly Taiwan公司</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2009-7<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 382<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 56.00元<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787564115197<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 8.0 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar40"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">91</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:25px"></div>
+
+            <span class="rating_per">23.1%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">58.2%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:15px"></div>
+
+            <span class="rating_per">14.3%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:1px"></div>
+
+            <span class="rating_per">1.1%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:3px"></div>
+
+            <span class="rating_per">3.3%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3907181-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3907181-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3907181-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3907181-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3907181-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3907181-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3907181-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3907181-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-3907181">
+        <a href="#" data-url="https://book.douban.com/subject/3907181/" data-desc="" data-title="书籍《LINUX系统编程》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s26696540.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_3907181"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>《LINUX系统编程》讲述了：在某些时刻，几乎所有的程序员都要与其程序所处操作系统中的系统调用和程序库打交道。《LINUX系统编程》主要讨论如何编写Linux系统软件——代码位于底层，并且直接跟内核及核心系统程序库对话。《Linux系统编程》描述了使用标准接口包括使用Linux独有的高级接口时，在功能和性能之间如何进行权衡取舍的策略。</p>    <p>该书同样也是一本内行人士编写灵活高效代码的学习指南。作为内核黑客和《LINUX系统编程》的作者，Robert Love不仅阐释了系统接口应该如何工作，还介绍了它们实际上是如何工作的，以及怎样安全有效地使用它们。《Linux系统编程》包含了帮助你在任何层面编写更佳代码的实用技巧。</p>    <p>《LINUX系统编程》主题包括：</p>    <p>读写文件以及其他文件I／O操作，包括Linux内核如何实现和管理文件I／O，内存映射与优化</p>    <p>技术进程管理的系...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>《LINUX系统编程》讲述了：在某些时刻，几乎所有的程序员都要与其程序所处操作系统中的系统调用和程序库打交道。《LINUX系统编程》主要讨论如何编写Linux系统软件——代码位于底层，并且直接跟内核及核心系统程序库对话。《Linux系统编程》描述了使用标准接口包括使用Linux独有的高级接口时，在功能和性能之间如何进行权衡取舍的策略。</p>    <p>该书同样也是一本内行人士编写灵活高效代码的学习指南。作为内核黑客和《LINUX系统编程》的作者，Robert Love不仅阐释了系统接口应该如何工作，还介绍了它们实际上是如何工作的，以及怎样安全有效地使用它们。《Linux系统编程》包含了帮助你在任何层面编写更佳代码的实用技巧。</p>    <p>《LINUX系统编程》主题包括：</p>    <p>读写文件以及其他文件I／O操作，包括Linux内核如何实现和管理文件I／O，内存映射与优化</p>    <p>技术进程管理的系统调用，包括实时进程</p>    <p>文件与目录——创建、移动、复制、删除和管理</p>    <p>内存管理——内存分配接口，管理内存，以及优化内存访问</p>    <p>信号及其在Unix系统中的角色，以及基本和高级信号接口</p>    <p>时间、休眠和时钟管理，从基础开始讲述，并且涵盖POSIX时钟和高精度计时器拥有《Linux系统编程》，你将从理论和应用的角度深入了解Linux，可以最大限度地利用系统的潜能。</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/3907181/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_3907181_short">
+        序<br/>
+        前言<br/>
+        第一章 介绍与基本概念<br/>
+        系统编程<br/>
+        API与ABI<br/>
+        标准<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_3907181_short').hide();$('#dir_3907181_full').show();$.get('/j/subject/j_dir_count',{id:3907181});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_3907181_full" style="display:none">
+        序<br/>
+        前言<br/>
+        第一章 介绍与基本概念<br/>
+        系统编程<br/>
+        API与ABI<br/>
+        标准<br/>
+        Linux编程的概念<br/>
+        向系统编程迈进<br/>
+        第二章 文件I／O<br/>
+        打开文件<br/>
+        以read()进行读取操作<br/>
+        以write()进行写入操作<br/>
+        同步化I／O<br/>
+        关闭文件<br/>
+        使用lseek()查找文件位置<br/>
+        针对特定位置的读取与写入<br/>
+        截短文件<br/>
+        多任务式I／O<br/>
+        内核内部<br/>
+        结束语<br/>
+        第三章 缓冲式I／O<br/>
+        用户缓冲式I／O<br/>
+        标准I／O<br/>
+        打开文件<br/>
+        经文件描述符打开流<br/>
+        关闭流<br/>
+        从流中读取<br/>
+        使用缓冲式I／O的简单程序<br/>
+        查找一个流<br/>
+        刷新一个流<br/>
+        错误与EOF<br/>
+        取得相应的文件描述符<br/>
+        控制与缓冲机制<br/>
+        线程安全<br/>
+        标准I／O的缺陷<br/>
+        结束语<br/>
+        第四章 高级文件I／O<br/>
+        分散一聚集I／O<br/>
+        事件轮询接口<br/>
+        将文件映射至内存<br/>
+        对一般文件I／0的用法提供建议<br/>
+        同步化、同步及异步操作<br/>
+        I／O调度程序与I／O性能<br/>
+        结束语<br/>
+        第五章 进程管理<br/>
+        进程ID<br/>
+        运行一个新进程<br/>
+        终止一个进程<br/>
+        等待已终止的子进程<br/>
+        用户与组<br/>
+        会话与进程组<br/>
+        守护进程<br/>
+        结束语<br/>
+        第六章 高级进程管理<br/>
+        进程的调度<br/>
+        让出处理器<br/>
+        进程优先级<br/>
+        实时系统<br/>
+        资源限制<br/>
+        第七章 文件和目录管理<br/>
+        文件与其元数据<br/>
+        目录<br/>
+        链接<br/>
+        文件的复制以及移动<br/>
+        设备节点<br/>
+        带外通信<br/>
+        第八章 内存管理<br/>
+        进程地址空间<br/>
+        分配动态内存<br/>
+        管理数据段<br/>
+        匿名内存映射<br/>
+        高级内存分配<br/>
+        调试内存分配<br/>
+        基于堆栈的分配<br/>
+        选择内存分配机制<br/>
+        操作内存<br/>
+        锁定内存<br/>
+        投机取巧的分配策略<br/>
+        第九章 信号<br/>
+        信号的概念<br/>
+        基本的信号管理<br/>
+        发送一个信号<br/>
+        可重人性<br/>
+        信号集<br/>
+        阻挡信号<br/>
+        高级信号管理<br/>
+        以payload送出信号<br/>
+        结束语<br/>
+        第十章 时间<br/>
+        时间的数据结构<br/>
+        POSIX时钟<br/>
+        取得当前时间<br/>
+        设定当前时间<br/>
+        操作时间<br/>
+        调整系统时钟<br/>
+        休眠与等待<br/>
+        定时器<br/>
+        附录GCC对C语言的扩展<br/>
+        参考书目<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_3907181_full').hide();$('#dir_3907181_short').show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '3907181',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共49个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/Linux">Linux</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/系统编程">系统编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Linux/Unix">Linux/Unix</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/操作系统">操作系统</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/linux">linux</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Programming">Programming</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;LINUX系统编程&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=3907181" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/198648.jpg?v=1395393782.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/387679/?dcs=subject-rec&amp;dcm=douban&amp;dct=3907181" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/387679.jpg?v=1395395846.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/387679/" target="_blank">编程大师访谈录</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/500486/?dcs=subject-rec&amp;dcm=douban&amp;dct=3907181" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/500486.jpg?v=1395393506.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/500486/" target="_blank">打造Facebook</a>
+          </div>
+          <div class="price">
+              15.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;LINUX系统编程&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6058986/" onclick="moreurl(this, {'total': 10, 'clicked': '6058986', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s4685889.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6058986/" onclick="moreurl(this, {'total': 10, 'clicked': '6058986', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            TCP/IP高效编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4200808/" onclick="moreurl(this, {'total': 10, 'clicked': '4200808', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s4114769.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4200808/" onclick="moreurl(this, {'total': 10, 'clicked': '4200808', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            编译程序设计艺术
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25911735/" onclick="moreurl(this, {'total': 10, 'clicked': '25911735', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27309026.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25911735/" onclick="moreurl(this, {'total': 10, 'clicked': '25911735', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            TCP/IP网络编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1886058/" onclick="moreurl(this, {'total': 10, 'clicked': '1886058', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s8898978.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1886058/" onclick="moreurl(this, {'total': 10, 'clicked': '1886058', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            计算机组成：结构化方法
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4292217/" onclick="moreurl(this, {'total': 10, 'clicked': '4292217', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s9029069.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4292217/" onclick="moreurl(this, {'total': 10, 'clicked': '4292217', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            The Linux Programming Interface
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1806974/" onclick="moreurl(this, {'total': 10, 'clicked': '1806974', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s1852496.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1806974/" onclick="moreurl(this, {'total': 10, 'clicked': '1806974', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            现代编译原理
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3893574/" onclick="moreurl(this, {'total': 10, 'clicked': '3893574', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6052714.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3893574/" onclick="moreurl(this, {'total': 10, 'clicked': '3893574', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            计算几何
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1801392/" onclick="moreurl(this, {'total': 10, 'clicked': '1801392', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s5741054.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1801392/" onclick="moreurl(this, {'total': 10, 'clicked': '1801392', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            算法分析导论
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3775842/" onclick="moreurl(this, {'total': 10, 'clicked': '3775842', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3820140.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3775842/" onclick="moreurl(this, {'total': 10, 'clicked': '3775842', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            C标准库
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1852976/" onclick="moreurl(this, {'total': 10, 'clicked': '1852976', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s5745084.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1852976/" onclick="moreurl(this, {'total': 10, 'clicked': '1852976', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            计算机程序设计艺术
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/3907181/comments/">全部 29 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="1193111093">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1193111093" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1193111093" class="j a_show_login" data-cid="1193111093">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/151183957/">沒結果的花</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-10</span>
+                </span>
+            </h3>
+            <p class="comment-content">短小精悍是这本书最大的特点了吧。。毕竟读apue还是太厚了，但是不得不说很多讲解没有apue讲的细腻</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="890804297">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-890804297" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-890804297" class="j a_show_login" data-cid="890804297">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/63698704/">Harry</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2015-02-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">建议看看AUPE,这个还是简略了些，不过里面有讲关于epoll的内容，AUPE里面没有</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1175437786">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1175437786" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1175437786" class="j a_show_login" data-cid="1175437786">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/jinkai719/">阅微草堂</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-04-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">select（）poll（）事件驱动模型的关键函数。库函数和系统调用的关系 ：一系列动作。Linux操作系统的诞生、发展和成长过程依赖于以下五个重要支柱：UNIX操作系统、MINIX操作系统、GNU计划、POSIX标准和Internet。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="329795112">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-329795112" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-329795112" class="j a_show_login" data-cid="329795112">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/xutaozero21/">Shark</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2010-12-26</span>
+                </span>
+            </h3>
+            <p class="comment-content">关于IO部分讲的还是很到位的~</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="500137230">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-500137230" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-500137230" class="j a_show_login" data-cid="500137230">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/wq294948004/">Tsing</a>
+                    <span>2012-02-24</span>
+                </span>
+            </h3>
+            <p class="comment-content">Stevens的书可替之</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1193111093">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1193111093" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1193111093" class="j a_show_login" data-cid="1193111093">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/151183957/">沒結果的花</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-10</span>
+                </span>
+            </h3>
+            <p class="comment-content">短小精悍是这本书最大的特点了吧。。毕竟读apue还是太厚了，但是不得不说很多讲解没有apue讲的细腻</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1175437786">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1175437786" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1175437786" class="j a_show_login" data-cid="1175437786">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/jinkai719/">阅微草堂</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-04-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">select（）poll（）事件驱动模型的关键函数。库函数和系统调用的关系 ：一系列动作。Linux操作系统的诞生、发展和成长过程依赖于以下五个重要支柱：UNIX操作系统、MINIX操作系统、GNU计划、POSIX标准和Internet。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1072124541">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1072124541" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1072124541" class="j a_show_login" data-cid="1072124541">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/142393525/">Heap</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-08-10</span>
+                </span>
+            </h3>
+            <p class="comment-content">穿插讲解2.6内核的一些原理，对操作系统可以有更深入的认识</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1026438062">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1026438062" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1026438062" class="j a_show_login" data-cid="1026438062">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/49964474/">stucs</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-03-30</span>
+                </span>
+            </h3>
+            <p class="comment-content">看多类似的书 所以看的不是很仔细</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="967839445">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-967839445" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-967839445" class="j a_show_login" data-cid="967839445">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/Mark.Memory/">加百</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2015-10-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">这本书很一般啊内容不但浅显简直就是皮毛好多地方都说不到点上为毛会这么高分？</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/3907181/comments/">更多短评 29 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            LINUX系统编程的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 3907181;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/3907181/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            LINUX系统编程的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 8 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5555437">
+        <div class="main review-item" id="5555437">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/4723261/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/4723261/" property="v:reviewer" class="name">[已注销]</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-08-21" class="main-meta">2012-08-21 17:50:14</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5555437/">不是APUE</a></h2>
+
+                <div id="review_5555437_short" class="review-short" data-rid="5555437">
+                    <div class="short-content">
+
+                        1.这本书页数不多。但侧重点也不多，从目录可以看出，它不像APUE一样，对*nix系统编程做了全面的描述。但对于书中所包含的IO,Memory,Process Control等系统都有较为深入的讲解。 2.IO相关的章节是这本书的亮点 3.与APUE相比，APUE更像是告诉你，事物究竟是什么，然后你来做，而...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5555437-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5555437_full" class="hidden">
+                    <div id="review_5555437_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5555437" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5555437">
+                                14
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5555437" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5555437">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5555437/#comments" class="reply">4回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="2010185">
+        <div class="main review-item" id="2010185">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/interma/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1037833-16.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/interma/" property="v:reviewer" class="name">interma</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2009-05-04" class="main-meta">2009-05-04 10:43:55</span>
+        
+
+            <span class="publisher right">
+            O&#39;Reilly Media, Inc.版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/2010185/">中文电子版</a></h2>
+
+                <div id="review_2010185_short" class="review-short" data-rid="2010185">
+                    <div class="short-content">
+
+                        http://linuxtoy.org/archives/linux-system-programming-chinese-edition.html
+
+                        &nbsp;(<a href="javascript:;" id="toggle-2010185-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_2010185_full" class="hidden">
+                    <div id="review_2010185_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="2010185" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-2010185">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="2010185" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-2010185">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/2010185/#comments" class="reply">7回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="2695794">
+        <div class="main review-item" id="2695794">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/iLRainyday/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2162211-23.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/iLRainyday/" property="v:reviewer" class="name">iLRainyday</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2009-11-04" class="main-meta">2009-11-04 00:36:27</span>
+        
+
+            <span class="publisher right">
+            O&#39;Reilly Media, Inc.版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/2695794/">压缩饼干~~</a></h2>
+
+                <div id="review_2695794_short" class="review-short" data-rid="2695794">
+                    <div class="short-content">
+
+                        以前受到amazon上评论的影响，一直以为这就是本API Reference，所以买来后一直都没翻过。前几天偶然翻看，才发觉误会了。这不是类似APUE那种手把手教你的书，这本书中往往是用短短的一段话来陈述了一些概念背后的东西，注意，是“陈述”，没有循循善诱。所以看此书之前最好还是...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-2695794-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_2695794_full" class="hidden">
+                    <div id="review_2695794_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="2695794" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-2695794">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="2695794" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-2695794">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/2695794/#comments" class="reply">9回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7960046">
+        <div class="main review-item" id="7960046">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/maxy218/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u45610905-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/maxy218/" property="v:reviewer" class="name">maxy218</a>
+
+            <span property="v:rating" class="allstar10 main-title-rating" title="很差"></span>
+
+        <span property="v:dtreviewed" content="2016-07-02" class="main-meta">2016-07-02 00:18:43</span>
+        
+
+            <span class="publisher right">
+            人民邮电出版社2014版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7960046/">翻译是渣，请不要看人民邮电的第二版！</a></h2>
+
+                <div id="review_7960046_short" class="review-short" data-rid="7960046">
+                    <div class="short-content">
+
+                        仅拿我看到的，很小一部分翻译错误，来举例（整本书各种翻译问题数不胜数，不一一列举了）：  P202：SMT翻译成“同步线程”。SMT通常应该翻译成超线程，或者直接按字面意思翻译成“同时多线程”。“同步线程”通常指多线程的编程模型，完全两个维度的东西，相差十万八千里，很...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7960046-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7960046_full" class="hidden">
+                    <div id="review_7960046_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7960046" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7960046">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7960046" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7960046">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7960046/#comments" class="reply">1回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7549966">
+        <div class="main review-item" id="7549966">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/4328353/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u4328353-6.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/4328353/" property="v:reviewer" class="name">预流</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2015-07-27" class="main-meta">2015-07-27 16:27:41</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7549966/">无法回避的软件本质复杂性</a></h2>
+
+                <div id="review_7549966_short" class="review-short" data-rid="7549966">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        这书可当作Linux下C函数的一般查询手册吧。 对我来说最有价值的是第7章7.4节线程模式的讨论： 创建多线程应用的第一步也是最重要的一步就是确定线程模式，线程模式也是应用程序的逻辑处理和I/O的模式，可能存在很多抽象和实现细节，但两个核心的编程模式是：“每个连接对应一个...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7549966-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7549966_full" class="hidden">
+                    <div id="review_7549966_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7549966" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7549966">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7549966" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7549966">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7549966/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7137270">
+        <div class="main review-item" id="7137270">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/67714917/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u67714917-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/67714917/" property="v:reviewer" class="name">Erwin_Zhu</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-10-15" class="main-meta">2014-10-15 16:59:13</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7137270/">非常棒的一本书，就本书的侧重点来说</a></h2>
+
+                <div id="review_7137270_short" class="review-short" data-rid="7137270">
+                    <div class="short-content">
+
+                        工作需要下了个电子版的稍微看了下，就看讲解关于epoll，讲的非常棒，介于google上epoll相关资料不全且例子有少许错误，对于刚接触epoll是不适合的，只能找相关书籍，非常好的一本书，就侧重点来说。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7137270-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7137270_full" class="hidden">
+                    <div id="review_7137270_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7137270" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7137270">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7137270" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7137270">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7137270/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3207429">
+        <div class="main review-item" id="3207429">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/8259473/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/8259473/" property="v:reviewer" class="name">公孙大允</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-04-26" class="main-meta">2010-04-26 16:29:19</span>
+        
+
+            <span class="publisher right">
+            O&#39;Reilly Media, Inc.版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3207429/">知道自己要做什么才是最重要的</a></h2>
+
+                <div id="review_3207429_short" class="review-short" data-rid="3207429">
+                    <div class="short-content">
+
+                        这本书和beginning linux programming以及complete reference of linux programming不同，作者的针对性非常强，仅仅是设计linux系统级别上的程序，或者说，告诉读者如何用编译程序来实现linux系统命令的功能。直接往往是高效率，但又容易产生差距感。我更倾向于把这本书当作手...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3207429-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3207429_full" class="hidden">
+                    <div id="review_3207429_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3207429" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3207429">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3207429" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3207429">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3207429/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3119221">
+        <div class="main review-item" id="3119221">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/fly2fire/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1243206-4.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/fly2fire/" property="v:reviewer" class="name">fly2fire</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2010-03-24" class="main-meta">2010-03-24 17:25:30</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3119221/">之前同事那边看到这书</a></h2>
+
+                <div id="review_3119221_short" class="review-short" data-rid="3119221">
+                    <div class="short-content">
+
+                        没觉得有多特别，后来发现LKD也是作者的作品，所以静下心来读，这书还是很不错的。 买了一堆Unix编程的书，都没有好好读过。 这次要看完这本。加油。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3119221-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3119221_full" class="hidden">
+                    <div id="review_3119221_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3119221" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3119221">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3119221" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3119221">
+                                2
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3119221/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript">
+    ;(function(){
+        window.subject_id = window.subject_id || 3907181;
+        "use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GalleryTopicsSelection = function (_React$Component) {
+  _inherits(GalleryTopicsSelection, _React$Component);
+
+  function GalleryTopicsSelection() {
+    _classCallCheck(this, GalleryTopicsSelection);
+
+    var _this = _possibleConstructorReturn(this, (GalleryTopicsSelection.__proto__ || Object.getPrototypeOf(GalleryTopicsSelection)).call(this));
+
+    _this.state = {
+      topics: []
+    };
+    return _this;
+  }
+
+  _createClass(GalleryTopicsSelection, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      $.ajax({
+        url: "https://m.douban.com/rexxar/api/v2/gallery/subject_feed?start=0&subject_id=" + window.subject_id + "&ck=" + get_cookie('ck'),
+        xhrFields: { withCredentials: true },
+        success: function success(res) {
+          _this2.setState({
+            topics: res.items
+          });
+          if (res.total) {
+            window.has_gallery_topics = true;
+          }
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var topics = this.state.topics;
+
+      return React.createElement(
+        "section",
+        null,
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=close", rel: "nofollow", className: "close_selection" },
+          "\u8DF3\u8FC7"
+        ),
+        React.createElement(
+          "h1",
+          null,
+          "\u4E0B\u9762\u662F\u5426\u6709\u4F60\u60F3\u5199\u7684\u8BDD\u9898\uFF1F"
+        ),
+        topics.length ? React.createElement(
+          "ul",
+          { className: "gl_topics" },
+          topics.map(function (item) {
+            return React.createElement(
+              "li",
+              { className: "topic" },
+              React.createElement(
+                "a",
+                { href: "new_review?from=gallery-topics-selection&click=create&tag_from_gallery=" + item.topic.name,
+                  className: "comment_btn write_review",
+                  rel: "nofollow" },
+                React.createElement("img", { src: window.write_icon }),
+                React.createElement(
+                  "span",
+                  null,
+                  window.join_label_text
+                )
+              ),
+              React.createElement(
+                "h2",
+                { className: "topic_name" },
+                item.topic.name
+              ),
+              React.createElement(
+                "div",
+                { className: "topic_meta" },
+                item.topic.card_subtitle
+              )
+            );
+          })
+        ) : React.createElement(
+          "div",
+          null,
+          "\u52A0\u8F7D\u4E2D"
+        ),
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=skip", rel: "nofollow", className: "topics_skip" },
+          React.createElement(
+            "span",
+            null,
+            "\u4E0A\u9762\u6CA1\u6709\u6211\u60F3\u5199\u7684\u8BDD\u9898\uFF0C\u53BB\u5199\u5F71\u8BC4 \uFF1E "
+          )
+        )
+      );
+    }
+  }]);
+
+  return GalleryTopicsSelection;
+}(React.Component);
+
+$(function () {
+  var glRoot = document.getElementById('gallery-topics-selection');
+
+  ReactDOM.render(React.createElement(GalleryTopicsSelection, null), glRoot);
+});;
+    })();
+</script><script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/289d9eab6b43a9ec.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评8篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/3907181/annotation">共<span property="v:count">11</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="17852091">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tonyseek/"><img src="https://img1.doubanio.com/icon/u45745696-37.jpg" alt="松鼠奥利奥" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17852091/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17852091/" class="">第46页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tonyseek/" class=" " title="松鼠奥利奥">松鼠奥利奥</a>
+                (all men are created equal)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17852091">
+              <div class="short">
+                
+                  <span class="">文件 I/O 在 Unix 和 Linux 中都具有重要意义，因为操作系统对所有具有输入输出的对象都以“一切都是文件”的方式来抽象。包括设备文件、管道、目录、futex、FIFO、socket 都可以被抽象为文件来供操作。
+
+一个文件必须先打开，才可以对它进行操作。内核会替每个进程维护一份已打开文件列表，称为文件表（file table）。此表是通过非负整数被索引，而此非负整数称为文件描述符（file descriptor，缩写 fd）。
+
+这一段文字有点费...</span>
+                <p class="pl">
+                  <span class="">2012-04-17 21:01</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                文件 I/O 在 Unix 和 Linux 中都具有重要意义，因为操作系统对所有具有输入输出的对象都以“一切都是文件”的方式来抽象。包括设备文件、管道、目录、futex、FIFO、socket 都可以被抽象为文件来供操作。<div style="padding-bottom:1em;"></div><blockquote><q>一个文件必须先打开，才可以对它进行操作。内核会替每个进程维护一份已打开文件列表，称为文件表（file table）。此表是通过非负整数被索引，而此非负整数称为文件描述符（file descriptor，缩写 fd）。</q></blockquote><div style="padding-bottom:1em;"></div>这一段文字有点费解，我查找了其他资料辅助，得到的说法是：文件描述符并非进程内唯一，而是全局唯一存在。对于一个已启动的操作系统，它是跨进程存在的。而 file table 在 Linux Tutorial Glossary 中的描述是：“A table internal to the kernel that maintains the the relationship between the file descriptors and the physical file on the hard disk.” 可见其也是“internal to the kernel”的，是维护文件描述符（fd）和物理文件（可以看成 inode）关系的一张表。<div style="padding-bottom:1em;"></div><blockquote><q>默认情况下，子进程会取得其父进程的文件表。</q></blockquote><div style="padding-bottom:1em;"></div>在 man fork 中看到了关于文件描述符被子进程继承的说法：“The child inherits copies of the parent's set of open file descriptors. Each file descriptor in the child refers to the same open file description (see  open(2))  as  the  corresponding  file descriptor in the parent.  This means that the two descriptors share open file status flags, current file offset, and signal-driven I/O attributes (see the description of F_SETOWN and F_SETSIG in fcntl(2)).” 可见子进程对一个已打开的文件的属性信息还是会继承的。<div style="padding-bottom:1em;"></div>综合书中说法，file table 应该指的就是关于已打开文件属性的记录结构：<div style="padding-bottom:1em;"></div><blockquote><q>该表（file table）中每个条目内含与已打开文件相关的信息，包括一个指针（指向文件 inode 在内存中的副本）以及相关的元数据（例如文件位置与访问模式）。</q></blockquote><div style="padding-bottom:1em;"></div>一个文件描述符可表示成一个整型数据，默认情况下上限为 1024，其中有特殊的三个：0-标准输入-stdin，1-标准输出-stdout，2-标准错误-stderr。<div style="padding-bottom:1em;"></div>== 打开文件 ==<div style="padding-bottom:1em;"></div>文件控制系统调用的 C API 包含在 fcntl.h 头文件中。<div style="padding-bottom:1em;"></div>* 打开文件：int open(const char *name, int flags[, mode_t mode]);<div style="padding-bottom:1em;"></div>    * flags 至少需要包含 O_RDONLY（read only）、O_WRONLY（write only）或 O_RDWR（read and write）之一，其他参数可以通过与操作符（|）附加。<div style="padding-bottom:1em;"></div>    * O_APPEND 附加模式（位置指针自动指向末尾）。<div style="padding-bottom:1em;"></div>    * O_ASYNC 异步模式，如果文件可读取（可写入）了则产生一个 SIGIO 信号。只能用于 sockets 不能用于常规文件。<div style="padding-bottom:1em;"></div>    * O_CREAT（create 怎么少了一个字母呢）如果文件不存在则自动创建。<div style="padding-bottom:1em;"></div>    * O_DIRECT 直接 I/O，让内核尽量减少 I/O 管理在场机会，跳过内核缓存、缓冲。启用后文件偏移量必须是底层设备的扇区大小整数倍。<div style="padding-bottom:1em;"></div>    * O_DIRECTORY 若不是目录则调用失败。一般不直接使用，而是供 opendir 链接库调用。<div style="padding-bottom:1em;"></div>    * O_EXCL 和 O_CREAT 相反，如果文件已经存在则调用失败。用于避免创建文件时竞争条件（race condition）。<div style="padding-bottom:1em;"></div>    * O_LARGEFILE 以 64 位偏移量打开文件，以便支持打开大于 2G 的文件。64 位架构上是默认值。<div style="padding-bottom:1em;"></div>    * O_NOFOLLOW 不跟踪 symlink 重定向——如果文件是符号链接则调用失败。<div style="padding-bottom:1em;"></div>    * O_NONBLOCK 非阻塞模式，让进程在 I/O 时不会被阻塞（休眠），仅用于 FIFO。<div style="padding-bottom:1em;"></div>    * O_SYNC 同步模式，阻塞 I/O 函数的调用。一般读取默认是同步模式，而写入则采取内核缓冲和 writeback 机制，开启该模式则关闭内核缓冲。<div style="padding-bottom:1em;"></div>    * O_TRUNC 把文件截断成零长度，只对允许写入的常规文件有效，对终端和 FIFO 会被忽略。<div style="padding-bottom:1em;"></div>== 权限问题 ==<div style="padding-bottom:1em;"></div>默认文件拥有者（owner）就是创建文件进程的 effective uid。<div style="padding-bottom:1em;"></div>默认文件拥有组（owner group）在 System V（大部分 Linux 的行为模型）中是设定为创建文件进程的 effective gid，在 BSD 中是设定为上层目录的 gid。<div style="padding-bottom:1em;"></div>在用 open 打开文件的时候如果指定了 O_CREAT 则必须使用 mode 参数指定访问模式。mode 访问模式可以和打开模式抵触，因为打开文件的时候并不会检查 mode。mode 参数就是 Unix 权限位，可以设置为 S_IRWXU(111xxxxxx，owner 可以读写执行)、S_IRUSR(100xxxxxx，owner 可读)、S_IWUSR(010xxxxxx，owner 可写)、S_IXUSR(001xxxxxx，owner 可执行)、S_IRWXG(xxx111xxx，group 可读写执行)、S_IRGRP(xxx100xxx，group 可读)、S_IWGRP(xxx010xxx，group 可写)、S_IXGRP(xxx001xxx，group 可执行)、S_IRWXO(xxxxxx111，other 可读写执行)、S_IROTH(xxxxxx100，other 可读)、S_IWOTH(xxxxxx010，other 可写)、S_IXOTH(xxxxxx001， other 可执行)。权限设置可以使用与操作符来连接。<div style="padding-bottom:1em;"></div>我觉得去记这么一堆东西实在是很傻的事情，我更愿意直接书写权限码，例如 S_IRWXU | S_IRWXG | S_IXOTH 直接写成 771。<div style="padding-bottom:1em;"></div>文件操作的实际权限并非直接使用 mode 参数，而是将 mode 与 umask 的补码进行一次与运算，也就是从 umask 中的设置位“拿掉” mode 中的权限。<div style="padding-bottom:1em;"></div>== 快捷创建新文件、错误处理 ==<div style="padding-bottom:1em;"></div>creat(const char* name, mode_t mode) 是 O_WRONLY | O_CREAT | O_TRUNC 组合的快捷方式。<div style="padding-bottom:1em;"></div>按照惯例，open 和 creat 在失败的时候不返回文件描述符，而是返回 -1，同时 errno 会被设置。<div style="padding-bottom:1em;"></div>== 读取 ==<div style="padding-bottom:1em;"></div>ssize_t read(int fd, void* buf, size_t len); 是读取函数的函数原型，调用时会从“当前”位置开始向后读取 len 个字节，并存入 buf 所指向的地址。读取过程“当前”位置会随之前进，就像迭代器指针一样。<div style="padding-bottom:1em;"></div>read 函数的读取有以下几种情况：<div style="padding-bottom:1em;"></div>* 实际可用字节数为 0（已到达文件末尾），函数返回 0 表示 EOF。<div style="padding-bottom:1em;"></div>* 实际可用字节数等于 len，正常读取并返回 len。<div style="padding-bottom:1em;"></div>* 实际可用字节数小于 len，但读取已经到达 EOF，或读取进行时被 signal 打断，函数返回实际读取到的字节数。<div style="padding-bottom:1em;"></div>* 实际可用字节数小于 len，但并非因为中断或 EOF，而是因为可供读取的数据尚未出现（例如等待标准输入）。此时若文件描述符以非 O_NONBLOCK 模式打开时，read 函数阻塞（进程睡眠）；以 O_NONBLOCK 模式打开时，函数返回 -1，errno 为 EAGAIN。<div style="padding-bottom:1em;"></div>* 尚未开始读取就被 signal 打断，函数返回 -1，errno 为 EINTR。<div style="padding-bottom:1em;"></div>* 发生其他严重错误（例如 I/O 错误），函数返回 -1，errno 为 EAGAIN 和 EINTR 以外的其他值，比如 EBADF（bad file，fd 无效或未打开）、EFAULT（fault，buf 指向的地址空间不属于本进程）、EINVAL（invalid，fd 指向了一个不允许读取的目标）、EIO（低级 I/O 错误）。<div style="padding-bottom:1em;"></div>读取的字节限制：ssize_t 的最大值是 SSIZE_MAX（LONG_MAX）。<div style="padding-bottom:1em;"></div>== 写入 ==<div style="padding-bottom:1em;"></div>ssize_t write(int fd, const void* buf, size_t count); 是写入函数的函数原型，调用时从 buf 中读取 count 个字节写入 fd 所指向的文件。写入过程和 read 一样会推进文件的“当前”位置指针。<div style="padding-bottom:1em;"></div>write 函数的写入有以下几种情况：<div style="padding-bottom:1em;"></div>* 写入成功，返回 ssize_t 数据类型，表示写入的字节数。<div style="padding-bottom:1em;"></div>* 写入失败，返回 -1 并设置 errno。<div style="padding-bottom:1em;"></div>写入不存在 EOF，所以返回 0 没有特殊的意义，仅仅代表写入了 0 字节。正常来说 write 不会像 read 一样出现部分写入，也就是正常情况下返回的 ssize_t 取值上是等于 count 的。但对于特殊的文件（比如 socket）是有可能出现部分写入的。<div style="padding-bottom:1em;"></div>写入的方式会受到 fd 是否以 O_APPEND 模式打开的影响。开启附加模式之后，写入动作不会从“当前”位置开始，而是从文件末尾开始。这和手动将“当前”位置指针移动到文件末尾不同，附加模式可以避免多个进程写入同一个文件时候出现的竞争问题，确保写入总是从末端开始。对于日志记录来说，附加模式十分有用。<div style="padding-bottom:1em;"></div>写入的字节限制也是 SSIZE_MAX。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17852091/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-17 21:01
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17838578">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tonyseek/"><img src="https://img1.doubanio.com/icon/u45745696-37.jpg" alt="松鼠奥利奥" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17838578/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17838578/" class="">第32页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tonyseek/" class=" " title="松鼠奥利奥">松鼠奥利奥</a>
+                (all men are created equal)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17838578">
+              <div class="short">
+                
+                  <span class="">== 信号 ==
+信号（signal）是一种单向一部通知机制。信号可以从内核送往一个进程，从一个进程送往另一个进程，或者从一个进程送给它自己。
+在知乎上我也就这个问题提出了问题（http://www.zhihu.com/question/20175801/answer/14225549），总结出信号具有以下特点：
+
+* 信号是一种事件通知机制，但不是单纯的通知，而是伴随着“软中断”的。
+
+* 基于上一点，信号的发送与进程的主事件流是异步的。信号一旦到达，就会抢占进程...</span>
+                <p class="pl">
+                  <span class="">2012-04-16 23:51</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                == 信号 ==
+<blockquote><q>信号（signal）是一种单向一部通知机制。信号可以从内核送往一个进程，从一个进程送往另一个进程，或者从一个进程送给它自己。</q></blockquote>
+在知乎上我也就这个问题提出了问题（<a rel="nofollow" href="http://www.zhihu.com/question/20175801/answer/14225549" target="_blank">http://www.zhihu.com/question/20175801/answer/14225549</a>），总结出信号具有以下特点：<div style="padding-bottom:1em;"></div>* 信号是一种事件通知机制，但不是单纯的通知，而是伴随着“软中断”的。<div style="padding-bottom:1em;"></div>* 基于上一点，信号的发送与进程的主事件流是异步的。信号一旦到达，就会抢占进程控制权，优先调用 signal_handler 函数，然后才返回主事件流。<div style="padding-bottom:1em;"></div>一般进程对 Linux 内核实现的三十多种信号都有默认的处理方式（signal_handler），程序编写者可以注册自己的 handler 取代默认处理，除了终止进程信号（SIGKILL）和中止进程信号（SIGSTOP）。 <div style="padding-bottom:1em;"></div>== 进程间通信 ==<div style="padding-bottom:1em;"></div>Linux 所支持的进程间通信（IPC）方式还包括管道（pipe）、命名管道（FIFO）、信号量（semaphore）、消息队列、共享内存、快速用户空间 mutex（futex）。<div style="padding-bottom:1em;"></div>== 错误处理 ==<div style="padding-bottom:1em;"></div>C 语言没有内置的异常机制，一般系统调用函数返回 -1 代表出错。错误类型的标识会记录在 &lt;errno.h&gt; 中的全局变量 errno 中。perror 函数可以根据错误标识打印错误信息，strerror 可以接受 errno 为参数输出错误信息。常见的错误是打印错误信息之前调用了其他函数，这些函数执行过程可能也会修改 errno 的值。应该在发生这种情况时提前用一个整型变量保存 errno。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17838578/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-16 23:51
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17819524">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tonyseek/"><img src="https://img1.doubanio.com/icon/u45745696-37.jpg" alt="松鼠奥利奥" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17819524/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17819524/" class="">第28页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tonyseek/" class=" " title="松鼠奥利奥">松鼠奥利奥</a>
+                (all men are created equal)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17819524">
+              <div class="short">
+                
+                  <span class="">进程（process）是执行中的目标码（object code）：正在运行的程序。但它不仅仅是目标码，进程由数据、资源、状态以及一个虚拟的计算机组成。
+
+一个进程在内存中比较有意义的有 text、data 和 bbs 三段。text 段包含可执行代码和只读数据（例如常量），RX；data 段中包含已经初始化过的数据（例如已定义初值的变量），RW；bbs 段包含尚未初始化的全局数据。进程通常只通过系统调用来请求和操作资源，其所分配得到的资源会被内核..</span>
+                <p class="pl">
+                  <span class="">2012-04-15 20:45</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>进程（process）是执行中的目标码（object code）：正在运行的程序。但它不仅仅是目标码，进程由数据、资源、状态以及一个虚拟的计算机组成。</q></blockquote><div style="padding-bottom:1em;"></div>一个进程在内存中比较有意义的有 text、data 和 bbs 三段。text 段包含可执行代码和只读数据（例如常量），RX；data 段中包含已经初始化过的数据（例如已定义初值的变量），RW；bbs 段包含尚未初始化的全局数据。进程通常只通过系统调用来请求和操作资源，其所分配得到的资源会被内核存入进程描述符（process descriptor）。<div style="padding-bottom:1em;"></div>进程本身是一个虚拟的抽象对象。每个进程由一个或多个线程（threads of execution）构成，而线程则是最小执行单位。传统 Unix 程序惯用每个进程单线程的程序，因为 Unix 简单快速创建进程的机制和稳固的进程间通信（IPC）机制降低了对线程的需求。线程由存放局部变量的堆栈（stack）、处理机状态和目标码执行位置指针组成。进程的其余部分则由进程内的多个线程共享。<div style="padding-bottom:1em;"></div><blockquote><q>Linux 中的授权机制由用户（user）和组（group）提供。每个用户都会被分配一个独一无二的正整数，称为用户标识符（user ID，简称  uid）。每个进程恰好会被关联到一个 uid，用来识别运行进程的用户，这被称为进程的真实用户标识符（real uid）。</q></blockquote><div style="padding-bottom:1em;"></div>uid 和 username 的对应存储在 /etc/passwd 中。登录系统时 login 询问用户名和密码，如果有效则衍生（spawn）出 login shell，让 shell 的 real uid 等于登录用户的 uid。子进程的 uid 继承自父进程。uid 的所有权属于 root，只有 root 可以更改进程的 real uid，故 login 必须使用 root 运行。<div style="padding-bottom:1em;"></div>每个进程除了 real uid 还拥有effective uid（有效用户标识）、saved uid、filesystem uid（文件系统用户标识）。real uid 一般代表启动进程；effective uid 可以更改（以适应权限分配需要），它将决定实际权限；saved uid 保存上一次 effective uid 的值；filesystem uid 决定访问文件系统的权限，一般情况下等于 effective uid。<div style="padding-bottom:1em;"></div>每个用户可能隶属于一个或多个组（group），包括 /etc/passwd 列出的主要组（primary group）和登录组（login group），以及 /etc/group 中的追加组（supplemental group）。每个进程也会关联到一系列的组标识（group ID，缩写 gid），进程 gid 的种类和进程 uid 的种类对应。进程一般关联到用户的登录组而非追加组。<div style="padding-bottom:1em;"></div>文件的权限用总共 9 bit 的二进制码表示，其中文件拥有者（owner）权限、拥有者所在组权限、其他用户权限各使用 3 bit ，三个置为为 1 分别代表拥有读取权限（R）、拥有写入权限（W）、拥有执行权限（X）。权限码的每三位可以用十进制表示，例如 777 就表示 owner、owner group、other 都拥有 R、W、X 权限。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17819524/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-15 20:45
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27977349">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/shaoguangleo/"><img src="https://img3.doubanio.com/icon/u3204672-5.jpg" alt="郭大侠" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27977349/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27977349/" class="">第130页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/shaoguangleo/" class=" " title="郭大侠">郭大侠</a>
+                (http://guoshaoguang.com)
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="27977349">
+              <div class="short">
+                
+                  <span class="">调度的一些算法及理论分析没有看懂，需要回头在看看。</span>
+                <p class="pl">
+                  <span class="">2013-08-07 09:06</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                调度的一些算法及理论分析没有看懂，需要回头在看看。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27977349/#comments">回应</a>&nbsp;&nbsp;
+                  2013-08-07 09:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="23676381">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/shonenada/"><img src="https://img3.doubanio.com/icon/u58022352-2.jpg" alt="shonenada" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23676381/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23676381/" class="">第24页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/shonenada/" class=" " title="shonenada">shonenada</a>
+              
+            </p>
+            <div class="reading-note" data-cid="23676381">
+              <div class="short">
+                
+                  <span class="">根文件系统。
+
+第一个文件系统会被挂载到命名空间的 root 结点，“/”，这被称为根文件系统（root file system）。Linux 系统通常会具有一个根文件系统。</span>
+                <p class="pl">
+                  <span class="">2013-01-05 21:24</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                根文件系统。<div style="padding-bottom:1em;"></div><blockquote><q>第一个文件系统会被挂载到命名空间的 root 结点，“/”，这被称为根文件系统（root file system）。Linux 系统通常会具有一个根文件系统。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23676381/#comments">回应</a>&nbsp;&nbsp;
+                  2013-01-05 21:24
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17786278">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tonyseek/"><img src="https://img1.doubanio.com/icon/u45745696-37.jpg" alt="松鼠奥利奥" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17786278/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17786278/" class="">第25页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tonyseek/" class=" " title="松鼠奥利奥">松鼠奥利奥</a>
+                (all men are created equal)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17786278">
+              <div class="short">
+                
+                  <span class="">1. 文件描述符（file descriptor）是对已打开文件的引用，每个打开的文件会被分配一个独一无二的 fd，fd 由用户空间程序所共享。多个进程之间可以共享 fd，内核并不会加以限制。
+
+2. 文件名（filename）可以用于访问文件，但文件的直接引用是通过 inode（信息节点 information node）来进行的。文件名可以看成是映射表中的关键字，一个文件名只会对应一个唯一的 inode，一个 inode 却可以被多个文件名所对应（通过硬链接）。
+
+...</span>
+                <p class="pl">
+                  <span class="">2012-04-13 18:15</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                1. 文件描述符（file descriptor）是对已打开文件的引用，每个打开的文件会被分配一个独一无二的 fd，fd 由用户空间程序所共享。多个进程之间可以共享 fd，内核并不会加以限制。<div style="padding-bottom:1em;"></div>2. 文件名（filename）可以用于访问文件，但文件的直接引用是通过 inode（信息节点 information node）来进行的。文件名可以看成是映射表中的关键字，一个文件名只会对应一个唯一的 inode，一个 inode 却可以被多个文件名所对应（通过硬链接）。<div style="padding-bottom:1em;"></div>3. 目录是一种特殊的文件。<div style="padding-bottom:1em;"></div>4. 文件名和 inode 所配成的对称为“链接”（link），硬链接（hard link）直接将文件名指向 inode，所以一个 inode 形成的多个硬链接之间是完全平等的。每个 inode 会携带有链接计数（link count），类似于 GC 中的引用计数器，删除一个文件名 link count 减一，达到零后 inode 才被删除。硬链接基于文件系统，所以无法建立跨文件系统的硬链接。<div style="padding-bottom:1em;"></div>5. 符号链接（symbolic link、symlink）类似于“快捷方式”（shortcut），是使用一个特殊的文件来引用某个路径（filename）的方式，它拥有自己的 inode 和文件名。因为被引用文件是记录在符号链接自己的 inode 中的，所以甚至可以指向一个不存在的文件，形成 broken link。符号链接在解析时开销比硬链接大，但可以跨文件系统。<div style="padding-bottom:1em;"></div>6. 文件不一定是文件系统中的物理文件，设备通信、进程间通信、网络都可以以文件的形式抽象，从而形成特殊文件。其中“块设备文件”将设备通信抽象为可以随机访问的文件，例如光驱、硬盘；“字符设备文件”将设备抽象为可以线性顺序访问的文件，例如键盘。除此之外还有命名管道（named pipl、FIFO）和 Unix domain socket 也以文件形式抽象。<div style="padding-bottom:1em;"></div>7. Linux 的多个文件系统（filesystem）通过挂载（mounting）和卸载（unmounting）机制，可以被放置到统一的全局命名空间下的某个挂载点（mount point）上。其中“/”为根文件系统（root filesystem）。其他形式的文件（虚拟文件系统 virtual filesystem、网络文件系统 network filesystem）也可以以类似原理被挂载。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17786278/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-13 18:15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17819524">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tonyseek/"><img src="https://img1.doubanio.com/icon/u45745696-37.jpg" alt="松鼠奥利奥" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17819524/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17819524/" class="">第28页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tonyseek/" class=" " title="松鼠奥利奥">松鼠奥利奥</a>
+                (all men are created equal)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17819524">
+              <div class="short">
+                
+                  <span class="">进程（process）是执行中的目标码（object code）：正在运行的程序。但它不仅仅是目标码，进程由数据、资源、状态以及一个虚拟的计算机组成。
+
+一个进程在内存中比较有意义的有 text、data 和 bbs 三段。text 段包含可执行代码和只读数据（例如常量），RX；data 段中包含已经初始化过的数据（例如已定义初值的变量），RW；bbs 段包含尚未初始化的全局数据。进程通常只通过系统调用来请求和操作资源，其所分配得到的资源会被内核..</span>
+                <p class="pl">
+                  <span class="">2012-04-15 20:45</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>进程（process）是执行中的目标码（object code）：正在运行的程序。但它不仅仅是目标码，进程由数据、资源、状态以及一个虚拟的计算机组成。</q></blockquote><div style="padding-bottom:1em;"></div>一个进程在内存中比较有意义的有 text、data 和 bbs 三段。text 段包含可执行代码和只读数据（例如常量），RX；data 段中包含已经初始化过的数据（例如已定义初值的变量），RW；bbs 段包含尚未初始化的全局数据。进程通常只通过系统调用来请求和操作资源，其所分配得到的资源会被内核存入进程描述符（process descriptor）。<div style="padding-bottom:1em;"></div>进程本身是一个虚拟的抽象对象。每个进程由一个或多个线程（threads of execution）构成，而线程则是最小执行单位。传统 Unix 程序惯用每个进程单线程的程序，因为 Unix 简单快速创建进程的机制和稳固的进程间通信（IPC）机制降低了对线程的需求。线程由存放局部变量的堆栈（stack）、处理机状态和目标码执行位置指针组成。进程的其余部分则由进程内的多个线程共享。<div style="padding-bottom:1em;"></div><blockquote><q>Linux 中的授权机制由用户（user）和组（group）提供。每个用户都会被分配一个独一无二的正整数，称为用户标识符（user ID，简称  uid）。每个进程恰好会被关联到一个 uid，用来识别运行进程的用户，这被称为进程的真实用户标识符（real uid）。</q></blockquote><div style="padding-bottom:1em;"></div>uid 和 username 的对应存储在 /etc/passwd 中。登录系统时 login 询问用户名和密码，如果有效则衍生（spawn）出 login shell，让 shell 的 real uid 等于登录用户的 uid。子进程的 uid 继承自父进程。uid 的所有权属于 root，只有 root 可以更改进程的 real uid，故 login 必须使用 root 运行。<div style="padding-bottom:1em;"></div>每个进程除了 real uid 还拥有effective uid（有效用户标识）、saved uid、filesystem uid（文件系统用户标识）。real uid 一般代表启动进程；effective uid 可以更改（以适应权限分配需要），它将决定实际权限；saved uid 保存上一次 effective uid 的值；filesystem uid 决定访问文件系统的权限，一般情况下等于 effective uid。<div style="padding-bottom:1em;"></div>每个用户可能隶属于一个或多个组（group），包括 /etc/passwd 列出的主要组（primary group）和登录组（login group），以及 /etc/group 中的追加组（supplemental group）。每个进程也会关联到一系列的组标识（group ID，缩写 gid），进程 gid 的种类和进程 uid 的种类对应。进程一般关联到用户的登录组而非追加组。<div style="padding-bottom:1em;"></div>文件的权限用总共 9 bit 的二进制码表示，其中文件拥有者（owner）权限、拥有者所在组权限、其他用户权限各使用 3 bit ，三个置为为 1 分别代表拥有读取权限（R）、拥有写入权限（W）、拥有执行权限（X）。权限码的每三位可以用十进制表示，例如 777 就表示 owner、owner group、other 都拥有 R、W、X 权限。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17819524/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-15 20:45
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17838578">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tonyseek/"><img src="https://img1.doubanio.com/icon/u45745696-37.jpg" alt="松鼠奥利奥" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17838578/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17838578/" class="">第32页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tonyseek/" class=" " title="松鼠奥利奥">松鼠奥利奥</a>
+                (all men are created equal)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17838578">
+              <div class="short">
+                
+                  <span class="">== 信号 ==
+信号（signal）是一种单向一部通知机制。信号可以从内核送往一个进程，从一个进程送往另一个进程，或者从一个进程送给它自己。
+在知乎上我也就这个问题提出了问题（http://www.zhihu.com/question/20175801/answer/14225549），总结出信号具有以下特点：
+
+* 信号是一种事件通知机制，但不是单纯的通知，而是伴随着“软中断”的。
+
+* 基于上一点，信号的发送与进程的主事件流是异步的。信号一旦到达，就会抢占进程...</span>
+                <p class="pl">
+                  <span class="">2012-04-16 23:51</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                == 信号 ==
+<blockquote><q>信号（signal）是一种单向一部通知机制。信号可以从内核送往一个进程，从一个进程送往另一个进程，或者从一个进程送给它自己。</q></blockquote>
+在知乎上我也就这个问题提出了问题（<a rel="nofollow" href="http://www.zhihu.com/question/20175801/answer/14225549" target="_blank">http://www.zhihu.com/question/20175801/answer/14225549</a>），总结出信号具有以下特点：<div style="padding-bottom:1em;"></div>* 信号是一种事件通知机制，但不是单纯的通知，而是伴随着“软中断”的。<div style="padding-bottom:1em;"></div>* 基于上一点，信号的发送与进程的主事件流是异步的。信号一旦到达，就会抢占进程控制权，优先调用 signal_handler 函数，然后才返回主事件流。<div style="padding-bottom:1em;"></div>一般进程对 Linux 内核实现的三十多种信号都有默认的处理方式（signal_handler），程序编写者可以注册自己的 handler 取代默认处理，除了终止进程信号（SIGKILL）和中止进程信号（SIGSTOP）。 <div style="padding-bottom:1em;"></div>== 进程间通信 ==<div style="padding-bottom:1em;"></div>Linux 所支持的进程间通信（IPC）方式还包括管道（pipe）、命名管道（FIFO）、信号量（semaphore）、消息队列、共享内存、快速用户空间 mutex（futex）。<div style="padding-bottom:1em;"></div>== 错误处理 ==<div style="padding-bottom:1em;"></div>C 语言没有内置的异常机制，一般系统调用函数返回 -1 代表出错。错误类型的标识会记录在 &lt;errno.h&gt; 中的全局变量 errno 中。perror 函数可以根据错误标识打印错误信息，strerror 可以接受 errno 为参数输出错误信息。常见的错误是打印错误信息之前调用了其他函数，这些函数执行过程可能也会修改 errno 的值。应该在发生这种情况时提前用一个整型变量保存 errno。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17838578/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-16 23:51
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="27977349">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/shaoguangleo/"><img src="https://img3.doubanio.com/icon/u3204672-5.jpg" alt="郭大侠" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27977349/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27977349/" class="">第130页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/shaoguangleo/" class=" " title="郭大侠">郭大侠</a>
+                (http://guoshaoguang.com)
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="27977349">
+              <div class="short">
+                
+                  <span class="">调度的一些算法及理论分析没有看懂，需要回头在看看。</span>
+                <p class="pl">
+                  <span class="">2013-08-07 09:06</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                调度的一些算法及理论分析没有看懂，需要回头在看看。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27977349/#comments">回应</a>&nbsp;&nbsp;
+                  2013-08-07 09:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="23676381">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/shonenada/"><img src="https://img3.doubanio.com/icon/u58022352-2.jpg" alt="shonenada" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23676381/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23676381/" class="">第24页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/shonenada/" class=" " title="shonenada">shonenada</a>
+              
+            </p>
+            <div class="reading-note" data-cid="23676381">
+              <div class="short">
+                
+                  <span class="">根文件系统。
+
+第一个文件系统会被挂载到命名空间的 root 结点，“/”，这被称为根文件系统（root file system）。Linux 系统通常会具有一个根文件系统。</span>
+                <p class="pl">
+                  <span class="">2013-01-05 21:24</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                根文件系统。<div style="padding-bottom:1em;"></div><blockquote><q>第一个文件系统会被挂载到命名空间的 root 结点，“/”，这被称为根文件系统（root file system）。Linux 系统通常会具有一个根文件系统。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23676381/#comments">回应</a>&nbsp;&nbsp;
+                  2013-01-05 21:24
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="23559229">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tonyseek/"><img src="https://img1.doubanio.com/icon/u45745696-37.jpg" alt="松鼠奥利奥" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/23559229/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/23559229/" class="">第170页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tonyseek/" class=" " title="松鼠奥利奥">松鼠奥利奥</a>
+                (all men are created equal)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="23559229">
+              <div class="short">
+                
+                  <span class="">## 进程组
+
+* 每个进程都属于一个进程组（process group）
+* 可以把信号（signal）传递给整个进程组
+* 每个进程组都有一个首领进程（process group leader），它的 pid 就是进程组的 pgid
+* 只要还有一个进程存活，即使首领进程已终止，进程组仍然存在
+
+## 会话
+
+* 登录一台机器时，登录进程（login process）会为其创建一个会话（session），它只包含一个进程 login shell 也即会话首领进程（session leader），其 pid 作为 sessi...</span>
+                <p class="pl">
+                  <span class="">2013-01-01 10:37</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                ## 进程组<div style="padding-bottom:1em;"></div>* 每个进程都属于一个进程组（process group）<div style="padding-bottom:1em;"></div>* 可以把信号（signal）传递给整个进程组<div style="padding-bottom:1em;"></div>* 每个进程组都有一个首领进程（process group leader），它的 pid 就是进程组的 pgid<div style="padding-bottom:1em;"></div>* 只要还有一个进程存活，即使首领进程已终止，进程组仍然存在<div style="padding-bottom:1em;"></div>## 会话<div style="padding-bottom:1em;"></div>* 登录一台机器时，登录进程（login process）会为其创建一个会话（session），它只包含一个进程 login shell 也即会话首领进程（session leader），其 pid 作为 session ID<div style="padding-bottom:1em;"></div>* 一个会话至少包含一个前台进程组（foreground process group），可包含 0~n 个后台进程组（background process group）<div style="padding-bottom:1em;"></div>* 前台进程组可被信号集体杀死<div style="padding-bottom:1em;"></div>    - ^D : SIGQUIT<div style="padding-bottom:1em;"></div>    - 网络断开 : SIGHUP<div style="padding-bottom:1em;"></div>    - ^C : SIGINT<div style="padding-bottom:1em;"></div>* 通过管道连接的进程属于同一个进程组，如果没有用结尾加 &amp; 之类的方式，该进程组在终端中运行时为前台进程组<div style="padding-bottom:1em;"></div><pre class="source true c">
+// related: unistd.h
+pid_t setsid(void); // 创建新会话, 会话中包含一个进程组, 首领为当前进程
+int setpgid(pid_t pid, pid_t pgid); // 更改 pid 进程的进程组为 pgid，不可改现任首领进程，pid 必须属于当前进程树
+</pre><div style="padding-bottom:1em;"></div>## 守护进程<div style="padding-bottom:1em;"></div>* 登录会话一般会关联到 tty 或其他终端设备，但守护进程（daemon）有自己的会话，不和 tty 关联，创建自己的会话是为了避免被其他会话的集体杀牵连，setsid 做到这点<div style="padding-bottom:1em;"></div>* daemon 必须是 init 的子进程，可以通过 fork 后父进程自杀，子进程被托孤来做到这点<div style="padding-bottom:1em;"></div>* daemon 的工作目录应该是根目录，以防工作目录被 unmount，chdir 做到这点<div style="padding-bottom:1em;"></div>* daemon 的 stdin, stdout, stderr 都被重定向到 /dev/null<div style="padding-bottom:1em;"></div>* 已打开 fd 要关掉<div style="padding-bottom:1em;"></div>一步做到：<div style="padding-bottom:1em;"></div><pre class="source true c">
+int daemon(int nochdir, int noclose); // unistd.h
+</pre><div style="padding-bottom:1em;"></div>特殊情况：父进程 fork 之后还没来得及自杀子进程就终止了，这种情况下子进程会成为僵尸，对于 daemon 来说一般通过两次 fork 来避免这种情况，即杀死僵尸进程的父进程（第一次 fork 的产物），这时第二次 fork 产生的进程如果成为僵尸，会因为被托孤给 init 而被 init 清理。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/23559229/#comments">回应</a>&nbsp;&nbsp;
+                  2013-01-01 10:37
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17852091">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/tonyseek/"><img src="https://img1.doubanio.com/icon/u45745696-37.jpg" alt="松鼠奥利奥" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17852091/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17852091/" class="">第46页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/tonyseek/" class=" " title="松鼠奥利奥">松鼠奥利奥</a>
+                (all men are created equal)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17852091">
+              <div class="short">
+                
+                  <span class="">文件 I/O 在 Unix 和 Linux 中都具有重要意义，因为操作系统对所有具有输入输出的对象都以“一切都是文件”的方式来抽象。包括设备文件、管道、目录、futex、FIFO、socket 都可以被抽象为文件来供操作。
+
+一个文件必须先打开，才可以对它进行操作。内核会替每个进程维护一份已打开文件列表，称为文件表（file table）。此表是通过非负整数被索引，而此非负整数称为文件描述符（file descriptor，缩写 fd）。
+
+这一段文字有点费...</span>
+                <p class="pl">
+                  <span class="">2012-04-17 21:01</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                文件 I/O 在 Unix 和 Linux 中都具有重要意义，因为操作系统对所有具有输入输出的对象都以“一切都是文件”的方式来抽象。包括设备文件、管道、目录、futex、FIFO、socket 都可以被抽象为文件来供操作。<div style="padding-bottom:1em;"></div><blockquote><q>一个文件必须先打开，才可以对它进行操作。内核会替每个进程维护一份已打开文件列表，称为文件表（file table）。此表是通过非负整数被索引，而此非负整数称为文件描述符（file descriptor，缩写 fd）。</q></blockquote><div style="padding-bottom:1em;"></div>这一段文字有点费解，我查找了其他资料辅助，得到的说法是：文件描述符并非进程内唯一，而是全局唯一存在。对于一个已启动的操作系统，它是跨进程存在的。而 file table 在 Linux Tutorial Glossary 中的描述是：“A table internal to the kernel that maintains the the relationship between the file descriptors and the physical file on the hard disk.” 可见其也是“internal to the kernel”的，是维护文件描述符（fd）和物理文件（可以看成 inode）关系的一张表。<div style="padding-bottom:1em;"></div><blockquote><q>默认情况下，子进程会取得其父进程的文件表。</q></blockquote><div style="padding-bottom:1em;"></div>在 man fork 中看到了关于文件描述符被子进程继承的说法：“The child inherits copies of the parent's set of open file descriptors. Each file descriptor in the child refers to the same open file description (see  open(2))  as  the  corresponding  file descriptor in the parent.  This means that the two descriptors share open file status flags, current file offset, and signal-driven I/O attributes (see the description of F_SETOWN and F_SETSIG in fcntl(2)).” 可见子进程对一个已打开的文件的属性信息还是会继承的。<div style="padding-bottom:1em;"></div>综合书中说法，file table 应该指的就是关于已打开文件属性的记录结构：<div style="padding-bottom:1em;"></div><blockquote><q>该表（file table）中每个条目内含与已打开文件相关的信息，包括一个指针（指向文件 inode 在内存中的副本）以及相关的元数据（例如文件位置与访问模式）。</q></blockquote><div style="padding-bottom:1em;"></div>一个文件描述符可表示成一个整型数据，默认情况下上限为 1024，其中有特殊的三个：0-标准输入-stdin，1-标准输出-stdout，2-标准错误-stderr。<div style="padding-bottom:1em;"></div>== 打开文件 ==<div style="padding-bottom:1em;"></div>文件控制系统调用的 C API 包含在 fcntl.h 头文件中。<div style="padding-bottom:1em;"></div>* 打开文件：int open(const char *name, int flags[, mode_t mode]);<div style="padding-bottom:1em;"></div>    * flags 至少需要包含 O_RDONLY（read only）、O_WRONLY（write only）或 O_RDWR（read and write）之一，其他参数可以通过与操作符（|）附加。<div style="padding-bottom:1em;"></div>    * O_APPEND 附加模式（位置指针自动指向末尾）。<div style="padding-bottom:1em;"></div>    * O_ASYNC 异步模式，如果文件可读取（可写入）了则产生一个 SIGIO 信号。只能用于 sockets 不能用于常规文件。<div style="padding-bottom:1em;"></div>    * O_CREAT（create 怎么少了一个字母呢）如果文件不存在则自动创建。<div style="padding-bottom:1em;"></div>    * O_DIRECT 直接 I/O，让内核尽量减少 I/O 管理在场机会，跳过内核缓存、缓冲。启用后文件偏移量必须是底层设备的扇区大小整数倍。<div style="padding-bottom:1em;"></div>    * O_DIRECTORY 若不是目录则调用失败。一般不直接使用，而是供 opendir 链接库调用。<div style="padding-bottom:1em;"></div>    * O_EXCL 和 O_CREAT 相反，如果文件已经存在则调用失败。用于避免创建文件时竞争条件（race condition）。<div style="padding-bottom:1em;"></div>    * O_LARGEFILE 以 64 位偏移量打开文件，以便支持打开大于 2G 的文件。64 位架构上是默认值。<div style="padding-bottom:1em;"></div>    * O_NOFOLLOW 不跟踪 symlink 重定向——如果文件是符号链接则调用失败。<div style="padding-bottom:1em;"></div>    * O_NONBLOCK 非阻塞模式，让进程在 I/O 时不会被阻塞（休眠），仅用于 FIFO。<div style="padding-bottom:1em;"></div>    * O_SYNC 同步模式，阻塞 I/O 函数的调用。一般读取默认是同步模式，而写入则采取内核缓冲和 writeback 机制，开启该模式则关闭内核缓冲。<div style="padding-bottom:1em;"></div>    * O_TRUNC 把文件截断成零长度，只对允许写入的常规文件有效，对终端和 FIFO 会被忽略。<div style="padding-bottom:1em;"></div>== 权限问题 ==<div style="padding-bottom:1em;"></div>默认文件拥有者（owner）就是创建文件进程的 effective uid。<div style="padding-bottom:1em;"></div>默认文件拥有组（owner group）在 System V（大部分 Linux 的行为模型）中是设定为创建文件进程的 effective gid，在 BSD 中是设定为上层目录的 gid。<div style="padding-bottom:1em;"></div>在用 open 打开文件的时候如果指定了 O_CREAT 则必须使用 mode 参数指定访问模式。mode 访问模式可以和打开模式抵触，因为打开文件的时候并不会检查 mode。mode 参数就是 Unix 权限位，可以设置为 S_IRWXU(111xxxxxx，owner 可以读写执行)、S_IRUSR(100xxxxxx，owner 可读)、S_IWUSR(010xxxxxx，owner 可写)、S_IXUSR(001xxxxxx，owner 可执行)、S_IRWXG(xxx111xxx，group 可读写执行)、S_IRGRP(xxx100xxx，group 可读)、S_IWGRP(xxx010xxx，group 可写)、S_IXGRP(xxx001xxx，group 可执行)、S_IRWXO(xxxxxx111，other 可读写执行)、S_IROTH(xxxxxx100，other 可读)、S_IWOTH(xxxxxx010，other 可写)、S_IXOTH(xxxxxx001， other 可执行)。权限设置可以使用与操作符来连接。<div style="padding-bottom:1em;"></div>我觉得去记这么一堆东西实在是很傻的事情，我更愿意直接书写权限码，例如 S_IRWXU | S_IRWXG | S_IXOTH 直接写成 771。<div style="padding-bottom:1em;"></div>文件操作的实际权限并非直接使用 mode 参数，而是将 mode 与 umask 的补码进行一次与运算，也就是从 umask 中的设置位“拿掉” mode 中的权限。<div style="padding-bottom:1em;"></div>== 快捷创建新文件、错误处理 ==<div style="padding-bottom:1em;"></div>creat(const char* name, mode_t mode) 是 O_WRONLY | O_CREAT | O_TRUNC 组合的快捷方式。<div style="padding-bottom:1em;"></div>按照惯例，open 和 creat 在失败的时候不返回文件描述符，而是返回 -1，同时 errno 会被设置。<div style="padding-bottom:1em;"></div>== 读取 ==<div style="padding-bottom:1em;"></div>ssize_t read(int fd, void* buf, size_t len); 是读取函数的函数原型，调用时会从“当前”位置开始向后读取 len 个字节，并存入 buf 所指向的地址。读取过程“当前”位置会随之前进，就像迭代器指针一样。<div style="padding-bottom:1em;"></div>read 函数的读取有以下几种情况：<div style="padding-bottom:1em;"></div>* 实际可用字节数为 0（已到达文件末尾），函数返回 0 表示 EOF。<div style="padding-bottom:1em;"></div>* 实际可用字节数等于 len，正常读取并返回 len。<div style="padding-bottom:1em;"></div>* 实际可用字节数小于 len，但读取已经到达 EOF，或读取进行时被 signal 打断，函数返回实际读取到的字节数。<div style="padding-bottom:1em;"></div>* 实际可用字节数小于 len，但并非因为中断或 EOF，而是因为可供读取的数据尚未出现（例如等待标准输入）。此时若文件描述符以非 O_NONBLOCK 模式打开时，read 函数阻塞（进程睡眠）；以 O_NONBLOCK 模式打开时，函数返回 -1，errno 为 EAGAIN。<div style="padding-bottom:1em;"></div>* 尚未开始读取就被 signal 打断，函数返回 -1，errno 为 EINTR。<div style="padding-bottom:1em;"></div>* 发生其他严重错误（例如 I/O 错误），函数返回 -1，errno 为 EAGAIN 和 EINTR 以外的其他值，比如 EBADF（bad file，fd 无效或未打开）、EFAULT（fault，buf 指向的地址空间不属于本进程）、EINVAL（invalid，fd 指向了一个不允许读取的目标）、EIO（低级 I/O 错误）。<div style="padding-bottom:1em;"></div>读取的字节限制：ssize_t 的最大值是 SSIZE_MAX（LONG_MAX）。<div style="padding-bottom:1em;"></div>== 写入 ==<div style="padding-bottom:1em;"></div>ssize_t write(int fd, const void* buf, size_t count); 是写入函数的函数原型，调用时从 buf 中读取 count 个字节写入 fd 所指向的文件。写入过程和 read 一样会推进文件的“当前”位置指针。<div style="padding-bottom:1em;"></div>write 函数的写入有以下几种情况：<div style="padding-bottom:1em;"></div>* 写入成功，返回 ssize_t 数据类型，表示写入的字节数。<div style="padding-bottom:1em;"></div>* 写入失败，返回 -1 并设置 errno。<div style="padding-bottom:1em;"></div>写入不存在 EOF，所以返回 0 没有特殊的意义，仅仅代表写入了 0 字节。正常来说 write 不会像 read 一样出现部分写入，也就是正常情况下返回的 ssize_t 取值上是等于 count 的。但对于特殊的文件（比如 socket）是有可能出现部分写入的。<div style="padding-bottom:1em;"></div>写入的方式会受到 fd 是否以 O_APPEND 模式打开的影响。开启附加模式之后，写入动作不会从“当前”位置开始，而是从文件末尾开始。这和手动将“当前”位置指针移动到文件末尾不同，附加模式可以避免多个进程写入同一个文件时候出现的竞争问题，确保写入总是从末端开始。对于日志记录来说，附加模式十分有用。<div style="padding-bottom:1em;"></div>写入的字节限制也是 SSIZE_MAX。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17852091/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-17 21:01
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/3907181/annotation">更多读书笔记（共11篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/3907181/discussion/613133021/" title="跟APUE比起来 这本书 小而精" class="">跟APUE比起来 这本书 小而精</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/64096729/">北风之神</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2016-02-05</span></td>
+        </tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D9787564115197&amp;subject=756411519X&amp;type=borrow&amp;library=10012&amp;link2key=5427a77ba0" target="_blank">上海市中心图书馆(5)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fourex.lib.sjtu.edu.cn%2Fprimo_library%2Flibweb%2Faction%2Fsearch.do%3Ffn%3Dsearch%26vl%28freeText0%29%3D978-7-5641-1519-7&amp;subject=756411519X&amp;type=borrow&amp;library=10006&amp;link2key=5427a77ba0" target="_blank">上海交通大学图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac3.wzlib.cn%2Fopac%2Fsearch%3FsearchWay%3Disbn%26q%3D978-7-5641-1519-7%26booktype%3D%26marcformat%3D%26sortWay%3Dscore%26sortOrder%3Ddesc%26startPubdate%3D%26endPubdate%3D%26rows%3D10&amp;subject=756411519X&amp;type=borrow&amp;library=10020&amp;link2key=5427a77ba0" target="_blank">温州市图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2F222.177.237.197%3A8080%2FInDigLib%2Ffront%2FComplexSearch.action%3FcurrentPage%3D1%26select1%3Disbn%26select2%3D%26select3%3D%26text1%3D978-7-5641-1519-7%26text2%3D%26text3%3D%26pageSize%3D20%26condition%3D%26table%3Di_biblios%26type%3D%26videoType%3Dcomplex&amp;subject=756411519X&amp;type=borrow&amp;library=10021&amp;link2key=5427a77ba0" target="_blank">重庆图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac.zslib.com.cn%3A8991%2FF%2F%3Ffunc%3Dfind-b%26find_code%3Disb%26request%3D9787564115197&amp;subject=756411519X&amp;type=borrow&amp;library=10026&amp;link2key=5427a77ba0" target="_blank">广东省立中山图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/3907181/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/2068817/" target="_blank">3.linux内核</a>
+                <span class="pl">(再出发)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/299918/" target="_blank">去圖書館才是正經事</a>
+                <span class="pl">(悟怡)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/167227/" target="_blank">待购书目</a>
+                <span class="pl">(georgexsh)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1712437/" target="_blank">计算机专业</a>
+                <span class="pl">(示云_好好生活)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1754477/" target="_blank">图书馆待借阅</a>
+                <span class="pl">(养鸭专业户)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/70900786/"><img src="https://img3.doubanio.com/icon/u70900786-2.jpg" class="pil" alt="imath" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/70900786/">imath</a><br/>
+      <div class="pl ll">          1月11日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/95358950/"><img src="https://img3.doubanio.com/icon/u95358950-4.jpg" class="pil" alt="Panson" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/95358950/">Panson</a><br/>
+      <div class="pl ll">          2017年12月30日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/151183957/"><img src="https://img3.doubanio.com/icon/u151183957-1.jpg" class="pil" alt="沒結果的花" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/151183957/">沒結果的花</a><br/>
+      <div class="pl ll">          2017年12月10日          读过      </div>
+
+        <span class="allstar40" title="推荐"></span>
+      <br/>
+
+      <span class="pl">tags:Linux/Unix Linux 系统编程...</span><br />
+
+          <span class="">短小精悍是这本书最大的特点了吧。。毕竟读apue还是太厚了，但是不得不说很多讲解没有apue讲的细腻</span> <br/>
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/114876480/"><img src="https://img3.doubanio.com/icon/u114876480-2.jpg" class="pil" alt="会飞的猪" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/114876480/">会飞的猪</a><br/>
+      <div class="pl ll">          2017年12月1日          读过      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3907181/doings">38人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3907181/collections">99人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3907181/wishes">335人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/3907181/offers">3本二手书欲转让</a>
+          <span class="">
+            (20.00
+                至 30.00元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有335人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于LINUX系统编程的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/3907181/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = '8-mNNoRlr8Y',
+            criteria = '7:Linux|7:系统编程|7:编程|7:Linux/Unix|7:操作系统|7:计算机|7:linux|7:Programming|7:计算机科学|7:C|3:/subject/3907181/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar2b-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3538 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>系统虚拟化 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/3619896/">
+<meta name="keywords" content="系统虚拟化,Intel corporatio,清华大学出版社,2009-1,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书系统虚拟化 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/3619896/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">系统虚拟化</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img1.doubanio.com/lpic/s3798008.jpg" title="系统虚拟化">
+    <img src="https://img1.doubanio.com/lpic/s3798008.jpg" title="点击看大图" alt="系统虚拟化"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Intel%20corporatio">Intel corporatio</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 清华大学出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">副标题:</span> 原理与实现<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2009-1<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 238<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 29.00元<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787302193722<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 7.7 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar40"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">73</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:35px"></div>
+
+            <span class="rating_per">23.3%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">42.5%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:49px"></div>
+
+            <span class="rating_per">32.9%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">1.4%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3619896-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3619896-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3619896-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3619896-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3619896-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3619896-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3619896-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3619896-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-3619896">
+        <a href="#" data-url="https://book.douban.com/subject/3619896/" data-desc="" data-title="书籍《系统虚拟化》 (来自豆瓣) " data-pic="https://img1.doubanio.com/lpic/s3798008.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_3619896"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>本书深入而又系统地介绍了以软件完全虚拟化、硬件辅助虚拟化及类虚拟化为核心的各种系统虚拟化技术。全书共9章，第1章概述性地介绍了虚拟化技术；第2章介绍计算机系统知识；第3章从CPU虚拟化、内存虚拟化和I/0虚拟化三大块对系统虚拟化技术进行概述，并介绍虚拟机监控器（VMM）的组成与分类，而且对市场上流行的虚拟化产品进行了简单介绍；第4-6章分别从基于软件的完全虚拟化、硬件辅助的完全虚拟化和类虚拟化三种实现技术角度深入介绍系统虚拟化方法；第7章介绍虚拟机的性能评测和调试技术；第8章介绍系统虚拟化的应用实例；最后在第9章对虚拟机和系统虚拟化技术的发展作一个展望。</p>    <p>本书是系统虚拟化技术实现原理的全面展示，也是作者这些年在虚拟化学术和工业研究领域开发的经验总结。本书理论与实践相结合，用通俗易懂的语言描述系统虚拟化技术原理，其中不乏具有代表性和普遍意义的实例和技术...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>本书深入而又系统地介绍了以软件完全虚拟化、硬件辅助虚拟化及类虚拟化为核心的各种系统虚拟化技术。全书共9章，第1章概述性地介绍了虚拟化技术；第2章介绍计算机系统知识；第3章从CPU虚拟化、内存虚拟化和I/0虚拟化三大块对系统虚拟化技术进行概述，并介绍虚拟机监控器（VMM）的组成与分类，而且对市场上流行的虚拟化产品进行了简单介绍；第4-6章分别从基于软件的完全虚拟化、硬件辅助的完全虚拟化和类虚拟化三种实现技术角度深入介绍系统虚拟化方法；第7章介绍虚拟机的性能评测和调试技术；第8章介绍系统虚拟化的应用实例；最后在第9章对虚拟机和系统虚拟化技术的发展作一个展望。</p>    <p>本书是系统虚拟化技术实现原理的全面展示，也是作者这些年在虚拟化学术和工业研究领域开发的经验总结。本书理论与实践相结合，用通俗易懂的语言描述系统虚拟化技术原理，其中不乏具有代表性和普遍意义的实例和技术细节，是学习系统虚拟化技术的宝贵资料。本书不仅可以作为教材，供计算机相关专业的大学高年级学生和研究生阅读；而且可以作为一本参考手册，供大学或企业里与系统相关领域的研究开发人员以及对虚拟机及虚拟化核心技术有兴趣的研究者和开源工作者阅读。</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/3619896/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_3619896_short">
+        第1章 开篇<br/>
+        1.1 形形色色的虚拟化<br/>
+        1.2 系统虚拟化<br/>
+        1.3 系统虚拟化简史<br/>
+        1.4 系统虚拟化的好处<br/>
+        第2章 x86架构及操作系统概述<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_3619896_short').hide();$('#dir_3619896_full').show();$.get('/j/subject/j_dir_count',{id:3619896});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_3619896_full" style="display:none">
+        第1章 开篇<br/>
+        1.1 形形色色的虚拟化<br/>
+        1.2 系统虚拟化<br/>
+        1.3 系统虚拟化简史<br/>
+        1.4 系统虚拟化的好处<br/>
+        第2章 x86架构及操作系统概述<br/>
+        2.1 x86的历史和操作系统概要<br/>
+        2.1.1 x86的历史<br/>
+        2.1.2 操作系统概述<br/>
+        2.2 x86内存架构<br/>
+        2.2.1 地址空间<br/>
+        2.2.2 地址<br/>
+        2.2.3 x86内存管理机制<br/>
+        2.3 x86架构的基本运行环境<br/>
+        2.3.1 三种基本模式<br/>
+        2.3.2 基本寄存器组<br/>
+        2.3.3 权限控制<br/>
+        2.4 中断与异常<br/>
+        2.4.1 中断架构<br/>
+        2.4.2 异常架构<br/>
+        2.4.3 操作系统对中断/异常的处理流程<br/>
+        2.5 进程<br/>
+        2.5.1 上下文<br/>
+        2.5.2 上下文切换<br/>
+        2.6 I/O架构<br/>
+        2.6.1 x86的I/O架构<br/>
+        2.6.2 DMA<br/>
+        2.6.3 PCI设备<br/>
+        2.6.4 PCI Express<br/>
+        2.7 时钟<br/>
+        2.7.1 x86平台的常用时钟<br/>
+        2.7.2 操作系统的时钟观<br/>
+        第3章 虚拟化概述<br/>
+        3.1 可虚拟化架构与不可虚拟化架构<br/>
+        3.2 处理器虚拟化<br/>
+        3.2.1 指令的模拟<br/>
+        3.2.2 中断和异常的模拟及注入<br/>
+        3.2.3 对称多处理器技术的模拟<br/>
+        3.3 内存虚拟化<br/>
+        3.4 I/O虚拟化<br/>
+        3.4.1 概述<br/>
+        3.4.2 设备发现<br/>
+        3.4.3 访问截获<br/>
+        3.4.4 设备模拟<br/>
+        3.4.5 设备共享<br/>
+        3.5 VMM的功能和组成<br/>
+        3.5.1 虚拟环境的管理<br/>
+        3.5.2 物理资源的管理<br/>
+        3.5.3 其他模块<br/>
+        3.6 VMM的分类<br/>
+        3.6.1 按虚拟平台分类<br/>
+        3.6.2 按VMM实现结构分类<br/>
+        3.7 典型虚拟化产品及其特点<br/>
+        3.7.1 VMware<br/>
+        3.7.2 Microsoft<br/>
+        3.7.3 Xen<br/>
+        3.7.4 KVM<br/>
+        3.8 思考题<br/>
+        第4章 基于软件的完全虚拟化<br/>
+        4.1 概述<br/>
+        4.2 CPU虚拟化<br/>
+        4.2.1 解释执行<br/>
+        4.2.2 扫描与修补<br/>
+        4.2.3 二进制代码翻译<br/>
+        4.3 内存虚拟化<br/>
+        4.3.1 概述<br/>
+        4.3.2 影子页表<br/>
+        4.3.3 内存虚拟化的优化<br/>
+        4.4 I/O虚拟化<br/>
+        4.4.1 设备模型<br/>
+        4.4.2 设备模型的软件接口<br/>
+        4.4.3 接口拦截和模拟<br/>
+        4.4.4 功能实现<br/>
+        4.4.5 案例分析: IDE的DMA操作<br/>
+        4.5 思考题<br/>
+        第5章 硬件辅助虚拟化<br/>
+        5.1 概述<br/>
+        5.2 CPU虚拟化的硬件支持<br/>
+        5.2.1 概述<br/>
+        5.2.2 VMCS<br/>
+        5.2.3 VMX操作模式<br/>
+        5.2.4 VM?Entry/VM?Exit<br/>
+        5.2.5 VM?Exit<br/>
+        5.3 CPU虚拟化的实现<br/>
+        5.3.1 概述<br/>
+        5.3.2 VCPU的创建<br/>
+        5.3.3 VCPU的运行<br/>
+        5.3.4 VCPU的退出<br/>
+        5.3.5 VCPU的再运行<br/>
+        5.3.6 进阶<br/>
+        5.4 中断虚拟化<br/>
+        5.4.1 概述<br/>
+        5.4.2 虚拟PIC<br/>
+        5.4.3 虚拟I/O APIC<br/>
+        5.4.4 虚拟Local APIC<br/>
+        5.4.5 中断采集<br/>
+        5.4.6 中断注入<br/>
+        5.4.7 案例分析<br/>
+        5.5 内存虚拟化<br/>
+        5.5.1 概述<br/>
+        5.5.2 EPT<br/>
+        5.5.3 VPID<br/>
+        5.6 I/O虚拟化的硬件支持<br/>
+        5.6.1 概述<br/>
+        5.6.2 VT?d技术<br/>
+        5.7 I/O虚拟化的实现<br/>
+        5.7.1 概述<br/>
+        5.7.2 设备直接分配<br/>
+        5.7.3 设备I/O地址空间的访问<br/>
+        5.7.4 设备发现<br/>
+        5.7.5 配置DMA重映射数据结构<br/>
+        5.7.6 设备中断虚拟化<br/>
+        5.7.7 案例分析: 网卡的直接分配在Xen里面的实现<br/>
+        5.7.8 进阶<br/>
+        5.8 时间虚拟化<br/>
+        5.8.1 操作系统的时间概念<br/>
+        5.8.2 客户机的时间概念<br/>
+        5.8.3 时钟设备仿真<br/>
+        5.8.4 实现客户机时间概念的一种方法<br/>
+        5.8.5 实现客户机时间概念的另一种方法<br/>
+        5.8.6 如何满足客户机时间不等于实际时间的需求<br/>
+        5.9 思考题<br/>
+        第6章 类虚拟化技术<br/>
+        6.1 概述<br/>
+        6.1.1 类虚拟化的由来<br/>
+        6.1.2 类虚拟化的系统实现<br/>
+        6.1.3 类虚拟化接口的标准化<br/>
+        6.2 类虚拟化体系结构<br/>
+        6.2.1 指令集<br/>
+        6.2.2 外部中断<br/>
+        6.2.3 物理内存空间<br/>
+        6.2.4 虚拟内存空间<br/>
+        6.2.5 内存管理<br/>
+        6.2.6 I/O子系统<br/>
+        6.2.7 时间与时钟服务<br/>
+        6.3 Xen的原理与实现<br/>
+        6.3.1 超调用<br/>
+        6.3.2 虚拟机与Xen的信息共享<br/>
+        6.3.3 内存管理<br/>
+        6.3.4 页表虚拟化<br/>
+        6.3.5 事件通道<br/>
+        6.3.6 授权表<br/>
+        6.3.7 I/O系统<br/>
+        6.3.8 实例分析: 块设备虚拟化<br/>
+        6.4 XenLinux的运行<br/>
+        6.5 思考题<br/>
+        第7章 虚拟环境性能和优化<br/>
+        7.1 性能评测指标<br/>
+        7.2 性能评测工具<br/>
+        7.2.1 重用操作系统的性能评测工具<br/>
+        7.2.2 面向虚拟环境的性能评测工具<br/>
+        7.3 性能分析工具<br/>
+        7.3.1 Xenoprof<br/>
+        7.3.2 Xentrace<br/>
+        7.3.3 Xentop<br/>
+        7.4 性能优化方法<br/>
+        7.4.1 降低客户机退出事件发生频率<br/>
+        7.4.2 降低客户机退出事件处理时间<br/>
+        7.4.3 降低处理器利用率<br/>
+        7.5 性能分析案例<br/>
+        7.5.1 案例分析: Xenoprof<br/>
+        7.5.2 案例分析: Xentrace<br/>
+        7.6 可扩展性<br/>
+        7.6.1 宿主机的可扩展性<br/>
+        7.6.2 客户机的可扩展性<br/>
+        7.7 思考题<br/>
+        第8章 虚拟化技术的应用模式<br/>
+        8.1 常用技术介绍<br/>
+        8.1.1 虚拟机的动态迁移<br/>
+        8.1.2 虚拟机快照<br/>
+        8.1.3 虚拟机的克隆<br/>
+        8.1.4 案例分析: VMware VMotion 和VMware 快照<br/>
+        8.2 服务器整合<br/>
+        8.2.1 服务器整合技术<br/>
+        8.2.2 案例分析: VMware Infrastructure 3<br/>
+        8.3 灾难恢复<br/>
+        8.3.1 灾难恢复与虚拟化技术<br/>
+        8.3.2 案例分析: VMware Infrastructure 3<br/>
+        8.4 改善系统可用性<br/>
+        8.4.1 可用性的含义<br/>
+        8.4.2 虚拟化技术如何提高可用性<br/>
+        8.4.3 虚拟化技术带来的新契机<br/>
+        8.4.4 案例分析: VMware HA和 LUCOS<br/>
+        8.5 动态负载均衡<br/>
+        8.5.1 动态负载均衡的含义<br/>
+        8.5.2 案例分析: VMware DRS<br/>
+        8.6 增强系统可维护性<br/>
+        8.6.1 可维护性的含义<br/>
+        8.6.2 案例分析: VMware VirtualCenter<br/>
+        8.7 增强系统安全与可信任性<br/>
+        8.7.1 安全与可信任性的含义<br/>
+        8.7.2 虚拟化技术如何提高系统安全<br/>
+        8.7.3 虚拟化技术如何提高可信任性<br/>
+        8.7.4 案例分析: sHyper、VMware Infrastructure 3和CoVirt<br/>
+        8.8 Virtual Appliance<br/>
+        第9章 前沿虚拟化技术<br/>
+        9.1 基于容器的虚拟化技术<br/>
+        9.1.1 容器技术的基本概念和发展背景<br/>
+        9.1.2 基于容器的虚拟化技术<br/>
+        9.2 系统安全<br/>
+        9.2.1 基于虚拟化技术的恶意软件<br/>
+        9.2.2 虚拟机监控器的安全性<br/>
+        9.3 系统标准化<br/>
+        9.3.1 开放虚拟机格式<br/>
+        9.3.2 虚拟化的可管理性<br/>
+        9.3.3 虚拟机互操作性标准<br/>
+        9.4 电源管理<br/>
+        9.5 智能设备<br/>
+        9.5.1 多队列网卡<br/>
+        9.5.2 SR?IOV<br/>
+        9.5.3 其他<br/>
+        索引<br/>
+        参考文献<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_3619896_full').hide();$('#dir_3619896_short').show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '3619896',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共25个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/虚拟化">虚拟化</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/虚拟化技术">虚拟化技术</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/云计算">云计算</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机科学">计算机科学</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/vm">vm</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机系统">计算机系统</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/科学">科学</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;系统虚拟化&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/388053/?dcs=subject-rec&amp;dcm=douban&amp;dct=3619896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/388053.jpg?v=1395395845.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/388053/" target="_blank">布道之道</a>
+          </div>
+          <div class="price">
+              12.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/39711588/?dcs=subject-rec&amp;dcm=douban&amp;dct=3619896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/39711588.jpg?v=1505963009.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/39711588/" target="_blank">大话处理器</a>
+          </div>
+          <div class="price">
+              14.40元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1281060/?dcs=subject-rec&amp;dcm=douban&amp;dct=3619896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1281060.jpg?v=1395394428.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1281060/" target="_blank">淘宝技术这十年</a>
+          </div>
+          <div class="price">
+              8.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/570599/?dcs=subject-rec&amp;dcm=douban&amp;dct=3619896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/570599.jpg?v=1395395661.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/570599/" target="_blank">重来</a>
+          </div>
+          <div class="price">
+              12.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/500486/?dcs=subject-rec&amp;dcm=douban&amp;dct=3619896" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/500486.jpg?v=1395393506.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/500486/" target="_blank">打造Facebook</a>
+          </div>
+          <div class="price">
+              15.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;系统虚拟化&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/20271450/" onclick="moreurl(this, {'total': 10, 'clicked': '20271450', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s24410556.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/20271450/" onclick="moreurl(this, {'total': 10, 'clicked': '20271450', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            支撑处理器的技术
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6524076/" onclick="moreurl(this, {'total': 10, 'clicked': '6524076', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6518586.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6524076/" onclick="moreurl(this, {'total': 10, 'clicked': '6524076', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            0day安全 （第2版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25790111/" onclick="moreurl(this, {'total': 10, 'clicked': '25790111', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27176232.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25790111/" onclick="moreurl(this, {'total': 10, 'clicked': '25790111', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            海量运维、运营规划之道
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3687100/" onclick="moreurl(this, {'total': 10, 'clicked': '3687100', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s6009528.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3687100/" onclick="moreurl(this, {'total': 10, 'clicked': '3687100', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            数据重现
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10746257/" onclick="moreurl(this, {'total': 10, 'clicked': '10746257', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s9109455.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10746257/" onclick="moreurl(this, {'total': 10, 'clicked': '10746257', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            软件架构师的12项修炼
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4861766/" onclick="moreurl(this, {'total': 10, 'clicked': '4861766', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6176453.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4861766/" onclick="moreurl(this, {'total': 10, 'clicked': '4861766', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            搜索引擎
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/11614538/" onclick="moreurl(this, {'total': 10, 'clicked': '11614538', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s11194203.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/11614538/" onclick="moreurl(this, {'total': 10, 'clicked': '11614538', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            程序员的职业素养
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1391207/" onclick="moreurl(this, {'total': 10, 'clicked': '1391207', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3809370.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1391207/" onclick="moreurl(this, {'total': 10, 'clicked': '1391207', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            计算机网络（第4版）
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6837645/" onclick="moreurl(this, {'total': 10, 'clicked': '6837645', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s6944557.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6837645/" onclick="moreurl(this, {'total': 10, 'clicked': '6837645', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            RESTful Web Services Cookbook...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1058634/" onclick="moreurl(this, {'total': 10, 'clicked': '1058634', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s1613455.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1058634/" onclick="moreurl(this, {'total': 10, 'clicked': '1058634', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            TCP/IP详解 卷3：TCP事务协议、H...
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/3619896/comments/">全部 28 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="625750628">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-625750628" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-625750628" class="j a_show_login" data-cid="625750628">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/yyjiang/">jiangyy</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2013-01-05</span>
+                </span>
+            </h3>
+            <p class="comment-content">我觉得这是中文书里少有写得比较清楚的了……</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="133105447">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-133105447" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-133105447" class="j a_show_login" data-cid="133105447">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/swiminger/">Nicolas</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2009-12-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">很专业，太过多的讲硬件平台实现，对于其它类型的虚拟机讲的少。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="284469610">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-284469610" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-284469610" class="j a_show_login" data-cid="284469610">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/wyb/">阿泰TainWoo</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2011-06-27</span>
+                </span>
+            </h3>
+            <p class="comment-content">同样是技术入门，如果了解细节还得实践+源码</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="424832301">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-424832301" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-424832301" class="j a_show_login" data-cid="424832301">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/smile665/">笑遍世界</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2012-04-01</span>
+                </span>
+            </h3>
+            <p class="comment-content">深入理解虚拟化细节 必需的中文参考书籍</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="211977736">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-211977736" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-211977736" class="j a_show_login" data-cid="211977736">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/haydenzhang/">haydenzhang</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2010-02-03</span>
+                </span>
+            </h3>
+            <p class="comment-content">蛮不错的, 读了大部分, 掠过了细节</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1256720674">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1256720674" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1256720674" class="j a_show_login" data-cid="1256720674">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/fengxiukeren/">中途迷路Dante</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-10-29</span>
+                </span>
+            </h3>
+            <p class="comment-content">过了一遍，太旧了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1232705308">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1232705308" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1232705308" class="j a_show_login" data-cid="1232705308">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/51298011/">up2wing</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-08-21</span>
+                </span>
+            </h3>
+            <p class="comment-content">很基础但是很易懂，虚拟化入门必读</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1182162102">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1182162102" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1182162102" class="j a_show_login" data-cid="1182162102">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/1681840/">...</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-04-25</span>
+                </span>
+            </h3>
+            <p class="comment-content">好难</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1169141814">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1169141814" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1169141814" class="j a_show_login" data-cid="1169141814">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/hanjianwei/">Tux</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-04-01</span>
+                </span>
+            </h3>
+            <p class="comment-content">内容翔实，把虚拟化的来龙去脉都讲清楚了。不过这本书的装订太差了，两本书都开胶了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1034500140">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1034500140" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1034500140" class="j a_show_login" data-cid="1034500140">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/Atela/">Atela</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2016-12-14</span>
+                </span>
+            </h3>
+            <p class="comment-content">已经不错了，目前没找到其他的书。。。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/3619896/comments/">更多短评 28 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            系统虚拟化的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 3619896;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/3619896/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            系统虚拟化的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 4 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7626374">
+        <div class="main review-item" id="7626374">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/102703779/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u102703779-1.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/102703779/" property="v:reviewer" class="name">不为</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2015-10-14" class="main-meta">2015-10-14 18:38:33</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7626374/">很全面的虚拟化入门书籍</a></h2>
+
+                <div id="review_7626374_short" class="review-short" data-rid="7626374">
+                    <div class="short-content">
+
+                        本书结合工业界和学术界的视角全面介绍了虚拟化。首先介绍了虚拟化的历史，并从几个不同的角度对虚拟化进行了分类。之后按照种类先后讲解了软件虚拟化、硬件辅助的虚拟化、半虚拟化的CPU、内存、I/O虚拟化的实现的方法。均是点到为止，如果你寄希望于从这本书中学习到各种方式...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7626374-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7626374_full" class="hidden">
+                    <div id="review_7626374_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7626374" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7626374">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7626374" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7626374">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7626374/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5103156">
+        <div class="main review-item" id="5103156">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/neilchi/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1094556-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/neilchi/" property="v:reviewer" class="name">坏人C</a>
+
+            <span property="v:rating" class="allstar30 main-title-rating" title="还行"></span>
+
+        <span property="v:dtreviewed" content="2011-09-20" class="main-meta">2011-09-20 21:55:42</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5103156/">中国制造</a></h2>
+
+                <div id="review_5103156_short" class="review-short" data-rid="5103156">
+                    <div class="short-content">
+
+                        书看了一半，突然想八两句对这本书和很多很多中文技术书都一直存在的一点感受：写书的人，没想过要把书写好。  说这句话的意思不是说写书的人不认真。这书其实写的挺认真的，或者说，至少找不到敷衍的证据。作为一本入门书，真是挺不错的选择，又薄，特适合随身携带经常翻两页...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5103156-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5103156_full" class="hidden">
+                    <div id="review_5103156_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5103156" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5103156">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5103156" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5103156">
+                                5
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5103156/#comments" class="reply">1回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3615670">
+        <div class="main review-item" id="3615670">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/wyb/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1263493-81.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/wyb/" property="v:reviewer" class="name">阿泰TainWoo</a>
+
+            <span property="v:rating" class="allstar30 main-title-rating" title="还行"></span>
+
+        <span property="v:dtreviewed" content="2010-08-30" class="main-meta">2010-08-30 19:24:33</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3615670/">还行</a></h2>
+
+                <div id="review_3615670_short" class="review-short" data-rid="3615670">
+                    <div class="short-content">
+
+                        书写的还行，入门级。对于想了解虚拟化一般配置，以及硬件和软件虚拟化原理的人有所帮助。有的地方可能有点老。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3615670-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3615670_full" class="hidden">
+                    <div id="review_3615670_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3615670" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3615670">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3615670" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3615670">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3615670/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="2893432">
+        <div class="main review-item" id="2893432">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/fisherwy/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1215875-1.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/fisherwy/" property="v:reviewer" class="name">fisherman</a>
+
+            <span property="v:rating" class="allstar30 main-title-rating" title="还行"></span>
+
+        <span property="v:dtreviewed" content="2009-12-27" class="main-meta">2009-12-27 15:30:22</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/2893432/">总体来讲一般</a></h2>
+
+                <div id="review_2893432_short" class="review-short" data-rid="2893432">
+                    <div class="short-content">
+
+                        这本书倒是可以作为了解虚拟化实现原理的一本入门的书，比较可惜的时候在借给同学时候丢掉了;-( 不过全书有很多印刷的错误，经常出现“见x-y图”但是找不到这个图，不是作者的失误，还是出版社编辑的失误。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-2893432-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_2893432_full" class="hidden">
+                    <div id="review_2893432_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="2893432" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-2893432">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="2893432" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-2893432">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/2893432/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript">
+    ;(function(){
+        window.subject_id = window.subject_id || 3619896;
+        "use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GalleryTopicsSelection = function (_React$Component) {
+  _inherits(GalleryTopicsSelection, _React$Component);
+
+  function GalleryTopicsSelection() {
+    _classCallCheck(this, GalleryTopicsSelection);
+
+    var _this = _possibleConstructorReturn(this, (GalleryTopicsSelection.__proto__ || Object.getPrototypeOf(GalleryTopicsSelection)).call(this));
+
+    _this.state = {
+      topics: []
+    };
+    return _this;
+  }
+
+  _createClass(GalleryTopicsSelection, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      $.ajax({
+        url: "https://m.douban.com/rexxar/api/v2/gallery/subject_feed?start=0&subject_id=" + window.subject_id + "&ck=" + get_cookie('ck'),
+        xhrFields: { withCredentials: true },
+        success: function success(res) {
+          _this2.setState({
+            topics: res.items
+          });
+          if (res.total) {
+            window.has_gallery_topics = true;
+          }
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var topics = this.state.topics;
+
+      return React.createElement(
+        "section",
+        null,
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=close", rel: "nofollow", className: "close_selection" },
+          "\u8DF3\u8FC7"
+        ),
+        React.createElement(
+          "h1",
+          null,
+          "\u4E0B\u9762\u662F\u5426\u6709\u4F60\u60F3\u5199\u7684\u8BDD\u9898\uFF1F"
+        ),
+        topics.length ? React.createElement(
+          "ul",
+          { className: "gl_topics" },
+          topics.map(function (item) {
+            return React.createElement(
+              "li",
+              { className: "topic" },
+              React.createElement(
+                "a",
+                { href: "new_review?from=gallery-topics-selection&click=create&tag_from_gallery=" + item.topic.name,
+                  className: "comment_btn write_review",
+                  rel: "nofollow" },
+                React.createElement("img", { src: window.write_icon }),
+                React.createElement(
+                  "span",
+                  null,
+                  window.join_label_text
+                )
+              ),
+              React.createElement(
+                "h2",
+                { className: "topic_name" },
+                item.topic.name
+              ),
+              React.createElement(
+                "div",
+                { className: "topic_meta" },
+                item.topic.card_subtitle
+              )
+            );
+          })
+        ) : React.createElement(
+          "div",
+          null,
+          "\u52A0\u8F7D\u4E2D"
+        ),
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=skip", rel: "nofollow", className: "topics_skip" },
+          React.createElement(
+            "span",
+            null,
+            "\u4E0A\u9762\u6CA1\u6709\u6211\u60F3\u5199\u7684\u8BDD\u9898\uFF0C\u53BB\u5199\u5F71\u8BC4 \uFF1E "
+          )
+        )
+      );
+    }
+  }]);
+
+  return GalleryTopicsSelection;
+}(React.Component);
+
+$(function () {
+  var glRoot = document.getElementById('gallery-topics-selection');
+
+  ReactDOM.render(React.createElement(GalleryTopicsSelection, null), glRoot);
+});;
+    })();
+</script><script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/289d9eab6b43a9ec.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评4篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/3619896/annotation">共<span property="v:count">11</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="43506019">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43506019/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43506019/" class="">第61页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+            </p>
+            <div class="reading-note" data-cid="43506019">
+              <div class="short">
+                
+                  <span class="">VMM 的主要功能是基于物理资源创建相应的虚拟资源，组成虚拟机，为客户机操作系统提供虚拟的平台。 VMM基本上可以分为两部分：虚拟环境的管理和物理资源的管理。</span>
+                <p class="pl">
+                  <span class="">2017-05-01 10:02</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p> </p><p>VMM 的主要功能是基于物理资源创建相应的虚拟资源，组成虚拟机，为客户机操作系统提供虚拟的平台。</p><p>VMM基本上可以分为两部分：虚拟环境的管理和物理资源的管理。</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43506019/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-01 10:02
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43482508">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43482508/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43482508/" class="">第11页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+            </p>
+            <div class="reading-note" data-cid="43482508">
+              <div class="short">
+                
+                  <span class="">有了虚拟机的迁移，硬件的维护就不必每次都关闭计算机了。在一台计算机需要硬件维护时，其中运行的虚拟机能够迁移到其他计算机上，等维护工作结束后再迁移回来。</span>
+                <p class="pl">
+                  <span class="">2017-04-29 14:59</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p> </p><p><span style="font-weight: bold;">有了虚拟机的迁移，硬件的维护就不必每次都关闭计算机了。在一台计算机需要硬件维护时，其中运行的虚拟机能够迁移到其他计算机上，等维护工作结束后再迁移回来</span>。</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43482508/#comments">回应</a>&nbsp;&nbsp;
+                  2017-04-29 14:59
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31580755">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/55754541/"><img src="https://img3.doubanio.com/icon/u55754541-2.jpg" alt="xiaoyao3857" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31580755/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31580755/" class="">第九章    虚拟化前沿技术</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/55754541/" class=" " title="xiaoyao3857">xiaoyao3857</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31580755">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/31580755/"><img src="https://img3.doubanio.com/view/page_note/small/public/p31580755-1.jpg"></a>
+                  </div>
+                  <span class="">       虚拟化前沿技术包括容器模式——老实说，感觉还不是很懂、系统标准（应该说这是一个任务）、虚拟化安全性、电源管理（虽然传统OS解决的很好，但随着虚拟化技术的出现，电源管理面临新的问题）和智能设备 
+
+       容器模型——资源容器与安全容器
+
+操作系统领域一直以来面临的一个主要挑战是：应用程序间存在的相互独立性+资源互操作性之间的矛盾
+
+       资源容器（Resource Container）——核心：准确估算出单个资..</span>
+                <p class="pl">
+                  <span class="">2014-05-13 10:06</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                       虚拟化前沿技术包括容器模式——老实说，感觉还不是很懂、系统标准（应该说这是一个任务）、虚拟化安全性、电源管理（虽然传统OS解决的很好，但随着虚拟化技术的出现，电源管理面临新的问题）和智能设备 <div style="padding-bottom:1em;"></div>       容器模型——资源容器与安全容器<div style="padding-bottom:1em;"></div>操作系统领域一直以来面临的一个主要挑战是：应用程序间存在的相互独立性+资源互操作性之间的矛盾<div style="padding-bottom:1em;"></div>       资源容器（Resource Container）——核心：准确估算出单个资源消费者所使用的资源量     把系统的资源主体（resource principal）从运行主体（即进程）中剥离（process abstraction）出来，从而达到对系统资源更精确和高效控制的目的<div style="padding-bottom:1em;"></div>        安全容器（Security Container）——核心思相在于：将访问控制从OS剥离出来独立于运行环境，依据不同的安全策略形成虚拟的安全容器<div style="padding-bottom:1em;"></div>       <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580755-1.jpg" alt="容器模式"><br><span class="pic-title">容器模式</span></div><div style="padding-bottom:1em;"></div>      系统安全——由于现代操作系统的层次化结构，因此，越是低层，对安全的威胁与管理权限也越大  <div style="padding-bottom:1em;"></div>       虚拟机监控器的安全性：<div style="padding-bottom:1em;"></div>       缩小可信计算环境（Trusted Computing Base,TCB）<div style="padding-bottom:1em;"></div>       可信虚拟化环境——可信任执行技术（Trusted Execution Technology,TXT）利用硬件提供动态可信根<div style="padding-bottom:1em;"></div>      <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580755-2.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580755-3.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580755-4.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div> 
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31580755/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-13 10:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31580339">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/55754541/"><img src="https://img3.doubanio.com/icon/u55754541-2.jpg" alt="xiaoyao3857" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31580339/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31580339/" class="">第196页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/55754541/" class=" " title="xiaoyao3857">xiaoyao3857</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31580339">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/31580339/"><img src="https://img3.doubanio.com/view/page_note/small/public/p31580339-1.jpg"></a>
+                  </div>
+                  <span class="">       本章主要介绍系统虚拟化的应用模式，包括我们平常使用Hypervisor VirtualBox或VMware WorkStation时会操作到的虚拟机克隆、迁移以及快照，还有涉及到的虚拟磁盘格式与虚拟机格式的不同概念等。
+
+       本章讲述思路按——常用模式（包括迁移、快照、克隆）、服务器整合、系统灾难恢复与虚拟化技术、动态负载均衡和Virtual Appliance等方面的优势
+
+       虚拟机的动态迁移——即是在虚拟机工作状态下的迁移，实际上做..</span>
+                <p class="pl">
+                  <span class="">2014-05-13 09:39</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                       本章主要介绍系统虚拟化的应用模式，包括我们平常使用Hypervisor VirtualBox或VMware WorkStation时会操作到的虚拟机克隆、迁移以及快照，还有涉及到的虚拟磁盘格式与虚拟机格式的不同概念等。<div style="padding-bottom:1em;"></div>       本章讲述思路按——常用模式（包括迁移、快照、克隆）、服务器整合、系统灾难恢复与虚拟化技术、动态负载均衡和Virtual Appliance等方面的优势<div style="padding-bottom:1em;"></div>       虚拟机的动态迁移——即是在虚拟机工作状态下的迁移，实际上做的工作是将虚拟机的内存信息进行移交、转换，其实现速度较快，但问题是如果在这个过程中出现断电，则虚拟机进入未知状态，<div style="padding-bottom:1em;"></div>       虚拟机的快照——将虚拟机某一时刻的状态信息（……硬盘信息、内存信息和CPU信息、BIOS信息）像照片一样保存下来<div style="padding-bottom:1em;"></div>       <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580339-1.jpg" alt="虚拟化技术的应用模式"><br><span class="pic-title">虚拟化技术的应用模式</span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580339-2.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580339-3.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580339-4.jpg" alt="Virtual Appliance"><br><span class="pic-title">Virtual Appliance</span></div>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31580339/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-13 09:39
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="31521883">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/55754541/"><img src="https://img3.doubanio.com/icon/u55754541-2.jpg" alt="xiaoyao3857" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31521883/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31521883/" class="">第7页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/55754541/" class=" " title="xiaoyao3857">xiaoyao3857</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31521883">
+              <div class="short">
+                
+                  <span class="">第一章     介绍了各种形形色色的虚拟化，不同层次的——硬件抽象层上的虚拟化、操作系统层次上的虚拟化、库函数层上的虚拟化和编程语言级上的虚拟化；点明了本书的主题是系统虚拟化——将一台物理上的计算机系统虚拟化成一台或多台虚拟拟化的计算机系统。
+本章还介绍了系统虚拟化的历史及各种虚拟化平台，也介绍了系统虚拟化好处——封装、多实例、隔离、硬件无关性及特权功能（事件记录与回放、入侵检测等）
+
+最主要的，系统..</span>
+                <p class="pl">
+                  <span class="">2014-05-08 10:57</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                第一章     介绍了各种形形色色的虚拟化，不同层次的——硬件抽象层上的虚拟化、操作系统层次上的虚拟化、库函数层上的虚拟化和编程语言级上的虚拟化；点明了本书的主题是系统虚拟化——将一台物理上的计算机系统虚拟化成一台或多台虚拟拟化的计算机系统。<div style="padding-bottom:1em;"></div>本章还介绍了系统虚拟化的历史及各种虚拟化平台，也介绍了系统虚拟化好处——封装、多实例、隔离、硬件无关性及特权功能（事件记录与回放、入侵检测等）<div style="padding-bottom:1em;"></div>最主要的，系统虚拟化在云计算——将资源集中起来共享，同时又保持各应用的独立，保证系统安全，提高了资源利用率<div style="padding-bottom:1em;"></div>&quot;1974年,Popek 和Goldberg定义了虚拟机可以看作是物理机的一种高效隔离的复制。上面的定义蕴涵了三层含义（同质、高效、资源受控），这也是虚拟机所具有的三个特征&quot;<div style="padding-bottom:1em;"></div>同质——虚拟机运行的环境和物理机运行的环境在本质上需要是相同的，但是在表现上能够有一些差异；<div style="padding-bottom:1em;"></div>高效——虚拟机上运行的软件需要具有接近在物理机上运行的性能；<div style="padding-bottom:1em;"></div>资源受控——VMM需要对系统资源有完全控制能力和管理权限，包括资源的、监控、回收
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31521883/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-08 10:57
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43482508">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43482508/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43482508/" class="">第11页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+            </p>
+            <div class="reading-note" data-cid="43482508">
+              <div class="short">
+                
+                  <span class="">有了虚拟机的迁移，硬件的维护就不必每次都关闭计算机了。在一台计算机需要硬件维护时，其中运行的虚拟机能够迁移到其他计算机上，等维护工作结束后再迁移回来。</span>
+                <p class="pl">
+                  <span class="">2017-04-29 14:59</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p> </p><p><span style="font-weight: bold;">有了虚拟机的迁移，硬件的维护就不必每次都关闭计算机了。在一台计算机需要硬件维护时，其中运行的虚拟机能够迁移到其他计算机上，等维护工作结束后再迁移回来</span>。</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43482508/#comments">回应</a>&nbsp;&nbsp;
+                  2017-04-29 14:59
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31522013">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/55754541/"><img src="https://img3.doubanio.com/icon/u55754541-2.jpg" alt="xiaoyao3857" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31522013/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31522013/" class="">第13页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/55754541/" class=" " title="xiaoyao3857">xiaoyao3857</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31522013">
+              <div class="short">
+                
+                  <span class="">讲了X86的历史，对于操作系统中，地址空间（逻辑地址、线性地址——虚拟地址、物理地址），内存的管理——页式、段式、段页式（其地址全相联技术、组相联技术、组内全相联），x86运行模式（实模式、保护模式、SMM模式、虚拟8086模式）及基本寄存器组，权限控制（段保护、CPL(Current Privilege Level)等、页保护），中断与异常（各种中断控制器——PIC(Programmable Interrupt Controller)、APIC），中断分类与优先级，异常架构及..</span>
+                <p class="pl">
+                  <span class="">2014-05-08 11:07</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                讲了X86的历史，对于操作系统中，地址空间（逻辑地址、线性地址——虚拟地址、物理地址），内存的管理——页式、段式、段页式（其地址全相联技术、组相联技术、组内全相联），x86运行模式（实模式、保护模式、SMM模式、虚拟8086模式）及基本寄存器组，权限控制（段保护、CPL(Current Privilege Level)等、页保护），中断与异常（各种中断控制器——PIC(Programmable Interrupt Controller)、APIC），中断分类与优先级，异常架构及中断异常处理流程，进程、上下文、I/O架构（Port I/O、MMIO(Memory Mapping I/O)、DMA、PCI——PCI配置空间、PCI设备枚举、PCI Express），时钟（周期性时钟、单次计时性时钟）——PIT（Programmable Interrupt Timer或Programmable Interval Timer）、RTC（Real Time Clock）、TSC（Time Stamp Counter）、LAPIC Timer、HPET（High Precision Event Timer）及操作系统的实现等都有介绍。<div style="padding-bottom:1em;"></div>不过，尤其是时钟这一节，自己还是没有弄懂一半，这一章涉及硬件，且繁杂，但只是浅谈，还是挺重要的。尤其是介绍了可看的参考资料——《Intel(R) 64 and IA-32 Architecture Software Developer's Manual Volume 3A》
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31522013/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-08 11:07
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31522255">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/55754541/"><img src="https://img3.doubanio.com/icon/u55754541-2.jpg" alt="xiaoyao3857" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31522255/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31522255/" class="">第43页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/55754541/" class=" " title="xiaoyao3857">xiaoyao3857</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31522255">
+              <div class="short">
+                
+                  <span class="">因为传统的虚拟化技术是通过 陷入再模拟 方式实现的，依赖于处理器的支持。本章在可虚拟化架构与不可虚拟化架构的介绍下，点明了为什么需要硬件辅助虚拟化技术——因为存在虚拟机漏洞（如果某个架构无法支持所有的敏感指令触发异常，则VMM会遗漏某些需要模拟的操作，影响虚拟化的正确性）
+
+一些办法来填补或避免虚拟机漏洞：
+解释执行——虽然所有指令受到VMM监督审查，但性能太差
+硬件层面填补
+软件层面——如后续章节的软件...</span>
+                <p class="pl">
+                  <span class="">2014-05-08 11:28</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                因为传统的虚拟化技术是通过 陷入再模拟 方式实现的，依赖于处理器的支持。本章在可虚拟化架构与不可虚拟化架构的介绍下，点明了为什么需要硬件辅助虚拟化技术——因为存在虚拟机漏洞（如果某个架构无法支持所有的敏感指令触发异常，则VMM会遗漏某些需要模拟的操作，影响虚拟化的正确性）<div style="padding-bottom:1em;"></div>一些办法来填补或避免虚拟机漏洞：<div style="padding-bottom:1em;"></div>解释执行——虽然所有指令受到VMM监督审查，但性能太差<div style="padding-bottom:1em;"></div>硬件层面填补<div style="padding-bottom:1em;"></div>软件层面——如后续章节的软件虚拟化中解释并执行、扫描并修补、二进制翻译（BT，Binary Translation）等<div style="padding-bottom:1em;"></div>VMM对物理资源的虚拟可以归结为三个主要任务：<div style="padding-bottom:1em;"></div>处理器虚拟化——指令的模拟（CR0等）、中断与异常的模拟与注入、对称多处理器（SMP）技术的模拟<div style="padding-bottom:1em;"></div>内存虚拟化——客户机虚拟地址—客户机物理地址—宿主机物理地址的概论及其映射<div style="padding-bottom:1em;"></div>I/O虚拟化——设备的发现与访问、模拟与共享    VMM的功能（环境的管理、资源的管理）、其它模块<div style="padding-bottom:1em;"></div>本章还介绍了典型的VMM平台（虚拟化平台）：<div style="padding-bottom:1em;"></div>完全虚拟化（软件辅助、硬件辅助）<div style="padding-bottom:1em;"></div>类虚拟化（也叫半虚拟化）<div style="padding-bottom:1em;"></div>VMM的实现结构：<div style="padding-bottom:1em;"></div>Hypervisor——所有的物理资源、内存、I/O直接归VMM管  eg,VMware  ESX Server、KVM<div style="padding-bottom:1em;"></div>宿主型——物理资源由宿主机操作系统管理 eg,VMware Server(面向服务器)、VMware Workstation(面向桌面)、VMware Fusion(基于Intel Mac)、VirtualBox、MS的Virtual PC(面向桌面)\Virtual Server(面向服务器)<div style="padding-bottom:1em;"></div>混合模型——上述HyperVisor与宿主型的结合，eg:MS的Windows Server2008、Xen \KVM
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31522255/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-08 11:28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="43506019">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43506019/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43506019/" class="">第61页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+            </p>
+            <div class="reading-note" data-cid="43506019">
+              <div class="short">
+                
+                  <span class="">VMM 的主要功能是基于物理资源创建相应的虚拟资源，组成虚拟机，为客户机操作系统提供虚拟的平台。 VMM基本上可以分为两部分：虚拟环境的管理和物理资源的管理。</span>
+                <p class="pl">
+                  <span class="">2017-05-01 10:02</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p> </p><p>VMM 的主要功能是基于物理资源创建相应的虚拟资源，组成虚拟机，为客户机操作系统提供虚拟的平台。</p><p>VMM基本上可以分为两部分：虚拟环境的管理和物理资源的管理。</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43506019/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-01 10:02
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43482508">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gzthinker/"><img src="https://img3.doubanio.com/icon/u48988329-2.jpg" alt="thinker" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43482508/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43482508/" class="">第11页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gzthinker/" class=" " title="thinker">thinker</a>
+              
+            </p>
+            <div class="reading-note" data-cid="43482508">
+              <div class="short">
+                
+                  <span class="">有了虚拟机的迁移，硬件的维护就不必每次都关闭计算机了。在一台计算机需要硬件维护时，其中运行的虚拟机能够迁移到其他计算机上，等维护工作结束后再迁移回来。</span>
+                <p class="pl">
+                  <span class="">2017-04-29 14:59</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p> </p><p><span style="font-weight: bold;">有了虚拟机的迁移，硬件的维护就不必每次都关闭计算机了。在一台计算机需要硬件维护时，其中运行的虚拟机能够迁移到其他计算机上，等维护工作结束后再迁移回来</span>。</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43482508/#comments">回应</a>&nbsp;&nbsp;
+                  2017-04-29 14:59
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31580755">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/55754541/"><img src="https://img3.doubanio.com/icon/u55754541-2.jpg" alt="xiaoyao3857" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31580755/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31580755/" class="">第九章    虚拟化前沿技术</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/55754541/" class=" " title="xiaoyao3857">xiaoyao3857</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31580755">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/31580755/"><img src="https://img3.doubanio.com/view/page_note/small/public/p31580755-1.jpg"></a>
+                  </div>
+                  <span class="">       虚拟化前沿技术包括容器模式——老实说，感觉还不是很懂、系统标准（应该说这是一个任务）、虚拟化安全性、电源管理（虽然传统OS解决的很好，但随着虚拟化技术的出现，电源管理面临新的问题）和智能设备 
+
+       容器模型——资源容器与安全容器
+
+操作系统领域一直以来面临的一个主要挑战是：应用程序间存在的相互独立性+资源互操作性之间的矛盾
+
+       资源容器（Resource Container）——核心：准确估算出单个资..</span>
+                <p class="pl">
+                  <span class="">2014-05-13 10:06</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                       虚拟化前沿技术包括容器模式——老实说，感觉还不是很懂、系统标准（应该说这是一个任务）、虚拟化安全性、电源管理（虽然传统OS解决的很好，但随着虚拟化技术的出现，电源管理面临新的问题）和智能设备 <div style="padding-bottom:1em;"></div>       容器模型——资源容器与安全容器<div style="padding-bottom:1em;"></div>操作系统领域一直以来面临的一个主要挑战是：应用程序间存在的相互独立性+资源互操作性之间的矛盾<div style="padding-bottom:1em;"></div>       资源容器（Resource Container）——核心：准确估算出单个资源消费者所使用的资源量     把系统的资源主体（resource principal）从运行主体（即进程）中剥离（process abstraction）出来，从而达到对系统资源更精确和高效控制的目的<div style="padding-bottom:1em;"></div>        安全容器（Security Container）——核心思相在于：将访问控制从OS剥离出来独立于运行环境，依据不同的安全策略形成虚拟的安全容器<div style="padding-bottom:1em;"></div>       <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580755-1.jpg" alt="容器模式"><br><span class="pic-title">容器模式</span></div><div style="padding-bottom:1em;"></div>      系统安全——由于现代操作系统的层次化结构，因此，越是低层，对安全的威胁与管理权限也越大  <div style="padding-bottom:1em;"></div>       虚拟机监控器的安全性：<div style="padding-bottom:1em;"></div>       缩小可信计算环境（Trusted Computing Base,TCB）<div style="padding-bottom:1em;"></div>       可信虚拟化环境——可信任执行技术（Trusted Execution Technology,TXT）利用硬件提供动态可信根<div style="padding-bottom:1em;"></div>      <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580755-2.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580755-3.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580755-4.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div> 
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31580755/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-13 10:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31580339">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/55754541/"><img src="https://img3.doubanio.com/icon/u55754541-2.jpg" alt="xiaoyao3857" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31580339/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31580339/" class="">第196页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/55754541/" class=" " title="xiaoyao3857">xiaoyao3857</a>
+              
+            </p>
+            <div class="reading-note" data-cid="31580339">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/31580339/"><img src="https://img3.doubanio.com/view/page_note/small/public/p31580339-1.jpg"></a>
+                  </div>
+                  <span class="">       本章主要介绍系统虚拟化的应用模式，包括我们平常使用Hypervisor VirtualBox或VMware WorkStation时会操作到的虚拟机克隆、迁移以及快照，还有涉及到的虚拟磁盘格式与虚拟机格式的不同概念等。
+
+       本章讲述思路按——常用模式（包括迁移、快照、克隆）、服务器整合、系统灾难恢复与虚拟化技术、动态负载均衡和Virtual Appliance等方面的优势
+
+       虚拟机的动态迁移——即是在虚拟机工作状态下的迁移，实际上做..</span>
+                <p class="pl">
+                  <span class="">2014-05-13 09:39</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                       本章主要介绍系统虚拟化的应用模式，包括我们平常使用Hypervisor VirtualBox或VMware WorkStation时会操作到的虚拟机克隆、迁移以及快照，还有涉及到的虚拟磁盘格式与虚拟机格式的不同概念等。<div style="padding-bottom:1em;"></div>       本章讲述思路按——常用模式（包括迁移、快照、克隆）、服务器整合、系统灾难恢复与虚拟化技术、动态负载均衡和Virtual Appliance等方面的优势<div style="padding-bottom:1em;"></div>       虚拟机的动态迁移——即是在虚拟机工作状态下的迁移，实际上做的工作是将虚拟机的内存信息进行移交、转换，其实现速度较快，但问题是如果在这个过程中出现断电，则虚拟机进入未知状态，<div style="padding-bottom:1em;"></div>       虚拟机的快照——将虚拟机某一时刻的状态信息（……硬盘信息、内存信息和CPU信息、BIOS信息）像照片一样保存下来<div style="padding-bottom:1em;"></div>       <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580339-1.jpg" alt="虚拟化技术的应用模式"><br><span class="pic-title">虚拟化技术的应用模式</span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580339-2.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580339-3.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div><div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p31580339-4.jpg" alt="Virtual Appliance"><br><span class="pic-title">Virtual Appliance</span></div>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31580339/#comments">回应</a>&nbsp;&nbsp;
+                  2014-05-13 09:39
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/3619896/annotation">更多读书笔记（共11篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/3619896/discussion/21400282/" title="很好的入门书" class="">很好的入门书</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/omycle/">tek-life</a></td>
+            <td class="pl"><span class="">2 回应</span></td>
+            <td class="pl"><span class="">2010-04-05</span></td>
+        </tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D9787302193722&amp;subject=730219372X&amp;type=borrow&amp;library=10012&amp;link2key=972201f1b1" target="_blank">上海市中心图书馆(4)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac.gzlib.gov.cn%2Fopac%2Fsearch%3Frows%3D10%26curlibcode%3DGT%26hasholding%3D1%26searchWay0%3Dmarc%26q0%3D%26logical0%3DAND%26q%3D9787302193722%26searchWay%3Disbn%26scWay%3Ddim%26searchSource%3Dreader&amp;subject=730219372X&amp;type=borrow&amp;library=10022&amp;link2key=972201f1b1" target="_blank">广州图书馆(1)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fourex.lib.sjtu.edu.cn%2Fprimo_library%2Flibweb%2Faction%2Fsearch.do%3Ffn%3Dsearch%26vl%28freeText0%29%3D978-7-302-19372-2&amp;subject=730219372X&amp;type=borrow&amp;library=10006&amp;link2key=972201f1b1" target="_blank">上海交通大学图书馆</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac3.wzlib.cn%2Fopac%2Fsearch%3FsearchWay%3Disbn%26q%3D978-7-302-19372-2%26booktype%3D%26marcformat%3D%26sortWay%3Dscore%26sortOrder%3Ddesc%26startPubdate%3D%26endPubdate%3D%26rows%3D10&amp;subject=730219372X&amp;type=borrow&amp;library=10020&amp;link2key=972201f1b1" target="_blank">温州市图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/3619896/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/841845/" target="_blank">虚拟化与云计算</a>
+                <span class="pl">(小马哥)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/357754/" target="_blank">!~virtualization &amp; storage</a>
+                <span class="pl">(∫跬步→千里)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/38803747/" target="_blank">慢慢来我也可以geek</a>
+                <span class="pl">(不为)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/207143/" target="_blank">2009</a>
+                <span class="pl">(caibinbupt)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/517391/" target="_blank">近期读书计划</a>
+                <span class="pl">(tos)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/hiziyi/"><img src="https://img3.doubanio.com/icon/u94517515-2.jpg" class="pil" alt="Agena" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/hiziyi/">Agena</a><br/>
+      <div class="pl ll">          1月2日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:虚拟化</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/145221492/"><img src="https://img3.doubanio.com/icon/u145221492-3.jpg" class="pil" alt="gavin" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/145221492/">gavin</a><br/>
+      <div class="pl ll">          2017年12月7日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:虚拟化</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/rayzer/"><img src="https://img3.doubanio.com/icon/u1028538-4.jpg" class="pil" alt="Ray" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/rayzer/">Ray</a><br/>
+      <div class="pl ll">          2017年10月29日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3619896/doings">21人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3619896/collections">73人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3619896/wishes">114人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有114人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于系统虚拟化的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/3619896/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = '9WeJ4FRMdOQ',
+            criteria = '7:虚拟化|7:计算机|7:虚拟化技术|7:云计算|7:计算机科学|7:vm|7:计算机系统|7:科学|7:技术|7:管理|3:/subject/3619896/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- dis8-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

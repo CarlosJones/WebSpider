@@ -1,0 +1,3540 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>聊聊架构 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/27034443/">
+<meta name="keywords" content="聊聊架构,王概凯,电子工业出版社,2017-5,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书聊聊架构 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/27034443/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">聊聊架构</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s29470935.jpg" title="聊聊架构">
+    <img src="https://img3.doubanio.com/lpic/s29470935.jpg" title="点击看大图" alt="聊聊架构"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/%E7%8E%8B%E6%A6%82%E5%87%AF">王概凯</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 电子工业出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">副标题:</span> 洞见架构之道<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2017-5<br/>
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">定价:</span> 69<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787121311222<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 7.8 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar40"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">59</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">35.6%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:48px"></div>
+
+            <span class="rating_per">27.1%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:36px"></div>
+
+            <span class="rating_per">20.3%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:18px"></div>
+
+            <span class="rating_per">10.2%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:12px"></div>
+
+            <span class="rating_per">6.8%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-27034443-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-27034443-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-27034443-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-27034443-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-27034443-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-27034443-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-27034443-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-27034443-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-27034443">
+        <a href="#" data-url="https://book.douban.com/subject/27034443/" data-desc="" data-title="书籍《聊聊架构》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s29470935.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_27034443"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <div class="">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>我们总是喜欢借鉴别人的架构实践，参考别人的架构图，但体会过的人都知道，由于各家公司的行业背景、发展情况、人力资源都不同，所以真正意义上的架构借鉴难度很大。 《聊聊架构》希望揭开事物的外在“表皮”，再现架构深层之理，向读者揭示最本质的架构之道。</p></div>
+
+      </div>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/27034443/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_27034443_short">
+        第一部分 认识架构<br/>
+        <br/>
+        第 1 章 生命周期<br/>
+        <br/>
+        1.1 生命周期的识别<br/>
+        <br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_27034443_short').hide();$('#dir_27034443_full').show();$.get('/j/subject/j_dir_count',{id:27034443});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_27034443_full" style="display:none">
+        第一部分 认识架构<br/>
+        <br/>
+        第 1 章 生命周期<br/>
+        <br/>
+        1.1 生命周期的识别<br/>
+        <br/>
+        1.2 核心与非核心生命周期<br/>
+        <br/>
+        1.3 生命周期与分工<br/>
+        <br/>
+        第 2 章 时间<br/>
+        <br/>
+        第 3 章 为什么会产生架构<br/>
+        <br/>
+        3.1 分工<br/>
+        <br/>
+        3.2 分工和生命周期<br/>
+        <br/>
+        第 4 章 什么是架构<br/>
+        <br/>
+        4.1 架构产生的条件<br/>
+        <br/>
+        4.2 什么是架构<br/>
+        <br/>
+        4.3 架构的生命周期<br/>
+        <br/>
+        第 5 章 架构和树<br/>
+        <br/>
+        5.1 树与增长<br/>
+        <br/>
+        5.2 架构和树<br/>
+        <br/>
+        第 6 章 概念<br/>
+        <br/>
+        6.1 何为名相<br/>
+        <br/>
+        6.2 究竟什么才是相<br/>
+        <br/>
+        6.3 概念是沟通的基础<br/>
+        <br/>
+        6.4 把握概念的力量<br/>
+        <br/>
+        第 7 章 什么是抽象<br/>
+        <br/>
+        7.1 个性与共性<br/>
+        <br/>
+        7.2 个性是基础<br/>
+        <br/>
+        第 8 章 识别问题<br/>
+        <br/>
+        8.1 面对问题有哪些困难<br/>
+        <br/>
+        8.2 如何识别问题<br/>
+        <br/>
+        8.3 寻找问题主体<br/>
+        <br/>
+        第 9 章 切分的原则<br/>
+        <br/>
+        9.1 切分就是利益的调整<br/>
+        <br/>
+        9.2 为什么需要切分<br/>
+        <br/>
+        9.3 切分的原则<br/>
+        <br/>
+        9.4 树和分层<br/>
+        <br/>
+        9.5 切分与建模<br/>
+        <br/>
+        9.6 切分的输出和组织架构<br/>
+        <br/>
+        第 10 章 架构与流程<br/>
+        <br/>
+        10.1 什么是流程<br/>
+        <br/>
+        10.2 流程和架构拆分的关系<br/>
+        <br/>
+        第 11 章 什么是架构师<br/>
+        <br/>
+        11.1 架构师做什么<br/>
+        <br/>
+        11.2 架构师也是人<br/>
+        <br/>
+        11.3 人人都是架构师<br/>
+        <br/>
+        11.4 架构师和权利<br/>
+        <br/>
+        第二部分 软件架构<br/>
+        <br/>
+        第 12 章 什么是软件<br/>
+        <br/>
+        12.1 以模拟人为目标的冯诺依曼结构和图灵机<br/>
+        <br/>
+        12.2 成本为王<br/>
+        <br/>
+        12.3 天空才是极限<br/>
+        <br/>
+        12.4 软件的作用<br/>
+        <br/>
+        第 13 章 软件的生命周期<br/>
+        <br/>
+        13.1 软件的开发生命周期<br/>
+        <br/>
+        13.2 软件开发的增长<br/>
+        <br/>
+        13.3 软件开发的迭代<br/>
+        <br/>
+        13.4 软件的运行生命周期<br/>
+        <br/>
+        第 14 章 什么是软件架构<br/>
+        <br/>
+        14.1 要解决什么问题<br/>
+        <br/>
+        14.2 分别是谁的问题呢<br/>
+        <br/>
+        14.3 分别有什么问题<br/>
+        <br/>
+        14.4 分析问题<br/>
+        <br/>
+        14.5 会生成哪些架构<br/>
+        <br/>
+        14.6 什么是软件架构<br/>
+        <br/>
+        第 15 章 什么是软件架构师<br/>
+        <br/>
+        15.1 软件架构师的区别<br/>
+        <br/>
+        15.2 软件架构师的困境<br/>
+        <br/>
+        15.3 生命周期的思考<br/>
+        <br/>
+        15.4 软件架构师的权力<br/>
+        <br/>
+        15.5 软件架构师和技术人员对技术的态度区别<br/>
+        <br/>
+        15.6 架构师是技术的使用者<br/>
+        <br/>
+        15.7 如何保障架构落地<br/>
+        <br/>
+        第 16 章 业务、架构和技术三者的关系<br/>
+        <br/>
+        16.1 什么是技术<br/>
+        <br/>
+        16.2 业务和架构及技术之间的关系<br/>
+        <br/>
+        16.3 技术人员和业务人员的关系<br/>
+        <br/>
+        16.4 重新发明轮子<br/>
+        <br/>
+        16.5 开源技术<br/>
+        <br/>
+        第 17 章 软件研发<br/>
+        <br/>
+        17.1 软件工程师的兴起和使命<br/>
+        <br/>
+        17.2 分工的困境<br/>
+        <br/>
+        17.3 软件的迭代<br/>
+        <br/>
+        17.4 软件开发的分工<br/>
+        <br/>
+        17.5 软件开发模式和架构<br/>
+        <br/>
+        17.6 软件工程师的支持者<br/>
+        <br/>
+        第 18 章 软件的架构拆分<br/>
+        <br/>
+        18.1 软件拆分的原动力<br/>
+        <br/>
+        18.2 软件开发团队的拆分<br/>
+        <br/>
+        18.3 软件的拆分<br/>
+        <br/>
+        18.4 软件开发的基础技术<br/>
+        <br/>
+        18.5 软件拆分的第二动力<br/>
+        <br/>
+        18.6 架构一步到位<br/>
+        <br/>
+        第 19 章 如何写好代码<br/>
+        <br/>
+        19.1 什么叫业务逻辑<br/>
+        <br/>
+        19.2 业务逻辑分散的危害<br/>
+        <br/>
+        19.3 业务逻辑内聚的好处<br/>
+        <br/>
+        19.4 代码架构实例<br/>
+        <br/>
+        19.5 代码误解<br/>
+        <br/>
+        19.6 软件的拆分<br/>
+        <br/>
+        第 20 章 单元测试<br/>
+        <br/>
+        20.1 什么是单元测试<br/>
+        <br/>
+        20.2 单元测试的困境<br/>
+        <br/>
+        20.3 单元测试测什么<br/>
+        <br/>
+        20.4 如何改造代码<br/>
+        <br/>
+        20.5 为什么要做单元测试<br/>
+        <br/>
+        20.6 如何做单元测试<br/>
+        <br/>
+        第 21 章 软件架构和面向对象<br/>
+        <br/>
+        21.1 什么是面向过程<br/>
+        <br/>
+        21.2 什么是面向对象<br/>
+        <br/>
+        21.3 生命周期和面向对象及面向过程<br/>
+        <br/>
+        21.4 架构和面向对象及面向过程<br/>
+        <br/>
+        21.5 面向对象的误区<br/>
+        <br/>
+        21.6 对象和生命<br/>
+        <br/>
+        第 22 章 软件架构与设计模式<br/>
+        <br/>
+        22.1 模式以及模式的意义<br/>
+        <br/>
+        22.2 什么是设计模式<br/>
+        <br/>
+        22.3 软件设计模式<br/>
+        <br/>
+        22.4 设计模式和架构<br/>
+        <br/>
+        22.5 设计模式的误区<br/>
+        <br/>
+        第 23 章 软件架构和软件框架<br/>
+        <br/>
+        23.1 访问类框架<br/>
+        <br/>
+        23.2 业务类框架<br/>
+        <br/>
+        23.3 什么是框架<br/>
+        <br/>
+        23.4 框架的特点<br/>
+        <br/>
+        第 24 章 软件运维<br/>
+        <br/>
+        24.1 软件运行生命周期<br/>
+        <br/>
+        24.2 什么是软件运维<br/>
+        <br/>
+        24.3 运维的业务模型<br/>
+        <br/>
+        24.4 控制变化<br/>
+        <br/>
+        24.5 监控变更<br/>
+        <br/>
+        24.6 预警变更<br/>
+        <br/>
+        24.7 主导变更<br/>
+        <br/>
+        24.8 提升变更质量<br/>
+        <br/>
+        24.9 运维的架构拆分<br/>
+        <br/>
+        第 25 章 软件访问生命周期<br/>
+        <br/>
+        25.1 软件访问的业务模型<br/>
+        <br/>
+        25.2 软件访问路径的架构拆分<br/>
+        <br/>
+        25.3 大规模软件访问的架构拆分<br/>
+        <br/>
+        25.4 集群<br/>
+        <br/>
+        25.5 数据中心<br/>
+        <br/>
+        第 26 章 软件架构和大数据<br/>
+        <br/>
+        26.1 什么是大数据<br/>
+        <br/>
+        26.2 如何做好大数据<br/>
+        <br/>
+        26.3 软件大数据<br/>
+        <br/>
+        第 27 章 软件架构和建筑架构<br/>
+        <br/>
+        27.1 软件架构和建筑架构的目标之异同<br/>
+        <br/>
+        27.2 软件和建筑的架构扩展之异同<br/>
+        <br/>
+        第三部分 软件架构的应用<br/>
+        <br/>
+        第 28 章 交易<br/>
+        <br/>
+        28.1 什么是交易<br/>
+        <br/>
+        28.2 货币的出现<br/>
+        <br/>
+        28.3 企业的实质<br/>
+        <br/>
+        28.4 软件对交易的影响<br/>
+        <br/>
+        28.5 软件的交易<br/>
+        <br/>
+        28.6 企业的核心<br/>
+        <br/>
+        第 29 章 产品<br/>
+        <br/>
+        29.1 什么是产品<br/>
+        <br/>
+        29.2 什么是商品<br/>
+        <br/>
+        29.3 识别产品<br/>
+        <br/>
+        29.4 产品系统<br/>
+        <br/>
+        29.5 产品列表<br/>
+        <br/>
+        29.6 产品详情<br/>
+        <br/>
+        29.7 商品的规则<br/>
+        <br/>
+        第 30 章 用户<br/>
+        <br/>
+        30.1 什么是用户<br/>
+        <br/>
+        30.2 为什么需要用户<br/>
+        <br/>
+        30.3 客户的出现<br/>
+        <br/>
+        30.4 用户的生命周期<br/>
+        <br/>
+        30.5 用户的识别<br/>
+        <br/>
+        第 31 章 订单<br/>
+        <br/>
+        31.1 什么是订单<br/>
+        <br/>
+        31.2 订单的生命周期架构拆分<br/>
+        <br/>
+        31.3 订单支付<br/>
+        <br/>
+        31.4 订单生命周期<br/>
+        <br/>
+        第 32 章 交易系统<br/>
+        <br/>
+        32.1 企业的架构拆分<br/>
+        <br/>
+        32.2 软件系统的建模<br/>
+        <br/>
+        32.3 访问业务模型<br/>
+        <br/>
+        32.4 交易软件系统的架构拆分<br/>
+        <br/>
+        32.5 服务的产生和粒度<br/>
+        <br/>
+        32.6 用户系统的拆分<br/>
+        <br/>
+        第 33 章 事务<br/>
+        <br/>
+        33.1 什么是事务<br/>
+        <br/>
+        33.2 软件中的事务<br/>
+        <br/>
+        33.3 数据库事务的滥用<br/>
+        <br/>
+        33.4 数据库的正确使用方式<br/>
+        <br/>
+        33.5 服务调用<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_27034443_full').hide();$('#dir_27034443_short').show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '27034443',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共26个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/架构">架构</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/架构设计">架构设计</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/软件开发">软件开发</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/软件工程">软件工程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/互联网">互联网</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/思维模式">思维模式</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机科学">计算机科学</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;聊聊架构&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/384559/?dcs=subject-rec&amp;dcm=douban&amp;dct=27034443" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/384559.jpg?v=1396492072.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/384559/" target="_blank">门后的秘密</a>
+          </div>
+          <div class="price">
+              6.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/12055070/?dcs=subject-rec&amp;dcm=douban&amp;dct=27034443" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/12055070.jpg?v=1439261585.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/12055070/" target="_blank">Web性能权威指南</a>
+          </div>
+          <div class="price">
+              29.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/35648299/?dcs=subject-rec&amp;dcm=douban&amp;dct=27034443" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/35648299.jpg?v=1498811585.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/35648299/" target="_blank">大型网站技术架构</a>
+          </div>
+          <div class="price">
+              5.99元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;聊聊架构&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26765979/" onclick="moreurl(this, {'total': 10, 'clicked': '26765979', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28603091.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26765979/" onclick="moreurl(this, {'total': 10, 'clicked': '26765979', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            架构即未来：现代企业可扩展的We...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/27204591/" onclick="moreurl(this, {'total': 10, 'clicked': '27204591', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s29615837.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/27204591/" onclick="moreurl(this, {'total': 10, 'clicked': '27204591', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            逆流而上
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26999243/" onclick="moreurl(this, {'total': 10, 'clicked': '26999243', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s29404197.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26999243/" onclick="moreurl(this, {'total': 10, 'clicked': '26999243', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            亿级流量网站架构核心技术
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/27020143/" onclick="moreurl(this, {'total': 10, 'clicked': '27020143', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29426075.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/27020143/" onclick="moreurl(this, {'total': 10, 'clicked': '27020143', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            架构真经
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26772677/" onclick="moreurl(this, {'total': 10, 'clicked': '26772677', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s28626997.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26772677/" onclick="moreurl(this, {'total': 10, 'clicked': '26772677', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            微服务设计
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26906846/" onclick="moreurl(this, {'total': 10, 'clicked': '26906846', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29131113.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26906846/" onclick="moreurl(this, {'total': 10, 'clicked': '26906846', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            互联网创业核心技术：构建可伸缩的...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/27039508/" onclick="moreurl(this, {'total': 10, 'clicked': '27039508', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s29445489.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/27039508/" onclick="moreurl(this, {'total': 10, 'clicked': '27039508', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            企业IT架构转型之道：阿里巴巴中台...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26998040/" onclick="moreurl(this, {'total': 10, 'clicked': '26998040', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29402674.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26998040/" onclick="moreurl(this, {'total': 10, 'clicked': '26998040', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            尽在双11：阿里巴巴技术演进与超...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/20458253/" onclick="moreurl(this, {'total': 10, 'clicked': '20458253', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s27276377.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/20458253/" onclick="moreurl(this, {'total': 10, 'clicked': '20458253', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            可扩展的艺术
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10756899/" onclick="moreurl(this, {'total': 10, 'clicked': '10756899', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s9126724.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10756899/" onclick="moreurl(this, {'total': 10, 'clicked': '10756899', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            高扩展性网站的50条原则
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/27034443/comments/">全部 28 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="1243687591">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1243687591" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1243687591" class="j a_show_login" data-cid="1243687591">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/ChiJianqiang/">池建强</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-09-16</span>
+                </span>
+            </h3>
+            <p class="comment-content">简约设计，扩展架构</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1199628692">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1199628692" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1199628692" class="j a_show_login" data-cid="1199628692">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/53016116/">瓢虫飞</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-06-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">用最直白的方式，讲解架构</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1217483551">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1217483551" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1217483551" class="j a_show_login" data-cid="1217483551">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/persiacai/">go_with_wind</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-07-19</span>
+                </span>
+            </h3>
+            <p class="comment-content">个别基础概念解释还行，比如DMZ</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1231277706">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1231277706" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1231277706" class="j a_show_login" data-cid="1231277706">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/film2us/">麻叨</a>
+                        <span class="user-stars allstar20 rating" title="较差"></span>
+                    <span>2017-08-18</span>
+                </span>
+            </h3>
+            <p class="comment-content">空话太多了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1212012437">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1212012437" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1212012437" class="j a_show_login" data-cid="1212012437">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/119845396/">泊浮目</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-07-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">有这么点道理，但是真的不值这个价。半折入可以考虑。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1303977930">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1303977930" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1303977930" class="j a_show_login" data-cid="1303977930">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/81441449/">zongzuanfeng</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2018-01-11</span>
+                </span>
+            </h3>
+            <p class="comment-content">说不上心有戚戚…</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1284264790">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1284264790" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1284264790" class="j a_show_login" data-cid="1284264790">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/59720063/">liuwill</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-10</span>
+                </span>
+            </h3>
+            <p class="comment-content">初看排版一般，但是内容确实非常好。去作者所说，怎么用自己的语言和文字表达出来，是和实现同样重要的。架构从业务生命周期的分解开始，考虑怎么样用合适的技术让业务模式变成现实。从技术细节，到分工和组织架构，业务、组织和技术是共同作用演化的。从写好代码，到模式工具，单元测试，运维，直到用户使用的体验，数据和运营，构成了软件的整个生命周期</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1250553460">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1250553460" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1250553460" class="j a_show_login" data-cid="1250553460">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/csvwolf/">敖天羽</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-10-02</span>
+                </span>
+            </h3>
+            <p class="comment-content">一本可以当做打发时间的闲书</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1246900646">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1246900646" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1246900646" class="j a_show_login" data-cid="1246900646">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/140569215/">cyber</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-09-24</span>
+                </span>
+            </h3>
+            <p class="comment-content">生命周期以及不断把生命周期按是否变换责任主体细化拆分直到识别完完整的业务过程，这一分析方法非常有参考价值，责权利对等是高内聚低耦合的重要划分原则，把现实世界和生活中的实际案例和现象同it软件结合类似，很有启发，万变不离其宗。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1243687591">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1243687591" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1243687591" class="j a_show_login" data-cid="1243687591">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/ChiJianqiang/">池建强</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-09-16</span>
+                </span>
+            </h3>
+            <p class="comment-content">简约设计，扩展架构</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/27034443/comments/">更多短评 28 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            聊聊架构的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 27034443;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/27034443/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            聊聊架构的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 3 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="8529912">
+        <div class="main review-item" id="8529912">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/139504890/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/139504890/" property="v:reviewer" class="name">进击的堂吉朱德</a>
+
+            <span property="v:rating" class="allstar20 main-title-rating" title="较差"></span>
+
+        <span property="v:dtreviewed" content="2017-05-09" class="main-meta">2017-05-09 20:56:27</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/8529912/">很失望的一本书</a></h2>
+
+                <div id="review_8529912_short" class="review-short" data-rid="8529912">
+                    <div class="short-content">
+
+                        200页的书卖79也是价格不低了~ 加邮费一起花了70多~ 等了两个星期收到书~ 看到作者自序说是被约稿很多次不好意思拒绝才写下此书的时候很担心~ 果然是勉强之作，看了前30页感觉在王顾左右而言他，没看到重点~ 每一章也就那么几页，200页写了30多章~ 而且章节之间逻辑性不强，像...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-8529912-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_8529912_full" class="hidden">
+                    <div id="review_8529912_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="8529912" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-8529912">
+                                3
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="8529912" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-8529912">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/8529912/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="8644369">
+        <div class="main review-item" id="8644369">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/yuanpeng09/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u46614261-4.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/yuanpeng09/" property="v:reviewer" class="name">宛析君</a>
+
+            <span property="v:rating" class="allstar20 main-title-rating" title="较差"></span>
+
+        <span property="v:dtreviewed" content="2017-07-04" class="main-meta">2017-07-04 21:11:49</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/8644369/">再吐槽两句吧</a></h2>
+
+                <div id="review_8644369_short" class="review-short" data-rid="8644369">
+                    <div class="short-content">
+
+                        两百多页，三十多章，七十块钱的价格定位,定价堪比《架构即未来》，InfoQ社区的倾力打造，然而所体现出来的内容深度和《架构即未来》天壤之别。我并没有看到书中哪些能体现出作者独到见解的地方，相反的，大量的、众所知之的概念，泛泛而谈，甚至对什么是开源软件也大篇幅举例...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-8644369-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_8644369_full" class="hidden">
+                    <div id="review_8644369_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="8644369" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-8644369">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="8644369" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-8644369">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/8644369/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="8642613">
+        <div class="main review-item" id="8642613">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/yuanpeng09/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u46614261-4.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/yuanpeng09/" property="v:reviewer" class="name">宛析君</a>
+
+            <span property="v:rating" class="allstar20 main-title-rating" title="较差"></span>
+
+        <span property="v:dtreviewed" content="2017-07-03" class="main-meta">2017-07-03 22:49:16</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/8642613/">就这样吧，忍不住说两句</a></h2>
+
+                <div id="review_8642613_short" class="review-short" data-rid="8642613">
+                    <div class="short-content">
+
+                        哎…说聊聊，更像是漫谈，整本书像是一本散文集，每个篇章都是一个故事，整体缺少一个主线。说白了，看完觉得空空。也许是我自己才学疏浅，没明白作者想要传达给读者怎样一种思想，或者要解答怎样的困惑。 慕InfoQ之名而来，作者是位大牛，但是似乎并不太擅长知识体系的梳理输...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-8642613-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_8642613_full" class="hidden">
+                    <div id="review_8642613_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="8642613" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-8642613">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="8642613" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-8642613">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/8642613/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript">
+    ;(function(){
+        window.subject_id = window.subject_id || 27034443;
+        "use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GalleryTopicsSelection = function (_React$Component) {
+  _inherits(GalleryTopicsSelection, _React$Component);
+
+  function GalleryTopicsSelection() {
+    _classCallCheck(this, GalleryTopicsSelection);
+
+    var _this = _possibleConstructorReturn(this, (GalleryTopicsSelection.__proto__ || Object.getPrototypeOf(GalleryTopicsSelection)).call(this));
+
+    _this.state = {
+      topics: []
+    };
+    return _this;
+  }
+
+  _createClass(GalleryTopicsSelection, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      $.ajax({
+        url: "https://m.douban.com/rexxar/api/v2/gallery/subject_feed?start=0&subject_id=" + window.subject_id + "&ck=" + get_cookie('ck'),
+        xhrFields: { withCredentials: true },
+        success: function success(res) {
+          _this2.setState({
+            topics: res.items
+          });
+          if (res.total) {
+            window.has_gallery_topics = true;
+          }
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var topics = this.state.topics;
+
+      return React.createElement(
+        "section",
+        null,
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=close", rel: "nofollow", className: "close_selection" },
+          "\u8DF3\u8FC7"
+        ),
+        React.createElement(
+          "h1",
+          null,
+          "\u4E0B\u9762\u662F\u5426\u6709\u4F60\u60F3\u5199\u7684\u8BDD\u9898\uFF1F"
+        ),
+        topics.length ? React.createElement(
+          "ul",
+          { className: "gl_topics" },
+          topics.map(function (item) {
+            return React.createElement(
+              "li",
+              { className: "topic" },
+              React.createElement(
+                "a",
+                { href: "new_review?from=gallery-topics-selection&click=create&tag_from_gallery=" + item.topic.name,
+                  className: "comment_btn write_review",
+                  rel: "nofollow" },
+                React.createElement("img", { src: window.write_icon }),
+                React.createElement(
+                  "span",
+                  null,
+                  window.join_label_text
+                )
+              ),
+              React.createElement(
+                "h2",
+                { className: "topic_name" },
+                item.topic.name
+              ),
+              React.createElement(
+                "div",
+                { className: "topic_meta" },
+                item.topic.card_subtitle
+              )
+            );
+          })
+        ) : React.createElement(
+          "div",
+          null,
+          "\u52A0\u8F7D\u4E2D"
+        ),
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=skip", rel: "nofollow", className: "topics_skip" },
+          React.createElement(
+            "span",
+            null,
+            "\u4E0A\u9762\u6CA1\u6709\u6211\u60F3\u5199\u7684\u8BDD\u9898\uFF0C\u53BB\u5199\u5F71\u8BC4 \uFF1E "
+          )
+        )
+      );
+    }
+  }]);
+
+  return GalleryTopicsSelection;
+}(React.Component);
+
+$(function () {
+  var glRoot = document.getElementById('gallery-topics-selection');
+
+  ReactDOM.render(React.createElement(GalleryTopicsSelection, null), glRoot);
+});;
+    })();
+</script><script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/289d9eab6b43a9ec.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评3篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/27034443/annotation">共<span property="v:count">8</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="43986856">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986856/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986856/" class="">软件运维</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986856">
+              <div class="short">
+                
+                  <span class="">运维的业务目标是保证用户的访问生命周期不受影响。 非核心生命周期的意思并非说该生命周期不重要，而是不再需要自己亲自干，可以分工出去让别人干，用来提升并行度。 运维的生命周期是从软件部署开始的。 而为了要控制变化，隔离环境是第一件要做的事情。 所有生产环境的变更可以分为两类：一种是被动发生的变更，一种是企业内部主动发起的变更。... 主动变更所导致的软件系统问题大约占所有线上问题的 2/3 以上。 生成预警的...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:20</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>运维的业务目标是保证用户的访问生命周期不受影响。</blockquote><p></p><blockquote>非核心生命周期的意思并非说该生命周期不重要，而是不再需要自己亲自干，可以分工出去让别人干，用来提升并行度。</blockquote><p></p><blockquote>运维的生命周期是从软件部署开始的。</blockquote><p></p><blockquote>而为了要控制变化，隔离环境是第一件要做的事情。</blockquote><p></p><blockquote>所有生产环境的变更可以分为两类：一种是被动发生的变更，一种是企业内部主动发起的变更。... 主动变更所导致的软件系统问题大约占所有线上问题的 2/3 以上。</blockquote><p></p><blockquote>生成预警的主要困难在于对业务生命周期的理解。</blockquote><p></p><blockquote>主导变更的策略主要就是让变更逐步地发生，一般被称为“灰度发布”。</blockquote><p></p><blockquote>还有一个更先进的做法就是把代码发布和功能启用进行架构拆分，先确保代码上线没有问题，再通过软件开关来打开关闭某个功能，功能的打开和关闭就形成了一个新的发布生命周期。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986856/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:20
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986781">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986781/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986781/" class="">访问类框架</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986781">
+              <div class="short">
+                
+                  <span class="">很多人把 MVC 中的模型（Model）理解为业务模型，这是有问题的。模型更多的是指对视图（View）的数据支持，一般用DTO来表达。而业务模型关注的是业务生命周期及其行为，业务模型的内部数据只是这些行为的结果。MVC 中的模型和业务模型是两个不同的概念，不可混用。</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/43986781/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2017-05-15 22:17</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>很多人把 MVC 中的模型（Model）理解为业务模型，这是有问题的。模型更多的是指对视图（View）的数据支持，一般用DTO来表达。而业务模型关注的是业务生命周期及其行为，业务模型的内部数据只是这些行为的结果。MVC 中的模型和业务模型是两个不同的概念，不可混用。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986781/#comments">2回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:17
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986633">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986633/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986633/" class="">设计模式的误区</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986633">
+              <div class="short">
+                
+                  <span class="">还有一个误区是架构师和软件工程师普遍存在的一个省力思维，总想用一个不变的方法来解决所有的问题，什么代码都考虑重用。设计模式强调的也是重用，恰好满足了这一需要，因此存在滥用的状况。但是重用并不总是带来好处，比如不同角色重用同一个服务（Service），就会导致两个角色不必要的相互干扰，反而增加了新的问题。重用并不是软件开发的目标，软件开发的真正目标是模拟业务，并提供用户访问。 很多架构师或软件工程师使用...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:13</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>还有一个误区是架构师和软件工程师普遍存在的一个省力思维，总想用一个不变的方法来解决所有的问题，什么代码都考虑重用。设计模式强调的也是重用，恰好满足了这一需要，因此存在滥用的状况。但是重用并不总是带来好处，比如不同角色重用同一个服务（Service），就会导致两个角色不必要的相互干扰，反而增加了新的问题。重用并不是软件开发的目标，软件开发的真正目标是模拟业务，并提供用户访问。</blockquote><p></p><blockquote>很多架构师或软件工程师使用了很多设计模式，就是为了让访问代码部分能够做到重用。究其根本原因，是因为这部分代码里面混入了业务逻辑，并且深深地认为这样做是对的，因为只能这么干，并且所有人都这么干。结果当业务需求快速变化的时候，设计模式因为无法规避不同用户修改需求带来的相互影响，反而导致部分的代码修改更加的困难。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986633/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:13
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986465">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986465/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986465/" class="">业务和架构及技术之间的关系</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986465">
+              <div class="short">
+                
+                  <span class="">在解决同一个业务问题的前提下，更高效、更低成本的技术，会淘汰低效、高成本的技术。 通常开始解决核心业务问题的核心技术（钻木取火）的效率是比较低的，只是把不可能变成了可能。从这一点上来说，技术才是业务的使能者（Enabler）。慢慢就会有提高效率的需求出现，改进技术的要求就会变得很迫切。技术所解决的业务生命周期慢慢就会开始发生拆分。非核心生命周期分离出去之后，要么使用现有的技术来实现，要么形成新的技术，...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:06</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>在解决同一个业务问题的前提下，更高效、更低成本的技术，会淘汰低效、高成本的技术。</blockquote><blockquote>通常开始解决核心业务问题的核心技术（钻木取火）的效率是比较低的，只是把不可能变成了可能。从这一点上来说，技术才是业务的使能者（Enabler）。慢慢就会有提高效率的需求出现，改进技术的要求就会变得很迫切。技术所解决的业务生命周期慢慢就会开始发生拆分。非核心生命周期分离出去之后，要么使用现有的技术来实现，要么形成新的技术，服务于更广泛的业务。</blockquote><p></p><blockquote>业务是核心，技术是解决业务问题的工具，而架构是让业务长大的组织方法。架构需要用技术来实现拆分，而技术需要架构来合理组织，以提升效率。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986465/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="43986856">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986856/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986856/" class="">软件运维</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986856">
+              <div class="short">
+                
+                  <span class="">运维的业务目标是保证用户的访问生命周期不受影响。 非核心生命周期的意思并非说该生命周期不重要，而是不再需要自己亲自干，可以分工出去让别人干，用来提升并行度。 运维的生命周期是从软件部署开始的。 而为了要控制变化，隔离环境是第一件要做的事情。 所有生产环境的变更可以分为两类：一种是被动发生的变更，一种是企业内部主动发起的变更。... 主动变更所导致的软件系统问题大约占所有线上问题的 2/3 以上。 生成预警的...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:20</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>运维的业务目标是保证用户的访问生命周期不受影响。</blockquote><p></p><blockquote>非核心生命周期的意思并非说该生命周期不重要，而是不再需要自己亲自干，可以分工出去让别人干，用来提升并行度。</blockquote><p></p><blockquote>运维的生命周期是从软件部署开始的。</blockquote><p></p><blockquote>而为了要控制变化，隔离环境是第一件要做的事情。</blockquote><p></p><blockquote>所有生产环境的变更可以分为两类：一种是被动发生的变更，一种是企业内部主动发起的变更。... 主动变更所导致的软件系统问题大约占所有线上问题的 2/3 以上。</blockquote><p></p><blockquote>生成预警的主要困难在于对业务生命周期的理解。</blockquote><p></p><blockquote>主导变更的策略主要就是让变更逐步地发生，一般被称为“灰度发布”。</blockquote><p></p><blockquote>还有一个更先进的做法就是把代码发布和功能启用进行架构拆分，先确保代码上线没有问题，再通过软件开关来打开关闭某个功能，功能的打开和关闭就形成了一个新的发布生命周期。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986856/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:20
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986781">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986781/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986781/" class="">访问类框架</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986781">
+              <div class="short">
+                
+                  <span class="">很多人把 MVC 中的模型（Model）理解为业务模型，这是有问题的。模型更多的是指对视图（View）的数据支持，一般用DTO来表达。而业务模型关注的是业务生命周期及其行为，业务模型的内部数据只是这些行为的结果。MVC 中的模型和业务模型是两个不同的概念，不可混用。</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/43986781/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2017-05-15 22:17</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>很多人把 MVC 中的模型（Model）理解为业务模型，这是有问题的。模型更多的是指对视图（View）的数据支持，一般用DTO来表达。而业务模型关注的是业务生命周期及其行为，业务模型的内部数据只是这些行为的结果。MVC 中的模型和业务模型是两个不同的概念，不可混用。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986781/#comments">2回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:17
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986633">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986633/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986633/" class="">设计模式的误区</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986633">
+              <div class="short">
+                
+                  <span class="">还有一个误区是架构师和软件工程师普遍存在的一个省力思维，总想用一个不变的方法来解决所有的问题，什么代码都考虑重用。设计模式强调的也是重用，恰好满足了这一需要，因此存在滥用的状况。但是重用并不总是带来好处，比如不同角色重用同一个服务（Service），就会导致两个角色不必要的相互干扰，反而增加了新的问题。重用并不是软件开发的目标，软件开发的真正目标是模拟业务，并提供用户访问。 很多架构师或软件工程师使用...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:13</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>还有一个误区是架构师和软件工程师普遍存在的一个省力思维，总想用一个不变的方法来解决所有的问题，什么代码都考虑重用。设计模式强调的也是重用，恰好满足了这一需要，因此存在滥用的状况。但是重用并不总是带来好处，比如不同角色重用同一个服务（Service），就会导致两个角色不必要的相互干扰，反而增加了新的问题。重用并不是软件开发的目标，软件开发的真正目标是模拟业务，并提供用户访问。</blockquote><p></p><blockquote>很多架构师或软件工程师使用了很多设计模式，就是为了让访问代码部分能够做到重用。究其根本原因，是因为这部分代码里面混入了业务逻辑，并且深深地认为这样做是对的，因为只能这么干，并且所有人都这么干。结果当业务需求快速变化的时候，设计模式因为无法规避不同用户修改需求带来的相互影响，反而导致部分的代码修改更加的困难。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986633/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:13
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986465">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986465/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986465/" class="">业务和架构及技术之间的关系</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986465">
+              <div class="short">
+                
+                  <span class="">在解决同一个业务问题的前提下，更高效、更低成本的技术，会淘汰低效、高成本的技术。 通常开始解决核心业务问题的核心技术（钻木取火）的效率是比较低的，只是把不可能变成了可能。从这一点上来说，技术才是业务的使能者（Enabler）。慢慢就会有提高效率的需求出现，改进技术的要求就会变得很迫切。技术所解决的业务生命周期慢慢就会开始发生拆分。非核心生命周期分离出去之后，要么使用现有的技术来实现，要么形成新的技术，...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:06</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>在解决同一个业务问题的前提下，更高效、更低成本的技术，会淘汰低效、高成本的技术。</blockquote><blockquote>通常开始解决核心业务问题的核心技术（钻木取火）的效率是比较低的，只是把不可能变成了可能。从这一点上来说，技术才是业务的使能者（Enabler）。慢慢就会有提高效率的需求出现，改进技术的要求就会变得很迫切。技术所解决的业务生命周期慢慢就会开始发生拆分。非核心生命周期分离出去之后，要么使用现有的技术来实现，要么形成新的技术，服务于更广泛的业务。</blockquote><p></p><blockquote>业务是核心，技术是解决业务问题的工具，而架构是让业务长大的组织方法。架构需要用技术来实现拆分，而技术需要架构来合理组织，以提升效率。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986465/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="43986856">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986856/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986856/" class="">软件运维</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986856">
+              <div class="short">
+                
+                  <span class="">运维的业务目标是保证用户的访问生命周期不受影响。 非核心生命周期的意思并非说该生命周期不重要，而是不再需要自己亲自干，可以分工出去让别人干，用来提升并行度。 运维的生命周期是从软件部署开始的。 而为了要控制变化，隔离环境是第一件要做的事情。 所有生产环境的变更可以分为两类：一种是被动发生的变更，一种是企业内部主动发起的变更。... 主动变更所导致的软件系统问题大约占所有线上问题的 2/3 以上。 生成预警的...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:20</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>运维的业务目标是保证用户的访问生命周期不受影响。</blockquote><p></p><blockquote>非核心生命周期的意思并非说该生命周期不重要，而是不再需要自己亲自干，可以分工出去让别人干，用来提升并行度。</blockquote><p></p><blockquote>运维的生命周期是从软件部署开始的。</blockquote><p></p><blockquote>而为了要控制变化，隔离环境是第一件要做的事情。</blockquote><p></p><blockquote>所有生产环境的变更可以分为两类：一种是被动发生的变更，一种是企业内部主动发起的变更。... 主动变更所导致的软件系统问题大约占所有线上问题的 2/3 以上。</blockquote><p></p><blockquote>生成预警的主要困难在于对业务生命周期的理解。</blockquote><p></p><blockquote>主导变更的策略主要就是让变更逐步地发生，一般被称为“灰度发布”。</blockquote><p></p><blockquote>还有一个更先进的做法就是把代码发布和功能启用进行架构拆分，先确保代码上线没有问题，再通过软件开关来打开关闭某个功能，功能的打开和关闭就形成了一个新的发布生命周期。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986856/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:20
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986781">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986781/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986781/" class="">访问类框架</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986781">
+              <div class="short">
+                
+                  <span class="">很多人把 MVC 中的模型（Model）理解为业务模型，这是有问题的。模型更多的是指对视图（View）的数据支持，一般用DTO来表达。而业务模型关注的是业务生命周期及其行为，业务模型的内部数据只是这些行为的结果。MVC 中的模型和业务模型是两个不同的概念，不可混用。</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/43986781/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2017-05-15 22:17</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>很多人把 MVC 中的模型（Model）理解为业务模型，这是有问题的。模型更多的是指对视图（View）的数据支持，一般用DTO来表达。而业务模型关注的是业务生命周期及其行为，业务模型的内部数据只是这些行为的结果。MVC 中的模型和业务模型是两个不同的概念，不可混用。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986781/#comments">2回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:17
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986633">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986633/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986633/" class="">设计模式的误区</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986633">
+              <div class="short">
+                
+                  <span class="">还有一个误区是架构师和软件工程师普遍存在的一个省力思维，总想用一个不变的方法来解决所有的问题，什么代码都考虑重用。设计模式强调的也是重用，恰好满足了这一需要，因此存在滥用的状况。但是重用并不总是带来好处，比如不同角色重用同一个服务（Service），就会导致两个角色不必要的相互干扰，反而增加了新的问题。重用并不是软件开发的目标，软件开发的真正目标是模拟业务，并提供用户访问。 很多架构师或软件工程师使用...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:13</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>还有一个误区是架构师和软件工程师普遍存在的一个省力思维，总想用一个不变的方法来解决所有的问题，什么代码都考虑重用。设计模式强调的也是重用，恰好满足了这一需要，因此存在滥用的状况。但是重用并不总是带来好处，比如不同角色重用同一个服务（Service），就会导致两个角色不必要的相互干扰，反而增加了新的问题。重用并不是软件开发的目标，软件开发的真正目标是模拟业务，并提供用户访问。</blockquote><p></p><blockquote>很多架构师或软件工程师使用了很多设计模式，就是为了让访问代码部分能够做到重用。究其根本原因，是因为这部分代码里面混入了业务逻辑，并且深深地认为这样做是对的，因为只能这么干，并且所有人都这么干。结果当业务需求快速变化的时候，设计模式因为无法规避不同用户修改需求带来的相互影响，反而导致部分的代码修改更加的困难。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986633/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:13
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43986465">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/fleure/"><img src="https://img1.doubanio.com/icon/u9336092-27.jpg" alt="红色有角F叔" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43986465/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43986465/" class="">业务和架构及技术之间的关系</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/fleure/" class=" " title="红色有角F叔">红色有角F叔</a>
+                (次元の呪い)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="43986465">
+              <div class="short">
+                
+                  <span class="">在解决同一个业务问题的前提下，更高效、更低成本的技术，会淘汰低效、高成本的技术。 通常开始解决核心业务问题的核心技术（钻木取火）的效率是比较低的，只是把不可能变成了可能。从这一点上来说，技术才是业务的使能者（Enabler）。慢慢就会有提高效率的需求出现，改进技术的要求就会变得很迫切。技术所解决的业务生命周期慢慢就会开始发生拆分。非核心生命周期分离出去之后，要么使用现有的技术来实现，要么形成新的技术，...</span>
+                <p class="pl">
+                  <span class="">2017-05-15 22:06</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>在解决同一个业务问题的前提下，更高效、更低成本的技术，会淘汰低效、高成本的技术。</blockquote><blockquote>通常开始解决核心业务问题的核心技术（钻木取火）的效率是比较低的，只是把不可能变成了可能。从这一点上来说，技术才是业务的使能者（Enabler）。慢慢就会有提高效率的需求出现，改进技术的要求就会变得很迫切。技术所解决的业务生命周期慢慢就会开始发生拆分。非核心生命周期分离出去之后，要么使用现有的技术来实现，要么形成新的技术，服务于更广泛的业务。</blockquote><p></p><blockquote>业务是核心，技术是解决业务问题的工具，而架构是让业务长大的组织方法。架构需要用技术来实现拆分，而技术需要架构来合理组织，以提升效率。</blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43986465/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-15 22:06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/27034443/annotation">更多读书笔记（共8篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        <span>
+            <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=discuss">
+              <span>在这本书的论坛里发言</span>
+            </a>
+        </span>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=4490&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=4490&amp;pos=1&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F7475704.htm&amp;cntvendor=1&amp;link2key=a8b5353b27&amp;srcsubj=27034443&amp;type=bkbuy&amp;subject=27034443" class="">
+                      <span class="">中国图书网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=4490&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=4490&amp;pos=1&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F7475704.htm&amp;cntvendor=1&amp;link2key=a8b5353b27&amp;srcsubj=27034443&amp;type=bkbuy&amp;subject=27034443" class="buylink-price ">
+                      <span class="">
+                        44.90 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/27034443/buylinks">
+              &gt; 查看1家网店价格
+                (44.90 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/27034443/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/1751458/" target="_blank">我偶然看到2</a>
+                <span class="pl">(丹姬ovo)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/812053/" target="_blank">策划书籍之技术篇</a>
+                <span class="pl">(出版人侠少)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3367202/" target="_blank">计算机</a>
+                <span class="pl">(artshell)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3502095/" target="_blank">物理书架</a>
+                <span class="pl">(Andy Huang)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/4222827/" target="_blank">码字</a>
+                <span class="pl">(D端牲口)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/alswl/"><img src="https://img3.doubanio.com/icon/u2834372-10.jpg" class="pil" alt="alswl" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/alswl/">alswl</a><br/>
+      <div class="pl ll">          1月11日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/61598698/"><img src="https://img3.doubanio.com/icon/u61598698-2.jpg" class="pil" alt="喜欢雨夜" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/61598698/">喜欢雨夜</a><br/>
+      <div class="pl ll">          1月10日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/27034443/doings">25人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/27034443/collections">52人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/27034443/wishes">262人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有262人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于聊聊架构的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/27034443/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'al_-7fCCtwE',
+            criteria = '7:架构|7:架构设计|7:软件开发|7:软件工程|7:互联网|7:思维模式|7:计算机科学|7:计算机|7:软件架构|7:设计|3:/subject/27034443/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- nain8-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

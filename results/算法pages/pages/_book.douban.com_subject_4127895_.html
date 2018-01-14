@@ -1,0 +1,3819 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Google Android开发入门指南 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/4127895/">
+<meta name="keywords" content="Google Android开发入门指南,王世江,人民邮电出版社,2009-11,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书Google Android开发入门指南 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/4127895/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">Google Android开发入门指南</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img1.doubanio.com/lpic/s6089507.jpg" title="Google Android开发入门指南">
+    <img src="https://img1.doubanio.com/lpic/s6089507.jpg" title="点击看大图" alt="Google Android开发入门指南"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/%E7%8E%8B%E4%B8%96%E6%B1%9F">王世江</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 人民邮电出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2009-11<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 281<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 45.00元<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787115213945<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 7.7 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar40"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">122</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:33px"></div>
+
+            <span class="rating_per">22.1%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">42.6%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:45px"></div>
+
+            <span class="rating_per">30.3%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:7px"></div>
+
+            <span class="rating_per">4.9%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-4127895-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-4127895-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-4127895-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-4127895-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-4127895-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-4127895-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-4127895-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-4127895-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-4127895">
+        <a href="#" data-url="https://book.douban.com/subject/4127895/" data-desc="" data-title="书籍《Google Android开发入门指南》 (来自豆瓣) " data-pic="https://img1.doubanio.com/lpic/s6089507.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_4127895"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>《Google Android开发入门指南(第2版)》是一部关于Android开发的基础教程，采用由浅入深、循序渐进的方式讨论Android。《Google Android开发入门指南(第2版)》全部内容基于Android SDK1.5Windows、MacOS X、Linux平台适用Android开发入门的详细教程，适合Android与J2ME的初学者学习，以编写实例为教学主线，真正助您解决开发中遇到的诸多实际问题。</p>    <p>书中还结合数独游戏等实例更加形象生动地讲解了Android开发的基本流程，且每章最后都有一个“快速阅读指南”，更加方便了读者的阅读。</p>    <p>《Google Android开发入门指南(第2版)》有超过130个实务范例，全面深度地整合手机、网络及服务。</p>    <p>《Google Android开发入门指南(第2版)》有易于阅读的架构设计，每个范例均搭配...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>《Google Android开发入门指南(第2版)》是一部关于Android开发的基础教程，采用由浅入深、循序渐进的方式讨论Android。《Google Android开发入门指南(第2版)》全部内容基于Android SDK1.5Windows、MacOS X、Linux平台适用Android开发入门的详细教程，适合Android与J2ME的初学者学习，以编写实例为教学主线，真正助您解决开发中遇到的诸多实际问题。</p>    <p>书中还结合数独游戏等实例更加形象生动地讲解了Android开发的基本流程，且每章最后都有一个“快速阅读指南”，更加方便了读者的阅读。</p>    <p>《Google Android开发入门指南(第2版)》有超过130个实务范例，全面深度地整合手机、网络及服务。</p>    <p>《Google Android开发入门指南(第2版)》有易于阅读的架构设计，每个范例均搭配步骤及完成画面！范例完全兼容Android SDK 1.5。</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/4127895/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_4127895_short">
+        第1篇　入门篇<br/>
+        第1章　初探Android<br/>
+        1.1　Android是什么<br/>
+        1.2　Android简史<br/>
+        1.3　从创意开始<br/>
+        1.4　参考资料<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_4127895_short').hide();$('#dir_4127895_full').show();$.get('/j/subject/j_dir_count',{id:4127895});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_4127895_full" style="display:none">
+        第1篇　入门篇<br/>
+        第1章　初探Android<br/>
+        1.1　Android是什么<br/>
+        1.2　Android简史<br/>
+        1.3　从创意开始<br/>
+        1.4　参考资料<br/>
+        第2章　安装Android开发工具<br/>
+        2.1　系统需求<br/>
+        2.1.1　操作系统<br/>
+        2.1.2　必要开发工具<br/>
+        2.1.3　其他开发环境工具（非必要安装）<br/>
+        2.2　安装流程<br/>
+        2.3　参考资料<br/>
+        第3章　打开现有项目<br/>
+        3.1　打开项目<br/>
+        3.2　删除项目<br/>
+        3.3　导入项目<br/>
+        3.4　修复项目<br/>
+        3.5　修改对应的目标版本<br/>
+        3.6　参考资料<br/>
+        第4章　操作Android模拟器（Emulator）<br/>
+        4.1　设置环境参数<br/>
+        4.2　设置Android模拟器<br/>
+        4.3　使用命令行工具管理模拟器<br/>
+        4.3.1　列出模拟器类型<br/>
+        4.3.2　创建模拟器<br/>
+        4.3.3　列出已创建的模拟器<br/>
+        4.4　使用运行（Run）模式运行<br/>
+        4.5　操作Android模拟器<br/>
+        4.5.1　切换模拟器布局<br/>
+        4.5.2　切换屏幕<br/>
+        4.5.3　添加模拟器外观设置<br/>
+        4.5.4　删除模拟器外观设置<br/>
+        4.5.5　移除程序<br/>
+        4.5.6　移除模拟器<br/>
+        4.6　参考资料<br/>
+        第5章　创建一个Android应用程序<br/>
+        5.1　创建新项目<br/>
+        5.2　程序项目架构<br/>
+        5.2.1　src/：源代码（source）目录<br/>
+        5.2.2　gen/：自动生成（Generate）目录<br/>
+        5.2.3　res/：资源（Resource）目录<br/>
+        5.2.4　Android功能列表<br/>
+        5.2.5　“Android版本号/”参考函数目录<br/>
+        5.3　参考资料<br/>
+        第2篇　基础篇<br/>
+        第6章　描述用户界面<br/>
+        6.1　身高体重指数（BMI）计算<br/>
+        6.2　表达用户界面<br/>
+        6.3　参考资源<br/>
+        第7章　设计用户界面<br/>
+        7.1　视图（View）<br/>
+        7.2　查阅文件<br/>
+        7.2.1　线上文件<br/>
+        7.2.2　脱机文件<br/>
+        7.3　开始设计<br/>
+        7.4　整合<br/>
+        7.5　指定输入类型（InputType）<br/>
+        7.6　视觉化的界面开发工具<br/>
+        7.7　参考资料<br/>
+        第8章　访问标识符号<br/>
+        8.1　android:id属性<br/>
+        8.2　XML说明文件与R.java资源文件<br/>
+        8.3　将字符串抽离XML<br/>
+        8.4　新增XML文件<br/>
+        8.5　参考资料<br/>
+        第9章　解读程序流程<br/>
+        9.1　基础程序逻辑结构<br/>
+        9.2　参考函数库<br/>
+        9.3　参考资料<br/>
+        第10章　完成BMI程序<br/>
+        10.1　完整的程序<br/>
+        10.2　程序解读<br/>
+        第3篇　提高篇<br/>
+        第11章　重构程序<br/>
+        11.1　什么是重构<br/>
+        11.2　重新查看BMI应用程序<br/>
+        11.3　MVC模式<br/>
+        11.4　重构BMI应用程序<br/>
+        11.5　完整的Bmi.java程序 代码<br/>
+        11.6　参考资料<br/>
+        第12章　添加对话框（Dialog）<br/>
+        12.1　设计对话框<br/>
+        12.2　定义调用点<br/>
+        12.3　实体对话框<br/>
+        12.4　重构<br/>
+        12.5　添加按钮<br/>
+        12.6　Toast界面组件<br/>
+        12.7　错误处理<br/>
+        12.7.1　讲解<br/>
+        12.7.2　提取字符串<br/>
+        12.8　参考资料<br/>
+        第13章　查看线上内容（Uri）<br/>
+        13.1　打开网页<br/>
+        13.1.1　讲解<br/>
+        13.1.2　使用Uri查看Google地图<br/>
+        13.2　再做好一点（重构）<br/>
+        13.2.1　提取字符串<br/>
+        13.2.2　避免出错<br/>
+        13.3　参考资料<br/>
+        第14章　添加菜单（Menu）<br/>
+        14.1　菜单功能<br/>
+        14.2　创建菜单<br/>
+        14.2.1　装饰选项<br/>
+        14.2.2　使用内置的菜单图标<br/>
+        14.3　处理选项动作<br/>
+        14.4　参考资料<br/>
+        第15章　定义Android列表（Manifest）<br/>
+        15.1　Android框架<br/>
+        15.2　预设的Activity列表<br/>
+        15.3　参考资料<br/>
+        第16章　添加新活动（Activity）<br/>
+        16.1　Activity的分类<br/>
+        16.2　独立的Activity<br/>
+        16.3　程序中创建新的Activity类文件<br/>
+        16.4　在列表中添加Activity代码<br/>
+        16.5　手动添加Activity标签<br/>
+        16.6　修改页面标题文字<br/>
+        16.7　原Activity类中添加startActivity函数<br/>
+        第17章　传送数据到新意图（Intent）<br/>
+        17.1　使用Intent传递数据<br/>
+        17.2　使用Intent接收信息<br/>
+        17.2.1　相关工作<br/>
+        17.2.2　在Activity中解开信息<br/>
+        17.2.3　讲解<br/>
+        17.3　不通过Bundle交换信息<br/>
+        第18章　信息提醒（Notification）<br/>
+        18.1　状态栏提醒<br/>
+        18.2　使用状态栏（Notification Bar）传递信息<br/>
+        18.3　使用内置的状态图标<br/>
+        18.4　参考资料<br/>
+        第19章　日志与调试（Log）<br/>
+        19.1　在程序中加上调试信息<br/>
+        19.2　导入Log函数<br/>
+        19.3　实际应用<br/>
+        19.3.1　讲解<br/>
+        19.3.2　其他的记录标记方式<br/>
+        19.3.3　延伸使用<br/>
+        19.4　在调试环境中查看除错信息<br/>
+        19.4.1　启动模拟器<br/>
+        19.4.2　切换到查错环境配置<br/>
+        19.4.3　添加信息日志过滤器（Log Filter）<br/>
+        19.5　模拟器上的调试设置<br/>
+        19.6　管理日志<br/>
+        19.7　在实机上调试<br/>
+        19.8　参考资料<br/>
+        第20章　活动的生命周期LifeCycle<br/>
+        20.1　生命周期<br/>
+        20.2　进程<br/>
+        20.3　为什么要了解生命周期?<br/>
+        20.4　Activity的状态<br/>
+        20.4.1　Active（活动）<br/>
+        20.4.2　Paused（暂停）<br/>
+        20.4.3　Stopped（停止）<br/>
+        20.4.4　Dead（已回收或未启动）<br/>
+        20.5　系统内存不足时的行为<br/>
+        20.6　观察Activity运行流程<br/>
+        20.7　Activity运行流程<br/>
+        20.7.1　一般启动<br/>
+        20.7.2　调用另一个Activity<br/>
+        20.7.3　返回原Activity<br/>
+        20.7.4　退出结束<br/>
+        20.7.5　回收后再启动<br/>
+        20.8　参考资料<br/>
+        第21章　优先级（Preference）<br/>
+        21.1　使用优先级设置<br/>
+        21.2　保存优先级设置<br/>
+        21.3　参考资料<br/>
+        第22章　开发不息<br/>
+        22.1　回顾BMI应用程序<br/>
+        22.2　BMI应用程序设计的缺陷<br/>
+        22.3　展望未来<br/>
+        第4篇　融会贯通篇<br/>
+        第23章　显性设计<br/>
+        23.1　做出容易使用的应用程序<br/>
+        23.2　设计的减法<br/>
+        23.3　规划应用程序的目标<br/>
+        23.4　创建新项目<br/>
+        23.4.1　XML说明文件<br/>
+        23.4.2　文字字符串文件<br/>
+        23.4.3　程序代码<br/>
+        第24章　支持多国语言<br/>
+        24.1　抽取文本文件<br/>
+        24.2　让中文、英文多个语言界面并存<br/>
+        24.3　切换语言<br/>
+        24.3.1　设置中切换语系<br/>
+        24.3.2　程序中切换语言<br/>
+        24.4　参考资料<br/>
+        第25章　针对特性配置（Orientation）<br/>
+        25.1　配置资料夹的命名规则<br/>
+        25.1.1　屏幕方向<br/>
+        25.1.2　触控类型（Touc-hscreen type）<br/>
+        25.1.3　文字输入方式（text input）<br/>
+        25.1.4　浏览方式（navig-ation method）<br/>
+        25.1.5　屏幕分辨率<br/>
+        25.2　Android手机配置实例<br/>
+        25.3　指定屏幕方向<br/>
+        25.3.1　配置文件中指定屏幕方向<br/>
+        25.3.2　程序中指定屏幕方向<br/>
+        25.4　参考资料<br/>
+        第26章　使用接口（Adapter）<br/>
+        26.1　接口的概念<br/>
+        26.2　数组接口（Array Adapter）与字符串数组<br/>
+        26.3　数组字符串资源文件<br/>
+        26.4　参考资料<br/>
+        第27章　添加下拉菜单组件（Spinner）<br/>
+        27.1　修改XML说明文件<br/>
+        27.2　添加程序<br/>
+        27.3　记录所选择的优先级<br/>
+        27.4　参考资料<br/>
+        第28章　签发应用程序密钥（Keytools）<br/>
+        28.1　检查列表<br/>
+        28.2　手动导出应用程序<br/>
+        28.3　产生密钥<br/>
+        28.4　签署密钥<br/>
+        28.5　验证密钥<br/>
+        28.6　安装到模拟器<br/>
+        28.7　发布应用程序<br/>
+        28.8　参考资料<br/>
+        第29章　发布到Android Market<br/>
+        29.1　Android Market的运作方式<br/>
+        29.2　注册Android Market<br/>
+        29.3　上传应用程序到Android Market<br/>
+        29.4　查看成果——查看管理界面<br/>
+        29.5　自行提供程序在线下载<br/>
+        29.6　发布到第三方Android应用程序下载网站<br/>
+        29.7　针对用户作设计<br/>
+        29.8　参考资料<br/>
+        第5篇　数据库应用<br/>
+        第30章　添加列表活动（ListActivity）<br/>
+        30.1　分析记事本程序<br/>
+        30.2　创建新项目<br/>
+        30.3　修改程序代码<br/>
+        30.3.1　讲解<br/>
+        30.3.2　自定义ListView组件<br/>
+        30.3.3　自定义空列表显示内容<br/>
+        30.4　参考内置范例<br/>
+        30.5　参考资料<br/>
+        第31章　使用数据库（SQLite）<br/>
+        31.1　SQLite数据库简介<br/>
+        31.2　查看模拟器目录<br/>
+        31.3　手动创建“SQLite”数据库<br/>
+        31.4　创建数据表（table）<br/>
+        31.5　验证<br/>
+        31.5.1　离开SQLite互动模式<br/>
+        31.5.2　重新打开SQLite数据库<br/>
+        31.6　让Android模拟器通过Proxy上网<br/>
+        31.6.1　查询数据<br/>
+        31.6.2　添加数据<br/>
+        31.6.3　确认数据<br/>
+        31.6.4　更新数据<br/>
+        31.6.5　删除数据<br/>
+        31.7　参考资料<br/>
+        第32章　访问数据表（SQLite OpenHelper）<br/>
+        32.1　SQLiteOpenHelper<br/>
+        32.2　对NotesDbAdapter类加工<br/>
+        32.3　使用NotesDb Adapter类<br/>
+        32.3.1　讲解<br/>
+        32.3.2　验证<br/>
+        32.4　添加查询<br/>
+        32.5　完整的程序<br/>
+        32.6　参考资料<br/>
+        第33章　添加增删改查操作（CRUD）<br/>
+        33.1　检索（Retrieve）<br/>
+        33.1.1　讲解<br/>
+        33.1.2　验证<br/>
+        33.2　添加（Create）<br/>
+        33.2.1　讲解<br/>
+        33.2.2　验证<br/>
+        33.3　删除<br/>
+        33.4　查询单条记录、修改<br/>
+        33.5　参考资料<br/>
+        第34章　添加相依的活动（Activity ForResult）<br/>
+        34.1　定义XML说明文件<br/>
+        34.2　添加编辑类<br/>
+        34.3　将新Activity添加列表<br/>
+        34.4　打开编辑页面<br/>
+        34.5　完整的程序<br/>
+        34.6　参考资料<br/>
+        第35章　添加长按菜单（ContextMenu）<br/>
+        35.1　添加长按菜单框架<br/>
+        35.2　填入菜单内容<br/>
+        35.3　后续改进<br/>
+        35.4　参考资料<br/>
+        第6篇　地图与定位应用<br/>
+        第36章　申请Google地图服务（API Key）<br/>
+        36.1　取得地点坐标<br/>
+        36.2　取得Google地图开发密钥（API Key）<br/>
+        36.2.1　调试用密钥（debug keystore）的位置<br/>
+        36.2.2　取得MD5指纹信息<br/>
+        36.3　参考资料<br/>
+        第37章　使用地图（MapView）<br/>
+        37.1　Google地图的组成元素<br/>
+        37.2　创建新项目<br/>
+        37.3　定义列表<br/>
+        37.4　定义XML资源文件<br/>
+        37.5　产生地图<br/>
+        37.6　直接用程序定义界面组件<br/>
+        37.7　控制地图<br/>
+        37.8　添加缩放图标<br/>
+        37.8.1　修改XML说明文件<br/>
+        37.8.2　加上缩放控制（Zoom Controls）<br/>
+        37.9　新版的改进<br/>
+        37.10　参考资料<br/>
+        第38章　添加按键控制（KeyEvent）<br/>
+        38.1　添加菜单<br/>
+        38.2　添加按键控制<br/>
+        38.3　控制缩放范围<br/>
+        38.4　参考文件<br/>
+        第39章　获取现在位置（GPS/基站三角定位）<br/>
+        39.1　创建新项目<br/>
+        39.2　添加使用权限（uses-permission）<br/>
+        39.3　定义LocationListener界面<br/>
+        39.4　使用定位服务管理器（locationManager）来获取现在位置<br/>
+        39.4.1　讲解<br/>
+        39.4.2　自动判断最佳定位服务来源<br/>
+        39.5　更新地点（Location Updates）<br/>
+        39.6　在模拟器中切换地点<br/>
+        39.7　完整的程序<br/>
+        39.8　参考资料<br/>
+        第40章　结合地图与定位功能（My LocationOverlay）<br/>
+        40.1　添加定位层（MyLocation Overlay）<br/>
+        40.2　参考资料<br/>
+        第41章　为地图标上地标（Itemized Overlay）<br/>
+        41.1　设置图标层（Itemized Overlay）<br/>
+        41.2　添加图标层<br/>
+        41.3　地图开发备忘列表<br/>
+        41.4　参考资料<br/>
+        后记<br/>
+        附录A　如何取得范例源代码<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_4127895_full').hide();$('#dir_4127895_short').show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '4127895',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共39个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/Android">Android</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/入门">入门</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Google">Google</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/开发入门指南">开发入门指南</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/软件开发">软件开发</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机科学">计算机科学</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Google Android开发入门指南&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/4828522/?dcs=subject-rec&amp;dcm=douban&amp;dct=4127895" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/4828522.jpg?v=1405394848.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/4828522/" target="_blank">我是一只IT小小鸟</a>
+          </div>
+          <div class="price">
+              12.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/381109/?dcs=subject-rec&amp;dcm=douban&amp;dct=4127895" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/381109.jpg?v=1395395854.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/381109/" target="_blank">我编程我快乐</a>
+          </div>
+          <div class="price">
+              18.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/15091353/?dcs=subject-rec&amp;dcm=douban&amp;dct=4127895" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/15091353.jpg?v=1445332552.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/15091353/" target="_blank">Android应用开发揭秘</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=4127895" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/198648.jpg?v=1395393782.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/484790/?dcs=subject-rec&amp;dcm=douban&amp;dct=4127895" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/484790.jpg?v=1395395714.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/484790/" target="_blank">精益创业</a>
+          </div>
+          <div class="price">
+              12.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Google Android开发入门指南&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4251755/" onclick="moreurl(this, {'total': 10, 'clicked': '4251755', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6111260.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4251755/" onclick="moreurl(this, {'total': 10, 'clicked': '4251755', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            Android系统原理及开发要点详解
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4111350/" onclick="moreurl(this, {'total': 10, 'clicked': '4111350', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6089496.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4111350/" onclick="moreurl(this, {'total': 10, 'clicked': '4111350', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            Android基础教程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3770255/" onclick="moreurl(this, {'total': 10, 'clicked': '3770255', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3817805.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3770255/" onclick="moreurl(this, {'total': 10, 'clicked': '3770255', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Google Android开发入门与实战
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/5250774/" onclick="moreurl(this, {'total': 10, 'clicked': '5250774', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s11309162.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/5250774/" onclick="moreurl(this, {'total': 10, 'clicked': '5250774', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            Android应用开发
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/5908849/" onclick="moreurl(this, {'total': 10, 'clicked': '5908849', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4592945.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/5908849/" onclick="moreurl(this, {'total': 10, 'clicked': '5908849', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            精通Android游戏开发
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/24153574/" onclick="moreurl(this, {'total': 10, 'clicked': '24153574', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s26343747.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/24153574/" onclick="moreurl(this, {'total': 10, 'clicked': '24153574', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Android 4高级编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4111365/" onclick="moreurl(this, {'total': 10, 'clicked': '4111365', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6089510.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4111365/" onclick="moreurl(this, {'total': 10, 'clicked': '4111365', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            iPhone 3开发基础教程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1239651/" onclick="moreurl(this, {'total': 10, 'clicked': '1239651', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s1874809.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1239651/" onclick="moreurl(this, {'total': 10, 'clicked': '1239651', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            单元测试之道Java版
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4863525/" onclick="moreurl(this, {'total': 10, 'clicked': '4863525', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s6175109.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4863525/" onclick="moreurl(this, {'total': 10, 'clicked': '4863525', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Google Android SDK开发范例大全
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4320723/" onclick="moreurl(this, {'total': 10, 'clicked': '4320723', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4205363.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4320723/" onclick="moreurl(this, {'total': 10, 'clicked': '4320723', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            Google Android揭秘
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/4127895/comments/">全部 39 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="483101039">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-483101039" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-483101039" class="j a_show_login" data-cid="483101039">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/Sariel/">Sariel</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2012-04-11</span>
+                </span>
+            </h3>
+            <p class="comment-content">对于比“完全的门外汉”高一点的人来说不够适合，太浅显了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="357233173">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-357233173" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-357233173" class="j a_show_login" data-cid="357233173">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/liuyix/">liuyix</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2011-03-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">原书内容写得不错，但是这个翻译版的简直是糟蹋了好东西！后面的代码写得都不对了，和附带光盘的不一致，而且代码好多处的错误！！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="436588028">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-436588028" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-436588028" class="j a_show_login" data-cid="436588028">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/xdash/">XDash</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2011-09-16</span>
+                </span>
+            </h3>
+            <p class="comment-content">非常适合入门</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="332944446">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-332944446" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-332944446" class="j a_show_login" data-cid="332944446">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/a4s4d44444/">自由への憧れ</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2010-12-29</span>
+                </span>
+            </h3>
+            <p class="comment-content">写的。。非常之简单。。适合入门</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="502868725">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-502868725" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-502868725" class="j a_show_login" data-cid="502868725">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/baomin0830/">包子包包子</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2012-03-02</span>
+                </span>
+            </h3>
+            <p class="comment-content">其实这本书我是拿来当复习的，翻了一遍就过了</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="664581377">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-664581377" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-664581377" class="j a_show_login" data-cid="664581377">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/42465697/">老防汛员阿滋猫</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2013-04-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">蓋索林寫的很有趣，但這本書僅僅適合入門而已，入門之後尚需深入學習android的框架和編程方法</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="631048416">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-631048416" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-631048416" class="j a_show_login" data-cid="631048416">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/45785244/">糯米</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2013-01-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">神级入门书啊,够入门的了,那时大一的我连java都没会就看这个了,我擦,太适合小白看了,不过如果有点基础还看这个真tm浪费钱了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="627453343">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-627453343" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-627453343" class="j a_show_login" data-cid="627453343">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/67793587/">Break.Chen</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2013-02-18</span>
+                </span>
+            </h3>
+            <p class="comment-content">书大概地读完了。内容看似很简单，但是看的比较粗略。以后用到的时候还需要在看，或者买一本深入一点的书籍继续深入研究。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="627440519">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-627440519" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-627440519" class="j a_show_login" data-cid="627440519">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/38977329/">[已注销]</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2013-01-09</span>
+                </span>
+            </h3>
+            <p class="comment-content">不错的入门书，就是错误有点多</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="623627638">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-623627638" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-623627638" class="j a_show_login" data-cid="623627638">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/2192801/">wind</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2013-01-03</span>
+                </span>
+            </h3>
+            <p class="comment-content">还是中国人写的书感觉比较系统。一气呵成地两天就看到了23章，优点是真的很适合入门，并且结合实例，缺点是比较旧了，09年的，很多地方讲的不是很全面，Notification的部分已经过期了，就跳过。数据库的部分跟着例子做，又发现一些deprecated的东西，地图部分因为Google Maps的API更新了，所以整体都不用看了。看来真是书不如新哇。
+</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/4127895/comments/">更多短评 39 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            Google Android开发入门指南的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 4127895;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/4127895/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            Google Android开发入门指南的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 5 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3386703">
+        <div class="main review-item" id="3386703">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/zariphix/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2017781-15.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/zariphix/" property="v:reviewer" class="name">塞拉囧</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-07-02" class="main-meta">2010-07-02 15:06:00</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3386703/">极易上手的开发指南</a></h2>
+
+                <div id="review_3386703_short" class="review-short" data-rid="3386703">
+                    <div class="short-content">
+
+                        用了几个小时看完了这本书，然后自己开发了第一个Android App，蛮有成就感。  一句话，这是本极易上手的开发指南，手把手的教，对于希望入门的同学，极力建议从这本书开始。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3386703-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3386703_full" class="hidden">
+                    <div id="review_3386703_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3386703" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3386703">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3386703" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3386703">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3386703/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3141002">
+        <div class="main review-item" id="3141002">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/silickr/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u32370014-8.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/silickr/" property="v:reviewer" class="name">柚原</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2010-04-05" class="main-meta">2010-04-05 00:11:28</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3141002/">适合初学者</a></h2>
+
+                <div id="review_3141002_short" class="review-short" data-rid="3141002">
+                    <div class="short-content">
+
+                        刚拿到这本书，学了前面几章，觉得是一本很适合初级入门的书，讲的很详细，代码分析的也很好，如果能在全书的后面加一个附录《编译错误的解决》，会更好，现在就是遇到有些错误，找不着北，不知道怎么改～
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3141002-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3141002_full" class="hidden">
+                    <div id="review_3141002_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3141002" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3141002">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3141002" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3141002">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3141002/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7342539">
+        <div class="main review-item" id="7342539">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/34893653/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u34893653-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/34893653/" property="v:reviewer" class="name">dump</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2015-01-14" class="main-meta">2015-01-14 17:04:21</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7342539/">作为一本入门书还是不错的</a></h2>
+
+                <div id="review_7342539_short" class="review-short" data-rid="7342539">
+                    <div class="short-content">
+
+                           做IT，注重的是实践，实践是检验真理的唯一标准嘛。前面大半章节jdk，安装的什么都没看。JDK安装和环境搭建是编程的基础，网上一搜一大堆，看书是没什么必要，何况现在IDE更新如此之快，书中用eclipse+adt+sdk，我用的是android studio。   中间部分，其实还是蛮详细的，编...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7342539-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7342539_full" class="hidden">
+                    <div id="review_7342539_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7342539" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7342539">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7342539" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7342539">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7342539/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="4667580">
+        <div class="main review-item" id="4667580">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/liuyix/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u41711177-7.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/liuyix/" property="v:reviewer" class="name">liuyix</a>
+
+            <span property="v:rating" class="allstar30 main-title-rating" title="还行"></span>
+
+        <span property="v:dtreviewed" content="2011-02-22" class="main-meta">2011-02-22 13:43:19</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/4667580/">总体内容非常不错，如果是原版书，应该给五星，翻译的有少量错误</a></h2>
+
+                <div id="review_4667580_short" class="review-short" data-rid="4667580">
+                    <div class="short-content">
+
+                        这本书也是我这个假期使用的Android入门书，总体上感觉写得非常不错，但是学习Android，关键的不是看书，而是动手实践，书写得再好，没有实践，无异于纸上谈兵，事倍功半。  如果你有Java基础，建议的阅读方法是：不要通读，先看每章得完整代码，看到不懂的地方，再往回看解释...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-4667580-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_4667580_full" class="hidden">
+                    <div id="review_4667580_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="4667580" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-4667580">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="4667580" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-4667580">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/4667580/#comments" class="reply">1回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="3455627">
+        <div class="main review-item" id="3455627">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/zackyang/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u2702380-7.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/zackyang/" property="v:reviewer" class="name">莱因哈特·冯·罗严克拉姆</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2010-07-19" class="main-meta">2010-07-19 15:57:11</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/3455627/">入门不错，提升就太显弱了些</a></h2>
+
+                <div id="review_3455627_short" class="review-short" data-rid="3455627">
+                    <div class="short-content">
+
+                        这本书作者写得不错，但是貌似在排版时出了些错。它把Android开发的一些基础已经讲得挺清楚了。但是没有提到一些挺实用的东西，如多线程的东西，图形方面编程也没有提到。不过总的来将确实入门不错，但内容偏少。
+
+                        &nbsp;(<a href="javascript:;" id="toggle-3455627-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_3455627_full" class="hidden">
+                    <div id="review_3455627_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="3455627" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-3455627">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="3455627" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-3455627">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/3455627/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript">
+    ;(function(){
+        window.subject_id = window.subject_id || 4127895;
+        "use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GalleryTopicsSelection = function (_React$Component) {
+  _inherits(GalleryTopicsSelection, _React$Component);
+
+  function GalleryTopicsSelection() {
+    _classCallCheck(this, GalleryTopicsSelection);
+
+    var _this = _possibleConstructorReturn(this, (GalleryTopicsSelection.__proto__ || Object.getPrototypeOf(GalleryTopicsSelection)).call(this));
+
+    _this.state = {
+      topics: []
+    };
+    return _this;
+  }
+
+  _createClass(GalleryTopicsSelection, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      $.ajax({
+        url: "https://m.douban.com/rexxar/api/v2/gallery/subject_feed?start=0&subject_id=" + window.subject_id + "&ck=" + get_cookie('ck'),
+        xhrFields: { withCredentials: true },
+        success: function success(res) {
+          _this2.setState({
+            topics: res.items
+          });
+          if (res.total) {
+            window.has_gallery_topics = true;
+          }
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var topics = this.state.topics;
+
+      return React.createElement(
+        "section",
+        null,
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=close", rel: "nofollow", className: "close_selection" },
+          "\u8DF3\u8FC7"
+        ),
+        React.createElement(
+          "h1",
+          null,
+          "\u4E0B\u9762\u662F\u5426\u6709\u4F60\u60F3\u5199\u7684\u8BDD\u9898\uFF1F"
+        ),
+        topics.length ? React.createElement(
+          "ul",
+          { className: "gl_topics" },
+          topics.map(function (item) {
+            return React.createElement(
+              "li",
+              { className: "topic" },
+              React.createElement(
+                "a",
+                { href: "new_review?from=gallery-topics-selection&click=create&tag_from_gallery=" + item.topic.name,
+                  className: "comment_btn write_review",
+                  rel: "nofollow" },
+                React.createElement("img", { src: window.write_icon }),
+                React.createElement(
+                  "span",
+                  null,
+                  window.join_label_text
+                )
+              ),
+              React.createElement(
+                "h2",
+                { className: "topic_name" },
+                item.topic.name
+              ),
+              React.createElement(
+                "div",
+                { className: "topic_meta" },
+                item.topic.card_subtitle
+              )
+            );
+          })
+        ) : React.createElement(
+          "div",
+          null,
+          "\u52A0\u8F7D\u4E2D"
+        ),
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=skip", rel: "nofollow", className: "topics_skip" },
+          React.createElement(
+            "span",
+            null,
+            "\u4E0A\u9762\u6CA1\u6709\u6211\u60F3\u5199\u7684\u8BDD\u9898\uFF0C\u53BB\u5199\u5F71\u8BC4 \uFF1E "
+          )
+        )
+      );
+    }
+  }]);
+
+  return GalleryTopicsSelection;
+}(React.Component);
+
+$(function () {
+  var glRoot = document.getElementById('gallery-topics-selection');
+
+  ReactDOM.render(React.createElement(GalleryTopicsSelection, null), glRoot);
+});;
+    })();
+</script><script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/289d9eab6b43a9ec.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评5篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/4127895/annotation">共<span property="v:count">7</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="17615216">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/paninxb/"><img src="https://img3.doubanio.com/icon/u2264028-5.jpg" alt="panin" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17615216/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17615216/" class="">第34页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/paninxb/" class=" " title="panin">panin</a>
+              
+            </p>
+            <div class="reading-note" data-cid="17615216">
+              <div class="short">
+                
+                  <span class="">计划做一个简单的豆瓣的Android客户端，边学边做。
+豆瓣API DOC：http://www.douban.com/service/apidoc/
+豆瓣API Java Client：http://code.google.com/p/douban-java/
+
+程序项目架构：
+1.src/
+源码
+
+2.gen/
+根据res/目录的XML描述文件/图像/文件等资源，自动生成R.java。
+
+R.java包含了用户界面/图像/字符串等对应各种资源的标识符(ID)，在开发Android程序时，很多时候会根据R.java调用资源。
+
+3.res/
+存放资源文..</span>
+                <p class="pl">
+                  <span class="">2012-04-03 20:48</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                计划做一个简单的豆瓣的Android客户端，边学边做。<div style="padding-bottom:1em;"></div>豆瓣API DOC：<a rel="nofollow" href="https://www.douban.com/service/apidoc/">http://www.douban.com/service/apidoc/</a>
+豆瓣API Java Client：<a rel="nofollow" href="http://code.google.com/p/douban-java/">http://code.google.com/p/douban-java/</a><div style="padding-bottom:1em;"></div>程序项目架构：<div style="padding-bottom:1em;"></div>1.src/<div style="padding-bottom:1em;"></div>源码<div style="padding-bottom:1em;"></div>2.gen/<div style="padding-bottom:1em;"></div>根据res/目录的XML描述文件/图像/文件等资源，自动生成R.java。<div style="padding-bottom:1em;"></div>R.java包含了用户界面/图像/字符串等对应各种资源的标识符(ID)，在开发Android程序时，很多时候会根据R.java调用资源。<div style="padding-bottom:1em;"></div>3.res/<div style="padding-bottom:1em;"></div>存放资源文件的目录。<div style="padding-bottom:1em;"></div>3.1.layout/<div style="padding-bottom:1em;"></div>用XML描述用户界面的布局，自动生成R.java供程序调用。<div style="padding-bottom:1em;"></div>3.2.values/<div style="padding-bottom:1em;"></div>包含所有使用XML格式的参数值的描述文件，可以在此添加一些额外的资源如字符串、颜色、风格等。可以通过R.java调用。<div style="padding-bottom:1em;"></div>4.AndroidManifest.xml<div style="padding-bottom:1em;"></div>Android功能列表。
+<blockquote><q>&quot;AndroidManifest.xml&quot;是Android应用程序的功能列表，每个应用程序都在这个文件中，列出该程序所提供的功能。当这个应用程序在系统上启动时，应用程序会提供系统诸如使用到的函数库（uses-libray）、支持的内容提供程序（ContentProvider）、可处理的资料类型、实际运行的类、跨应用程序的信息等等消息。我们可以在此指定我们的应用程序会使用到的服务（诸如电话功能、网络功能、GPS功能等）。当我们添加一个Activity类时，我们也需要先注册这个添加的Activity类后，才能顺利调用。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17615216/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-03 20:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="19273397">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/62579242/"><img src="https://img3.doubanio.com/icon/u62579242-4.jpg" alt="5587" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/19273397/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/19273397/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/62579242/" class=" " title="5587">5587</a>
+              
+            </p>
+            <div class="reading-note" data-cid="19273397">
+              <div class="short">
+                
+                  <span class="">都没看过，怎么写。</span>
+                <p class="pl">
+                  <span class="">2012-06-28 00:27</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                都没看过，怎么写。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/19273397/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-28 00:27
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17615099">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/paninxb/"><img src="https://img3.doubanio.com/icon/u2264028-5.jpg" alt="panin" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17615099/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17615099/" class="">Eclipse + ADT</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/paninxb/" class=" " title="panin">panin</a>
+              
+            </p>
+            <div class="reading-note" data-cid="17615099">
+              <div class="short">
+                
+                  <span class="">下载eclipse-rcp-indigo-SR2-win32.zip
+下载ADT-17.0.0.zip
+下载更新SDK
+安装ADT插件用Archive方式选择下载的adt，注意eclipse要选择rcp版本的，最基础版本缺少相关plugin。</span>
+                <p class="pl">
+                  <span class="">2012-04-03 20:40</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                下载eclipse-rcp-indigo-SR2-win32.zip<div style="padding-bottom:1em;"></div>下载ADT-17.0.0.zip<div style="padding-bottom:1em;"></div>下载更新SDK<div style="padding-bottom:1em;"></div>安装ADT插件用Archive方式选择下载的adt，注意eclipse要选择rcp版本的，最基础版本缺少相关plugin。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17615099/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-03 20:40
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="12310114">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/repairbug/"><img src="https://img3.doubanio.com/icon/u11272591-6.jpg" alt="哈欠" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/12310114/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/12310114/" class="">第158页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/repairbug/" class=" " title="哈欠">哈欠</a>
+              
+            </p>
+            <div class="reading-note" data-cid="12310114">
+              <div class="short">
+                
+                  <span class="">android 在屏幕中制定方向的时候，如果是在 源文件中通过
+ setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+设置方向的时候，必须在AndroidManifest.xml文件里设置默认方向，不然程序不能正常工作哦．代码如下：
+
+&lt;activity android:name=&quot;.ChangeOrientationDemo&quot;
+                  android:label=&quot;@string/app_name&quot;
+                  android:screenOrientation=&quot;...</span>
+                <p class="pl">
+                  <span class="">2011-04-11 16:42</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                android 在屏幕中制定方向的时候，如果是在 源文件中通过<div style="padding-bottom:1em;"></div> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);<div style="padding-bottom:1em;"></div>设置方向的时候，必须在AndroidManifest.xml文件里设置默认方向，不然程序不能正常工作哦．代码如下：<div style="padding-bottom:1em;"></div>&lt;activity android:name=&quot;.ChangeOrientationDemo&quot;<div style="padding-bottom:1em;"></div>                  android:label=&quot;@string/app_name&quot;<div style="padding-bottom:1em;"></div>                  android:screenOrientation=&quot;portrait&quot;&gt;&lt;!--  非常重要，否则源文件中的设置没有效果--&gt;<div style="padding-bottom:1em;"></div>            &lt;intent-filter&gt;
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/12310114/#comments">回应</a>&nbsp;&nbsp;
+                  2011-04-11 16:42
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="19273397">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/62579242/"><img src="https://img3.doubanio.com/icon/u62579242-4.jpg" alt="5587" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/19273397/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/19273397/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/62579242/" class=" " title="5587">5587</a>
+              
+            </p>
+            <div class="reading-note" data-cid="19273397">
+              <div class="short">
+                
+                  <span class="">都没看过，怎么写。</span>
+                <p class="pl">
+                  <span class="">2012-06-28 00:27</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                都没看过，怎么写。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/19273397/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-28 00:27
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17615216">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/paninxb/"><img src="https://img3.doubanio.com/icon/u2264028-5.jpg" alt="panin" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17615216/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17615216/" class="">第34页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/paninxb/" class=" " title="panin">panin</a>
+              
+            </p>
+            <div class="reading-note" data-cid="17615216">
+              <div class="short">
+                
+                  <span class="">计划做一个简单的豆瓣的Android客户端，边学边做。
+豆瓣API DOC：http://www.douban.com/service/apidoc/
+豆瓣API Java Client：http://code.google.com/p/douban-java/
+
+程序项目架构：
+1.src/
+源码
+
+2.gen/
+根据res/目录的XML描述文件/图像/文件等资源，自动生成R.java。
+
+R.java包含了用户界面/图像/字符串等对应各种资源的标识符(ID)，在开发Android程序时，很多时候会根据R.java调用资源。
+
+3.res/
+存放资源文..</span>
+                <p class="pl">
+                  <span class="">2012-04-03 20:48</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                计划做一个简单的豆瓣的Android客户端，边学边做。<div style="padding-bottom:1em;"></div>豆瓣API DOC：<a rel="nofollow" href="https://www.douban.com/service/apidoc/">http://www.douban.com/service/apidoc/</a>
+豆瓣API Java Client：<a rel="nofollow" href="http://code.google.com/p/douban-java/">http://code.google.com/p/douban-java/</a><div style="padding-bottom:1em;"></div>程序项目架构：<div style="padding-bottom:1em;"></div>1.src/<div style="padding-bottom:1em;"></div>源码<div style="padding-bottom:1em;"></div>2.gen/<div style="padding-bottom:1em;"></div>根据res/目录的XML描述文件/图像/文件等资源，自动生成R.java。<div style="padding-bottom:1em;"></div>R.java包含了用户界面/图像/字符串等对应各种资源的标识符(ID)，在开发Android程序时，很多时候会根据R.java调用资源。<div style="padding-bottom:1em;"></div>3.res/<div style="padding-bottom:1em;"></div>存放资源文件的目录。<div style="padding-bottom:1em;"></div>3.1.layout/<div style="padding-bottom:1em;"></div>用XML描述用户界面的布局，自动生成R.java供程序调用。<div style="padding-bottom:1em;"></div>3.2.values/<div style="padding-bottom:1em;"></div>包含所有使用XML格式的参数值的描述文件，可以在此添加一些额外的资源如字符串、颜色、风格等。可以通过R.java调用。<div style="padding-bottom:1em;"></div>4.AndroidManifest.xml<div style="padding-bottom:1em;"></div>Android功能列表。
+<blockquote><q>&quot;AndroidManifest.xml&quot;是Android应用程序的功能列表，每个应用程序都在这个文件中，列出该程序所提供的功能。当这个应用程序在系统上启动时，应用程序会提供系统诸如使用到的函数库（uses-libray）、支持的内容提供程序（ContentProvider）、可处理的资料类型、实际运行的类、跨应用程序的信息等等消息。我们可以在此指定我们的应用程序会使用到的服务（诸如电话功能、网络功能、GPS功能等）。当我们添加一个Activity类时，我们也需要先注册这个添加的Activity类后，才能顺利调用。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17615216/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-03 20:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="11892556">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/repairbug/"><img src="https://img3.doubanio.com/icon/u11272591-6.jpg" alt="哈欠" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/11892556/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/11892556/" class="">第90页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/repairbug/" class=" " title="哈欠">哈欠</a>
+              
+            </p>
+            <div class="reading-note" data-cid="11892556">
+              <div class="short">
+                
+                  <span class="">return truesuper.onCreateOptionsMenu(menu);
+
+应该是 return super.onCreateOptionMenu(menu); </span>
+                <p class="pl">
+                  <span class="">2011-03-17 21:28</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                return truesuper.onCreateOptionsMenu(menu);<div style="padding-bottom:1em;"></div>应该是 return super.onCreateOptionMenu(menu); 
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/11892556/#comments">回应</a>&nbsp;&nbsp;
+                  2011-03-17 21:28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="12310114">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/repairbug/"><img src="https://img3.doubanio.com/icon/u11272591-6.jpg" alt="哈欠" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/12310114/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/12310114/" class="">第158页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/repairbug/" class=" " title="哈欠">哈欠</a>
+              
+            </p>
+            <div class="reading-note" data-cid="12310114">
+              <div class="short">
+                
+                  <span class="">android 在屏幕中制定方向的时候，如果是在 源文件中通过
+ setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+设置方向的时候，必须在AndroidManifest.xml文件里设置默认方向，不然程序不能正常工作哦．代码如下：
+
+&lt;activity android:name=&quot;.ChangeOrientationDemo&quot;
+                  android:label=&quot;@string/app_name&quot;
+                  android:screenOrientation=&quot;...</span>
+                <p class="pl">
+                  <span class="">2011-04-11 16:42</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                android 在屏幕中制定方向的时候，如果是在 源文件中通过<div style="padding-bottom:1em;"></div> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);<div style="padding-bottom:1em;"></div>设置方向的时候，必须在AndroidManifest.xml文件里设置默认方向，不然程序不能正常工作哦．代码如下：<div style="padding-bottom:1em;"></div>&lt;activity android:name=&quot;.ChangeOrientationDemo&quot;<div style="padding-bottom:1em;"></div>                  android:label=&quot;@string/app_name&quot;<div style="padding-bottom:1em;"></div>                  android:screenOrientation=&quot;portrait&quot;&gt;&lt;!--  非常重要，否则源文件中的设置没有效果--&gt;<div style="padding-bottom:1em;"></div>            &lt;intent-filter&gt;
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/12310114/#comments">回应</a>&nbsp;&nbsp;
+                  2011-04-11 16:42
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="19273397">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/62579242/"><img src="https://img3.doubanio.com/icon/u62579242-4.jpg" alt="5587" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/19273397/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/19273397/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/62579242/" class=" " title="5587">5587</a>
+              
+            </p>
+            <div class="reading-note" data-cid="19273397">
+              <div class="short">
+                
+                  <span class="">都没看过，怎么写。</span>
+                <p class="pl">
+                  <span class="">2012-06-28 00:27</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                都没看过，怎么写。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/19273397/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-28 00:27
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17615216">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/paninxb/"><img src="https://img3.doubanio.com/icon/u2264028-5.jpg" alt="panin" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17615216/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17615216/" class="">第34页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/paninxb/" class=" " title="panin">panin</a>
+              
+            </p>
+            <div class="reading-note" data-cid="17615216">
+              <div class="short">
+                
+                  <span class="">计划做一个简单的豆瓣的Android客户端，边学边做。
+豆瓣API DOC：http://www.douban.com/service/apidoc/
+豆瓣API Java Client：http://code.google.com/p/douban-java/
+
+程序项目架构：
+1.src/
+源码
+
+2.gen/
+根据res/目录的XML描述文件/图像/文件等资源，自动生成R.java。
+
+R.java包含了用户界面/图像/字符串等对应各种资源的标识符(ID)，在开发Android程序时，很多时候会根据R.java调用资源。
+
+3.res/
+存放资源文..</span>
+                <p class="pl">
+                  <span class="">2012-04-03 20:48</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                计划做一个简单的豆瓣的Android客户端，边学边做。<div style="padding-bottom:1em;"></div>豆瓣API DOC：<a rel="nofollow" href="https://www.douban.com/service/apidoc/">http://www.douban.com/service/apidoc/</a>
+豆瓣API Java Client：<a rel="nofollow" href="http://code.google.com/p/douban-java/">http://code.google.com/p/douban-java/</a><div style="padding-bottom:1em;"></div>程序项目架构：<div style="padding-bottom:1em;"></div>1.src/<div style="padding-bottom:1em;"></div>源码<div style="padding-bottom:1em;"></div>2.gen/<div style="padding-bottom:1em;"></div>根据res/目录的XML描述文件/图像/文件等资源，自动生成R.java。<div style="padding-bottom:1em;"></div>R.java包含了用户界面/图像/字符串等对应各种资源的标识符(ID)，在开发Android程序时，很多时候会根据R.java调用资源。<div style="padding-bottom:1em;"></div>3.res/<div style="padding-bottom:1em;"></div>存放资源文件的目录。<div style="padding-bottom:1em;"></div>3.1.layout/<div style="padding-bottom:1em;"></div>用XML描述用户界面的布局，自动生成R.java供程序调用。<div style="padding-bottom:1em;"></div>3.2.values/<div style="padding-bottom:1em;"></div>包含所有使用XML格式的参数值的描述文件，可以在此添加一些额外的资源如字符串、颜色、风格等。可以通过R.java调用。<div style="padding-bottom:1em;"></div>4.AndroidManifest.xml<div style="padding-bottom:1em;"></div>Android功能列表。
+<blockquote><q>&quot;AndroidManifest.xml&quot;是Android应用程序的功能列表，每个应用程序都在这个文件中，列出该程序所提供的功能。当这个应用程序在系统上启动时，应用程序会提供系统诸如使用到的函数库（uses-libray）、支持的内容提供程序（ContentProvider）、可处理的资料类型、实际运行的类、跨应用程序的信息等等消息。我们可以在此指定我们的应用程序会使用到的服务（诸如电话功能、网络功能、GPS功能等）。当我们添加一个Activity类时，我们也需要先注册这个添加的Activity类后，才能顺利调用。</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17615216/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-03 20:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17615099">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/paninxb/"><img src="https://img3.doubanio.com/icon/u2264028-5.jpg" alt="panin" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17615099/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17615099/" class="">Eclipse + ADT</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/paninxb/" class=" " title="panin">panin</a>
+              
+            </p>
+            <div class="reading-note" data-cid="17615099">
+              <div class="short">
+                
+                  <span class="">下载eclipse-rcp-indigo-SR2-win32.zip
+下载ADT-17.0.0.zip
+下载更新SDK
+安装ADT插件用Archive方式选择下载的adt，注意eclipse要选择rcp版本的，最基础版本缺少相关plugin。</span>
+                <p class="pl">
+                  <span class="">2012-04-03 20:40</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                下载eclipse-rcp-indigo-SR2-win32.zip<div style="padding-bottom:1em;"></div>下载ADT-17.0.0.zip<div style="padding-bottom:1em;"></div>下载更新SDK<div style="padding-bottom:1em;"></div>安装ADT插件用Archive方式选择下载的adt，注意eclipse要选择rcp版本的，最基础版本缺少相关plugin。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17615099/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-03 20:40
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="12310114">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/repairbug/"><img src="https://img3.doubanio.com/icon/u11272591-6.jpg" alt="哈欠" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/12310114/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/12310114/" class="">第158页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/repairbug/" class=" " title="哈欠">哈欠</a>
+              
+            </p>
+            <div class="reading-note" data-cid="12310114">
+              <div class="short">
+                
+                  <span class="">android 在屏幕中制定方向的时候，如果是在 源文件中通过
+ setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+设置方向的时候，必须在AndroidManifest.xml文件里设置默认方向，不然程序不能正常工作哦．代码如下：
+
+&lt;activity android:name=&quot;.ChangeOrientationDemo&quot;
+                  android:label=&quot;@string/app_name&quot;
+                  android:screenOrientation=&quot;...</span>
+                <p class="pl">
+                  <span class="">2011-04-11 16:42</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                android 在屏幕中制定方向的时候，如果是在 源文件中通过<div style="padding-bottom:1em;"></div> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);<div style="padding-bottom:1em;"></div>设置方向的时候，必须在AndroidManifest.xml文件里设置默认方向，不然程序不能正常工作哦．代码如下：<div style="padding-bottom:1em;"></div>&lt;activity android:name=&quot;.ChangeOrientationDemo&quot;<div style="padding-bottom:1em;"></div>                  android:label=&quot;@string/app_name&quot;<div style="padding-bottom:1em;"></div>                  android:screenOrientation=&quot;portrait&quot;&gt;&lt;!--  非常重要，否则源文件中的设置没有效果--&gt;<div style="padding-bottom:1em;"></div>            &lt;intent-filter&gt;
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/12310114/#comments">回应</a>&nbsp;&nbsp;
+                  2011-04-11 16:42
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/4127895/annotation">更多读书笔记（共7篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/4127895/discussion/22635658/" title="碟读不出，求上传帝" class="">碟读不出，求上传帝</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/3867197/">byte</a></td>
+            <td class="pl"><span class="">1 回应</span></td>
+            <td class="pl"><span class="">2011-04-10</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/4127895/discussion/25540267/" title="入门级" class="">入门级</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/23831121/">asura.sxwang</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2010-07-25</span></td>
+        </tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3560&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=3560&amp;pos=1&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s4127895%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D20719853&amp;cntvendor=2&amp;srcsubj=4127895&amp;type=bkbuy&amp;subject=4127895" class="">
+                      <span class="">当当网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3560&amp;pre=0&amp;vendor=dangdang&amp;srcpage=subject&amp;price=3560&amp;pos=1&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s4127895%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D20719853&amp;cntvendor=2&amp;srcsubj=4127895&amp;type=bkbuy&amp;subject=4127895" class="buylink-price ">
+                      <span class="">
+                        35.60 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3560&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=4500&amp;pos=2&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B002VEDBKE2889742%2F%3Fasin%3DB002VEDBKE%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3DB002VEDBKE%26linkCode%3Ddf0&amp;cntvendor=2&amp;srcsubj=4127895&amp;type=bkbuy&amp;subject=4127895" class="">
+                      <span class="">亚马逊</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3560&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=4500&amp;pos=2&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B002VEDBKE2889742%2F%3Fasin%3DB002VEDBKE%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3DB002VEDBKE%26linkCode%3Ddf0&amp;cntvendor=2&amp;srcsubj=4127895&amp;type=bkbuy&amp;subject=4127895" class="buylink-price ">
+                      <span class="">
+                        45.00 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/4127895/buylinks">
+              &gt; 查看2家网店价格
+                (35.60 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D9787115213945&amp;subject=7115213941&amp;type=borrow&amp;library=10012&amp;link2key=9889b6b5ac" target="_blank">上海市中心图书馆(3)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac.gzlib.gov.cn%2Fopac%2Fsearch%3Frows%3D10%26curlibcode%3DGT%26hasholding%3D1%26searchWay0%3Dmarc%26q0%3D%26logical0%3DAND%26q%3D9787115213945%26searchWay%3Disbn%26scWay%3Ddim%26searchSource%3Dreader&amp;subject=7115213941&amp;type=borrow&amp;library=10022&amp;link2key=9889b6b5ac" target="_blank">广州图书馆(3)</a>
+      </li>
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fourex.lib.sjtu.edu.cn%2Fprimo_library%2Flibweb%2Faction%2Fsearch.do%3Ffn%3Dsearch%26vl%28freeText0%29%3D978-7-115-21394-5&amp;subject=7115213941&amp;type=borrow&amp;library=10006&amp;link2key=9889b6b5ac" target="_blank">上海交通大学图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1011678">全部3</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/3642654/">文魁版</a>
+          2009 / 6人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/4123523/">文魁版</a>
+          2009 / 4人读过
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/4127895/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/1890079/" target="_blank">读到的</a>
+                <span class="pl">(Bluethroat)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1890083/" target="_blank">技术</a>
+                <span class="pl">(Bluethroat)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3440197/" target="_blank">移动开发</a>
+                <span class="pl">(周发财)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/615792/" target="_blank">国内优秀技术书</a>
+                <span class="pl">(str.)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1727616/" target="_blank">不必买的技术书</a>
+                <span class="pl">(George)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/vacual/"><img src="https://img3.doubanio.com/icon/u3151739-31.jpg" class="pil" alt="安托万" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/vacual/">安托万</a><br/>
+      <div class="pl ll">          2017年10月26日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/146182515/"><img src="https://img3.doubanio.com/icon/u146182515-2.jpg" class="pil" alt="宋马叉虫" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/146182515/">宋马叉虫</a><br/>
+      <div class="pl ll">          2017年4月11日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/4127895/doings">74人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/4127895/collections">141人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/4127895/wishes">353人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/4127895/offers">2本二手书欲转让</a>
+          <span class="">
+            (18.00
+              元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有353人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于Google Android开发入门指南的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/4127895/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = '1bVmeyLCr9o',
+            criteria = '7:Android|7:编程|7:入门|7:计算机|7:Google|7:开发入门指南|7:软件开发|7:计算机科学|7:programming|7:android|3:/subject/4127895/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar2b-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

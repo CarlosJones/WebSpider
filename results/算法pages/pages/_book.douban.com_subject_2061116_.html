@@ -1,0 +1,4034 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Pattern Recognition and Machine Learning (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/2061116/">
+<meta name="keywords" content="Pattern Recognition and Machine Learning,Christopher Bishop,Springer,2007-10-1,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书Pattern Recognition and Machine Learning 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/2061116/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">Pattern Recognition and Machine Learning</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img1.doubanio.com/lpic/s4254558.jpg" title="Pattern Recognition and Machine Learning">
+    <img src="https://img1.doubanio.com/lpic/s4254558.jpg" title="点击看大图" alt="Pattern Recognition and Machine Learning"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+
+    <span class="pl">作者:</span>&nbsp;
+        <a href="https://book.douban.com/author/1345033/">
+            Christopher Bishop</a>
+    <br>
+
+
+    
+    
+  
+    <span class="pl">出版社:</span> Springer<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2007-10-1<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 738<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> USD 94.95<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> Hardcover<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9780387310732<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.5 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar50"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">974</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">81.7%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:12px"></div>
+
+            <span class="rating_per">15.8%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:1px"></div>
+
+            <span class="rating_per">2.4%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.1%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-2061116-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-2061116-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-2061116-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2061116-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2061116-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2061116-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2061116-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-2061116-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-2061116">
+        <a href="#" data-url="https://book.douban.com/subject/2061116/" data-desc="" data-title="书籍《Pattern Recognition and Machine Learning》 (来自豆瓣) " data-pic="https://img1.doubanio.com/lpic/s4254558.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_2061116"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>The dramatic growth in practical applications for machine learning over the last ten years has been accompanied by many important developments in the underlying algorithms and techniques. For example, Bayesian methods have grown from a specialist niche to become mainstream, while graphical models have emerged as a general framework for describing and applying probabilistic tech...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>The dramatic growth in practical applications for machine learning over the last ten years has been accompanied by many important developments in the underlying algorithms and techniques. For example, Bayesian methods have grown from a specialist niche to become mainstream, while graphical models have emerged as a general framework for describing and applying probabilistic techniques. The practical applicability of Bayesian methods has been greatly enhanced by the development of a range of approximate inference algorithms such as variational Bayes and expectation propagation, while new models based on kernels have had a significant impact on both algorithms and applications.</p>    <p>This completely new textbook reflects these recent developments while providing a comprehensive introduction to the fields of pattern recognition and machine learning. It is aimed at advanced undergraduates or first-year PhD students, as well as researchers and practitioners. No previous knowledge of pattern recognition or machine learning concepts is assumed. Familiarity with multivariate calculus and basic linear algebra is required, and some experience in the use of probabilities would be helpful though not essential as the book includes a self-contained introduction to basic probability theory.</p>    <p>The book is suitable for courses on machine learning, statistics, computer science, signal processing, computer vision, data mining, and bioinformatics. Extensive support is provided for course instructors, including more than 400 exercises, graded according to difficulty. Example solutions for a subset of the exercises are available from the book web site, while solutions for the remainder can be obtained by instructors from the publisher. The book is supported by a great deal of additional material, and the reader is encouraged to visit the book web site for the latest information.</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/2061116/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_2061116_short">
+        1 Introduction 1<br/>
+        1.1 Example: Polynomial Curve Fitting . . . . . . . . . . . . . . . . . 4<br/>
+        1.2 Probability Theory . . . . . . . . . . . . . . . . . . . . . . . . . . 12<br/>
+        1.2.1 Probability densities . . . . . . . . . . . . . . . . . . . . . 17<br/>
+        1.2.2 Expectations and covariances . . . . . . . . . . . . . . . . 19<br/>
+        1.2.3 Bayesian probabilities . . . . . . . . . . . . . . . . . . . . 21<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_2061116_short').hide();$('#dir_2061116_full').show();$.get('/j/subject/j_dir_count',{id:2061116});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_2061116_full" style="display:none">
+        1 Introduction 1<br/>
+        1.1 Example: Polynomial Curve Fitting . . . . . . . . . . . . . . . . . 4<br/>
+        1.2 Probability Theory . . . . . . . . . . . . . . . . . . . . . . . . . . 12<br/>
+        1.2.1 Probability densities . . . . . . . . . . . . . . . . . . . . . 17<br/>
+        1.2.2 Expectations and covariances . . . . . . . . . . . . . . . . 19<br/>
+        1.2.3 Bayesian probabilities . . . . . . . . . . . . . . . . . . . . 21<br/>
+        1.2.4 The Gaussian distribution . . . . . . . . . . . . . . . . . . 24<br/>
+        1.2.5 Curve fitting re-visited . . . . . . . . . . . . . . . . . . . . 28<br/>
+        1.2.6 Bayesian curve fitting . . . . . . . . . . . . . . . . . . . . 30<br/>
+        1.3 Model Selection . . . . . . . . . . . . . . . . . . . . . . . . . . . 32<br/>
+        1.4 The Curse of Dimensionality . . . . . . . . . . . . . . . . . . . . . 33<br/>
+        1.5 Decision Theory . . . . . . . . . . . . . . . . . . . . . . . . . . . 38<br/>
+        1.5.1 Minimizing the misclassification rate . . . . . . . . . . . . 39<br/>
+        1.5.2 Minimizing the expected loss . . . . . . . . . . . . . . . . 41<br/>
+        1.5.3 The reject option . . . . . . . . . . . . . . . . . . . . . . . 42<br/>
+        1.5.4 Inference and decision . . . . . . . . . . . . . . . . . . . . 42<br/>
+        1.5.5 Loss functions for regression . . . . . . . . . . . . . . . . . 46<br/>
+        1.6 Information Theory . . . . . . . . . . . . . . . . . . . . . . . . . . 48<br/>
+        1.6.1 Relative entropy and mutual information . . . . . . . . . . 55<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58<br/>
+        2 Probability Distributions 67<br/>
+        2.1 Binary Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . 68<br/>
+        2.1.1 The beta distribution . . . . . . . . . . . . . . . . . . . . . 71<br/>
+        2.2 Multinomial Variables . . . . . . . . . . . . . . . . . . . . . . . . 74<br/>
+        2.2.1 The Dirichlet distribution . . . . . . . . . . . . . . . . . . . 76<br/>
+        2.3 The Gaussian Distribution . . . . . . . . . . . . . . . . . . . . . . 78<br/>
+        2.3.1 Conditional Gaussian distributions . . . . . . . . . . . . . . 85<br/>
+        2.3.2 Marginal Gaussian distributions . . . . . . . . . . . . . . . 88<br/>
+        2.3.3 Bayes’ theorem for Gaussian variables . . . . . . . . . . . . 90<br/>
+        2.3.4 Maximum likelihood for the Gaussian . . . . . . . . . . . . 93<br/>
+        2.3.5 Sequential estimation . . . . . . . . . . . . . . . . . . . . . 94<br/>
+        2.3.6 Bayesian inference for the Gaussian . . . . . . . . . . . . . 97<br/>
+        2.3.7 Student’s t-distribution . . . . . . . . . . . . . . . . . . . . 102<br/>
+        2.3.8 Periodic variables . . . . . . . . . . . . . . . . . . . . . . . 105<br/>
+        2.3.9 Mixtures of Gaussians . . . . . . . . . . . . . . . . . . . . 110<br/>
+        2.4 The Exponential Family . . . . . . . . . . . . . . . . . . . . . . . 113<br/>
+        2.4.1 Maximum likelihood and sufficient statistics . . . . . . . . 116<br/>
+        2.4.2 Conjugate priors . . . . . . . . . . . . . . . . . . . . . . . 117<br/>
+        2.4.3 Noninformative priors . . . . . . . . . . . . . . . . . . . . 117<br/>
+        2.5 Nonparametric Methods . . . . . . . . . . . . . . . . . . . . . . . 120<br/>
+        2.5.1 Kernel density estimators . . . . . . . . . . . . . . . . . . . 122<br/>
+        2.5.2 Nearest-neighbour methods . . . . . . . . . . . . . . . . . 124<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127<br/>
+        3 Linear Models for Regression 137<br/>
+        3.1 Linear Basis Function Models . . . . . . . . . . . . . . . . . . . . 138<br/>
+        3.1.1 Maximum likelihood and least squares . . . . . . . . . . . . 140<br/>
+        3.1.2 Geometry of least squares . . . . . . . . . . . . . . . . . . 143<br/>
+        3.1.3 Sequential learning . . . . . . . . . . . . . . . . . . . . . . 143<br/>
+        3.1.4 Regularized least squares . . . . . . . . . . . . . . . . . . . 144<br/>
+        3.1.5 Multiple outputs . . . . . . . . . . . . . . . . . . . . . . . 146<br/>
+        3.2 The Bias-Variance Decomposition . . . . . . . . . . . . . . . . . . 147<br/>
+        3.3 Bayesian Linear Regression . . . . . . . . . . . . . . . . . . . . . 152<br/>
+        3.3.1 Parameter distribution . . . . . . . . . . . . . . . . . . . . 153<br/>
+        3.3.2 Predictive distribution . . . . . . . . . . . . . . . . . . . . 156<br/>
+        3.3.3 Equivalent kernel . . . . . . . . . . . . . . . . . . . . . . . 157<br/>
+        3.4 Bayesian Model Comparison . . . . . . . . . . . . . . . . . . . . . 161<br/>
+        3.5 The Evidence Approximation . . . . . . . . . . . . . . . . . . . . 165<br/>
+        3.5.1 Evaluation of the evidence function . . . . . . . . . . . . . 166<br/>
+        3.5.2 Maximizing the evidence function . . . . . . . . . . . . . . 168<br/>
+        3.5.3 Effective number of parameters . . . . . . . . . . . . . . . 170<br/>
+        3.6 Limitations of Fixed Basis Functions . . . . . . . . . . . . . . . . 172<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 173<br/>
+        4 Linear Models for Classification 179<br/>
+        4.1 Discriminant Functions . . . . . . . . . . . . . . . . . . . . . . . . 181<br/>
+        4.1.1 Two classes . . . . . . . . . . . . . . . . . . . . . . . . . . 181<br/>
+        4.1.2 Multiple classes . . . . . . . . . . . . . . . . . . . . . . . . 182<br/>
+        4.1.3 Least squares for classification . . . . . . . . . . . . . . . . 184<br/>
+        4.1.4 Fisher’s linear discriminant . . . . . . . . . . . . . . . . . . 186<br/>
+        4.1.5 Relation to least squares . . . . . . . . . . . . . . . . . . . 189<br/>
+        4.1.6 Fisher’s discriminant for multiple classes . . . . . . . . . . 191<br/>
+        4.1.7 The perceptron algorithm . . . . . . . . . . . . . . . . . . . 192<br/>
+        4.2 Probabilistic Generative Models . . . . . . . . . . . . . . . . . . . 196<br/>
+        4.2.1 Continuous inputs . . . . . . . . . . . . . . . . . . . . . . 198<br/>
+        4.2.2 Maximum likelihood solution . . . . . . . . . . . . . . . . 200<br/>
+        4.2.3 Discrete features . . . . . . . . . . . . . . . . . . . . . . . 202<br/>
+        4.2.4 Exponential family . . . . . . . . . . . . . . . . . . . . . . 202<br/>
+        4.3 Probabilistic Discriminative Models . . . . . . . . . . . . . . . . . 203<br/>
+        4.3.1 Fixed basis functions . . . . . . . . . . . . . . . . . . . . . 204<br/>
+        4.3.2 Logistic regression . . . . . . . . . . . . . . . . . . . . . . 205<br/>
+        4.3.3 Iterative reweighted least squares . . . . . . . . . . . . . . 207<br/>
+        4.3.4 Multiclass logistic regression . . . . . . . . . . . . . . . . . 209<br/>
+        4.3.5 Probit regression . . . . . . . . . . . . . . . . . . . . . . . 210<br/>
+        4.3.6 Canonical link functions . . . . . . . . . . . . . . . . . . . 212<br/>
+        4.4 The Laplace Approximation . . . . . . . . . . . . . . . . . . . . . 213<br/>
+        4.4.1 Model comparison and BIC . . . . . . . . . . . . . . . . . 216<br/>
+        4.5 Bayesian Logistic Regression . . . . . . . . . . . . . . . . . . . . 217<br/>
+        4.5.1 Laplace approximation . . . . . . . . . . . . . . . . . . . . 217<br/>
+        4.5.2 Predictive distribution . . . . . . . . . . . . . . . . . . . . 218<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220<br/>
+        5 Neural Networks 225<br/>
+        5.1 Feed-forward Network Functions . . . . . . . . . . . . . . . . . . 227<br/>
+        5.1.1 Weight-space symmetries . . . . . . . . . . . . . . . . . . 231<br/>
+        5.2 Network Training . . . . . . . . . . . . . . . . . . . . . . . . . . . 232<br/>
+        5.2.1 Parameter optimization . . . . . . . . . . . . . . . . . . . . 236<br/>
+        5.2.2 Local quadratic approximation . . . . . . . . . . . . . . . . 237<br/>
+        5.2.3 Use of gradient information . . . . . . . . . . . . . . . . . 239<br/>
+        5.2.4 Gradient descent optimization . . . . . . . . . . . . . . . . 240<br/>
+        5.3 Error Backpropagation . . . . . . . . . . . . . . . . . . . . . . . . 241<br/>
+        5.3.1 Evaluation of error-function derivatives . . . . . . . . . . . 242<br/>
+        5.3.2 A simple example . . . . . . . . . . . . . . . . . . . . . . 245<br/>
+        5.3.3 Efficiency of backpropagation . . . . . . . . . . . . . . . . 246<br/>
+        5.3.4 The Jacobian matrix . . . . . . . . . . . . . . . . . . . . . 247<br/>
+        5.4 The Hessian Matrix . . . . . . . . . . . . . . . . . . . . . . . . . . 249<br/>
+        5.4.1 Diagonal approximation . . . . . . . . . . . . . . . . . . . 250<br/>
+        5.4.2 Outer product approximation . . . . . . . . . . . . . . . . . 251<br/>
+        5.4.3 Inverse Hessian . . . . . . . . . . . . . . . . . . . . . . . . 252<br/>
+        5.4.4 Finite differences . . . . . . . . . . . . . . . . . . . . . . . 252<br/>
+        5.4.5 Exact evaluation of the Hessian . . . . . . . . . . . . . . . 253<br/>
+        5.4.6 Fast multiplication by the Hessian . . . . . . . . . . . . . . 254<br/>
+        5.5 Regularization in Neural Networks . . . . . . . . . . . . . . . . . 256<br/>
+        5.5.1 Consistent Gaussian priors . . . . . . . . . . . . . . . . . . 257<br/>
+        5.5.2 Early stopping . . . . . . . . . . . . . . . . . . . . . . . . 259<br/>
+        5.5.3 Invariances . . . . . . . . . . . . . . . . . . . . . . . . . . 261<br/>
+        5.5.4 Tangent propagation . . . . . . . . . . . . . . . . . . . . . 263<br/>
+        5.5.5 Training with transformed data . . . . . . . . . . . . . . . . 265<br/>
+        5.5.6 Convolutional networks . . . . . . . . . . . . . . . . . . . 267<br/>
+        5.5.7 Soft weight sharing . . . . . . . . . . . . . . . . . . . . . . 269<br/>
+        5.6 Mixture Density Networks . . . . . . . . . . . . . . . . . . . . . . 272<br/>
+        5.7 Bayesian Neural Networks . . . . . . . . . . . . . . . . . . . . . . 277<br/>
+        5.7.1 Posterior parameter distribution . . . . . . . . . . . . . . . 278<br/>
+        5.7.2 Hyperparameter optimization . . . . . . . . . . . . . . . . 280<br/>
+        5.7.3 Bayesian neural networks for classification . . . . . . . . . 281<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 284<br/>
+        6 Kernel Methods 291<br/>
+        6.1 Dual Representations . . . . . . . . . . . . . . . . . . . . . . . . . 293<br/>
+        6.2 Constructing Kernels . . . . . . . . . . . . . . . . . . . . . . . . . 294<br/>
+        6.3 Radial Basis Function Networks . . . . . . . . . . . . . . . . . . . 299<br/>
+        6.3.1 Nadaraya-Watson model . . . . . . . . . . . . . . . . . . . 301<br/>
+        6.4 Gaussian Processes . . . . . . . . . . . . . . . . . . . . . . . . . . 303<br/>
+        6.4.1 Linear regression revisited . . . . . . . . . . . . . . . . . . 304<br/>
+        6.4.2 Gaussian processes for regression . . . . . . . . . . . . . . 306<br/>
+        6.4.3 Learning the hyperparameters . . . . . . . . . . . . . . . . 311<br/>
+        6.4.4 Automatic relevance determination . . . . . . . . . . . . . 312<br/>
+        6.4.5 Gaussian processes for classification . . . . . . . . . . . . . 313<br/>
+        6.4.6 Laplace approximation . . . . . . . . . . . . . . . . . . . . 315<br/>
+        6.4.7 Connection to neural networks . . . . . . . . . . . . . . . . 319<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 320<br/>
+        7 Sparse Kernel Machines 325<br/>
+        7.1 Maximum Margin Classifiers . . . . . . . . . . . . . . . . . . . . 326<br/>
+        7.1.1 Overlapping class distributions . . . . . . . . . . . . . . . . 331<br/>
+        7.1.2 Relation to logistic regression . . . . . . . . . . . . . . . . 336<br/>
+        7.1.3 Multiclass SVMs . . . . . . . . . . . . . . . . . . . . . . . 338<br/>
+        7.1.4 SVMs for regression . . . . . . . . . . . . . . . . . . . . . 339<br/>
+        7.1.5 Computational learning theory . . . . . . . . . . . . . . . . 344<br/>
+        7.2 Relevance Vector Machines . . . . . . . . . . . . . . . . . . . . . 345<br/>
+        7.2.1 RVM for regression . . . . . . . . . . . . . . . . . . . . . . 345<br/>
+        7.2.2 Analysis of sparsity . . . . . . . . . . . . . . . . . . . . . . 349<br/>
+        7.2.3 RVM for classification . . . . . . . . . . . . . . . . . . . . 353<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 357<br/>
+        8 Graphical Models 359<br/>
+        8.1 Bayesian Networks . . . . . . . . . . . . . . . . . . . . . . . . . . 360<br/>
+        8.1.1 Example: Polynomial regression . . . . . . . . . . . . . . . 362<br/>
+        8.1.2 Generative models . . . . . . . . . . . . . . . . . . . . . . 365<br/>
+        8.1.3 Discrete variables . . . . . . . . . . . . . . . . . . . . . . . 366<br/>
+        8.1.4 Linear-Gaussian models . . . . . . . . . . . . . . . . . . . 370<br/>
+        8.2 Conditional Independence . . . . . . . . . . . . . . . . . . . . . . 372<br/>
+        8.2.1 Three example graphs . . . . . . . . . . . . . . . . . . . . 373<br/>
+        8.2.2 D-separation . . . . . . . . . . . . . . . . . . . . . . . . . 378<br/>
+        8.3 Markov Random Fields . . . . . . . . . . . . . . . . . . . . . . . 383<br/>
+        8.3.1 Conditional independence properties . . . . . . . . . . . . . 383<br/>
+        8.3.2 Factorization properties . . . . . . . . . . . . . . . . . . . 384<br/>
+        8.3.3 Illustration: Image de-noising . . . . . . . . . . . . . . . . 387<br/>
+        8.3.4 Relation to directed graphs . . . . . . . . . . . . . . . . . . 390<br/>
+        8.4 Inference in Graphical Models . . . . . . . . . . . . . . . . . . . . 393<br/>
+        8.4.1 Inference on a chain . . . . . . . . . . . . . . . . . . . . . 394<br/>
+        8.4.2 Trees . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 398<br/>
+        8.4.3 Factor graphs . . . . . . . . . . . . . . . . . . . . . . . . . 399<br/>
+        8.4.4 The sum-product algorithm . . . . . . . . . . . . . . . . . . 402<br/>
+        8.4.5 The max-sum algorithm . . . . . . . . . . . . . . . . . . . 411<br/>
+        8.4.6 Exact inference in general graphs . . . . . . . . . . . . . . 416<br/>
+        8.4.7 Loopy belief propagation . . . . . . . . . . . . . . . . . . . 417<br/>
+        8.4.8 Learning the graph structure . . . . . . . . . . . . . . . . . 418<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 418<br/>
+        9 Mixture Models and EM 423<br/>
+        9.1 K-means Clustering . . . . . . . . . . . . . . . . . . . . . . . . . 424<br/>
+        9.1.1 Image segmentation and compression . . . . . . . . . . . . 428<br/>
+        9.2 Mixtures of Gaussians . . . . . . . . . . . . . . . . . . . . . . . . 430<br/>
+        9.2.1 Maximum likelihood . . . . . . . . . . . . . . . . . . . . . 432<br/>
+        9.2.2 EM for Gaussian mixtures . . . . . . . . . . . . . . . . . . 435<br/>
+        9.3 An Alternative View of EM . . . . . . . . . . . . . . . . . . . . . 439<br/>
+        9.3.1 Gaussian mixtures revisited . . . . . . . . . . . . . . . . . 441<br/>
+        9.3.2 Relation to K-means . . . . . . . . . . . . . . . . . . . . . 443<br/>
+        9.3.3 Mixtures of Bernoulli distributions . . . . . . . . . . . . . . 444<br/>
+        9.3.4 EM for Bayesian linear regression . . . . . . . . . . . . . . 448<br/>
+        9.4 The EM Algorithm in General . . . . . . . . . . . . . . . . . . . . 450<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 455<br/>
+        10 Approximate Inference 461<br/>
+        10.1 Variational Inference . . . . . . . . . . . . . . . . . . . . . . . . . 462<br/>
+        10.1.1 Factorized distributions . . . . . . . . . . . . . . . . . . . . 464<br/>
+        10.1.2 Properties of factorized approximations . . . . . . . . . . . 466<br/>
+        10.1.3 Example: The univariate Gaussian . . . . . . . . . . . . . . 470<br/>
+        10.1.4 Model comparison . . . . . . . . . . . . . . . . . . . . . . 473<br/>
+        10.2 Illustration: Variational Mixture of Gaussians . . . . . . . . . . . . 474<br/>
+        10.2.1 Variational distribution . . . . . . . . . . . . . . . . . . . . 475<br/>
+        10.2.2 Variational lower bound . . . . . . . . . . . . . . . . . . . 481<br/>
+        10.2.3 Predictive density . . . . . . . . . . . . . . . . . . . . . . . 482<br/>
+        10.2.4 Determining the number of components . . . . . . . . . . . 483<br/>
+        10.2.5 Induced factorizations . . . . . . . . . . . . . . . . . . . . 485<br/>
+        10.3 Variational Linear Regression . . . . . . . . . . . . . . . . . . . . 486<br/>
+        10.3.1 Variational distribution . . . . . . . . . . . . . . . . . . . . 486<br/>
+        10.3.2 Predictive distribution . . . . . . . . . . . . . . . . . . . . 488<br/>
+        10.3.3 Lower bound . . . . . . . . . . . . . . . . . . . . . . . . . 489<br/>
+        10.4 Exponential Family Distributions . . . . . . . . . . . . . . . . . . 490<br/>
+        10.4.1 Variational message passing . . . . . . . . . . . . . . . . . 491<br/>
+        10.5 Local Variational Methods . . . . . . . . . . . . . . . . . . . . . . 493<br/>
+        10.6 Variational Logistic Regression . . . . . . . . . . . . . . . . . . . 498<br/>
+        10.6.1 Variational posterior distribution . . . . . . . . . . . . . . . 498<br/>
+        10.6.2 Optimizing the variational parameters . . . . . . . . . . . . 500<br/>
+        10.6.3 Inference of hyperparameters . . . . . . . . . . . . . . . . 502<br/>
+        10.7 Expectation Propagation . . . . . . . . . . . . . . . . . . . . . . . 505<br/>
+        10.7.1 Example: The clutter problem . . . . . . . . . . . . . . . . 511<br/>
+        10.7.2 Expectation propagation on graphs . . . . . . . . . . . . . . 513<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 517<br/>
+        11 Sampling Methods 523<br/>
+        11.1 Basic Sampling Algorithms . . . . . . . . . . . . . . . . . . . . . 526<br/>
+        11.1.1 Standard distributions . . . . . . . . . . . . . . . . . . . . 526<br/>
+        11.1.2 Rejection sampling . . . . . . . . . . . . . . . . . . . . . . 528<br/>
+        11.1.3 Adaptive rejection sampling . . . . . . . . . . . . . . . . . 530<br/>
+        11.1.4 Importance sampling . . . . . . . . . . . . . . . . . . . . . 532<br/>
+        11.1.5 Sampling-importance-resampling . . . . . . . . . . . . . . 534<br/>
+        11.1.6 Sampling and the EM algorithm . . . . . . . . . . . . . . . 536<br/>
+        11.2 Markov Chain Monte Carlo . . . . . . . . . . . . . . . . . . . . . 537<br/>
+        11.2.1 Markov chains . . . . . . . . . . . . . . . . . . . . . . . . 539<br/>
+        11.2.2 The Metropolis-Hastings algorithm . . . . . . . . . . . . . 541<br/>
+        11.3 Gibbs Sampling . . . . . . . . . . . . . . . . . . . . . . . . . . . 542<br/>
+        11.4 Slice Sampling . . . . . . . . . . . . . . . . . . . . . . . . . . . . 546<br/>
+        11.5 The Hybrid Monte Carlo Algorithm . . . . . . . . . . . . . . . . . 548<br/>
+        11.5.1 Dynamical systems . . . . . . . . . . . . . . . . . . . . . . 548<br/>
+        11.5.2 Hybrid Monte Carlo . . . . . . . . . . . . . . . . . . . . . 552<br/>
+        11.6 Estimating the Partition Function . . . . . . . . . . . . . . . . . . 554<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 556<br/>
+        12 Continuous Latent Variables 559<br/>
+        12.1 Principal Component Analysis . . . . . . . . . . . . . . . . . . . . 561<br/>
+        12.1.1 Maximum variance formulation . . . . . . . . . . . . . . . 561<br/>
+        12.1.2 Minimum-error formulation . . . . . . . . . . . . . . . . . 563<br/>
+        12.1.3 Applications of PCA . . . . . . . . . . . . . . . . . . . . . 565<br/>
+        12.1.4 PCA for high-dimensional data . . . . . . . . . . . . . . . 569<br/>
+        12.2 Probabilistic PCA . . . . . . . . . . . . . . . . . . . . . . . . . . 570<br/>
+        12.2.1 Maximum likelihood PCA . . . . . . . . . . . . . . . . . . 574<br/>
+        12.2.2 EM algorithm for PCA . . . . . . . . . . . . . . . . . . . . 577<br/>
+        12.2.3 Bayesian PCA . . . . . . . . . . . . . . . . . . . . . . . . 580<br/>
+        12.2.4 Factor analysis . . . . . . . . . . . . . . . . . . . . . . . . 583<br/>
+        12.3 Kernel PCA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 586<br/>
+        12.4 Nonlinear Latent Variable Models . . . . . . . . . . . . . . . . . . 591<br/>
+        12.4.1 Independent component analysis . . . . . . . . . . . . . . . 591<br/>
+        12.4.2 Autoassociative neural networks . . . . . . . . . . . . . . . 592<br/>
+        12.4.3 Modelling nonlinear manifolds . . . . . . . . . . . . . . . . 595<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 599<br/>
+        13 Sequential Data 605<br/>
+        13.1 Markov Models . . . . . . . . . . . . . . . . . . . . . . . . . . . . 607<br/>
+        13.2 Hidden Markov Models . . . . . . . . . . . . . . . . . . . . . . . 610<br/>
+        13.2.1 Maximum likelihood for the HMM . . . . . . . . . . . . . 615<br/>
+        13.2.2 The forward-backward algorithm . . . . . . . . . . . . . . 618<br/>
+        13.2.3 The sum-product algorithm for the HMM . . . . . . . . . . 625<br/>
+        13.2.4 Scaling factors . . . . . . . . . . . . . . . . . . . . . . . . 627<br/>
+        13.2.5 The Viterbi algorithm . . . . . . . . . . . . . . . . . . . . . 629<br/>
+        13.2.6 Extensions of the hidden Markov model . . . . . . . . . . . 631<br/>
+        13.3 Linear Dynamical Systems . . . . . . . . . . . . . . . . . . . . . . 635<br/>
+        13.3.1 Inference in LDS . . . . . . . . . . . . . . . . . . . . . . . 638<br/>
+        13.3.2 Learning in LDS . . . . . . . . . . . . . . . . . . . . . . . 642<br/>
+        13.3.3 Extensions of LDS . . . . . . . . . . . . . . . . . . . . . . 644<br/>
+        13.3.4 Particle filters . . . . . . . . . . . . . . . . . . . . . . . . . 645<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 646<br/>
+        14 Combining Models 653<br/>
+        14.1 Bayesian Model Averaging . . . . . . . . . . . . . . . . . . . . . . 654<br/>
+        14.2 Committees . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 655<br/>
+        14.3 Boosting . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 657<br/>
+        14.3.1 Minimizing exponential error . . . . . . . . . . . . . . . . 659<br/>
+        14.3.2 Error functions for boosting . . . . . . . . . . . . . . . . . 661<br/>
+        14.4 Tree-based Models . . . . . . . . . . . . . . . . . . . . . . . . . . 663<br/>
+        14.5 Conditional Mixture Models . . . . . . . . . . . . . . . . . . . . . 666<br/>
+        14.5.1 Mixtures of linear regression models . . . . . . . . . . . . . 667<br/>
+        14.5.2 Mixtures of logistic models . . . . . . . . . . . . . . . . . 670<br/>
+        14.5.3 Mixtures of experts . . . . . . . . . . . . . . . . . . . . . . 672<br/>
+        Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 674<br/>
+        Appendix A Data Sets 677<br/>
+        Appendix B Probability Distributions 685<br/>
+        Appendix C Properties of Matrices 695<br/>
+        Appendix D Calculus of Variations 703<br/>
+        Appendix E LagrangeMultipliers 707<br/>
+        References 711<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_2061116_full').hide();$('#dir_2061116_short').show();void(0);">收起</a>)
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '2061116',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共273个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/机器学习">机器学习</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/模式识别">模式识别</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/人工智能">人工智能</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/数据挖掘">数据挖掘</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机科学">计算机科学</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/machine">machine</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/learning">learning</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Pattern Recognition and Machine Learning&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1499455/?dcs=subject-rec&amp;dcm=douban&amp;dct=2061116" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1499455.jpg?v=1395393904.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1499455/" target="_blank">Python源码剖析</a>
+          </div>
+          <div class="price">
+              38.39元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1524588/?dcs=subject-rec&amp;dcm=douban&amp;dct=2061116" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/1524588.jpg?v=1395394382.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1524588/" target="_blank">信号与噪声</a>
+          </div>
+          <div class="price">
+              27.60元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/474698/?dcs=subject-rec&amp;dcm=douban&amp;dct=2061116" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/474698.jpg?v=1395394499.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/474698/" target="_blank">图灵的秘密</a>
+          </div>
+          <div class="price">
+              30.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/15677508/?dcs=subject-rec&amp;dcm=douban&amp;dct=2061116" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/15677508.jpg?v=1446715979.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/15677508/" target="_blank">我是高频交易工程师：知乎董可人自选集</a>
+          </div>
+          <div class="price">
+              3.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/500486/?dcs=subject-rec&amp;dcm=douban&amp;dct=2061116" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/500486.jpg?v=1395393506.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/500486/" target="_blank">打造Facebook</a>
+          </div>
+          <div class="price">
+              15.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Pattern Recognition and Machine Learning&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3294335/" onclick="moreurl(this, {'total': 10, 'clicked': '3294335', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s7004243.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3294335/" onclick="moreurl(this, {'total': 10, 'clicked': '3294335', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            The Elements of Statistical Learnin...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10758624/" onclick="moreurl(this, {'total': 10, 'clicked': '10758624', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s24486538.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10758624/" onclick="moreurl(this, {'total': 10, 'clicked': '10758624', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            Machine Learning
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4007200/" onclick="moreurl(this, {'total': 10, 'clicked': '4007200', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4019053.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4007200/" onclick="moreurl(this, {'total': 10, 'clicked': '4007200', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Probabilistic Graphical Models
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1888111/" onclick="moreurl(this, {'total': 10, 'clicked': '1888111', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s24961408.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1888111/" onclick="moreurl(this, {'total': 10, 'clicked': '1888111', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            Convex Optimization
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2285151/" onclick="moreurl(this, {'total': 10, 'clicked': '2285151', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s4233179.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2285151/" onclick="moreurl(this, {'total': 10, 'clicked': '2285151', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            All of Statistics
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/10590856/" onclick="moreurl(this, {'total': 10, 'clicked': '10590856', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s9108113.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/10590856/" onclick="moreurl(this, {'total': 10, 'clicked': '10590856', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            统计学习方法
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1138189/" onclick="moreurl(this, {'total': 10, 'clicked': '1138189', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s1576438.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1138189/" onclick="moreurl(this, {'total': 10, 'clicked': '1138189', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            模式分类
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/5397287/" onclick="moreurl(this, {'total': 10, 'clicked': '5397287', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29624744.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/5397287/" onclick="moreurl(this, {'total': 10, 'clicked': '5397287', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            Bayesian Reasoning and Machine ...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1761179/" onclick="moreurl(this, {'total': 10, 'clicked': '1761179', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s2753103.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1761179/" onclick="moreurl(this, {'total': 10, 'clicked': '1761179', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            The Elements of Statistical Learnin...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1789534/" onclick="moreurl(this, {'total': 10, 'clicked': '1789534', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4287860.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1789534/" onclick="moreurl(this, {'total': 10, 'clicked': '1789534', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            Information Theory, Inference and ...
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/2061116/comments/">全部 173 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="96650306">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-96650306" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-96650306" class="j a_show_login" data-cid="96650306">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/dixy0/">Synge</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2010-07-26</span>
+                </span>
+            </h3>
+            <p class="comment-content">只读了前几章...</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="239581652">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-239581652" class="vote-count">11</span>
+                        <a href="javascript:;" id="btn-239581652" class="j a_show_login" data-cid="239581652">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/james_littlefox/">james</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2010-05-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">教材。作者开直升机的。不适合初学者，david barber即将出版的新书Bayesian Reasoning and Machine Learning更适合。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="791772461">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-791772461" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-791772461" class="j a_show_login" data-cid="791772461">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/zenos88/">达令你快乐吗</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2014-03-29</span>
+                </span>
+            </h3>
+            <p class="comment-content">扫尾二。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="32511256">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-32511256" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-32511256" class="j a_show_login" data-cid="32511256">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/snowland/">snowland</a>
+                    <span>2011-05-21</span>
+                </span>
+            </h3>
+            <p class="comment-content">准确说是读过一两章...</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="153601700">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-153601700" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-153601700" class="j a_show_login" data-cid="153601700">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/zhuyuanxiang/">奶爸朱远翔</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2015-06-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">没读完，我觉得不错，有人说数学不多，我觉得也是看个人，至少我觉得难！多看几次，收获会不同！</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1264921385">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1264921385" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1264921385" class="j a_show_login" data-cid="1264921385">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/51152880/">杰夫思考人生</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-11-01</span>
+                </span>
+            </h3>
+            <p class="comment-content">讲真这书不是很friendly</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1259308243">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1259308243" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1259308243" class="j a_show_login" data-cid="1259308243">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/yingqiuz/">chaconne</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-10-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">很享受学习新知识的过程啊…… 可是为什么看到自己的课题就感到厌学呢</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1251397971">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1251397971" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1251397971" class="j a_show_login" data-cid="1251397971">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/83111677/">许星尘</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-10-04</span>
+                </span>
+            </h3>
+            <p class="comment-content">书是好书，然而不适合当入门教材。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1242610615">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1242610615" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1242610615" class="j a_show_login" data-cid="1242610615">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/sunshinezero/">minjingchen_0</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-09-13</span>
+                </span>
+            </h3>
+            <p class="comment-content">暑假两个月就啃这本书了，看的还是别人翻译的中文版。好难的说…</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1236877043">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1236877043" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1236877043" class="j a_show_login" data-cid="1236877043">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/linyc/">侘    寂</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-12-12</span>
+                </span>
+            </h3>
+            <p class="comment-content">707 midterm看了半本，等以后有机会应该坐下来仔细翻一遍</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/2061116/comments/">更多短评 173 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            Pattern Recognition and Machine Learning的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 2061116;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/2061116/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            Pattern Recognition and Machine Learning的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 18 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5560631">
+        <div class="main review-item" id="5560631">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/3638500/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u3638500-4.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/3638500/" property="v:reviewer" class="name">Chojin</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-08-25" class="main-meta">2012-08-25 23:55:28</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5560631/">PRML，Bayesian PK Frequentist，笔记</a></h2>
+
+                <div id="review_5560631_short" class="review-short" data-rid="5560631">
+                    <div class="short-content">
+
+                        两年多以前有个Machine Learning课以PRML为参考书，当时就觉得这书相当的好。可惜一直以来没认真读完。最近稍闲终于重新读了一遍，比较有收获。 这书给人的最大的印象可能是everything has a Bayesian version或者说everything can be Bayesianized，比如PRML至少给出了以下Bay...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5560631-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5560631_full" class="hidden">
+                    <div id="review_5560631_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5560631" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5560631">
+                                72
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5560631" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5560631">
+                                2
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5560631/#comments" class="reply">33回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="4533178">
+        <div class="main review-item" id="4533178">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/2120199/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/2120199/" property="v:reviewer" class="name">jia</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2010-12-17" class="main-meta">2010-12-17 22:26:10</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/4533178/">需要多读几遍：Pattern Recognition And Machine Learning</a></h2>
+
+                <div id="review_4533178_short" class="review-short" data-rid="4533178">
+                    <div class="short-content">
+
+                        实际上这本书我花了将近两个月的时间读下来，不敢说有多理解，但是确实收获很大，分章做一个评论。  第1章的导论，不多说，看完书后需要重新回过头来看看。 第2章的概率分布，写的非常好，尽管只有几个简单的分布，但是对共轭先验的概念以及指数分布族介绍的很清楚，这一章是本...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-4533178-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_4533178_full" class="hidden">
+                    <div id="review_4533178_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="4533178" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-4533178">
+                                65
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="4533178" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-4533178">
+                                3
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/4533178/#comments" class="reply">15回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6611185">
+        <div class="main review-item" id="6611185">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/zenos88/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2781776-30.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/zenos88/" property="v:reviewer" class="name">达令你快乐吗</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-03-29" class="main-meta">2014-03-29 17:42:51</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6611185/">说此书数学怎么怎么样的还是退了吧</a></h2>
+
+                <div id="review_6611185_short" class="review-short" data-rid="6611185">
+                    <div class="short-content">
+
+                        这几天没事把尾巴扫了。  如果想做ML无论是theory（tcsers请先别吐槽好吧，以后会有槽吐你们的）、algorithm还是application此书都是必读，而且书只读这一本足够了。ML吹破天还是那点内容，想学“fashion”的concept有那么多paper、review，看书是自取其辱。有人说此书遗憾没有...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6611185-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6611185_full" class="hidden">
+                    <div id="review_6611185_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6611185" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6611185">
+                                44
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6611185" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6611185">
+                                10
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6611185/#comments" class="reply">13回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="4940237">
+        <div class="main review-item" id="4940237">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/chen_1st/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u46225736-9.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/chen_1st/" property="v:reviewer" class="name">Chen_1st</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2011-05-09" class="main-meta">2011-05-09 00:36:42</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/4940237/">更广的背景下看Bayesian Learning</a></h2>
+
+                <div id="review_4940237_short" class="review-short" data-rid="4940237">
+                    <div class="short-content">
+
+                        这两天因为读文章的需要，重新翻了翻这本书。觉得@raullew在http://book.douban.com/review/4474434/ 中提到的问题的确是这本书的一个缺陷。  是否真正了解一个东西，不仅取决于你是否了解这个东西的特性，还取决于你能不能把它和相似的东西区分开。比如说，你要学习什么是猫，...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-4940237-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_4940237_full" class="hidden">
+                    <div id="review_4940237_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="4940237" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-4940237">
+                                29
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="4940237" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-4940237">
+                                2
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/4940237/#comments" class="reply">30回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5794424">
+        <div class="main review-item" id="5794424">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/43050365/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u43050365-4.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/43050365/" property="v:reviewer" class="name">景浩</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-02-28" class="main-meta">2013-02-28 06:29:39</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5794424/">这是我读过最好的模式识别书。</a></h2>
+
+                <div id="review_5794424_short" class="review-short" data-rid="5794424">
+                    <div class="short-content">
+
+                        我是学工程的，读过很多统计，模式识别，数据挖掘的书。比如Andrew Gelman 的 Beyesian data Analysis； Trevor Hastie 的 The Elements of Statistical Learning等等。。。。  我发现一个问题，但凡是统计系人出的书，我读起来都特别困难，比如以上提到的两本，基本读到第四第...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5794424-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5794424_full" class="hidden">
+                    <div id="review_5794424_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5794424" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5794424">
+                                30
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5794424" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5794424">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5794424/#comments" class="reply">6回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5548474">
+        <div class="main review-item" id="5548474">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/doubling/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2349075-4.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/doubling/" property="v:reviewer" class="name">doubling</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-08-16" class="main-meta">2012-08-16 08:00:09</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5548474/">PRML和其他</a></h2>
+
+                <div id="review_5548474_short" class="review-short" data-rid="5548474">
+                    <div class="short-content">
+
+                        这本书的独到之处就是Bishop能够将看似毫无联系的方法统一在一个完整的框架下。虽然@raullew在http://book.douban.com/review/4474434/吐槽，但这正是Bishop想要传递的这本书的精髓所在。如果仅仅是各个算法的单独罗列，那我觉得去看wikipedia好了，还是免费的。  相比之下，Du...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5548474-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5548474_full" class="hidden">
+                    <div id="review_5548474_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5548474" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5548474">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5548474" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5548474">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5548474/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6177157">
+        <div class="main review-item" id="6177157">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/joeyqzhou/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u49588968-10.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/joeyqzhou/" property="v:reviewer" class="name">joey周琦</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-07-23" class="main-meta">2013-07-23 00:26:20</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6177157/">本书需要慢慢的读</a></h2>
+
+                <div id="review_6177157_short" class="review-short" data-rid="6177157">
+                    <div class="short-content">
+
+                        我是一名研一的学生，方向不是机器学习方向，但是对这方面很感兴趣。 看过一篇blog说，当下所说的机器学习其实分两种，一种如本书，可称为统计机器学习，另外一种是人工智能领域，这两种有交叉，但是研究内容有很大不同。  初读这书，刚觉很罗嗦，加上是英语，就觉得有些内容很...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6177157-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6177157_full" class="hidden">
+                    <div id="review_6177157_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6177157" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6177157">
+                                7
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6177157" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6177157">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6177157/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7733364">
+        <div class="main review-item" id="7733364">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/79430962/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u79430962-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/79430962/" property="v:reviewer" class="name">脖子</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2016-01-13" class="main-meta">2016-01-13 02:09:39</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7733364/">经典ML教材之一</a></h2>
+
+                <div id="review_7733364_short" class="review-short" data-rid="7733364">
+                    <div class="short-content">
+
+                        在Bishop的这本PRML之前，学习machine learning的标准教材一般是Tom Mitchell的machine learning以及Duda&amp;Hart的Pattern Classification (那个年代ML与PR非常大的重合之处)。不可否认，这两本书都是ML领域的经典教材，但是由于成书时间太早，基本上都属于上古读物，已经不大适...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7733364-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7733364_full" class="hidden">
+                    <div id="review_7733364_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7733364" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7733364">
+                                9
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7733364" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7733364">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7733364/#comments" class="reply">1回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6149041">
+        <div class="main review-item" id="6149041">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/lifeiteng0422/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u45792143-4.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/lifeiteng0422/" property="v:reviewer" class="name">极度视界</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-07-05" class="main-meta">2013-07-05 15:42:57</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6149041/">PRML Matlab ToolBox</a></h2>
+
+                <div id="review_6149041_short" class="review-short" data-rid="6149041">
+                    <div class="short-content">
+
+                        在浏览 scikit-learn 时  无意发现之，贡献者之一 是清华的Wei Li  https://github.com/kuantkid/PRML  发现了，分享了；未曾使用。  大家用用看，看看楼下怎么说：
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6149041-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6149041_full" class="hidden">
+                    <div id="review_6149041_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6149041" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6149041">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6149041" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6149041">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6149041/#comments" class="reply">2回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="8883883">
+        <div class="main review-item" id="8883883">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/165963506/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u165963506-5.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/165963506/" property="v:reviewer" class="name">瓜瓜</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2017-10-24" class="main-meta">2017-10-24 19:43:42</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/8883883/">很奇妙的一次读书旅行</a></h2>
+
+                <div id="review_8883883_short" class="review-short" data-rid="8883883">
+                    <div class="short-content">
+                            <p class="spoiler-tip">这篇书评可能有关键情节透露</p>
+
+                        正在读，神经网络的扫尾工作，第一遍读收获就挺大，对数学的基础知识还是有一定的要求，有一定的运算量（比较耗纸），但是总体上还是能一路推下来，内容主线明确，部分内容暂时还不知道拿来干啥。后面六七两章kernel method和SVM之前看过应该不难，EM算法和PCA看过简单的版本，...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-8883883-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_8883883_full" class="hidden">
+                    <div id="review_8883883_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="8883883" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-8883883">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="8883883" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-8883883">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/8883883/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/5b7d53ccde3dc15b.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评18篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/2061116/annotation">共<span property="v:count">75</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="26857362">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/lijiankou/"><img src="https://img3.doubanio.com/icon/u33880646-3.jpg" alt="lijiankou" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/26857362/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/26857362/" class="">第80页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/lijiankou/" class=" " title="lijiankou">lijiankou</a>
+                (推荐系统 机器学习 复杂网络)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="26857362">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/26857362/"><img src="https://img3.doubanio.com/view/page_note/small/public/p26857362-1.jpg"></a>
+                  </div>
+                  <span class="">马氏距离表示数据的协方差距离，是一种有效的计算相似度的方法，定义如下
+<span class="code-holder">/公式内容已省略/</span> ，其中<span class="code-holder">/公式内容已省略/</span>是x、y的协方差矩阵。
+如果协方差矩阵为单位矩阵,那么马氏距离就简化为欧式距离,如果协方差矩阵为对角阵,则其也可称为正规化的欧氏距离'。一般情况下，<span class="code-holder">/公式内容已省略/</span>总是可逆的，通过相似变换得到一个对...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/26857362/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2013-06-10 15:18</span>
+                  
+                    &nbsp;&nbsp;<span class="">4人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                马氏距离表示数据的协方差距离，是一种有效的计算相似度的方法，定义如下
+($d(x, y) = \sqrt{(x - y)^T\sum^{-1}(x -y)}$) ，其中($\sum$)是x、y的协方差矩阵。<div style="padding-bottom:1em;"></div>如果协方差矩阵为单位矩阵,那么马氏距离就简化为欧式距离,如果协方差矩阵为对角阵,则其也可称为正规化的欧氏距离'。一般情况下，($\sum$)总是可逆的，通过相似变换得到一个对角矩阵。因此，可以说马氏距离就是正规化的欧氏距离，欧氏距离是一种特殊的马氏距离。更直观的理解，假设我们的数据是二维的，当我们将($\sum$)对角化以后，
+($d(x,y) = \sqrt{\frac{(x_1  - y_1)^2}{a} + \frac{(x_2 - y_2)^2}{b}}$), 单位阵的情况下变为 
+($d(x,y) = \sqrt{(x_1  - y_1)^2 + (x_2 - y_2)^2}$)。马氏距离是对欧氏距离更一般情况的推广。对于二维高斯分布的情况，马氏距离等高线对应一个椭圆，如果协方差矩阵的各个特征值相等，变成一个圆，欧氏距离对位一个标准单位圆，如下所示：<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p26857362-1.jpg" alt=""><br><span class="pic-title"></span></div>
+那么对于高维的情况，高维分布二次项等概率曲线的几何意义的就是一个广义上的椭球体,如下所示
+($\sum^D_{i = 1}\frac{y_i^2}{\lambda} = const$)
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/26857362/#comments">2回应</a>&nbsp;&nbsp;
+                  2013-06-10 15:18
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="36787111">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/kqingchao/"><img src="https://img1.doubanio.com/icon/u35370427-8.jpg" alt="孔明" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/36787111/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/36787111/" class="">第83页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/kqingchao/" class=" " title="孔明">孔明</a>
+                (Lifelong Learning)
+              
+            </p>
+            <div class="reading-note" data-cid="36787111">
+              <div class="short">
+                
+                  <span class="">从公式2.61的第二行到第三行：
+
+考虑 <span class="code-holder">/公式内容已省略/</span>时，先只考虑积分号中的项：
+<span class="code-holder">/公式内容已省略/</span>
+
+如果分别对<span class="code-holder">/公式内容已省略/</span>和<span class="code-holder">/公式内容已省略/</span>积分（还需要考虑<span class="code-holder">/公式内容已省略/</span>是否等于<span class="code-holder">/公式内容已省略/</span>..</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/36787111/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2015-12-17 15:54</span>
+                  
+                    &nbsp;&nbsp;<span class="">2人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                从公式2.61的第二行到第三行：<div style="padding-bottom:1em;"></div>考虑 ($i \neq j$)时，先只考虑积分号中的项：
+($$
+\int \prod_{k=1}^D \exp \{ - \frac{y_k^2}{2\lambda_k} \} y_i y_j \mathrm{d} \vec{y}
+$$)<div style="padding-bottom:1em;"></div>如果分别对($y_i$)和($y_j$)积分（还需要考虑($\mathrm{d} \vec{y}$)是否等于($ \mathrm{d}y_1\mathrm{d}y_2 \cdots \mathrm{d}y_D $)？），那么积分中会出现($y_i$)的一阶矩（不考虑常数），如下：<div style="padding-bottom:1em;"></div>($$
+\int \exp \{- \frac{y_i^2}{2\lambda_i} \} y_i y_j \mathrm{d} y_i
+$$)<div style="padding-bottom:1em;"></div>（注意：此时($ y_j $)可以看做是固定的，因为是先对($ y_i $)积分），而($ y_i $)的一阶矩（即均值）显然为0，所以后面整个积分为0。也就是说，当($ i \neq j $)时，整个积分为0。<div style="padding-bottom:1em;"></div>考虑当($ i == j $)时，积分则变为：
+($$
+\int \prod_{k=1}^D \exp \{ - \frac{y_k^2}{2\lambda_k} \} y_i^2 \mathrm{d} \vec{y}
+$$)
+那么除了($y_i$)计算的是二阶矩以外，其他的($y_k$)（($k \neq i$)）的积分都为1（形式正好是标准正态分布）。根据公式(1.50)，($y_i$)的二阶矩为($\lambda_i$)，所以得到公式(2.61)的第三行。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/36787111/#comments">2回应</a>&nbsp;&nbsp;
+                  2015-12-17 15:54
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34624201">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/54590459/"><img src="https://img3.doubanio.com/icon/u54590459-6.jpg" alt="宁雨" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34624201/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34624201/" class="">第83页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/54590459/" class=" " title="宁雨">宁雨</a>
+              
+            </p>
+            <div class="reading-note" data-cid="34624201">
+              <div class="short">
+                
+                  <span class="">prml p83页2.53的推导
+
+由2.51
+<span class="code-holder">/公式内容已省略/</span>
+2.52
+<span class="code-holder">/公式内容已省略/</span>
+展开可得：
+
+\<span class="code-holder">/公式内容已省略/</span>{bmatrix}
+=\<span class="code-holder">/公式内容已省略/</span>{bmatrix} \<span class="code-holder">/公式内容已省略/</span>{bmatrix}
+
+对$y_j (j=1...D) <span class="code-holder">/公式内容已省略/</span></span>
+                <p class="pl">
+                  <span class="">2015-03-22 15:21</span>
+                  
+                    &nbsp;&nbsp;<span class="">2人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                prml p83页2.53的推导<div style="padding-bottom:1em;"></div>由2.51
+($$
+y_i=u_i^T(x-\mu)
+$$)
+2.52
+($$
+y=U(x-\mu)
+$$)
+展开可得：<div style="padding-bottom:1em;"></div>\begin{bmatrix}y_1\\ y_2 \\ \vdots \\ y_D \end{bmatrix}<div style="padding-bottom:1em;"></div>=\begin{bmatrix} u_{11} &amp; u_{12} &amp; \cdots &amp; u_{1D} \\
+u_{21} &amp; u_{22} &amp; \cdots &amp; u_{2D} \\
+\vdots  &amp; \vdots &amp; \ddots &amp; \vdots \\
+u_{D1} &amp; u_{D2} &amp; \cdots &amp; u_{DD} 
+\end{bmatrix} \begin{bmatrix}
+x_1-\mu_1 \\
+x_2-\mu_2 \\
+\vdots \\
+x_D-\mu_D
+\end{bmatrix}<div style="padding-bottom:1em;"></div>对$y_j (j=1...D) ($,有
+$)($
+y_j=\begin{bmatrix} u_{j1} &amp; u_{j2} &amp; \cdots u_{jD}\end{bmatrix}*\begin{bmatrix}
+x_1-\mu_1 \\
+x_2-\mu_2 \\
+\vdots \\
+x_D-\mu_D
+\end{bmatrix}
+$)($
+即
+
+$)($
+y_j=\sum_{i=1}^D u_{ji}*(x_i-\mu_i)
+$)($
+
+由上式可得:
+$)($
+\dfrac{\partial x_i}{\partial y_j}=\frac{1}{u_{ji}}
+$)$<div style="padding-bottom:1em;"></div>跟书上的不一样。。。
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34624201/#comments">回应</a>&nbsp;&nbsp;
+                  2015-03-22 15:21
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="22351713">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/mrlate/"><img src="https://img1.doubanio.com/icon/u2947212-8.jpg" alt="黑山老妖" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/22351713/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/22351713/" class="">第570页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/mrlate/" class=" " title="黑山老妖">黑山老妖</a>
+                (死宅法师)
+              
+            </p>
+            <div class="reading-note" data-cid="22351713">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/22351713/"><img src="https://img3.doubanio.com/view/page_note/small/public/p22351713-1.jpg"></a>
+                  </div>
+                  <span class="">标题：PCA对数据的假设
+
+看了Probabilistic PCA，对PCA有点疑惑：从这节来看，PPCA对数据x是做高斯假设，而之前也有在网上看到说PCA对数据是高斯假设，但是没有看到正式的证明或者解释，都是一句带过，也没多在意。
+最近又注意到这个事，发现自己对“XX模型对数据是XX假设”这句话根本不了解。事实上现在也谈不上理解透。也请教了一些同学和老师，就PCA写写感想吧。
+
+观点：PCA对数据的假设并不是高斯，而是高度线性相关——..</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/22351713/">(<span class="">6回应</span>)</a>
+                <p class="pl">
+                  <span class="">2012-11-09 19:52</span>
+                  
+                    &nbsp;&nbsp;<span class="">2人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                标题：PCA对数据的假设<div style="padding-bottom:1em;"></div>看了Probabilistic PCA，对PCA有点疑惑：从这节来看，PPCA对数据x是做高斯假设，而之前也有在网上看到说PCA对数据是高斯假设，但是没有看到正式的证明或者解释，都是一句带过，也没多在意。<div style="padding-bottom:1em;"></div>最近又注意到这个事，发现自己对“XX模型对数据是XX假设”这句话根本不了解。事实上现在也谈不上理解透。也请教了一些同学和老师，就PCA写写感想吧。<div style="padding-bottom:1em;"></div>观点：PCA对数据的假设并不是高斯，而是高度线性相关——对数据中剩余的除线性无关的量假设为高斯噪声。（在前面一节里PCA的minimum-error formulation中的投影距离事实上就等价于噪声为以对角矩阵为协方差的高斯分布）<div style="padding-bottom:1em;"></div>($x=Wz+\mu+\varepsilon$)
+此处，z有一个N(0,I)的高斯先验，($\varepsilon$)是对角的高斯，这样x就是高斯分布了（参照图模型一章中讲的线性高斯模型）。我就是看到这里才有PCA对数据是不是要求是高斯。<div style="padding-bottom:1em;"></div>事实上这个结论有一个不对的地方显而易见：如果对一个遵循N(0,I)分布的数据做PCA，效果可以预见的差。<div style="padding-bottom:1em;"></div>在introduction to machine learning一书中有个图不错，其实这个图以前也见过，只是没留意：
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p22351713-1.jpg" alt="eigenvector - NSR"><br><span class="pic-title">eigenvector - NSR</span></div><div style="padding-bottom:1em;"></div>此书116页对PCA的适用范围作了解释：如果少数的特征向量造成了大部分的方差，则可以使用PCA降维来得到比较好的结果。<div style="padding-bottom:1em;"></div>事实上，这里回到最初提出的问题：“XX模型对数据是XX假设”这句话的意思。一般对这句话的理解是数据的真实分布和拟合的模型一致，但是PCA的目标并不是捕捉数据的分布，而是找到造成最大方差的主分量。所以即使ppca是一个高斯的模型，使用ppca做降维的话，并不一定要求数据的真实分布也是高斯，只要捕捉到主分量就达成目标了，所以任何高线性相关的模型都是”符合PCA对数据的假设的“。<div style="padding-bottom:1em;"></div>加个图：
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p22351713-2.jpg" alt="简单的非高斯分布，但是很适合做PCA的数据"><br><span class="pic-title">简单的非高斯分布，但是很适合做PCA的数据</span></div>
+也有使用非数据真实分布的模型来做拟合的材料，目前还没看，看了再写。<div style="padding-bottom:1em;"></div>（还有几句关于为什么此章题目叫连续隐变量的理解，下次再写）<div style="padding-bottom:1em;"></div>更新链接：<div style="padding-bottom:1em;"></div>为什么此章题目叫连续隐变量？<a rel="nofollow" href="https://book.douban.com/annotation/23891202/">http://book.douban.com/annotation/23891202/</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/22351713/#comments">6回应</a>&nbsp;&nbsp;
+                  2012-11-09 19:52
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="36361674">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/60988615/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="NeverChange" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/36361674/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/36361674/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/60988615/" class=" " title="NeverChange">NeverChange</a>
+              
+            </p>
+            <div class="reading-note" data-cid="36361674">
+              <div class="short">
+                
+                  <span class="">求大神解释一下预测分布该怎么理解?</span>
+                <p class="pl">
+                  <span class="">2015-10-16 21:17</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                求大神解释一下预测分布该怎么理解?
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/36361674/#comments">回应</a>&nbsp;&nbsp;
+                  2015-10-16 21:17
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="45215062">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/126962231/"><img src="https://img3.doubanio.com/icon/u126962231-2.jpg" alt="Kapok" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/45215062/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/45215062/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/126962231/" class=" " title="Kapok">Kapok</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="45215062">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/45215062/"><img src="https://img3.doubanio.com/view/page_note/small/public/p45215062-1.jpg"></a>
+                  </div>
+                  <span class="">关于各章的难度，仅供参考</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/45215062/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2017-06-25 13:47</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>关于各章的难度，仅供参考</p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p45215062-1.jpg" width="960"></div></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/45215062/#comments">2回应</a>&nbsp;&nbsp;
+                  2017-06-25 13:47
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27718596">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/58315824/"><img src="https://img3.doubanio.com/icon/u58315824-11.jpg" alt="porco" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27718596/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27718596/" class="">第4页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/58315824/" class=" " title="porco">porco</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27718596">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/27718596/"><img src="https://img3.doubanio.com/view/page_note/small/public/p27718596-1.jpg"></a>
+                  </div>
+                  <span class="">数据集：输入的数据集使用 <span class="code-holder">/公式内容已省略/</span>，加上随机噪声 得到
+使用：
+A.<span class="code-holder">/公式内容已省略/</span>拟合
+B.<span class="code-holder">/公式内容已省略/</span>
+ 最小化该消耗函数，可以对每个<span class="code-holder">/公式内容已省略/</span>取偏导，得到<span class="code-holder">/公式内容已省略/</span>
+
+1. 
+   可见<span class="code-holder">/公式..</span></span>
+                <p class="pl">
+                  <span class="">2013-07-22 20:08</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                数据集：输入的数据集使用 ($sin(\pi x)$)，加上随机噪声 得到<div style="padding-bottom:1em;"></div>使用：<div style="padding-bottom:1em;"></div>A.($y(x,M)=w_0+w_1 x+w_2 x^2+\cdots+w_M x^M=\sum_{j=0}^M w_j x^j$)拟合<div style="padding-bottom:1em;"></div>B.($E(w)=\dfrac{1}{2}\sum_{i=0}^N(y(x_i,w)-t_i)^2$)
+ 最小化该消耗函数，可以对每个($w_i$)取偏导，得到($w$)<div style="padding-bottom:1em;"></div>1.<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p27718596-1.jpg" alt=""><br><span class="pic-title"></span></div>
+   可见($M=3$)时拟合的最好，($M=9$)时会有过拟合问题<div style="padding-bottom:1em;"></div>2.此时需要检验结果的好坏，常用方法是将数据集分为两部分，一部分用于训练，一部分用于检验<div style="padding-bottom:1em;"></div>   定义the root-mean-square(RMS) error<div style="padding-bottom:1em;"></div>   ($E_{RMS}=\sqrt{E(w^*)/N}$),便于比较平均error<div style="padding-bottom:1em;"></div>  <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p27718596-2.jpg" alt=""><br><span class="pic-title"></span></div>
+  可以看到，M=9虽然对训练集很好地拟合了，但是检验的error却非常大。<div style="padding-bottom:1em;"></div>  且此时每个w的值都很大<div style="padding-bottom:1em;"></div>  <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p27718596-3.jpg" alt=""><br><span class="pic-title"></span></div>
+3.在数据集比较少的时候，较复杂模型表现较差，但是当数据集数量大时，可以使用较复杂模型去拟合；实际应用中需要根据问题复杂度来选择模型的复杂度<div style="padding-bottom:1em;"></div>  <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p27718596-4.jpg" alt=""><br><span class="pic-title"></span></div>
+4.为了控制模型复杂度，需要将代表模型复杂度的量，考虑进error函数中<div style="padding-bottom:1em;"></div>   <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p27718596-5.jpg" alt=""><br><span class="pic-title"></span></div>
+   此处($\lamda$)影响到模型复杂度对error的影响，越大，w值会越小<div style="padding-bottom:1em;"></div>   <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p27718596-6.jpg" alt=""><br><span class="pic-title"></span></div>
+   选择合适的￥\lamda$，M=9时也可以得到很好的结果<div style="padding-bottom:1em;"></div>   <div class="middle"><img src="https://img1.doubanio.com/view/page_note/large/public/p27718596-7.jpg" alt=""><br><span class="pic-title"></span></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27718596/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-22 20:08
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="25783154">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/eat_shit/"><img src="https://img3.doubanio.com/icon/u62186139-6.jpg" alt="失足小伙" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/25783154/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/25783154/" class="">第6页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/eat_shit/" class=" " title="失足小伙">失足小伙</a>
+                (为什么)
+              
+            </p>
+            <div class="reading-note" data-cid="25783154">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/25783154/"><img src="https://img3.doubanio.com/view/page_note/small/public/p25783154-1.jpg"></a>
+                  </div>
+                  <span class="">第一章有图中所示公式
+
+下面有这么一段话
+Because the error function is a quadratic function of the coefficients w, its derivatives with respect to the coefficients will be linear in the elements of w, and so the minimization of the error function has a unique solution, denoted by w, which can be found in closed form.
+
+so the minimization of the error function has a unique solution 真是unique吗...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/25783154/">(<span class="">3回应</span>)</a>
+                <p class="pl">
+                  <span class="">2013-04-15 11:50</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                第一章有图中所示公式
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p25783154-1.jpg" alt=""><br><span class="pic-title"></span></div>
+下面有这么一段话
+<blockquote><q>Because the error function is a quadratic function of the coefficients w, its derivatives with respect to the coefficients will be linear in the elements of w, and so the minimization of the error function has a unique solution, denoted by w, which can be found in closed form.</q></blockquote><div style="padding-bottom:1em;"></div>so the minimization of the error function has a unique solution 真是unique吗<div style="padding-bottom:1em;"></div>the elements of statistical learning 里面有个差不多的公式 应该是说的一个意思吧 least squares
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p25783154-2.jpg" alt=""><br><span class="pic-title"></span></div>
+下面有这样的话
+<blockquote><q>RSS(β) is a quadratic function of the parameters, and hence its minimum always exists, but may not be unique.</q></blockquote>
+数学不好不会证明, 不过我觉得可以找出不是unique的例子呀<div style="padding-bottom:1em;"></div>btw.table 1.1第三列m应该等于3吧.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/25783154/#comments">3回应</a>&nbsp;&nbsp;
+                  2013-04-15 11:50
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="52225983">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/yumaoqiu_cn/"><img src="https://img3.doubanio.com/icon/u151590270-2.jpg" alt="woheyumaoqiu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/52225983/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/52225983/" class="">第16页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/yumaoqiu_cn/" class=" " title="woheyumaoqiu">woheyumaoqiu</a>
+                (我要做一个很厉害很厉害的程序员)
+              
+            </p>
+            <div class="reading-note" data-cid="52225983">
+              <div class="short">
+                
+                  <span class="">现在看到了大概16页，1.2概率论的地方</span>
+                <p class="pl">
+                  <span class="">2018-01-12 17:00</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>现在看到了大概16页，1.2概率论的地方</p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/52225983/#comments">回应</a>&nbsp;&nbsp;
+                  2018-01-12 17:00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="45215062">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/126962231/"><img src="https://img3.doubanio.com/icon/u126962231-2.jpg" alt="Kapok" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/45215062/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/45215062/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/126962231/" class=" " title="Kapok">Kapok</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="45215062">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/45215062/"><img src="https://img3.doubanio.com/view/page_note/small/public/p45215062-1.jpg"></a>
+                  </div>
+                  <span class="">关于各章的难度，仅供参考</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/45215062/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2017-06-25 13:47</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>关于各章的难度，仅供参考</p><div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p45215062-1.jpg" width="960"></div></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/45215062/#comments">2回应</a>&nbsp;&nbsp;
+                  2017-06-25 13:47
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="44576567">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/126962231/"><img src="https://img3.doubanio.com/icon/u126962231-2.jpg" alt="Kapok" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/44576567/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/44576567/" class="">第465页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/126962231/" class=" " title="Kapok">Kapok</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="44576567">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/44576567/"><img src="https://img3.doubanio.com/view/page_note/small/public/p44576567-1.jpg"></a>
+                  </div>
+                  <span class=""></span>
+                <p class="pl">
+                  <span class="">2017-06-04 21:21</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <div class="image-container image-float-center"><div class="image-wrapper"><img src="https://img3.doubanio.com/view/page_note/large/public/p44576567-1.jpg" width="788"></div><div class="image-caption-wrapper"><div class="image-caption">10.6证明</div></div></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/44576567/#comments">回应</a>&nbsp;&nbsp;
+                  2017-06-04 21:21
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="44480940">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/dilfi5h/"><img src="https://img3.doubanio.com/icon/u56383828-12.jpg" alt="Sean" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/44480940/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/44480940/" class="">第64页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/dilfi5h/" class=" " title="Sean">Sean</a>
+                (四处野鸭和菱藕，秋收满畈稻谷香)
+              
+            </p>
+            <div class="reading-note" data-cid="44480940">
+              <div class="short">
+                
+                  <span class="">终于撸完了第一章，本章从一个 sin函数的拟合说起，串了一遍各个算法基本的框架。一个式子 respecto to 这个又 respect to 那个真是晕，（还有 minimize 和 maximize），信息论我比较熟，仔细想想也能懂后面的思路。后面估计要讲原理和优化。</span>
+                <p class="pl">
+                  <span class="">2017-06-01 13:37</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>    终于撸完了第一章，本章从一个 sin函数的拟合说起，串了一遍各个算法基本的框架。一个式子 respecto to 这个又 respect to 那个真是晕，（还有 minimize 和 maximize），信息论我比较熟，仔细想想也能懂后面的思路。后面估计要讲原理和优化。</p><p></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/44480940/#comments">回应</a>&nbsp;&nbsp;
+                  2017-06-01 13:37
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/2061116/annotation">更多读书笔记（共75篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/2061116/discussion/614978621/" title="【勘误】习题3.2" class="">【勘误】习题3.2</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/162983428/">Jaylon_2333</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2017-08-25</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/2061116/discussion/54770134/" title="求助！第47页式(1.90)是怎么推出的？" class="">求助！第47页式(1.90)是怎么推出的？</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/uhuruqingcheng/">Qingcheng</a></td>
+            <td class="pl"><span class="">5 回应</span></td>
+            <td class="pl"><span class="">2017-06-29</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/2061116/discussion/60868823/" title="21页，Cox 的那段是什么意思" class="">21页，Cox 的那段是什么意思</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/27396640/">为你修行</a></td>
+            <td class="pl"><span class="">2 回应</span></td>
+            <td class="pl"><span class="">2017-06-03</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/2061116/discussion/57664801/" title="数据科学学习群287065023" class="">数据科学学习群287065023</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/a-ronin/">达博西</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2014-05-14</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/2061116/discussion/1359947/" title="谁有这本书的Solution Manual啊" class="">谁有这本书的Solution Manual啊</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/azalea-.-/">azalea</a></td>
+            <td class="pl"><span class="">11 回应</span></td>
+            <td class="pl"><span class="">2013-10-10</span></td>
+        </tr>
+</table>
+
+
+            <p class="pl" align="right">&gt;
+                <a href="https://book.douban.com/subject/2061116/discussion/">浏览更多话题</a>
+            </p>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=113000&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=113000&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_03873107382890177%2F%3Fasin%3D0387310738%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3D0387310738%26linkCode%3Ddf0&amp;cntvendor=2&amp;srcsubj=2061116&amp;type=bkbuy&amp;subject=2061116" class="">
+                      <span class="">亚马逊</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=113000&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=113000&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_03873107382890177%2F%3Fasin%3D0387310738%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3D0387310738%26linkCode%3Ddf0&amp;cntvendor=2&amp;srcsubj=2061116&amp;type=bkbuy&amp;subject=2061116" class="buylink-price ">
+                      <span class="">
+                        1130.00 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=113000&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=123970&amp;pos=2&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCGgVQHVgXBSJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQoQAlMYWRIdS0IJRmsdQ1EEIHIJaGdkHTB8WWJwSkUMQBxTDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBpTHAYVAlIrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsdABcBVhlcCltXWwg%253D&amp;cntvendor=2&amp;srcsubj=2061116&amp;type=bkbuy&amp;subject=2061116" class="">
+                      <span class="">京东商城</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=113000&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=123970&amp;pos=2&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCGgVQHVgXBSJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQoQAlMYWRIdS0IJRmsdQ1EEIHIJaGdkHTB8WWJwSkUMQBxTDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBpTHAYVAlIrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsdABcBVhlcCltXWwg%253D&amp;cntvendor=2&amp;srcsubj=2061116&amp;type=bkbuy&amp;subject=2061116" class="buylink-price ">
+                      <span class="">
+                        1239.70 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/2061116/buylinks">
+              &gt; 查看2家网店价格
+                (1130.00 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D0387310738&amp;subject=0387310738&amp;type=borrow&amp;library=10001&amp;link2key=916ab9a738" target="_blank">上海图书馆(1)</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/2061116/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/176513/" target="_blank">机器学习与人工智能</a>
+                <span class="pl">(刘未鹏pongba)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1222833/" target="_blank">技术派心理学</a>
+                <span class="pl">(阳志平)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1753078/" target="_blank">machine learning textbooks</a>
+                <span class="pl">(厂农)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1600688/" target="_blank">Machine Learning</a>
+                <span class="pl">(pluskid)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/226677/" target="_blank">学习DL/算法/医学图像分析/的路程</a>
+                <span class="pl">(风细细™)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/aeolia88/"><img src="https://img3.doubanio.com/icon/u40275224-4.jpg" class="pil" alt="&lt;bra|ket&gt;" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/aeolia88/">&lt;bra|ket&gt;</a><br/>
+      <div class="pl ll">          昨天          读过      </div>
+
+        <span class="allstar40" title="推荐"></span>
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/codepiano/"><img src="https://img3.doubanio.com/icon/u2560922-2.jpg" class="pil" alt="codepiano" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/codepiano/">codepiano</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/peterzju/"><img src="https://img3.doubanio.com/icon/u43584616-1.jpg" class="pil" alt="Peter" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/peterzju/">Peter</a><br/>
+      <div class="pl ll">          昨天          在读      </div>
+
+      <br/>
+
+      <span class="pl">tags:机器学习</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/mingtiandegushi/"><img src="https://img3.doubanio.com/icon/u90120579-1.jpg" class="pil" alt="为明天攒故事" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/mingtiandegushi/">为明天攒故事</a><br/>
+      <div class="pl ll">          1月12日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:programming 机器学习</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/2061116/doings">1143人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/2061116/collections">611人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/2061116/wishes">3672人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/2061116/offers">6本二手书欲转让</a>
+          <span class="">
+            (0.01
+                至 500元以上)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有3672人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于Pattern Recognition and Machine Learning的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/2061116/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'pcEQhXmRDws',
+            criteria = '7:机器学习|7:模式识别|7:人工智能|7:数据挖掘|7:计算机|7:计算机科学|7:machine|7:learning|7:recognition|7:pattern|3:/subject/2061116/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar10c-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

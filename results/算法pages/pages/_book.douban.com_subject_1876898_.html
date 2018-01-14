@@ -1,0 +1,3333 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>The AWK Programming Language (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/1876898/">
+<meta name="keywords" content="The AWK Programming Language,Alfred V. Aho,Brian W. Kernighan,Peter J. Weinberger,Pearson,1988-1-11,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书The AWK Programming Language 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/1876898/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">The AWK Programming Language</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s3252374.jpg" title="The AWK Programming Language">
+    <img src="https://img3.doubanio.com/lpic/s3252374.jpg" title="点击看大图" alt="The AWK Programming Language"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Alfred%20V.%20Aho">Alfred V. Aho</a>
+        
+           /
+        
+        <a class="" href="/search/Brian%20W.%20Kernighan">Brian W. Kernighan</a>
+        
+           /
+        
+        <a class="" href="/search/Peter%20J.%20Weinberger">Peter J. Weinberger</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> Pearson<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">出版年:</span> 1988-1-11<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 210<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> USD 151.40<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> Paperback<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9780201079814<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.5 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar50"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">102</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">79.4%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:14px"></div>
+
+            <span class="rating_per">17.6%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">2.9%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1876898-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1876898-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-1876898-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1876898-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1876898-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1876898-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1876898-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-1876898-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-1876898">
+        <a href="#" data-url="https://book.douban.com/subject/1876898/" data-desc="" data-title="书籍《The AWK Programming Language》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s3252374.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_1876898"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>Originally developed by Alfred Aho, Brian Kernighan, and Peter Weinberger in 1977, AWK is a pattern-matching language for writing short programs to perform common data-manipulation tasks. In 1985, a new version of the language was developed, incorporating additional features such as multiple input files, dynamic regular expressions, and user-defined functions. This new version ...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>Originally developed by Alfred Aho, Brian Kernighan, and Peter Weinberger in 1977, AWK is a pattern-matching language for writing short programs to perform common data-manipulation tasks. In 1985, a new version of the language was developed, incorporating additional features such as multiple input files, dynamic regular expressions, and user-defined functions. This new version is available for both Unix and MS-DOS.  This is the first book on AWK. It begins with a tutorial that shows how easy AWK is to use. The tutorial is followed by a comprehensive manual for the new version of AWK. Subsequent chapters illustrate the language by a range of useful applications, such as:  *Retrieving, transforming, reducing, and validating data *Managing small, personal databases *Text processing *Little languages *Experimenting with algorithms The examples illustrates the book&#39;s three themes: showing how to use AWK well, demonstrating AWK&#39;s versatility, and explaining how common computing operations are done. In addition, the book contains two appendixes: summary of the language, and answers to selected exercises. 020107981XB04062001</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/1876898/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '1876898',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共59个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/awk">awk</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Linux">Linux</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/programming">programming</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/脚本编程">脚本编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/unix">unix</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/脚本">脚本</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;The AWK Programming Language&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1281060/?dcs=subject-rec&amp;dcm=douban&amp;dct=1876898" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1281060.jpg?v=1395394428.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1281060/" target="_blank">淘宝技术这十年</a>
+          </div>
+          <div class="price">
+              8.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/237278/?dcs=subject-rec&amp;dcm=douban&amp;dct=1876898" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/237278.jpg?v=1395395954.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/237278/" target="_blank">思考的乐趣</a>
+          </div>
+          <div class="price">
+              18.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=1876898" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/198648.jpg?v=1395393782.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/231420/?dcs=subject-rec&amp;dcm=douban&amp;dct=1876898" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/231420.jpg?v=1395395960.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/231420/" target="_blank">反西游记</a>
+          </div>
+          <div class="price">
+              6.99元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;The AWK Programming Language&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1459281/" onclick="moreurl(this, {'total': 10, 'clicked': '1459281', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s27525468.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1459281/" onclick="moreurl(this, {'total': 10, 'clicked': '1459281', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            The Practice of Programming
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1473761/" onclick="moreurl(this, {'total': 10, 'clicked': '1473761', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s27173278.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1473761/" onclick="moreurl(this, {'total': 10, 'clicked': '1473761', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            Small Memory Software
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3328585/" onclick="moreurl(this, {'total': 10, 'clicked': '3328585', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4271834.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3328585/" onclick="moreurl(this, {'total': 10, 'clicked': '3328585', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Advanced Data Structures
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4229742/" onclick="moreurl(this, {'total': 10, 'clicked': '4229742', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s7075846.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4229742/" onclick="moreurl(this, {'total': 10, 'clicked': '4229742', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            The Craft of Prolog
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1470267/" onclick="moreurl(this, {'total': 10, 'clicked': '1470267', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s2578176.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1470267/" onclick="moreurl(this, {'total': 10, 'clicked': '1470267', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            The Elements of Programming Styl...
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6889456/" onclick="moreurl(this, {'total': 10, 'clicked': '6889456', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s22702207.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6889456/" onclick="moreurl(this, {'total': 10, 'clicked': '6889456', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Linux Shell脚本攻略
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1236944/" onclick="moreurl(this, {'total': 10, 'clicked': '1236944', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s24516209.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1236944/" onclick="moreurl(this, {'total': 10, 'clicked': '1236944', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            sed与awk
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1755557/" onclick="moreurl(this, {'total': 10, 'clicked': '1755557', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s2413338.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1755557/" onclick="moreurl(this, {'total': 10, 'clicked': '1755557', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            Purely Functional Data Structures
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/2142614/" onclick="moreurl(this, {'total': 10, 'clicked': '2142614', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s3396239.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/2142614/" onclick="moreurl(this, {'total': 10, 'clicked': '2142614', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Programming Language Pragmati...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1967180/" onclick="moreurl(this, {'total': 10, 'clicked': '1967180', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s2177547.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1967180/" onclick="moreurl(this, {'total': 10, 'clicked': '1967180', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            C++编程风格
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1876898/comments/">全部 28 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="668145706">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-668145706" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-668145706" class="j a_show_login" data-cid="668145706">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/elf_doub/">听雨斋人</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-09-15</span>
+                </span>
+            </h3>
+            <p class="comment-content">看了前三章，学了个基础。awk果然是一种天生为文本处理而生的语言啊。先mark了，后面有时间在好好专研下。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="602346056">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-602346056" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-602346056" class="j a_show_login" data-cid="602346056">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/chenzx/">[已注销]</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2012-11-12</span>
+                </span>
+            </h3>
+            <p class="comment-content">不错 http://ishare.iask.sina.com.cn/f/25620164.html</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1010161594">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1010161594" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1010161594" class="j a_show_login" data-cid="1010161594">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/chenwqdouban/">chenwq</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-03-27</span>
+                </span>
+            </h3>
+            <p class="comment-content">在同为shell的命令中，AWK是很灵活的文本处理工具，命令涉及的语法不多，并且语法和C语言类似。建议边读边写，在实践中发现问题，纠正知识误点，熟练掌握</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1244974861">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1244974861" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1244974861" class="j a_show_login" data-cid="1244974861">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/2879109/">WeiLu</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-09-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">非常赞，顺手就能完成很多直观的处理。跟大家一样，读完了前三章，以后多练习，形成肌肉反应。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="876607306">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-876607306" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-876607306" class="j a_show_login" data-cid="876607306">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/jnhe/">二条</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2015-04-25</span>
+                </span>
+            </h3>
+            <p class="comment-content">就看了前两章</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1244974861">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1244974861" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1244974861" class="j a_show_login" data-cid="1244974861">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/2879109/">WeiLu</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-09-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">非常赞，顺手就能完成很多直观的处理。跟大家一样，读完了前三章，以后多练习，形成肌肉反应。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1234084918">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1234084918" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1234084918" class="j a_show_login" data-cid="1234084918">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/145308660/">MS山羊羊</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-12-08</span>
+                </span>
+            </h3>
+            <p class="comment-content">One of the most prominent text-processing utility on GNU/Linux. It is very powerful and uses simple programming language. It can solve complex text processing tasks with a few lines of code.两个重点：工具，语言。工具关注使用情景，语言关注语法。关键字：模式-行为，计算，输出，流程控制，内置产量，C语言</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1050531343">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1050531343" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1050531343" class="j a_show_login" data-cid="1050531343">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/hqqq/">小青青绿了</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-06-10</span>
+                </span>
+            </h3>
+            <p class="comment-content">不愧是大家都推荐的书，第一章适合精读，第二章和最后的附录像是知识点的索引。678待读。剩下几章是实践内容。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1042831271">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1042831271" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1042831271" class="j a_show_login" data-cid="1042831271">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/77798688/">as_fan</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-05-18</span>
+                </span>
+            </h3>
+            <p class="comment-content">权威指南 工具书</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1030963703">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1030963703" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1030963703" class="j a_show_login" data-cid="1030963703">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/103713627/">kevin</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-04-25</span>
+                </span>
+            </h3>
+            <p class="comment-content">其实只看前两章就足够了，确实简短精悍，原来awk可以做这么多事情</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/1876898/comments/">更多短评 28 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            The AWK Programming Language的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 1876898;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/1876898/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            The AWK Programming Language的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 6 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="1928033">
+        <div class="main review-item" id="1928033">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/lseaman/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u2150026-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/lseaman/" property="v:reviewer" class="name">老好人</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2009-03-26" class="main-meta">2009-03-26 12:01:59</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/1928033/">学习和理解AWK的最佳书籍</a></h2>
+
+                <div id="review_1928033_short" class="review-short" data-rid="1928033">
+                    <div class="short-content">
+
+                        我认为这本书是学习AWK的最好书籍，网上下不到的，国内也买不到。国家图书馆和北京大学图书馆都有。我找一位同学借了一本，复印了，看过一遍，现在成了自己的基本工具书（因为自己经常需要用AWK)，强烈建议所有想学AWK的同志们阅读（会有很多awk语言之外的启迪）！ 语言发明人...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-1928033-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_1928033_full" class="hidden">
+                    <div id="review_1928033_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="1928033" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-1928033">
+                                14
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="1928033" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-1928033">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/1928033/#comments" class="reply">16回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5997930">
+        <div class="main review-item" id="5997930">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/kenpusney/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u2913356-7.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/kenpusney/" property="v:reviewer" class="name">Kimmy Leo</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2013-05-31" class="main-meta">2013-05-31 13:49:59</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5997930/">AWK版的“如何学习编程语言”</a></h2>
+
+                <div id="review_5997930_short" class="review-short" data-rid="5997930">
+                    <div class="short-content">
+
+                        这是本不会教你如何输出Hello, world的书。  你可能会分辨不清究竟是把工具作为语言来用，还是把语言作为工具来用。然后你会发现，其实他们是同一个东西，甚至超出了“语言”/“工具”的概念。  你可以用它仅仅是简单的分析和处理数据，也可以做一个报表程序、一个关系数据库、...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5997930-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5997930_full" class="hidden">
+                    <div id="review_5997930_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5997930" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5997930">
+                                3
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5997930" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5997930">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5997930/#comments" class="reply">1回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="5676095">
+        <div class="main review-item" id="5676095">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/mingxinglai/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u50931505-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/mingxinglai/" property="v:reviewer" class="name">不知一不知二</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2012-11-30" class="main-meta">2012-11-30 11:28:19</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/5676095/">堪比《The C Programming Language》</a></h2>
+
+                <div id="review_5676095_short" class="review-short" data-rid="5676095">
+                    <div class="short-content">
+
+                        想学Awk的人，看这本书就够了，网上有电子版，别买书了，不是我不支持正版，而是其他书都太烂。比如，之前看了一本《sed and awk》，全是废话，简直就是浪费时间。   还有，《The Awk Programming Language》的作者是《The C Programming Language》的第一作者，这厮的文笔还用...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-5676095-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_5676095_full" class="hidden">
+                    <div id="review_5676095_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="5676095" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-5676095">
+                                8
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="5676095" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-5676095">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/5676095/#comments" class="reply">6回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6742247">
+        <div class="main review-item" id="6742247">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/niumiz/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u28204790-13.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/niumiz/" property="v:reviewer" class="name">悟道洞穴人</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-07-16" class="main-meta">2014-07-16 16:11:30</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6742247/">如果你只用它来学awk，那你就忽略它真正迷人的地方</a></h2>
+
+                <div id="review_6742247_short" class="review-short" data-rid="6742247">
+                    <div class="short-content">
+
+                        和The C programming language一样，这是一本200页左右的书。翻翻这本书的目录，你会发现，它只用了60页两个章节的篇幅介绍awk的语法，而剩下的篇幅都是用awk做为一个简洁紧凑的玩具语言，通过各种通俗易懂的程序，来向你展示从关系型数据库到编译器以及unix系统上各种常用程序...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6742247-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6742247_full" class="hidden">
+                    <div id="review_6742247_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6742247" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6742247">
+                                7
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6742247" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6742247">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6742247/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7616498">
+        <div class="main review-item" id="7616498">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/wuzhouhui/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/wuzhouhui/" property="v:reviewer" class="name">wuzhouhui</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2015-10-04" class="main-meta">2015-10-04 21:36:24</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7616498/">已经翻译到第八章了, 谁能帮我校对一下</a></h2>
+
+                <div id="review_7616498_short" class="review-short" data-rid="7616498">
+                    <div class="short-content">
+
+                        一个人的力量总是有限的, 难免会有许多错误, 好心的网友, 如果你们想看这本书的话, 那就看我翻译的中文版好了, 如果发现有哪些地方翻译的不对的, 一定要告诉我 https://github.com/wuzhouhui/awk
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7616498-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7616498_full" class="hidden">
+                    <div id="review_7616498_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7616498" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7616498">
+                                5
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7616498" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7616498">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7616498/#comments" class="reply">10回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7309358">
+        <div class="main review-item" id="7309358">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/1932430/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/1932430/" property="v:reviewer" class="name">littlecuocuo</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-12-31" class="main-meta">2014-12-31 15:33:39</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7309358/">其实只用看头3章</a></h2>
+
+                <div id="review_7309358_short" class="review-short" data-rid="7309358">
+                    <div class="short-content">
+
+                        其实只用看头3章，后面几章完全不需要念， 其余的功能， 我更prefer 用python   抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了 抱歉，你的评论太短了
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7309358-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7309358_full" class="hidden">
+                    <div id="review_7309358_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7309358" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7309358">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7309358" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7309358">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7309358/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/3bc57ca9edfb4db7.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评6篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/1876898/annotation">共<span property="v:count">15</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="26693912">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/elf_doub/"><img src="https://img1.doubanio.com/icon/u4384746-7.jpg" alt="听雨斋人" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/26693912/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/26693912/" class="">第64页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/elf_doub/" class=" " title="听雨斋人">听雨斋人</a>
+                (保持淡定是面对烦恼前的第一要则)
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="26693912">
+              <div class="short">
+                
+                  <span class="">system函数。在awk的action语句中可以用管道和重定向符的。
+
+用到管道的时候，可以直接在管道前后用双引号包裹的命令。但是管道符号前后不能都是外部命令。
+如print |“sort”
+或是“who“|getline
+    关于这种方式，无意间还发现了一个很的现象：
+____________________________
+  1 {while(&quot;who&quot;|getline&gt;0)
+  2         print $0}
+  3 {while(&quot;who&quot;|getline&gt;0)
+  4         print $0}
+  5...</span>
+                <p class="pl">
+                  <span class="">2013-06-01 13:25</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                system函数。在awk的action语句中可以用管道和重定向符的。<div style="padding-bottom:1em;"></div>用到管道的时候，可以直接在管道前后用双引号包裹的命令。但是管道符号前后不能都是外部命令。<div style="padding-bottom:1em;"></div>如print |“sort”<div style="padding-bottom:1em;"></div>或是“who“|getline<div style="padding-bottom:1em;"></div>    关于这种方式，无意间还发现了一个很的现象：<div style="padding-bottom:1em;"></div>____________________________<div style="padding-bottom:1em;"></div>  1 {while(&quot;who&quot;|getline&gt;0)<div style="padding-bottom:1em;"></div>  2         print $0}<div style="padding-bottom:1em;"></div>  3 {while(&quot;who&quot;|getline&gt;0)<div style="padding-bottom:1em;"></div>  4         print $0}<div style="padding-bottom:1em;"></div>  5 {while(&quot;date&quot;|getline&gt;0)<div style="padding-bottom:1em;"></div>  6         print $0}<div style="padding-bottom:1em;"></div>____________________________<div style="padding-bottom:1em;"></div>   执行以上内容的脚本时，发现who命令和date命令的内容都只会输出一次。无论awk作用的文件有多少行（也就是以上脚本会被执行多少次）。应该是awk中只执行了getline中的前置命令一次，保存在一个临时文件中，然后每次getline都从这个临时文件中读取。<div style="padding-bottom:1em;"></div>    Answer：<div style="padding-bottom:1em;"></div>    在awk中要多次使用一个管道时，注意根据程序需要关闭这个管道对应的由外部命令创建的临时文件。如上加入close(&quot;date&quot;）和close(&quot;who&quot;)以后就可以达到每行都输出的目的。<div style="padding-bottom:1em;"></div>    如果不关掉会有以下效果：<div style="padding-bottom:1em;"></div>    如果该临时文件为输入文件，则该文件只会在多行record中只用创建一次（本例中的情况）；<div style="padding-bottom:1em;"></div>   如果临时文件为输出文件，比如print $0|&quot;cat&quot;。“cat”这个pipe临时文件会读取每一行的输入。但是知道整个awk程序结束时，“cat&quot;被强制关闭时，才会输出内容。如果要每行都输出。那就得每次都close。<div style="padding-bottom:1em;"></div>   所以，在使用pipe或是其他文件的时候，都要注意及时关掉文件。<div style="padding-bottom:1em;"></div>除了管道，awk中执行外部命令其他情况都要用system函数了。<div style="padding-bottom:1em;"></div>当你要用到记录Record中的内容时，可直接用$i与字符串连接。<div style="padding-bottom:1em;"></div>比如<div style="padding-bottom:1em;"></div>cat $0;无效<div style="padding-bottom:1em;"></div>system(&quot;cat &quot;$0)有效
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/26693912/#comments">回应</a>&nbsp;&nbsp;
+                  2013-06-01 13:25
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="21991245">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/Sedgewick/"><img src="https://img3.doubanio.com/icon/u3516284-15.jpg" alt="Pope怯懦懦地" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/21991245/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/21991245/" class="">第一章·第一节　AWK概述</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/Sedgewick/" class=" " title="Pope怯懦懦地">Pope怯懦懦地</a>
+                (心存感恩地生活，自然而然地思考)
+              
+            </p>
+            <div class="reading-note" data-cid="21991245">
+              <div class="short">
+                
+                  <span class="">#第一章  AWK概述[chapter_1]
+
+awk表达能力很强，能广泛应用于各式计算和数据处理任务。本章仅仅是一个引子，旨在帮助你尽快投入awk实践。第二章会对awk的语法进行详尽的讲解。余下的章节会向你展现如何用awk解决不同领域的问题。纵贯本书，我们尽量挑选一些能让你感到有用、有趣、有益的示例。
+
+
+## 第一节　我们开始吧[section_1]
+
+实际中，awk程序都很短，就一两行。后面我们会用到一个`emp.data`的数据文件，里面记录有...</span>
+                <p class="pl">
+                  <span class="">2012-10-25 22:14</span>
+                  
+                    &nbsp;&nbsp;<span class="">1人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                #第一章  AWK概述[chapter_1]<div style="padding-bottom:1em;"></div>awk表达能力很强，能广泛应用于各式计算和数据处理任务。本章仅仅是一个引子，旨在帮助你尽快投入awk实践。第二章会对awk的语法进行详尽的讲解。余下的章节会向你展现如何用awk解决不同领域的问题。纵贯本书，我们尽量挑选一些能让你感到有用、有趣、有益的示例。<div style="padding-bottom:1em;"></div>## 第一节　我们开始吧[section_1]<div style="padding-bottom:1em;"></div>实际中，awk程序都很短，就一两行。后面我们会用到一个`emp.data`的数据文件，里面记录有雇员名字、时薪、工作时长，每个雇员记录占一行（每行数据称为一个“记录”），比如：<div style="padding-bottom:1em;"></div>	Beth		4.00		0<div style="padding-bottom:1em;"></div>	Dan		3.75		0<div style="padding-bottom:1em;"></div>	Kathy	4.00		10<div style="padding-bottom:1em;"></div>	Mark	5.00		20<div style="padding-bottom:1em;"></div>	Mary	5.50		22<div style="padding-bottom:1em;"></div>	Susie	4.25		18<div style="padding-bottom:1em;"></div>如果你想调出那些干了活的雇员名字和应付的费用（按小时计），找awk，这是它的拿手好戏。只需进入命令行敲入：<div style="padding-bottom:1em;"></div>	awk '$3 &gt; 0 { print $1, $2 * $3 }' emp.data<div style="padding-bottom:1em;"></div>就会得到如下输出：<div style="padding-bottom:1em;"></div>	Kathy 40<div style="padding-bottom:1em;"></div>	Mark 100<div style="padding-bottom:1em;"></div>	Mary 121<div style="padding-bottom:1em;"></div>	Susie 76.5<div style="padding-bottom:1em;"></div>这行命令是让系统启动awk，单引号之间的代码是所要运行的程序，所需处理的数据来自`emp.data`。现在我们来分析单引号之间的awk程序。这是一个**模式-动作**语句。模式即为`$3 &gt; 0`，它将找出所有第三列（列，也称之为**域**）值大于零的记录，而后执行下列动作：<div style="padding-bottom:1em;"></div>	{ print $1, $2 * $3}<div style="padding-bottom:1em;"></div>这句的意思是打印该行的第一个域和第二、三域之积。<div style="padding-bottom:1em;"></div>如果想打印没有干活的雇员名字，敲入命令：<div style="padding-bottom:1em;"></div>	awk '$3 == 0 { print $1 }' emp.data<div style="padding-bottom:1em;"></div>解释一下模式`$3 == 0`，若某条记录的第三域为零，即执行其后的动作——打印该记录的第一域：<div style="padding-bottom:1em;"></div>	{ print $1 }<div style="padding-bottom:1em;"></div>在你读我们这本书的同时，不要忘了亲自动动手，试试执行书中的例子，稍稍做些修改，你会收获更多。这本书里的大部分程序都很短，这样便于你更好地理解awk的运作方式。在Unix下，如果你执行上面两个示例，可能会出现这样的交互：<div style="padding-bottom:1em;"></div>	$ awk '$3 &gt; 0 { print $1, $2 * $3 }' emp.data<div style="padding-bottom:1em;"></div>	Kathy 40<div style="padding-bottom:1em;"></div>	Mark 100<div style="padding-bottom:1em;"></div>	Mary 121<div style="padding-bottom:1em;"></div>	Susie 76.5<div style="padding-bottom:1em;"></div>	$ awk '$3 == 0 { print $1 }' emp.data<div style="padding-bottom:1em;"></div>	Beth<div style="padding-bottom:1em;"></div>	Dan<div style="padding-bottom:1em;"></div>	$<div style="padding-bottom:1em;"></div>命令前的`$`是系统提示符，各个环境下可能不同。<div style="padding-bottom:1em;"></div>### awk程序的结构[section_1_1]<div style="padding-bottom:1em;"></div>我们再来看看上面这两条命令，单引号之间的是awk程序。在这一章里面，我们姑且把awk程序看作一连串模式-动作语句：<div style="padding-bottom:1em;"></div>	模式 { 动作 }<div style="padding-bottom:1em;"></div>	模式 { 动作 }<div style="padding-bottom:1em;"></div>	⋯⋯<div style="padding-bottom:1em;"></div>awk就这样一行一行地扫描输入的数据，搜索匹配模式的数据记录。“匹配”的具体含义依问题而定。对于模式`$3 &gt; 0`，匹配上的意思就是“比较判断为真”。<div style="padding-bottom:1em;"></div>每处理一条记录，awk就会逐一比对所有的模式。一旦匹配上就会启动相应的动作（可以很复杂）。然后再读取下一行，循环往复，直至处理完所有输入。<div style="padding-bottom:1em;"></div>上例就很好地反映了这一特点：比对模式-执行动作。<div style="padding-bottom:1em;"></div>	$3 == 0 { print $1 }<div style="padding-bottom:1em;"></div>是一个模式-动作单句。凡第三域为零，则打印第一域。<div style="padding-bottom:1em;"></div>模式和动作这两部分并不都是必需的。可以只有模式，没有动作：<div style="padding-bottom:1em;"></div>	$3 == 0<div style="padding-bottom:1em;"></div>这一句会打印所有符合模式（即第三域为零）的记录。用来处理`emp.data`就会得到如下输出：<div style="padding-bottom:1em;"></div>	Beth		4.00		0<div style="padding-bottom:1em;"></div>	Dan		3.75		0<div style="padding-bottom:1em;"></div>也可以只有动作，没有模式：<div style="padding-bottom:1em;"></div>	{ print $1 }<div style="padding-bottom:1em;"></div>这样就会打印所有记录的第一个域。<div style="padding-bottom:1em;"></div>正因为模式和动作都是可选的，所以必须用大括号将动作语句括住以以示区分。<div style="padding-bottom:1em;"></div>## 如何执行awk程序[section_1_2]<div style="padding-bottom:1em;"></div>执行awk程序有好几种方式。一般是这样：<div style="padding-bottom:1em;"></div>	awk '程序代码' 数据文件<div style="padding-bottom:1em;"></div>可以指定多个数据文件。如下：<div style="padding-bottom:1em;"></div>	awk '$3 == 0 { print $1 }' file1 file2<div style="padding-bottom:1em;"></div>执行这句会对`file1`和`file2`的所有记录进行甄别，挑出所有第三域为零的记录，打印其第一个域。<div style="padding-bottom:1em;"></div>你也可以在终端里不填数据文件，<div style="padding-bottom:1em;"></div>	awk '程序代码'<div style="padding-bottom:1em;"></div>这样awk就会把你之后敲入的字符当做数据，直至你敲入文件结束符(end-of-file signal)（Unix下是control-d）。下面是Unix下的一段交互：<div style="padding-bottom:1em;"></div>	$ awk '$3 == 0 { print $1}'<div style="padding-bottom:1em;"></div>	Beth    4.00	0<div style="padding-bottom:1em;"></div>	Beth<div style="padding-bottom:1em;"></div>	Dan	3.75	0<div style="padding-bottom:1em;"></div>	Dan<div style="padding-bottom:1em;"></div>	Kathy	3.75	10<div style="padding-bottom:1em;"></div>	Kathy   3.75	0<div style="padding-bottom:1em;"></div>	Kathy<div style="padding-bottom:1em;"></div>	…<div style="padding-bottom:1em;"></div>第三、五、八行为终端输出的内容。<div style="padding-bottom:1em;"></div>你可以利用这个特性来好好观察awk是怎么运行的。你应该试试执行上面的示例，并做一些小的改动（看看是否与设想的不同）。<div style="padding-bottom:1em;"></div>可能你已经注意到了，程序都用了单引号括住。如果代码短还好说，一旦代码很长怎么办？这时，你可以把awk代码单独写到一个文本里面，假设它叫`progfile`，然后这样来执行：<div style="padding-bottom:1em;"></div>	awk -f progfile		数据文件（可选）<div style="padding-bottom:1em;"></div>选项`-f`让awk抓取(fetch)一个叫`profile`的文件，执行代码在里面。`progfile`可以替换成任何文件名。<div style="padding-bottom:1em;"></div>## 诊断提示[section_1_3]<div style="padding-bottom:1em;"></div>如果你的awk程序有错，awk会给出诊断提示。比如，你把左大括号敲成了左方括号：<div style="padding-bottom:1em;"></div>	awk '$3 == 0 [ print $1 }' emp.data<div style="padding-bottom:1em;"></div>awk就会给出这样的提示：<div style="padding-bottom:1em;"></div>	awk: syntax error at source line 1<div style="padding-bottom:1em;"></div>	 context is<div style="padding-bottom:1em;"></div>		$3 == 0 &gt;&gt;&gt;  [ &lt;&lt;&lt; <div style="padding-bottom:1em;"></div>		extra }<div style="padding-bottom:1em;"></div>		missing ]<div style="padding-bottom:1em;"></div>	awk: bailing out at source line 1<div style="padding-bottom:1em;"></div>“syntax error”的意思是你犯了一个语法错误。awk还帮你把错误锁定在&gt;&gt;&gt;和&lt;&lt;&lt;之间。“bailing out”是说并没有试图恢复。awk有时会给出更多的出错信息，比如括号不匹配等等。<div style="padding-bottom:1em;"></div>如果遇到了语法错误，awk不会去执行这个程序。有些错误只有等程序执行了才能发现。比如，你试图去除零，这时awk会中止程序，然后报告这行代码试图除零，并会给出出错的行号。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/21991245/#comments">回应</a>&nbsp;&nbsp;
+                  2012-10-25 22:14
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="42183446">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/zere/"><img src="https://img1.doubanio.com/icon/u50349850-47.jpg" alt="jasonz" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/42183446/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/42183446/" class="">第35页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/zere/" class=" " title="jasonz">jasonz</a>
+              
+            </p>
+            <div class="reading-note" data-cid="42183446">
+              <div class="short">
+                
+                  <span class="">FNR, NF and NR are set each time a new record is read 至少 gawk v4.1.4 NR 不是这样 看 manpage： FNR： The ordinal number of the current record in the current file. NR： The ordinal number of the current record from the the start of input. ``` $ cat foo 1 2 $ cat bar 11 12 $ awk '{print FNR, NR}' foo bar 1 1 2 2 1 3 2 4 ``` 看 Errata[1] 好像也没写到 当然如果不是写成 are set to 0 确实不算错吧 fn1...</span>
+                <p class="pl">
+                  <span class="">2017-03-08 15:30</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>FNR, NF and NR are set each time a new record is read</blockquote><p>至少 gawk v4.1.4 NR 不是这样</p><p>看 manpage：</p><blockquote>FNR： The ordinal number of the current record in the current file.
+NR： The ordinal number of the current record from the the start of input.</blockquote><p>```
+$ cat foo</p><p>1</p><p>2</p><p>$ cat bar</p><p>11</p><p>12</p><p>$ awk '{print FNR, NR}' foo bar</p><p>1 1</p><p>2 2</p><p>1 3</p><p>2 4
+```</p><p></p><p>看 Errata[1] 好像也没写到</p><p>当然如果不是写成 are set to 0 确实不算错吧</p><p></p><p>fn1.  <a href="https://9p.io/cm/cs/awkbook/errata.html" rel="nofollow" target="_blank">https://9p.io/cm/cs/awkbook/errata.html </a></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/42183446/#comments">回应</a>&nbsp;&nbsp;
+                  2017-03-08 15:30
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34068972">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/elf_doub/"><img src="https://img1.doubanio.com/icon/u4384746-7.jpg" alt="听雨斋人" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34068972/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34068972/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/elf_doub/" class=" " title="听雨斋人">听雨斋人</a>
+                (保持淡定是面对烦恼前的第一要则)
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="34068972">
+              <div class="short">
+                
+                  <span class="">awk里面有很多内建函数，我比较常用的有这些：
+
+strtonum：用于进制转换
+substr( String, M, [ N ] )：取子串
+tolower( String )，toupper( String )：改大小写
+split( String, A, [Ere] )：将字符串分到数组中区
+gsub( Ere, Repl, [ In ] )：替换
+sprintf(Format,argv)
+
+asort:按值排序
+asorti:按键值排序
+
+个人觉得awk的match函数不是很方便。
+
+</span>
+                <p class="pl">
+                  <span class="">2015-01-20 21:01</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                awk里面有很多内建函数，我比较常用的有这些：<div style="padding-bottom:1em;"></div>strtonum：用于进制转换<div style="padding-bottom:1em;"></div>substr( String, M, [ N ] )：取子串<div style="padding-bottom:1em;"></div>tolower( String )，toupper( String )：改大小写<div style="padding-bottom:1em;"></div>split( String, A, [Ere] )：将字符串分到数组中区<div style="padding-bottom:1em;"></div>gsub( Ere, Repl, [ In ] )：替换<div style="padding-bottom:1em;"></div>sprintf(Format,argv)<div style="padding-bottom:1em;"></div>asort:按值排序<div style="padding-bottom:1em;"></div>asorti:按键值排序<div style="padding-bottom:1em;"></div>个人觉得awk的match函数不是很方便。<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34068972/#comments">回应</a>&nbsp;&nbsp;
+                  2015-01-20 21:01
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="31859308">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gnat_tang/"><img src="https://img1.doubanio.com/icon/u82929873-18.jpg" alt="TZX" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31859308/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31859308/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gnat_tang/" class=" " title="TZX">TZX</a>
+                (Stay hungry, stay foolish.)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="31859308">
+              <div class="short">
+                
+                  <span class="">读书笔记：
+
+https://github.com/district10/notes/blob/master/2014/The-Awk-Programming-Language.md</span>
+                <p class="pl">
+                  <span class="">2014-06-08 00:28</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                读书笔记：<div style="padding-bottom:1em;"></div><a rel="nofollow" href="https://github.com/district10/notes/blob/master/2014/The-Awk-Programming-Language.md" target="_blank">https://github.com/district10/notes/blob/master/2014/The-Awk-Programming-Language.md</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31859308/#comments">回应</a>&nbsp;&nbsp;
+                  2014-06-08 00:28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34068972">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/elf_doub/"><img src="https://img1.doubanio.com/icon/u4384746-7.jpg" alt="听雨斋人" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34068972/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34068972/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/elf_doub/" class=" " title="听雨斋人">听雨斋人</a>
+                (保持淡定是面对烦恼前的第一要则)
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="34068972">
+              <div class="short">
+                
+                  <span class="">awk里面有很多内建函数，我比较常用的有这些：
+
+strtonum：用于进制转换
+substr( String, M, [ N ] )：取子串
+tolower( String )，toupper( String )：改大小写
+split( String, A, [Ere] )：将字符串分到数组中区
+gsub( Ere, Repl, [ In ] )：替换
+sprintf(Format,argv)
+
+asort:按值排序
+asorti:按键值排序
+
+个人觉得awk的match函数不是很方便。
+
+</span>
+                <p class="pl">
+                  <span class="">2015-01-20 21:01</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                awk里面有很多内建函数，我比较常用的有这些：<div style="padding-bottom:1em;"></div>strtonum：用于进制转换<div style="padding-bottom:1em;"></div>substr( String, M, [ N ] )：取子串<div style="padding-bottom:1em;"></div>tolower( String )，toupper( String )：改大小写<div style="padding-bottom:1em;"></div>split( String, A, [Ere] )：将字符串分到数组中区<div style="padding-bottom:1em;"></div>gsub( Ere, Repl, [ In ] )：替换<div style="padding-bottom:1em;"></div>sprintf(Format,argv)<div style="padding-bottom:1em;"></div>asort:按值排序<div style="padding-bottom:1em;"></div>asorti:按键值排序<div style="padding-bottom:1em;"></div>个人觉得awk的match函数不是很方便。<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34068972/#comments">回应</a>&nbsp;&nbsp;
+                  2015-01-20 21:01
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="28204102">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/whoselove/"><img src="https://img3.doubanio.com/icon/u1556618-13.jpg" alt="老糖酸菜牛肉面" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/28204102/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/28204102/" class="">第12页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/whoselove/" class=" " title="老糖酸菜牛肉面">老糖酸菜牛肉面</a>
+                (练习不经意的仁慈与美德)
+              
+            </p>
+            <div class="reading-note" data-cid="28204102">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/28204102/"><img src="https://img3.doubanio.com/view/page_note/small/public/p28204102-2.jpg"></a>
+                  </div>
+                  <span class=""> </span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/28204102/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2013-08-21 15:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p28204102-2.jpg" alt="变量初值为0"><br><span class="pic-title">变量初值为0</span></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/28204102/#comments">2回应</a>&nbsp;&nbsp;
+                  2013-08-21 15:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="42183446">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/zere/"><img src="https://img1.doubanio.com/icon/u50349850-47.jpg" alt="jasonz" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/42183446/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/42183446/" class="">第35页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/zere/" class=" " title="jasonz">jasonz</a>
+              
+            </p>
+            <div class="reading-note" data-cid="42183446">
+              <div class="short">
+                
+                  <span class="">FNR, NF and NR are set each time a new record is read 至少 gawk v4.1.4 NR 不是这样 看 manpage： FNR： The ordinal number of the current record in the current file. NR： The ordinal number of the current record from the the start of input. ``` $ cat foo 1 2 $ cat bar 11 12 $ awk '{print FNR, NR}' foo bar 1 1 2 2 1 3 2 4 ``` 看 Errata[1] 好像也没写到 当然如果不是写成 are set to 0 确实不算错吧 fn1...</span>
+                <p class="pl">
+                  <span class="">2017-03-08 15:30</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>FNR, NF and NR are set each time a new record is read</blockquote><p>至少 gawk v4.1.4 NR 不是这样</p><p>看 manpage：</p><blockquote>FNR： The ordinal number of the current record in the current file.
+NR： The ordinal number of the current record from the the start of input.</blockquote><p>```
+$ cat foo</p><p>1</p><p>2</p><p>$ cat bar</p><p>11</p><p>12</p><p>$ awk '{print FNR, NR}' foo bar</p><p>1 1</p><p>2 2</p><p>1 3</p><p>2 4
+```</p><p></p><p>看 Errata[1] 好像也没写到</p><p>当然如果不是写成 are set to 0 确实不算错吧</p><p></p><p>fn1.  <a href="https://9p.io/cm/cs/awkbook/errata.html" rel="nofollow" target="_blank">https://9p.io/cm/cs/awkbook/errata.html </a></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/42183446/#comments">回应</a>&nbsp;&nbsp;
+                  2017-03-08 15:30
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="42183446">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/zere/"><img src="https://img1.doubanio.com/icon/u50349850-47.jpg" alt="jasonz" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/42183446/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/42183446/" class="">第35页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/zere/" class=" " title="jasonz">jasonz</a>
+              
+            </p>
+            <div class="reading-note" data-cid="42183446">
+              <div class="short">
+                
+                  <span class="">FNR, NF and NR are set each time a new record is read 至少 gawk v4.1.4 NR 不是这样 看 manpage： FNR： The ordinal number of the current record in the current file. NR： The ordinal number of the current record from the the start of input. ``` $ cat foo 1 2 $ cat bar 11 12 $ awk '{print FNR, NR}' foo bar 1 1 2 2 1 3 2 4 ``` 看 Errata[1] 好像也没写到 当然如果不是写成 are set to 0 确实不算错吧 fn1...</span>
+                <p class="pl">
+                  <span class="">2017-03-08 15:30</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote>FNR, NF and NR are set each time a new record is read</blockquote><p>至少 gawk v4.1.4 NR 不是这样</p><p>看 manpage：</p><blockquote>FNR： The ordinal number of the current record in the current file.
+NR： The ordinal number of the current record from the the start of input.</blockquote><p>```
+$ cat foo</p><p>1</p><p>2</p><p>$ cat bar</p><p>11</p><p>12</p><p>$ awk '{print FNR, NR}' foo bar</p><p>1 1</p><p>2 2</p><p>1 3</p><p>2 4
+```</p><p></p><p>看 Errata[1] 好像也没写到</p><p>当然如果不是写成 are set to 0 确实不算错吧</p><p></p><p>fn1.  <a href="https://9p.io/cm/cs/awkbook/errata.html" rel="nofollow" target="_blank">https://9p.io/cm/cs/awkbook/errata.html </a></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/42183446/#comments">回应</a>&nbsp;&nbsp;
+                  2017-03-08 15:30
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34068972">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/elf_doub/"><img src="https://img1.doubanio.com/icon/u4384746-7.jpg" alt="听雨斋人" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34068972/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34068972/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/elf_doub/" class=" " title="听雨斋人">听雨斋人</a>
+                (保持淡定是面对烦恼前的第一要则)
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="34068972">
+              <div class="short">
+                
+                  <span class="">awk里面有很多内建函数，我比较常用的有这些：
+
+strtonum：用于进制转换
+substr( String, M, [ N ] )：取子串
+tolower( String )，toupper( String )：改大小写
+split( String, A, [Ere] )：将字符串分到数组中区
+gsub( Ere, Repl, [ In ] )：替换
+sprintf(Format,argv)
+
+asort:按值排序
+asorti:按键值排序
+
+个人觉得awk的match函数不是很方便。
+
+</span>
+                <p class="pl">
+                  <span class="">2015-01-20 21:01</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                awk里面有很多内建函数，我比较常用的有这些：<div style="padding-bottom:1em;"></div>strtonum：用于进制转换<div style="padding-bottom:1em;"></div>substr( String, M, [ N ] )：取子串<div style="padding-bottom:1em;"></div>tolower( String )，toupper( String )：改大小写<div style="padding-bottom:1em;"></div>split( String, A, [Ere] )：将字符串分到数组中区<div style="padding-bottom:1em;"></div>gsub( Ere, Repl, [ In ] )：替换<div style="padding-bottom:1em;"></div>sprintf(Format,argv)<div style="padding-bottom:1em;"></div>asort:按值排序<div style="padding-bottom:1em;"></div>asorti:按键值排序<div style="padding-bottom:1em;"></div>个人觉得awk的match函数不是很方便。<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34068972/#comments">回应</a>&nbsp;&nbsp;
+                  2015-01-20 21:01
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="31859308">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/gnat_tang/"><img src="https://img1.doubanio.com/icon/u82929873-18.jpg" alt="TZX" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/31859308/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/31859308/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/gnat_tang/" class=" " title="TZX">TZX</a>
+                (Stay hungry, stay foolish.)
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="31859308">
+              <div class="short">
+                
+                  <span class="">读书笔记：
+
+https://github.com/district10/notes/blob/master/2014/The-Awk-Programming-Language.md</span>
+                <p class="pl">
+                  <span class="">2014-06-08 00:28</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                读书笔记：<div style="padding-bottom:1em;"></div><a rel="nofollow" href="https://github.com/district10/notes/blob/master/2014/The-Awk-Programming-Language.md" target="_blank">https://github.com/district10/notes/blob/master/2014/The-Awk-Programming-Language.md</a>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/31859308/#comments">回应</a>&nbsp;&nbsp;
+                  2014-06-08 00:28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="28204102">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/whoselove/"><img src="https://img3.doubanio.com/icon/u1556618-13.jpg" alt="老糖酸菜牛肉面" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/28204102/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/28204102/" class="">第12页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/whoselove/" class=" " title="老糖酸菜牛肉面">老糖酸菜牛肉面</a>
+                (练习不经意的仁慈与美德)
+              
+            </p>
+            <div class="reading-note" data-cid="28204102">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/28204102/"><img src="https://img3.doubanio.com/view/page_note/small/public/p28204102-2.jpg"></a>
+                  </div>
+                  <span class=""> </span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/28204102/">(<span class="">2回应</span>)</a>
+                <p class="pl">
+                  <span class="">2013-08-21 15:05</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p28204102-2.jpg" alt="变量初值为0"><br><span class="pic-title">变量初值为0</span></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/28204102/#comments">2回应</a>&nbsp;&nbsp;
+                  2013-08-21 15:05
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/1876898/annotation">更多读书笔记（共15篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1876898/discussion/23780684/" title="哪能下到这本书啊" class="">哪能下到这本书啊</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/40635933/">will_think</a></td>
+            <td class="pl"><span class="">3 回应</span></td>
+            <td class="pl"><span class="">2013-05-01</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1876898/discussion/52894611/" title="这书真是贵啊。。。" class="">这书真是贵啊。。。</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/windfury/">一坨萨满</a></td>
+            <td class="pl"><span class=""></span></td>
+            <td class="pl"><span class="">2013-04-19</span></td>
+        </tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/1876898/discussion/1075865/" title="求教" class="">求教</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/lyttx/">ly</a></td>
+            <td class="pl"><span class="">3 回应</span></td>
+            <td class="pl"><span class="">2013-01-16</span></td>
+        </tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fopac3.wzlib.cn%2Fopac%2Fsearch%3FsearchWay%3Disbn%26q%3D0-201-07981-x%26booktype%3D%26marcformat%3D%26sortWay%3Dscore%26sortOrder%3Ddesc%26startPubdate%3D%26endPubdate%3D%26rows%3D10&amp;subject=020107981X&amp;type=borrow&amp;library=10020&amp;link2key=45b10f4f20" target="_blank">温州市图书馆</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/1876898/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/1525602/" target="_blank">Hack的技术与艺术</a>
+                <span class="pl">(lyb)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/2642251/" target="_blank">跨越编程语言界限</a>
+                <span class="pl">(Kimmy Leo)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1675204/" target="_blank">IT 三级  C/C++程序设计语言、框架技术（实用性） 1.1.1.1.1</a>
+                <span class="pl">(ajian005)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1775895/" target="_blank">看对书，省时间</a>
+                <span class="pl">(一坨萨满)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3410736/" target="_blank">书：2014阅读清单</a>
+                <span class="pl">(Asuka4J)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/einverne/"><img src="https://img3.doubanio.com/icon/u46536222-16.jpg" class="pil" alt="einverne" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/einverne/">einverne</a><br/>
+      <div class="pl ll">          1月10日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:awk Linux</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/165818964/"><img src="https://img3.doubanio.com/icon/u165818964-1.jpg" class="pil" alt="沉默的图灵机" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/165818964/">沉默的图灵机</a><br/>
+      <div class="pl ll">          1月7日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1876898/doings">59人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1876898/collections">90人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/1876898/wishes">519人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/1876898/offers">2本二手书欲转让</a>
+          <span class="">
+            (100.00
+                至 300.00元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有519人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于The AWK Programming Language的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/1876898/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'JJabHGX2em4',
+            criteria = '7:awk|7:Linux|7:programming|7:脚本编程|7:编程|7:计算机|7:unix|7:脚本|7:Linux/Unix|7:计算机科学|3:/subject/1876898/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- sindar14d-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

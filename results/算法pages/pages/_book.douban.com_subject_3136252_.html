@@ -1,0 +1,3959 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Essentials of Programming Languages, 3rd Edition (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/3136252/">
+<meta name="keywords" content="Essentials of Programming Languages, 3rd Edition,Daniel P. Friedman,Mitchell Wand,The MIT Press,2008-04-30,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书Essentials of Programming Languages, 3rd Edition 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/3136252/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">Essentials of Programming Languages, 3rd Edition</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img1.doubanio.com/lpic/s3221129.jpg" title="Essentials of Programming Languages, 3rd Edition">
+    <img src="https://img1.doubanio.com/lpic/s3221129.jpg" title="点击看大图" alt="Essentials of Programming Languages, 3rd Edition"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Daniel%20P.%20Friedman">Daniel P. Friedman</a>
+        
+           /
+        
+        <a class="" href="/search/Mitchell%20Wand">Mitchell Wand</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> The MIT Press<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2008-04-30<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 416<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> USD 65.00<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> Hardcover<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9780262062794<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.2 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar45"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">46</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">65.2%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:27px"></div>
+
+            <span class="rating_per">28.3%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:4px"></div>
+
+            <span class="rating_per">4.3%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">2.2%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3136252-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3136252-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3136252-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3136252-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3136252-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3136252-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3136252-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3136252-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-3136252">
+        <a href="#" data-url="https://book.douban.com/subject/3136252/" data-desc="" data-title="书籍《Essentials of Programming Languages, 3rd Edition》 (来自豆瓣) " data-pic="https://img1.doubanio.com/lpic/s3221129.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_3136252"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>This textbook offers a deep understanding of the essential concepts of programming languages. The approach is analytic and hands-on. The text uses interpreters, written in Scheme, to express the semantics of many essential language elements in a way that is both clear and directly executable. It also examines some important program analyses. Extensive exercises explore many des...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>This textbook offers a deep understanding of the essential concepts of programming languages. The approach is analytic and hands-on. The text uses interpreters, written in Scheme, to express the semantics of many essential language elements in a way that is both clear and directly executable. It also examines some important program analyses. Extensive exercises explore many design and implementation alternatives.</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/3136252/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '3136252',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共70个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/编程语言">编程语言</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Programming">Programming</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机科学">计算机科学</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/scheme">scheme</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/ProgramLanguages">ProgramLanguages</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/programming">programming</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Essentials of Programming Languages, 3rd Edition&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=3136252" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/198648.jpg?v=1395393782.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/387679/?dcs=subject-rec&amp;dcm=douban&amp;dct=3136252" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/387679.jpg?v=1395395846.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/387679/" target="_blank">编程大师访谈录</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/474698/?dcs=subject-rec&amp;dcm=douban&amp;dct=3136252" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/474698.jpg?v=1395394499.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/474698/" target="_blank">图灵的秘密</a>
+          </div>
+          <div class="price">
+              30.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Essentials of Programming Languages, 3rd Edition&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3917775/" onclick="moreurl(this, {'total': 10, 'clicked': '3917775', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s7677747.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3917775/" onclick="moreurl(this, {'total': 10, 'clicked': '3917775', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            The Scheme Programming Langu...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1726083/" onclick="moreurl(this, {'total': 10, 'clicked': '1726083', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s7412483.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1726083/" onclick="moreurl(this, {'total': 10, 'clicked': '1726083', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            The Seasoned Schemer
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/11628134/" onclick="moreurl(this, {'total': 10, 'clicked': '11628134', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s11285108.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/11628134/" onclick="moreurl(this, {'total': 10, 'clicked': '11628134', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Programming Languages
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1632977/" onclick="moreurl(this, {'total': 10, 'clicked': '1632977', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s27160742.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1632977/" onclick="moreurl(this, {'total': 10, 'clicked': '1632977', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            The Little Schemer - 4th Edition
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3864436/" onclick="moreurl(this, {'total': 10, 'clicked': '3864436', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s3885759.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3864436/" onclick="moreurl(this, {'total': 10, 'clicked': '3864436', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            Let Over Lambda
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1726088/" onclick="moreurl(this, {'total': 10, 'clicked': '1726088', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s2552408.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1726088/" onclick="moreurl(this, {'total': 10, 'clicked': '1726088', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            The Reasoned Schemer
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1761910/" onclick="moreurl(this, {'total': 10, 'clicked': '1761910', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4242680.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1761910/" onclick="moreurl(this, {'total': 10, 'clicked': '1761910', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            Types and Programming Languag...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26429992/" onclick="moreurl(this, {'total': 10, 'clicked': '26429992', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28646820.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26429992/" onclick="moreurl(this, {'total': 10, 'clicked': '26429992', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            The Little Prover
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/4323391/" onclick="moreurl(this, {'total': 10, 'clicked': '4323391', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4207882.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/4323391/" onclick="moreurl(this, {'total': 10, 'clicked': '4323391', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Lambda-Calculus and Combinator...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/11632210/" onclick="moreurl(this, {'total': 10, 'clicked': '11632210', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s26001071.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/11632210/" onclick="moreurl(this, {'total': 10, 'clicked': '11632210', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            Practical Foundations for Program...
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/3136252/comments/">全部 11 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="1099085662">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1099085662" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1099085662" class="j a_show_login" data-cid="1099085662">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/102506323/">布丁補丁</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-04-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">洞若观火</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1256124505">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1256124505" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1256124505" class="j a_show_login" data-cid="1256124505">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/adaxiang1205/">SadEyedLady</a>
+                    <span>2017-10-13</span>
+                </span>
+            </h3>
+            <p class="comment-content">作业写吐了 写吐了 吐了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="746241801">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-746241801" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-746241801" class="j a_show_login" data-cid="746241801">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/skiffliu/">skiffliu</a>
+                        <span class="user-stars allstar20 rating" title="较差"></span>
+                    <span>2013-11-19</span>
+                </span>
+            </h3>
+            <p class="comment-content">作为一个400level的编程语言导论的教材，这本书真的被sicp甩出去200条街不止。。。期末之前我自己还是再刷一遍sicp吧。。。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="989055459">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-989055459" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-989055459" class="j a_show_login" data-cid="989055459">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/cheukyinyip/">Cheuk賢</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2015-12-19</span>
+                </span>
+            </h3>
+            <p class="comment-content">实践向教材，由浅入深地讲解了各种解释器的实现，内容覆盖了环境的表示、continuation、type check/inference、OO语言的基本实现，etc... 遗憾的是，缺乏macro方面的介绍。每一节后面都会有部分有一定深度的习题，延伸正文的内容。可能为了章节之间的解耦，每一章之间的连贯性不算太大，每一部分的内容都用独立的小语言讲解。建议读者在实践时，可以将全书的知识综合起来，实现一个具有各种特性的解释器</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="135116098">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-135116098" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-135116098" class="j a_show_login" data-cid="135116098">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/an0/">an0</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2009-07-01</span>
+                </span>
+            </h3>
+            <p class="comment-content">第6和第8章写的不清楚，第9章过于简单，要不然够的上5星。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1256124505">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1256124505" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1256124505" class="j a_show_login" data-cid="1256124505">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/adaxiang1205/">SadEyedLady</a>
+                    <span>2017-10-13</span>
+                </span>
+            </h3>
+            <p class="comment-content">作业写吐了 写吐了 吐了</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1156434298">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1156434298" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1156434298" class="j a_show_login" data-cid="1156434298">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/kainwen/">17号</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-02-23</span>
+                </span>
+            </h3>
+            <p class="comment-content">买的英文原版，PL的入门书籍。每一章涉及一个话题，添加一些语言特性，讲清楚语义后编程实现。2016年夏天我去拜访了Dan Friedman，在他家中谈及我正在用Erlang把EOPL的所有内容实现一遍的时候，他很赞赏这种做法。我研究的过程是，把模型看懂想清楚，手写parser，用Erlang把技术细节实现，并记录自己的思考过程。整个过程受益匪浅。推荐有兴趣的也可以这么做，推荐使用Ocaml等静态类型语言编写可能更好。编程类书籍不做习题，不思考解决习题就等于看小说是买椟还珠。现在看起来SICP太简单且啰嗦了，EOPL的话限制于篇幅，还缺少了一些话题，不过作为入门书籍是相当好的了。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1129002821">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1129002821" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1129002821" class="j a_show_login" data-cid="1129002821">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/130096221/">罗一鑫</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-12-30</span>
+                </span>
+            </h3>
+            <p class="comment-content">强烈推荐</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1099085662">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1099085662" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1099085662" class="j a_show_login" data-cid="1099085662">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/102506323/">布丁補丁</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-04-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">洞若观火</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1016102068">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1016102068" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1016102068" class="j a_show_login" data-cid="1016102068">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/qc1iu/">qqq</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2018-01-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">读的时候感觉很多地方难理解，不过理解之后发现其实讲的东西之前编程都遇到过并思考过，这里只是用fp的方式表达了一遍罢了。读起来难理解的原因是，同样的概念用了不一样的view去解读，就像突然让你用3进制做运算一样。不是我们天生就会10进制，而是学习它的时候的痛苦大多数人都已经忘记了，此时突然让你用3进制运算那更是痛苦。看完cps感觉已经没必要看下去了，都是一样的东西。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/3136252/comments/">更多短评 11 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            Essentials of Programming Languages, 3rd Edition的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 3136252;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/3136252/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            Essentials of Programming Languages, 3rd Edition的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 2 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7125922">
+        <div class="main review-item" id="7125922">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/moorekang/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1502189-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/moorekang/" property="v:reviewer" class="name">cyukang</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2014-10-12" class="main-meta">2014-10-12 12:04:46</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7125922/">另一本魔法书~</a></h2>
+
+                <div id="review_7125922_short" class="review-short" data-rid="7125922">
+                    <div class="short-content">
+
+                        差不多把这本书看完了。总得来说挺有趣的一本书，前提是你得懂一些Scheme。不过Scheme也挺容易学会的。里面是各种小的解释器，基于书上的代码parser的部分基本可以不用担心(sllgen)。 习题里面都是给语言增加一些feature，大部分两星的习题花时间都能解决。 读完当然有收获，理...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7125922-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7125922_full" class="hidden">
+                    <div id="review_7125922_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7125922" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7125922">
+                                14
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7125922" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7125922">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7125922/#comments" class="reply">1回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7856454">
+        <div class="main review-item" id="7856454">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/lishuhuakai/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u62638127-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/lishuhuakai/" property="v:reviewer" class="name">李树花开</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2016-04-17" class="main-meta">2016-04-17 19:49:48</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7856454/">看透语言本质的一本书！</a></h2>
+
+                <div id="review_7856454_short" class="review-short" data-rid="7856454">
+                    <div class="short-content">
+
+                        eopl是一本极度长见识的书，在某种程度上，我觉得它写得比sicp还要好，当然前提是你得自己在电脑上将书上的代码一章一章地敲出来，顺带要做一做习题，这本书告诉了你很多关于编程语言的事情，这本书从一个很简单的解释器开始，然后开始一步一步添加新feature，添加了什么featur...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7856454-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7856454_full" class="hidden">
+                    <div id="review_7856454_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7856454" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7856454">
+                                2
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7856454" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7856454">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7856454/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript">
+    ;(function(){
+        window.subject_id = window.subject_id || 3136252;
+        "use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GalleryTopicsSelection = function (_React$Component) {
+  _inherits(GalleryTopicsSelection, _React$Component);
+
+  function GalleryTopicsSelection() {
+    _classCallCheck(this, GalleryTopicsSelection);
+
+    var _this = _possibleConstructorReturn(this, (GalleryTopicsSelection.__proto__ || Object.getPrototypeOf(GalleryTopicsSelection)).call(this));
+
+    _this.state = {
+      topics: []
+    };
+    return _this;
+  }
+
+  _createClass(GalleryTopicsSelection, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      $.ajax({
+        url: "https://m.douban.com/rexxar/api/v2/gallery/subject_feed?start=0&subject_id=" + window.subject_id + "&ck=" + get_cookie('ck'),
+        xhrFields: { withCredentials: true },
+        success: function success(res) {
+          _this2.setState({
+            topics: res.items
+          });
+          if (res.total) {
+            window.has_gallery_topics = true;
+          }
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var topics = this.state.topics;
+
+      return React.createElement(
+        "section",
+        null,
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=close", rel: "nofollow", className: "close_selection" },
+          "\u8DF3\u8FC7"
+        ),
+        React.createElement(
+          "h1",
+          null,
+          "\u4E0B\u9762\u662F\u5426\u6709\u4F60\u60F3\u5199\u7684\u8BDD\u9898\uFF1F"
+        ),
+        topics.length ? React.createElement(
+          "ul",
+          { className: "gl_topics" },
+          topics.map(function (item) {
+            return React.createElement(
+              "li",
+              { className: "topic" },
+              React.createElement(
+                "a",
+                { href: "new_review?from=gallery-topics-selection&click=create&tag_from_gallery=" + item.topic.name,
+                  className: "comment_btn write_review",
+                  rel: "nofollow" },
+                React.createElement("img", { src: window.write_icon }),
+                React.createElement(
+                  "span",
+                  null,
+                  window.join_label_text
+                )
+              ),
+              React.createElement(
+                "h2",
+                { className: "topic_name" },
+                item.topic.name
+              ),
+              React.createElement(
+                "div",
+                { className: "topic_meta" },
+                item.topic.card_subtitle
+              )
+            );
+          })
+        ) : React.createElement(
+          "div",
+          null,
+          "\u52A0\u8F7D\u4E2D"
+        ),
+        React.createElement(
+          "a",
+          { href: "new_review?from=gallery-topics-selection&click=skip", rel: "nofollow", className: "topics_skip" },
+          React.createElement(
+            "span",
+            null,
+            "\u4E0A\u9762\u6CA1\u6709\u6211\u60F3\u5199\u7684\u8BDD\u9898\uFF0C\u53BB\u5199\u5F71\u8BC4 \uFF1E "
+          )
+        )
+      );
+    }
+  }]);
+
+  return GalleryTopicsSelection;
+}(React.Component);
+
+$(function () {
+  var glRoot = document.getElementById('gallery-topics-selection');
+
+  ReactDOM.render(React.createElement(GalleryTopicsSelection, null), glRoot);
+});;
+    })();
+</script><script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/289d9eab6b43a9ec.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评2篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+      
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="27544537">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27544537/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27544537/" class="">2.1 Specifying data via interface</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27544537">
+              <div class="short">
+                
+                  <span class="">     数据抽象：interface+implementation.  
+     2.1节的习题如下：
+<span class="code-holder">/代码内容已省略/</span>
+</span>
+                <p class="pl">
+                  <span class="">2013-07-11 21:48</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                     数据抽象：interface+implementation.  <div style="padding-bottom:1em;"></div>     2.1节的习题如下：
+<pre class="source true c">
+#lang racket
+;Let us encapsulate the operations of the interface into a 
+;message-accepting object so that we can represent the 
+;nonegative integers with the given base.
+(define positives
+  (lambda (base)
+    (define zero '())
+    (define iszero? null?)
+    (define successor
+      (lambda (n)
+        (if (iszero? n)
+            (cons 1 zero)
+            (if (= (car n) (- base 1))
+                (cons 0 (successor (cdr n)))
+                (cons (+ 1 (car n)) (cdr n))))))
+    (define predecessor
+      (lambda (n)
+        (letrec ((loop
+                  (lambda (c)
+                    (if (equal? (successor c) n)
+                        c
+                        (loop (successor c))))))
+          (loop zero))))
+    (lambda (m)
+      (cond ((eqv? m 'zero) zero)
+            ((eqv? m 'iszero?) iszero?)
+            ((eqv? m 'successor) successor)
+            ((eqv? m 'predecessor) predecessor)
+            (else (error &quot;unknow method&quot; m))))))
+
+(define zero
+  ((positives 2) 'zero))
+(define iszero?
+  ((positives 2) 'iszero?))
+(define successor
+  ((positives 2) 'successor))
+
+
+(define predecessor
+  ((positives 2) 'predecessor))
+
+(predecessor (successor (successor (successor zero))))
+(define plus
+  (λ (x y)
+    (if (iszero? x)
+        y
+        (successor (plus (predecessor x) y)))))
+
+(define mul
+  (λ (x y)
+    (cond ((iszero? x) zero)
+          ((iszero? y) zero)
+          ((iszero? (predecessor x)) y)
+          (else (plus y (mul (predecessor x) y))))))
+
+(define fact
+  (λ (n)
+    (cond ((iszero? n) (successor zero))
+          ((iszero? (predecessor n)) (successor zero))
+          (else
+           (plus (mul n (fact (predecessor n))))))))
+
+
+
+
+</pre>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27544537/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-11 21:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27413238">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27413238/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27413238/" class="">1.4 Exercises</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27413238">
+              <div class="short">
+                
+                  <span class="">   第一章通过归纳定义grammar(采用EBNF); 然后演化出递归形式的程序；正如作者总结的：
+     When defining a procedure that operates on inductively defined data, the structure of the program should be patterned after the structure of the data.
+
+第一章的练习题也练习了一把，如下：
+<span class="code-holder">/代码内容已省略/</span></span>
+                <p class="pl">
+                  <span class="">2013-07-03 22:31</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                   第一章通过归纳定义grammar(采用EBNF); 然后演化出递归形式的程序；正如作者总结的：<div style="padding-bottom:1em;"></div>     <blockquote><q>When defining a procedure that operates on inductively defined data, the structure of the program should be patterned after the structure of the data.</q></blockquote><div style="padding-bottom:1em;"></div>第一章的练习题也练习了一把，如下：
+<pre class="source true python">
+#lang racket
+;;1.15
+
+&lt;代码开始 lang=&quot;c&quot;&gt;
+#lang racket
+
+(define duple
+  (λ (n x)
+    (if (zero? n)
+        '()
+        (cons x (duple (- n 1) x)))))
+
+(define invert
+  (λ (lst)
+    (if (null? lst)
+        '()
+        (cons (list (cadar lst) (caar lst)) (invert (cdr lst))))))
+
+(define down
+  (λ (lst)
+    (if (null? lst)
+        '()
+        (cons (car lst) (down (cdr lst))))))
+
+(define swapper
+  (λ (s1 s2 lst)
+    (if (null? lst)
+        '()
+        (cons
+         (subst-in-s-exp s1 s2 (car lst))
+         (swapper s1 s2 (cdr lst))))))
+(define subst-in-s-exp
+  (λ (s1 s2 sexp)
+    (if (symbol? sexp)
+        (if (eqv? sexp s1) 
+            s2
+            (if (eqv? sexp s2) s1 sexp))
+        (swapper s1 s2 sexp))))
+
+(define list-set
+  (λ (lst n x)
+    (if (= n 0)
+        (cons x (cdr lst))
+        (cons (car lst) (list-set (cdr lst) (- n 1) x)))))
+
+(define count-occurrences
+  (λ (s lst)
+    (cond
+      ((null? lst) 0)
+      ((eqv? s (car lst)) (+ 1 (count-occurrences s (cdr lst))))
+      (else (+ 0 (count-occurrences s (cdr lst)))))))
+;;1.21
+;; product : S-list * Slist -&gt; Slist
+(define product
+  (λ (sos1 sos2)
+    (if (null? sos1)
+        '()
+        (cons (list (car sos1) (car sos2)) (product (cdr sos1) (cdr sos2))))))
+
+;; 1.22
+;; filter-in : pred * list -&gt; list
+(define filter-in
+  (λ (pred lst)
+    (cond ((null? lst) '())
+          ((pred (car lst)) (cons (car lst) (filter-in pred (cdr lst))))
+          (else (filter-in pred (cdr lst))))))
+
+;; 1.24
+;; every : pred * list -&gt; Bool
+(define every?
+  (λ (pred lst)
+    (cond ((null? lst) #t)
+          ((pred (car lst)) (every? pred (cdr lst)))
+          (else #f))))
+;; 1.25
+;; exists? : pred * list -&gt; Bool
+(define exists? 
+  (λ (pred lst)
+    (cond ((null? lst) #f)
+          ((pred (car lst)) #t)
+          (else (exists? pred (cdr lst))))))
+
+;; 1.26
+;; up : lst -&gt; lst
+(define up
+  (λ (lst)
+    (cond ((null? lst) '())
+          ((symbol? lst) lst)
+          ((list? (car lst)) (list (up (car lst)) (up (cdr lst))))
+          (else (list (car lst) (up (cdr lst)))))))
+;; 1.28
+;; merge : list * list -&gt; list
+(define merge
+  (λ (l1 l2)
+    (cond ((null? l1) l2)
+          ((null? l2) l1)
+          ((&lt;= (car l1) (car l2))
+           (cons (car l1)
+                 (merge (cdr l1) l2)))
+          (else (cons (car l2)
+                      (merge l1 (cdr l2)))))))
+;; 1.29
+;; sort : list -&gt; list
+(define list-length
+  (lambda (lst)
+    (if (null? lst)
+        0
+        (+ 1 (list-length (cdr lst))))))
+
+(define sort
+  (λ (lst)
+    (cond ((null? lst) '())
+          ((= 1 (list-length lst))  lst)
+          ((&gt;= (car lst) (cadr lst))
+           (cons (cadr lst) 
+                 (sort (cons (car lst) (cddr lst)))))
+          (else (cons (car lst)
+                      (sort (cdr lst)))))))
+;; 1.30
+(define sort/predicate
+  (λ (pred lst)
+    (cond ((null? lst) '())
+          ((= 1 (list-length lst)) lst)
+          ((pred (car lst) (cadr lst))
+           (cons (cadr lst)
+                 (sort (cons
+                        (car lst) (cddr lst)))))
+          (else (cons
+                 (car lst)
+                 (sort (cdr lst)))))))
+
+;; 1.31
+;; bintree grammar :Bintree::=Int |(Symbol Bintree Bintree)
+
+(define leaf?
+  (λ (bintree)
+    (and (integer? (car bintree)) (null? (cadr bintree)) (null? (caddr bintree)))))
+
+(define lson
+  (λ (bintree)
+    (if (leaf? bintree)
+        bintree
+        (cadr bintree))))
+
+(define rson
+  (λ (bintree)
+    (if (leaf? bintree)
+        bintree
+        (caddr bintree))))
+
+(define contents-of
+  (λ (bintree)
+    (car bintree)))
+
+;; 1.32
+;; double-tree : Bintree -&gt; Bintree
+(define double-tree
+  (λ (bintree)
+    (cond
+      ((leaf? bintree) bintree)
+      ((integer? (car bintree))
+       (cons (* 2 (car bintree))
+             (double-tree (lson bintree))
+             (double-tree (rson bintree)))))))
+
+;;1.33
+;; 1.34
+;; path: int * bst -&gt; list
+(define (_path var bst p)
+  (cond ((null? bst) #f)
+        ((eq? (contents-of bst) var) p)
+        (else (if (&gt; var (contents-of bst)) (_path var (rson bst) (append p (list 'right)))
+                  (_path var (lson bst) (append p (list 'left)))))))
+
+(define path
+  (λ (var bst)
+    (_path var bst '())))
+
+;; 1.35
+;;number-leaves : bintree -&gt; Bintree
+;; depth-First traversal
+(define number-leaves
+  (λ (bintree)
+    (define (n-leaves n)
+      (cond ((null? bintree) '())
+            (else (list (contents-of bintree)
+                        (if (leaf? (rson bintree))
+                            (list (+ 1 n) (contents-of bintree) (number-leaves (lson bintree)))
+                            (list (number-leaves (rson bintree)) (lson bintree)))))))
+    (n-leaves 0)))
+
+
+</pre>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27413238/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-03 22:31
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27412261">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27412261/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27412261/" class="">2 Data Abstraction</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27412261">
+              <div class="short">
+                
+                  <span class="">2 Data Abstraction
+
+2.1 Specifying Data via Interfaces
+Every time we decide to represent a certain set of quantities in a particular way,we are defining a new data type: the data type whose values are those representations and whoes operations are the procudures that manipulate those entities. The representation of these entities is often complex , so we do not want to be concerned with their d...</span>
+                <p class="pl">
+                  <span class="">2013-07-03 21:44</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                2 Data Abstraction<div style="padding-bottom:1em;"></div>2.1 Specifying Data via Interfaces<div style="padding-bottom:1em;"></div>Every time we decide to represent a certain set of quantities in a particular way,we are defining a new data type: the data type whose values are those representations and whoes operations are the procudures that manipulate those entities. The representation of these entities is often complex , so we do not want to be concerned with their details when we can avoid them. We may also decide to change the representation of the data. The most efficient representation is often a lot more difficult to implement, so we may wish to develop a simple implementation first and only change to more efficient representation if it proves critical to the overall performance of a system.If we decide to change the representation of some data for any reason, we must be able to locate all parts of a program that are dependent on the representation.This is accomplished using the technique of data abstraction. Data abstraction divides a data type into two pieces: an interface and an implementation. The interface tells us what the data of the type represents, what the operations on the data are, and what properties these operations my be relied on to have. The implementation provides a specific representation of the data and code for the operations that make use of that data representation. A data type that is abstract in this way is said to be an abstract data type. The rest of the program, the client of the data type, manipulates the new data only through the operations specified in the interface. Thun is we wish to change the representation of the data, all we must do is change the implementation of the operations in the interface.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27412261/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-03 21:44
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27352362">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27352362/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27352362/" class="">1 Inductive Sets of Data</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27352362">
+              <div class="short">
+                
+                  <span class="">    Let us consider the definitions of some other useful sets.
+1. Many symbol manipulation procedures are designed to operate on lists that contain only symbols and other similarly restricted lists. We call these lists s-lists ,grammar defined as follows:
+         S-list ::= ({S-exp}*)
+         S-exp ::= Symbol | S-list
+
+    Let us look at the pieces of this definition.In this definition we h...</span>
+                <p class="pl">
+                  <span class="">2013-06-30 13:54</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                    Let us consider the definitions of some other useful sets.<div style="padding-bottom:1em;"></div>1. Many symbol manipulation procedures are designed to operate on lists that contain only symbols and other similarly restricted lists. We call these lists s-lists ,grammar defined as follows:<div style="padding-bottom:1em;"></div>         S-list ::= ({S-exp}*)<div style="padding-bottom:1em;"></div>         S-exp ::= Symbol | S-list<div style="padding-bottom:1em;"></div>    Let us look at the pieces of this definition.In this definition we have<div style="padding-bottom:1em;"></div>  * Nonterminal Symbols . These are the names of the sets being defined. In this case there is only two such set, but in general, there might be several sets being defined. These sets are sometimes call syntactic categories.<div style="padding-bottom:1em;"></div>  * Terminal Symbols. These are the characters in the external representation, in this case .,(,and ). We typically write these using a typewriter font, e.g. lambda.<div style="padding-bottom:1em;"></div>  * Productions. The rules are called productions . Each production has a left-hand side, which is a nonterminal symbol, and a right-hand side, which consist of terminal and nonterminal symbols. The left- and right-hand sides are usually separated by the symbol ::= , read is or can be. The right hand side specifies a method for construction members of syntactic category in term of other syntactic categories and terminal symbols, such as the left parenthesis, right parenthesis, and the period.<div style="padding-bottom:1em;"></div>   Often some syntactic categories mentioned in a production are left undefined when their meaning is sufficiently clear from context, such as S-list.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27352362/#comments">回应</a>&nbsp;&nbsp;
+                  2013-06-30 13:54
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="27544537">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27544537/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27544537/" class="">2.1 Specifying data via interface</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27544537">
+              <div class="short">
+                
+                  <span class="">     数据抽象：interface+implementation.  
+     2.1节的习题如下：
+<span class="code-holder">/代码内容已省略/</span>
+</span>
+                <p class="pl">
+                  <span class="">2013-07-11 21:48</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                     数据抽象：interface+implementation.  <div style="padding-bottom:1em;"></div>     2.1节的习题如下：
+<pre class="source true c">
+#lang racket
+;Let us encapsulate the operations of the interface into a 
+;message-accepting object so that we can represent the 
+;nonegative integers with the given base.
+(define positives
+  (lambda (base)
+    (define zero '())
+    (define iszero? null?)
+    (define successor
+      (lambda (n)
+        (if (iszero? n)
+            (cons 1 zero)
+            (if (= (car n) (- base 1))
+                (cons 0 (successor (cdr n)))
+                (cons (+ 1 (car n)) (cdr n))))))
+    (define predecessor
+      (lambda (n)
+        (letrec ((loop
+                  (lambda (c)
+                    (if (equal? (successor c) n)
+                        c
+                        (loop (successor c))))))
+          (loop zero))))
+    (lambda (m)
+      (cond ((eqv? m 'zero) zero)
+            ((eqv? m 'iszero?) iszero?)
+            ((eqv? m 'successor) successor)
+            ((eqv? m 'predecessor) predecessor)
+            (else (error &quot;unknow method&quot; m))))))
+
+(define zero
+  ((positives 2) 'zero))
+(define iszero?
+  ((positives 2) 'iszero?))
+(define successor
+  ((positives 2) 'successor))
+
+
+(define predecessor
+  ((positives 2) 'predecessor))
+
+(predecessor (successor (successor (successor zero))))
+(define plus
+  (λ (x y)
+    (if (iszero? x)
+        y
+        (successor (plus (predecessor x) y)))))
+
+(define mul
+  (λ (x y)
+    (cond ((iszero? x) zero)
+          ((iszero? y) zero)
+          ((iszero? (predecessor x)) y)
+          (else (plus y (mul (predecessor x) y))))))
+
+(define fact
+  (λ (n)
+    (cond ((iszero? n) (successor zero))
+          ((iszero? (predecessor n)) (successor zero))
+          (else
+           (plus (mul n (fact (predecessor n))))))))
+
+
+
+
+</pre>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27544537/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-11 21:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27413238">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27413238/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27413238/" class="">1.4 Exercises</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27413238">
+              <div class="short">
+                
+                  <span class="">   第一章通过归纳定义grammar(采用EBNF); 然后演化出递归形式的程序；正如作者总结的：
+     When defining a procedure that operates on inductively defined data, the structure of the program should be patterned after the structure of the data.
+
+第一章的练习题也练习了一把，如下：
+<span class="code-holder">/代码内容已省略/</span></span>
+                <p class="pl">
+                  <span class="">2013-07-03 22:31</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                   第一章通过归纳定义grammar(采用EBNF); 然后演化出递归形式的程序；正如作者总结的：<div style="padding-bottom:1em;"></div>     <blockquote><q>When defining a procedure that operates on inductively defined data, the structure of the program should be patterned after the structure of the data.</q></blockquote><div style="padding-bottom:1em;"></div>第一章的练习题也练习了一把，如下：
+<pre class="source true python">
+#lang racket
+;;1.15
+
+&lt;代码开始 lang=&quot;c&quot;&gt;
+#lang racket
+
+(define duple
+  (λ (n x)
+    (if (zero? n)
+        '()
+        (cons x (duple (- n 1) x)))))
+
+(define invert
+  (λ (lst)
+    (if (null? lst)
+        '()
+        (cons (list (cadar lst) (caar lst)) (invert (cdr lst))))))
+
+(define down
+  (λ (lst)
+    (if (null? lst)
+        '()
+        (cons (car lst) (down (cdr lst))))))
+
+(define swapper
+  (λ (s1 s2 lst)
+    (if (null? lst)
+        '()
+        (cons
+         (subst-in-s-exp s1 s2 (car lst))
+         (swapper s1 s2 (cdr lst))))))
+(define subst-in-s-exp
+  (λ (s1 s2 sexp)
+    (if (symbol? sexp)
+        (if (eqv? sexp s1) 
+            s2
+            (if (eqv? sexp s2) s1 sexp))
+        (swapper s1 s2 sexp))))
+
+(define list-set
+  (λ (lst n x)
+    (if (= n 0)
+        (cons x (cdr lst))
+        (cons (car lst) (list-set (cdr lst) (- n 1) x)))))
+
+(define count-occurrences
+  (λ (s lst)
+    (cond
+      ((null? lst) 0)
+      ((eqv? s (car lst)) (+ 1 (count-occurrences s (cdr lst))))
+      (else (+ 0 (count-occurrences s (cdr lst)))))))
+;;1.21
+;; product : S-list * Slist -&gt; Slist
+(define product
+  (λ (sos1 sos2)
+    (if (null? sos1)
+        '()
+        (cons (list (car sos1) (car sos2)) (product (cdr sos1) (cdr sos2))))))
+
+;; 1.22
+;; filter-in : pred * list -&gt; list
+(define filter-in
+  (λ (pred lst)
+    (cond ((null? lst) '())
+          ((pred (car lst)) (cons (car lst) (filter-in pred (cdr lst))))
+          (else (filter-in pred (cdr lst))))))
+
+;; 1.24
+;; every : pred * list -&gt; Bool
+(define every?
+  (λ (pred lst)
+    (cond ((null? lst) #t)
+          ((pred (car lst)) (every? pred (cdr lst)))
+          (else #f))))
+;; 1.25
+;; exists? : pred * list -&gt; Bool
+(define exists? 
+  (λ (pred lst)
+    (cond ((null? lst) #f)
+          ((pred (car lst)) #t)
+          (else (exists? pred (cdr lst))))))
+
+;; 1.26
+;; up : lst -&gt; lst
+(define up
+  (λ (lst)
+    (cond ((null? lst) '())
+          ((symbol? lst) lst)
+          ((list? (car lst)) (list (up (car lst)) (up (cdr lst))))
+          (else (list (car lst) (up (cdr lst)))))))
+;; 1.28
+;; merge : list * list -&gt; list
+(define merge
+  (λ (l1 l2)
+    (cond ((null? l1) l2)
+          ((null? l2) l1)
+          ((&lt;= (car l1) (car l2))
+           (cons (car l1)
+                 (merge (cdr l1) l2)))
+          (else (cons (car l2)
+                      (merge l1 (cdr l2)))))))
+;; 1.29
+;; sort : list -&gt; list
+(define list-length
+  (lambda (lst)
+    (if (null? lst)
+        0
+        (+ 1 (list-length (cdr lst))))))
+
+(define sort
+  (λ (lst)
+    (cond ((null? lst) '())
+          ((= 1 (list-length lst))  lst)
+          ((&gt;= (car lst) (cadr lst))
+           (cons (cadr lst) 
+                 (sort (cons (car lst) (cddr lst)))))
+          (else (cons (car lst)
+                      (sort (cdr lst)))))))
+;; 1.30
+(define sort/predicate
+  (λ (pred lst)
+    (cond ((null? lst) '())
+          ((= 1 (list-length lst)) lst)
+          ((pred (car lst) (cadr lst))
+           (cons (cadr lst)
+                 (sort (cons
+                        (car lst) (cddr lst)))))
+          (else (cons
+                 (car lst)
+                 (sort (cdr lst)))))))
+
+;; 1.31
+;; bintree grammar :Bintree::=Int |(Symbol Bintree Bintree)
+
+(define leaf?
+  (λ (bintree)
+    (and (integer? (car bintree)) (null? (cadr bintree)) (null? (caddr bintree)))))
+
+(define lson
+  (λ (bintree)
+    (if (leaf? bintree)
+        bintree
+        (cadr bintree))))
+
+(define rson
+  (λ (bintree)
+    (if (leaf? bintree)
+        bintree
+        (caddr bintree))))
+
+(define contents-of
+  (λ (bintree)
+    (car bintree)))
+
+;; 1.32
+;; double-tree : Bintree -&gt; Bintree
+(define double-tree
+  (λ (bintree)
+    (cond
+      ((leaf? bintree) bintree)
+      ((integer? (car bintree))
+       (cons (* 2 (car bintree))
+             (double-tree (lson bintree))
+             (double-tree (rson bintree)))))))
+
+;;1.33
+;; 1.34
+;; path: int * bst -&gt; list
+(define (_path var bst p)
+  (cond ((null? bst) #f)
+        ((eq? (contents-of bst) var) p)
+        (else (if (&gt; var (contents-of bst)) (_path var (rson bst) (append p (list 'right)))
+                  (_path var (lson bst) (append p (list 'left)))))))
+
+(define path
+  (λ (var bst)
+    (_path var bst '())))
+
+;; 1.35
+;;number-leaves : bintree -&gt; Bintree
+;; depth-First traversal
+(define number-leaves
+  (λ (bintree)
+    (define (n-leaves n)
+      (cond ((null? bintree) '())
+            (else (list (contents-of bintree)
+                        (if (leaf? (rson bintree))
+                            (list (+ 1 n) (contents-of bintree) (number-leaves (lson bintree)))
+                            (list (number-leaves (rson bintree)) (lson bintree)))))))
+    (n-leaves 0)))
+
+
+</pre>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27413238/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-03 22:31
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27412261">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27412261/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27412261/" class="">2 Data Abstraction</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27412261">
+              <div class="short">
+                
+                  <span class="">2 Data Abstraction
+
+2.1 Specifying Data via Interfaces
+Every time we decide to represent a certain set of quantities in a particular way,we are defining a new data type: the data type whose values are those representations and whoes operations are the procudures that manipulate those entities. The representation of these entities is often complex , so we do not want to be concerned with their d...</span>
+                <p class="pl">
+                  <span class="">2013-07-03 21:44</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                2 Data Abstraction<div style="padding-bottom:1em;"></div>2.1 Specifying Data via Interfaces<div style="padding-bottom:1em;"></div>Every time we decide to represent a certain set of quantities in a particular way,we are defining a new data type: the data type whose values are those representations and whoes operations are the procudures that manipulate those entities. The representation of these entities is often complex , so we do not want to be concerned with their details when we can avoid them. We may also decide to change the representation of the data. The most efficient representation is often a lot more difficult to implement, so we may wish to develop a simple implementation first and only change to more efficient representation if it proves critical to the overall performance of a system.If we decide to change the representation of some data for any reason, we must be able to locate all parts of a program that are dependent on the representation.This is accomplished using the technique of data abstraction. Data abstraction divides a data type into two pieces: an interface and an implementation. The interface tells us what the data of the type represents, what the operations on the data are, and what properties these operations my be relied on to have. The implementation provides a specific representation of the data and code for the operations that make use of that data representation. A data type that is abstract in this way is said to be an abstract data type. The rest of the program, the client of the data type, manipulates the new data only through the operations specified in the interface. Thun is we wish to change the representation of the data, all we must do is change the implementation of the operations in the interface.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27412261/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-03 21:44
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27352362">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27352362/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27352362/" class="">1 Inductive Sets of Data</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27352362">
+              <div class="short">
+                
+                  <span class="">    Let us consider the definitions of some other useful sets.
+1. Many symbol manipulation procedures are designed to operate on lists that contain only symbols and other similarly restricted lists. We call these lists s-lists ,grammar defined as follows:
+         S-list ::= ({S-exp}*)
+         S-exp ::= Symbol | S-list
+
+    Let us look at the pieces of this definition.In this definition we h...</span>
+                <p class="pl">
+                  <span class="">2013-06-30 13:54</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                    Let us consider the definitions of some other useful sets.<div style="padding-bottom:1em;"></div>1. Many symbol manipulation procedures are designed to operate on lists that contain only symbols and other similarly restricted lists. We call these lists s-lists ,grammar defined as follows:<div style="padding-bottom:1em;"></div>         S-list ::= ({S-exp}*)<div style="padding-bottom:1em;"></div>         S-exp ::= Symbol | S-list<div style="padding-bottom:1em;"></div>    Let us look at the pieces of this definition.In this definition we have<div style="padding-bottom:1em;"></div>  * Nonterminal Symbols . These are the names of the sets being defined. In this case there is only two such set, but in general, there might be several sets being defined. These sets are sometimes call syntactic categories.<div style="padding-bottom:1em;"></div>  * Terminal Symbols. These are the characters in the external representation, in this case .,(,and ). We typically write these using a typewriter font, e.g. lambda.<div style="padding-bottom:1em;"></div>  * Productions. The rules are called productions . Each production has a left-hand side, which is a nonterminal symbol, and a right-hand side, which consist of terminal and nonterminal symbols. The left- and right-hand sides are usually separated by the symbol ::= , read is or can be. The right hand side specifies a method for construction members of syntactic category in term of other syntactic categories and terminal symbols, such as the left parenthesis, right parenthesis, and the period.<div style="padding-bottom:1em;"></div>   Often some syntactic categories mentioned in a production are left undefined when their meaning is sufficiently clear from context, such as S-list.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27352362/#comments">回应</a>&nbsp;&nbsp;
+                  2013-06-30 13:54
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="27544537">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27544537/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27544537/" class="">2.1 Specifying data via interface</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27544537">
+              <div class="short">
+                
+                  <span class="">     数据抽象：interface+implementation.  
+     2.1节的习题如下：
+<span class="code-holder">/代码内容已省略/</span>
+</span>
+                <p class="pl">
+                  <span class="">2013-07-11 21:48</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                     数据抽象：interface+implementation.  <div style="padding-bottom:1em;"></div>     2.1节的习题如下：
+<pre class="source true c">
+#lang racket
+;Let us encapsulate the operations of the interface into a 
+;message-accepting object so that we can represent the 
+;nonegative integers with the given base.
+(define positives
+  (lambda (base)
+    (define zero '())
+    (define iszero? null?)
+    (define successor
+      (lambda (n)
+        (if (iszero? n)
+            (cons 1 zero)
+            (if (= (car n) (- base 1))
+                (cons 0 (successor (cdr n)))
+                (cons (+ 1 (car n)) (cdr n))))))
+    (define predecessor
+      (lambda (n)
+        (letrec ((loop
+                  (lambda (c)
+                    (if (equal? (successor c) n)
+                        c
+                        (loop (successor c))))))
+          (loop zero))))
+    (lambda (m)
+      (cond ((eqv? m 'zero) zero)
+            ((eqv? m 'iszero?) iszero?)
+            ((eqv? m 'successor) successor)
+            ((eqv? m 'predecessor) predecessor)
+            (else (error &quot;unknow method&quot; m))))))
+
+(define zero
+  ((positives 2) 'zero))
+(define iszero?
+  ((positives 2) 'iszero?))
+(define successor
+  ((positives 2) 'successor))
+
+
+(define predecessor
+  ((positives 2) 'predecessor))
+
+(predecessor (successor (successor (successor zero))))
+(define plus
+  (λ (x y)
+    (if (iszero? x)
+        y
+        (successor (plus (predecessor x) y)))))
+
+(define mul
+  (λ (x y)
+    (cond ((iszero? x) zero)
+          ((iszero? y) zero)
+          ((iszero? (predecessor x)) y)
+          (else (plus y (mul (predecessor x) y))))))
+
+(define fact
+  (λ (n)
+    (cond ((iszero? n) (successor zero))
+          ((iszero? (predecessor n)) (successor zero))
+          (else
+           (plus (mul n (fact (predecessor n))))))))
+
+
+
+
+</pre>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27544537/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-11 21:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27413238">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27413238/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27413238/" class="">1.4 Exercises</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27413238">
+              <div class="short">
+                
+                  <span class="">   第一章通过归纳定义grammar(采用EBNF); 然后演化出递归形式的程序；正如作者总结的：
+     When defining a procedure that operates on inductively defined data, the structure of the program should be patterned after the structure of the data.
+
+第一章的练习题也练习了一把，如下：
+<span class="code-holder">/代码内容已省略/</span></span>
+                <p class="pl">
+                  <span class="">2013-07-03 22:31</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                   第一章通过归纳定义grammar(采用EBNF); 然后演化出递归形式的程序；正如作者总结的：<div style="padding-bottom:1em;"></div>     <blockquote><q>When defining a procedure that operates on inductively defined data, the structure of the program should be patterned after the structure of the data.</q></blockquote><div style="padding-bottom:1em;"></div>第一章的练习题也练习了一把，如下：
+<pre class="source true python">
+#lang racket
+;;1.15
+
+&lt;代码开始 lang=&quot;c&quot;&gt;
+#lang racket
+
+(define duple
+  (λ (n x)
+    (if (zero? n)
+        '()
+        (cons x (duple (- n 1) x)))))
+
+(define invert
+  (λ (lst)
+    (if (null? lst)
+        '()
+        (cons (list (cadar lst) (caar lst)) (invert (cdr lst))))))
+
+(define down
+  (λ (lst)
+    (if (null? lst)
+        '()
+        (cons (car lst) (down (cdr lst))))))
+
+(define swapper
+  (λ (s1 s2 lst)
+    (if (null? lst)
+        '()
+        (cons
+         (subst-in-s-exp s1 s2 (car lst))
+         (swapper s1 s2 (cdr lst))))))
+(define subst-in-s-exp
+  (λ (s1 s2 sexp)
+    (if (symbol? sexp)
+        (if (eqv? sexp s1) 
+            s2
+            (if (eqv? sexp s2) s1 sexp))
+        (swapper s1 s2 sexp))))
+
+(define list-set
+  (λ (lst n x)
+    (if (= n 0)
+        (cons x (cdr lst))
+        (cons (car lst) (list-set (cdr lst) (- n 1) x)))))
+
+(define count-occurrences
+  (λ (s lst)
+    (cond
+      ((null? lst) 0)
+      ((eqv? s (car lst)) (+ 1 (count-occurrences s (cdr lst))))
+      (else (+ 0 (count-occurrences s (cdr lst)))))))
+;;1.21
+;; product : S-list * Slist -&gt; Slist
+(define product
+  (λ (sos1 sos2)
+    (if (null? sos1)
+        '()
+        (cons (list (car sos1) (car sos2)) (product (cdr sos1) (cdr sos2))))))
+
+;; 1.22
+;; filter-in : pred * list -&gt; list
+(define filter-in
+  (λ (pred lst)
+    (cond ((null? lst) '())
+          ((pred (car lst)) (cons (car lst) (filter-in pred (cdr lst))))
+          (else (filter-in pred (cdr lst))))))
+
+;; 1.24
+;; every : pred * list -&gt; Bool
+(define every?
+  (λ (pred lst)
+    (cond ((null? lst) #t)
+          ((pred (car lst)) (every? pred (cdr lst)))
+          (else #f))))
+;; 1.25
+;; exists? : pred * list -&gt; Bool
+(define exists? 
+  (λ (pred lst)
+    (cond ((null? lst) #f)
+          ((pred (car lst)) #t)
+          (else (exists? pred (cdr lst))))))
+
+;; 1.26
+;; up : lst -&gt; lst
+(define up
+  (λ (lst)
+    (cond ((null? lst) '())
+          ((symbol? lst) lst)
+          ((list? (car lst)) (list (up (car lst)) (up (cdr lst))))
+          (else (list (car lst) (up (cdr lst)))))))
+;; 1.28
+;; merge : list * list -&gt; list
+(define merge
+  (λ (l1 l2)
+    (cond ((null? l1) l2)
+          ((null? l2) l1)
+          ((&lt;= (car l1) (car l2))
+           (cons (car l1)
+                 (merge (cdr l1) l2)))
+          (else (cons (car l2)
+                      (merge l1 (cdr l2)))))))
+;; 1.29
+;; sort : list -&gt; list
+(define list-length
+  (lambda (lst)
+    (if (null? lst)
+        0
+        (+ 1 (list-length (cdr lst))))))
+
+(define sort
+  (λ (lst)
+    (cond ((null? lst) '())
+          ((= 1 (list-length lst))  lst)
+          ((&gt;= (car lst) (cadr lst))
+           (cons (cadr lst) 
+                 (sort (cons (car lst) (cddr lst)))))
+          (else (cons (car lst)
+                      (sort (cdr lst)))))))
+;; 1.30
+(define sort/predicate
+  (λ (pred lst)
+    (cond ((null? lst) '())
+          ((= 1 (list-length lst)) lst)
+          ((pred (car lst) (cadr lst))
+           (cons (cadr lst)
+                 (sort (cons
+                        (car lst) (cddr lst)))))
+          (else (cons
+                 (car lst)
+                 (sort (cdr lst)))))))
+
+;; 1.31
+;; bintree grammar :Bintree::=Int |(Symbol Bintree Bintree)
+
+(define leaf?
+  (λ (bintree)
+    (and (integer? (car bintree)) (null? (cadr bintree)) (null? (caddr bintree)))))
+
+(define lson
+  (λ (bintree)
+    (if (leaf? bintree)
+        bintree
+        (cadr bintree))))
+
+(define rson
+  (λ (bintree)
+    (if (leaf? bintree)
+        bintree
+        (caddr bintree))))
+
+(define contents-of
+  (λ (bintree)
+    (car bintree)))
+
+;; 1.32
+;; double-tree : Bintree -&gt; Bintree
+(define double-tree
+  (λ (bintree)
+    (cond
+      ((leaf? bintree) bintree)
+      ((integer? (car bintree))
+       (cons (* 2 (car bintree))
+             (double-tree (lson bintree))
+             (double-tree (rson bintree)))))))
+
+;;1.33
+;; 1.34
+;; path: int * bst -&gt; list
+(define (_path var bst p)
+  (cond ((null? bst) #f)
+        ((eq? (contents-of bst) var) p)
+        (else (if (&gt; var (contents-of bst)) (_path var (rson bst) (append p (list 'right)))
+                  (_path var (lson bst) (append p (list 'left)))))))
+
+(define path
+  (λ (var bst)
+    (_path var bst '())))
+
+;; 1.35
+;;number-leaves : bintree -&gt; Bintree
+;; depth-First traversal
+(define number-leaves
+  (λ (bintree)
+    (define (n-leaves n)
+      (cond ((null? bintree) '())
+            (else (list (contents-of bintree)
+                        (if (leaf? (rson bintree))
+                            (list (+ 1 n) (contents-of bintree) (number-leaves (lson bintree)))
+                            (list (number-leaves (rson bintree)) (lson bintree)))))))
+    (n-leaves 0)))
+
+
+</pre>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27413238/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-03 22:31
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27412261">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27412261/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27412261/" class="">2 Data Abstraction</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27412261">
+              <div class="short">
+                
+                  <span class="">2 Data Abstraction
+
+2.1 Specifying Data via Interfaces
+Every time we decide to represent a certain set of quantities in a particular way,we are defining a new data type: the data type whose values are those representations and whoes operations are the procudures that manipulate those entities. The representation of these entities is often complex , so we do not want to be concerned with their d...</span>
+                <p class="pl">
+                  <span class="">2013-07-03 21:44</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                2 Data Abstraction<div style="padding-bottom:1em;"></div>2.1 Specifying Data via Interfaces<div style="padding-bottom:1em;"></div>Every time we decide to represent a certain set of quantities in a particular way,we are defining a new data type: the data type whose values are those representations and whoes operations are the procudures that manipulate those entities. The representation of these entities is often complex , so we do not want to be concerned with their details when we can avoid them. We may also decide to change the representation of the data. The most efficient representation is often a lot more difficult to implement, so we may wish to develop a simple implementation first and only change to more efficient representation if it proves critical to the overall performance of a system.If we decide to change the representation of some data for any reason, we must be able to locate all parts of a program that are dependent on the representation.This is accomplished using the technique of data abstraction. Data abstraction divides a data type into two pieces: an interface and an implementation. The interface tells us what the data of the type represents, what the operations on the data are, and what properties these operations my be relied on to have. The implementation provides a specific representation of the data and code for the operations that make use of that data representation. A data type that is abstract in this way is said to be an abstract data type. The rest of the program, the client of the data type, manipulates the new data only through the operations specified in the interface. Thun is we wish to change the representation of the data, all we must do is change the implementation of the operations in the interface.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27412261/#comments">回应</a>&nbsp;&nbsp;
+                  2013-07-03 21:44
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="27352362">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/xulao/"><img src="https://img3.doubanio.com/icon/u4259077-93.jpg" alt="老徐" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/27352362/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/27352362/" class="">1 Inductive Sets of Data</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/xulao/" class=" " title="老徐">老徐</a>
+              
+            </p>
+            <div class="reading-note" data-cid="27352362">
+              <div class="short">
+                
+                  <span class="">    Let us consider the definitions of some other useful sets.
+1. Many symbol manipulation procedures are designed to operate on lists that contain only symbols and other similarly restricted lists. We call these lists s-lists ,grammar defined as follows:
+         S-list ::= ({S-exp}*)
+         S-exp ::= Symbol | S-list
+
+    Let us look at the pieces of this definition.In this definition we h...</span>
+                <p class="pl">
+                  <span class="">2013-06-30 13:54</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                    Let us consider the definitions of some other useful sets.<div style="padding-bottom:1em;"></div>1. Many symbol manipulation procedures are designed to operate on lists that contain only symbols and other similarly restricted lists. We call these lists s-lists ,grammar defined as follows:<div style="padding-bottom:1em;"></div>         S-list ::= ({S-exp}*)<div style="padding-bottom:1em;"></div>         S-exp ::= Symbol | S-list<div style="padding-bottom:1em;"></div>    Let us look at the pieces of this definition.In this definition we have<div style="padding-bottom:1em;"></div>  * Nonterminal Symbols . These are the names of the sets being defined. In this case there is only two such set, but in general, there might be several sets being defined. These sets are sometimes call syntactic categories.<div style="padding-bottom:1em;"></div>  * Terminal Symbols. These are the characters in the external representation, in this case .,(,and ). We typically write these using a typewriter font, e.g. lambda.<div style="padding-bottom:1em;"></div>  * Productions. The rules are called productions . Each production has a left-hand side, which is a nonterminal symbol, and a right-hand side, which consist of terminal and nonterminal symbols. The left- and right-hand sides are usually separated by the symbol ::= , read is or can be. The right hand side specifies a method for construction members of syntactic category in term of other syntactic categories and terminal symbols, such as the left parenthesis, right parenthesis, and the period.<div style="padding-bottom:1em;"></div>   Often some syntactic categories mentioned in a production are left undefined when their meaning is sufficiently clear from context, such as S-list.
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/27352362/#comments">回应</a>&nbsp;&nbsp;
+                  2013-06-30 13:54
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        <span>
+            <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=discuss">
+              <span>在这本书的论坛里发言</span>
+            </a>
+        </span>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=85500&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=85500&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_02620627982890618%2F%3Fasin%3D0262062798%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3D0262062798%26linkCode%3Ddf0&amp;cntvendor=1&amp;srcsubj=3136252&amp;type=bkbuy&amp;subject=3136252" class="">
+                      <span class="">亚马逊</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=85500&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=85500&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_02620627982890618%2F%3Fasin%3D0262062798%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3D0262062798%26linkCode%3Ddf0&amp;cntvendor=1&amp;srcsubj=3136252&amp;type=bkbuy&amp;subject=3136252" class="buylink-price ">
+                      <span class="">
+                        855.00 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/3136252/buylinks">
+              &gt; 查看1家网店价格
+                (855.00 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+<div class="gray_ad" id="borrowinfo">
+  
+  
+
+  <h2>
+    <span class="">在哪儿借这本书</span>
+      ······
+
+  </h2>
+
+
+  <ul class="bs more-after">
+      
+      <li style="border: none">
+        <a href="https://www.douban.com/link2/?url=http%3A%2F%2Fipac.library.sh.cn%2Fipac20%2Fipac.jsp%3Faspect%3Dbasic_search%26profile%3Dsl%26index%3DISBN%26term%3D9780262062794&amp;subject=0262062798&amp;type=borrow&amp;library=10001&amp;link2key=33cef1baa9" target="_blank">上海图书馆(1)</a>
+      </li>
+  </ul>
+  <div class="clearfix"></div>
+  <!--<div class="ft pl">-->
+    <!--<a class="rr"  href="https://book.douban.com/library_invitation">&gt; 图书馆合作</a>-->
+    <!--找不到你需要的图书馆？-->
+  <!--</div>-->
+</div>
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1019976">全部3</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/1761927/">The MIT Press版</a>
+          2001-1-29 / 23人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/4030015/">The MIT Press版</a>
+          1992-01-07 / 1人读过
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/3136252/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/1128439/" target="_blank">通向Lisp之路</a>
+                <span class="pl">(fzwudc)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/218294/" target="_blank">语言、思维与智能</a>
+                <span class="pl">(pem)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/620080/" target="_blank">LISP &amp; FP</a>
+                <span class="pl">([已注销])</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1390738/" target="_blank">程序解体诸因</a>
+                <span class="pl">(威廉他)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1822729/" target="_blank">Programming Language</a>
+                <span class="pl">(Kitorinix)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/nullao/"><img src="https://img3.doubanio.com/icon/u57548584-3.jpg" class="pil" alt="Duke" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/nullao/">Duke</a><br/>
+      <div class="pl ll">          1月10日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/mckincy/"><img src="https://img3.doubanio.com/icon/u1280471-233.jpg" class="pil" alt="Mc" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/mckincy/">Mc</a><br/>
+      <div class="pl ll">          1月7日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/qc1iu/"><img src="https://img1.doubanio.com/icon/u33302111-7.jpg" class="pil" alt="qqq" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/qc1iu/">qqq</a><br/>
+      <div class="pl ll">          1月6日          读过      </div>
+
+        <span class="allstar30" title="还行"></span>
+      <br/>
+
+      <span class="pl">tags:Programming 程序设计</span><br />
+
+          <span class="">读的时候感觉很多地方难理解，不过理解之后发现其实讲的东西之前编程都遇到过并思考过，这里只是用fp的方式表达了一遍罢了。读起来难理解的原因是，同样的概念用了不一样的view去解读，就像突然让你用3进制做运算一样。不是我们天生就会10进制，而是学习它的时候的痛苦大多数人都已经忘记了，此时突然让你用3进制运算那更是痛苦。看完cps感觉已经没必要看下去了，都是一样的东西。</span> <br/>
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3136252/doings">46人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3136252/collections">40人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3136252/wishes">591人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有591人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于Essentials of Programming Languages, 3rd Edition的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/3136252/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = '8JqNcwv7Ndo',
+            criteria = '7:编程语言|7:Programming|7:计算机科学|7:scheme|7:ProgramLanguages|7:计算机|7:编程|7:programming|7:基础理论|7:lisp|3:/subject/3136252/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- daisy8b-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

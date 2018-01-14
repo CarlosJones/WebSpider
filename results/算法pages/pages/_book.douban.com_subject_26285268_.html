@@ -1,0 +1,3736 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>第一本Docker书 (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/26285268/">
+<meta name="keywords" content="第一本Docker书,[澳]詹姆斯•特恩布尔（James Turnbull）,人民邮电出版社,2014-12,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书第一本Docker书 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/26285268/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">第一本Docker书</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img1.doubanio.com/lpic/s27967469.jpg" title="第一本Docker书">
+    <img src="https://img1.doubanio.com/lpic/s27967469.jpg" title="点击看大图" alt="第一本Docker书"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/%E8%A9%B9%E5%A7%86%E6%96%AF%E2%80%A2%E7%89%B9%E6%81%A9%E5%B8%83%E5%B0%94">[澳]詹姆斯•特恩布尔（James Turnbull）</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> 人民邮电出版社<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span>
+      <span class="pl"> 译者</span>:
+        
+        
+        <a class="" href="/search/%E6%9D%8E%E5%85%86%E6%B5%B7%20%E5%88%98%E6%96%8C%20%E5%B7%A8%E9%9C%87">李兆海 刘斌 巨震</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2014-12<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 252<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> 59<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> 平装<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9787115377333<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 7.4 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar35"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">293</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:18px"></div>
+
+            <span class="rating_per">13.7%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">47.4%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:50px"></div>
+
+            <span class="rating_per">37.2%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:1px"></div>
+
+            <span class="rating_per">1.4%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.3%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26285268-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26285268-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-26285268-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26285268-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26285268-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26285268-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26285268-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-26285268-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-26285268">
+        <a href="#" data-url="https://book.douban.com/subject/26285268/" data-desc="" data-title="书籍《第一本Docker书》 (来自豆瓣) " data-pic="https://img1.doubanio.com/lpic/s27967469.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_26285268"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>全球第一本Docker技术图书中文版，Docker中文社区鼎力支持！</p>    <p>Docker核心团队成员权威著作，在技术圈中很有影响力。</p>    <p>既是第一本Docker书，也非常适合作为学习Docker的第一本入门书。</p>    <p>Docker是一个开源的应用容器引擎，让开发者可以将他们的应用和依赖包打包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。容器完全使用沙箱机制，相互之间不会有任何接口。几乎没有性能开销，可以很容易地在机器和数据中心中运行。最重要的是，它不依赖于任何语言、框架或包装系统。</p>    <p>Docker 是一个开源的应用容器引擎，开发者可以利用Docker 打包自己的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux 机器上，也可以实现虚拟化。</p>    <p>本书由Docker 公司前服务与支持副总裁James Turnbull 编写，是权...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>全球第一本Docker技术图书中文版，Docker中文社区鼎力支持！</p>    <p>Docker核心团队成员权威著作，在技术圈中很有影响力。</p>    <p>既是第一本Docker书，也非常适合作为学习Docker的第一本入门书。</p>    <p>Docker是一个开源的应用容器引擎，让开发者可以将他们的应用和依赖包打包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。容器完全使用沙箱机制，相互之间不会有任何接口。几乎没有性能开销，可以很容易地在机器和数据中心中运行。最重要的是，它不依赖于任何语言、框架或包装系统。</p>    <p>Docker 是一个开源的应用容器引擎，开发者可以利用Docker 打包自己的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux 机器上，也可以实现虚拟化。</p>    <p>本书由Docker 公司前服务与支持副总裁James Turnbull 编写，是权威的Docker 开发指南。本书会指导读者完成Docker 的安装、部署、管理和扩展，带领读者经历从测试到生产的整个开发生命周期，让读者了解Docker 适用于什么场景。书中先介绍Docker 及其组件的基础知识，然后用Docker 构建容器和服务来完成各种任务：利用Docker 为新项目建立测试环境，演示如何使用持续集成的工作流集成Docker，如何构建应用程序服务和平台，如何使用Docker 的API，如何扩展Docker。</p>    <p>本书适合对Docker 或容器开发感兴趣的系统管理员、运维人员和开发人员阅读。</p>    <p>图书评价：</p>    <p>DevOps未死，ContainerOps已到</p>    <p>发现Docker项目还是2013年中，我正在为构架一个Micro Service的游戏云而测试各种PaaS平台和产品。研究CloudFoundry的过程中，被Warden子项目吸引，转而在GitHub中寻找类似的、更容易使用和部署的容器虚拟化解决方案，最终一个Linux Container的框架Docker成为我的首选。2013年底在深圳举行的ECUG Con（实效云时效用户组大会）是我第一次在大型的技术会议上宣讲Docker开源技术，此时它已经被Golang社区评为2013年的十大杀手级应用，也是这次会议我开始了Docker技术布道之旅。从LXC的框架到Container引擎，再到如今的SaaS平台，Docker在开源社区的强大推动下快速向前演进，ContainerOps平台或是Docker的下一个里程碑。</p>    <p>对Docker研究得越多，就越容易被它在网络、安全方面的各种问题所困扰，忘却了Docker使用Union FileSystem技术带来的巨大技术变革的机会。当超越容器虚拟化引擎的标签去看Docker时，发现它是实现应用版本管理的最佳技术选择。比起从源代码的某个分支或标签起构建应用的版本，Union FileSystem更适于实现从开发到运维的版本管理。随着OverlayFS被Linux内核3.18合并到主干，Docker也会在最新的版本中支持它（也许在你读这本书的时候就已经支持了）。不管是AUFS还是OverlayFS，将摆脱被认为是嵌入式设备的文件格式，成为应用版本管理的技术基石。</p>    <p>在一次技术布道之后，有听众和我交流如何使用Gnome Desktop的Docker容器为团队提供标准的Android开发环境。正值Docker在刚刚发布的1.2版本中加入了Device特性，我建议他可以使用这个特性为Desktop加入真机的调试功能。此时我才意识到开发环境甚至是桌面环境是可以通过Docker容器来实现统一的。当微软公司和Docker深度合作的新闻震惊所有人时，才发现微软早在多年前就布局容器虚拟化的技术。Windows成为最后一个（FreeBSD有容器引擎Jails，Solaris有容器引擎Zones）能运行容器的主流操作系统。Windows操作系统可以通过容器化技术运行多个Windows的容器，Docker引擎也终于有了打通所有平台的机会。不管是Linux还是Windows，开发环境最终都可以被容器管理起来，开发配置管理将会变得非常简单。</p>    <p>当软件的开发环境、版本管理、交付和运行都以Docker为工具Container为基础进行流转时，就构成了以Container为核心的开发和运维流程，软件的构架也因此发生改变（Micro Service的构架方式可能会因此流行）。但持续集成、持续部署和自动化运维等生产理念没有改变，只是增加了Container的解决方案，未来必定会有基于Docker的平台来管理整个开发和生产的流程。</p>    <p>DevOps未死，ContainerOps已到。</p>    <p>在此感谢三位译者李兆海、刘斌和巨震的辛苦工作，把第一本Docker技术书籍带入中国。这不仅是一本Docker技术的入门书籍，也介绍了很多Docker的最佳实践，是学习Docker的绝佳选择。尽管没有参与此书的翻译，甚为遗憾，但我会继续努力在国内推广Docker开源技术。</p>    <p>马全一</p>    <p>Docker 中文社区和 docker.cn 项目创始人，Docker 开源技术布道师，资深构架师</p>    <p></p>    <p>这本书用了大量简短可操作的程序实例介绍Docker的工作原理，几乎页页都是满满的代码干货，程序员读者可跟着这些例子自己动手玩转Docker，这真是一部专为程序员写的好书！</p>    <p>——毛文波，道里云CEO，曾创建EMC中国实验室并担任首席科学家，曾参与创建HP中国实验室</p>    <p>这本书由曾任职于Docker公司的资深工程师编写，由国内社区以最快的速度完成翻译，是学习Docker的最佳入门书籍。如果你是一位希望让自己的代码运行在云端的程序员，现在就开始学习Docker吧！</p>    <p>——喻勇，Cloud Foundry社区创始人</p>    <p>正是因为Docker将对传统IT技术带来“革命性”的冲击，所以我们看到围绕Docker的创业项目如火如荼。IT从业人员应该及早拥抱Docker，拥抱变化。阅读本书就是最佳入门途径。</p>    <p>——陈轶飞，原百度PaaS平台负责人，国内最早大规模应用Docker的实践者</p>    <p>Docker今天已经算是明星技术了，各种技术大会都会有人谈论它，越来越多的人像我一样对这门技术着迷。Docker的发展异常迅猛，整个社区生态蓬勃向上一片繁荣。希望阅读本书的读者也尽快加入充满乐趣的Docker大家庭中来。</p>    <p>——程显峰，MongoDB中文社区创始人，蓝海讯通COO</p>    <p>本书系统而又深入浅出地介绍了与Docker部署和应用相关的各个方面，体现了Docker的最新进展，并附有大量详尽的实例。无论系统架构师、IT决策者，还是云端开发人员、系统管理员和运维人员，都能在本书中找到所需的关于Docker的内容。本书非常适合作为进入Docker领域的第一本书。</p>    <p>——商之狄，微软开放技术（中国）首席项目经理</p>    <p>我很高兴能看到第一本引进国内的Docker技术书籍——这本《The Docker Book》中文版。这本书对于迫切想了解Docker技术以及相关工具使用的技术爱好者来说，是一本值得阅读的入门书籍。</p>    <p>——肖德时，InfoQ《深入浅出Docker》专栏作者</p>    <p>阅读本书，就像参加一个Docker专家的面授课程，书中包含了很多非常实用的小型案例，让你能够循序渐进地照着学习，加深理解。James Turnbull是个写书的高手，由浅入深地慢慢引领你理解Docker的奥秘。无论你是哪个行业的程序员，这本Docker的书绝对会让你受益匪浅。</p>    <p>——蔡煜，爱立信软件开发高级专家</p>    <p>对Docker本身，已经不用我再多说，只希望大家都看看这本书，并能积极尝试Docker。纵观IT行业历史，大的技术变革从来不是诞生于大厂商口中的金蛋，而是一小搓爱好者的小玩意儿，而Docker正是这个路子。</p>    <p>——赵鹏，VisualOps 创始人</p>    <p>Go语言是近年来IT技术发展历程中最伟大的事情，而Docker的出现则是云计算发展的重要里程碑。作为Go语言的杀手级应用，Docker推动了Go语言社区的发展。《The Docker Book》是一本Docker团队成员撰写的书，是一份难得的学习Docker技术的权威教材。我很高兴见到中文翻译能够如此迅速地跟进，这是一件了不起的事情。</p>    <p>——许式伟，七牛云存储CEO，《Go语言编程》作者</p>    <p>我非常喜欢《The Docker Book》这本书，它弥补了开源项目通常缺失的文档部分。书中涉及从安装入门到业务场景下的各种应用及开发。本书作者的权威性以及译者的专业态度也保证了这本书的严谨性。这本书非常适合广大的Docker爱好者阅读。</p>    <p>——杜玉杰，OpenStack基金会董事</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/26285268/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+  <h2>
+    <span class="">作者简介</span>
+      ······
+
+  </h2>
+
+
+
+      <div class="indent ">
+          
+            <span class="short">
+                <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>James Turnbull是一位技术作家，还是一名开源极客。他最近的大作是一本讲述流行开源日志工具的书——The LogStash Book。James还写了两本关于Puppet的书，一本是Pro Puppet以，另一本是较早的Pulling Strings with Puppet: Configuration Management Made Easy。此外，James还写了Pro Linux System Administration、Pro Nagios 2.0和Hardening Linux这三本书。</p>    <p>James真正的工作是Kickstarter的工程副总裁。之前，James曾担任Docker公司服务与支持副总裁、Venmo公司工程副总裁和Puppet Labs的技术运维副总裁。James热爱美食、美酒、阅读、摄影，还很喜欢猫咪，但对在海滩上...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+
+            </span>
+            <span class="all hidden ">
+                <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>James Turnbull是一位技术作家，还是一名开源极客。他最近的大作是一本讲述流行开源日志工具的书——The LogStash Book。James还写了两本关于Puppet的书，一本是Pro Puppet以，另一本是较早的Pulling Strings with Puppet: Configuration Management Made Easy。此外，James还写了Pro Linux System Administration、Pro Nagios 2.0和Hardening Linux这三本书。</p>    <p>James真正的工作是Kickstarter的工程副总裁。之前，James曾担任Docker公司服务与支持副总裁、Venmo公司工程副总裁和Puppet Labs的技术运维副总裁。James热爱美食、美酒、阅读、摄影，还很喜欢猫咪，但对在海滩上手牵手散步却并不热衷。</p>    <p>译者简介</p>    <p>李兆海 网名Googol Lee。使用Googol这个名字真的是因为“10的100次方”这个意思，和后来的Google公司没有一点儿关系。多年后端程序员，早期以C、C++为主，后来转向Python，现在以Go为生。曾写过《Golang初探》发表于2011年2月号《程序员》。Docker早期使用者。平时喜欢乱翻书，遇到感兴趣的都会研究一番。Twitter账户@googollee。</p>    <p>刘斌 具有10余年软件开发经验，关注后台开发技术和各种编程语言。做过电子商务、金融、企业系统以及Android手机开发；写过Delphi，也兼做系统管理员和DBA（现在都改叫DevOps了）；既做后台应用，也要调用前台CSS和JavaScript，可还是不敢自称Full Stack；今又舶来Growth Hacker，我想我要做一个Growth Engineer。</p>    <p>巨震 北京大学软件工程硕士，服务器端开发者。目前就职于创业公司，使用Node.js、Golang进行服务器端开发。2013年底开始研究Docker，是Docker中文社区的活跃贡献者，负责Docker技术文章和视频的翻译、校对工作。生活中喜欢美食、骑行，热衷于PC硬件，喜爱折腾，热爱一切计算机相关的技术，坚信技术改变世界。最崇拜的技术传奇人物是前id Software首席程序员、现Oculus VR首席技术官John Carmack。</p></div>
+
+            </span>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  <h2>
+    <span class="">目录</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="dir_26285268_short">
+        第1 章 简介····································1<br/>
+        1.1 Docker 简介·····························2<br/>
+        1.1.1 提供一个简单、轻量的建模方式·························2<br/>
+        1.1.2 职责的逻辑分离················3<br/>
+        1.1.3 快速、高效的开发生命周期··3<br/>
+        1.1.4 鼓励使用面向服务的架构·····3<br/>
+    · · · · · ·
+    (<a href="javascript:$('#dir_26285268_short').hide();$('#dir_26285268_full').show();$.get('/j/subject/j_dir_count',{id:26285268});void(0);">更多</a>)
+</div>
+
+<div class="indent" id="dir_26285268_full" style="display:none">
+        第1 章 简介····································1<br/>
+        1.1 Docker 简介·····························2<br/>
+        1.1.1 提供一个简单、轻量的建模方式·························2<br/>
+        1.1.2 职责的逻辑分离················3<br/>
+        1.1.3 快速、高效的开发生命周期··3<br/>
+        1.1.4 鼓励使用面向服务的架构·····3<br/>
+        1.2 Docker 组件·····························3<br/>
+        1.2.1 Docker 客户端和服务器·······4<br/>
+        1.2.2 Docker 镜像······················4<br/>
+        1.2.3 Registry ···························5<br/>
+        1.2.4 容器·······························5<br/>
+        1.3 我们能用Docker 做什么·············6<br/>
+        1.4 Docker 与配置管理····················7<br/>
+        1.5 Docker 的技术组件····················8<br/>
+        1.6 本书的内容·····························9<br/>
+        1.7 Docker 资源··························· 10<br/>
+        第2 章 安装Docker ······················· 11<br/>
+        2.1 安装Docker 的先决条件··········· 12<br/>
+        2.2 在Ubuntu 中安装Docker ·········· 13<br/>
+        2.2.1 检查前提条件················· 14<br/>
+        2.2.2 安装Docker ···················· 16<br/>
+        2.2.3 Docker 与UFW ··············· 17<br/>
+        2.3 在Red Hat 和Red Hat 系发行版中安装Docker ···························17<br/>
+        2.3.1 检查前提条件················· 18<br/>
+        2.3.2 安装Docker···················· 19<br/>
+        2.3.3 在Red Hat 系发行版中启动Docker 守护进程·············· 20<br/>
+        2.4 在OS X 中安装Boot2Docker ····· 21<br/>
+        2.4.1 在OS X 中安装Boot2Docker ··················· 21<br/>
+        2.4.2 在OS X 中启动Boot2Docker ··················· 22<br/>
+        2.4.3 测试Boot2Docker ············ 23<br/>
+        2.5 在Windows 中安装Boot2Docker 23<br/>
+        2.5.1 在Windows 中安装Boot2Docker ··················· 23<br/>
+        2.5.2 在Windows 中启动Boot2Docker ··················· 24<br/>
+        2.5.3 测试Boot2Docker ············ 25<br/>
+        2.6 使用本书的Boot2Docker 示例···· 25<br/>
+        2.7 Docker 安装脚本····················· 26<br/>
+        2.8 二进制安装··························· 27<br/>
+        2.9 Docker 守护进程····················· 28<br/>
+        2.9.1 配置Docker 守护进程······· 28<br/>
+        2.9.2 检查Docker 守护进程是否正在运行······················· 30<br/>
+        2.10 升级Docker ························· 31<br/>
+        2.11 Docker 图形用户界面············· 31<br/>
+        2.12 小结··································· 32<br/>
+        第3 章 Docker 入门······················ 33<br/>
+        3.1 确保Docker 已经就绪·············· 33<br/>
+        3.2 运行我们的第一个容器············ 34<br/>
+        3.3 使用第一个容器····················· 36<br/>
+        3.4 容器命名······························ 38<br/>
+        3.5 重新启动已经停止的容器·········· 39<br/>
+        3.6 附着到容器上························ 39<br/>
+        3.7 创建守护式容器····················· 40<br/>
+        3.8 容器内部都在干些什么············ 41<br/>
+        3.9 查看容器内的进程·················· 42<br/>
+        3.10 在容器内部运行进程·············· 43<br/>
+        3.11 停止守护式容器···················· 44<br/>
+        3.12 自动重启容器······················· 44<br/>
+        3.13 深入容器····························· 45<br/>
+        3.14 删除容器····························· 46<br/>
+        3.15 小结··································· 47<br/>
+        第4 章 使用Docker 镜像和仓库······· 49<br/>
+        4.1 什么是Docker 镜像················· 49<br/>
+        4.2 列出镜像······························ 51<br/>
+        4.3 拉取镜像······························ 54<br/>
+        4.4 查找镜像······························ 56<br/>
+        4.5 构建镜像······························ 57<br/>
+        4.5.1 创建Docker Hub 账号······· 58<br/>
+        4.5.2 用Docker 的commit 命令创建镜像······················· 59<br/>
+        4.5.3 用Dockerfile构建镜像······················· 61<br/>
+        4.5.4 基于Dockerfile构建新镜像····················· 64<br/>
+        4.5.5 指令失败时会怎样············ 66<br/>
+        4.5.6 Dockerfile 和构建缓存·· 67<br/>
+        4.5.7 基于构建缓存的Dockerfile模板····························· 67<br/>
+        4.5.8 查看新镜像···················· 68<br/>
+        4.5.9 从新镜像启动容器··········· 69<br/>
+        4.5.10 Dockerfile 指令········· 72<br/>
+        4.6 将镜像推送到Docker Hub········· 83<br/>
+        4.7 删除镜像······························ 88<br/>
+        4.8 运行自己的Docker Registry······· 90<br/>
+        4.8.1 从容器运行Registry ········· 90<br/>
+        4.8.2 测试新Registry ··············· 91<br/>
+        4.9 其他可选Registry 服务············· 92<br/>
+        4.10 小结··································· 92<br/>
+        第5 章 在测试中使用Docker··········· 93<br/>
+        5.1 使用Docker 测试静态网站········ 93<br/>
+        5.1.1 Sample 网站的初始Dockerfile ················· 94<br/>
+        5.1.2 构建Sample 网站和Nginx镜像····························· 96<br/>
+        5.1.3 从Sample 网站和Nginx 镜像构建容器······················· 97<br/>
+        5.1.4 修改网站······················ 100<br/>
+        5.2 使用Docker 构建并测试Web应用程序·············································· 101<br/>
+        5.2.1 构建Sinatra 应用程序······ 101<br/>
+        5.2.2 创建Sinatra 容器············ 102<br/>
+        5.2.3 构建Redis 镜像和容器····· 104<br/>
+        5.2.4 连接到Redis 容器··········· 106<br/>
+        5.2.5 连接Redis····················· 108<br/>
+        5.2.6 让Docker 容器互连········· 110<br/>
+        5.2.7 使用容器连接来通信······· 114<br/>
+        5.3 Docker 用于持续集成·············· 116<br/>
+        5.3.1 构建Jenkins 和Docker服务器························· 117<br/>
+        5.3.2 创建新的Jenkins 作业······121<br/>
+        5.3.3 运行Jenkins 作业············124<br/>
+        5.3.4 与Jenkins 作业有关的下一步·························126<br/>
+        5.3.5 Jenkins 设置小结·············126<br/>
+        5.4 多配置的Jenkins····················126<br/>
+        5.4.1 创建多配置作业·············126<br/>
+        5.4.2 测试多配置作业·············130<br/>
+        5.4.3 Jenkins 多配置作业小结····132<br/>
+        5.5 其他选择·····························132<br/>
+        5.5.1 Drone ···························132<br/>
+        5.5.2 Shippable ······················132<br/>
+        5.6 小结···································132<br/>
+        第6 章 使用Docker 构建服务·········133<br/>
+        6.1 构建第一个应用····················133<br/>
+        6.1.1 Jekyll 基础镜像···············134<br/>
+        6.1.2 构建Jekyll 基础镜像········135<br/>
+        6.1.3 Apache 镜像···················135<br/>
+        6.1.4 构建Jekylll Apache 镜像···136<br/>
+        6.1.5 启动Jekylll 网站·············137<br/>
+        6.1.6 更新Jekyll 网站··············140<br/>
+        6.1.7 备份Jekyll 卷·················141<br/>
+        6.1.8 扩展Jekyll 示例网站········142<br/>
+        6.2 使用Docker 构建一个Java应用服务·····························143<br/>
+        6.2.1 WAR 文件的获取器·········143<br/>
+        6.2.2 获取WAR 文件··············144<br/>
+        6.2.3 Tomecat7 应用服务器·······145<br/>
+        6.2.4 运行WAR 文件··············146<br/>
+        6.2.5 基于Tomcat 应用服务器的构建服务······················147<br/>
+        6.3 多容器的应用栈····················150<br/>
+        6.3.1 Node.js 镜像··················150<br/>
+        6.3.2 Redis 基础镜像··············· 153<br/>
+        6.3.3 Redis 主镜像·················· 154<br/>
+        6.3.4 Redis 从镜像·················· 155<br/>
+        6.3.5 创建Redis 后端集群········ 156<br/>
+        6.3.6 创建Node 容器·············· 160<br/>
+        6.3.7 捕获应用日志················ 161<br/>
+        6.3.8 Node 程序栈的小结········· 164<br/>
+        6.4 不使用SSH 管理Docker 容器··· 164<br/>
+        6.5 小结··································· 166<br/>
+        第7 章 使用Fig 编配Docker·········· 167<br/>
+        7.1 Fig ····································· 168<br/>
+        7.1.1 安装Fig ······················· 168<br/>
+        7.1.2 获取示例应用················ 169<br/>
+        7.1.3 fig.yml 文件··············· 172<br/>
+        7.1.4 运行Fig ······················· 173<br/>
+        7.1.5 使用Fig ······················· 175<br/>
+        7.1.6 Fig 小结······················· 178<br/>
+        7.2 Consul、服务发现和Docker ····· 178<br/>
+        7.2.1 构建Consul 镜像············ 179<br/>
+        7.2.2 在本地测试Consul 容器··· 182<br/>
+        7.2.3 使用Docker 运行Consul集群···························· 184<br/>
+        7.2.4 启动具有自启动功能的Consul 节点··················· 186<br/>
+        7.2.5 启动其余节点················ 188<br/>
+        7.2.6 配合Consul，在Docker里运行一个分布式服务···· 193<br/>
+        7.3 其他编配工具和组件·············· 201<br/>
+        7.3.1 Fleet 和etcd··················· 202<br/>
+        7.3.2 Kubernetes····················· 202<br/>
+        7.3.3 Apache Mesos················· 202<br/>
+        7.3.4 Helios ·························· 202<br/>
+        7.3.5 Centurion ······················ 203<br/>
+        7.3.6 Libswarm ······················203<br/>
+        7.4 小结···································203<br/>
+        第8 章 使用Docker API ················205<br/>
+        8.1 Docker API ···························205<br/>
+        8.2 初识Remote API····················206<br/>
+        8.3 测试Docker Remote API ··········207<br/>
+        8.3.1 通过API 来管理Docker镜像····························208<br/>
+        8.3.2 通过API 管理Docker容器····························211<br/>
+        8.4 改进TProv 应用····················213<br/>
+        8.5 对Docker Remote API 进行认证··217<br/>
+        8.5.1 建立证书授权中心···········218<br/>
+        8.5.2 创建服务器的证书签名请求和密钥·························220<br/>
+        8.5.3 配置Docker 守护进程······222<br/>
+        8.5.4 创建客户端证书和秘钥·····223<br/>
+        8.5.5 配置Docker 客户端开启认证功能······················224<br/>
+        8.6 小结···································226<br/>
+        第9 章 获得帮助和对Docker进行改进··························· 227<br/>
+        9.1 获得帮助····························· 227<br/>
+        9.1.1 Docker 用户和开发邮件列表······················ 228<br/>
+        9.1.2 IRC 上的Docker ············· 228<br/>
+        9.1.3 GitHub 上的Docker ········· 228<br/>
+        9.2 报告Docker 的问题················ 229<br/>
+        9.3 搭建构建环境······················· 229<br/>
+        9.3.1 安装Docker··················· 229<br/>
+        9.3.2 安装源代码和构建工具···· 229<br/>
+        9.3.3 检出源代码··················· 230<br/>
+        9.3.4 贡献文档······················ 230<br/>
+        9.3.5 构建开发环境················ 231<br/>
+        9.3.6 运行测试······················ 232<br/>
+        9.3.7 在开发环境中使用Docker··· 233<br/>
+        9.3.8 发起pull request ············· 234<br/>
+        9.3.9 批准合并和维护者·········· 236<br/>
+        9.4 小结··································· 236<br/>
+     · · · · · ·     (<a href="javascript:$('#dir_26285268_full').hide();$('#dir_26285268_short').show();void(0);">收起</a>)
+</div>
+
+    
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">&#34;第一本Docker书&#34;试读</span>
+      ······
+
+  </h2>
+
+
+<div class="indent">
+<p>如果你是一位技术爱好者，时刻关心业界最新动态，那么最近一定没少听说Docker吧，这绝对是在技术圈线上线下都在谈论的一个热门话题。
+
+说实话，Docker算不上是什么全新的技术，它基于LXC（LinuX Containers），使用AUFS，而这些都是已经存在很长时间并被广泛应用了的技术。但运营PaaS服务的dotCloud公司将这些技术整合到一起，提供了简单易用的跨平台、可移植的容器解决方案。Docker最..</p>
+<ul class="col2-list clearfix">
+
+<li>
+    <a href="https://book.douban.com/reading/33729242/">译者序：我们走在容器化的大道上</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/33729277/">前言</a>
+</li>
+
+<li>
+    <a href="https://book.douban.com/reading/33778644/">第1 章 简介</a>
+</li>
+</ul>
+<div align="right">  · · · · · ·    (<a href="https://book.douban.com/subject/26285268/reading/">查看全部试读</a>)</div>
+</div>
+
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '26285268',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共61个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/docker">docker</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/虚拟化">虚拟化</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Docker">Docker</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/云计算">云计算</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/Linux">Linux</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/编程">编程</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机科学">计算机科学</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;第一本Docker书&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/8712705/?dcs=subject-rec&amp;dcm=douban&amp;dct=26285268" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/8712705.jpg?v=1425458279.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/8712705/" target="_blank">编写高质量代码：改善Python程序的91个建议</a>
+          </div>
+          <div class="price">
+              25.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/18962989/?dcs=subject-rec&amp;dcm=douban&amp;dct=26285268" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/18962989.jpg?v=1456470709.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/18962989/" target="_blank">Python高手之路</a>
+          </div>
+          <div class="price">
+              29.40元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/12186706/?dcs=subject-rec&amp;dcm=douban&amp;dct=26285268" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/12186706.jpg?v=1446718053.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/12186706/" target="_blank">Flask Web开发：基于Python的Web应用开发实战</a>
+          </div>
+          <div class="price">
+              29.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/15153589/?dcs=subject-rec&amp;dcm=douban&amp;dct=26285268" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/15153589.jpg?v=1445919291.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/15153589/" target="_blank">深入理解Nginx：模块开发与架构解析</a>
+          </div>
+          <div class="price">
+              30.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/7519526/?dcs=subject-rec&amp;dcm=douban&amp;dct=26285268" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/7519526.jpg?v=1423472747.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/7519526/" target="_blank">Redis设计与实现</a>
+          </div>
+          <div class="price">
+              30.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;第一本Docker书&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26432893/" onclick="moreurl(this, {'total': 10, 'clicked': '26432893', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28117381.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26432893/" onclick="moreurl(this, {'total': 10, 'clicked': '26432893', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            Docker开发实践
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26819420/" onclick="moreurl(this, {'total': 10, 'clicked': '26819420', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28825234.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26819420/" onclick="moreurl(this, {'total': 10, 'clicked': '26819420', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            Python性能分析与优化
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26690609/" onclick="moreurl(this, {'total': 10, 'clicked': '26690609', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28391014.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26690609/" onclick="moreurl(this, {'total': 10, 'clicked': '26690609', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Effective Ruby：改善Ruby程序的48...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/20374756/" onclick="moreurl(this, {'total': 10, 'clicked': '20374756', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s24230466.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/20374756/" onclick="moreurl(this, {'total': 10, 'clicked': '20374756', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            并行程序设计导论
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26334785/" onclick="moreurl(this, {'total': 10, 'clicked': '26334785', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s28017088.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26334785/" onclick="moreurl(this, {'total': 10, 'clicked': '26334785', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            图数据库
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/27064848/" onclick="moreurl(this, {'total': 10, 'clicked': '27064848', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s29470644.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/27064848/" onclick="moreurl(this, {'total': 10, 'clicked': '27064848', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Python高性能编程
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26612779/" onclick="moreurl(this, {'total': 10, 'clicked': '26612779', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28296984.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26612779/" onclick="moreurl(this, {'total': 10, 'clicked': '26612779', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            Redis实战
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26413096/" onclick="moreurl(this, {'total': 10, 'clicked': '26413096', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28107295.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26413096/" onclick="moreurl(this, {'total': 10, 'clicked': '26413096', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            并行算法设计与性能优化
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/7915128/" onclick="moreurl(this, {'total': 10, 'clicked': '7915128', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s7042356.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/7915128/" onclick="moreurl(this, {'total': 10, 'clicked': '7915128', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Programming Clojure
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/6799555/" onclick="moreurl(this, {'total': 10, 'clicked': '6799555', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s6941343.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/6799555/" onclick="moreurl(this, {'total': 10, 'clicked': '6799555', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            网站运维
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/26285268/comments/">全部 127 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="875661986">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-875661986" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-875661986" class="j a_show_login" data-cid="875661986">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/kid143/">[已注销]</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2015-02-02</span>
+                </span>
+            </h3>
+            <p class="comment-content">中规中矩的入门书。这本书的例子要跑起来，最好还是使docker.cn的镜像，否则那屎一样的下载速度会恶心死你。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="931535888">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-931535888" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-931535888" class="j a_show_login" data-cid="931535888">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/JeaoMachine/">Jeao&amp;Leon</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2015-06-19</span>
+                </span>
+            </h3>
+            <p class="comment-content">入门的书，只是好多时候大段文字看不懂。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1218771031">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1218771031" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1218771031" class="j a_show_login" data-cid="1218771031">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/joenzhang/">Josen Zhang</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-07-22</span>
+                </span>
+            </h3>
+            <p class="comment-content">好书，语言精炼</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="875981186">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-875981186" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-875981186" class="j a_show_login" data-cid="875981186">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/jnhe/">二条</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2016-02-11</span>
+                </span>
+            </h3>
+            <p class="comment-content">额。不会。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="884448885">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-884448885" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-884448885" class="j a_show_login" data-cid="884448885">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/taizhou/">Reborn</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2015-01-18</span>
+                </span>
+            </h3>
+            <p class="comment-content">就当是看英文文档的中文版吧，至少翻译质量上有些保证。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1300245868">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1300245868" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1300245868" class="j a_show_login" data-cid="1300245868">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/136653803/">太溪照海</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2018-01-09</span>
+                </span>
+            </h3>
+            <p class="comment-content">本书成书以后docker已经发生了不少变化，本书第二章提供的安装方式已经过时，请参照docker官方文档；最有价值的是第三章到第六章，特别是第三、四章关于docker镜像和容器的概念讲述的还是比较清楚的，比看英语文档省劲</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1297869938">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1297869938" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1297869938" class="j a_show_login" data-cid="1297869938">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/Mr_MarsDog/">过儿</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2018-01-01</span>
+                </span>
+            </h3>
+            <p class="comment-content">虽然是旧版本啦，不过总体内容差距不大。熟悉一下就知识，上手最主要的还是要考实践。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1282088125">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1282088125" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1282088125" class="j a_show_login" data-cid="1282088125">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/45933358/">木刻</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2017-12-06</span>
+                </span>
+            </h3>
+            <p class="comment-content">期望不要太高，作为入门不错的~</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1280335840">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1280335840" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1280335840" class="j a_show_login" data-cid="1280335840">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/alvysinger/">員外</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2018-01-07</span>
+                </span>
+            </h3>
+            <p class="comment-content">docker入门够用了，例子也讲的跟详细清晰……只是很多章节用到的技术栈我没接触过，我还是太弱啦……</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1276313226">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1276313226" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-1276313226" class="j a_show_login" data-cid="1276313226">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/abramsz/">映天蓝</a>
+                        <span class="user-stars allstar30 rating" title="还行"></span>
+                    <span>2017-11-25</span>
+                </span>
+            </h3>
+            <p class="comment-content">这本书最大的特点是简洁，虽然把docker部分该讲的特性都讲了，但是阅读和操练起来却异常轻松。</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/26285268/comments/">更多短评 127 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            第一本Docker书的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 26285268;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/26285268/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            第一本Docker书的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 6 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7891778">
+        <div class="main review-item" id="7891778">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/cpnandajie/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u1057548-3.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/cpnandajie/" property="v:reviewer" class="name">晚安，本杰明</a>
+
+            <span property="v:rating" class="allstar50 main-title-rating" title="力荐"></span>
+
+        <span property="v:dtreviewed" content="2016-05-12" class="main-meta">2016-05-12 15:42:04</span>
+        
+
+            <span class="publisher right">
+            人民邮电出版社2016版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7891778/">《第一本Docker书》“修订版”的内容到底有哪些变化？</a></h2>
+
+                <div id="review_7891778_short" class="review-short" data-rid="7891778">
+                    <div class="short-content">
+
+                        这本书是Docker公司服务与支持副总裁James Turnbull自出版的电子书The Docker Book的中文版，这本英文著作，是全球第一本Docker著作。  2014年12月出版的《第一本Docker书》是英文原著The Docker Book的1.3.1版，其内容是基于Docker 1.0.0及以上版本写的。 2016年3月出版的《第...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7891778-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7891778_full" class="hidden">
+                    <div id="review_7891778_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7891778" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7891778">
+                                4
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7891778" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7891778">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7891778/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="8571137">
+        <div class="main review-item" id="8571137">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/xiaosuiba/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/xiaosuiba/" property="v:reviewer" class="name">打雷不怕</a>
+
+            <span property="v:rating" class="allstar30 main-title-rating" title="还行"></span>
+
+        <span property="v:dtreviewed" content="2017-05-30" class="main-meta">2017-05-30 11:07:42</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/8571137/">作为第一本还行</a></h2>
+
+                <div id="review_8571137_short" class="review-short" data-rid="8571137">
+                    <div class="short-content">
+
+                        本来是买kubernetes权威指南的时候凑单买的，花了一天把里面的例子全部走了一遍，不得不说这本书真的仅仅是引导你入门而已。如果作为完全不懂这个领域的newbie，把这本书通读一遍，然后把例子都敲一遍你也算摸到门槛。但我觉得你并不会比从一篇入门博客里读到的东西要多。在我...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-8571137-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_8571137_full" class="hidden">
+                    <div id="review_8571137_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="8571137" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-8571137">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="8571137" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-8571137">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/8571137/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7991770">
+        <div class="main review-item" id="7991770">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/40644475/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u40644475-2.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/40644475/" property="v:reviewer" class="name">一万</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2016-07-15" class="main-meta">2016-07-15 15:53:27</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7991770/">确实算得上第一本Docker书</a></h2>
+
+                <div id="review_7991770_short" class="review-short" data-rid="7991770">
+                    <div class="short-content">
+
+                            把The Docker Book 翻译成 第一本Docker书 可能是中文版出版方想突出这本书在Docker世界的地位。通读后觉得书如其名，此书可以作为Docker学习的第一本书。     篇幅不大，200多页、字体不小、且代码示例较多，让人读起来很轻松，比动辄上千页密密麻麻小子的xx权威指南，xx...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7991770-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7991770_full" class="hidden">
+                    <div id="review_7991770_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7991770" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7991770">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7991770" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7991770">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7991770/#comments" class="reply">1回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7954429">
+        <div class="main review-item" id="7954429">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/122082702/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u122082702-1.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/122082702/" property="v:reviewer" class="name">黑色柳丁messi</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2016-06-27" class="main-meta">2016-06-27 18:16:05</span>
+        
+
+            <span class="publisher right">
+            人民邮电出版社2016版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7954429/">挺好的一本docker入门书</a></h2>
+
+                <div id="review_7954429_short" class="review-short" data-rid="7954429">
+                    <div class="short-content">
+
+                        挺好的一本docker入门书，docker官方团队出品。除了理论，还有很多实例，照着操作一篇就基本上熟悉docker的命令和使用场景了。docker命令设计，非常清晰直观，除了命令，制作镜像，应用场景搞熟练应该就算入门了。 在公司内网从docker官网下镜像实在太慢了，还是需要有一个私有...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7954429-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7954429_full" class="hidden">
+                    <div id="review_7954429_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7954429" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7954429">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7954429" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7954429">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7954429/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="7356611">
+        <div class="main review-item" id="7356611">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/shezhengking/" class="avator">
+            <img width="24" height="24" src="https://img3.doubanio.com/icon/u70033075-70.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/shezhengking/" property="v:reviewer" class="name">大将军卫青</a>
+
+
+        <span property="v:dtreviewed" content="2015-01-25" class="main-meta">2015-01-25 22:11:50</span>
+        
+
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/7356611/">是一本好书</a></h2>
+
+                <div id="review_7356611_short" class="review-short" data-rid="7356611">
+                    <div class="short-content">
+
+                        作為初學者的首選工具書，這本書在內容編排 語言表達 等方面做的都非常好，讓讀者閱讀起來非常輕鬆，毫無枯燥感。作為一本docker學習的工具書，告诉读者docker是什么，它能为我们解决什么等，也得到了專家的認可，不愧第一，是一本值得一讀的好書。 -------------#############...
+
+                        &nbsp;(<a href="javascript:;" id="toggle-7356611-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_7356611_full" class="hidden">
+                    <div id="review_7356611_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="7356611" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-7356611">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="7356611" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-7356611">
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/7356611/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="6834617">
+        <div class="main review-item" id="6834617">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/dongbeta/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/user_normal.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/dongbeta/" property="v:reviewer" class="name">[已注销]</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2014-08-20" class="main-meta">2014-08-20 16:40:41</span>
+        
+
+            <span class="publisher right">
+            Amazon Digital Services, Inc.2014版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/6834617/">很好的入门教材</a></h2>
+
+                <div id="review_6834617_short" class="review-short" data-rid="6834617">
+                    <div class="short-content">
+
+                        这本书思路清晰，各个章节使用独立的实例来教学。是一本非常好的入门书。  ----------------------------------------------------------------------
+
+                        &nbsp;(<a href="javascript:;" id="toggle-6834617-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_6834617_full" class="hidden">
+                    <div id="review_6834617_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="6834617" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-6834617">
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="6834617" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-6834617">
+                                1
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/6834617/#comments" class="reply">0回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/5ae24f45a8b3488c.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评6篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/26285268/annotation">共<span property="v:count">6</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="34390521">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/lovekym/"><img src="https://img3.doubanio.com/icon/u3831809-15.jpg" alt="飞林沙" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34390521/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34390521/" class="">读书笔记</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/lovekym/" class=" " title="飞林沙">飞林沙</a>
+                (此账号吐槽的方法已被注释)
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="34390521">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/34390521/"><img src="https://img3.doubanio.com/view/page_note/small/public/p34390521-1.jpg"></a>
+                  </div>
+                  <span class="">1. Docker简介：
+
+	Docker与传统虚拟化容器的不同之处在于Docker在虚拟化的容器环境中又增加了一个应用程序的部署引擎。这个引擎提供了一个轻量快速的环境，能够运行开发者的程序，并且方便高效地将程序从开发者的笔记本部署到测试环境和生产环境。Docker的目标是提供以下这些东西：
+	&lt;1&gt;  提供一个简单，轻量的建模方式。Docker很容易上手，用户很容易将自己的程序Docker化。另外Docker容器的创建非常快捷，大多数的Dock...</span>
+                <p class="pl">
+                  <span class="">2015-02-24 23:48</span>
+                  
+                    &nbsp;&nbsp;<span class="">3人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                1. Docker简介：<div style="padding-bottom:1em;"></div>	Docker与传统虚拟化容器的不同之处在于Docker在虚拟化的容器环境中又增加了一个应用程序的部署引擎。这个引擎提供了一个轻量快速的环境，能够运行开发者的程序，并且方便高效地将程序从开发者的笔记本部署到测试环境和生产环境。Docker的目标是提供以下这些东西：<div style="padding-bottom:1em;"></div>	&lt;1&gt;  提供一个简单，轻量的建模方式。Docker很容易上手，用户很容易将自己的程序Docker化。另外Docker容器的创建非常快捷，大多数的Docker容器只需要不到一秒钟就可以启动，由于去除了管理程序的开销，所以Docker具有很高的性能，同一台宿主机可以运行很多的容器。<div style="padding-bottom:1em;"></div>	&lt;2&gt; 职责的逻辑分离。使用Docker，开发者只需要关心容器中的应用程序，运维人员只需要关心容器的管理。<div style="padding-bottom:1em;"></div>	&lt;3&gt; 快速高效的开发生命周期。Docker的目标之一就是缩短从开发到测试到部署上线的周期，使程序容易构建，容易移植。<div style="padding-bottom:1em;"></div>	&lt;4&gt; 鼓励面向服务的架构。由于Docker鼓励每个容器只运行一个应用程序，所以这样就形成了一个分布式的应用程序模型。在这种模型下，所有的项目都会变成一系列内部互联的容器，从而使得分布式地部署应用程序架构。<div style="padding-bottom:1em;"></div>	Docker的架构大致如此：<div style="padding-bottom:1em;"></div>	<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p34390521-1.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div>	Docker是一个典型的CS架构，客户端只需要向服务端或者守护进程发出请求，然后服务端和守护进程会完成所有工作并且返回结果。镜像是Docker世界的基石，用户基于镜像运行和构建自己的容器，可以把镜像看做是容器的源代码。另外，Docker使用Registry保存用户构建的镜像。<div style="padding-bottom:1em;"></div>	Docker带给我们的好处分成以下几点：<div style="padding-bottom:1em;"></div>	&lt;1&gt; 加速本地开发和构建流程。本地开发人员可以构建，分享和部署Docker容器。<div style="padding-bottom:1em;"></div>	&lt;2&gt; 让独立的服务和应用程序在不同的环境中得到相同的结果。<div style="padding-bottom:1em;"></div>	&lt;3&gt; 创建一个隔离的环境进行测试。例如用Jenkins这样的集成测试工具创建一个新的用于测试的容器。<div style="padding-bottom:1em;"></div>	&lt;4&gt; Docker可以让开发者在本机就搭建好一个复杂的程序或架构，而不是上来就搞服务器。<div style="padding-bottom:1em;"></div>	&lt;5&gt; 为学习和测试构建一个轻量级的沙盒环境。<div style="padding-bottom:1em;"></div>	&lt;6&gt; 超大规模的宿主机部署<div style="padding-bottom:1em;"></div>	另外Docker还有个显著的特点是对不同的宿主机，应用程序和服务，可能会表现出不同的特性和架构，这样就进一步简化了应用程序开发的工作。另外，由于Docker的容器非常轻量级，所以重建容器的代价通常都比传统的状态修复低得多。<div style="padding-bottom:1em;"></div>2. Docker常用命令<div style="padding-bottom:1em;"></div>	首先来创建第一个容器： sudo docker run -I -t  -p 127.0.0.1:80:9001 ubuntu /bin/bash。这个命令解析一下：-i的意思是保证容器的STDIN是开启的，保证持久化的标准输入。 -t是为创建的容器分配一个伪tty中断，这样新创建的容器才能提供一个交互式shell。 除非这是一个运行后台服务的容器，否则这两个参数是最基本的参数。Docker首先会检查本地是否存在Ubuntu镜像，如果本地没有该镜像的话，Docker就会连接官方维护的Docker Hub，一旦找到就会下载保存到本地的宿主机中。-p参数会将Docker的网络端口和宿主机的端口相绑定。最后告诉容器要运行/bin/bash命令，启动一个bash shell。<div style="padding-bottom:1em;"></div>	docker ps 会列出当前系统中正在运行的容器，docker ps -a会列出当前系统的所有容器列表。<div style="padding-bottom:1em;"></div>	docker run --name xxxx -i -t ubuntu 可以为容器指定一个名称，在很多Docker命令中，都可以使用name来代替uuid，容器的名称有助于分辨容器，也有助于从逻辑上帮我们理清容器关系。<div style="padding-bottom:1em;"></div>	docker start 和 docker restart 可以帮助我们启动或者重启一个容器，可以使用docker stop关闭守护式容器。<div style="padding-bottom:1em;"></div>	docker attach 可以让我们重新附着到容器的会话上。<div style="padding-bottom:1em;"></div>	docker run -d 可以帮助我们创建一个守护进程放在后台长期运行。如果想查看后台容器都做了什么，可以使用docker logs ubuntu来获取容器的日志。与tail -f同理，也可以使用docker logs -f来监控实时的日志。<div style="padding-bottom:1em;"></div>	docker top 可以监控某容器中的运行进程。在Docker 1.3之后，还可以使用docker exec在容器内额外启动新进程，可以在容器内启动的进程分成后台任务和交互式任务两类。例如sudo docker exec -d daemon touch /etc/new_config中的-d就启动了一个后台任务，而sudo docker exec -t -i deamon /bin/bash则是启动了一个交互式任务。 <div style="padding-bottom:1em;"></div>	docker inspect 获得更多的容器信息，这个命令会对容器进行详细的检查，然后返回配置信息，包括名称，网络配置和很多有用的数据。使用--format 或 -f 支持完整的Go语言，所以可以充分发挥Go语言的模板优势。<div style="padding-bottom:1em;"></div>	docker rm可以删除容器。<div style="padding-bottom:1em;"></div>3. Docker镜像<div style="padding-bottom:1em;"></div>	Docker镜像是由文件系统叠加而成，最底端是一个文件引导系统，即bootfs，很类似于Linux的文件引导系统，用户大部分时间不会和引导文件系统有什么交互。再往上的第二层是root文件系统rootfs，rootfs可以是一种或者多种操作系统。<div style="padding-bottom:1em;"></div>	在传统Linux系统引导中，root文件系统会最先以只读的方式加载，当引导结束后才会变成读写状态。但是在Docker中，rootfs一直都会保持只读状态，并且Docker会利用联合加载技术在rootfs上加载更多的只读文件系统(联合加载是说通过叠加的方式一次同时加载多个文件系统，但在外面又只能看到一个文件系统)。Docker将这样的文件系统称为镜像。<div style="padding-bottom:1em;"></div>	Docker第一次启动一个容器时，初始的读写层是空的，当文件系统发生变化时，这些变化都会应用到这一层上，例如想修改一个文件，这个文件会从该读写层下面的只读层复制到读写层，然后修改，这时指针依然指向只读版本，直到修改结束，这时读写层又变成了只读状态。这被称为写时复制。<div style="padding-bottom:1em;"></div>	构建Docker镜像有两种方法：&lt;1&gt; 使用docker commit命令 &lt;2&gt; 使用docker build和Dockerfile文件。并不推荐使用docker commit，而应该使用更灵活强大的dockerfile方式。Dockerfile使用基本的DSL语法指令来构建一个Docker镜像，然后使用docker build命令基于该Dockerfile中的指令构建一个新的镜像。Dockerfile由一系列的指令和参数组成。Dockerfile的指令会按顺序从上到下执行，所以应该根据需要合理安排制定的顺序。每条指令都会创建一个新的镜像并对镜像进行提交，Docker大致按照以下的步骤执行Dockerfile中的指令: Docker从基础镜像运行一个容器，执行一条指令并且对容器做出修改，执行类似docker commit的操作提交一个新的镜像层，Docker基于刚刚提交的容器创建一个新的镜像层，执行Dockerfile下一条指令直到执行结束。<div style="padding-bottom:1em;"></div>	每个Dockerfile的第一条指令都应该是FROM，后续指令都会基于该镜像进行，这个镜像称为基础镜像。由于Docker会将每一步构建过程都提交为镜像，所以他会将之前的镜像层看做是缓存，这样如果失败再次进行构建时不需要从头开始构建，这样可以节省大量的时间。但是这个带来的问题是比如apt-get update的命令也被缓存起来，所以可以执行REFERSHED_AT来制定最后构建时间。<div style="padding-bottom:1em;"></div>4. 使用Docker进行开发测试和持续集成<div style="padding-bottom:1em;"></div>	sudo docker run -d -p 80 --name website -v $PWD/website:/var/www/html/website nginx /bin/nginx 中的-v参数允许我们把宿主机的目录作为卷，挂在到容器中，从而实现容器之间的共享。卷在Docker中非常重要，卷是在一个或者多个容器内被选定的目录，可以绕过分层的联合文件系统为Docker提供持久数据和共享数据。这意味着对卷的修改会直接生效，从而绕过容器本身。即便容器停止，卷的内容也依然存在。例如：&lt;1&gt; 希望同时对代码进行开发和测试 &lt;2&gt; 代码修改频繁，不想频繁在开发过程中构建镜像。 &lt;3&gt; 希望在多个容器中共享资源。<div style="padding-bottom:1em;"></div>	另外的一个应用场景，例如我们搭建了一个Web的容器和一个Redis的容器，这样容器之间需要互相通信。有两种办法：&lt;1&gt; 将容器的网络端口绑定到宿主机的网络端口，从而访问宿主机的网络端口 &lt;2&gt; 内部网络。在安装Docker时，会创建一个新的网络接口，名字叫做Docker0，每个Docker容器都会在这个接口上分配一个IP地址。Docker0是一个虚拟的以太网桥，用于连接容器和本地宿主网络，所以Docker每创建一个容器就会创建一组互联的网络接口，这组接口一段在Docker0的一端，另外一端在容器上，所以其实就相当于通过Docker0作为整个内部网络的交换机。<div style="padding-bottom:1em;"></div>	另外，Docker很擅长快速创建和处理一个或多个容器，这个能力显然可以为持续集成测试提供帮助。Docker可以让部署以及这些步骤和宿主机的清理变得开销很低。<div style="padding-bottom:1em;"></div>5. 插件<div style="padding-bottom:1em;"></div>	Fig由Orchard团队开发的开源工具，用Python编写，用于简单的容器编排。使用Fig可以用一个YAML文件定义一组要启动的容器，以及容器运行时的属性，Fig称这些容器为服务，并且这样定义：容器通过某些方法并指定一些运行时的属性来和其他容器产生交互。使用中可以看出使用Fig能够非常简单地构建一个需要多个Docker容器的应用程序。<div style="padding-bottom:1em;"></div>	服务发现是分布式程序之间管理相互关系的一种机制，一个分布式程序一般由多个组件组成，这些组件可以放在同一台机器上，也可以分步在多个数据中心，甚至分步在不同的地理区域。这些组件通常可以为其他组件服务，或者为其他组件提供消费服务。所谓服务发现的概念是允许某个组件在想要和其他组件交互时，自动找到对方，由于这些应用本身是分布式的，所以服务发现机制本身也需要是分布式的。而且服务发现作为分布式应用不同组件之间的胶水，还需要足够动态，可靠，适应性强，并且可以快速且一致地共享关于这些服务的数据。书中是使用Consul作为服务发现的工具，Consul是使用Go开发的工具，使用了Raft一致性算法来提供确定的写入机制。Consul暴露了键值存储系统和服务分类系统，并提供高可用性，高容错能力，并且保证强一致性。服务可以将自己注册到Consul，并以高可用且分布式的方式共享这些信息。另外，Consul还内置了强大的服务监控系统。<div style="padding-bottom:1em;"></div>编配工具是一个快速发展的领域，工具的功能不尽相同，但是大多属于两种类型：调度和集群管理，服务发现。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34390521/#comments">回应</a>&nbsp;&nbsp;
+                  2015-02-24 23:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43565479">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/hzqt210/"><img src="https://img3.doubanio.com/icon/u2648897-2.jpg" alt="烟雨" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43565479/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43565479/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/hzqt210/" class=" " title="烟雨">烟雨</a>
+                (烟锁重楼千里尽，雨打芭蕉万点残)
+              
+            </p>
+            <div class="reading-note" data-cid="43565479">
+              <div class="short">
+                
+                  <span class="">Ubuntu系统，Docker使用网桥来管理容器中的网络，默认情况下，UFW会丢弃所有转发的数据包（分组），若要启用数据包转发，需要对/etc/default/ufw文件做改动 原始的UFW转发策略：DEFAULT_FORWARD_POLICY="DROP" 新的UFW转发策略：DEFAULT_FORWARD_POLICY="ACCEPT" 保存后执行：ufw reload —————————————————— 配置守护进程：docker -d -H tcp://0.0.0.0:2375 这条命令会将docker绑定到宿主机上所有的网络接口...</span>
+                <p class="pl">
+                  <span class="">2017-05-03 15:12</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>Ubuntu系统，Docker使用网桥来管理容器中的网络，默认情况下，UFW会丢弃所有转发的数据包（分组），若要启用数据包转发，需要对/etc/default/ufw文件做改动</p><p>原始的UFW转发策略：DEFAULT_FORWARD_POLICY="DROP"</p><p>新的UFW转发策略：DEFAULT_FORWARD_POLICY="ACCEPT"</p><p>保存后执行：ufw reload</p><p>——————————————————</p><p>配置守护进程：docker -d -H tcp://0.0.0.0:2375</p><p>这条命令会将docker绑定到宿主机上所有的网络接口。用-h选项指定服务器的地址，也可以设置docker_host。</p><p>export DOCKER HOST="tcp://0.0.0.0:2375"</p><p>——————————————————</p><p>也可以绑定socket :docker -d -H unix://home/docker/docker.sock</p><p>或者绑定到多个地址：docker -d -H unix://home/docker/docker.sock -H tcp://0.0.0.0:2375</p><p>——————————————————</p><p>开启调试模式：DEBUG=1 /usr/bin/docker -d </p><p>若要永久生效，ubuntu中编辑/etc/default/docker中的DOCKER_OPTS变量</p><p>Red Hat中修改/usr/lib/systemd/system/docker.service 文件中的ExecStart配置项</p><p>——————————————————</p><p>Docker图形用户界面：</p><p>1、Shipyward</p><p>2、DockerUI</p><p>3、maDocker</p><p>——————————————————</p><p>运行docker</p><p>docker run [--name container_name ] -i -t ubuntu /bin/bash</p><p>-i 保证容器中STDIN是开启的</p><p>-t 告诉Docker为要创建的容器分配一个伪tty终端</p><p>--name 在运行时给容器分配一个名称</p><p>——————————————————</p><p>帮助命令：docker help run </p><p>man docker-run</p><p>——————————————————</p><p>docker ps -l 列出最近运行的容器，包括停止和正运行的 -a列出所有容器 不加是正在运行的容器</p><p>——————————————————</p><p>如果会话被exit但容器还在运行，可以用attach来附着会话</p><p>使用docker attach container_name</p><p>或者 docker attach aa2232413  #容器id</p><p></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43565479/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-03 15:12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="37062266">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/139083106/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="kiwi小白" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/37062266/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/37062266/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/139083106/" class=" " title="kiwi小白">kiwi小白</a>
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="37062266">
+              <div class="short">
+                
+                  <span class="">第一章 简介
+
+镜像是构建docker的即使，用户基于镜像来运行自己的容器。镜像是基于联合（Union）文件系统的一种层式的结构。
+镜像是Docker声明周期中的构建或打包阶段，而容器则是启动或执行阶段
+黄金镜像模型 -&gt; Docker分层镜像模型
+
+第三章 Docker入门
+
+创建 -&gt; 管理 -&gt; 停止 -&gt; 删除
+
+docker run
+     docker run -i -t ubuntu /bin/bash
+     -i STDIN
+     -t tty
+     —name 容器命名
+     —re...</span>
+                <p class="pl">
+                  <span class="">2016-01-25 20:47</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                第一章 简介<div style="padding-bottom:1em;"></div>镜像是构建docker的即使，用户基于镜像来运行自己的容器。镜像是基于联合（Union）文件系统的一种层式的结构。<div style="padding-bottom:1em;"></div>镜像是Docker声明周期中的构建或打包阶段，而容器则是启动或执行阶段<div style="padding-bottom:1em;"></div>黄金镜像模型 -&gt; Docker分层镜像模型<div style="padding-bottom:1em;"></div>第三章 Docker入门<div style="padding-bottom:1em;"></div>创建 -&gt; 管理 -&gt; 停止 -&gt; 删除<div style="padding-bottom:1em;"></div>docker run<div style="padding-bottom:1em;"></div>     docker run -i -t ubuntu /bin/bash<div style="padding-bottom:1em;"></div>     -i STDIN<div style="padding-bottom:1em;"></div>     -t tty<div style="padding-bottom:1em;"></div>     —name 容器命名<div style="padding-bottom:1em;"></div>     —restart (always / on-failure:5)<div style="padding-bottom:1em;"></div>docker ps -a<div style="padding-bottom:1em;"></div>     查看当前系统中容器的列表<div style="padding-bottom:1em;"></div>     -l 最后一次运行的容器<div style="padding-bottom:1em;"></div>docker start bob_the_container<div style="padding-bottom:1em;"></div>     重新启动已经停止的容器<div style="padding-bottom:1em;"></div>docker attach<div style="padding-bottom:1em;"></div>     附着到容器上?（使用场景？？？）<div style="padding-bottom:1em;"></div>docker run —name daemon_dave -d ubuntu /bin/sh -c ‘…...'<div style="padding-bottom:1em;"></div>     执行守护式容器<div style="padding-bottom:1em;"></div>docker logs<div style="padding-bottom:1em;"></div>docker top<div style="padding-bottom:1em;"></div>docker exec<div style="padding-bottom:1em;"></div>     在容器内部额外启动新进程（使用场景？？？）<div style="padding-bottom:1em;"></div>docker stop<div style="padding-bottom:1em;"></div>     停止守护式容器<div style="padding-bottom:1em;"></div>docker inspect<div style="padding-bottom:1em;"></div>docker rm sdf123132<div style="padding-bottom:1em;"></div>     删除容器<div style="padding-bottom:1em;"></div>第四章 使用Docker镜像和仓库<div style="padding-bottom:1em;"></div>什么是docker镜像？<div style="padding-bottom:1em;"></div>Docker镜像是由文件系统叠加而成。最低端是一个引导文件系统bootfs。第二层是root文件系统rootfs，为了bootfs之上。联合加载（union mount）同时加载多个只读文件系统，但是在外面看起来是一次同时加载一个文件系统。Docker将这样的文件系统称为镜像。<div style="padding-bottom:1em;"></div>当第一次启动容器时，Docker会在该镜像的最顶层加载一个读写文件系统。当Docker第一次启动一个容器时，初始的读写层是空的。当文件系统发生变化时，这些变化都会应用到这一层上。比如，如果想修改一个文件，这个文件首先会从该读写层下面的只读层复制到该读写层（copy-on-write）。改文件的只读版本依然存在，但是已经被读写层中的该文件副本所隐藏。(image-layering framework)<div style="padding-bottom:1em;"></div>构建镜像<div style="padding-bottom:1em;"></div>- docker commit：提交一个新的镜像层<div style="padding-bottom:1em;"></div>- Dockerfile<div style="padding-bottom:1em;"></div>用Dockerfile创建镜像<div style="padding-bottom:1em;"></div>命令<div style="padding-bottom:1em;"></div>FROM ：指定一个已经存在的镜像<div style="padding-bottom:1em;"></div>MAINTAINER：维护人<div style="padding-bottom:1em;"></div>RUN：每条RUN指令都会创建一个新的镜像层<div style="padding-bottom:1em;"></div>EXPOSE: 告诉Docker该容器内的应用程序将会使用容器内的指定端口。处于安全考虑，Docker并不会自动打开该端口，而是需要在docker<div style="padding-bottom:1em;"></div> run运行时指定需要打开哪些端口（EXPOSE也可以帮助多个容器链接）<div style="padding-bottom:1em;"></div>CMD：和RUN类似，RUN为构建竟像是需要运行的命令，CMD是容器启动时使用的命令（docker run可以覆盖CMD）<div style="padding-bottom:1em;"></div>ENTRYPOINT：与CMD类似。docker run命令行中指定的任何参数都会被当做参数再次传递给ENTRYPOINT指令中的参数<div style="padding-bottom:1em;"></div>WORKDIR<div style="padding-bottom:1em;"></div>ENV<div style="padding-bottom:1em;"></div>ADD: <a rel="nofollow" href="https://docs.docker.com/engine/articles/dockerfile_best-practices/#add-or-copy" target="_blank">https://docs.docker.com/engine/articles/dockerfile_best-practices/#add-or-copy</a><div style="padding-bottom:1em;"></div>COPY<div style="padding-bottom:1em;"></div>USER<div style="padding-bottom:1em;"></div>VOLUME：这个目录可以绕过联合文件系统，并提供如数据共享或者持久化的功能<div style="padding-bottom:1em;"></div>ONBUILD<div style="padding-bottom:1em;"></div>docker rmi【对比docker rm】<div style="padding-bottom:1em;"></div>docker build<div style="padding-bottom:1em;"></div>docker run -d -p 80 —name static_web jamtur01/static_web nginx -g “daemon off;”【需要nginx以前台的方式启动作为我们的服务器】<div style="padding-bottom:1em;"></div>docker可以通过两种方法在宿主机上分配端口：<div style="padding-bottom:1em;"></div>- 随机选择一个49000~49900<div style="padding-bottom:1em;"></div>- 指定一个特定的端口<div style="padding-bottom:1em;"></div>docker port 查看端口映射方式<div style="padding-bottom:1em;"></div>第五章 在测试中使用Docker<div style="padding-bottom:1em;"></div>静态网站<div style="padding-bottom:1em;"></div>1.-v 挂载镜像<div style="padding-bottom:1em;"></div>- ADD/COPY<div style="padding-bottom:1em;"></div>Web应用<div style="padding-bottom:1em;"></div>构建Sinatra<div style="padding-bottom:1em;"></div>构建Redis镜像<div style="padding-bottom:1em;"></div>- 构建Redis基础镜像<div style="padding-bottom:1em;"></div>- 构建Redis Master<div style="padding-bottom:1em;"></div>- 构建Redis Slave<div style="padding-bottom:1em;"></div>- 关联<div style="padding-bottom:1em;"></div>Sinatra关联Redis<div style="padding-bottom:1em;"></div>方法：<div style="padding-bottom:1em;"></div>- Docker自己的网络栈（内部网络）：Docker创建了一个虚拟子网，这个子网由宿主机和所有的Docker容器共享/防火墙。如果直接使用内网IP，则可能产生硬编码。 ==》Docker link<div style="padding-bottom:1em;"></div>    - docker run -d —name reds xxx/redis<div style="padding-bottom:1em;"></div>    - docker run -p 4567 —name web —link redis:db -t -i -v $PWD/webapp:/opt/webapp xxx/sinatra /bin/bash<div style="padding-bottom:1em;"></div>    - —link创建链接两个父子容器。redis:db，redis为想要链接的容器（注意不是镜像），db为链接后的别名<div style="padding-bottom:1em;"></div>    - —icc=false<div style="padding-bottom:1em;"></div>    - 链接信息：/etc/hosts 和 环境变量【Dockerfile中的ENV和EXPOSE】<div style="padding-bottom:1em;"></div>Jenkins<div style="padding-bottom:1em;"></div>在Docker中运行Docker<div style="padding-bottom:1em;"></div>第六章 使用Docker构建服务<div style="padding-bottom:1em;"></div>docker run -d -P —volumes-from james_blog xxx/apache<div style="padding-bottom:1em;"></div>—volumes-from 把指定容器里的所有卷都加入新创建的容器里【！！！！如果用docker rm删除了james_blog，那么卷和卷里的内容也就不存在了】<div style="padding-bottom:1em;"></div>更新内容<div style="padding-bottom:1em;"></div>docker start james_blog<div style="padding-bottom:1em;"></div>备份卷<div style="padding-bottom:1em;"></div>多容器（nodejs + redis集群）<div style="padding-bottom:1em;"></div>1.redis base<div style="padding-bottom:1em;"></div>docker run -h<div style="padding-bottom:1em;"></div>捕获应用日志<div style="padding-bottom:1em;"></div>logstash<div style="padding-bottom:1em;"></div>docker run -d —name log stash —volumes-from redis_primary —volumes-from nodded xxx/logstash<div style="padding-bottom:1em;"></div>第七章 使用Fig编配Docker<div style="padding-bottom:1em;"></div>多个Docker宿主机进行协作<div style="padding-bottom:1em;"></div>- 简单的容器编配（Fig）<div style="padding-bottom:1em;"></div>- 分布式服务发现（Consul）<div style="padding-bottom:1em;"></div>- kubernetes/mesos/helios/centurion/libswarm
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/37062266/#comments">回应</a>&nbsp;&nbsp;
+                  2016-01-25 20:47
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34117021">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/shezhengking/"><img src="https://img3.doubanio.com/icon/u70033075-70.jpg" alt="大将军卫青" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34117021/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34117021/" class="">33 Docker入门</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/shezhengking/" class=" " title="大将军卫青">大将军卫青</a>
+                (寇可为，我亦可往)
+              
+            </p>
+            <div class="reading-note" data-cid="34117021">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/34117021/"><img src="https://img3.doubanio.com/view/page_note/small/public/p34117021-1.jpg"></a>
+                  </div>
+                  <span class="">Docker开始
+
+</span>
+                <p class="pl">
+                  <span class="">2015-01-25 21:57</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Docker开始</q></blockquote>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p34117021-1.jpg" alt=""><br><span class="pic-title"></span></div>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34117021/#comments">回应</a>&nbsp;&nbsp;
+                  2015-01-25 21:57
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="33905182">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/qianyanseu/"><img src="https://img3.doubanio.com/icon/u4001686-4.jpg" alt="Jon" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/33905182/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/33905182/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/qianyanseu/" class=" " title="Jon">Jon</a>
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="33905182">
+              <div class="short">
+                
+                  <span class="">
+由于“客居”于操作系统，容器只能运行于与底层宿主机相同或相似的操作系统……
+
+结果是 Linux 上的容器只能虚拟 Linux 环境，使得容器的灵活性不如虚拟机，但是容器直接运行在操作系统内核之上，与虚拟机相比具有性能优势。
+
+
+和传统的虚拟化以及半虚拟化（paravirtualization）技术相比，容器运行不需要模拟层（emulation layer）和管理层（hypervisor layer），而是使用操作系统的系统调用接口。这降低了运行单个容器需要的开..</span>
+                <p class="pl">
+                  <span class="">2015-01-04 23:24</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>
+由于“客居”于操作系统，容器只能运行于与底层宿主机相同或相似的操作系统……
+</q></blockquote>
+结果是 Linux 上的容器只能虚拟 Linux 环境，使得容器的灵活性不如虚拟机，但是容器直接运行在操作系统内核之上，与虚拟机相比具有性能优势。<div style="padding-bottom:1em;"></div><blockquote><q>
+和传统的虚拟化以及半虚拟化（paravirtualization）技术相比，容器运行不需要模拟层（emulation layer）和管理层（hypervisor layer），而是使用操作系统的系统调用接口。这降低了运行单个容器需要的开销，使得宿主机中可以运行更多的窗口。
+</q></blockquote>
+因此，单纯对这两种技术进行比较的话，容器其实拥有更为广泛的应用场景。毕竟，用 Linux 的话，虚拟化之后得到 Linux 环境往往更符合应用需求，在 Linux 上装个虚拟机跑 Windows 不是闲得蛋疼吗？
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/33905182/#comments">回应</a>&nbsp;&nbsp;
+                  2015-01-04 23:24
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="37062266">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/139083106/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="kiwi小白" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/37062266/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/37062266/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/139083106/" class=" " title="kiwi小白">kiwi小白</a>
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="37062266">
+              <div class="short">
+                
+                  <span class="">第一章 简介
+
+镜像是构建docker的即使，用户基于镜像来运行自己的容器。镜像是基于联合（Union）文件系统的一种层式的结构。
+镜像是Docker声明周期中的构建或打包阶段，而容器则是启动或执行阶段
+黄金镜像模型 -&gt; Docker分层镜像模型
+
+第三章 Docker入门
+
+创建 -&gt; 管理 -&gt; 停止 -&gt; 删除
+
+docker run
+     docker run -i -t ubuntu /bin/bash
+     -i STDIN
+     -t tty
+     —name 容器命名
+     —re...</span>
+                <p class="pl">
+                  <span class="">2016-01-25 20:47</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                第一章 简介<div style="padding-bottom:1em;"></div>镜像是构建docker的即使，用户基于镜像来运行自己的容器。镜像是基于联合（Union）文件系统的一种层式的结构。<div style="padding-bottom:1em;"></div>镜像是Docker声明周期中的构建或打包阶段，而容器则是启动或执行阶段<div style="padding-bottom:1em;"></div>黄金镜像模型 -&gt; Docker分层镜像模型<div style="padding-bottom:1em;"></div>第三章 Docker入门<div style="padding-bottom:1em;"></div>创建 -&gt; 管理 -&gt; 停止 -&gt; 删除<div style="padding-bottom:1em;"></div>docker run<div style="padding-bottom:1em;"></div>     docker run -i -t ubuntu /bin/bash<div style="padding-bottom:1em;"></div>     -i STDIN<div style="padding-bottom:1em;"></div>     -t tty<div style="padding-bottom:1em;"></div>     —name 容器命名<div style="padding-bottom:1em;"></div>     —restart (always / on-failure:5)<div style="padding-bottom:1em;"></div>docker ps -a<div style="padding-bottom:1em;"></div>     查看当前系统中容器的列表<div style="padding-bottom:1em;"></div>     -l 最后一次运行的容器<div style="padding-bottom:1em;"></div>docker start bob_the_container<div style="padding-bottom:1em;"></div>     重新启动已经停止的容器<div style="padding-bottom:1em;"></div>docker attach<div style="padding-bottom:1em;"></div>     附着到容器上?（使用场景？？？）<div style="padding-bottom:1em;"></div>docker run —name daemon_dave -d ubuntu /bin/sh -c ‘…...'<div style="padding-bottom:1em;"></div>     执行守护式容器<div style="padding-bottom:1em;"></div>docker logs<div style="padding-bottom:1em;"></div>docker top<div style="padding-bottom:1em;"></div>docker exec<div style="padding-bottom:1em;"></div>     在容器内部额外启动新进程（使用场景？？？）<div style="padding-bottom:1em;"></div>docker stop<div style="padding-bottom:1em;"></div>     停止守护式容器<div style="padding-bottom:1em;"></div>docker inspect<div style="padding-bottom:1em;"></div>docker rm sdf123132<div style="padding-bottom:1em;"></div>     删除容器<div style="padding-bottom:1em;"></div>第四章 使用Docker镜像和仓库<div style="padding-bottom:1em;"></div>什么是docker镜像？<div style="padding-bottom:1em;"></div>Docker镜像是由文件系统叠加而成。最低端是一个引导文件系统bootfs。第二层是root文件系统rootfs，为了bootfs之上。联合加载（union mount）同时加载多个只读文件系统，但是在外面看起来是一次同时加载一个文件系统。Docker将这样的文件系统称为镜像。<div style="padding-bottom:1em;"></div>当第一次启动容器时，Docker会在该镜像的最顶层加载一个读写文件系统。当Docker第一次启动一个容器时，初始的读写层是空的。当文件系统发生变化时，这些变化都会应用到这一层上。比如，如果想修改一个文件，这个文件首先会从该读写层下面的只读层复制到该读写层（copy-on-write）。改文件的只读版本依然存在，但是已经被读写层中的该文件副本所隐藏。(image-layering framework)<div style="padding-bottom:1em;"></div>构建镜像<div style="padding-bottom:1em;"></div>- docker commit：提交一个新的镜像层<div style="padding-bottom:1em;"></div>- Dockerfile<div style="padding-bottom:1em;"></div>用Dockerfile创建镜像<div style="padding-bottom:1em;"></div>命令<div style="padding-bottom:1em;"></div>FROM ：指定一个已经存在的镜像<div style="padding-bottom:1em;"></div>MAINTAINER：维护人<div style="padding-bottom:1em;"></div>RUN：每条RUN指令都会创建一个新的镜像层<div style="padding-bottom:1em;"></div>EXPOSE: 告诉Docker该容器内的应用程序将会使用容器内的指定端口。处于安全考虑，Docker并不会自动打开该端口，而是需要在docker<div style="padding-bottom:1em;"></div> run运行时指定需要打开哪些端口（EXPOSE也可以帮助多个容器链接）<div style="padding-bottom:1em;"></div>CMD：和RUN类似，RUN为构建竟像是需要运行的命令，CMD是容器启动时使用的命令（docker run可以覆盖CMD）<div style="padding-bottom:1em;"></div>ENTRYPOINT：与CMD类似。docker run命令行中指定的任何参数都会被当做参数再次传递给ENTRYPOINT指令中的参数<div style="padding-bottom:1em;"></div>WORKDIR<div style="padding-bottom:1em;"></div>ENV<div style="padding-bottom:1em;"></div>ADD: <a rel="nofollow" href="https://docs.docker.com/engine/articles/dockerfile_best-practices/#add-or-copy" target="_blank">https://docs.docker.com/engine/articles/dockerfile_best-practices/#add-or-copy</a><div style="padding-bottom:1em;"></div>COPY<div style="padding-bottom:1em;"></div>USER<div style="padding-bottom:1em;"></div>VOLUME：这个目录可以绕过联合文件系统，并提供如数据共享或者持久化的功能<div style="padding-bottom:1em;"></div>ONBUILD<div style="padding-bottom:1em;"></div>docker rmi【对比docker rm】<div style="padding-bottom:1em;"></div>docker build<div style="padding-bottom:1em;"></div>docker run -d -p 80 —name static_web jamtur01/static_web nginx -g “daemon off;”【需要nginx以前台的方式启动作为我们的服务器】<div style="padding-bottom:1em;"></div>docker可以通过两种方法在宿主机上分配端口：<div style="padding-bottom:1em;"></div>- 随机选择一个49000~49900<div style="padding-bottom:1em;"></div>- 指定一个特定的端口<div style="padding-bottom:1em;"></div>docker port 查看端口映射方式<div style="padding-bottom:1em;"></div>第五章 在测试中使用Docker<div style="padding-bottom:1em;"></div>静态网站<div style="padding-bottom:1em;"></div>1.-v 挂载镜像<div style="padding-bottom:1em;"></div>- ADD/COPY<div style="padding-bottom:1em;"></div>Web应用<div style="padding-bottom:1em;"></div>构建Sinatra<div style="padding-bottom:1em;"></div>构建Redis镜像<div style="padding-bottom:1em;"></div>- 构建Redis基础镜像<div style="padding-bottom:1em;"></div>- 构建Redis Master<div style="padding-bottom:1em;"></div>- 构建Redis Slave<div style="padding-bottom:1em;"></div>- 关联<div style="padding-bottom:1em;"></div>Sinatra关联Redis<div style="padding-bottom:1em;"></div>方法：<div style="padding-bottom:1em;"></div>- Docker自己的网络栈（内部网络）：Docker创建了一个虚拟子网，这个子网由宿主机和所有的Docker容器共享/防火墙。如果直接使用内网IP，则可能产生硬编码。 ==》Docker link<div style="padding-bottom:1em;"></div>    - docker run -d —name reds xxx/redis<div style="padding-bottom:1em;"></div>    - docker run -p 4567 —name web —link redis:db -t -i -v $PWD/webapp:/opt/webapp xxx/sinatra /bin/bash<div style="padding-bottom:1em;"></div>    - —link创建链接两个父子容器。redis:db，redis为想要链接的容器（注意不是镜像），db为链接后的别名<div style="padding-bottom:1em;"></div>    - —icc=false<div style="padding-bottom:1em;"></div>    - 链接信息：/etc/hosts 和 环境变量【Dockerfile中的ENV和EXPOSE】<div style="padding-bottom:1em;"></div>Jenkins<div style="padding-bottom:1em;"></div>在Docker中运行Docker<div style="padding-bottom:1em;"></div>第六章 使用Docker构建服务<div style="padding-bottom:1em;"></div>docker run -d -P —volumes-from james_blog xxx/apache<div style="padding-bottom:1em;"></div>—volumes-from 把指定容器里的所有卷都加入新创建的容器里【！！！！如果用docker rm删除了james_blog，那么卷和卷里的内容也就不存在了】<div style="padding-bottom:1em;"></div>更新内容<div style="padding-bottom:1em;"></div>docker start james_blog<div style="padding-bottom:1em;"></div>备份卷<div style="padding-bottom:1em;"></div>多容器（nodejs + redis集群）<div style="padding-bottom:1em;"></div>1.redis base<div style="padding-bottom:1em;"></div>docker run -h<div style="padding-bottom:1em;"></div>捕获应用日志<div style="padding-bottom:1em;"></div>logstash<div style="padding-bottom:1em;"></div>docker run -d —name log stash —volumes-from redis_primary —volumes-from nodded xxx/logstash<div style="padding-bottom:1em;"></div>第七章 使用Fig编配Docker<div style="padding-bottom:1em;"></div>多个Docker宿主机进行协作<div style="padding-bottom:1em;"></div>- 简单的容器编配（Fig）<div style="padding-bottom:1em;"></div>- 分布式服务发现（Consul）<div style="padding-bottom:1em;"></div>- kubernetes/mesos/helios/centurion/libswarm
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/37062266/#comments">回应</a>&nbsp;&nbsp;
+                  2016-01-25 20:47
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="43565479">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/hzqt210/"><img src="https://img3.doubanio.com/icon/u2648897-2.jpg" alt="烟雨" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43565479/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43565479/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/hzqt210/" class=" " title="烟雨">烟雨</a>
+                (烟锁重楼千里尽，雨打芭蕉万点残)
+              
+            </p>
+            <div class="reading-note" data-cid="43565479">
+              <div class="short">
+                
+                  <span class="">Ubuntu系统，Docker使用网桥来管理容器中的网络，默认情况下，UFW会丢弃所有转发的数据包（分组），若要启用数据包转发，需要对/etc/default/ufw文件做改动 原始的UFW转发策略：DEFAULT_FORWARD_POLICY="DROP" 新的UFW转发策略：DEFAULT_FORWARD_POLICY="ACCEPT" 保存后执行：ufw reload —————————————————— 配置守护进程：docker -d -H tcp://0.0.0.0:2375 这条命令会将docker绑定到宿主机上所有的网络接口...</span>
+                <p class="pl">
+                  <span class="">2017-05-03 15:12</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>Ubuntu系统，Docker使用网桥来管理容器中的网络，默认情况下，UFW会丢弃所有转发的数据包（分组），若要启用数据包转发，需要对/etc/default/ufw文件做改动</p><p>原始的UFW转发策略：DEFAULT_FORWARD_POLICY="DROP"</p><p>新的UFW转发策略：DEFAULT_FORWARD_POLICY="ACCEPT"</p><p>保存后执行：ufw reload</p><p>——————————————————</p><p>配置守护进程：docker -d -H tcp://0.0.0.0:2375</p><p>这条命令会将docker绑定到宿主机上所有的网络接口。用-h选项指定服务器的地址，也可以设置docker_host。</p><p>export DOCKER HOST="tcp://0.0.0.0:2375"</p><p>——————————————————</p><p>也可以绑定socket :docker -d -H unix://home/docker/docker.sock</p><p>或者绑定到多个地址：docker -d -H unix://home/docker/docker.sock -H tcp://0.0.0.0:2375</p><p>——————————————————</p><p>开启调试模式：DEBUG=1 /usr/bin/docker -d </p><p>若要永久生效，ubuntu中编辑/etc/default/docker中的DOCKER_OPTS变量</p><p>Red Hat中修改/usr/lib/systemd/system/docker.service 文件中的ExecStart配置项</p><p>——————————————————</p><p>Docker图形用户界面：</p><p>1、Shipyward</p><p>2、DockerUI</p><p>3、maDocker</p><p>——————————————————</p><p>运行docker</p><p>docker run [--name container_name ] -i -t ubuntu /bin/bash</p><p>-i 保证容器中STDIN是开启的</p><p>-t 告诉Docker为要创建的容器分配一个伪tty终端</p><p>--name 在运行时给容器分配一个名称</p><p>——————————————————</p><p>帮助命令：docker help run </p><p>man docker-run</p><p>——————————————————</p><p>docker ps -l 列出最近运行的容器，包括停止和正运行的 -a列出所有容器 不加是正在运行的容器</p><p>——————————————————</p><p>如果会话被exit但容器还在运行，可以用attach来附着会话</p><p>使用docker attach container_name</p><p>或者 docker attach aa2232413  #容器id</p><p></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43565479/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-03 15:12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="33905269">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/qianyanseu/"><img src="https://img3.doubanio.com/icon/u4001686-4.jpg" alt="Jon" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/33905269/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/33905269/" class="">第2页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/qianyanseu/" class=" " title="Jon">Jon</a>
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="33905269">
+              <div class="short">
+                
+                  <span class="">
+Docker 是一个能够把开发的应用程序自动部署到容器的开源引擎。
+
+这这这，跟 Tomcat 多像啊！</span>
+                <p class="pl">
+                  <span class="">2015-01-04 23:31</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>
+Docker 是一个能够把开发的应用程序自动部署到容器的开源引擎。
+</q></blockquote>
+这这这，跟 Tomcat 多像啊！
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/33905269/#comments">回应</a>&nbsp;&nbsp;
+                  2015-01-04 23:31
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="43565479">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/hzqt210/"><img src="https://img3.doubanio.com/icon/u2648897-2.jpg" alt="烟雨" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/43565479/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/43565479/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/hzqt210/" class=" " title="烟雨">烟雨</a>
+                (烟锁重楼千里尽，雨打芭蕉万点残)
+              
+            </p>
+            <div class="reading-note" data-cid="43565479">
+              <div class="short">
+                
+                  <span class="">Ubuntu系统，Docker使用网桥来管理容器中的网络，默认情况下，UFW会丢弃所有转发的数据包（分组），若要启用数据包转发，需要对/etc/default/ufw文件做改动 原始的UFW转发策略：DEFAULT_FORWARD_POLICY="DROP" 新的UFW转发策略：DEFAULT_FORWARD_POLICY="ACCEPT" 保存后执行：ufw reload —————————————————— 配置守护进程：docker -d -H tcp://0.0.0.0:2375 这条命令会将docker绑定到宿主机上所有的网络接口...</span>
+                <p class="pl">
+                  <span class="">2017-05-03 15:12</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <p>Ubuntu系统，Docker使用网桥来管理容器中的网络，默认情况下，UFW会丢弃所有转发的数据包（分组），若要启用数据包转发，需要对/etc/default/ufw文件做改动</p><p>原始的UFW转发策略：DEFAULT_FORWARD_POLICY="DROP"</p><p>新的UFW转发策略：DEFAULT_FORWARD_POLICY="ACCEPT"</p><p>保存后执行：ufw reload</p><p>——————————————————</p><p>配置守护进程：docker -d -H tcp://0.0.0.0:2375</p><p>这条命令会将docker绑定到宿主机上所有的网络接口。用-h选项指定服务器的地址，也可以设置docker_host。</p><p>export DOCKER HOST="tcp://0.0.0.0:2375"</p><p>——————————————————</p><p>也可以绑定socket :docker -d -H unix://home/docker/docker.sock</p><p>或者绑定到多个地址：docker -d -H unix://home/docker/docker.sock -H tcp://0.0.0.0:2375</p><p>——————————————————</p><p>开启调试模式：DEBUG=1 /usr/bin/docker -d </p><p>若要永久生效，ubuntu中编辑/etc/default/docker中的DOCKER_OPTS变量</p><p>Red Hat中修改/usr/lib/systemd/system/docker.service 文件中的ExecStart配置项</p><p>——————————————————</p><p>Docker图形用户界面：</p><p>1、Shipyward</p><p>2、DockerUI</p><p>3、maDocker</p><p>——————————————————</p><p>运行docker</p><p>docker run [--name container_name ] -i -t ubuntu /bin/bash</p><p>-i 保证容器中STDIN是开启的</p><p>-t 告诉Docker为要创建的容器分配一个伪tty终端</p><p>--name 在运行时给容器分配一个名称</p><p>——————————————————</p><p>帮助命令：docker help run </p><p>man docker-run</p><p>——————————————————</p><p>docker ps -l 列出最近运行的容器，包括停止和正运行的 -a列出所有容器 不加是正在运行的容器</p><p>——————————————————</p><p>如果会话被exit但容器还在运行，可以用attach来附着会话</p><p>使用docker attach container_name</p><p>或者 docker attach aa2232413  #容器id</p><p></p>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/43565479/#comments">回应</a>&nbsp;&nbsp;
+                  2017-05-03 15:12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="37062266">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/139083106/"><img src="https://img1.doubanio.com/icon/user_normal.jpg" alt="kiwi小白" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/37062266/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/37062266/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/139083106/" class=" " title="kiwi小白">kiwi小白</a>
+              
+                <span class="allstar40" title="推荐"></span>
+            </p>
+            <div class="reading-note" data-cid="37062266">
+              <div class="short">
+                
+                  <span class="">第一章 简介
+
+镜像是构建docker的即使，用户基于镜像来运行自己的容器。镜像是基于联合（Union）文件系统的一种层式的结构。
+镜像是Docker声明周期中的构建或打包阶段，而容器则是启动或执行阶段
+黄金镜像模型 -&gt; Docker分层镜像模型
+
+第三章 Docker入门
+
+创建 -&gt; 管理 -&gt; 停止 -&gt; 删除
+
+docker run
+     docker run -i -t ubuntu /bin/bash
+     -i STDIN
+     -t tty
+     —name 容器命名
+     —re...</span>
+                <p class="pl">
+                  <span class="">2016-01-25 20:47</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                第一章 简介<div style="padding-bottom:1em;"></div>镜像是构建docker的即使，用户基于镜像来运行自己的容器。镜像是基于联合（Union）文件系统的一种层式的结构。<div style="padding-bottom:1em;"></div>镜像是Docker声明周期中的构建或打包阶段，而容器则是启动或执行阶段<div style="padding-bottom:1em;"></div>黄金镜像模型 -&gt; Docker分层镜像模型<div style="padding-bottom:1em;"></div>第三章 Docker入门<div style="padding-bottom:1em;"></div>创建 -&gt; 管理 -&gt; 停止 -&gt; 删除<div style="padding-bottom:1em;"></div>docker run<div style="padding-bottom:1em;"></div>     docker run -i -t ubuntu /bin/bash<div style="padding-bottom:1em;"></div>     -i STDIN<div style="padding-bottom:1em;"></div>     -t tty<div style="padding-bottom:1em;"></div>     —name 容器命名<div style="padding-bottom:1em;"></div>     —restart (always / on-failure:5)<div style="padding-bottom:1em;"></div>docker ps -a<div style="padding-bottom:1em;"></div>     查看当前系统中容器的列表<div style="padding-bottom:1em;"></div>     -l 最后一次运行的容器<div style="padding-bottom:1em;"></div>docker start bob_the_container<div style="padding-bottom:1em;"></div>     重新启动已经停止的容器<div style="padding-bottom:1em;"></div>docker attach<div style="padding-bottom:1em;"></div>     附着到容器上?（使用场景？？？）<div style="padding-bottom:1em;"></div>docker run —name daemon_dave -d ubuntu /bin/sh -c ‘…...'<div style="padding-bottom:1em;"></div>     执行守护式容器<div style="padding-bottom:1em;"></div>docker logs<div style="padding-bottom:1em;"></div>docker top<div style="padding-bottom:1em;"></div>docker exec<div style="padding-bottom:1em;"></div>     在容器内部额外启动新进程（使用场景？？？）<div style="padding-bottom:1em;"></div>docker stop<div style="padding-bottom:1em;"></div>     停止守护式容器<div style="padding-bottom:1em;"></div>docker inspect<div style="padding-bottom:1em;"></div>docker rm sdf123132<div style="padding-bottom:1em;"></div>     删除容器<div style="padding-bottom:1em;"></div>第四章 使用Docker镜像和仓库<div style="padding-bottom:1em;"></div>什么是docker镜像？<div style="padding-bottom:1em;"></div>Docker镜像是由文件系统叠加而成。最低端是一个引导文件系统bootfs。第二层是root文件系统rootfs，为了bootfs之上。联合加载（union mount）同时加载多个只读文件系统，但是在外面看起来是一次同时加载一个文件系统。Docker将这样的文件系统称为镜像。<div style="padding-bottom:1em;"></div>当第一次启动容器时，Docker会在该镜像的最顶层加载一个读写文件系统。当Docker第一次启动一个容器时，初始的读写层是空的。当文件系统发生变化时，这些变化都会应用到这一层上。比如，如果想修改一个文件，这个文件首先会从该读写层下面的只读层复制到该读写层（copy-on-write）。改文件的只读版本依然存在，但是已经被读写层中的该文件副本所隐藏。(image-layering framework)<div style="padding-bottom:1em;"></div>构建镜像<div style="padding-bottom:1em;"></div>- docker commit：提交一个新的镜像层<div style="padding-bottom:1em;"></div>- Dockerfile<div style="padding-bottom:1em;"></div>用Dockerfile创建镜像<div style="padding-bottom:1em;"></div>命令<div style="padding-bottom:1em;"></div>FROM ：指定一个已经存在的镜像<div style="padding-bottom:1em;"></div>MAINTAINER：维护人<div style="padding-bottom:1em;"></div>RUN：每条RUN指令都会创建一个新的镜像层<div style="padding-bottom:1em;"></div>EXPOSE: 告诉Docker该容器内的应用程序将会使用容器内的指定端口。处于安全考虑，Docker并不会自动打开该端口，而是需要在docker<div style="padding-bottom:1em;"></div> run运行时指定需要打开哪些端口（EXPOSE也可以帮助多个容器链接）<div style="padding-bottom:1em;"></div>CMD：和RUN类似，RUN为构建竟像是需要运行的命令，CMD是容器启动时使用的命令（docker run可以覆盖CMD）<div style="padding-bottom:1em;"></div>ENTRYPOINT：与CMD类似。docker run命令行中指定的任何参数都会被当做参数再次传递给ENTRYPOINT指令中的参数<div style="padding-bottom:1em;"></div>WORKDIR<div style="padding-bottom:1em;"></div>ENV<div style="padding-bottom:1em;"></div>ADD: <a rel="nofollow" href="https://docs.docker.com/engine/articles/dockerfile_best-practices/#add-or-copy" target="_blank">https://docs.docker.com/engine/articles/dockerfile_best-practices/#add-or-copy</a><div style="padding-bottom:1em;"></div>COPY<div style="padding-bottom:1em;"></div>USER<div style="padding-bottom:1em;"></div>VOLUME：这个目录可以绕过联合文件系统，并提供如数据共享或者持久化的功能<div style="padding-bottom:1em;"></div>ONBUILD<div style="padding-bottom:1em;"></div>docker rmi【对比docker rm】<div style="padding-bottom:1em;"></div>docker build<div style="padding-bottom:1em;"></div>docker run -d -p 80 —name static_web jamtur01/static_web nginx -g “daemon off;”【需要nginx以前台的方式启动作为我们的服务器】<div style="padding-bottom:1em;"></div>docker可以通过两种方法在宿主机上分配端口：<div style="padding-bottom:1em;"></div>- 随机选择一个49000~49900<div style="padding-bottom:1em;"></div>- 指定一个特定的端口<div style="padding-bottom:1em;"></div>docker port 查看端口映射方式<div style="padding-bottom:1em;"></div>第五章 在测试中使用Docker<div style="padding-bottom:1em;"></div>静态网站<div style="padding-bottom:1em;"></div>1.-v 挂载镜像<div style="padding-bottom:1em;"></div>- ADD/COPY<div style="padding-bottom:1em;"></div>Web应用<div style="padding-bottom:1em;"></div>构建Sinatra<div style="padding-bottom:1em;"></div>构建Redis镜像<div style="padding-bottom:1em;"></div>- 构建Redis基础镜像<div style="padding-bottom:1em;"></div>- 构建Redis Master<div style="padding-bottom:1em;"></div>- 构建Redis Slave<div style="padding-bottom:1em;"></div>- 关联<div style="padding-bottom:1em;"></div>Sinatra关联Redis<div style="padding-bottom:1em;"></div>方法：<div style="padding-bottom:1em;"></div>- Docker自己的网络栈（内部网络）：Docker创建了一个虚拟子网，这个子网由宿主机和所有的Docker容器共享/防火墙。如果直接使用内网IP，则可能产生硬编码。 ==》Docker link<div style="padding-bottom:1em;"></div>    - docker run -d —name reds xxx/redis<div style="padding-bottom:1em;"></div>    - docker run -p 4567 —name web —link redis:db -t -i -v $PWD/webapp:/opt/webapp xxx/sinatra /bin/bash<div style="padding-bottom:1em;"></div>    - —link创建链接两个父子容器。redis:db，redis为想要链接的容器（注意不是镜像），db为链接后的别名<div style="padding-bottom:1em;"></div>    - —icc=false<div style="padding-bottom:1em;"></div>    - 链接信息：/etc/hosts 和 环境变量【Dockerfile中的ENV和EXPOSE】<div style="padding-bottom:1em;"></div>Jenkins<div style="padding-bottom:1em;"></div>在Docker中运行Docker<div style="padding-bottom:1em;"></div>第六章 使用Docker构建服务<div style="padding-bottom:1em;"></div>docker run -d -P —volumes-from james_blog xxx/apache<div style="padding-bottom:1em;"></div>—volumes-from 把指定容器里的所有卷都加入新创建的容器里【！！！！如果用docker rm删除了james_blog，那么卷和卷里的内容也就不存在了】<div style="padding-bottom:1em;"></div>更新内容<div style="padding-bottom:1em;"></div>docker start james_blog<div style="padding-bottom:1em;"></div>备份卷<div style="padding-bottom:1em;"></div>多容器（nodejs + redis集群）<div style="padding-bottom:1em;"></div>1.redis base<div style="padding-bottom:1em;"></div>docker run -h<div style="padding-bottom:1em;"></div>捕获应用日志<div style="padding-bottom:1em;"></div>logstash<div style="padding-bottom:1em;"></div>docker run -d —name log stash —volumes-from redis_primary —volumes-from nodded xxx/logstash<div style="padding-bottom:1em;"></div>第七章 使用Fig编配Docker<div style="padding-bottom:1em;"></div>多个Docker宿主机进行协作<div style="padding-bottom:1em;"></div>- 简单的容器编配（Fig）<div style="padding-bottom:1em;"></div>- 分布式服务发现（Consul）<div style="padding-bottom:1em;"></div>- kubernetes/mesos/helios/centurion/libswarm
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/37062266/#comments">回应</a>&nbsp;&nbsp;
+                  2016-01-25 20:47
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34390521">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/lovekym/"><img src="https://img3.doubanio.com/icon/u3831809-15.jpg" alt="飞林沙" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34390521/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34390521/" class="">读书笔记</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/lovekym/" class=" " title="飞林沙">飞林沙</a>
+                (此账号吐槽的方法已被注释)
+              
+                <span class="allstar30" title="还行"></span>
+            </p>
+            <div class="reading-note" data-cid="34390521">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/34390521/"><img src="https://img3.doubanio.com/view/page_note/small/public/p34390521-1.jpg"></a>
+                  </div>
+                  <span class="">1. Docker简介：
+
+	Docker与传统虚拟化容器的不同之处在于Docker在虚拟化的容器环境中又增加了一个应用程序的部署引擎。这个引擎提供了一个轻量快速的环境，能够运行开发者的程序，并且方便高效地将程序从开发者的笔记本部署到测试环境和生产环境。Docker的目标是提供以下这些东西：
+	&lt;1&gt;  提供一个简单，轻量的建模方式。Docker很容易上手，用户很容易将自己的程序Docker化。另外Docker容器的创建非常快捷，大多数的Dock...</span>
+                <p class="pl">
+                  <span class="">2015-02-24 23:48</span>
+                  
+                    &nbsp;&nbsp;<span class="">3人喜欢</span>
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                1. Docker简介：<div style="padding-bottom:1em;"></div>	Docker与传统虚拟化容器的不同之处在于Docker在虚拟化的容器环境中又增加了一个应用程序的部署引擎。这个引擎提供了一个轻量快速的环境，能够运行开发者的程序，并且方便高效地将程序从开发者的笔记本部署到测试环境和生产环境。Docker的目标是提供以下这些东西：<div style="padding-bottom:1em;"></div>	&lt;1&gt;  提供一个简单，轻量的建模方式。Docker很容易上手，用户很容易将自己的程序Docker化。另外Docker容器的创建非常快捷，大多数的Docker容器只需要不到一秒钟就可以启动，由于去除了管理程序的开销，所以Docker具有很高的性能，同一台宿主机可以运行很多的容器。<div style="padding-bottom:1em;"></div>	&lt;2&gt; 职责的逻辑分离。使用Docker，开发者只需要关心容器中的应用程序，运维人员只需要关心容器的管理。<div style="padding-bottom:1em;"></div>	&lt;3&gt; 快速高效的开发生命周期。Docker的目标之一就是缩短从开发到测试到部署上线的周期，使程序容易构建，容易移植。<div style="padding-bottom:1em;"></div>	&lt;4&gt; 鼓励面向服务的架构。由于Docker鼓励每个容器只运行一个应用程序，所以这样就形成了一个分布式的应用程序模型。在这种模型下，所有的项目都会变成一系列内部互联的容器，从而使得分布式地部署应用程序架构。<div style="padding-bottom:1em;"></div>	Docker的架构大致如此：<div style="padding-bottom:1em;"></div>	<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p34390521-1.jpg" alt=""><br><span class="pic-title"></span></div><div style="padding-bottom:1em;"></div>	Docker是一个典型的CS架构，客户端只需要向服务端或者守护进程发出请求，然后服务端和守护进程会完成所有工作并且返回结果。镜像是Docker世界的基石，用户基于镜像运行和构建自己的容器，可以把镜像看做是容器的源代码。另外，Docker使用Registry保存用户构建的镜像。<div style="padding-bottom:1em;"></div>	Docker带给我们的好处分成以下几点：<div style="padding-bottom:1em;"></div>	&lt;1&gt; 加速本地开发和构建流程。本地开发人员可以构建，分享和部署Docker容器。<div style="padding-bottom:1em;"></div>	&lt;2&gt; 让独立的服务和应用程序在不同的环境中得到相同的结果。<div style="padding-bottom:1em;"></div>	&lt;3&gt; 创建一个隔离的环境进行测试。例如用Jenkins这样的集成测试工具创建一个新的用于测试的容器。<div style="padding-bottom:1em;"></div>	&lt;4&gt; Docker可以让开发者在本机就搭建好一个复杂的程序或架构，而不是上来就搞服务器。<div style="padding-bottom:1em;"></div>	&lt;5&gt; 为学习和测试构建一个轻量级的沙盒环境。<div style="padding-bottom:1em;"></div>	&lt;6&gt; 超大规模的宿主机部署<div style="padding-bottom:1em;"></div>	另外Docker还有个显著的特点是对不同的宿主机，应用程序和服务，可能会表现出不同的特性和架构，这样就进一步简化了应用程序开发的工作。另外，由于Docker的容器非常轻量级，所以重建容器的代价通常都比传统的状态修复低得多。<div style="padding-bottom:1em;"></div>2. Docker常用命令<div style="padding-bottom:1em;"></div>	首先来创建第一个容器： sudo docker run -I -t  -p 127.0.0.1:80:9001 ubuntu /bin/bash。这个命令解析一下：-i的意思是保证容器的STDIN是开启的，保证持久化的标准输入。 -t是为创建的容器分配一个伪tty中断，这样新创建的容器才能提供一个交互式shell。 除非这是一个运行后台服务的容器，否则这两个参数是最基本的参数。Docker首先会检查本地是否存在Ubuntu镜像，如果本地没有该镜像的话，Docker就会连接官方维护的Docker Hub，一旦找到就会下载保存到本地的宿主机中。-p参数会将Docker的网络端口和宿主机的端口相绑定。最后告诉容器要运行/bin/bash命令，启动一个bash shell。<div style="padding-bottom:1em;"></div>	docker ps 会列出当前系统中正在运行的容器，docker ps -a会列出当前系统的所有容器列表。<div style="padding-bottom:1em;"></div>	docker run --name xxxx -i -t ubuntu 可以为容器指定一个名称，在很多Docker命令中，都可以使用name来代替uuid，容器的名称有助于分辨容器，也有助于从逻辑上帮我们理清容器关系。<div style="padding-bottom:1em;"></div>	docker start 和 docker restart 可以帮助我们启动或者重启一个容器，可以使用docker stop关闭守护式容器。<div style="padding-bottom:1em;"></div>	docker attach 可以让我们重新附着到容器的会话上。<div style="padding-bottom:1em;"></div>	docker run -d 可以帮助我们创建一个守护进程放在后台长期运行。如果想查看后台容器都做了什么，可以使用docker logs ubuntu来获取容器的日志。与tail -f同理，也可以使用docker logs -f来监控实时的日志。<div style="padding-bottom:1em;"></div>	docker top 可以监控某容器中的运行进程。在Docker 1.3之后，还可以使用docker exec在容器内额外启动新进程，可以在容器内启动的进程分成后台任务和交互式任务两类。例如sudo docker exec -d daemon touch /etc/new_config中的-d就启动了一个后台任务，而sudo docker exec -t -i deamon /bin/bash则是启动了一个交互式任务。 <div style="padding-bottom:1em;"></div>	docker inspect 获得更多的容器信息，这个命令会对容器进行详细的检查，然后返回配置信息，包括名称，网络配置和很多有用的数据。使用--format 或 -f 支持完整的Go语言，所以可以充分发挥Go语言的模板优势。<div style="padding-bottom:1em;"></div>	docker rm可以删除容器。<div style="padding-bottom:1em;"></div>3. Docker镜像<div style="padding-bottom:1em;"></div>	Docker镜像是由文件系统叠加而成，最底端是一个文件引导系统，即bootfs，很类似于Linux的文件引导系统，用户大部分时间不会和引导文件系统有什么交互。再往上的第二层是root文件系统rootfs，rootfs可以是一种或者多种操作系统。<div style="padding-bottom:1em;"></div>	在传统Linux系统引导中，root文件系统会最先以只读的方式加载，当引导结束后才会变成读写状态。但是在Docker中，rootfs一直都会保持只读状态，并且Docker会利用联合加载技术在rootfs上加载更多的只读文件系统(联合加载是说通过叠加的方式一次同时加载多个文件系统，但在外面又只能看到一个文件系统)。Docker将这样的文件系统称为镜像。<div style="padding-bottom:1em;"></div>	Docker第一次启动一个容器时，初始的读写层是空的，当文件系统发生变化时，这些变化都会应用到这一层上，例如想修改一个文件，这个文件会从该读写层下面的只读层复制到读写层，然后修改，这时指针依然指向只读版本，直到修改结束，这时读写层又变成了只读状态。这被称为写时复制。<div style="padding-bottom:1em;"></div>	构建Docker镜像有两种方法：&lt;1&gt; 使用docker commit命令 &lt;2&gt; 使用docker build和Dockerfile文件。并不推荐使用docker commit，而应该使用更灵活强大的dockerfile方式。Dockerfile使用基本的DSL语法指令来构建一个Docker镜像，然后使用docker build命令基于该Dockerfile中的指令构建一个新的镜像。Dockerfile由一系列的指令和参数组成。Dockerfile的指令会按顺序从上到下执行，所以应该根据需要合理安排制定的顺序。每条指令都会创建一个新的镜像并对镜像进行提交，Docker大致按照以下的步骤执行Dockerfile中的指令: Docker从基础镜像运行一个容器，执行一条指令并且对容器做出修改，执行类似docker commit的操作提交一个新的镜像层，Docker基于刚刚提交的容器创建一个新的镜像层，执行Dockerfile下一条指令直到执行结束。<div style="padding-bottom:1em;"></div>	每个Dockerfile的第一条指令都应该是FROM，后续指令都会基于该镜像进行，这个镜像称为基础镜像。由于Docker会将每一步构建过程都提交为镜像，所以他会将之前的镜像层看做是缓存，这样如果失败再次进行构建时不需要从头开始构建，这样可以节省大量的时间。但是这个带来的问题是比如apt-get update的命令也被缓存起来，所以可以执行REFERSHED_AT来制定最后构建时间。<div style="padding-bottom:1em;"></div>4. 使用Docker进行开发测试和持续集成<div style="padding-bottom:1em;"></div>	sudo docker run -d -p 80 --name website -v $PWD/website:/var/www/html/website nginx /bin/nginx 中的-v参数允许我们把宿主机的目录作为卷，挂在到容器中，从而实现容器之间的共享。卷在Docker中非常重要，卷是在一个或者多个容器内被选定的目录，可以绕过分层的联合文件系统为Docker提供持久数据和共享数据。这意味着对卷的修改会直接生效，从而绕过容器本身。即便容器停止，卷的内容也依然存在。例如：&lt;1&gt; 希望同时对代码进行开发和测试 &lt;2&gt; 代码修改频繁，不想频繁在开发过程中构建镜像。 &lt;3&gt; 希望在多个容器中共享资源。<div style="padding-bottom:1em;"></div>	另外的一个应用场景，例如我们搭建了一个Web的容器和一个Redis的容器，这样容器之间需要互相通信。有两种办法：&lt;1&gt; 将容器的网络端口绑定到宿主机的网络端口，从而访问宿主机的网络端口 &lt;2&gt; 内部网络。在安装Docker时，会创建一个新的网络接口，名字叫做Docker0，每个Docker容器都会在这个接口上分配一个IP地址。Docker0是一个虚拟的以太网桥，用于连接容器和本地宿主网络，所以Docker每创建一个容器就会创建一组互联的网络接口，这组接口一段在Docker0的一端，另外一端在容器上，所以其实就相当于通过Docker0作为整个内部网络的交换机。<div style="padding-bottom:1em;"></div>	另外，Docker很擅长快速创建和处理一个或多个容器，这个能力显然可以为持续集成测试提供帮助。Docker可以让部署以及这些步骤和宿主机的清理变得开销很低。<div style="padding-bottom:1em;"></div>5. 插件<div style="padding-bottom:1em;"></div>	Fig由Orchard团队开发的开源工具，用Python编写，用于简单的容器编排。使用Fig可以用一个YAML文件定义一组要启动的容器，以及容器运行时的属性，Fig称这些容器为服务，并且这样定义：容器通过某些方法并指定一些运行时的属性来和其他容器产生交互。使用中可以看出使用Fig能够非常简单地构建一个需要多个Docker容器的应用程序。<div style="padding-bottom:1em;"></div>	服务发现是分布式程序之间管理相互关系的一种机制，一个分布式程序一般由多个组件组成，这些组件可以放在同一台机器上，也可以分步在多个数据中心，甚至分步在不同的地理区域。这些组件通常可以为其他组件服务，或者为其他组件提供消费服务。所谓服务发现的概念是允许某个组件在想要和其他组件交互时，自动找到对方，由于这些应用本身是分布式的，所以服务发现机制本身也需要是分布式的。而且服务发现作为分布式应用不同组件之间的胶水，还需要足够动态，可靠，适应性强，并且可以快速且一致地共享关于这些服务的数据。书中是使用Consul作为服务发现的工具，Consul是使用Go开发的工具，使用了Raft一致性算法来提供确定的写入机制。Consul暴露了键值存储系统和服务分类系统，并提供高可用性，高容错能力，并且保证强一致性。服务可以将自己注册到Consul，并以高可用且分布式的方式共享这些信息。另外，Consul还内置了强大的服务监控系统。<div style="padding-bottom:1em;"></div>编配工具是一个快速发展的领域，工具的功能不尽相同，但是大多属于两种类型：调度和集群管理，服务发现。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34390521/#comments">回应</a>&nbsp;&nbsp;
+                  2015-02-24 23:48
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="34117021">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/shezhengking/"><img src="https://img3.doubanio.com/icon/u70033075-70.jpg" alt="大将军卫青" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/34117021/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/34117021/" class="">33 Docker入门</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/shezhengking/" class=" " title="大将军卫青">大将军卫青</a>
+                (寇可为，我亦可往)
+              
+            </p>
+            <div class="reading-note" data-cid="34117021">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/34117021/"><img src="https://img3.doubanio.com/view/page_note/small/public/p34117021-1.jpg"></a>
+                  </div>
+                  <span class="">Docker开始
+
+</span>
+                <p class="pl">
+                  <span class="">2015-01-25 21:57</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Docker开始</q></blockquote>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p34117021-1.jpg" alt=""><br><span class="pic-title"></span></div>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/34117021/#comments">回应</a>&nbsp;&nbsp;
+                  2015-01-25 21:57
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/26285268/annotation">更多读书笔记（共6篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        <span>
+            <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=discuss">
+              <span>在这本书的论坛里发言</span>
+            </a>
+        </span>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-ebook">
+        
+  
+  
+
+  <h2>
+    <span class="">电子版有售</span>
+      ······
+
+  </h2>
+
+
+
+  <ul class="bs noline more-after ">
+    
+      
+      <li class="">
+        <a target="_blank" href="http://www.amazon.cn/mn/detailApp/ref=asc_df_B015QSNIY02890180/?asin=B015QSNIY0&amp;tag=douban_kindle-23&amp;creative=2384&amp;creativeASIN=B015QSNIY0&amp;linkCode=df0" class="">
+          <span class="">Kindle 电子书</span>
+          <span class="buylink-price">
+            <span class="">35.40 元</span>
+          </span>
+        </a>
+      </li>
+  </ul>
+
+      </div>
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3840&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=5270&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgBUGlMdBCJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIVBlQTUxMdS0IJRmtLVXFjUWUpT2cXABV8HBILbXEOSztDDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBtaFgETBlQrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBRMGXRNdCltXWwg%253D&amp;cntvendor=3&amp;srcsubj=26285268&amp;type=bkbuy&amp;subject=26285268" class="">
+                      <span class="">京东商城</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3840&amp;pre=0&amp;vendor=jingdong&amp;srcpage=subject&amp;price=5270&amp;pos=1&amp;url=http%3A%2F%2Funion-click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgBUGlMdBCJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIVBlQTUxMdS0IJRmtLVXFjUWUpT2cXABV8HBILbXEOSztDDh43Uh5cEwUbBFIrWxEDFgNlK1sUMkBpja3tzaejG4Gx1MCKhTdUK1sQCxsDUBtaFgETBlQrXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBRMGXRNdCltXWwg%253D&amp;cntvendor=3&amp;srcsubj=26285268&amp;type=bkbuy&amp;subject=26285268" class="buylink-price ">
+                      <span class="">
+                        52.70 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3840&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=5015&amp;pos=2&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B00RBEIFMI2889742%2F%3Fasin%3DB00RBEIFMI%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3DB00RBEIFMI%26linkCode%3Ddf0&amp;cntvendor=3&amp;srcsubj=26285268&amp;type=bkbuy&amp;subject=26285268" class="">
+                      <span class="">亚马逊</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3840&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=5015&amp;pos=2&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B00RBEIFMI2889742%2F%3Fasin%3DB00RBEIFMI%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3DB00RBEIFMI%26linkCode%3Ddf0&amp;cntvendor=3&amp;srcsubj=26285268&amp;type=bkbuy&amp;subject=26285268" class="buylink-price ">
+                      <span class="">
+                        50.15 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3840&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=3840&amp;pos=3&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F6756464.htm&amp;cntvendor=3&amp;link2key=56a7f5633e&amp;srcsubj=26285268&amp;type=bkbuy&amp;subject=26285268" class="">
+                      <span class="">中国图书网</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=3840&amp;pre=0&amp;vendor=bookschina&amp;srcpage=subject&amp;price=3840&amp;pos=3&amp;url=http%3A%2F%2Fwww.bookschina.com%2Funion%2Fubook.asp%3Fadservice%3D354872%26tourl%3Dhttp%3A%2F%2Fwww.bookschina.com%2F6756464.htm&amp;cntvendor=3&amp;link2key=56a7f5633e&amp;srcsubj=26285268&amp;type=bkbuy&amp;subject=26285268" class="buylink-price ">
+                      <span class="">
+                        38.40 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/26285268/buylinks">
+              &gt; 查看3家网店价格
+                (38.40 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+  
+  
+
+  <h2>
+    <span class="">这本书的其他版本 </span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/works/1058348">全部4</a>
+        ) </span>
+
+  </h2>
+
+
+  <div class="indent">
+    <ul>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/25931006/">Amazon Digital Services, Inc.版</a>
+          2014-7-12 / 43人读过
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/26780404/">人民邮电出版社版</a>
+          2016-4-1 / 88人读过 / 有售
+        </li>
+        <li class="mb8 pl">
+          <a href="https://book.douban.com/subject/26246555/">未知出版社版</a>
+          2014-8-4 / 4人读过
+        </li>
+    </ul>
+  </div>
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/26285268/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/37622307/" target="_blank">书单-编程-前端</a>
+                <span class="pl">(LZX)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3479220/" target="_blank">运维同学必备系列</a>
+                <span class="pl">(sggggy)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3288935/" target="_blank">NoResourceYet</a>
+                <span class="pl">(wishUhere)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/36516610/" target="_blank">2015</a>
+                <span class="pl">(大句哥哥)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1650571/" target="_blank">书籍列表</a>
+                <span class="pl">(十甫寸)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/tzungtzu/"><img src="https://img3.doubanio.com/icon/u43375245-4.jpg" class="pil" alt="tzungtzu" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/tzungtzu/">tzungtzu</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/136653803/"><img src="https://img3.doubanio.com/icon/u136653803-3.jpg" class="pil" alt="太溪照海" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/136653803/">太溪照海</a><br/>
+      <div class="pl ll">          1月9日          读过      </div>
+
+        <span class="allstar30" title="还行"></span>
+      <br/>
+
+      <span class="pl">tags:docker Linux</span><br />
+
+          <span class="">本书成书以后docker已经发生了不少变化，本书第二章提供的安装方式已经过时，请参照docker官方文档；最有价值的是第三章到第六章，特别是第三、四章关于docker镜像和容器的概念讲述的还是比较清楚的，比看英语文档省劲</span> <br/>
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/frankkk/"><img src="https://img3.doubanio.com/icon/u57925152-10.jpg" class="pil" alt="Frank" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/frankkk/">Frank</a><br/>
+      <div class="pl ll">          1月7日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/alvysinger/"><img src="https://img3.doubanio.com/icon/u1925326-55.jpg" class="pil" alt="員外" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/alvysinger/">員外</a><br/>
+      <div class="pl ll">          1月7日          读过      </div>
+
+        <span class="allstar50" title="力荐"></span>
+      <br/>
+
+
+          <span class="">docker入门够用了，例子也讲的跟详细清晰……只是很多章节用到的技术栈我没接触过，我还是太弱啦……</span> <br/>
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26285268/doings">81人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26285268/collections">321人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/26285268/wishes">455人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+        <a class=" " href="https://book.douban.com/subject/26285268/offers">1本二手书欲转让</a>
+          <span class="">
+            (25.00
+              元)
+          </span>
+      </li>
+      <li>
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有455人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于第一本Docker书的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/26285268/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'Sm9nH9h5NGg',
+            criteria = '7:docker|7:虚拟化|7:Docker|7:计算机|7:云计算|7:Linux|7:编程|7:计算机科学|7:Programming|7:容器|3:/subject/26285268/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- nain8-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

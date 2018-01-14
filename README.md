@@ -5,5 +5,8 @@
 2.使用方法：首先使用MyCrawlerByThread下载需要的网页，
   然后使用ExtractInfoByThread解析和提取网页信息，
   然后使用txt2excel将结果转化为excel格式。
-
+3.results文件夹保存了运行结果。其中，三个文件夹分别保存了互联网，算法，编程三个主题的下载的网页。
+ 三个xls文件分别保存了解析出来的结果。然后从结果中取出评论超过1000的书目。合并成“合并.xls”,然后
+ 根据评分进行排序，取前100条记录，得到“answer.xls"
+4.结果保存在results文件夹下面的answer.xls中。
 

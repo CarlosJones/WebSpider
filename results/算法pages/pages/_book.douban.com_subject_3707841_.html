@@ -1,0 +1,3239 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-windows ua-ie6 book-new-nav">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Principles of Computer System Design (豆瓣)</title>
+  
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+  
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.douban.com/book/subject/3707841/">
+<meta name="keywords" content="Principles of Computer System Design,Jerome H. Saltzer,M. Frans Kaashoek,Morgan Kaufmann,2009-7-7,简介,作者,书评,论坛,推荐,二手">
+<meta name="description" content="图书Principles of Computer System Design 介绍、书评、论坛及推荐 ">
+
+  <script>var _head_start = new Date();</script>
+  
+  <link href="https://img3.doubanio.com/f/book/c562010083631a8b5625ac07bc2a6e7e4466b6f6/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <link href="https://img3.doubanio.com/f/book/8a9d097c416aabac4f7e45f5d2ce9c6834b3fc7a/css/book/base/init.css" rel="stylesheet">
+  <style type="text/css"></style>
+  <script src="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js"></script>
+  <script src="https://img3.doubanio.com/f/book/0f1957d4c436280f238b0295e4d0ba6855510555/js/book/master.js"></script>
+  
+
+  
+  <link rel="stylesheet" href="https://img3.doubanio.com/f/book/15aa82bcdf414e007dee7483304105800fc59e54/css/book/subject.css">
+  <link href="https://img3.doubanio.com/f/book/5d301503fbbd8e09f3114583859789884e942f47/css/book/annotation/like.css" rel="stylesheet">
+  <script src="https://img3.doubanio.com/f/shire/3c6f2946669cfb2fc9ee4a4d1dcc41fc181cad92/js/lib/jquery.snippet.js"></script>
+  <script src="https://img3.doubanio.com/f/shire/77323ae72a612bba8b65f845491513ff3329b1bb/js/do.js" data-cfg-autoload="false"></script>
+  <script src="https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js"></script>
+  <script src="https://img3.doubanio.com/f/book/2e421e5ec8f2869d31535206c0ac0322532be1f8/js/book/mod/hide.js"></script>
+  <script src="https://img3.doubanio.com/f/book/7196bdec780f03785f55b06fda34999595057f65/js/book/subject/unfold.js"></script>
+    <link rel="alternate" href="https://book.douban.com/feed/subject/3707841/reviews" type="application/rss+xml" title="RSS">
+  <style type="text/css"> h2 {color: #007722;} </style>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script>  </script>
+  <style type="text/css">
+.tag,.tag:link,.tag:visited{width:auto;word-break:keep-all;white-space:nowrap;background-color:#f5f5f5;color:#37A;font-size:13px;padding:2px 11px 0;display:inline-block;margin:0 3px 5px 0;line-height:20px}.tag:hover,.tag:active{background-color:#e8e8e8;color:#37A}
+
+
+#db-discussion-section .olt { margin-bottom: 7px; }
+</style>
+
+  <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+    <script>var _body_start = new Date();</script>
+    
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+<div class="top-nav-info">
+  <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+  <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    
+<div class="top-nav-doubanapp">
+  <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+  <div id="top-nav-appintro" class="more-items">
+    <p class="appintro-title">豆瓣</p>
+    <p class="slogan">我们的精神角落</p>
+    <p class="qrcode">扫码直接下载</p>
+    <div class="download">
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+      <span>·</span>
+      <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android" class="download-android">Android</a>
+    </div>
+    <div id="doubanapp-tip">
+      <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+      <a href="javascript: void 0;" class="tip-close">×</a>
+    </div>
+  </div>
+</div>
+
+    
+
+
+<div class="global-nav-items">
+  <ul>
+    <li class="">
+      <a href="https://www.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣</a>
+    </li>
+    <li class="on">
+      <a href="https://book.douban.com"  data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;0&quot;}">读书</a>
+    </li>
+    <li class="">
+      <a href="https://movie.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;0&quot;}">电影</a>
+    </li>
+    <li class="">
+      <a href="https://music.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;0&quot;}">音乐</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/location" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;0&quot;}">同城</a>
+    </li>
+    <li class="">
+      <a href="https://www.douban.com/group" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;0&quot;}">小组</a>
+    </li>
+    <li class="">
+      <a href="https://read.douban.com&#47;?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;0&quot;}">阅读</a>
+    </li>
+    <li class="">
+      <a href="https://douban.fm&#47;?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;0&quot;}">FM</a>
+    </li>
+    <li class="">
+      <a href="https://time.douban.com&#47;?dt_time_source=douban-web_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-time&quot;,&quot;uid&quot;:&quot;0&quot;}">时间</a>
+    </li>
+    <li class="">
+      <a href="https://market.douban.com&#47;?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;0&quot;}">市集</a>
+    </li>
+    <li>
+      <a href="#more" class="bn-more"><span>更多</span></a>
+      <div class="more-items">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;0&quot;}">豆瓣摄影</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+<script>
+  ;window._GLOBAL_NAV = {
+    DOUBAN_URL: "https://www.douban.com",
+    N_NEW_NOTIS: 0,
+    N_NEW_DOUMAIL: 0
+  };
+</script>
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/321e246/shire/bundle.js" defer="defer"></script>
+
+
+
+
+  
+
+
+
+    <link href="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.css" rel="stylesheet" type="text/css">
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+  <div class="nav-primary">
+    <div class="nav-logo">
+      <a href="https:&#47;&#47;book.douban.com">豆瓣读书</a>
+    </div>
+    <div class="nav-search">
+      <form action="https:&#47;&#47;book.douban.com/subject_search" method="get">
+        <fieldset>
+          <legend>搜索：</legend>
+          <label for="inp-query">
+          </label>
+          <div class="inp"><input id="inp-query" name="search_text" size="22" maxlength="60" placeholder="书名、作者、ISBN" value=""></div>
+          <div class="inp-btn"><input type="submit" value="搜索"></div>
+          <input type="hidden" name="cat" value="1001" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="nav-secondary">
+    
+
+<div class="nav-items">
+  <ul>
+    <li    ><a href="https://book.douban.com/cart/"
+     >购书单</a>
+    </li>
+    <li    ><a href="https://read.douban.com/ebooks/?dcs=book-nav&dcm=douban"
+            target="_blank"
+     >电子图书</a>
+    </li>
+    <li    ><a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&utm_source=douban&utm_medium=pc_web"
+     >豆瓣书店</a>
+    </li>
+    <li    ><a href="https://book.douban.com/annual/2017?source=navigation"
+            target="_blank"
+     >2017年度榜单</a>
+    </li>
+    <li    ><a href="https://book.douban.com/standbyme/2016?source=navigation"
+            target="_blank"
+     >2016读书报告</a>
+    </li>
+    <li          class=" book-cart"
+    ><a href="https://market.douban.com/cart/?utm_campaign=book_nav_cart&utm_source=douban&utm_medium=pc_web"
+            target="_blank"
+     >购物车</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+    <a href="https://book.douban.com/annual/2017?source=patch" class="bookannual2017"></a>
+</div>
+
+<script id="suggResult" type="text/x-jquery-tmpl">
+  <li data-link="{{= url}}">
+            <a href="{{= url}}" onclick="moreurl(this, {from:'book_search_sugg', query:'{{= keyword }}', subject_id:'{{= id}}', i: '{{= index}}', type: '{{= type}}'})">
+            <img src="{{= pic}}" width="40" />
+            <div>
+                <em>{{= title}}</em>
+                {{if year}}
+                    <span>{{= year}}</span>
+                {{/if}}
+                <p>
+                {{if type == "b"}}
+                    {{= author_name}}
+                {{else type == "a" }}
+                    {{if en_name}}
+                        {{= en_name}}
+                    {{/if}}
+                {{/if}}
+                 </p>
+            </div>
+        </a>
+        </li>
+  </script>
+
+
+
+
+    <script src="//img3.doubanio.com/dae/accounts/resources/094108a/book/bundle.js" defer="defer"></script>
+
+
+
+
+
+    <div id="wrapper">
+        
+    <div id="dale_book_subject_top_icon"></div>
+<h1>
+    <span property="v:itemreviewed">Principles of Computer System Design</span>
+    <div class="clear"></div>
+</h1>
+
+        
+  <div id="content">
+    
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+
+
+
+<div class="indent">
+  <div class="subjectwrap clearfix">
+    
+
+
+
+<div class="subject clearfix">
+<div id="mainpic" class="">
+
+  
+
+  <a class="nbg"
+      href="https://img3.doubanio.com/lpic/s4764383.jpg" title="Principles of Computer System Design">
+    <img src="https://img3.doubanio.com/lpic/s4764383.jpg" title="点击看大图" alt="Principles of Computer System Design"
+         rel="v:photo" style="width: 135px">
+  </a>
+
+
+
+</div>
+
+
+
+
+
+<div id="info" class="">
+
+
+    
+    
+  
+    <span>
+      <span class="pl"> 作者</span>:
+        
+        
+        <a class="" href="/search/Jerome%20H.%20Saltzer">Jerome H. Saltzer</a>
+        
+           /
+        
+        <a class="" href="/search/M.%20Frans%20Kaashoek">M. Frans Kaashoek</a>
+    </span><br/>
+
+    
+    
+  
+    <span class="pl">出版社:</span> Morgan Kaufmann<br/>
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">副标题:</span> An Introduction<br/>
+
+    
+    
+  
+
+    
+    
+  
+
+    
+    
+  
+    <span class="pl">出版年:</span> 2009-7-7<br/>
+
+    
+    
+  
+    <span class="pl">页数:</span> 560<br/>
+
+    
+    
+  
+    <span class="pl">定价:</span> USD 82.95<br/>
+
+    
+    
+  
+    <span class="pl">装帧:</span> Paperback<br/>
+
+    
+    
+  
+
+    
+    
+  
+    
+      
+      <span class="pl">ISBN:</span> 9780123749574<br/>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="interest_sectl" class="">
+  <div class="rating_wrap clearbox" rel="v:rating">
+    <div class="rating_logo">豆瓣评分</div>
+    <div class="rating_self clearfix" typeof="v:Rating">
+      <strong class="ll rating_num " property="v:average"> 9.5 </strong>
+      <span property="v:best" content="10.0"></span>
+      <div class="rating_right ">
+          <div class="ll bigstar50"></div>
+            <div class="rating_sum">
+                <span class="">
+                    <a href="collections" class="rating_people"><span property="v:votes">40</span>人评价</a>
+                </span>
+            </div>
+
+
+      </div>
+    </div>
+          
+            
+            
+<span class="stars5 starstop" title="力荐">
+    5星
+</span>
+
+            
+<div class="power" style="width:64px"></div>
+
+            <span class="rating_per">77.5%</span>
+            <br>
+            
+            
+<span class="stars4 starstop" title="推荐">
+    4星
+</span>
+
+            
+<div class="power" style="width:16px"></div>
+
+            <span class="rating_per">20.0%</span>
+            <br>
+            
+            
+<span class="stars3 starstop" title="还行">
+    3星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+            
+            
+<span class="stars2 starstop" title="较差">
+    2星
+</span>
+
+            
+<div class="power" style="width:2px"></div>
+
+            <span class="rating_per">2.5%</span>
+            <br>
+            
+            
+<span class="stars1 starstop" title="很差">
+    1星
+</span>
+
+            
+<div class="power" style="width:0px"></div>
+
+            <span class="rating_per">0.0%</span>
+            <br>
+    </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+  
+    
+    <div id="interest_sect_level" class="clearfix">
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3707841-wish">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectwish" class="miniform">
+    <input type="submit" class="minisubmit j " value="想读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3707841-do">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectdo" class="miniform">
+    <input type="submit" class="minisubmit j " value="在读" title="" />
+</form>
+
+          </span>
+        </a>
+        <a href="#" rel="nofollow" class="j a_show_login colbutt ll" name="pbtn-3707841-collect">
+          <span>
+            
+<form method="POST" action="https://www.douban.com/register?reason=collectcollect" class="miniform">
+    <input type="submit" class="minisubmit j " value="读过" title="" />
+</form>
+
+          </span>
+        </a>
+      <div class="ll j a_stars">
+        
+    
+    评价:
+    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3707841-1">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3707841-2">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3707841-3">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3707841-4">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
+            <a href="https://www.douban.com/register?reason=rate" class="j a_show_login" name="pbtn-3707841-5">
+        <img src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
+    </span><span id="rateword" class="pl"></span>
+    <input id="n_rating" type="hidden" value=""  />
+    </span>
+
+      </div>
+      
+
+    </div>
+
+
+
+  
+  <div class="gtleft">
+    <ul class="ul_subject_menu bicelink color_gray pt6 clearfix">
+        <li>
+          <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a href="https://www.douban.com/register?reason=annotate" class="j a_show_login" rel="nofollow">写笔记</a>
+        </li>
+
+          <li>
+            <img src="https://img3.doubanio.com/f/shire/5bbf02b7b5ec12b23e214a580b6f9e481108488c/pics/add-review.gif" />&nbsp;<a class="j a_show_login" href="https://www.douban.com/register?reason=review" rel="nofollow">写书评</a>
+          </li>
+
+      <li>
+
+  <span class="rr">
+  
+
+    <img src="https://img3.doubanio.com/pics/add-cart.gif"/>
+      <a class="j a_show_login" href="http://http://www.douban.com/register?reason=addbook2cart" rel="nofollow">加入购书单</a>
+  <span class="hidden">已在<a href="https://book.douban.com/cart">购书单</a></span>
+</span><br class="clearfix" />
+</li>
+
+
+        
+        
+    
+    <li class="rec" id="C-3707841">
+        <a href="#" data-url="https://book.douban.com/subject/3707841/" data-desc="" data-title="书籍《Principles of Computer System Design》 (来自豆瓣) " data-pic="https://img3.doubanio.com/lpic/s4764383.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </li>
+    <script>
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'https://img3.doubanio.com/f/shire/d15ffd71f3f10a7210448fec5a68eaec66e7f7d0/pics/ic_shares.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css',
+            'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('https://img3.doubanio.com/f/shire/6e6a5f21daeec19bbb41bf48c07fccaa4dad4d98/js/lib/sharebutton.js');
+    </script>
+
+    </ul>
+  </div>
+
+
+    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+
+<script>
+  //bind events for collection button.
+  $('.collect_btn', '#interest_sect_level').each(function(){
+      Douban.init_collect_btn(this);
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
+
+<br clear="all">
+<div id="collect_form_3707841"></div>
+<div class="related_info">
+  
+
+
+
+
+
+
+  
+
+  <h2>
+    <span class="">内容简介</span>
+      ······
+
+  </h2>
+
+
+
+<div class="indent" id="link-report">
+    
+      <span class="short">
+        <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>This text identifies, examines, and illustrates fundamental concepts in computer system design that are common across operating systems, networks, database systems, distributed systems, programming languages, software engineering, security, fault tolerance, and architecture. Through carefully analyzed case studies from each of these disciplines, it demonstrates how to apply the...</p><p><a href="javascript:void(0)" class="j a_show_full">(展开全部)</a></p></div>
+       </span>
+      <span class="all hidden">
+        <div class="">
+          <style type="text/css" media="screen">
+.intro p{text-indent:2em;word-break:normal;}
+</style>
+<div class="intro">
+    <p>This text identifies, examines, and illustrates fundamental concepts in computer system design that are common across operating systems, networks, database systems, distributed systems, programming languages, software engineering, security, fault tolerance, and architecture. Through carefully analyzed case studies from each of these disciplines, it demonstrates how to apply these concepts to tackle practical system design problems. </p>    <p></p>    <p>To support the focus on design, the text identifies and explains abstractions that have proven successful in practice such as, remote procedure call, client/service organization, file systems, data integrity, consistency, and authenticated messages.  Most computer systems are built using a handful of such abstractions.  The text describes how these abstractions are implemented, demonstrates how they are used in different systems, and prepares the reader to apply them in future designs.                                       </p>    <p></p>    <p>Features: </p>    <p> </p>    <p> Concepts of computer system design guided by fundamental principles. </p>    <p> Cross-cutting approach that identifies abstractions common to networking, operating systems, transaction systems, distributed systems, architecture, and software engineering. </p>    <p> Case studies that make the abstractions real: naming (DNS and the URL); file systems (the UNIX file system); clients and services (NFS); virtualization (virtual machines); scheduling (disk arms); security (TLS). </p>    <p> Numerous pseudocode fragments that provide concrete examples of abstract concepts. </p>    <p> Extensive support. The authors and MIT OpenCourseWare provide on-line, free of charge, open educational resources, including additional chapters, course syllabi, board layouts and slides, lecture videos, and an archive of lecture schedules, class assignments, and design projects.</p></div>
+
+        </div>
+      </span>
+    
+<style>
+    #link-report .report { text-align: right; font-size: 12px; visibility: hidden; }
+    #link-report .report a { color: #BBB; }
+    #link-report .report a:hover { color: #FFF; background-color: #BBB; }
+</style>
+<script>
+    Do = (typeof Do === 'undefined')? $ : Do;
+    Do(function(){
+    $("body").delegate("#link-report", 'mouseenter mouseleave', function(e){
+      switch (e.type) {
+        case "mouseenter":
+          $(this).find(".report").css('visibility', 'visible');
+          break;
+        case "mouseleave":
+          $(this).find(".report").css('visibility', 'hidden');
+          break;
+      }
+    });
+    $("#link-report").delegate(".report a", 'click', function(e){
+        e.preventDefault();
+        var auditUrl = "https://www.douban.com/misc/audit_report?url=",
+        opt = "";
+        var obj = $(e.target).closest('#link-report');
+        var id = obj.length != 0 ? obj.data("id") : undefined;
+        var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+        var url = auditUrl.concat("https://book.douban.com/subject/3707841/", params);
+        window.location.href = url;
+    });
+
+    $("#link-report").append('<div class="report"><a rel="nofollow" href="#">举报</a></div>');
+  });
+</script>
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+  
+
+
+
+<div id="author-wrapper" class="author-wrapper">
+  <div class="loading"></div>
+</div>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/fanta/ba954f353fb7e2f830059e78c8e9e4791a96a4f6/components/dist/css/answer_entry.css" />
+
+<script type="text/javascript">
+  var answerObj = {
+    TYPE: 'book',
+    SUBJECT_ID: '3707841',
+    ISALL: 'False' || false,
+    USER_ID: 'None'
+  }
+</script>
+<script src="https://img3.doubanio.com/f/book/61252f2f9b35f08b37f69d17dfe48310dd295347/js/book/lib/react/bundle.js"></script>
+<script src="https://img3.doubanio.com/f/fanta/f86ac0ee5349a9eeff2e7a3741853e8fc76d3042/components/dist/answer_entry.js"></script>
+
+  
+
+
+
+
+
+
+<div id="db-tags-section" class="blank20">
+  
+  
+
+  <h2>
+    <span class="">豆瓣成员常用的标签(共46个)</span>
+      ······
+
+  </h2>
+
+
+  <div class="indent">    <span class="">
+        <a class="  tag" href="/tag/系统设计">系统设计</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机科学">计算机科学</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/计算机">计算机</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/操作系统">操作系统</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/分布式">分布式</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/system">system</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/系统">系统</a> &nbsp;    </span>
+    <span class="">
+        <a class="  tag" href="/tag/design">design</a> &nbsp;    </span>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rec-ebook-section" class="block5 subject_show">
+  
+
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Principles of Computer System Design&#34;的人也喜欢的电子书</span>
+      ······
+
+  </h2>
+
+
+  <div class="tips-mod">
+    支持 Web、iPhone、iPad、Android 阅读器
+  </div>
+  <div class="content clearfix">
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/334522/?dcs=subject-rec&amp;dcm=douban&amp;dct=3707841" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/334522.jpg?v=1395395897.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/334522/" target="_blank">项目百态</a>
+          </div>
+          <div class="price">
+              18.00元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/198648/?dcs=subject-rec&amp;dcm=douban&amp;dct=3707841" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/198648.jpg?v=1395393782.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/198648/" target="_blank">CoffeeScript小书</a>
+          </div>
+          <div class="price">
+              1.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/1531222/?dcs=subject-rec&amp;dcm=douban&amp;dct=3707841" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/1531222.jpg?v=1395394360.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/1531222/" target="_blank">MacTalk·人生元编程</a>
+          </div>
+          <div class="price">
+              2.99元
+          </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt>
+          <a href="https://read.douban.com/ebook/381109/?dcs=subject-rec&amp;dcm=douban&amp;dct=3707841" target="_blank">
+            <span class="cover-outer">
+              <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/381109.jpg?v=1395395854.0">
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div class="title">
+              <a href="https://read.douban.com/ebook/381109/" target="_blank">我编程我快乐</a>
+          </div>
+          <div class="price">
+              18.00元
+          </div>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+<div id="db-rec-section" class="block5 subject_show knnlike">
+  
+  
+  
+
+  <h2>
+    <span class="">喜欢读&#34;Principles of Computer System Design&#34;的人也喜欢</span>
+      ······
+
+  </h2>
+
+
+  <div class="content clearfix">
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1761927/" onclick="moreurl(this, {'total': 10, 'clicked': '1761927', 'pos': 0, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s3539379.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1761927/" onclick="moreurl(this, {'total': 10, 'clicked': '1761927', 'pos': 0, 'identifier': 'book-rec-books'})" class="">
+            Essentials of Programming Langu...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/25796795/" onclick="moreurl(this, {'total': 10, 'clicked': '25796795', 'pos': 1, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s27440527.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/25796795/" onclick="moreurl(this, {'total': 10, 'clicked': '25796795', 'pos': 1, 'identifier': 'book-rec-books'})" class="">
+            Distributed Algorithms
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3328585/" onclick="moreurl(this, {'total': 10, 'clicked': '3328585', 'pos': 2, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4271834.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3328585/" onclick="moreurl(this, {'total': 10, 'clicked': '3328585', 'pos': 2, 'identifier': 'book-rec-books'})" class="">
+            Advanced Data Structures
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1782316/" onclick="moreurl(this, {'total': 10, 'clicked': '1782316', 'pos': 3, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s4567393.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1782316/" onclick="moreurl(this, {'total': 10, 'clicked': '1782316', 'pos': 3, 'identifier': 'book-rec-books'})" class="">
+            Concepts, Techniques, and Model...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3024605/" onclick="moreurl(this, {'total': 10, 'clicked': '3024605', 'pos': 4, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s4292737.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3024605/" onclick="moreurl(this, {'total': 10, 'clicked': '3024605', 'pos': 4, 'identifier': 'book-rec-books'})" class="">
+            The Art of Multiprocessor Program...
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1765938/" onclick="moreurl(this, {'total': 10, 'clicked': '1765938', 'pos': 5, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s8978030.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1765938/" onclick="moreurl(this, {'total': 10, 'clicked': '1765938', 'pos': 5, 'identifier': 'book-rec-books'})" class="">
+            Algorithms on Strings, Trees and S...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/26616762/" onclick="moreurl(this, {'total': 10, 'clicked': '26616762', 'pos': 6, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img1.doubanio.com/lpic/s28301178.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/26616762/" onclick="moreurl(this, {'total': 10, 'clicked': '26616762', 'pos': 6, 'identifier': 'book-rec-books'})" class="">
+            Programming Rust
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/3608623/" onclick="moreurl(this, {'total': 10, 'clicked': '3608623', 'pos': 7, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s3668493.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/3608623/" onclick="moreurl(this, {'total': 10, 'clicked': '3608623', 'pos': 7, 'identifier': 'book-rec-books'})" class="">
+            The Art of Doing Science and Engi...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/1761911/" onclick="moreurl(this, {'total': 10, 'clicked': '1761911', 'pos': 8, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s7042500.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/1761911/" onclick="moreurl(this, {'total': 10, 'clicked': '1761911', 'pos': 8, 'identifier': 'book-rec-books'})" class="">
+            Advanced Topics in Types and Pro...
+          </a>
+        </dd>
+      </dl>
+      
+      <dl class="">
+        <dt>
+            <a href="https://book.douban.com/subject/19973015/" onclick="moreurl(this, {'total': 10, 'clicked': '19973015', 'pos': 9, 'identifier': 'book-rec-books'})"><img class="m_sub_img" src="https://img3.doubanio.com/lpic/s28110752.jpg"/></a>
+        </dt>
+        <dd>
+          <a href="https://book.douban.com/subject/19973015/" onclick="moreurl(this, {'total': 10, 'clicked': '19973015', 'pos': 9, 'identifier': 'book-rec-books'})" class="">
+            Operating Systems
+          </a>
+        </dd>
+      </dl>
+        <dl class="clear"></dl>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/book/8f539f4edfa7786707fc6f654e1f373c62a70128/css/book/subject/comment.css"/>
+    <div class="mod-hd">
+        
+
+        <a class="redbutt j a_show_login rr" href="https://www.douban.com/register?reason=review" rel="nofollow">
+            <span> 我来说两句 </span>
+        </a>
+
+            
+  
+
+  <h2>
+    <span class="">短评</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/3707841/comments/">全部 8 条</a>
+        ) </span>
+
+  </h2>
+
+
+    </div>
+    <div class="nav-tab">
+        
+    <div class="tabs-wrapper  line">
+        <a class="short-comment-tabs on-tab" href="hot" data-tab="hot">热门</a>
+        <span>/</span>
+        <a class="short-comment-tabs " href="new" data-tab="new">最新</a>
+        <span>/</span>
+        <a class="j a_show_login " href="follows" data-tab="follows">好友</a>
+    </div>
+
+    </div>
+    <div id="comment-list-wrapper" class="indent">
+        
+
+<div id="comments" class="comment-list hot show">
+        <ul>
+                
+    <li class="comment-item" data-cid="698714223">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-698714223" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-698714223" class="j a_show_login" data-cid="698714223">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/perfm0n/">perfm0n</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2014-12-30</span>
+                </span>
+            </h3>
+            <p class="comment-content">starts from first principles, but some of the examples given are kinda dated</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1214989006">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1214989006" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1214989006" class="j a_show_login" data-cid="1214989006">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/sellars/">流浪的龙</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-08-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">mit6.033教材,讲系统设计和架构的书,不仅讲原则还用伪代码给出了实现,相当不错</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="705834071">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-705834071" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-705834071" class="j a_show_login" data-cid="705834071">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/yuizhou/">mov $1 %eax</a>
+                        <span class="user-stars allstar20 rating" title="较差"></span>
+                    <span>2013-07-19</span>
+                </span>
+            </h3>
+            <p class="comment-content">我读过的最差的专业课本！每一章节前500字在举一个不太相关的例子，后100字稍微点一下题！</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="861705129">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-861705129" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-861705129" class="j a_show_login" data-cid="861705129">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/12904661/">天下无双</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2014-11-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">下面说什么烂的或者是难读的都是扯淡，这是我见过的最好的系统设计或者说架构入门书籍之一。
+
+尽管这书的名字是introduction，但是它涵盖的内容已经远远的超越了现在烂大街的傻逼湾区程序员的水平。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="431458795">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-431458795" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-431458795" class="j a_show_login" data-cid="431458795">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/zxmys/">Zx.MYS</a>
+                        <span class="user-stars allstar40 rating" title="推荐"></span>
+                    <span>2011-08-31</span>
+                </span>
+            </h3>
+            <p class="comment-content">只是有些太啰嗦了</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+        
+
+<div id="comments" class="comment-list new noshow">
+        <ul>
+                
+    <li class="comment-item" data-cid="1214989006">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1214989006" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1214989006" class="j a_show_login" data-cid="1214989006">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/sellars/">流浪的龙</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2017-08-20</span>
+                </span>
+            </h3>
+            <p class="comment-content">mit6.033教材,讲系统设计和架构的书,不仅讲原则还用伪代码给出了实现,相当不错</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1060753212">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1060753212" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1060753212" class="j a_show_login" data-cid="1060753212">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/55678983/">icemelon</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-07-11</span>
+                </span>
+            </h3>
+            <p class="comment-content">我旦软院大四教科书，课程直接从mit买的，目前mit这门课的授课教授是spark作者Matei Zaharia。既有趣又硬核的系统设计书。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="1028739027">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-1028739027" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-1028739027" class="j a_show_login" data-cid="1028739027">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/nupta/">牛皮糖</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2016-04-05</span>
+                </span>
+            </h3>
+            <p class="comment-content">这是我读过最好的系统设计入门书籍，没有之一。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="861705129">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-861705129" class="vote-count">1</span>
+                        <a href="javascript:;" id="btn-861705129" class="j a_show_login" data-cid="861705129">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/12904661/">天下无双</a>
+                        <span class="user-stars allstar50 rating" title="力荐"></span>
+                    <span>2014-11-17</span>
+                </span>
+            </h3>
+            <p class="comment-content">下面说什么烂的或者是难读的都是扯淡，这是我见过的最好的系统设计或者说架构入门书籍之一。
+
+尽管这书的名字是introduction，但是它涵盖的内容已经远远的超越了现在烂大街的傻逼湾区程序员的水平。</p>
+        </div>
+    </li>
+
+                
+    <li class="comment-item" data-cid="705834071">
+        <div class="comment">
+            <h3>
+                <span class="comment-vote">
+                    <span id="c-705834071" class="vote-count">0</span>
+                        <a href="javascript:;" id="btn-705834071" class="j a_show_login" data-cid="705834071">有用</a>
+                </span>
+                <span class="comment-info">
+                    <a href="https://www.douban.com/people/yuizhou/">mov $1 %eax</a>
+                        <span class="user-stars allstar20 rating" title="较差"></span>
+                    <span>2013-07-19</span>
+                </span>
+            </h3>
+            <p class="comment-content">我读过的最差的专业课本！每一章节前500字在举一个不太相关的例子，后100字稍微点一下题！</p>
+        </div>
+    </li>
+
+
+        </ul>
+</div>
+
+    </div>
+        <p>&gt; <a href="https://book.douban.com/subject/3707841/comments/">更多短评 8 条</a></p>
+    <script src="https://img3.doubanio.com/f/book/1d9c8cf5e04fc6d9cae8f10e358c6a6cd458f9b8/js/book/subject/short_comment_vote.js"></script>
+    <script src="https://img3.doubanio.com/f/book/39eace58cab8aaeec45a44e878bf0ed06f2ed0a4/js/book/subject/short_comment_nav.js"></script>
+    <script>
+        (function(){
+            $('.comment-list').delegate('.vote-comment', 'click', function(e) {
+                vote_comment(e);
+            }).delegate('.delete-comment', 'click', function(e) {
+                if (confirm('确定删除吗？')) {
+                    delete_comment(e);
+                }
+            });
+        })();
+    </script>
+
+  
+
+<link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7f54ef457c36133a.css">
+
+<section class="topics mod">
+    <header>
+        <h2>
+            Principles of Computer System Design的话题 · · · · · ·
+            <span class="pl">( <span class="gallery_topics">全部 <span id="topic-count"></span> 条</span> )</span>
+        </h2>
+    </header>
+
+    
+
+
+
+
+<section class="subject-topics">
+    <div class="topic-guide" id="topic-guide">
+        <img class="ic_question" src="//img3.doubanio.com/f/ithildin/b1a3edea3d04805f899e9d77c0bfc0d158df10d5/pics/export/icon_question.png">
+        <div class="tip_content">
+            <div class="tip_title">什么是话题</div>
+            <div class="tip_desc">
+                <div>无论是一部作品、一个人，还是一件事，都往往可以衍生出许多不同的话题。将这些话题细分出来，分别进行讨论，会有更多收获。</div>
+            </div>
+        </div>
+        <img class="ic_guide" src="//img3.doubanio.com/f/ithildin/529f46d86bc08f55cd0b1843d0492242ebbd22de/pics/export/icon_guide_arrow.png">
+        <img class="ic_close" id="topic-guide-close" src="//img3.doubanio.com/f/ithildin/2eb4ad488cb0854644b23f20b6fa312404429589/pics/export/close@3x.png">
+    </div>
+
+    <div id="topic-items"></div>
+
+    <script>
+        window.subject_id = 3707841;
+        window.join_label_text = '写书评参与';
+
+        window.topic_display_count = 4;
+        window.topic_item_display_count = 1;
+        window.no_content_fun_call_name = "no_topic";
+
+        window.guideNode = document.getElementById('topic-guide');
+        window.guideNodeClose = document.getElementById('topic-guide-close');
+    </script>
+    
+        <link rel="stylesheet" href="https://img3.doubanio.com/f/ithildin/f731c9ea474da58c516290b3a6b1dd1237c07c5e/css/export/subject_topics.css">
+        <script src="https://img3.doubanio.com/f/ithildin/d3590fc6ac47b33c804037a1aa7eec49075428c8/js/export/moment-with-locales-only-zh.js"></script>
+        <script src="https://img3.doubanio.com/f/ithildin/936839eb18719d63bdab8637feaa21b4e6d72d8e/js/export/subject_topics.es6"></script>
+
+</section>
+
+    <script>
+        function no_topic(){
+            $('#content .topics').remove();
+        }
+    </script>
+</section>
+
+<section class="reviews mod book-content">
+    <header>
+        <a href="new_review" rel="nofollow" class="create-review redbutt rr" 
+            data-isverify="False"
+            data-verify-url="https://www.douban.com/accounts/phone/verify?redir=https://book.douban.com/subject/3707841/new_review">
+            <span>我要写书评</span>
+        </a>
+        <h2>
+            Principles of Computer System Design的书评 · · · · · ·
+            <span class="pl">( <a href="reviews">全部 1 条</a> )</span>
+        </h2>
+    </header>
+
+    
+
+<style>
+#gallery-topics-selection {
+  display: none;
+  position: fixed;
+  width: 595px;
+  padding: 40px 40px 33px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#gallery-topics-selection h1 {
+  font-size: 18px;
+  color: #007722;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
+#gallery-topics-selection .gl_topics {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 298px;
+  overflow-y: scroll;
+}
+#gallery-topics-selection .topic {
+  margin-bottom: 24px;
+}
+#gallery-topics-selection .topic_name {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: inherit;
+}
+#gallery-topics-selection .topic_meta {
+  font-size: 13px;
+  color: #999;
+}
+#gallery-topics-selection .topics_skip {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3377AA;
+  text-align: center;
+  margin-top: 33px;
+}
+#gallery-topics-selection .topics_skip:hover {
+  background: transparent;
+}
+#gallery-topics-selection .close_selection {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 46px;
+  right: 40px;
+  background: #fff;
+  color: #999;
+  text-align: right;
+}
+#gallery-topics-selection .close_selection:hover{
+  background: #fff;
+  color: #999;
+}
+</style>
+
+<div id="gallery-topics-selection"></div>
+
+
+
+
+        <div class="review_filter">
+            <a href="javascript:;;" class="cur" data-sort="">热门</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="time">最新</a href="javascript:;;"> / 
+            <a href="javascript:;;" data-sort="follow">好友</a href="javascript:;;">
+            
+        </div>
+
+
+        
+
+
+
+<div class="review-list  ">
+        
+    
+    
+        
+    
+    <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Review" data-cid="2907590">
+        <div class="main review-item" id="2907590">
+        
+            
+    
+    <header class="main-hd">
+        <a href="https://www.douban.com/people/negatlov/" class="avator">
+            <img width="24" height="24" src="https://img1.doubanio.com/icon/u2170381-7.jpg">
+        </a>
+
+        <a href="https://www.douban.com/people/negatlov/" property="v:reviewer" class="name">NegatLov</a>
+
+            <span property="v:rating" class="allstar40 main-title-rating" title="推荐"></span>
+
+        <span property="v:dtreviewed" content="2010-01-02" class="main-meta">2010-01-02 18:49:16</span>
+        
+
+            <span class="publisher right">
+            清华大学出版社2009版</span>
+    </header>
+
+        
+            <div class="main-bd">
+                
+                <h2><a href="https://book.douban.com/review/2907590/">书只开放了第二部分，MIT有开放课程和第二部分下载</a></h2>
+
+                <div id="review_2907590_short" class="review-short" data-rid="2907590">
+                    <div class="short-content">
+
+                        http://ocw.mit.edu/ans7870/resources/system/index.htm
+
+                        &nbsp;(<a href="javascript:;" id="toggle-2907590-copy" class="unfold" title="展开">展开</a>)
+                    </div>
+                </div>
+            
+                <div id="review_2907590_full" class="hidden">
+                    <div id="review_2907590_full_content" class="full-content"></div>
+                </div>
+
+                <div class="action">
+                    <a href="javascript:;;" class="action-btn up" data-rid="2907590" title="有用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/536fd337139250b5fb3cf9e79cb65c6193f8b20b/pics/up.png" />
+                        <span id="r-useful_count-2907590">
+                                1
+                        </span>
+                    </a>
+                    <a href="javascript:;;" class="action-btn down" data-rid="2907590" title="没用">
+                        <img src="https://img3.doubanio.com/f/zerkalo/68849027911140623cf338c9845893c4566db851/pics/down.png" />
+                        <span id="r-useless_count-2907590">
+                                2
+                        </span>
+                    </a>
+                    <a href="https://book.douban.com/review/2907590/#comments" class="reply">3回应</a>
+
+                    <a href="javascript:;;" class="fold hidden">收起</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/41a5ce6a3302f440.js"></script>
+    <!-- COLLECTED CSS -->
+</div>
+
+
+
+
+
+
+
+            <p class="pl">
+                &gt;
+                <a href="reviews">
+                    更多书评1篇
+                </a>
+            </p>
+</section>
+    
+<!-- COLLECTED JS -->
+
+  
+
+
+
+
+
+
+
+
+
+<div class="ugc-mod reading-notes">
+  <div class="hd">
+    <h2>
+      读书笔记&nbsp;&nbsp;· · · · · ·&nbsp;
+          <span class="pl">(<a href="https://book.douban.com/subject/3707841/annotation">共<span property="v:count">21</span>篇</a>)</span>
+
+    </h2>
+
+      <a class="redbutt rr j a_show_login" href="https://www.douban.com/register?reason=annotate" rel="nofollow"><span>我来写笔记</span></a>
+  </div>
+  
+
+    <div class="bd">
+      <ul class="inline-tabs">
+        <li class="on"><a href="#rank" id="by_rank" >按有用程度</a></li>
+        <li><a href="#page" id="by_page" >按页码先后</a></li>
+        <li><a href="#time" id="by_time" >最新笔记</a></li>
+      </ul>
+      
+  <ul class="comments by_rank" >
+      
+      <li class="ctsh clearfix" data-cid="33931305">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/southstarj/"><img src="https://img3.doubanio.com/icon/u4571126-3.jpg" alt="southstarj" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/33931305/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/33931305/" class="">Chapter 1</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/southstarj/" class=" " title="southstarj">southstarj</a>
+                (你丫扯淡)
+              
+            </p>
+            <div class="reading-note" data-cid="33931305">
+              <div class="short">
+                
+                  <span class="">Incommensurate scaling: as a system increases in size or speed, not all parts of it follow the same scaling rules, so things stop working.
+随着系统尺度的增加，系统的各个部分并不是按照同样的速度增加的。生物的体重以身长的立方增长而骨骼承重能力却以平方增长，这也解释了为什么人和大象的生理结构如此不同。大象的腿骨要比人粗得多，否则根本承受不住这样的体重。
+
+这句话不仅适用于空间尺度，也适用于时间尺度。...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/33931305/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2015-01-07 13:39</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Incommensurate scaling: as a system increases in size or speed, not all parts of it follow the same scaling rules, so things stop working.</q></blockquote>
+随着系统尺度的增加，系统的各个部分并不是按照同样的速度增加的。生物的体重以身长的立方增长而骨骼承重能力却以平方增长，这也解释了为什么人和大象的生理结构如此不同。大象的腿骨要比人粗得多，否则根本承受不住这样的体重。<div style="padding-bottom:1em;"></div>这句话不仅适用于空间尺度，也适用于时间尺度。随着科技的进步，过去认为特别难做到的事现在可能非常容易就做到了。也就是说随着技术的进步，系统的设计越来越简单，这也可以从某种角度上解释为什么很多历史上曾经有的技术失传。木建筑的很多加固技术失传了，因为我们发明了钢筋，可以简单用加强材料强度的方法来设计建筑；用古文撰写的很多文献含义不清楚了，因为我们现在信息传递无比的便宜，可以用数倍甚至数千万倍的信息量来补充说明我们要表达的内容。<div style="padding-bottom:1em;"></div>从这个角度出发，我也突然想明白之前一直不懂的，为什么我们要复原那些虽然精巧但是已经落后的建筑、水利设计（比如都江堰）。虽然随着科技的进步，过去的技术被取代了，但是不同时代的设计都是不一样的，我们可以通过时代限制下人们对系统、知识体系的设计，掌握很多对现在对未来仍旧有指导意义的思想。建筑如此、古文如此、中医亦如此。技术是不断更新换代的，但每一个设计都是独特的。<div style="padding-bottom:1em;"></div>Knuth的名言“过早进行程序优化是恶魔”，现在看起来虽然很有道理，但被很多人误解和误用了。按照某些人（包括两年前的我）的理解，计算机的速度不断增加，我们根本没必要在现阶段设计更精巧的算法、使用GPU并行之类的来研究如何榨取有限的计算资源满足自己的需求，只要坐等计算机硬件升级，可以供我们来进行大规模计算就行了。然而如果所有计算技术研究者都这么想的话，那没有对硬件机能的需求，根本就不会推动硬件的升级换代。更何况，几十年前利用那种慢的一B机器设计出来的C语言与UNIX，即便是今天仍然是计算机语言和操作系统设计的范本。每一种设计都是独特的，没有哪种设计是无用或无意义的（当然前提是设计者不是瞎凑合的）。<div style="padding-bottom:1em;"></div>总而言之，这种系统设计的理念，也是工科区别于其他学科最大的不同。工科的研究对象是系统，目的是应用，方法是设计，工具是当时已知的基础科学知识。在已知的科学体系框架（限制）下对研究的系统进行最优化的设计，才是工科最有价值的部分。所以，历史上每一种设计都是有意义的，当下进行的最优化设计也都是有意义的，即便我们可能知道将来很快就会有新的技术框架取代现有技术框架。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/33931305/#comments">1回应</a>&nbsp;&nbsp;
+                  2015-01-07 13:39
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18785801">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18785801/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18785801/" class="">第241页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="18785801">
+              <div class="short">
+                
+                  <span class="">We now have seen examples of two forms of atomicity: all-or-nothing and before-or-
+after. These two forms have a common underlying goal: to hide the internal structure of
+an action. With that insight, it becomes apparent that atomicity is really a unifying
+concept:
+An action is atomic if there is no way for a higher layer to discover the internal structure
+of its implementation.
+This descrip...</span>
+                <p class="pl">
+                  <span class="">2012-06-07 11:33</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>We now have seen examples of two forms of atomicity: all-or-nothing and before-or-
+after. These two forms have a common underlying goal: to hide the internal structure of
+an action. With that insight, it becomes apparent that atomicity is really a unifying
+concept:
+An action is atomic if there is no way for a higher layer to discover the internal structure
+of its implementation.
+This description is really the fundamental definition of atomicity. From it, one can
+immediately draw two important consequences, corresponding to all-or-nothing atom-
+icity and to before-or-after atomicity:
+1. From the point of view of a procedure that invokes an atomic action, the atomic
+action always appears either to complete as anticipated, or to do nothing. This
+consequence is the one that makes atomic actions useful in recovering from
+failures.
+2. From the point of view of a concurrent thread, an atomic action acts as though it
+occurs either completely before or completely after every other concurrent atomic
+action. This consequence is the one that makes atomic actions useful for
+coordinating concurrent threads.
+These two consequences are not fundamentally different. They are simply two per-
+spectives, the first from other modules within the thread that invokes the action, the
+second from other threads. Both points of view follow from the single idea that the internal structure of the action is not visible outside of the module that implements the
+action. Such hiding of internal structure is the essence of modularity, but atomicity is an exceptionally strong form of modularity. Atomicity hides not just the details of which
+steps form the atomic action, but the very fact that it has structure. There is a kinship
+between atomicity and other system-building techniques such as data abstraction and client/server organization. Data abstraction has the goal of hiding the internal structure of data; client/server organization has the goal of hiding the internal structure of major subsystems. Similarly, atomicity has the goal of hiding the internal structure of an action.
+All three are methods of enforcing industrial-strength modularity, and thereby of guar-
+anteeing absence of unanticipated interactions among components of a complex system.
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18785801/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-07 11:33
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18637967">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18637967/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18637967/" class="">第206页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="18637967">
+              <div class="short">
+                
+                  <span class="">8.6.1 Design Strategies and Design Principles
+Standing back from the maze of detail about redundancy, we can identify and abstract
+three particularly effective design strategies:
+â&euro;˘ N-modular redundancy is a simple but powerful tool for masking failures and
+increasing availability, and it can be used at any convenient level of granularity.
+â&euro;˘ Fail-fast modules provide a sweeping simplific...</span>
+                <p class="pl">
+                  <span class="">2012-06-01 15:12</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>8.6.1 Design Strategies and Design Principles
+Standing back from the maze of detail about redundancy, we can identify and abstract
+three particularly effective design strategies:
+• N-modular redundancy is a simple but powerful tool for masking failures and
+increasing availability, and it can be used at any convenient level of granularity.
+• Fail-fast modules provide a sweeping simplification of the problem of containing
+errors. When containment can be described simply, reasoning about fault
+tolerance becomes easier.
+• Pair-and-compare allows fail-fast modules to be constructed from commercial,
+off-the-shelf components.
+Standing back still further, it is apparent that several general design principles are
+directly applicable to fault tolerance. In the formulation of the fault-tolerance design process in Section 8.1.2, we invoked be explicit, design for iteration. keep digging, and the safety margin principle, and in exploring different fault tolerance techniques we have seen several examples of adopt sweeping simplifications. One additional design principle that applies to fault tolerance (and also, as we will see in Chapter 11[on-line], to security) comes from experience, as documented in the case studies of Section 8.8:
+Avoid rarely used components
+Deterioration and corruption accumulate unnoticed—until the next use.
+n applying these design principles, it is important to consider the threats, the conse-
+quences, the environment, and the application. 
+
+There is a potential tension between error masking and an end-to-end argument. An end-
+to-end argument suggests that a subsystem need not do anything about errors and should
+not do anything that might compromise other goals such as low latency, high through-
+put, or low cost. The subsystem should instead let the higher layer system of which it is
+a component take care of the problem because only the higher layer knows whether or
+not the error matters and what is the best course of action to take.
+There are two counter arguments to that line of reasoning:
+• Ignoring an error allows it to propagate, thus contradicting the modularity goal of
+error containment. This observation points out an important distinction between
+error detection and error masking. Error detection and containment must be
+performed where the error happens, so that the error does not propagate wildly.
+Error masking, in contrast, presents a design choice: masking can be done locally
+or the error can be handled by reporting it at the interface (that is, by making the
+module design fail-fast) and allowing the next higher layer to decide what masking
+action—if any—to take.
+• The lower layer may know the nature of the error well enough that it can mask it
+far more efficiently than the upper layer. The specialized burst error correction
+codes used on DVDs come to mind. They are designed specifically to mask errors
+caused by scratches and dust particles, rather than random bit-flips. So we have a
+trade-off between the cost of masking the fault locally and the cost of letting the
+error propagate and handling it in a higher layer.
+These two points interact: When an error propagates it can contaminate otherwise
+correct data, which can increase the cost of masking and perhaps even render masking impossible. The result is that when the cost is small, error masking is usually done locally. (That is assuming that masking is done at all. Many personal computer designs omit memory error masking. Section 8.8.1 discusses some of the reasons for this design decision.)
+A closely related observation is that when a lower layer masks a fault it is important
+that it also report the event to a higher layer, so that the higher layer can keep track of
+how much masking is going on and thus how much failure tolerance there remains.
+Reporting to a higher layer is a key aspect of the safety margin principle.
+
+
+
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18637967/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-01 15:12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18633065">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18633065/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18633065/" class="">第190页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="18633065">
+              <div class="short">
+                
+                  <span class="">Incidentally, the strategy of employing multiple design teams can also be applied to
+hardware replicas, with a goal of increasing the independence of the replicas by reducing the chance of replicated design errors and systematic manufacturing defects. Much of software engineering is devoted to a different approach: devising specification and programming techniques that avoid faults in the first p...</span>
+                <p class="pl">
+                  <span class="">2012-06-01 11:07</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Incidentally, the strategy of employing multiple design teams can also be applied to
+hardware replicas, with a goal of increasing the independence of the replicas by reducing the chance of replicated design errors and systematic manufacturing defects. Much of software engineering is devoted to a different approach: devising specification and programming techniques that avoid faults in the first place and test techniques that systematically root out faults so that they can be repaired once and for all before deploying the software. This approach, sometimes called valid construction, can dramatically reduce the number of software faults in a delivered system, but because it is difficult both to completely specify and to completely test a system, some faults inevitably remain. Valid construction is based on the observation that software, unlike hardware, is not subject to wear and tear, so if it is once made correct, it should stay that way. Unfortunately,this observation can turn out to be wishful thinking, first because it is hard to make software correct, and second because it is nearly always necessary to make changes after installing a program because the requirements, the environment surrounding the program, or both, have changed. There is thus a potential for tension between valid construction and the principle that one should design for iteration. Worse, later maintainers and reworkers often do not have a complete understanding of the ground rules that went into the original design, so their work is likely to introduce new faults for which the original designers did not anticipate providing tests. Even if the original design is completely understood, when a system is modified to add features that were not originally planned, the original ground rules may be subjected to some violence.
+Software faults more easily creep into areas that lack systematic design.
+
+8.5.2 Tolerating Software (and other) Faults by Separating State
+Designers of reliable systems usually assume that, despite the best efforts of programmers there will always be a residue of software faults, just as there is also always a residue of hardware, operation, and environment faults. The response is to develop a strategy for tolerating all of them. Software adds the complication that the current state of a running program tends to be widely distributed. Parts of that state may be in non-volatile storage, while other parts are in temporary variables held in volatile memory locations, processor registers, and kernel tables. This wide distribution of state makes containment of errors problematic. As a result, when an error occurs, any strategy that involves stopping some collection of running threads, tinkering to repair the current state (perhaps at the same time replacing a buggy program module), and then resuming the stopped threads is usually unrealistic.
+In the face of these observations, a programming discipline has proven to be effective:
+systematically divide the current state of a running program into two mutually exclusive categories and separate the two categories with a firewall. The two categories are:
+• State that the system can safely abandon in the event of a failure.
+• State whose integrity the system should preserve despite failure.
+Upon detecting a failure, the plan becomes to abandon all state in the first category
+and instead concentrate just on maintaining the integrity of the data in the second category. An important part of the strategy is an important sweeping simplification: classify the state of running threads (that is, the thread table, stacks, and registers) as abandonable. When a failure occurs, the system abandons the thread or threads that were running at the time and instead expects a restart procedure, the system operator, or the individual user to start a new set of threads with a clean slate. The new thread or threads can then, working with only the data found in the second category, verify the integrity of that data and return to normal operation. The primary challenge then becomes to build a firewall that can protect the integrity of the second category of data despite the failure.
+
+
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18633065/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-01 11:07
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_page"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="17590588">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17590588/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17590588/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17590588">
+              <div class="short">
+                
+                  <span class="">Coping with complexity:Iteration
+1.Design for iteration:easy to change
+2.Document the assumptions
+3.Take small steps
+4.Don't rush to implementation
+5.Plan for feedback - bugreports,etc
+6.Study failures rather than assign blame for them.
+7.Constantly be on guard to make overall design clean despite iterations,need foresight
+8.Adopt sweeping simplifications</span>
+                <p class="pl">
+                  <span class="">2012-04-02 08:43</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Coping with complexity:Iteration
+1.Design for iteration:easy to change
+2.Document the assumptions
+3.Take small steps
+4.Don't rush to implementation
+5.Plan for feedback - bugreports,etc
+6.Study failures rather than assign blame for them.
+7.Constantly be on guard to make overall design clean despite iterations,need foresight
+8.Adopt sweeping simplifications</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17590588/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-02 08:43
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18433141">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18433141/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18433141/" class="">第1页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="18433141">
+              <div class="short">
+                
+                  <div class="ll">
+                    <a href="https://book.douban.com/annotation/18433141/"><img src="https://img3.doubanio.com/view/page_note/small/public/p18433141-1.jpg"></a>
+                  </div>
+                  <span class="">
+</span>
+                <p class="pl">
+                  <span class="">2012-05-22 10:34</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-1.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-2.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-3.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-4.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-5.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img1.doubanio.com/view/page_note/large/public/p18433141-8.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img1.doubanio.com/view/page_note/large/public/p18433141-9.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-10.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-11.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-12.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-13.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-14.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-15.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img3.doubanio.com/view/page_note/large/public/p18433141-16.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img1.doubanio.com/view/page_note/large/public/p18433141-18.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img1.doubanio.com/view/page_note/large/public/p18433141-17.jpg" alt=""><br><span class="pic-title"></span></div>
+<div class="middle"><img src="https://img1.doubanio.com/view/page_note/large/public/p18433141-19.jpg" alt=""><br><span class="pic-title"></span></div>
+
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18433141/#comments">回应</a>&nbsp;&nbsp;
+                  2012-05-22 10:34
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="17590592">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/17590592/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/17590592/" class="">第30页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="17590592">
+              <div class="short">
+                
+                  <span class="">Although the number of potential abstractions for computer system components is unlimited, remarkably the vast majority that actually appear in practice fall into one of
+three well-defined classes: the memory, the interpreter, and the communication link. 
+
+These three abstractions are so fundamental that theoreticians compare computer algorithms in terms of the number of data items they must re...</span>
+                <p class="pl">
+                  <span class="">2012-04-02 08:45</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Although the number of potential abstractions for computer system components is unlimited, remarkably the vast majority that actually appear in practice fall into one of
+three well-defined classes: the memory, the interpreter, and the communication link. 
+
+These three abstractions are so fundamental that theoreticians compare computer algorithms in terms of the number of data items they must remember, the number of steps their interpreter must execute, and the number of messages they must communicate.
+
+To meet the many requirements of different applications, system designers build lay-
+ers on this fundamental base, but in doing so they do not routinely create completely
+different abstractions. Instead, they elaborate the same three abstractions, rearrang-
+ing and repackaging them to create features that are useful and interfaces that are
+convenient for each application. </q></blockquote><div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/17590592/#comments">回应</a>&nbsp;&nbsp;
+                  2012-04-02 08:45
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18422381">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18422381/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18422381/" class="">第33页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="18422381">
+              <div class="short">
+                
+                  <span class="">1.Properties of Networks
+  1.1.The trio of fundamental physical properties:
+     - The speed of light is finite. 
+     - Communication environments are hostile
+     - Communication media have limited bandwidth. 
+     - Different network links may thus have radically different data rates
+
+  1.2.They are nearly always shared.The reason is:
+    - Any-to-any connection is expensive:n * n links...</span>
+                <p class="pl">
+                  <span class="">2012-05-21 15:55</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                1.Properties of Networks<div style="padding-bottom:1em;"></div>  1.1.The trio of fundamental physical properties:<div style="padding-bottom:1em;"></div>     - The speed of light is finite. <div style="padding-bottom:1em;"></div>     - Communication environments are hostile<div style="padding-bottom:1em;"></div>     - Communication media have limited bandwidth. <div style="padding-bottom:1em;"></div>     - Different network links may thus have radically different data rates<div style="padding-bottom:1em;"></div>  1.2.They are nearly always shared.The reason is:<div style="padding-bottom:1em;"></div>    - Any-to-any connection is expensive:n * n links.<div style="padding-bottom:1em;"></div>    - Incommensurate rate of communication cost changes comparing to <div style="padding-bottom:1em;"></div>       cpu,disk,means the communication cost should be shared.<div style="padding-bottom:1em;"></div>  1.3.The wide range of parameter values. <div style="padding-bottom:1em;"></div>   The propagation times,   data rates, and the number of communicating computers <div style="padding-bottom:1em;"></div>   can each vary by seven or more orders of  magnitude.<div style="padding-bottom:1em;"></div>2.Isochronous(等时） and Asynchronous Multiplexing<div style="padding-bottom:1em;"></div>  2.1 Telephone system traditionally uses a line multiplexing technique known as  <div style="padding-bottom:1em;"></div>        isochronous (from Greek roots meaning “equally timed”) communication.<div style="padding-bottom:1em;"></div>  2.2 When communicating data between two computers, a system designer is <div style="padding-bottom:1em;"></div>        usually willing to forgo the guarantee of uniform data rate and uniform latency if <div style="padding-bottom:1em;"></div>        in return an entire message can get through more quickly. Data communication <div style="padding-bottom:1em;"></div>        networks achieve this trade-off by using what is called asynchronous<div style="padding-bottom:1em;"></div>3.Packet Forwarding; Delay<div style="padding-bottom:1em;"></div>   Asynchronous communication links are usually organized in a 'packet forwarding    <div style="padding-bottom:1em;"></div>   network structure',and introduces delays:<div style="padding-bottom:1em;"></div>     - Propagation delay.<div style="padding-bottom:1em;"></div>     - Transmission delay.<div style="padding-bottom:1em;"></div>     - Processing delay.<div style="padding-bottom:1em;"></div>     - Queuing delay.<div style="padding-bottom:1em;"></div>4.Buffer Overflow and Discarded Packets<div style="padding-bottom:1em;"></div>5.Duplicate Packets and Duplicate Suppression<div style="padding-bottom:1em;"></div>6.Damaged Packets and Broken Links<div style="padding-bottom:1em;"></div>7.Reordered Delivery<div style="padding-bottom:1em;"></div>  Because transmission links traverse hostile environments and must be consid-<div style="padding-bottom:1em;"></div>  ered fragile, a packet network usually has multiple interconnection paths,so it may <div style="padding-bottom:1em;"></div>  causes reordered delivery.<div style="padding-bottom:1em;"></div>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18422381/#comments">回应</a>&nbsp;&nbsp;
+                  2012-05-21 15:55
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+      
+  <ul class="comments by_time"  style="display: none">
+      
+      <li class="ctsh clearfix" data-cid="33931305">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/southstarj/"><img src="https://img3.doubanio.com/icon/u4571126-3.jpg" alt="southstarj" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/33931305/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/33931305/" class="">Chapter 1</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/southstarj/" class=" " title="southstarj">southstarj</a>
+                (你丫扯淡)
+              
+            </p>
+            <div class="reading-note" data-cid="33931305">
+              <div class="short">
+                
+                  <span class="">Incommensurate scaling: as a system increases in size or speed, not all parts of it follow the same scaling rules, so things stop working.
+随着系统尺度的增加，系统的各个部分并不是按照同样的速度增加的。生物的体重以身长的立方增长而骨骼承重能力却以平方增长，这也解释了为什么人和大象的生理结构如此不同。大象的腿骨要比人粗得多，否则根本承受不住这样的体重。
+
+这句话不仅适用于空间尺度，也适用于时间尺度。...</span>
+                  &nbsp;&nbsp;<a href="https://book.douban.com/annotation/33931305/">(<span class="">1回应</span>)</a>
+                <p class="pl">
+                  <span class="">2015-01-07 13:39</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Incommensurate scaling: as a system increases in size or speed, not all parts of it follow the same scaling rules, so things stop working.</q></blockquote>
+随着系统尺度的增加，系统的各个部分并不是按照同样的速度增加的。生物的体重以身长的立方增长而骨骼承重能力却以平方增长，这也解释了为什么人和大象的生理结构如此不同。大象的腿骨要比人粗得多，否则根本承受不住这样的体重。<div style="padding-bottom:1em;"></div>这句话不仅适用于空间尺度，也适用于时间尺度。随着科技的进步，过去认为特别难做到的事现在可能非常容易就做到了。也就是说随着技术的进步，系统的设计越来越简单，这也可以从某种角度上解释为什么很多历史上曾经有的技术失传。木建筑的很多加固技术失传了，因为我们发明了钢筋，可以简单用加强材料强度的方法来设计建筑；用古文撰写的很多文献含义不清楚了，因为我们现在信息传递无比的便宜，可以用数倍甚至数千万倍的信息量来补充说明我们要表达的内容。<div style="padding-bottom:1em;"></div>从这个角度出发，我也突然想明白之前一直不懂的，为什么我们要复原那些虽然精巧但是已经落后的建筑、水利设计（比如都江堰）。虽然随着科技的进步，过去的技术被取代了，但是不同时代的设计都是不一样的，我们可以通过时代限制下人们对系统、知识体系的设计，掌握很多对现在对未来仍旧有指导意义的思想。建筑如此、古文如此、中医亦如此。技术是不断更新换代的，但每一个设计都是独特的。<div style="padding-bottom:1em;"></div>Knuth的名言“过早进行程序优化是恶魔”，现在看起来虽然很有道理，但被很多人误解和误用了。按照某些人（包括两年前的我）的理解，计算机的速度不断增加，我们根本没必要在现阶段设计更精巧的算法、使用GPU并行之类的来研究如何榨取有限的计算资源满足自己的需求，只要坐等计算机硬件升级，可以供我们来进行大规模计算就行了。然而如果所有计算技术研究者都这么想的话，那没有对硬件机能的需求，根本就不会推动硬件的升级换代。更何况，几十年前利用那种慢的一B机器设计出来的C语言与UNIX，即便是今天仍然是计算机语言和操作系统设计的范本。每一种设计都是独特的，没有哪种设计是无用或无意义的（当然前提是设计者不是瞎凑合的）。<div style="padding-bottom:1em;"></div>总而言之，这种系统设计的理念，也是工科区别于其他学科最大的不同。工科的研究对象是系统，目的是应用，方法是设计，工具是当时已知的基础科学知识。在已知的科学体系框架（限制）下对研究的系统进行最优化的设计，才是工科最有价值的部分。所以，历史上每一种设计都是有意义的，当下进行的最优化设计也都是有意义的，即便我们可能知道将来很快就会有新的技术框架取代现有技术框架。
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/33931305/#comments">1回应</a>&nbsp;&nbsp;
+                  2015-01-07 13:39
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18785801">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18785801/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18785801/" class="">第241页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="18785801">
+              <div class="short">
+                
+                  <span class="">We now have seen examples of two forms of atomicity: all-or-nothing and before-or-
+after. These two forms have a common underlying goal: to hide the internal structure of
+an action. With that insight, it becomes apparent that atomicity is really a unifying
+concept:
+An action is atomic if there is no way for a higher layer to discover the internal structure
+of its implementation.
+This descrip...</span>
+                <p class="pl">
+                  <span class="">2012-06-07 11:33</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>We now have seen examples of two forms of atomicity: all-or-nothing and before-or-
+after. These two forms have a common underlying goal: to hide the internal structure of
+an action. With that insight, it becomes apparent that atomicity is really a unifying
+concept:
+An action is atomic if there is no way for a higher layer to discover the internal structure
+of its implementation.
+This description is really the fundamental definition of atomicity. From it, one can
+immediately draw two important consequences, corresponding to all-or-nothing atom-
+icity and to before-or-after atomicity:
+1. From the point of view of a procedure that invokes an atomic action, the atomic
+action always appears either to complete as anticipated, or to do nothing. This
+consequence is the one that makes atomic actions useful in recovering from
+failures.
+2. From the point of view of a concurrent thread, an atomic action acts as though it
+occurs either completely before or completely after every other concurrent atomic
+action. This consequence is the one that makes atomic actions useful for
+coordinating concurrent threads.
+These two consequences are not fundamentally different. They are simply two per-
+spectives, the first from other modules within the thread that invokes the action, the
+second from other threads. Both points of view follow from the single idea that the internal structure of the action is not visible outside of the module that implements the
+action. Such hiding of internal structure is the essence of modularity, but atomicity is an exceptionally strong form of modularity. Atomicity hides not just the details of which
+steps form the atomic action, but the very fact that it has structure. There is a kinship
+between atomicity and other system-building techniques such as data abstraction and client/server organization. Data abstraction has the goal of hiding the internal structure of data; client/server organization has the goal of hiding the internal structure of major subsystems. Similarly, atomicity has the goal of hiding the internal structure of an action.
+All three are methods of enforcing industrial-strength modularity, and thereby of guar-
+anteeing absence of unanticipated interactions among components of a complex system.
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18785801/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-07 11:33
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18637967">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18637967/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18637967/" class="">第206页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="18637967">
+              <div class="short">
+                
+                  <span class="">8.6.1 Design Strategies and Design Principles
+Standing back from the maze of detail about redundancy, we can identify and abstract
+three particularly effective design strategies:
+â&euro;˘ N-modular redundancy is a simple but powerful tool for masking failures and
+increasing availability, and it can be used at any convenient level of granularity.
+â&euro;˘ Fail-fast modules provide a sweeping simplific...</span>
+                <p class="pl">
+                  <span class="">2012-06-01 15:12</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>8.6.1 Design Strategies and Design Principles
+Standing back from the maze of detail about redundancy, we can identify and abstract
+three particularly effective design strategies:
+• N-modular redundancy is a simple but powerful tool for masking failures and
+increasing availability, and it can be used at any convenient level of granularity.
+• Fail-fast modules provide a sweeping simplification of the problem of containing
+errors. When containment can be described simply, reasoning about fault
+tolerance becomes easier.
+• Pair-and-compare allows fail-fast modules to be constructed from commercial,
+off-the-shelf components.
+Standing back still further, it is apparent that several general design principles are
+directly applicable to fault tolerance. In the formulation of the fault-tolerance design process in Section 8.1.2, we invoked be explicit, design for iteration. keep digging, and the safety margin principle, and in exploring different fault tolerance techniques we have seen several examples of adopt sweeping simplifications. One additional design principle that applies to fault tolerance (and also, as we will see in Chapter 11[on-line], to security) comes from experience, as documented in the case studies of Section 8.8:
+Avoid rarely used components
+Deterioration and corruption accumulate unnoticed—until the next use.
+n applying these design principles, it is important to consider the threats, the conse-
+quences, the environment, and the application. 
+
+There is a potential tension between error masking and an end-to-end argument. An end-
+to-end argument suggests that a subsystem need not do anything about errors and should
+not do anything that might compromise other goals such as low latency, high through-
+put, or low cost. The subsystem should instead let the higher layer system of which it is
+a component take care of the problem because only the higher layer knows whether or
+not the error matters and what is the best course of action to take.
+There are two counter arguments to that line of reasoning:
+• Ignoring an error allows it to propagate, thus contradicting the modularity goal of
+error containment. This observation points out an important distinction between
+error detection and error masking. Error detection and containment must be
+performed where the error happens, so that the error does not propagate wildly.
+Error masking, in contrast, presents a design choice: masking can be done locally
+or the error can be handled by reporting it at the interface (that is, by making the
+module design fail-fast) and allowing the next higher layer to decide what masking
+action—if any—to take.
+• The lower layer may know the nature of the error well enough that it can mask it
+far more efficiently than the upper layer. The specialized burst error correction
+codes used on DVDs come to mind. They are designed specifically to mask errors
+caused by scratches and dust particles, rather than random bit-flips. So we have a
+trade-off between the cost of masking the fault locally and the cost of letting the
+error propagate and handling it in a higher layer.
+These two points interact: When an error propagates it can contaminate otherwise
+correct data, which can increase the cost of masking and perhaps even render masking impossible. The result is that when the cost is small, error masking is usually done locally. (That is assuming that masking is done at all. Many personal computer designs omit memory error masking. Section 8.8.1 discusses some of the reasons for this design decision.)
+A closely related observation is that when a lower layer masks a fault it is important
+that it also report the event to a higher layer, so that the higher layer can keep track of
+how much masking is going on and thus how much failure tolerance there remains.
+Reporting to a higher layer is a key aspect of the safety margin principle.
+
+
+
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18637967/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-01 15:12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="ctsh clearfix" data-cid="18633065">
+        <div class="ilst">
+          <a href="https://www.douban.com/people/codingfun/"><img src="https://img3.doubanio.com/icon/u7301866-12.jpg" alt="prusu" class="" /></a>
+        </div>
+        <div class="con">
+          <div class="nlst">
+            <h3>
+              <div class="note-toggle rr">
+                <a href="https://book.douban.com/annotation/18633065/" class="note-unfolder">展开</a>
+                <a href="javascript:void(0);" class="note-folder">收起</a>
+              </div>
+              <a href="https://book.douban.com/annotation/18633065/" class="">第190页</a></h3>
+          </div>
+          <div class="clst">
+            <p class="user"><a href="https://www.douban.com/people/codingfun/" class=" " title="prusu">prusu</a>
+              
+                <span class="allstar50" title="力荐"></span>
+            </p>
+            <div class="reading-note" data-cid="18633065">
+              <div class="short">
+                
+                  <span class="">Incidentally, the strategy of employing multiple design teams can also be applied to
+hardware replicas, with a goal of increasing the independence of the replicas by reducing the chance of replicated design errors and systematic manufacturing defects. Much of software engineering is devoted to a different approach: devising specification and programming techniques that avoid faults in the first p...</span>
+                <p class="pl">
+                  <span class="">2012-06-01 11:07</span>
+                  
+                </p>
+              </div>
+              <div class="all hidden" style="display:none" >
+                <blockquote><q>Incidentally, the strategy of employing multiple design teams can also be applied to
+hardware replicas, with a goal of increasing the independence of the replicas by reducing the chance of replicated design errors and systematic manufacturing defects. Much of software engineering is devoted to a different approach: devising specification and programming techniques that avoid faults in the first place and test techniques that systematically root out faults so that they can be repaired once and for all before deploying the software. This approach, sometimes called valid construction, can dramatically reduce the number of software faults in a delivered system, but because it is difficult both to completely specify and to completely test a system, some faults inevitably remain. Valid construction is based on the observation that software, unlike hardware, is not subject to wear and tear, so if it is once made correct, it should stay that way. Unfortunately,this observation can turn out to be wishful thinking, first because it is hard to make software correct, and second because it is nearly always necessary to make changes after installing a program because the requirements, the environment surrounding the program, or both, have changed. There is thus a potential for tension between valid construction and the principle that one should design for iteration. Worse, later maintainers and reworkers often do not have a complete understanding of the ground rules that went into the original design, so their work is likely to introduce new faults for which the original designers did not anticipate providing tests. Even if the original design is completely understood, when a system is modified to add features that were not originally planned, the original ground rules may be subjected to some violence.
+Software faults more easily creep into areas that lack systematic design.
+
+8.5.2 Tolerating Software (and other) Faults by Separating State
+Designers of reliable systems usually assume that, despite the best efforts of programmers there will always be a residue of software faults, just as there is also always a residue of hardware, operation, and environment faults. The response is to develop a strategy for tolerating all of them. Software adds the complication that the current state of a running program tends to be widely distributed. Parts of that state may be in non-volatile storage, while other parts are in temporary variables held in volatile memory locations, processor registers, and kernel tables. This wide distribution of state makes containment of errors problematic. As a result, when an error occurs, any strategy that involves stopping some collection of running threads, tinkering to repair the current state (perhaps at the same time replacing a buggy program module), and then resuming the stopped threads is usually unrealistic.
+In the face of these observations, a programming discipline has proven to be effective:
+systematically divide the current state of a running program into two mutually exclusive categories and separate the two categories with a firewall. The two categories are:
+• State that the system can safely abandon in the event of a failure.
+• State whose integrity the system should preserve despite failure.
+Upon detecting a failure, the plan becomes to abandon all state in the first category
+and instead concentrate just on maintaining the integrity of the data in the second category. An important part of the strategy is an important sweeping simplification: classify the state of running threads (that is, the thread table, stacks, and registers) as abandonable. When a failure occurs, the system abandons the thread or threads that were running at the time and instead expects a restart procedure, the system operator, or the individual user to start a new set of threads with a clean slate. The new thread or threads can then, working with only the data found in the second category, verify the integrity of that data and return to normal operation. The primary challenge then becomes to build a firewall that can protect the integrity of the second category of data despite the failure.
+
+
+</q></blockquote>
+                  <div class="col-rec-con clearfix">
+                    
+
+
+
+
+
+
+
+<div class="rec-sec">
+
+    <span class="rec">
+
+<a href="https://www.douban.com/accounts/register?reason=collect" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+                  </div>
+                <div class="pl col-time">
+                  <a href="https://book.douban.com/annotation/18633065/#comments">回应</a>&nbsp;&nbsp;
+                  2012-06-01 11:07
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+  </ul>
+  
+
+    </div>
+      <div class="ft">
+        <p class="trr">&gt; <a href="https://book.douban.com/subject/3707841/annotation">更多读书笔记（共21篇）</a></p>
+      </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var TEMPL_ADD_COL = '<a href="" id="n-{NOTE_ID}" class="colbutt ll add-col"><span>收藏</span></a>',
+      TEMPL_DEL_COL = '<span class="pl">已收藏 &gt;<a href="" id="n-{NOTE_ID}" class="del-col">取消收藏</a></span>';
+
+    $('body').delegate('.add-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_add = $(this);
+      $.post_withck("/j/book/annotation_collect",{nid:nnid},function(){
+        var a = $(TEMPL_DEL_COL.replace('{NOTE_ID}', nnid));
+        bn_add.before(a);
+        bn_add.remove();
+      })
+    });
+
+    $('body').delegate('.del-col', 'click', function(e){
+      e.preventDefault();
+      var nnid = $(this).attr('id').split('-')[1],
+        bn_del = $(this).parent();
+      $.post_withck("/j/book/annotation_uncollect", {nid: nnid}, function() {
+        var a = $(TEMPL_ADD_COL.replace('{NOTE_ID}', nnid));
+        bn_del.before(a);
+        bn_del.remove();
+      })
+    });
+
+    $("pre.source").each(function(){
+      var cn = $(this).attr('class').split(' ');
+      l = cn[1];
+      s = 'rand01';
+      n = cn[2];
+      $(this).snippet(n,{style: s, showNum: l});
+    });
+
+    var annotationMod = $('.reading-notes .bd')
+      , annotationTabs = annotationMod.find('.inline-tabs li')
+      , annotationTabLinks = annotationTabs.find('a')
+      , annotationTabContents = annotationMod.find('ul.comments');
+
+    annotationTabLinks.click(function(e){
+      e.preventDefault();
+      var el = $(this)
+        , kind = el.attr('id');
+
+      annotationTabs.removeClass('on');
+      el.parent().addClass('on');
+      annotationTabContents.hide();
+      annotationTabContents.filter('.' + kind).show();
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js","TeX/noUndefined.js"],
+    tex2jax: {
+		inlineMath: [ ["($", "$)"], ['\\(','\\)'] ],
+		displayMath: [ ["($$","$$)"], ['\\[','\\]']],
+		skipTags: ["script","noscript","style","textarea"],
+		processEscapes: true,
+		processEnvironments: true,
+		preview: "TeX"
+	},
+	showProcessingMessages: false
+  });
+</script>
+
+
+  
+
+
+
+
+
+
+<div id="db-discussion-section" class="indent ugc-mod">
+
+
+
+
+        
+  
+
+  <h2>
+    <span class="">论坛</span>
+      ······
+
+  </h2>
+
+
+
+        
+<table class="olt"><tr><td><td><td><td></tr>
+        
+        <tr class="">
+            <td class="pl"><a href="https://book.douban.com/subject/3707841/discussion/23841521/" title="这么好的书竟然没多少人读" class="">这么好的书竟然没多少人读</a></td>
+            <td class="pl"><span class="">来自</span><a class="" href="https://www.douban.com/people/freeplant/">freeplant</a></td>
+            <td class="pl"><span class="">7 回应</span></td>
+            <td class="pl"><span class="">2017-03-31</span></td>
+        </tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+$(function(){if($.browser.msie && $.browser.version == 6.0){
+    var maxWidth = parseInt($('#info').css('max-width'));
+    if($('#info').width() > maxWidth)
+        $('#info').width(maxWidth)
+}});
+</script>
+</div>
+      <div class="aside">
+        
+  
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_right"></div>
+
+  
+
+
+
+
+
+
+<style type="text/css" media="screen">
+  .add2cartContainer{overflow:hidden;vertical-align:bottom;line-height:1}.add2cartContainer .add2cart{margin-right:0;display:inline-block}#buyinfo .bs{margin:0}#buyinfo li{padding:10px 0;position:relative;line-height:1;border-bottom:1px solid #eaeaea}#buyinfo li a:hover{background-image:none !important}#buyinfo li a:hover .buylink-price{background:#37a}#buyinfo li .publish,#buyinfo li .other-activity{margin-top:5px}#buyinfo li .publish a,#buyinfo li .other-activity a{color:#999}#buyinfo li .publish a:hover,#buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#buyinfo .more-info{color:#aaa;margin:6px 0 -2px 0}#buyinfo .more-ebooks{padding:10px 0;color:#37a;cursor:pointer}#buyinfo .price-page{border-bottom:0;padding:15px 0 0}#buyinfo .saved-price{display:none;margin-left:5px}#buyinfo .cart-tip{float:right;padding-right:5px}#buyinfo #buyinfo-ebook{margin-bottom:15px}#buyinfo #buyinfo-ebook .buylink-price{display:inline}#buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed{margin-bottom:15px}#buyinfo-printed.no-border{border-bottom:0}#buyinfo-printed .more-ebooks{line-height:1;padding:10px 0;color:#37a;cursor:pointer;padding:10px 0 0}#buyinfo-report{display:none}#buyinfo-report .lnk-close-report{float:right;margin-top:-30px;line-height:14px}#buyinfo-report .item{margin-bottom:10px}#buyinfo-report .item input{vertical-align:text-bottom;*vertical-align:middle}#buyinfo-report .item label{margin:0 5px 0 2px}#buyinfo-report .item-submit .bn-flat{margin-right:10px}#buyinfo-report .item-price input{width:220px;border:1px solid #ccc;padding:4px}#buyinfo-report form{margin:5px 0 10px}#bi-report-btn{float:right;margin:2px 0;line-height:14px;display:none}.bi-vendor-report{color:#aaa}.bi-vendor-report-form{display:none;color:#111;margin:0 5px;line-height:25px}.gray_ad{padding:30px 20px 25px 20px;background:#f6f6f1}.gray_ad h2{margin-bottom:6px;font-size:15px}.gray_ad .ebook-tag{margin-top:5px;color:#999;font-size:12px}.bs.more-after{margin-bottom:0px}@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){#buyinfo li a:hover{background-image:url(https://img3.doubanio.com/f/book/fc4ff7f0a3a7f452f06d586540284b9738f2fe87/pics/book/cart/icon-brown@2x.png);background-size:16px 12px}}#intervenor-buyinfo .bs{margin:0}#intervenor-buyinfo li{position:relative;border-bottom:1px solid #eaeaea;padding:10px 0;line-height:1}#intervenor-buyinfo li .basic-info{color:#494949;font-size:14px;line-height:18px}#intervenor-buyinfo li a:hover .comment{color:#f67;opacity:0.75;filter:alpha(opacity=75)}#intervenor-buyinfo li a:hover .buy-btn{background:#fff;border:1px solid #e97e7e;border-radius:2px;color:#e97e7e}#intervenor-buyinfo li a:hover .buylink-price{background:#37a}#intervenor-buyinfo li .buylink-price{position:absolute;right:90px;text-align:right}#intervenor-buyinfo li .publish,#intervenor-buyinfo li .other-activity{margin-top:5px}#intervenor-buyinfo li .publish a,#intervenor-buyinfo li .other-activity a{color:#999}#intervenor-buyinfo li .publish a:hover,#intervenor-buyinfo li .other-activity a:hover{color:#37a;background:none;opacity:0.5;filter:alpha(opacity=50)}#intervenor-buyinfo .jd-buy-icon{float:left;margin-right:3px}#intervenor-buyinfo .buy-btn{float:right;position:absolute;right:10px;bottom:3px;color:#9c9c9c;padding:0 12px;border:1px solid transparent}#intervenor-buyinfo .comment{color:#FF8C9C;margin:6px 0 -2px 0}#intervenor-buyinfo .price-page a{display:inline-block;line-height:16px !important}#intervenor-buyinfo .price-page{border-bottom:0;padding:15px 0 0}#intervenor-buyinfo .saved-price{display:none;margin-left:5px}#intervenor-buyinfo .cart-tip{float:right;padding-right:5px}#intervenor-buyinfo #buyinfo-ebook{margin-bottom:15px}#intervenor-buyinfo #buyinfo-ebook .buylink-price{display:inline}#intervenor-buyinfo #buyinfo-ebook li.no-border{border:0}#buyinfo-printed .presale-indicator{margin:0;color:#999;text-indent:0;background:none}
+
+</style>
+
+      <div class="gray_ad" id="buyinfo">
+      <div id="buyinfo-printed">
+        
+  
+
+  <h2>
+    <span class="">在哪儿买这本书</span>
+      ······
+
+  </h2>
+
+
+        <ul class="bs noline more-after ">
+          
+                
+                <li class="">
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=91500&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=91500&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_01237495732890618%2F%3Fasin%3D0123749573%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3D0123749573%26linkCode%3Ddf0&amp;cntvendor=1&amp;srcsubj=3707841&amp;type=bkbuy&amp;subject=3707841" class="">
+                      <span class="">亚马逊</span>
+                    </a>
+                    <a target="_blank" href="https://book.douban.com/link2/?lowest=91500&amp;pre=0&amp;vendor=joyo&amp;srcpage=subject&amp;price=91500&amp;pos=1&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_01237495732890618%2F%3Fasin%3D0123749573%26tag%3Ddouban-23%26creative%3D2384%26creativeASIN%3D0123749573%26linkCode%3Ddf0&amp;cntvendor=1&amp;srcsubj=3707841&amp;type=bkbuy&amp;subject=3707841" class="buylink-price ">
+                      <span class="">
+                        915.00 元
+                      </span>
+                    </a>
+
+                      
+                </li>
+          <li class="price-page">
+            <a href="https://book.douban.com/subject/3707841/buylinks">
+              &gt; 查看1家网店价格
+                (915.00 元起)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+  <div class="add2cartContainer ft no-border">
+    
+  <span class="add2cartWidget ll">
+      <a class="j  add2cart a_show_login" href="https://www.douban.com/register?reason=addbook2cart" rel="nofollow">
+        <span>+ 加入购书单</span></a>
+  </span>
+  
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.more-ebooks').on('click', function() {
+    var $this = $(this),
+      $li = $this.siblings('ul').find('li');
+    if ($this.hasClass('isShow')) {
+      $(this).text('展开更多').removeClass('isShow');
+      $li.not(':first').addClass('hide');
+    }else{
+      $(this).text('收起').addClass('isShow');
+      $li.removeClass('hide');
+    }
+    
+  })
+  </script>
+
+<style class="text/css">
+  .presale-indicator {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 15px;
+  line-height: 15px;
+  background: url(https://img3.doubanio.com/f/book/1679c65572eac1371f9872807199dea6e55a7f06/pics/book/cart/presale_text.gif) no-repeat;
+  text-indent: -9999px;
+  vertical-align: middle;
+  *vertical-align: 0px;
+  _vertical-align: 2px;
+  margin-left: 0.5em;
+}
+
+</style>
+
+
+
+  
+
+
+
+
+
+
+  <div id="dale_book_subject_top_middle"></div>
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+  
+
+  <h2>
+    <span class="">以下豆列推荐</span>
+      ······
+      <span class="pl">&nbsp;(
+          <a href="https://book.douban.com/subject/3707841/doulists">全部</a>
+        ) </span>
+
+  </h2>
+
+
+    <div id="db-doulist-section" class="indent">
+      <ul class="bs">
+          <li class=""><a class="" href="https://www.douban.com/doulist/1966388/" target="_blank">分布式系统</a>
+                <span class="pl">(m_vptr)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/2845956/" target="_blank">技术阅读列表</a>
+                <span class="pl">(Element)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/257424/" target="_blank">计算机科学基础候选</a>
+                <span class="pl">(笨蛋.mk⑨)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/1766331/" target="_blank">操作系统内核</a>
+                <span class="pl">(Alan Xin)</span>
+            </li>
+          <li class=""><a class="" href="https://www.douban.com/doulist/3341033/" target="_blank">computer system</a>
+                <span class="pl">(tuesday)</span>
+            </li>
+      </ul>
+    </div>
+
+  <div id="dale_book_subject_middle_mini"></div>
+  
+
+
+
+
+
+
+  <h2>谁读这本书?</h2>
+  <div class="indent" id="collector">
+
+    
+
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/lazydao/"><img src="https://img3.doubanio.com/icon/u34087744-6.jpg" class="pil" alt="Will.Liu" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/lazydao/">Will.Liu</a><br/>
+      <div class="pl ll">          昨天          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:计算机 系统设计</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/MengXiao/"><img src="https://img3.doubanio.com/icon/u1408251-1.jpg" class="pil" alt="xiaom" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/MengXiao/">xiaom</a><br/>
+      <div class="pl ll">          1月7日          在读      </div>
+
+        <span class="allstar50" title="力荐"></span>
+      <br/>
+
+      <span class="pl">tags:系统设计 re:read</span><br />
+
+          <span class="">习题很有意思。尤其是用来印证自己做过的项目的设计问题。值得反复读。</span> <br/>
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/15100152/"><img src="https://img3.doubanio.com/icon/u15100152-2.jpg" class="pil" alt="YigWoo" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/15100152/">YigWoo</a><br/>
+      <div class="pl ll">          1月4日          想读      </div>
+
+      <br/>
+
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+<div class="">
+    
+    <div class="ll"><a href="https://www.douban.com/people/63405148/"><img src="https://img3.doubanio.com/icon/u63405148-2.jpg" class="pil" alt="小廉" /></a></div>
+    <div style="padding-left:60px"><a class="" href="https://www.douban.com/people/63405148/">小廉</a><br/>
+      <div class="pl ll">          1月2日          想读      </div>
+
+      <br/>
+
+      <span class="pl">tags:计算机科学</span><br />
+
+    </div>
+    <div class="clear"></div><br/>
+    <div class="ul" style="margin-bottom:12px;"></div>
+</div>
+
+
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3707841/doings">33人在读</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3707841/collections">26人读过</a></p>
+        <p class="pl">&gt; <a href="https://book.douban.com/subject/3707841/wishes">349人想读</a></p>
+
+  </div>
+
+
+
+
+
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_middle_right"></div>
+<script type="text/javascript">
+    (function (global) {
+        if(!document.getElementsByClassName) {
+            document.getElementsByClassName = function(className) {
+                return this.querySelectorAll("." + className);
+            };
+            Element.prototype.getElementsByClassName = document.getElementsByClassName;
+
+        }
+        var articles = global.document.getElementsByClassName('article'),
+            asides = global.document.getElementsByClassName('aside');
+
+        if (articles.length > 0 && asides.length > 0 && articles[0].offsetHeight >= asides[0].offsetHeight) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_middle_right');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+  
+
+
+
+
+
+  
+
+  <h2>二手市场</h2>
+  <div class="indent">
+    <ul class="bs">
+    <li class="">
+          <a class="rr j a_show_login" href="https://www.douban.com/register?reason=secondhand-offer&amp;cat=book"><span>&gt; 点这儿转让</span></a>
+
+        有349人想读,手里有一本闲着?
+      </li>
+    </ul>
+  </div>
+
+  
+<p class="pl">订阅关于Principles of Computer System Design的评论: <br/><span class="feed">
+    <a href="https://book.douban.com/feed/subject/3707841/reviews"> feed: rss 2.0</a></span></p>
+
+
+      </div>
+      <div class="extra">
+        
+  
+<!-- douban ad begin -->
+<div id="dale_book_subject_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 2000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_book_subject_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+      </div>
+    </div>
+  </div>
+
+        
+<div id="footer">
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+      
+  
+
+    <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/b93d8ec8cf50308.js"></script>
+    <!-- mako -->
+    
+  
+
+
+
+
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'HTsJWoJhHfI',
+            criteria = '7:系统设计|7:计算机科学|7:计算机|7:操作系统|7:分布式|7:system|7:系统|7:design|7:程序设计|7:CS|3:/subject/3707841/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_subject_top_icon', 'dale_book_subject_top_right', 'dale_book_subject_top_middle', 'dale_book_subject_middle_mini'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/adjs/d59867ddbe8a25645584b467a58a41cbd672c9be/ad.release.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+    <!-- nain8-docker-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
